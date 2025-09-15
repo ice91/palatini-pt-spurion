@@ -81,32 +81,22 @@ EXTENDED_BASIS = Basis(EXTENDED, name="extended")
 # 工具：取係數向量 / 建式
 # -----------------------------
 
-def _coeff_vector(expr: Expr, basis: Basis) -> Array:
-    """把線性組合 expr 轉成「相對於 basis」的係數向量。
-
-    限制：假設 expr 為這些 monomials 的 **線性** 組合。
-    """
+def _coeff_vector(expr: sp.Expr, basis: Basis) -> np.ndarray:
     expr = sp.expand(expr)
-    vec = np.zeros((basis.size(),), dtype=float)
+    vec = np.zeros((basis.size(),), dtype=object)  # object！
     for i, sym in enumerate(basis.monomials):
-        # 取對應符號的係數（把其他 monomials 當成獨立變數）
         coeff = sp.expand(expr).coeff(sym)
-        vec[i] = float(coeff)
-        # 再把已經抽出的部分扣掉，以減少重複解析
+        vec[i] = coeff  # 不轉 float
         expr = sp.expand(expr - coeff * sym)
-    # 最後如果 expr 還有非基底的殘差符號，保留在最後（提醒）
-    # 但為了不噪音，這裡僅在 debug 中處理；正式流程假定輸入都在基底張成空間。
     return vec
 
-
-def _from_coeff_vector(coeffs: Array, basis: Basis) -> Expr:
-    """由係數向量重建表達式。"""
+def _from_coeff_vector(coeffs: np.ndarray, basis: Basis) -> sp.Expr:
     if coeffs.shape != (basis.size(),):
-        raise ValueError(f"coeffs shape {coeffs.shape} not match basis size {basis.size()}")
+        raise ValueError(...)
     out = 0
     for ci, sym in zip(coeffs, basis.monomials):
         if ci:
-            out += float(ci) * sym
+            out += ci * sym  # 不轉 float
     return sp.expand(out)
 
 
@@ -114,19 +104,10 @@ def _from_coeff_vector(coeffs: Array, basis: Basis) -> Expr:
 # 投影矩陣（線性代數觀點）
 # -----------------------------
 
-def projection_matrix(from_basis: Basis, to_basis: Basis) -> Array:
-    """建立線性投影矩陣 P，使得 c_to = P @ c_from。
-
-    規則（現階段）：
-    - 若 from_basis 含 E 而 to_basis 不含，則實作 IBP：E → -D。
-    - 其他 monomials（D, TdotDeps, T2）在兩個基底中若同名，投影為恆等。
-    """
-    P = np.zeros((to_basis.size(), from_basis.size()), dtype=float)
-
-    # 對每個 from-basis 單位向量 e_j，建立其對應表達式再做 IBP，最後取 to_basis 係數。
+def projection_matrix(from_basis: Basis, to_basis: Basis) -> np.ndarray:
+    P = np.zeros((to_basis.size(), from_basis.size()), dtype=object)  # object！
     for j, sym in enumerate(from_basis.monomials):
-        expr_j = sym
-        expr_j = ibp_reduce(apply_bianchi(expr_j))  # E→-D；幾何恆等式（目前 no-op）
+        expr_j = ibp_reduce(apply_bianchi(sym))
         vec_to = _coeff_vector(expr_j, to_basis)
         P[:, j] = vec_to
     return P
