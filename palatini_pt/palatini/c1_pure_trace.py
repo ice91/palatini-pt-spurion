@@ -90,7 +90,7 @@ def run_c1(
     sol = solve_torsion_from_spurion(d_eps=d_eps, alpha=alpha, g=g)
     chk = check_pure_trace(sol, atol=atol)
     #ang = alignment_angle(sol.T_vec, d_eps)
-    ang = _angle_between(T_vec, d_eps, atol=atol)
+    ang = _angle_between(sol.T_vec, d_eps, atol=atol)
     return C1Report(solution=sol, check=chk, angle_rad=ang)
 
 
