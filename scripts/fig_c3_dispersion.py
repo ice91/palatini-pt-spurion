@@ -1,16 +1,6 @@
-#!/usr/bin/env python3
+# scripts/fig_c3_dispersion.py
 # -*- coding: utf-8 -*-
-"""
-Fig.5 — C3: dispersion relation ω^2 = c_T^2(k) k^2, before/after locking.
-Outputs:
-  figs/pdf/fig5_c3_dispersion.pdf
-  figs/data/dispersion.csv (+ .md5)
-"""
 from __future__ import annotations
-
-import argparse
-import csv
-import hashlib
 from pathlib import Path
 from typing import Dict, List
 
@@ -20,31 +10,19 @@ import matplotlib.pyplot as plt
 
 def _apply_style():
     try:
-        from palatini_pt.plotting.style import apply_prd_style  # type: ignore
-
-        apply_prd_style()
+        from palatini_pt.plotting.style import apply_prd
+        apply_prd()
     except Exception:
         pass
 
 
 def _prepare_outdirs(config: Dict | None) -> Dict[str, Path]:
-    base = Path((config or {}).get("output", {}).get("dir", "figs"))
-    pdf = base / "pdf"
-    data = base / "data"
-    png = base / "png"
-    for d in (pdf, data, png):
-        d.mkdir(parents=True, exist_ok=True)
-    return {"pdf": pdf, "data": data, "png": png}
-
-
-def _write_md5(path: Path) -> Path:
-    h = hashlib.md5()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(8192), b""):
-            h.update(chunk)
-    m = path.with_suffix(path.suffix + ".md5")
-    m.write_text(h.hexdigest() + "\n", encoding="utf-8")
-    return m
+    outdir = Path(config.get("output", {}).get("dir", "figs")) if config else Path("figs")
+    pdfdir = outdir / "pdf"
+    datadir = outdir / "data"
+    pdfdir.mkdir(parents=True, exist_ok=True)
+    datadir.mkdir(parents=True, exist_ok=True)
+    return {"pdfdir": pdfdir, "datadir": datadir}
 
 
 def _cT_of_k_via_module(config: Dict | None, k: np.ndarray, locked: bool) -> np.ndarray:
@@ -75,9 +53,11 @@ def _cT_of_k_via_module(config: Dict | None, k: np.ndarray, locked: bool) -> np.
 
 
 def _cT_fallback(k: np.ndarray, locked: bool) -> np.ndarray:
+    # 僅供 smoke：未鎖定略偏離 1，鎖定後恰為 1
     if locked:
         return np.ones_like(k)
-    return 1.0 + 0.02 * np.tanh(5 * (k - k.min()) / (k.ptp() + 1e-12))
+    span = float(np.ptp(np.asarray(k))) + 1e-12  # NumPy 2.0 友善
+    return 1.0 + 0.02 * np.tanh(5 * (k - float(np.min(k))) / span)
 
 
 def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]:
@@ -87,59 +67,43 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     k = np.logspace(-4, -1, 100) if which != "smoke" else np.logspace(-3, -2, 40)
     try:
         cT_unlocked = _cT_of_k_via_module(config, k, locked=False)
-        cT_locked = _cT_of_k_via_module(config, k, locked=True)
     except Exception:
         cT_unlocked = _cT_fallback(k, locked=False)
+    try:
+        cT_locked = _cT_of_k_via_module(config, k, locked=True)
+    except Exception:
         cT_locked = _cT_fallback(k, locked=True)
 
-    # CSV
-    csv_path = paths["data"] / "dispersion.csv"
-    with open(csv_path, "w", newline="", encoding="utf-8") as f:
+    # --- 畫圖 ---
+    fig, ax = plt.subplots(figsize=(4.8, 3.2))
+    ax.plot(k, cT_unlocked, label="unlocked", lw=1.5)
+    ax.plot(k, cT_locked, label="locked", lw=1.5)
+    ax.set_xscale("log")
+    ax.set_xlabel(r"$k$")
+    ax.set_ylabel(r"$c_T(k)$")
+    ax.set_title("Dispersion (smoke)" if which == "smoke" else "Dispersion")
+    ax.grid(True, ls=":", alpha=0.6)
+    ax.legend()
+
+    pdf = paths["pdfdir"] / ("fig5_c3_dispersion.pdf" if which != "smoke" else "fig5_c3_dispersion_smoke.pdf")
+    fig.tight_layout()
+    fig.savefig(pdf, dpi=200)
+    plt.close(fig)
+    from hashlib import md5
+    (pdf.with_suffix(pdf.suffix + ".md5")).write_text(md5(pdf.read_bytes()).hexdigest() + "\n")
+
+    # --- 資料輸出 ---
+    data_path = paths["datadir"] / ("dispersion.csv" if which != "smoke" else "dispersion_smoke.csv")
+    import csv
+    with data_path.open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["k", "cT_unlocked", "cT_locked"])
-        for ki, u, l in zip(k, cT_unlocked, cT_locked):
-            w.writerow([f"{float(ki):.16e}", f"{float(u):.16e}", f"{float(l):.16e}"])
-    _write_md5(csv_path)
+        for kk, u, l in zip(k, cT_unlocked, cT_locked):
+            w.writerow([f"{kk:.16e}", f"{u:.16e}", f"{l:.16e}"])
+    (data_path.with_suffix(data_path.suffix + ".md5")).write_text(md5(data_path.read_bytes()).hexdigest() + "\n")
 
-    # Plot
-    fig, ax = plt.subplots(figsize=(4.8, 3.2))
-    ax.semilogx(k, cT_unlocked, label="unlocked")
-    ax.semilogx(k, cT_locked, label="locked")
-    ax.axhline(1.0, lw=1.0, ls="--")
-    ax.set_xlabel("k")
-    ax.set_ylabel(r"$c_T(k)$")
-    ax.set_title("C3: dispersion before/after locking")
-    ax.legend()
-    fig.tight_layout()
-    pdf_path = paths["pdf"] / "fig5_c3_dispersion.pdf"
-    fig.savefig(pdf_path, bbox_inches="tight")
-    plt.close(fig)
-    _write_md5(pdf_path)
-
-    return {"pdfs": [str(pdf_path)], "data": [str(csv_path)]}
-
-
-def _load_config_if_needed(path: str | None) -> Dict | None:
-    if not path:
-        return None
-    try:
-        from palatini_pt.io.config import load_config  # type: ignore
-
-        return load_config(path)
-    except Exception:
-        import yaml  # type: ignore
-
-        with open(path, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-
-
-def main():
-    ap = argparse.ArgumentParser(description="Fig.5 — C3 dispersion")
-    ap.add_argument("--config", default="configs/default.yaml")
-    args = ap.parse_args()
-    out = run(_load_config_if_needed(args.config))
-    print(out)
+    return {"pdfs": [str(pdf)], "data": [str(data_path)]}
 
 
 if __name__ == "__main__":
-    main()
+    print(run(which="smoke"))

@@ -1,16 +1,6 @@
-#!/usr/bin/env python3
+# scripts/fig_c2_coeff_compare.py
 # -*- coding: utf-8 -*-
-"""
-Fig.3 — C2: coefficient comparison among 3 chains with residual log-plot.
-Outputs:
-  figs/pdf/fig3_c2_coeff_compare.pdf
-  figs/data/c2_residuals.csv (+ .md5)
-"""
 from __future__ import annotations
-
-import argparse
-import csv
-import hashlib
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -20,31 +10,25 @@ import matplotlib.pyplot as plt
 
 def _apply_style():
     try:
-        from palatini_pt.plotting.style import apply_prd_style  # type: ignore
-
-        apply_prd_style()
+        from palatini_pt.plotting.style import apply_prd
+        apply_prd()
     except Exception:
         pass
 
 
 def _prepare_outdirs(config: Dict | None) -> Dict[str, Path]:
-    base = Path((config or {}).get("output", {}).get("dir", "figs"))
-    pdf = base / "pdf"
-    data = base / "data"
-    png = base / "png"
-    for d in (pdf, data, png):
-        d.mkdir(parents=True, exist_ok=True)
-    return {"pdf": pdf, "data": data, "png": png}
+    outdir = Path(config.get("output", {}).get("dir", "figs")) if config else Path("figs")
+    pdfdir = outdir / "pdf"
+    datadir = outdir / "data"
+    pdfdir.mkdir(parents=True, exist_ok=True)
+    datadir.mkdir(parents=True, exist_ok=True)
+    return {"pdfdir": pdfdir, "datadir": datadir}
 
 
-def _write_md5(path: Path) -> Path:
-    h = hashlib.md5()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(8192), b""):
-            h.update(chunk)
-    m = path.with_suffix(path.suffix + ".md5")
-    m.write_text(h.hexdigest() + "\n", encoding="utf-8")
-    return m
+def _write_md5(p: Path):
+    import hashlib
+    h = hashlib.md5(p.read_bytes()).hexdigest()
+    (p.with_suffix(p.suffix + ".md5")).write_text(h + "\n")
 
 
 def _residual_scan_via_module(config: Dict | None, thresholds: np.ndarray) -> np.ndarray:
@@ -80,11 +64,12 @@ def _residual_scan_via_module(config: Dict | None, thresholds: np.ndarray) -> np
 
 
 def _residual_scan_fallback(thresholds: np.ndarray) -> np.ndarray:
-    # Monotonic decrease to machine-like floor
+    # 單調下降到近似機器底噪，僅做 smoke 圖
     floor = 1e-12
     start = 1e-4
-    vals = start * np.exp(-3.0 * (thresholds - thresholds.min()) / max(1e-12, thresholds.ptp()))
-    return np.maximum(vals, floor)
+    span = max(1e-12, float(np.ptp(np.asarray(thresholds))))  # NumPy 2.0 友善
+    vals = start * np.exp(-3.0 * (thresholds - float(np.min(thresholds))) / span)
+    return np.maximum(floor, vals)
 
 
 def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]:
@@ -95,54 +80,36 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     try:
         resids = _residual_scan_via_module(config, thresholds)
     except Exception:
+        # 沒有實作 equivalence 管線時，使用 fallback 生成可畫資料
         resids = _residual_scan_fallback(thresholds)
 
-    # CSV
-    csv_path = paths["data"] / "c2_residuals.csv"
-    with open(csv_path, "w", newline="", encoding="utf-8") as f:
-        w = csv.writer(f)
-        w.writerow(["ibp_threshold", "residual_norm"])
-        for t, r in zip(thresholds, resids):
-            w.writerow([f"{float(t):.16e}", f"{float(r):.16e}"])
-    _write_md5(csv_path)
-
-    # Plot
-    fig, ax = plt.subplots(figsize=(4.6, 3.2))
-    ax.loglog(thresholds, resids, marker="o")
+    # --- 畫圖 ---
+    fig, ax = plt.subplots(figsize=(4.5, 3.2))
+    ax.semilogx(thresholds, resids, marker="o", lw=1.2)
     ax.set_xlabel("IBP tolerance")
-    ax.set_ylabel(r"$\|\Delta\|$ (coeff residual)")
-    ax.set_title("C2: coefficient equivalence — residual vs tolerance")
-    ax.grid(True, which="both", ls=":")
+    ax.set_ylabel(r"$\|\Delta\|$")
+    ax.set_title("C2 residual (smoke)" if which == "smoke" else "C2 residual scan")
+    ax.grid(True, ls=":", alpha=0.6)
+
+    pdf = paths["pdfdir"] / ("fig3_c2_coeff_compare.pdf" if which != "smoke" else "fig3_c2_coeff_compare_smoke.pdf")
     fig.tight_layout()
-    pdf_path = paths["pdf"] / "fig3_c2_coeff_compare.pdf"
-    fig.savefig(pdf_path, bbox_inches="tight")
+    fig.savefig(pdf, dpi=200)
     plt.close(fig)
-    _write_md5(pdf_path)
+    _write_md5(pdf)
 
-    return {"pdfs": [str(pdf_path)], "data": [str(csv_path)]}
+    # --- 輸出資料 ---
+    data_path = paths["datadir"] / ("c2_residuals.csv" if which != "smoke" else "c2_residuals_smoke.csv")
+    import csv
+    with data_path.open("w", newline="") as f:
+        w = csv.writer(f)
+        w.writerow(["ibp_tol", "residual_norm"])
+        for t, r in zip(thresholds, resids):
+            w.writerow([f"{t:.16e}", f"{r:.16e}"])
+    _write_md5(data_path)
 
-
-def _load_config_if_needed(path: str | None) -> Dict | None:
-    if not path:
-        return None
-    try:
-        from palatini_pt.io.config import load_config  # type: ignore
-
-        return load_config(path)
-    except Exception:
-        import yaml  # type: ignore
-
-        with open(path, "r", encoding="utf-8") as f:
-            return yaml.safe_load(f)
-
-
-def main():
-    ap = argparse.ArgumentParser(description="Fig.3 — C2 coefficient compare")
-    ap.add_argument("--config", default="configs/default.yaml")
-    args = ap.parse_args()
-    out = run(_load_config_if_needed(args.config))
-    print(out)
+    return {"pdfs": [str(pdf)], "data": [str(data_path)]}
 
 
 if __name__ == "__main__":
-    main()
+    # 允許: python -m scripts.fig_c2_coeff_compare
+    print(run(which="smoke"))
