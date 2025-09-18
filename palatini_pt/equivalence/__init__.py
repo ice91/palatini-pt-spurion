@@ -11,7 +11,8 @@ import numpy as np
 # --- basis helpers -------------------------------------------------
 
 def get_basis_labels() -> List[str]:
-    return ["I_T", "Seps"]
+    # 至少四個：前兩個是你已使用的；後兩個作為 O(∂²) 類型的佔位符（係數預設 0）
+    return ["I_T", "Seps", "I_ax", "I_q"]
 
 @dataclass(frozen=True)
 class CoeffVector:
