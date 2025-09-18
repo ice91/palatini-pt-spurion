@@ -80,3 +80,4 @@ def contorsion_from_trace(T_vec: np.ndarray, g: Optional[np.ndarray] = None) -> 
 
 
 __all__ = ["minkowski_metric", "torsion_from_trace", "contorsion_from_trace"]
+
