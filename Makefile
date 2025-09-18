@@ -1,4 +1,4 @@
-.PHONY: env dev install precommit test lint fmt figs clean
+.PHONY: env dev install precommit test lint fmt figs clean paper paper-test
 
 PYTHON ?= python
 PIP ?= python -m pip
@@ -31,6 +31,13 @@ fmt:
 figs:
 	@echo "Running smoke figure pipeline…"
 	palpt figs --which smoke
+
+# ---- 投稿模式（禁用所有 fallback）----
+paper:
+	PALPT_REQUIRE_REAL_APIS=1 PYTHONHASHSEED=0 $(PYTHON) -m scripts.make_all_figs --which all --config configs/paper_grids.yaml
+
+paper-test:
+	PALPT_REQUIRE_REAL_APIS=1 pytest -q
 
 clean:
 	rm -rf .mypy_cache .pytest_cache build dist *.egg-info

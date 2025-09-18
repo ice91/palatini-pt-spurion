@@ -23,6 +23,6 @@ def cT2_of_k(*, k: np.ndarray, config: Dict | None, locked: bool) -> np.ndarray:
     delta = 0.02 * seps * np.tanh((k - kmin) / (0.2 * kptp + 1e-12)) ** 2
     return 1.0 + delta
 
-# 提供一個不會造成相依循環的別名，供部分程式碼呼叫
+# 不造成循環的別名
 def cT_squared(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
     return cT2_of_k(k=k, config=config, locked=locked)
