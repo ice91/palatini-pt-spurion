@@ -1,4 +1,4 @@
-"""palatini-pt-spurion package."""
+# -*- coding: utf-8 -*-
+"""palatini-pt-spurion: minimal runnable API for paper figures (C1–C3)."""
+__all__ = ["palatini", "equivalence", "gw"]
 
-__all__ = ["__version__"]
-__version__ = "0.1.0"

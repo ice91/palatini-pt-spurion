@@ -15,6 +15,11 @@ from .torsion_decomp import (
 from .field_eq import C1Solution, solve_torsion_from_spurion, check_pure_trace
 from .c1_pure_trace import alignment_angle, run_c1, smoke_example, C1Report
 
+"""Palatini sector (C1)."""
+from . import c1_pure_trace as c1_pure_trace  # re-export
+from . import field_eq as field_eq            # re-export
+#__all__ = ["c1_pure_trace", "field_eq"]
+
 __all__ = [
     # connection
     "minkowski_metric",
@@ -36,4 +41,6 @@ __all__ = [
     "run_c1",
     "smoke_example",
     "C1Report",
+    "c1_pure_trace",
+    "field_eq",
 ]

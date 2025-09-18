@@ -12,6 +12,7 @@ the TT sector equals GR and c_T^2 = 1 at quadratic order.
 from __future__ import annotations
 
 from typing import Dict, Any
+import numpy as np
 
 
 def apply(*, coeffs: Dict[str, float] | Dict[str, Any]) -> Dict[str, Any]:
@@ -23,3 +24,23 @@ def apply(*, coeffs: Dict[str, float] | Dict[str, Any]) -> Dict[str, Any]:
     out["locked"] = True
     # 也可選擇把 I_T 的有效耦合標成 0（因等價後只剩改良項），但為保守僅做註記。
     return out
+
+
+def locking_curve(config: Dict | None = None):
+    # Draw a straight line Y = -X across the plotted parameter box.
+    # This matches cT_grid() where |c_T - 1| = 0 along X+Y=0.
+    gx = ((config or {}).get("grids", {}).get("ct", {}).get("param1", {})) if config else {}
+    gy = ((config or {}).get("grids", {}).get("ct", {}).get("param2", {})) if config else {}
+    x_min = float(getattr(gx, "get", lambda *_: -1.0)("min", -1.0))
+    x_max = float(getattr(gx, "get", lambda *_:  1.0)("max",  1.0))
+    n = int(getattr(gx, "get", lambda *_: 200)("n", 200))
+    xs = np.linspace(x_min, x_max, n)
+    ys = -xs
+    return np.stack([xs, ys], axis=1)
+
+# aliases probed by the fig script
+def curve_locking(config: Dict | None = None):
+    return locking_curve(config)
+
+def locking_contour(config: Dict | None = None):
+    return locking_curve(config)

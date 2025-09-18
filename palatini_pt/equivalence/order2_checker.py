@@ -27,3 +27,16 @@ def residual_scan(*, config: Dict | None, thresholds: np.ndarray) -> np.ndarray:
     for th in np.asarray(thresholds, dtype=float).ravel():
         vals.append(CE.residual_norm(config=config, ibp_tol=float(th)))
     return np.array(vals, dtype=float)
+
+# -*- coding: utf-8 -*-
+"""C2: residual scan wrapper used by the figure script."""
+
+from .coeff_extractor import residual_norm as _residual_norm
+
+def residual_scan(config: Dict | None, thresholds: np.ndarray) -> np.ndarray:
+    thresholds = np.asarray(thresholds, dtype=float).ravel()
+    return np.array([_residual_norm(config=config, ibp_tol=float(t)) for t in thresholds], dtype=float)
+
+# alias
+def scan_residuals(config: Dict | None, thresholds: np.ndarray) -> np.ndarray:
+    return residual_scan(config, thresholds)

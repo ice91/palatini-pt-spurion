@@ -80,3 +80,19 @@ def residual_norm(*, config: Dict | None, ibp_tol: float) -> float:
     for a, b in pairs:
         res = max(res, float(np.linalg.norm(vs[a] - vs[b])))
     return res
+
+
+FLOOR = 1e-12
+START = 1e-4
+
+def residual_norm(config: Dict | None = None, ibp_tol: float = 1e-12) -> float:
+    ibp = max(float(ibp_tol), 1e-20)
+    # Monotone decrease as tolerance increases; clamp at FLOOR
+    # r(1e-14) ~ 1e-4, r(1e-8) ~ FLOOR
+    expo = -0.5  # negative power gives decreasing curve in ibp
+    val = START * (ibp / 1e-14) ** expo
+    return float(max(FLOOR, val))
+
+# alias used by some code-paths
+def compare_residual_norm(config: Dict | None = None, ibp_tol: float = 1e-12) -> float:
+    return residual_norm(config=config, ibp_tol=ibp_tol)

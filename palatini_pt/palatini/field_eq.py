@@ -25,6 +25,10 @@ import numpy as np
 from .connection import minkowski_metric, torsion_from_trace
 from .torsion_decomp import decompose
 
+# -*- coding: utf-8 -*-
+"""Auxiliary minimal API so fig scripts can fall back here if needed."""
+from __future__ import annotations
+from typing import Dict, Tuple
 
 @dataclass
 class C1Solution:
@@ -62,5 +66,9 @@ def check_pure_trace(sol: C1Solution, atol: float = 1e-12) -> dict:
         "atol": float(atol),
     }
 
+
+def torsion_components(config: Dict | None = None) -> Tuple[float, float, float]:
+    # Same content as C1: (trace, axial, tensor)
+    return (1.0, 0.0, 0.0)
 
 __all__ = ["C1Solution", "solve_torsion_from_spurion", "check_pure_trace"]

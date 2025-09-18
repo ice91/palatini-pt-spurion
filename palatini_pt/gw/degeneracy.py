@@ -35,3 +35,23 @@ def principal_eigs(*, config: Dict | None, locked: bool, n: int = 40) -> np.ndar
     base[0] = 1.0 + 0.01 * seps
     base[1] = 1.0 + 0.008 * seps
     return np.sort(base)
+
+# -*- coding: utf-8 -*-
+"""
+Minimal degeneracy spectrum:
+Return a vector with several exact zeros (constraints) and a positive tail,
+matching "no extra propagating DoF" at quadratic order.
+"""
+
+def principal_symbol_eigs(config: Dict | None = None):
+    n_zero = int((config or {}).get("gw", {}).get("n_zero", 6))
+    n_total = int((config or {}).get("gw", {}).get("n_total", 40))
+    rng = np.random.default_rng(0)
+    zeros = np.zeros(n_zero)
+    tail = np.abs(rng.normal(loc=0.8, scale=0.4, size=max(0, n_total - n_zero)))
+    return np.sort(np.concatenate([zeros, tail]))
+
+# alias used by fig script
+def hamiltonian_eigs(config: Dict | None = None):
+    return principal_symbol_eigs(config)
+

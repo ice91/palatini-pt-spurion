@@ -50,3 +50,16 @@ def cT2_of_k(*, k: np.ndarray, config: Dict | None, locked: bool) -> np.ndarray:
     kptp = float(np.ptp(k)) if k.size else 1.0
     delta = 0.02 * seps * np.tanh((k - kmin) / (0.2 * kptp + 1e-12)) ** 2
     return 1.0 + delta
+
+
+# -*- coding: utf-8 -*-
+"""Optional helper: cT^2(k) API some code paths may call."""
+from .tensor_mode import cT_of_k as _cT_of_k
+
+def cT2_of_k(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
+    cT = _cT_of_k(k=k, config=config, locked=locked)
+    return np.asarray(cT, dtype=float) ** 2
+
+# alias name
+def cT_squared(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
+    return cT2_of_k(k, config, locked)
