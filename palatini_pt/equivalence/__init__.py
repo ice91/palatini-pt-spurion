@@ -80,6 +80,8 @@ from . import order2_checker as order2_checker   # type: ignore
 from . import coeff_extractor as coeff_extractor # type: ignore
 from .coeff_extractor import residual_norm       # type: ignore
 from .order2_checker import residual_scan, scan_residuals  # type: ignore
+# NEW: export flux-ratio toy
+from .flux_ratio import flux_ratio_FRW
 
 __all__ = [
     "get_basis_labels",
