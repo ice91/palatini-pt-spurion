@@ -1,11 +1,16 @@
 # scripts/fig_nlo_offsets.py
 # -*- coding: utf-8 -*-
-import os, hashlib, math
+"""
+Fig.8 — NLO offsets: δc_T^2(k) ~ b * k^2 / Λ^2
+- 讀取 configs/* 中的 nlo 區塊
+- 產生 CSV: figs/data/nlo_offsets.csv
+- 產生 PDF: figs/pdf/fig8_nlo_offsets.pdf
+"""
+
+from __future__ import annotations
+import os
 import numpy as np
 import matplotlib.pyplot as plt
-
-# 依照 tests/test_nlo.py 的慣例，這個 API 名稱通常存在
-from palatini_pt.gw.nlo import predict_offsets
 
 DATA_DIR = "figs/data"
 PDF_DIR  = "figs/pdf"
@@ -13,17 +18,20 @@ PDF_NAME = "fig8_nlo_offsets.pdf"
 CSV_NAME = "nlo_offsets.csv"
 
 def _md5_write(path: str) -> None:
-    with open(path, "rb") as f:
-        h = hashlib.md5(f.read()).hexdigest()
-    with open(path + ".md5", "w") as g:
-        g.write(h + "\n")
+    try:
+        import hashlib
+        with open(path, "rb") as f:
+            h = hashlib.md5(f.read()).hexdigest()
+        with open(path + ".md5", "w") as g:
+            g.write(h + "\n")
+    except Exception:
+        pass
 
 def _ensure_dirs():
     os.makedirs(DATA_DIR, exist_ok=True)
-    os.makedirs(PDF_DIR, exist_ok=True)
+    os.makedirs(PDF_DIR,  exist_ok=True)
 
 def _cfg_get(d, ks, default):
-    """安全取 config dict：_cfg_get(cfg, ['nlo','coeffs','Lambda2'], 1e6)"""
     cur = d if isinstance(d, dict) else {}
     for k in ks:
         if not isinstance(cur, dict) or k not in cur:
@@ -31,61 +39,81 @@ def _cfg_get(d, ks, default):
         cur = cur[k]
     return cur
 
-def build_from_config(config: dict | None):
-    # 讀參數（有就用，沒有就用預設）
-    a   = float(_cfg_get(config, ["nlo","coeffs","gradT_sq_eff"], 1.0))
-    b   = float(_cfg_get(config, ["nlo","coeffs","Ricci_deps_deps_eff"], 0.3))
-    L2  = float(_cfg_get(config, ["nlo","coeffs","Lambda2"], 1.0e6))
+def _compute_nlo_offsets_from_config(cfg: dict | None) -> dict:
+    # k-grid
+    kmin = float(_cfg_get(cfg, ["nlo", "k", "min"], 1.0e-3))
+    kmax = float(_cfg_get(cfg, ["nlo", "k", "max"], 1.0e-1))
+    npts = int(_cfg_get(cfg, ["nlo", "k", "n"],   200))
+    k = np.geomspace(kmin, kmax, npts)
 
-    kmin = float(_cfg_get(config, ["nlo","k","min"], 1e-3))
-    kmax = float(_cfg_get(config, ["nlo","k","max"], 1e-1))
-    npts = int(_cfg_get(config,   ["nlo","k","n"],   200))
+    # 係數（對應論文：δc_T^2 ≈ b * k^2 / Λ^2）
+    Lambda2 = float(_cfg_get(cfg, ["nlo", "coeffs", "Lambda2"], 1.0e6))
+    b       = float(_cfg_get(cfg, ["nlo", "coeffs", "Ricci_deps_deps_eff"], 0.0))
 
-    _ensure_dirs()
-    k = np.logspace(math.log10(kmin), math.log10(kmax), npts)
+    # 允許有 a 但對 δc_T^2 僅 b 會進入（a 只會同時改變 K, G，不改差值）
+    # a = float(_cfg_get(cfg, ["nlo", "coeffs", "gradT_sq_eff"], 0.0))
 
-    # predict_offsets 介面：由你的 tests 可知會吃 (k, cfg)
-    out = predict_offsets(k, {
-        "nlo": {
-            "coeffs": {
-                "gradT_sq_eff": a,
-                "Ricci_deps_deps_eff": b,
-                "Lambda2": L2,
-            }
-        }
-    })
+    # 主結果：可能為 0（例如 b=0 或 Lambda 很大）
+    delta_cT2 = (b * (k**2)) / (Lambda2 if Lambda2 != 0.0 else 1.0e99)
 
-    # 存 CSV
+    return {"k": k, "delta_cT2": delta_cT2}
+
+def _save_csv(out: dict) -> str:
     csv_path = os.path.join(DATA_DIR, CSV_NAME)
     with open(csv_path, "w") as f:
-        f.write("k,delta_K,delta_G,delta_cT2\n")
-        for i in range(len(k)):
-            f.write(f"{k[i]},{out['delta_K'][i]},{out['delta_G'][i]},{out['delta_cT2'][i]}\n")
+        f.write("k,delta_cT2\n")
+        for ki, yi in zip(out["k"], out["delta_cT2"]):
+            f.write(f"{ki},{yi}\n")
     _md5_write(csv_path)
+    return csv_path
 
-    # 畫圖
+def _plot_pdf(out: dict) -> str:
     pdf_path = os.path.join(PDF_DIR, PDF_NAME)
+    k   = np.asarray(out["k"], dtype=float)
+    y   = np.asarray(out["delta_cT2"], dtype=float)
+    yabs = np.abs(y)
+    pos  = yabs > 0
+
     plt.figure(figsize=(4.8, 3.2), dpi=180)
-    plt.loglog(k, np.abs(out["delta_cT2"]), lw=1.6, label=r"$|\delta c_T^2(k)|$")
-    # 參考斜率 ~ k^2
-    ref = (abs(out["delta_cT2"][0])/(k[0]**2))*k**2 if k[0] > 0 else k**2
-    plt.loglog(k, ref, ls="--", lw=1.0, label=r"$\propto k^2$")
+
+    if pos.sum() >= 2:
+        # 有足夠正值：log–log 繪圖 + 參考斜率 k^2
+        kpos = k[pos]
+        ypos = yabs[pos]
+        plt.loglog(kpos, ypos, lw=1.6, label=r"$|\delta c_T^2(k)|$")
+
+        # 參考 k^2：用第一點做歸一
+        ref = (ypos[0] / (kpos[0]**2)) * (kpos**2)
+        plt.loglog(kpos, ref, ls="--", lw=1.0, label=r"$\propto k^2$")
+
+        plt.ylabel(r"$|\delta c_T^2|$")
+    else:
+        # 全為 0 或只有 1 個正值：避免 log-scaling 警告，改線性 y 軸
+        plt.plot(k, yabs, lw=1.6, label=r"$|\delta c_T^2(k)|\approx 0$")
+        plt.xscale("log")
+        plt.ylabel(r"$|\delta c_T^2|$ (linear)")
+
     plt.xlabel(r"$k$")
-    plt.ylabel(r"$|\delta c_T^2|$")
-    plt.title(r"NLO: $\delta c_T^2 \propto k^2/\Lambda^2$")
+    plt.title(r"NLO offsets: $\delta c_T^2 \propto k^2/\Lambda^2$")
     plt.legend(frameon=False)
     plt.tight_layout()
     plt.savefig(pdf_path)
     plt.close()
     _md5_write(pdf_path)
+    return pdf_path
 
+def build_from_config(config: dict | None) -> dict:
+    _ensure_dirs()
+    out = _compute_nlo_offsets_from_config(config)
+    csv_path = _save_csv(out)
+    pdf_path = _plot_pdf(out)
     return {"pdfs": [pdf_path], "data": [csv_path]}
 
-def run(config: dict | None = None, which: str | None = None):
-    """make_all_figs 的標準入口"""
+def run(config: dict | None = None, which: str | None = None) -> dict:
+    """供 make_all_figs 呼叫的標準入口"""
     return build_from_config(config)
 
-# 允許單獨執行：python -m scripts.fig_nlo_offsets --config configs/paper_grids.yaml
+# 允許單檔執行：python -m scripts.fig_nlo_offsets --config configs/paper_grids.yaml
 def _load_yaml(path: str) -> dict | None:
     try:
         import yaml
