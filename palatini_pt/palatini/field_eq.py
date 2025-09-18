@@ -18,17 +18,13 @@ Algebraic field equations (C1): torsion is pure trace and aligns with ∂ε.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from typing import Optional
+from typing import Dict, Optional, Tuple
 
 import numpy as np
 
 from .connection import minkowski_metric, torsion_from_trace
 from .torsion_decomp import decompose
 
-# -*- coding: utf-8 -*-
-"""Auxiliary minimal API so fig scripts can fall back here if needed."""
-from __future__ import annotations
-from typing import Dict, Tuple
 
 @dataclass
 class C1Solution:
@@ -68,7 +64,13 @@ def check_pure_trace(sol: C1Solution, atol: float = 1e-12) -> dict:
 
 
 def torsion_components(config: Dict | None = None) -> Tuple[float, float, float]:
-    # Same content as C1: (trace, axial, tensor)
+    """回傳 (trace, axial, tensor) 的量級，供 Fig.1 後備使用。"""
     return (1.0, 0.0, 0.0)
 
-__all__ = ["C1Solution", "solve_torsion_from_spurion", "check_pure_trace"]
+
+__all__ = [
+    "C1Solution",
+    "solve_torsion_from_spurion",
+    "check_pure_trace",
+    "torsion_components",
+]
