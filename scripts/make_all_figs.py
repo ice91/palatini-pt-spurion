@@ -25,6 +25,8 @@ _FIG_MODULES = [
     "scripts.fig_c3_dispersion",
     "scripts.fig_c3_degeneracy",
     "scripts.fig_gw_waveform_overlay",
+    "scripts.fig_nlo_offsets",
+    "scripts.fig_flux_ratio",
 ]
 
 

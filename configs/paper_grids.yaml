@@ -25,6 +25,24 @@ waveform:
   dt: 0.1
   f0: 0.05
 
+nlo:
+  coeffs:
+    gradT_sq_eff: 1.0
+    Ricci_deps_deps_eff: 0.3
+    Lambda2: 1.0e6
+  k:
+    min: 1.0e-3
+    max: 1.0e-1
+    n: 200
+
+flux:
+  sigma: 1.0
+  c: 0.5
+  R:
+    min: 5.0
+    max: 80.0
+    n: 60
+
 output:
   dir: figs
   keep_intermediate: true
