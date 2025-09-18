@@ -27,7 +27,8 @@ def test_nlo_zero_in_decoupling_limit():
 
 def test_nlo_scaling_with_k2_over_Lambda2():
     k = np.array([1e-3, 2e-3])
-    cfg = {"nlo": {"gradT_sq_eff": 1.0, "Ricci_deps_deps_eff": 0.0, "Lambda2": 1e6}}
+    #cfg = {"nlo": {"gradT_sq_eff": 1.0, "Ricci_deps_deps_eff": 0.0, "Lambda2": 1e6}}
+    cfg = {"nlo": {"gradT_sq_eff": 0.0, "Ricci_deps_deps_eff": 1.0, "Lambda2": 1e6}}
     out = predict_offsets(k, cfg)
     ratio = out["delta_cT2"][1] / out["delta_cT2"][0]
     assert np.isclose(ratio, (k[1] / k[0]) ** 2, rtol=1e-12, atol=0)
