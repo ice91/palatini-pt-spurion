@@ -11,17 +11,19 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import os
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
+REQUIRE_REAL = bool(int(os.environ.get("PALPT_REQUIRE_REAL_APIS", "0")))
 
 
 def _apply_style():
     try:
         from palatini_pt.plotting.style import apply_prd_style  # type: ignore
-
         apply_prd_style()
     except Exception:
         pass
@@ -48,28 +50,23 @@ def _write_md5(path: Path) -> Path:
 
 
 def _alignment_via_module(config: Dict | None, n: int) -> np.ndarray:
-    try:
-        import palatini_pt.palatini.c1_pure_trace as c1  # type: ignore
-    except Exception:
-        raise
+    import importlib
+    mod = importlib.import_module("palatini_pt.palatini.c1_pure_trace")
     for name in ["alignment_samples", "sample_alignment_angles", "alignment_scan"]:
-        if hasattr(c1, name):
-            fn = getattr(c1, name)
+        if hasattr(mod, name):
+            fn = getattr(mod, name)
             arr = fn(config=config, n=n)
             return np.asarray(arr, dtype=float).ravel()
-    # fallback: angle function
     for name in ["alignment_angle", "angle_alignment"]:
-        if hasattr(c1, name):
-            ang = float(getattr(c1, name)(config=config))
+        if hasattr(mod, name):
+            ang = float(getattr(mod, name)(config=config))
             return np.array([ang], dtype=float)
     raise RuntimeError("No alignment API found in c1_pure_trace")
 
 
 def _alignment_fallback(n: int, seed: int = 0) -> np.ndarray:
     rng = np.random.default_rng(seed)
-    # very small angles ~ N(0, (1e-3)^2)
-    ang = np.abs(rng.normal(loc=0.0, scale=1e-3, size=n))
-    return ang
+    return np.abs(rng.normal(loc=0.0, scale=1e-3, size=n))
 
 
 def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]:
@@ -80,6 +77,8 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     try:
         angles = _alignment_via_module(config, n)
     except Exception:
+        if REQUIRE_REAL:
+            raise
         angles = _alignment_fallback(n)
 
     # write CSV
@@ -111,11 +110,9 @@ def _load_config_if_needed(path: str | None) -> Dict | None:
         return None
     try:
         from palatini_pt.io.config import load_config  # type: ignore
-
         return load_config(path)
     except Exception:
         import yaml  # type: ignore
-
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
 

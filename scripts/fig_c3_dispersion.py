@@ -1,11 +1,17 @@
 # scripts/fig_c3_dispersion.py
 # -*- coding: utf-8 -*-
 from __future__ import annotations
+
+import csv
+import os
+from hashlib import md5
 from pathlib import Path
 from typing import Dict, List
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
+REQUIRE_REAL = bool(int(os.environ.get("PALPT_REQUIRE_REAL_APIS", "0")))
 
 
 def _apply_style():
@@ -27,8 +33,6 @@ def _prepare_outdirs(config: Dict | None) -> Dict[str, Path]:
 
 def _cT_of_k_via_module(config: Dict | None, k: np.ndarray, locked: bool) -> np.ndarray:
     import importlib
-
-    # First try tensor_mode.cT_of_k
     for modname, fnname in [
         ("palatini_pt.gw.tensor_mode", "cT_of_k"),
         ("palatini_pt.gw.tensor_mode", "dispersion_cT"),
@@ -40,7 +44,6 @@ def _cT_of_k_via_module(config: Dict | None, k: np.ndarray, locked: bool) -> np.
                 return np.asarray(fn(k=k, config=config, locked=locked), dtype=float)
         except Exception:
             continue
-    # Or quadratic_action -> cT2_of_k
     try:
         mod = importlib.import_module("palatini_pt.gw.quadratic_action")
         for fnname in ["cT2_of_k", "cT_squared"]:
@@ -53,10 +56,9 @@ def _cT_of_k_via_module(config: Dict | None, k: np.ndarray, locked: bool) -> np.
 
 
 def _cT_fallback(k: np.ndarray, locked: bool) -> np.ndarray:
-    # 僅供 smoke：未鎖定略偏離 1，鎖定後恰為 1
     if locked:
         return np.ones_like(k)
-    span = float(np.ptp(np.asarray(k))) + 1e-12  # NumPy 2.0 友善
+    span = float(np.ptp(np.asarray(k))) + 1e-12
     return 1.0 + 0.02 * np.tanh(5 * (k - float(np.min(k))) / span)
 
 
@@ -68,13 +70,17 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     try:
         cT_unlocked = _cT_of_k_via_module(config, k, locked=False)
     except Exception:
+        if REQUIRE_REAL:
+            raise
         cT_unlocked = _cT_fallback(k, locked=False)
     try:
         cT_locked = _cT_of_k_via_module(config, k, locked=True)
     except Exception:
+        if REQUIRE_REAL:
+            raise
         cT_locked = _cT_fallback(k, locked=True)
 
-    # --- 畫圖 ---
+    # plot
     fig, ax = plt.subplots(figsize=(4.8, 3.2))
     ax.plot(k, cT_unlocked, label="unlocked", lw=1.5)
     ax.plot(k, cT_locked, label="locked", lw=1.5)
@@ -89,12 +95,9 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     fig.tight_layout()
     fig.savefig(pdf, dpi=200)
     plt.close(fig)
-    from hashlib import md5
     (pdf.with_suffix(pdf.suffix + ".md5")).write_text(md5(pdf.read_bytes()).hexdigest() + "\n")
 
-    # --- 資料輸出 ---
     data_path = paths["datadir"] / ("dispersion.csv" if which != "smoke" else "dispersion_smoke.csv")
-    import csv
     with data_path.open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["k", "cT_unlocked", "cT_locked"])

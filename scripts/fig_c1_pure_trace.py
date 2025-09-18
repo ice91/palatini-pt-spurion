@@ -11,18 +11,19 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
-import math
+import os
 from pathlib import Path
 from typing import Dict, List, Tuple
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
+REQUIRE_REAL = bool(int(os.environ.get("PALPT_REQUIRE_REAL_APIS", "0")))
 
 
 def _apply_style():
     try:
         from palatini_pt.plotting.style import apply_prd_style  # type: ignore
-
         apply_prd_style()
     except Exception:
         pass
@@ -53,29 +54,21 @@ def _compute_components_via_module(config: Dict | None) -> Tuple[float, float, f
     Try multiple API names from palatini_pt.palatini.c1_pure_trace.
     Return (trace, axial, tensor) norms.
     """
-    try:
-        import palatini_pt.palatini.c1_pure_trace as c1  # type: ignore
-    except Exception:
-        raise
-
-    # try common names
+    import importlib
+    c1 = importlib.import_module("palatini_pt.palatini.c1_pure_trace")
     for name in ["compute_components", "scan_components", "pure_trace_components"]:
         if hasattr(c1, name):
             fn = getattr(c1, name)
             out = fn(config=config)
-            # allow dict or tuple
             if isinstance(out, dict):
-                # expected keys
                 t = float(out.get("trace", 0.0))
                 a = float(out.get("axial", 0.0))
                 s = float(out.get("tensor", 0.0))
                 return t, a, s
             if isinstance(out, (list, tuple)) and len(out) >= 3:
                 return float(out[0]), float(out[1]), float(out[2])
-    # last resort: compute from field equations module
     try:
-        import palatini_pt.palatini.field_eq as fe  # type: ignore
-
+        fe = importlib.import_module("palatini_pt.palatini.field_eq")
         if hasattr(fe, "torsion_components"):
             t, a, s = fe.torsion_components(config=config)
             return float(t), float(a), float(s)
@@ -86,7 +79,6 @@ def _compute_components_via_module(config: Dict | None) -> Tuple[float, float, f
 
 def _compute_components_fallback(seed: int = 42) -> Tuple[float, float, float]:
     rng = np.random.default_rng(seed)
-    # Make "trace >> axial, tensor" to mimic C1
     trace = 1.0 + 0.05 * rng.normal()
     axial = 1e-6 * abs(rng.normal())
     tensor = 1e-6 * abs(rng.normal())
@@ -97,10 +89,11 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     _apply_style()
     paths = _prepare_outdirs(config)
 
-    # compute
     try:
         trace, axial, tensor = _compute_components_via_module(config)
     except Exception:
+        if REQUIRE_REAL:
+            raise
         trace, axial, tensor = _compute_components_fallback()
 
     # write CSV
@@ -133,11 +126,9 @@ def _load_config_if_needed(path: str | None) -> Dict | None:
         return None
     try:
         from palatini_pt.io.config import load_config  # type: ignore
-
         return load_config(path)
     except Exception:
         import yaml  # type: ignore
-
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
 

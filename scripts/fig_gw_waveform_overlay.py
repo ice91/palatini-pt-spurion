@@ -11,17 +11,19 @@ from __future__ import annotations
 import argparse
 import csv
 import hashlib
+import os
 from pathlib import Path
 from typing import Dict, List
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
+REQUIRE_REAL = bool(int(os.environ.get("PALPT_REQUIRE_REAL_APIS", "0")))
 
 
 def _apply_style():
     try:
         from palatini_pt.plotting.style import apply_prd_style  # type: ignore
-
         apply_prd_style()
     except Exception:
         pass
@@ -49,7 +51,6 @@ def _write_md5(path: Path) -> Path:
 
 def _waveforms_via_module(config: Dict | None, t: np.ndarray) -> Dict[str, np.ndarray]:
     import importlib
-
     for modname, fnname in [
         ("palatini_pt.gw.tensor_mode", "waveform_overlay"),
         ("palatini_pt.gw.tensor_mode", "waveforms_gr_model"),
@@ -58,17 +59,22 @@ def _waveforms_via_module(config: Dict | None, t: np.ndarray) -> Dict[str, np.nd
             mod = importlib.import_module(modname)
             if hasattr(mod, fnname):
                 fn = getattr(mod, fnname)
-                d = fn(t=t, config=config)
-                return {"t": np.asarray(d["t"]), "gr": np.asarray(d["gr"]), "model": np.asarray(d["model"])}
+                d = fn(config=config) if "t" not in fn.__code__.co_varnames else fn(t=t, config=config)
+                # 相容不同鍵名
+                tt = np.asarray(d.get("t", t))
+                gr = d.get("h_GR", d.get("gr"))
+                md = d.get("h_model", d.get("model"))
+                if gr is None or md is None:
+                    raise RuntimeError("waveform dict keys not found")
+                return {"t": tt, "gr": np.asarray(gr), "model": np.asarray(md)}
         except Exception:
             continue
-    # Construct from cT(k) if available (simple plane wave packet)
+    # 用 cT_of_k 建構簡單波包（locked）
     try:
         mod = importlib.import_module("palatini_pt.gw.tensor_mode")
         if hasattr(mod, "cT_of_k"):
             k = 0.05
             cT = float(getattr(mod, "cT_of_k")(k=np.array([k]), config=config, locked=True)[0])
-            # GR: phase v=1; model: phase v=cT
             gr = np.sin(k * t)
             model = np.sin(cT * k * t)
             return {"t": t, "gr": gr, "model": model}
@@ -91,6 +97,8 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     try:
         d = _waveforms_via_module(config, t)
     except Exception:
+        if REQUIRE_REAL:
+            raise
         d = _waveforms_fallback(t)
 
     # CSV
@@ -124,11 +132,9 @@ def _load_config_if_needed(path: str | None) -> Dict | None:
         return None
     try:
         from palatini_pt.io.config import load_config  # type: ignore
-
         return load_config(path)
     except Exception:
         import yaml  # type: ignore
-
         with open(path, "r", encoding="utf-8") as f:
             return yaml.safe_load(f)
 

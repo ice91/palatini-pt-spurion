@@ -1,11 +1,16 @@
 # scripts/fig_c2_coeff_compare.py
 # -*- coding: utf-8 -*-
 from __future__ import annotations
-from pathlib import Path
-from typing import Dict, List, Tuple
 
-import numpy as np
+import csv
+import os
+from pathlib import Path
+from typing import Dict, List
+
 import matplotlib.pyplot as plt
+import numpy as np
+
+REQUIRE_REAL = bool(int(os.environ.get("PALPT_REQUIRE_REAL_APIS", "0")))
 
 
 def _apply_style():
@@ -33,7 +38,6 @@ def _write_md5(p: Path):
 
 def _residual_scan_via_module(config: Dict | None, thresholds: np.ndarray) -> np.ndarray:
     import importlib
-
     # order2_checker API variants
     names = [
         ("palatini_pt.equivalence.order2_checker", "residual_scan"),
@@ -54,9 +58,7 @@ def _residual_scan_via_module(config: Dict | None, thresholds: np.ndarray) -> np
         for fnname in ["residual_norm", "compare_residual_norm"]:
             if hasattr(mod, fnname):
                 fn = getattr(mod, fnname)
-                vals = []
-                for th in thresholds:
-                    vals.append(float(fn(config=config, ibp_tol=float(th))))
+                vals = [float(fn(config=config, ibp_tol=float(th))) for th in thresholds]
                 return np.array(vals, dtype=float)
     except Exception:
         pass
@@ -64,10 +66,9 @@ def _residual_scan_via_module(config: Dict | None, thresholds: np.ndarray) -> np
 
 
 def _residual_scan_fallback(thresholds: np.ndarray) -> np.ndarray:
-    # 單調下降到近似機器底噪，僅做 smoke 圖
     floor = 1e-12
     start = 1e-4
-    span = max(1e-12, float(np.ptp(np.asarray(thresholds))))  # NumPy 2.0 友善
+    span = max(1e-12, float(np.ptp(np.asarray(thresholds))))
     vals = start * np.exp(-3.0 * (thresholds - float(np.min(thresholds))) / span)
     return np.maximum(floor, vals)
 
@@ -80,7 +81,8 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     try:
         resids = _residual_scan_via_module(config, thresholds)
     except Exception:
-        # 沒有實作 equivalence 管線時，使用 fallback 生成可畫資料
+        if REQUIRE_REAL:
+            raise
         resids = _residual_scan_fallback(thresholds)
 
     # --- 畫圖 ---
@@ -97,9 +99,8 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     plt.close(fig)
     _write_md5(pdf)
 
-    # --- 輸出資料 ---
+    # --- 資料 ---
     data_path = paths["datadir"] / ("c2_residuals.csv" if which != "smoke" else "c2_residuals_smoke.csv")
-    import csv
     with data_path.open("w", newline="") as f:
         w = csv.writer(f)
         w.writerow(["ibp_tol", "residual_norm"])
@@ -111,5 +112,4 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
 
 
 if __name__ == "__main__":
-    # 允許: python -m scripts.fig_c2_coeff_compare
     print(run(which="smoke"))

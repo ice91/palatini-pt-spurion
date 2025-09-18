@@ -1,11 +1,16 @@
 # scripts/fig_c3_degeneracy.py
 # -*- coding: utf-8 -*-
 from __future__ import annotations
+
+import os
+from hashlib import md5
 from pathlib import Path
 from typing import Dict, List
 
-import numpy as np
 import matplotlib.pyplot as plt
+import numpy as np
+
+REQUIRE_REAL = bool(int(os.environ.get("PALPT_REQUIRE_REAL_APIS", "0")))
 
 
 def _apply_style():
@@ -30,6 +35,7 @@ def _eigs_via_module(config: Dict | None) -> np.ndarray:
     for modname, fnname in [
         ("palatini_pt.gw.degeneracy", "principal_symbol_eigs"),
         ("palatini_pt.gw.degeneracy", "hamiltonian_eigs"),
+        ("palatini_pt.gw.degeneracy", "principal_eigs"),  # 我們提供的名稱
     ]:
         try:
             mod = importlib.import_module(modname)
@@ -42,7 +48,6 @@ def _eigs_via_module(config: Dict | None) -> np.ndarray:
 
 
 def _eigs_fallback(n: int = 40) -> np.ndarray:
-    # 只做 smoke：前幾個為 0，其餘為遞增正值
     zeros = np.zeros(6)
     tail = np.abs(np.random.default_rng(0).normal(loc=0.8, scale=0.5, size=n - len(zeros)))
     return np.sort(np.concatenate([zeros, np.abs(tail)]))
@@ -55,11 +60,12 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     try:
         eigs = _eigs_via_module(config)
     except Exception:
+        if REQUIRE_REAL:
+            raise
         eigs = _eigs_fallback(40)
 
     fig, ax = plt.subplots(figsize=(4.6, 3.2))
-    cont = ax.stem(range(len(eigs)), eigs)  # Matplotlib 3.8+ 不再接受 use_line_collection
-    # 可選的美化
+    cont = ax.stem(range(len(eigs)), eigs)
     try:
         cont.markerline.set_markersize(4)
         for ln in cont.stemlines:
@@ -76,7 +82,6 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     fig.tight_layout()
     fig.savefig(pdf, dpi=200)
     plt.close(fig)
-    from hashlib import md5
     (pdf.with_suffix(pdf.suffix + ".md5")).write_text(md5(pdf.read_bytes()).hexdigest() + "\n")
 
     data_path = paths["datadir"] / ("deg_eigvals.csv" if which != "smoke" else "deg_eigvals_smoke.csv")
