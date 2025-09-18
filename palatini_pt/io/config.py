@@ -237,3 +237,4 @@ def write_run_manifest(
     out_path = output_dir / "run_manifest.json"
     out_path.write_text(_json_dumps(payload), encoding="utf-8")
     return out_path
+
