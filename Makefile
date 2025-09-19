@@ -63,7 +63,16 @@ nb-test:
 	jupyter nbconvert --to notebook --execute --inplace $(NB_IPYNB)
 
 dag:
+	@if ! command -v snakemake >/dev/null 2>&1; then \
+		echo "Error: snakemake not installed. Try 'pip install snakemake' or 'conda install -c conda-forge snakemake'."; \
+		exit 1; \
+	fi
+	@if ! command -v dot >/dev/null 2>&1; then \
+		echo "Error: graphviz 'dot' not found. Install via 'sudo apt-get install graphviz' or 'brew install graphviz' or 'conda install -c conda-forge graphviz'."; \
+		exit 1; \
+	fi
 	snakemake -n --dag | dot -Tpdf > tex/snakemake_dag.pdf
+	@echo "DAG written to tex/snakemake_dag.pdf"
 
 clean:
 	rm -rf .mypy_cache .pytest_cache build dist *.egg-info
