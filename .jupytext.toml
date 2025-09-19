@@ -1,3 +1,4 @@
 default_jupytext_formats = "ipynb,py:percent"
 cell_metadata_filter = "-all"
 notebook_metadata_filter = "kernelspec,language_info"
+formats = "ipynb,py:percent"
