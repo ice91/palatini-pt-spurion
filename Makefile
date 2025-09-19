@@ -71,8 +71,13 @@ dag:
 		echo "Error: graphviz 'dot' not found. Install via 'sudo apt-get install graphviz' or 'brew install graphviz' or 'conda install -c conda-forge graphviz'."; \
 		exit 1; \
 	fi
-	snakemake -n --dag | dot -Tpdf > tex/snakemake_dag.pdf
+	@mkdir -p tex
+	# 產生 DOT（關閉提示；同時丟棄 stderr 以防萬一）
+	snakemake -n --dag --quiet 1> tex/snakemake_dag.dot 2>/dev/null
+	# 轉成 PDF
+	dot -Tpdf tex/snakemake_dag.dot -o tex/snakemake_dag.pdf
 	@echo "DAG written to tex/snakemake_dag.pdf"
+
 
 
 clean:
