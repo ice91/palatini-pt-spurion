@@ -1,4 +1,4 @@
-.PHONY: env dev install precommit test lint fmt figs clean paper paper-test
+.PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test
 
 PYTHON ?= python
 PIP ?= python -m pip
@@ -38,6 +38,14 @@ paper:
 
 paper-test:
 	PALPT_REQUIRE_REAL_APIS=1 pytest -q
+
+nb:
+	jupytext --sync notebooks/*.py
+
+	
+nb-test:
+	jupyter nbconvert --to notebook --execute --inplace notebooks/00_sanity.ipynb
+	jupyter nbconvert --to notebook --execute --inplace notebooks/10_c2_symbolic_demo.ipynb
 
 clean:
 	rm -rf .mypy_cache .pytest_cache build dist *.egg-info
