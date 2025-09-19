@@ -118,6 +118,40 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     ax.set_ylabel("h")
     ax.set_title("GW waveform overlay")
     ax.legend()
+
+    # ---- 指標：max|Δh|、RMSE、相位差(以主頻估) ----
+    try:
+        h1 = d["gr"].astype(float)
+        h2 = d["model"].astype(float)
+        tt = d["t"].astype(float)
+        # 幅度差與 RMSE
+        max_abs = float(np.max(np.abs(h2 - h1)))
+        rmse = float(np.sqrt(np.mean((h2 - h1)**2)))
+        # 估時間位移：互相關最大點
+        s1 = h1 - np.mean(h1)
+        s2 = h2 - np.mean(h2)
+        corr = np.correlate(s1, s2, mode="full")
+        lag  = int(np.argmax(corr) - (len(s1) - 1))
+        dt   = float((tt[1] - tt[0]) * lag)
+        # 主頻：用 FFT 取最大頻率
+        n = len(h1)
+        dt0 = float(tt[1]-tt[0])
+        freq = np.fft.rfftfreq(n, d=dt0)
+        amp  = np.abs(np.fft.rfft(h1))
+        if len(freq) > 1:
+            ipeak = int(np.argmax(amp[1:]) + 1)
+            f0 = float(freq[ipeak])
+        else:
+            f0 = 0.0
+        phase = float(2*np.pi*f0*dt) if f0 > 0 else 0.0
+        note = (f"max|Δh|={max_abs:.2e}\n"
+                f"RMSE={rmse:.2e}\n"
+                f"Δt≈{dt:.2e},  Δφ≈{phase:.2e} rad")
+        ax.text(0.98, 0.05, note, transform=ax.transAxes,
+                ha="right", va="bottom", fontsize=9)
+    except Exception:
+        pass
+    
     fig.tight_layout()
     pdf_path = paths["pdf"] / "fig7_gw_waveform_overlay.pdf"
     fig.savefig(pdf_path, bbox_inches="tight")

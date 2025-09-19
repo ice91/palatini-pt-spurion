@@ -53,6 +53,9 @@ def build_from_config(config: dict | None):
     # 交給庫函式做理論值
     out = flux_ratio_FRW(R, {"flux": {"sigma": sigma, "c": c}})
     # out 期望含有：out["R"], out["R_DBI_CM"]
+    R = np.asarray(out["R"], dtype=float)
+    Q = np.asarray(out["R_DBI_CM"], dtype=float)
+    eps = np.finfo(float).eps
 
     # --- CSV ---
     csv_path = os.path.join(DATA_DIR, CSV_NAME)
@@ -65,11 +68,34 @@ def build_from_config(config: dict | None):
     # --- PDF ---
     pdf_path = os.path.join(PDF_DIR, PDF_NAME)
     plt.figure(figsize=(4.8, 3.2), dpi=180)
-    plt.plot(out["R"], out["R_DBI_CM"], lw=1.6, label=r"$\mathcal{R}_{X/Y}(R)$")
+    #plt.plot(out["R"], out["R_DBI_CM"], lw=1.6, label=r"$\mathcal{R}_{X/Y}(R)$")
+    plt.plot(R, Q, lw=1.6, label=r"$\mathcal{R}_{X/Y}(R)$")
     plt.axhline(1.0, ls="--", lw=1.0, label="unity")
     plt.xlabel(r"$R$")
     plt.ylabel(r"$\mathcal{R}_{X/Y}$")
     plt.title(r"Boundary flux ratio $\to 1$ with $R^{-\sigma}$ tail")
+    #plt.legend(frameon=False)
+    # ---- 擬合 R^{-sigma} 的收斂率 ----
+    try:
+        fit_Rmin = float(_cfg_get(config, ["flux", "fit", "Rmin"], R.min() + 0.5*(R.max()-R.min())))
+        mask = (R >= fit_Rmin) & (np.abs(Q-1.0) > 1e-14)
+        if np.any(mask):
+            X = np.log(R[mask])
+            Y = np.log(np.abs(Q[mask] - 1.0) + eps)
+            m, b = np.polyfit(X, Y, 1)     # Y ≈ m X + b
+            sigma_hat = -m
+            A_hat = np.exp(b)
+            # 以尾端平均號誌的符號還原 ±
+            sgn = np.sign(np.mean(Q[mask] - 1.0))
+            Qfit = 1.0 + sgn * A_hat * (R**(-sigma_hat))
+            plt.plot(R, Qfit, ls=":", lw=1.2, label=rf"fit: $1+A R^{{-\hat\sigma}}$, $\hat\sigma$≈{sigma_hat:.2f}")
+            plt.text(
+                0.02, 0.05, rf"fit window: $R\ge {fit_Rmin:g}$",
+                transform=plt.gca().transAxes, fontsize=8
+            )
+    except Exception:
+        pass
+
     plt.legend(frameon=False)
     plt.tight_layout()
     plt.savefig(pdf_path)

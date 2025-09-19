@@ -89,8 +89,22 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     ax.set_ylabel(r"$c_T(k)$")
     ax.set_title("Dispersion (smoke)" if which == "smoke" else "Dispersion")
     ax.grid(True, ls=":", alpha=0.6)
+    #ax.legend()
+    # ---- 容差帶 around 1 ----
+    ct_tol = float((config or {}).get("c3", {}).get("ct_tol", 1e-3))
+    ax.fill_between(k, 1.0-ct_tol, 1.0+ct_tol, alpha=0.12, label=f"±{ct_tol:g} band")
     ax.legend()
-
+    # ---- 註記最大偏差 ----
+    try:
+        d_locked = np.abs(cT_locked - 1.0)
+        d_unlk   = np.abs(cT_unlocked - 1.0)
+        note = (f"max|Δ_locked|={np.max(d_locked):.2e}\n"
+                f"max|Δ_unlocked|={np.max(d_unlk):.2e}")
+        ax.text(0.98, 0.05, note, transform=ax.transAxes,
+                ha="right", va="bottom", fontsize=9)
+    except Exception:
+        pass
+    
     pdf = paths["pdfdir"] / ("fig5_c3_dispersion.pdf" if which != "smoke" else "fig5_c3_dispersion_smoke.pdf")
     fig.tight_layout()
     fig.savefig(pdf, dpi=200)

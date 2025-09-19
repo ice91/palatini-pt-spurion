@@ -96,6 +96,18 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     ax.set_xlabel("alignment angle (rad)")
     ax.set_ylabel("PDF")
     ax.set_title("C1: alignment of $T_\\mu$ and $\\partial_\\mu\\epsilon$")
+    # ---- 容差線 & 註記統計 ----
+    ang_tol = float((config or {}).get("c1", {}).get("angle_tol", 1e-3))
+    ax.axvline(ang_tol, ls="--", lw=1.0, color="C1", label=f"tol={ang_tol:g}")
+    mean = float(np.mean(angles))
+    p95  = float(np.percentile(angles, 95))
+    ax.text(
+        0.98, 0.92,
+        f"mean={mean:.2e}\n95%={p95:.2e}",
+        transform=ax.transAxes, ha="right", va="top", fontsize=9
+    )
+    if ang_tol is not None:
+        ax.legend(frameon=False, fontsize=9)
     fig.tight_layout()
     pdf_path = paths["pdf"] / "fig2_c1_alignment.pdf"
     fig.savefig(pdf_path, bbox_inches="tight")

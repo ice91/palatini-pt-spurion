@@ -92,6 +92,23 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     ax.set_ylabel(r"$\|\Delta\|$")
     ax.set_title("C2 residual (smoke)" if which == "smoke" else "C2 residual scan")
     ax.grid(True, ls=":", alpha=0.6)
+    
+    # ---- 目標殘差水平線 + 達成標註 ----
+    resid_goal = float((config or {}).get("equivalence", {}).get("resid_goal", 1e-10))
+    ax.axhline(resid_goal, ls="--", lw=1.0, color="C1", label=f"goal={resid_goal:.1e}")
+    try:
+        # 找到第一個低於目標的 IBP 容差
+        mask = resids <= resid_goal
+        if np.any(mask):
+            th_hit = thresholds[np.argmax(mask)]
+            ax.axvline(th_hit, ls=":", lw=1.0, color="C2")
+            ax.text(
+                th_hit, resid_goal, f"  hit @ {th_hit:.1e}",
+                va="bottom", ha="left", fontsize=8, color="C2"
+            )
+        ax.legend(frameon=False, fontsize=9)
+    except Exception:
+        pass
 
     pdf = paths["pdfdir"] / ("fig3_c2_coeff_compare.pdf" if which != "smoke" else "fig3_c2_coeff_compare_smoke.pdf")
     fig.tight_layout()

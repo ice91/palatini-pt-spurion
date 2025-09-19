@@ -112,6 +112,21 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     ax.set_yscale("log")
     ax.set_ylabel("magnitude (log)")
     ax.set_title("C1: torsion components")
+    # ---- 註記數值比 ----
+    eps = 1e-300
+    txt_lines = []
+    if axial > 0:
+        txt_lines.append(f"trace/axial ≈ {trace/max(axial, eps):.2e}")
+    else:
+        txt_lines.append("axial ≈ 0")
+    if tensor > 0:
+        txt_lines.append(f"trace/tensor ≈ {trace/max(tensor, eps):.2e}")
+    else:
+        txt_lines.append("tensor ≈ 0")
+    ax.text(
+        0.98, 0.95, "\n".join(txt_lines),
+        transform=ax.transAxes, ha="right", va="top", fontsize=9
+    )
     fig.tight_layout()
     pdf_path = paths["pdf"] / "fig1_c1_pure_trace.pdf"
     fig.savefig(pdf_path, bbox_inches="tight")

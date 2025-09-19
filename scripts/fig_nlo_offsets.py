@@ -87,6 +87,23 @@ def _plot_pdf(out: dict) -> str:
         plt.loglog(kpos, ref, ls="--", lw=1.0, label=r"$\propto k^2$")
 
         plt.ylabel(r"$|\delta c_T^2|$")
+        # ---- 斜率擬合（log–log）與 Λ 估計 ----
+        try:
+            X = np.log(kpos)
+            Y = np.log(ypos)
+            m, b = np.polyfit(X, Y, 1)   # Y ≈ m X + b
+            # 從 δcT^2 = bcoef * k^2 / Λ^2 推回 Λ^2 的 robust 估計
+            # 需要配置裡的 bcoef（名為 Ricci_deps_deps_eff）
+            bcoef = float(_cfg_get(globals().get("CFG_CACHE", None), ["nlo", "coeffs", "Ricci_deps_deps_eff"], 0.0))
+            if bcoef > 0:
+                lam2_est = np.median(bcoef*(kpos**2)/ypos)
+                lam_est  = np.sqrt(lam2_est)
+                txt = rf"slope≈{m:.2f},  $\hat\Lambda$≈{lam_est:.2e}"
+            else:
+                txt = rf"slope≈{m:.2f}"
+            plt.text(0.03, 0.05, txt, transform=plt.gca().transAxes, fontsize=9)
+        except Exception:
+            pass
     else:
         # 全為 0 或只有 1 個正值：避免 log-scaling 警告，改線性 y 軸
         plt.plot(k, yabs, lw=1.6, label=r"$|\delta c_T^2(k)|\approx 0$")

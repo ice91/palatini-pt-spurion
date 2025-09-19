@@ -9,6 +9,7 @@ from typing import Dict, List
 
 import matplotlib.pyplot as plt
 import numpy as np
+from matplotlib.ticker import MaxNLocator
 
 REQUIRE_REAL = bool(int(os.environ.get("PALPT_REQUIRE_REAL_APIS", "0")))
 
@@ -77,6 +78,20 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     ax.set_ylabel("eigenvalue")
     ax.set_title("DoF spectrum (smoke)" if which == "smoke" else "DoF spectrum")
     ax.grid(True, ls=":", alpha=0.5)
+
+    ax.xaxis.set_major_locator(MaxNLocator(integer=True))
+    # ---- 有效非零的閾值與計數 ----
+    deg_tol = float((config or {}).get("c3", {}).get("deg_tol", 1e-10))
+    ax.axhline(deg_tol, ls="--", lw=1.0, color="C1", label=f"tol={deg_tol:.1e}")
+    try:
+        n_phys = int(np.sum(eigs > deg_tol))
+        ax.text(
+            0.98, 0.92, f"#phys ≈ {n_phys}",
+            transform=ax.transAxes, ha="right", va="top", fontsize=9
+        )
+        ax.legend(frameon=False, fontsize=9)
+    except Exception:
+        pass
 
     pdf = paths["pdfdir"] / ("fig6_c3_degeneracy.pdf" if which != "smoke" else "fig6_c3_degeneracy_smoke.pdf")
     fig.tight_layout()

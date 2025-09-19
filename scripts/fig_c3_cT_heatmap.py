@@ -148,6 +148,16 @@ def run(config: Dict | None = None, which: str = "full") -> Dict[str, List[str]]
     ax.set_title(r"C3: $|c_T-1|$ heatmap")
     cb = fig.colorbar(im, ax=ax)
     cb.set_label("|c_T-1|")
+    # ---- 等高線：|c_T - 1| = tol ----
+    ct_tol = float((config or {}).get("c3", {}).get("ct_tol", 1e-3))
+    try:
+        CS = ax.contour(
+            X, Y, np.abs(cT - 1.0),
+            levels=[ct_tol], colors="w", linewidths=1.2
+        )
+        ax.clabel(CS, fmt={ct_tol: f"tol={ct_tol:g}"}, inline=True, fontsize=8)
+    except Exception:
+        pass
 
     # optional locking overlay（若使用者提供 locking_curve）
     try:
