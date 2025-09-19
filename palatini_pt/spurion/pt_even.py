@@ -34,8 +34,11 @@ of the pipeline; it just classifies & filters strings.
 from __future__ import annotations
 
 import re
+import numpy as np
 from dataclasses import dataclass, field
-from typing import Dict, Iterable, List, Sequence, Tuple
+from typing import Dict, Iterable, List, Sequence, Tuple, Any
+
+
 
 
 # -----------------------------
@@ -216,6 +219,24 @@ def assert_pt_even(
             odd.append(s)
     if odd:
         raise AssertionError("Found PT-odd monomials (project them out): " + ", ".join(odd))
+    
+# ---- numeric scalar projector (back-compat for notebooks) ----
+
+def project_scalar(x: Any):
+    """
+    Scalar-level PT projector for numeric inputs.
+    Notebook 00_sanity expects Π_PT[(∂ε)^2] → real scalar Seps.
+    We return the real part, preserving arrays; scalar → float.
+
+    Accepts: Python scalar / numpy scalar / ndarray
+    Returns: float if scalar input, else ndarray (real-valued)
+    """
+    arr = np.asarray(x)
+    out = np.real(arr)
+    # scalar → float
+    if out.shape == ():
+        return float(out)
+    return out
 
 
 __all__ = [
@@ -224,4 +245,5 @@ __all__ = [
     "is_pt_even",
     "pt_project",
     "assert_pt_even",
+    "project_scalar",   # <— 新增這行
 ]
