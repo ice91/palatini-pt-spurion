@@ -38,3 +38,15 @@ jobs:
           palpt --help
           palpt --version
           palpt figs --which smoke
+
+      - name: Notebook smoke
+        run: |
+          pip install jupytext nbconvert
+          make nb
+          make nb-test
+
+      - name: DAG render
+        if: always()
+        run: |
+          pip install snakemake graphviz
+          make dag

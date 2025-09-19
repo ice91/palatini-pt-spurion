@@ -1,0 +1,8 @@
+% figB_conn_decomp.tikz
+\begin{tikzpicture}[>=stealth, node distance=14mm, every node/.style={font=\small}]
+\node (eq) {$\omega = \lc\!\omega + K(T)$};
+\node[below=of eq, draw, rounded corners, align=left, xshift=-12mm] (Tdec) {$T_\mu$ (trace)\\ $S^\mu$ (axial)\\ $q_{\lambda\mu\nu}$ (traceless)};
+\node[below=of eq, draw, rounded corners, align=left, xshift=24mm] (C1) {C1: $S^\mu=0$, $q=0$,\\ $T_\mu=3\eta\,\partial_\mu\epsilon$};
+
+\draw[->] (Tdec.east) -- (C1.west);
+\end{tikzpicture}

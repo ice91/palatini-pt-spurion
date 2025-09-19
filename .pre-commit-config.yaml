@@ -33,3 +33,16 @@ repos:
     rev: 0.7.1
     hooks:
       - id: nbstripout
+
+  - repo: https://github.com/mwouts/jupytext
+    rev: v1.16.4
+    hooks:
+      - id: jupytext
+        files: ^notebooks/.*\.(ipynb|py)$
+        args: ["--sync"]
+
+  - repo: https://github.com/kynan/nbstripout
+    rev: 0.6.1
+    hooks:
+      - id: nbstripout
+        files: \.ipynb$
