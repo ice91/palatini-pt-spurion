@@ -72,12 +72,14 @@ dag:
 		exit 1; \
 	fi
 	@mkdir -p tex
-	# 產生 DOT（關閉提示；同時丟棄 stderr 以防萬一）
-	snakemake -n --dag --quiet 1> tex/snakemake_dag.dot 2>/dev/null
-	# 轉成 PDF
-	dot -Tpdf tex/snakemake_dag.dot -o tex/snakemake_dag.pdf
+	# 把 digraph 之前的提示行全部濾掉，只留下合法 DOT
+	@snakemake -n --dag 2>/dev/null | sed -n '/^digraph[[:space:]]/,$$p' > tex/snakemake_dag.dot
+	@if ! grep -q '^digraph' tex/snakemake_dag.dot; then \
+		echo "Error: failed to capture DOT from snakemake (no 'digraph' line)."; \
+		exit 1; \
+	fi
+	@dot -Tpdf tex/snakemake_dag.dot -o tex/snakemake_dag.pdf
 	@echo "DAG written to tex/snakemake_dag.pdf"
-
 
 
 clean:
