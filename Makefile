@@ -39,13 +39,28 @@ paper:
 paper-test:
 	PALPT_REQUIRE_REAL_APIS=1 pytest -q
 
-nb:
-	jupytext --sync notebooks/*.py
+# --- Notebook helpers ---
+NB_IPYNB := $(wildcard notebooks/*.ipynb)
 
+nb:
+	@if ! command -v jupytext >/dev/null 2>&1; then \
+		echo "Error: jupytext not installed. Run 'make install' or 'pip install jupytext'."; \
+		exit 1; \
+	fi
+	@if [ -z "$(NB_IPYNB)" ]; then \
+		echo "No notebooks found under notebooks/"; exit 0; \
+	fi
+	jupytext --sync $(NB_IPYNB)
 
 nb-test:
-	jupyter nbconvert --to notebook --execute --inplace notebooks/00_sanity.ipynb
-	jupyter nbconvert --to notebook --execute --inplace notebooks/10_c2_symbolic_demo.ipynb
+	@if ! command -v jupyter >/dev/null 2>&1; then \
+		echo "Error: jupyter not installed. Run 'make install'."; \
+		exit 1; \
+	fi
+	@if [ -z "$(NB_IPYNB)" ]; then \
+		echo "No notebooks to run"; exit 0; \
+	fi
+	jupyter nbconvert --to notebook --execute --inplace $(NB_IPYNB)
 
 dag:
 	snakemake -n --dag | dot -Tpdf > tex/snakemake_dag.pdf

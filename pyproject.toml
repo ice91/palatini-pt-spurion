@@ -37,6 +37,12 @@ dev = [
   "flake8>=7.0.0",
   "nbstripout>=0.7.1",
   "types-PyYAML>=6.0.12",
+   # 新增這幾個：
+  "jupyter>=1.0.0",
+  "nbconvert>=7.16.0",
+  "nbclient>=0.10.0",
+  "jupytext>=1.16.4",
+  "ipykernel>=6.29.0",
 ]
 
 [project.scripts]
