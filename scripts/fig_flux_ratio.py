@@ -90,7 +90,7 @@ def build_from_config(config: dict | None):
             Qfit = 1.0 + sgn * A_hat * (R**(-sigma_hat))
             plt.plot(R, Qfit, ls=":", lw=1.2, label=rf"fit: $1+A R^{{-\hat\sigma}}$, $\hat\sigma$≈{sigma_hat:.2f}")
             plt.text(
-                0.02, 0.05, rf"fit window: $R\ge {fit_Rmin:g}$",
+                0.02, 0.05, rf"fit window: $R\geq {fit_Rmin:g}$",
                 transform=plt.gca().transAxes, fontsize=8
             )
     except Exception:
