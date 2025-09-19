@@ -314,6 +314,33 @@ def make(
         return CustomProfile(dim=dim, metric=metric, **kwargs)
     raise ValueError(f"Unknown spurion kind: {kind!r}")
 
+# --- convenience helpers used by notebooks ---
+
+def constant_gradient(vec: ArrayLike, *, normalize: bool = False) -> Array:
+    """
+    Return a constant ∂ε vector (as a 1D numpy array).
+    If normalize=True, return vec / ||vec||.
+    """
+    v = _as_1d(vec)
+    if normalize:
+        n = float(np.linalg.norm(v))
+        if n == 0.0:
+            raise ValueError("cannot normalize zero vector")
+        v = v / n
+    return v.copy()
+
+
+def seps_from_gradient(vec: ArrayLike, metric: Optional[ArrayLike] = None) -> float:
+    """
+    Compute Σ ≡ Π_PT[(∂ε)^2] = g^{μν} (∂ε)_μ (∂ε)_ν
+    for a constant gradient and a given contravariant metric g^{μν}.
+    If metric is None, use identity.
+    """
+    v = _as_1d(vec)
+    G = _as_metric(metric, v.size)
+    return float(v @ G @ v)
+
+
 
 __all__ = [
     "BaseProfile",
@@ -322,5 +349,7 @@ __all__ = [
     "GaussianRadialProfile",
     "CustomProfile",
     "make",
+    "constant_gradient",
+    "seps_from_gradient",
 ]
 
