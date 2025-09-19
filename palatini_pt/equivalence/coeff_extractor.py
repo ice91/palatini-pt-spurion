@@ -33,3 +33,44 @@ def residual_norm(*, config: Dict | None, ibp_tol: float) -> float:
     vs = coeff_vectors(config=config, ibp_tol=ibp_tol)
     pairs = [("dbi", "closed"), ("dbi", "cspp"), ("closed", "cspp")]
     return float(max(np.linalg.norm(vs[a] - vs[b]) for a, b in pairs))
+
+# --- symbolic helper for notebooks ---
+from typing import Any
+
+try:
+    import sympy as sp  # optional; used when notebooks pass sympy symbols
+except Exception:  # pragma: no cover
+    sp = None
+
+def reduce_to_IT(*, route: str, lam: Any, eta: Any, Seps: Any):
+    """
+    Return the quadratic reduction A_* * I_T as a symbolic/arith expression.
+
+    Parameters
+    ----------
+    route : {'dbi', 'closed_metric', 'cspp', 'closed'}
+        Which chain to use. 'closed' is accepted as alias of 'closed_metric'.
+    lam, eta, Seps : numbers or sympy symbols
+        Book-keeping λ, alignment η (>0), and projected Seps ≡ Π_PT[(∂ε)^2].
+
+    Returns
+    -------
+    expr : same numeric type as inputs (sympy if provided)
+        A_* * I_T with A_* = lam**2 / 8 and I_T = -6 * eta**2 * Seps.
+    """
+    key = route.lower().replace("-", "_")
+    if key not in {"dbi", "closed_metric", "cspp", "closed"}:
+        raise ValueError(f"unknown route: {route!r}")
+    # alias
+    if key == "closed":
+        key = "closed_metric"
+
+    # A_* is identical for DBI / closed-metric / CS^{+} at quadratic order
+    A_star = (lam ** 2) / 8
+
+    # I_T under C1: pure-trace torsion ⇒ I_T = -6 η^2 Seps
+    I_T = -6 * (eta ** 2) * Seps
+
+    if sp is not None and any(isinstance(x, sp.Basic) for x in (lam, eta, Seps)):
+        return sp.simplify(A_star * I_T)
+    return A_star * I_T
