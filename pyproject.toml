@@ -45,6 +45,7 @@ dev = [
   "ipykernel>=6.29.0",
   "snakemake>=7",
   "graphviz>=0.20",  # 只是一層 Python binding；系統還是要裝 graphviz/dot
+  "pandas>=2.2",
 ]
 
 [project.scripts]
