@@ -81,6 +81,23 @@ dag:
 	@dot -Tpdf tex/snakemake_dag.dot -o tex/snakemake_dag.pdf
 	@echo "DAG written to tex/snakemake_dag.pdf"
 
+# --- Data artifacts (App. D) ---
+mixing:
+	@$(PYTHON) -m scripts.mixing_matrix_extract \
+		--from-json configs/coeffs/mixing_matrix_FRW.json \
+		--out-csv   figs/data/mixing_matrix.csv \
+		--out-meta  figs/data/mixing_matrix_meta.json \
+		--lock-tol  1e-6 \
+		--require-lock
+
+data-test:
+	@$(PYTHON) -m scripts.mixing_matrix_extract \
+		--from-json configs/coeffs/mixing_matrix_FRW.json \
+		--out-csv   figs/data/mixing_matrix.csv \
+		--out-meta  figs/data/mixing_matrix_meta.json \
+		--lock-tol  1e-9 \
+		--require-lock \
+		--no-summary
 
 clean:
 	rm -rf .mypy_cache .pytest_cache build dist *.egg-info
