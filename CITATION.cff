@@ -8,7 +8,6 @@ authors:
   - family-names: Chen
     given-names: Chien-Chih
     email: rocky@cht.com.tw
-    affiliation: "Information & Communications Security Laboratory, Chunghwa Telecom Laboratories"
 keywords:
   - Palatini
   - torsion
@@ -31,4 +30,3 @@ preferred-citation:
     - family-names: Chen
       given-names: Chien-Chih
       email: rocky@cht.com.tw
-      affiliation: "Information & Communications Security Laboratory, Chunghwa Telecom Laboratories"
