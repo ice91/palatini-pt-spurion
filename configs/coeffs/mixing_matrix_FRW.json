@@ -1,30 +1,4 @@
 {
-  "background": {
-    "type": "FRW",
-    "gauge": "unitary",
-    "homogeneous_spurion": true
-  },
-  "normalization": {
-    "sigma_scheme": true,
-    "rank_one_scale_23": true,      // 使用 (2/3)·λ·τ 規模在 ROD/CM 兩條鏈
-    "trace_lock_eta": 1.0,          // 取 η>0 的物理解
-    "TrT2": 0.75                     // Tr(𝒯^2)=3/4
-  },
-  "fit": {
-    "parameters": ["H", "Upsilon"],
-    "grid": [
-      {"H": 0.00, "Upsilon": 0.00},  // 靜態點（便於定 c0）
-      {"H": 0.10, "Upsilon": 0.00},  // 只改 H
-      {"H": 0.00, "Upsilon": 0.20}   // 只改 Upsilon
-    ],
-    "symbolic": false                 // 若實作支援 SymPy，可設 true 走符號；否則用數值擬合
-  },
-  "projector": {
-    "apply_PT_scalar_projector": true
-  },
-  "outputs": {
-    "csv": "figs/data/mixing_matrix.csv",
-    "json": "figs/data/mixing_matrix_meta.json",
-    "print_summary": true
-  }
+  "N":    { "ROD": 0.75, "CM": -0.50 },
+  "divN": { "ROD": 0.20, "CM":  0.35 }
 }
