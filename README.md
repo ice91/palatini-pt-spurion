@@ -6,16 +6,12 @@ This repo accompanies the manuscript and reproduces all C1/C2/C3 results and fig
 
 **Highlights**
 
-- ✅ **Analytic claims** (C1/C2/C3) organized as paper-checkable identities
-    
-- ✅ **One-command** figure regeneration (`make paper`)
-    
-- ✅ **Full test suite** (`41 passed`) and CI-ready
-    
-- ✅ **Notebooks** for demonstrations + **Colab** viewing
-    
-- ✅ **Snakemake DAG** of the figure pipeline (`tex/snakemake_dag.pdf`)
-    
+- ✅ **Analytic claims** (C1/C2/C3) organized as paper-checkable identities  
+- ✅ **One-command** figure regeneration (`make paper`)  
+- ✅ **Full test suite** (**44 passed**) and CI-ready  
+- ✅ **Notebooks** for demonstrations + **Colab** viewing  
+- ✅ **Snakemake DAG** of the figure pipeline (`tex/snakemake_dag.pdf`)  
+- ✅ **App. D**: 2×2 **mixing matrix artifact + locking check**（`make mixing`）
 
 ---
 
@@ -36,7 +32,7 @@ make paper
 
 # Run tests exactly as used for the paper
 make paper-test
-```
+````
 
 Expected output (abridged):
 
@@ -46,7 +42,7 @@ Generated:
   ...
   [pdfs] figs/pdf/fig9_flux_ratio.pdf
   [data] figs/data/*.csv, *.npz
-41 passed in ~3–4s
+44 passed in ~5–6s
 ```
 
 ---
@@ -78,18 +74,24 @@ palpt --help
 
 |Task|Command|Output|
 |---|---|---|
-|Generate all figures & data (paper grids)|`make paper`|`figs/pdf/fig*.pdf`, `figs/data/*`|
-|Run the exact paper test suite|`make paper-test`|`41 passed`|
-|Sync notebooks (Jupytext)|`make nb`|`notebooks/*.py` updated|
-|Execute notebooks headless|`make nb-test`|notebooks executed in-place|
-|Build the pipeline DAG (requires `snakemake`, `graphviz`)|`make dag`|`tex/snakemake_dag.pdf`|
+|**Generate all figures & data (paper grids)**|`make paper`|`figs/pdf/fig*.pdf`, `figs/data/*`|
+|**Run the exact paper test suite**|`make paper-test`|`44 passed`|
+|**App. D mixing matrix + locking check**|`make mixing`|`figs/data/mixing_matrix.csv`、`figs/data/mixing_matrix_meta.json`（含 `.md5`），並打印鎖定比 `w*_ROD:w*_CM`|
+|**Sync notebooks (Jupytext)**|`make nb`|`notebooks/*.py` updated|
+|**Execute notebooks headless**|`make nb-test`|notebooks executed in-place|
+|**Build the pipeline DAG**|`make dag`|`tex/snakemake_dag.pdf`|
 
-> 已內附 **預先生成** 的圖檔與中間數據（`figs/`），可直接編排論文。想完全重現就跑 `make paper`。
+
+**Note (DAG dependencies).** `make dag` 需要：
+
+- Python 套件：`snakemake`, `graphviz`（py binding 已在 `.[dev]`）；
+    
+- 系統層的 `dot` 可執行檔：如 `sudo apt-get install graphviz` 或 `brew install graphviz`。
+    
 
 ---
 
 ## Google Colab (view/run the notebooks)
-
 
 - 00 — sanity checks  
     [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ice91/palatini-pt-spurion/blob/main/notebooks/00_sanity.ipynb)
@@ -112,11 +114,12 @@ palpt --help
 
 # Option 2: clone + 本地 editable 安裝（便於開發）
 !git clone https://github.com/ice91/palatini-pt-spurion.git
-%cd <REPO>
+%cd palatini-pt-spurion
 !pip -q install -e .
 ```
 
-> 筆記僅依賴 `numpy/sympy/matplotlib` 等常見庫，Colab 原生可用；不需要 `graphviz/snakemake`。
+> 筆記僅依賴 `numpy/sympy/matplotlib` 等常見庫，Colab 原生可用；不需要 `graphviz/snakemake`。  
+> 在 matplotlib 標題/標籤含 LaTeX 字串時請使用 raw string，例如：`r"$\\mathcal R_{X/Y}$"`。
 
 ---
 
@@ -135,14 +138,14 @@ palpt figs --which smoke                                    # 快速 smoke
 ```
 palatini-pt-spurion/
 ├─ palatini_pt/           # 核心邏輯（algebra / palatini / equivalence / gw / spurion / io）
-├─ scripts/               # 產圖腳本（fig1–fig9 + make_all_figs）
-├─ configs/               # 掃描與係數設定（含 paper_grids.yaml）
-├─ figs/                  # 產出 PDF/PNG 與中間數據（含 .md5）
+├─ scripts/               # 產圖腳本（fig1–fig9 + make_all_figs + mixing_matrix_extract.py）
+├─ configs/               # 掃描與係數設定（含 paper_grids.yaml，coeffs/*）
+├─ figs/                  # 產出 PDF/PNG 與中間數據（含 .md5；含 mixing_matrix.csv）
 ├─ notebooks/             # Colab 友善展示 notebook
-├─ tests/                 # 單元與整合測試（41 tests）
+├─ tests/                 # 單元與整合測試（**44 tests**，含 test_mixing_matrix_extract.py）
 ├─ tex/                   # Snakemake DAG、TikZ 原檔
-├─ Snakefile             # 圖片產製規則（fig8/fig9 例）
-├─ Makefile              # 一鍵：paper / tests / nb / dag
+├─ Snakefile              # 圖片產製規則
+├─ Makefile               # 一鍵：paper / tests / nb / dag / mixing
 ├─ environment.yml, pyproject.toml, CITATION.cff, LICENSE
 ```
 
@@ -150,7 +153,7 @@ palatini-pt-spurion/
 
 ## Snakemake DAG
 
-產製流程圖（需 `snakemake` 與 `graphviz`）：
+產製流程圖（需 `snakemake` 與系統 `dot`）：
 
 ```bash
 make dag
@@ -163,7 +166,9 @@ make dag
 
 - Figures regenerate with `make paper` under the pinned environment.
     
-- Tests pass with `make paper-test` (41 tests).
+- Tests pass with `make paper-test` (**44 tests**).
+    
+- App. D: `make mixing` 生成 `mixing_matrix.csv` 與 meta，並檢查兩條混合條件的比例一致（C3 鎖定）。
     
 - Static artifacts provided in `figs/` with `.md5` sidecars.
     
