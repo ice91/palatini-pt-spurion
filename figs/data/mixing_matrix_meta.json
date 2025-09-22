@@ -1,0 +1,33 @@
+{
+  "timestamp_unix": 1758421125.0506608,
+  "inputs": {
+    "mu": {
+      "N": {
+        "ROD": 0.75,
+        "CM": -0.5
+      },
+      "divN": {
+        "ROD": 0.2,
+        "CM": -0.13333333333333333
+      }
+    }
+  },
+  "outputs": {
+    "csv": "figs/data/mixing_matrix.csv",
+    "csv_md5": "figs/data/mixing_matrix.csv.md5",
+    "meta": "figs/data/mixing_matrix_meta.json"
+  },
+  "locking_check": {
+    "ratio_N": 0.6666666666666666,
+    "ratio_divN": 0.6666666666666666,
+    "abs_diff": 0.0,
+    "tol": 1e-06,
+    "lock_ok": true
+  },
+  "locked_weights": {
+    "w_ROD_star_over_w_CM_star": 0.6666666666666666,
+    "w_ROD_star": 0.6666666666666666,
+    "w_CM_star": 1.0
+  },
+  "notes": "Locking requires the two ratios to match within tol. See paper Sec. VI:  w_ROD*/w_CM* = -mu_CM(mu_N)/mu_ROD(mu_N) = -mu_CM(divN)/mu_ROD(divN)."
+}
