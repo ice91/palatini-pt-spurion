@@ -4,10 +4,12 @@ title: "palatini-pt-spurion: Palatini × PT-even + spurion reproducible codebase
 version: "0.1.0"
 date-released: "2025-09-20"
 license: MIT
+
 authors:
   - family-names: Chen
     given-names: Chien-Chih
     email: rocky@cht.com.tw
+
 keywords:
   - Palatini
   - torsion
@@ -16,11 +18,19 @@ keywords:
   - gravitation
   - gravitational waves
   - effective field theory
+  - reproducibility
+
 abstract: |
   Reproducible research codebase for the Palatini × PT-even + spurion framework.
   It implements and tests the C1/C2/C3 results (pure-trace torsion uniqueness,
   three-chain equivalence, and exact luminal tensor sector) and generates the
   figures used in the companion manuscript.
+
+# Optional but recommended: link the repo/release
+repository-code: "https://github.com/ice91/palatini-pt-spurion"
+url: "https://github.com/ice91/palatini-pt-spurion"
+# doi: "10.5281/zenodo.REPLACE_ME"   # if you later mint a Zenodo DOI for a release
+
 preferred-citation:
   type: software
   title: "palatini-pt-spurion: Palatini × PT-even + spurion reproducible codebase (C1/C2/C3)"
@@ -30,3 +40,18 @@ preferred-citation:
     - family-names: Chen
       given-names: Chien-Chih
       email: rocky@cht.com.tw
+  url: "https://github.com/ice91/palatini-pt-spurion"
+  # doi: "10.5281/zenodo.REPLACE_ME"
+
+references:
+  - type: article
+    title: "Guaranteed Tensor Luminality from Symmetry: A PT-Even Palatini Torsion Framework"
+    authors:
+      - family-names: Chen
+        given-names: Chien-Chih
+    doi: "10.3390/sym18010170"
+    journal: "Symmetry"
+    # year: 2026
+    # volume: 18
+    # issue: 1
+    # pages: "170"
