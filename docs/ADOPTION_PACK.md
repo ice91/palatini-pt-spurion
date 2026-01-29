@@ -36,7 +36,7 @@ conda env create -f environment.yml
 conda activate palpt
 make paper
 make paper-test
-````
+```
 
 ### Option B — venv/pip
 

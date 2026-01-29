@@ -26,10 +26,9 @@ abstract: |
   three-chain equivalence, and exact luminal tensor sector) and generates the
   figures used in the companion manuscript.
 
-# Optional but recommended: link the repo/release
 repository-code: "https://github.com/ice91/palatini-pt-spurion"
 url: "https://github.com/ice91/palatini-pt-spurion"
-# doi: "10.5281/zenodo.REPLACE_ME"   # if you later mint a Zenodo DOI for a release
+
 
 preferred-citation:
   type: software
@@ -41,7 +40,7 @@ preferred-citation:
       given-names: Chien-Chih
       email: rocky@cht.com.tw
   url: "https://github.com/ice91/palatini-pt-spurion"
-  # doi: "10.5281/zenodo.REPLACE_ME"
+
 
 references:
   - type: article
