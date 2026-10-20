@@ -1,1 +1,0 @@
-PALPT_REQUIRE_REAL_APIS=1 pytest -q

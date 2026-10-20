@@ -1,1 +1,0 @@
-PALPT_REQUIRE_REAL_APIS=1 PYTHONHASHSEED=0 /Library/Developer/CommandLineTools/usr/bin/python3 -m scripts.make_all_figs --which all --config configs/paper_grids.yaml

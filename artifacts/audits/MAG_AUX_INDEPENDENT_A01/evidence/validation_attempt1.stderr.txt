@@ -1,4 +1,0 @@
-Traceback (most recent call last):
-  File "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/MAG_AUX_INDEPENDENT_A01/evidence/validate_independently.py", line 58, in <module>
-    check('Schur coefficient derived as 2f2',zero(C-(B.T*P.inv()*B)[0]-2*f2))
-TypeError: unsupported operand type(s) for -: 'function' and 'Mul'

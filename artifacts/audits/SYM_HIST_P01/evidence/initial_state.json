@@ -1,9 +1,0 @@
-{
-  "cwd": "/Users/rocky/Downloads/palatini-pt-spurion",
-  "output": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01",
-  "head": "6b456b89baa866b6dd05bc69a837b98a985a34ad",
-  "branch": "main",
-  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
-  "executable": "/Library/Developer/CommandLineTools/usr/bin/python3",
-  "preexisting_files": 498
-}

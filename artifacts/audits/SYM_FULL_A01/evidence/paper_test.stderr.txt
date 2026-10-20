@@ -1,2 +1,0 @@
-/bin/sh: pytest: command not found
-make: *** [paper-test] Error 127
