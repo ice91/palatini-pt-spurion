@@ -1,0 +1,26 @@
+{
+  "requested_filename": "manuscript(2).pdf",
+  "actual_source": "/Users/rocky/Downloads/palatini-pt-spurion/refs/manuscript.pdf",
+  "sha256": "78cf9ad3437e0e82c0ae12aaecf7c452d0946a7d71846b42a2a69984b818a4e8",
+  "bytes": 420099,
+  "pages": 28,
+  "metadata": {
+    "/Producer": "pdfTeX-1.40.29",
+    "/Author": "",
+    "/Title": "Manuscript",
+    "/Subject": "",
+    "/Creator": "LaTeX with hyperref",
+    "/Keywords": "",
+    "/CreationDate": "D:20260924162715+08'00'",
+    "/ModDate": "D:20260924162715+08'00'",
+    "/Trapped": "/False",
+    "/PTEX.Fullbanner": "This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) kpathsea version 6.4.2"
+  },
+  "filename_mismatch": true,
+  "title_matches_requested": true,
+  "python": "3.9.6 (default, May 22 2026, 11:13:45) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "head": "6b456b89baa866b6dd05bc69a837b98a985a34ad",
+  "branch": "main",
+  "initial_file_count": 1029,
+  "output": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/MAG_AUX_INDEPENDENT_A01"
+}

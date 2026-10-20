@@ -1,0 +1,73 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                               doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   so the effect of I3 is a renormalization of theΣϵ coefficient at this order.
+                         For compactness in later sections we will also use the invariant IT ≡ −14ΠPTTABCTABC =
+                   −6η2Σϵ (whichfollowsafterC1inSection4),alongsidethecanonicaltracelessmatrix          T  andscaleτ
+                   defined in (8)–(9).
+
+                   Null Test B (stated; paper-checkable).
+                         On any admissible background with the fall-offs of A4, every projected, PT-even quadratic
+                   densitywithatmostonederivativeperbuildingblockreducespre-locktoc1I1+c2I2+c3I3 uptoatotal
+                   derivative,andpost-lockto c1I1+ ˜c2Σϵ uptoatotalderivative. AconstructiveIBPreductionappearsin
+                   the Appendix.
+
+                   Order of Operations (Projection↔ Variation; Lock vs. Closure)
+                         Thescalarprojectorisappliedatthelevelofdensities;byLemma1(Section2)                               project-then-varyand
+                   vary-then-projectcommuteonscalardensities. Thetracelock(Equation(17)     )isanalgebraicconstraint
+                   introduced at the level of equations of motion or via a Lagrange current; it is not                    a PT projection.
+                   Accordingly, the correct sequence for building the quadratic sector is:
+
+                   (i) enumerate & project⇒ pre-lock basis{I1,I2,I3}    =⇒     (ii) impose trace lock/C1 ⇒ I3→ 3ηΣϵ.
+
+                   This sequencing will be used verbatim in Sections4–5.
+
+                   4. Uniqueness Theorem (C1)
+                         Under the posture of Sections2–3(A1–A5, scalar                      PT projector, “one derivative per building
+                   block”), algebraic torsion consistent with the projector is uniquely pure trace and aligned with the
+                   spurion gradient:
+                                                             TABC = 2ηδA[B∂C]ϵ,       η > 0,                                             (13)
+
+                   so that the axial and traceless irreps vanish, Sµ=0 and qλµν=0. Equivalently,
+
+
+                           ΠPTTABCTABC= 23 TµTµ = 6η2Σϵ    =⇒       IT ≡−14ΠPT[TABCTABC]=−6η2Σϵ.                                       (14)
+
+                   Here Σϵ ≡ ΠPT(∂ϵ)2 is the projected, real scalar, and we use the shorthands from Section                   3.1:
+                   sgn(Σϵ)  ≡   sgn(Σϵ),   ˆnµ  ≡  ∂µϵ/p|Σϵ|, T µν  ≡   sgn(Σϵ)                  ˆnµˆnν− 14δµν   ,  and τ  ≡   ˆnµTµ  =
+                   3η sgn(Σϵ)p|Σϵ|.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

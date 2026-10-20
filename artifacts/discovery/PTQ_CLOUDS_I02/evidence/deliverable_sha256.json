@@ -1,0 +1,17 @@
+{
+  "01_MODULAR_INFORMATION_CALCULATION.md": "668bbf55640ecaa0dc86e8d8d4bb0aef32f16aa9cf125cb2e6ad8d150ebf8089",
+  "02_ENERGY_GEOMETRY_INTERFACE.md": "b2b1f1cc3fa93d5eb7056e18c4a8504bbe28a03108fc7dd47247fdb225886dd2",
+  "03_ADVERSARIAL_AND_EXPLANATORY_VERDICT.md": "8f85995f48c28149aa422d0f61fe405220f098d6a591e97700127088752d406a",
+  "evidence/README.md": "de975ba30571583692bfa9f18fb814c940aea8f229a1837890959d8e6c050812",
+  "evidence/calculate_detector_excess.py": "67901169679fd37043dc112e126c789fe56972c05a6c751c8b3ade92faee64eb",
+  "evidence/derive_geometry_interface.py": "566525d3227a6595190ee1368bae726754d4524599003069890c4dbe4a918046",
+  "evidence/derive_modular.py": "5a7389c588230eb798f8faf2046a3138ee5ccf5fa3d9e04c5087b0ef1ce406db",
+  "evidence/detector_results.json": "3fcdb8df452ee7ab24838aa8619b1a7badfac5d6b44c66beb0bb8b60faceebc7",
+  "evidence/geometry_results.json": "f1300f6615bd29528bb08731ee4a97489f6497db0acec54420f7f7c93ecfd7cc",
+  "evidence/independent_results.json": "2cc88b8ee05491d644f917f9c6fe7184d63caa86cf126a123ae98d8210c3f458",
+  "evidence/initial_state.json": "a728f7363c7c1b2de5a960e1ac55fbff4f01145aaa2f483e52ffa34cfb3dd6bf",
+  "evidence/modular_results.json": "883c29ea605c74c6a1033f47fe13f5185c41e2a2b150cbe5a6b5fa7535f10b34",
+  "evidence/preservation_final.json": "65f9cd4f538b6bc0bf6fc23683108b1cd1c3de9ac4187123e15e93261808e07e",
+  "evidence/test_independent.py": "f931b1b25ddeaff53fb522e9c62c8774f32825955b65c4268f6e8e61ead458a9",
+  "evidence/verify_preservation.py": "d322ccd87bc3b9d52d069968d2a6ad6e102369569bb7c34126a82d0baabfffc4"
+}

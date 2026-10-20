@@ -1,0 +1,64 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                             doi:10.20944/preprints202509.2421.v2
+
+Disclaimer/Publisher’s Note: The statements, opinions, and data contained in all publications are solely those of the individual author(s) and
+contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting
+from any ideas, methods, instructions, or products referred to in the content.
+
+                  Article
+                  A PalatiniPT-Even Torsion Framework: Conditional
+                  Uniqueness,BulkRank-One Equivalences,andTensor
+                  Luminality via Coefficient Locking
+
+                  Chien-Chih Chen
+
+
+
+                  Chunghwa Telecom Laboratories, Information & Communications Security Laboratory; rocky@cht.com.tw
+
+                  Abstract
+
+                  Wepresentasymmetry–basedframeworkfortorsionfulgravityinthePalatiniformulationthatensures
+                  luminalgravitationalwaves(cT = 1) withoutparametertuningandwithoutextrapropagatingmodes.
+                  Theorganizingprincipleisascalar PT projectoronobservablescalardensities,pairedwithprojective
+                  symmetry realized by a Stueckelberg compensatorϵ(x) that enters only through the invariant trace
+                  combinationTµ≡Tµ−∂µϵ. Within a two-derivative, parity-even posture (A1–A5) we prove three
+                  conditional results: (C1) pure-trace alignment, fixing torsion by ∂µϵ while axial and traceless irreps
+                  vanish; (C2) three-route bulk equivalence, showing that determinant/rank-one, closed-metric, and PT-
+                  evenCS+ constructionssharethesamequadraticbulkuptoimprovements;and(C3)coefficientlocking,
+                  whichremovesTT–nonTTmixingandenforces K = G,hence cT = 1exactlyatquadraticorderwith
+                  only two tensor degrees of freedom. The leading parity-even NLO correction is unique and yields
+                  δc2T(k) = bk2/Λ2 for k≪Λ. We provide falsifiable diagnostics: a quadratic-slope test forδc2T across
+                  frequency bands,and aroute-equality/flux-rationull (∆A⋆→0) thatmust holdin thestrict spurion
+                  limit. The compensator has a clear EFT origin: a projectively invariant Stueckelberg completion in
+                  which mT→∞ (or a Lagrange current forTµ) explains the gradient-only appearance ofϵ and justifies
+                  treating it as nondynamical at low energies; residual dynamics would generate controlled, testable
+                  deviations. All figures and reductions are reproducible from a public code release. The framework
+                  delineates a symmetry-selected, data-facing sector of torsionful modified gravity consistent with
+                  multimessenger bounds.
+
+                  Keywords: Palatini formalism; PT-even projector; pure-trace torsion; trace-lock posture; Nieh–Yan
+                  invariant;parity-evenChern–Simons projection; rank-onedeterminant(ROD);closed-metricdeforma-
+                  tion;coefficientlocking;three-chainequivalence;gravitational-wavetensormodes;exactluminality
+                  (cT = 1)
+
+
+
+                  1. Introduction
+                       Motivation and context. Multimessenger observations (e.g., GW170817/GRB170817A) enforce
+                  luminalgravitationalwavestoday,severelyconstrainingtensor-sectordeviationsfromGRandmotivat-
+                  ingsymmetry-drivenroutesthatdeliver cT=1withoutfinetuning. Atthesametime,long-standing
+                  work in Einstein–Cartan/metric–affine (EC/MAG) geometry shows how torsion and non-metricity
+                  canbeorganized consistently,whilePalatini-type modifiedgravity(notablyPalatini f(R))hasfaced
+                  well-documented pitfalls when matter is included.  This paper asks a focused question:  Can one
+                  formulateafirst-order(Palatini)frameworkwhoseobservablesectoris(i) PT-evenbyconstruction,(ii)closed
+                  at quadratic order with at most one derivative per building block, (iii) exactly luminal for tensor modes by a
+                  structural identity, and (iv) free of extra propagating degrees of freedom?
+                       Posture and scope.  We work with independent vierbein eAµ and a metric-compatible spin
+                  connectionωABµ, and weenforce a scalar PT projectorΠPT on observable scalardensities. On oriented
+                  (3+1)-manifolds,thecombinedPT preservesorientationandcommuteswiththeHodgedual,soscalar
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a   Creative Commons CC BY license.

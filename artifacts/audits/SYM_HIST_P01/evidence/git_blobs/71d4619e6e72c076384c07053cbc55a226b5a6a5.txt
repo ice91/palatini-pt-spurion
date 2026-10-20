@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as:"
+title: "palatini-pt-spurion: Palatini × PT-even + spurion reproducible codebase (C1/C2/C3)"
+version: "0.1.0"
+date-released: "2025-09-20"
+license: MIT
+authors:
+  - family-names: Chen
+    given-names: Chien-Chih
+    email: rocky@cht.com.tw
+    affiliation: "Information & Communications Security Laboratory, Chunghwa Telecom Laboratories"
+keywords:
+  - Palatini
+  - torsion
+  - PT-even
+  - spurion
+  - gravitation
+  - gravitational waves
+  - effective field theory
+abstract: |
+  Reproducible research codebase for the Palatini × PT-even + spurion framework.
+  It implements and tests the C1/C2/C3 results (pure-trace torsion uniqueness,
+  three-chain equivalence, and exact luminal tensor sector) and generates the
+  figures used in the companion manuscript.
+preferred-citation:
+  type: software
+  title: "palatini-pt-spurion: Palatini × PT-even + spurion reproducible codebase (C1/C2/C3)"
+  version: "0.1.0"
+  date-released: "2025-09-20"
+  authors:
+    - family-names: Chen
+      given-names: Chien-Chih
+      email: rocky@cht.com.tw
+      affiliation: "Information & Communications Security Laboratory, Chunghwa Telecom Laboratories"

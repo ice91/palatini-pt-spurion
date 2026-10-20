@@ -1,0 +1,76 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                 doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                     16 of 48
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure 6. Flux-ratio diagnostic. Boundary flux ratiosRX/Y(R) for representative pairs X/Y∈{ROD,CM,CS+}
+                   onfiniteFRWballsconvergeto1astheradius R grows,inagreementwithEquation(39)     . Thefitwindowused
+                   toextracttheasymptoteisannotatedas R≥ Rmin. ErrorbarsreflecttheIBPtolerancepropagatedtoboundary
+                   terms. Quadratic-order, bulk-only(mod∇µJµ; representatives listed in Appendix C). [nb: fig_flux_ratio.py]
+
+                   6. Coefficient Locking (C3)
+                        We now lock the relative weight of two bulk–equivalent routes so that the tensor (TT) sector (i)
+                   has no kinetic mixing with nonpropagating variables and (ii) is exactly luminal at quadratic order.
+                   Throughout we keep A1–A5, the scalar projectorΠPT(·), and the C1 pure–trace map Tµ = 3η∂µϵ
+                   (Sections2–4).
+
+                   6.1. Setup and Locking Posture
+                        By Section5, the rank–one determinant (ROD) and closed–metric (CM) routes share the same
+                   quadratic bulk reduction modulo a total derivative:
+
+
+                                     δ2LROD≡ δ2LCM = A⋆p−g sgn(Σϵ)IT   (mod∇µJµ),        A⋆ = λ28 .                    (40)
+
+                  We therefore consider the linear family
+
+                                           Lchain(w) ≡  wRODLROD+wCMLCM,        wROD,wCM∈R,                             (41)
+
+                   and determine the ratio wROD:wCM by eliminating TT–nonTT mixing.
+
+                   6.2. Quadratic ADM Block and Locking Conditions
+                        ExpandingLEH(e,ω)+Lchain(w) to second order in ADM variables,
+
+                                                                                     i
+                              δ2L= M2Pl8   a3hK(w) ˙hTTij  ˙hTTij −G(w) (∂khTTij )2a2  +a3hTT·M(w)·Φ+ a32 Φ·P·Φ,          (42)
+
+                   whereΦ collects nonpropagating fields (schematicallyΦ ={δN, ∂iNi,...}). The mixing block M(w)
+                   is linear in w and proportional toη2Σϵ. Two independent entries suffice to enforce (L1) no kinetic
+                   mixing:
+                                                 M(w)                                             η2Σϵ,
+                                                           hTT−δN =µ(N)RODwROD+µ(N)CM wCM
+                                                M(w)                                                η2Σϵ,                            (43)
+                                                          hTT−∂iNi =µ(∇N)ROD  wROD+µ(∇N)CM   wCM
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

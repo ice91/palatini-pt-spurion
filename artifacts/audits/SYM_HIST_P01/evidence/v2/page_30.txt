@@ -1,0 +1,78 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                                                   doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                                                            29 of 48
+
+
+
+                        Table 2. At-a-glance comparison of frameworks relevant to this work. “Bulk eq.” means quadratic bulk action
+                        equality modulo improvements; “Obs. torsion” refers to torsion content that survives in the observable tensor
+                        sector.
+
+                        Framework                                                     cT                  DoF        Obs. torsion                                               Parity         Notes / Refs
+
+                        This work
+                        (scalar-PT Palatini)                                    = 1                   2           pure trace aligned with∂ϵ (C1)                even          bulk eq. (C2); k2/Λ2 NLO; C1–
+                                                                                                                                                          C3; Section 9
+                        EC/MAG (Einstein–Cartan)                   ≈ 1                2 (+)        axial couples to spin; no speed        mostly even    Hehl [6]; Shapiro [8]
+                                                                                                  shift (minimal EC)
+                        Palatini f(R)                                     ≈ 1              2+scal.      typically none (torsionless)                       even          Olmo [19]; Flanagan [20];
+                                                                                                                                                          Barausse [21]
+                        CS modified gravity                             ≈ 1                   2           none                                                               odd           amplitude birefr.; Jackiw–
+                                                                                                                                                          Pi [25]; Alexander–Yunes [26]
+                        PGG                                                                 luminal?             2+          model-dep.                                                 mixed         Obukhov et al. [38]
+
+
+                        Table 3. Operational mapping of global assumptions (A1–A5/6) to mainstream constructs and indicative refer-
+                        ences.
+
+                        Assumption                              Mainstream analogue / operational meaning                                    Indicative refs
+
+                        A1 (domain/measure)             Oriented Lorentzian patches; AF/FRW fall-offs; scalar densitiespreserved under PT; projector self-adjointness on reals.                   [14,15]
+
+                        A2 ([PT ,∗]= 0)                       Orientation-preservingPT;paritybookkeepingwithHolst/Nieh–Yan split.                                                                                                    [9–12]
+
+                        A3 (project–vary commute)    Linear, self-adjoint scalar-PT projector commutes with Palatinivariation on(e,ω); spurion is nondynamical.                                     [6,14]
+
+                        A4 (boundary posture)            Improvement currents contribute no canonical pairs; flux well-defined and slice/gauge independent at quadratic order.                [14,15]
+
+                        A5 (Nieh–Yan as boundary)    NY = d(e∧T) treated as boundary counterterm on admissiblepatches; topology caveats noted.                                                           [9,12]
+
+                        A6 (two-derivative posture)   Restrictstoquadraticorderwithatmostonederivativeperbuild-ing block in the tensor sector.                                                                 (paper posture; see Section7)
+
+
+
+
+                        Funding:  The author did not receive support from any organization for the submitted work.
+
+                        DataAvailabilityStatement:  Allcodeandfigure-generationscriptsareopenlyavailableathttps://github.com/
+                        ice91/palatini-pt-spurion/under a permissive license; version pins and reproduction instructions are provided
+                        in Supplement R.
+
+                        Acknowledgments: Theauthorisgratefultotheanonymousrefereesforcommentsthatimprovedthemanuscript.
+                        Limiteduseofgenerativelanguagetoolswasmadeforstylisticrefinement;allscientificreasoning,derivations,
+                        and conclusions remain solely the responsibility of the author.
+
+                        Conflicts of Interest:  The author has no relevant financial or non-financial interests to disclose.
+
+                        Code availability: Same as Data availability.
+
+                        Appendix A. Projection–Variation Commutation (A3) and Variational Identities
+                                This appendix establishes Assumption A3 in full generality for scalar densities and compiles the
+                        variational identities for√−g,ϵµνρσ, and the Hodge star∗ under the Palatini posture with the scalar
+                        PT projector of Section2. We also make explicit the boundary/topology posture (A4) used when
+                        trading improvements for boundary fluxes, and we record the PT selection rules used throughout the
+                        paper.
+
+                        Appendix A.1. Setup and Conventions
+                                Weworkwithindependentvierbein eAµ andametric-compatiblespinconnectionωABµ=−ωBAµ
+                        (Palatiniposture). Theobservablescalardensitiesaremappedtoareal, PT-evensectorbytheprojector
+
+                                                             ΠPT[O] ≡  1          O+PT[O]real scalar,      Π2PT =ΠPT,                                 (A1)
+                                                                                2
+
+
+
+
+
+                    © 2025 by the author(s). Distributed under a                    Creative Commons CC BY license.

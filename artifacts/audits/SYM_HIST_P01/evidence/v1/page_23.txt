@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                           doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  withreal cA,V fixedbyconventions(AppendixE).ImprovementsdonotaffectbulkEuler–Lagrange
+                  equations under A4.
+
+                  8.2. Axial Channel: Null By C1
+                        Theorem2gives        Sµ = 0 and qλµν = 0. Hence ecASµJµ5 ≡ 0.
+
+                  8.3. Trace Channel: Removal By A Local Vector Rephasing
+                        With Tµ = 3η∂µϵ,L(trace)ψ,T     = 3cVηe(∂µϵ) Jµ.  Perform ψ 7→ eiαϵψ,   ¯ψ 7→  ¯ψe−iαϵ, which shifts
+                  e ¯ψieAµγA∂µψ7→ e ¯ψieAµγA∂µψ−αe(∂µϵ) Jµ. Choosingα= 3cVη cancelsthetracechannel. Uptoa
+                  divergence,e(∂µϵ) Jµ =∇µ(eϵ Jµ)−ϵ∇µ(e Jµ),and∇µ(e Jµ)≈ 0ontheDiracEOM,sothedifference
+                  is an improvement fixed by Jµ.
+
+                  Parity remark and measure.
+                        Theprojectordoesnotremove TµJµ (itis PT-even);itseliminationusesC1andavectorrephasing.
+                  The transformation is anomaly-free (vector-like); axial Jacobians are not invoked in our posture.
+
+                  WithU(1).
+                        Ifψ carries charge q, the rephasing is equivalent to Aµ→ Aµ− αq∂µϵ, leaving Fµν invariant.
+
+                  NLO Tensor Dispersion and a Band-Limited Estimate
+                  NLO operator and estimate.
+                        Atthe nextorderin the“one-derivative-per-building-block”posture,the leading PT-evencorrec-
+                  tion in the TT block is
+
+                                            ∆LNLO =   bΛ2 (∂hTTij )2 sgn(Σϵ)IT   ⇒    δc2T(k)= b k2Λ2.                                 (50)
+
+                  Taking themultimessenger bound|cT−1|≲ 10−15 in theLIGO/Virgo band andusing cT ≃ 1+ 12δc2T
+                  gives|b|k2/Λ2≲ 2×10−15. At f = 100Hz (k≃ 4.1×10−13eV),
+
+                                          pΛ        √
+                                             |b| ≳          k2×10−15 ≈ 9×10−6 eV   (length scale ≲ 2 cm),                             (51)
+
+                  and the bound strengthens by×10 at f = 1000Hz. Thus current ground-based bands only weakly
+                  constrain k2/Λ2-type dispersion; lower-frequency probes (e.g., PTA) can improve this if b=O(1).
+
+                  Summary ofSection VIII.Under thePalatini–PT posture andC1, the axialchannel vanishes and the
+                  trace channel is removable by a local, anomaly-free vector rephasing, up to a boundary improvement
+                  controlled byA4/A5. In addition,the leading PT-even NLOoperator yieldsδc2T = bk2/Λ2; asimple
+                  LIGO/Virgo estimate places band-limited lower bounds onΛ/p|b|.
+
+                  9. Next-to-Leading Order and Data-facing Remarks
+                        Weorganizetheleading, PT-evencorrectionsbeyondthequadratic,one-derivative-per-building-
+                  blockclosureandstatetheirdata-facingimplicationfortensorpropagation. Throughout,theglobal
+                  posture A1–A5 and the locked TT sector (Sections6–7) are understood.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.

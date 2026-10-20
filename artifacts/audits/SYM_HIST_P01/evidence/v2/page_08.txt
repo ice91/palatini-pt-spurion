@@ -1,0 +1,65 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                    doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                         7 of 48
+
+
+
+                                            ΠPT[O]= 0       iff   O is PT-odd.                                                                            (12)
+
+                   In particular, for admissible tensors X,
+
+                     ΠPTϵµνρσXµνρσ= 0 iff X is PT-odd;
+                     ΠPTTABCTABC∈R,   ΠPT(∂ϵ)2∈R,   ΠPTTµ∂µϵ is PT-even and not annihilated by projection.
+
+                   Sketch. Bydefinition(8)   ,ΠPT averagesanobjectwithitsPT imageandthentakestherealpart. WithA1,
+                   R X =R PT[X] ensuresself-adjointness (9)    onrealscalars. A2implies PT preservesorientationand
+
+                   commuteswith∗. SincetheLevi–Civita density is PT-evenwhile T isanti-linear,ϵµνρσXµνρσ inherits
+                   the PT parityof X,yielding the conditionalstatementabove. Productssuch as Tµ∂µϵ are PT-even(see
+                   the quick table), hence survive the projector; their later reduction toΣϵ uses the trace-lock/C1 map
+                   (Sections3–4).
+
+                   Roadmap and Where Each Assumption Enters
+                         The definitions and rules above are the only projectors/boundary tools used later. In particular:
+                   •      Section3(allowed sector/closure):                weenumerateall PT-evenquadraticmonomials withatmost
+                         one derivative per building block. Pre-lock the basis includes I1 =Π[TABCTABC], I2 =Σϵ, and
+                         I3 =Π[Tµ∂µϵ]. Post-lock (trace-lock or C1) maps I3→ 3ηΣϵ.
+                   •      Section4(C1):                A3enablesproject-then-varyinthePalatiniconnectionequation;A2/A5prevent
+                         hidden pseudo-scalar contaminations; A4 controls improvements.
+                   •      Section5(C2,              σϵ scheme): A5 (NYboundary) and A1/A4 underwrite the equality ofroute-wise
+                         bulk pieces and flux-ratio diagnostics, all written with the sign-compensated invariantbIT.
+                   •      Sections6–7(C3):                       A1/A4 guarantee that improvement currents do not alter kinetic/gradient
+                         coefficients; A3 is used implicitly in all quadratic variations; the equal-coefficient identity is a
+                         total divergence on the admissible variational domain.
+
+                   Boundary/Topology Posture And Fall-Offs (Pointer)
+                         Assumption A4 is realized either by compact PT-invariant domains with vanishing flux or by
+                   standard asymptotically flat/FRW fall-offs; the explicit statements and the symplectic-flux check are
+                   compiled in Appendix A (boundary notes therein). We exclude torsion defects and multi-valuedϵ
+                   patches that would violate the projector’s scalar posture.
+
+                   3. Palatini Setting and the Allowed PT-Even Scalar Sector
+                         We work in the Palatini posture with independent vierbein eAµ and a metric-compatible spin
+                   connectionωABµ. Throughout this section the global assumptions A1–A6 and the scalar PT projector
+                   of Section2are in force, together with the selection rules of Theorem2.                       All scalar densities are implicitly
+                   projected,hencerealand PT-even. Wealsoretainthe two–derivative truncationandthespurion posture:
+                   the internal phaseϵ(x) enters observables only through its gradient and is not varied.
+
+                   3.1. Projectively Invariant Starting Point
+                         As reviewed in Section2.1, Palatini geometry admits a projective symmetry under which the
+                   torsiontraceshiftsandiscompensatedbythegradientofϵ. Wethereforeformulatetheallowedsector
+                   in terms of theprojectively invariantcombination
+
+                                              Tµ ≡  Tµ−∂µϵ              (invariant underΓαµν→Γαµν+δαµξν).                             (13)
+
+                   Withinthespurionlimit(two–derivativeregime;frozenϵ dynamics),PT–evenobservablesdependon
+                   ∂ϵ only throughTµ. In Section4we will show that the Palatini equations together with the trace-lock
+                   posture(C1)align Tµ with∂µϵ,effectivelysettingTµ→ 0onadmissiblepatches. Thepresentsection
+                   establishes the correspondingoperator basisand its closure properties before and after this lock.
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

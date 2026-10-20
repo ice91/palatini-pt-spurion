@@ -1,0 +1,9 @@
+{
+  "success": false,
+  "stage": "flat_radial_Abel_trace",
+  "expression": "coth(u/2)/(2*sinh(u)) - 1/(2*cosh(u)-2)",
+  "failure": "SymPy simplify did not reduce the true half-angle identity to literal zero; the assertion rejected the unreduced expression.",
+  "correction": "Rewrite this identity in the exponential basis before applying simplify and asserting exact zero.",
+  "model_or_expected_formula_changed": false,
+  "classification": "symbolic normalization failure, not a physical counterexample"
+}

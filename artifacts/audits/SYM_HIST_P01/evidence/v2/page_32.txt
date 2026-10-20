@@ -1,0 +1,66 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                     doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                          31 of 48
+
+
+
+                         Remarks. (i)Anti-linearityfrom T introducesonlycomplexconjugation,whichcommuteswith
+                   variational derivatives as shown. (ii) The assumption thatϵ is not varied(spurion posture) is essential;
+                   if one promotesϵ to a dynamical field, additional boundary terms appear but Equation (A6)       continues
+                   toholdforthe scalar projectorprovided the sameposture(A1–A2)iskeptfortheextendedfieldspace.
+
+                   Appendix A.4. Variational Identities for√−g,ϵµνρσ, and the Hodge Star
+                         We collect formulas used repeatedly in Sections2–7. We write                     hµν≡ δgµν and h≡ gµνhµν.
+                         Metric and vierbein. With gµν = ηABeAµeBν,
+                                             δgµν = ηABeAµδeBν+eAνδeBµ,       δgµν =−gµαgνβδgαβ.                             (A7)
+
+
+                         Determinant and Levi–Civita tensor.
+                                        δp−g=  1      p−gh,       δϵµνρσ =  1
+                                                     2                            2 ϵµνρσh,       δϵµνρσ =−12 ϵµνρσh.                      (A8)
+
+                   Thesefollow fromϵµνρσ =√−gεµνρσ andϵµνρσ = εµνρσ/√−g,withεµνρσ the(constant) Levi–Civita
+                   symbol.
+                         Hodge star. Letα be a p-form and hµν≡ gµλhλν. Then the variation of∗ with respect to h is
+
+                                                                                                             p
+                                    δ(∗α)=∗δα+ 12 h(∗α)− 12 ∗(H·α),       (H·α)µ1...µp ≡                  ∑  hµiναµ1...ν...µp.                (A9)
+                                                                                                           i=1
+
+                   In particular, for 2-forms F (frequent in the Palatini curvature/torsion algebra),
+                                            δ(∗F)µν =(∗δF)µν+ 1                         hµρ(∗F)ρν+hνρ(∗F)µρ.                          (A10)
+                                                                        2h(∗F)µν− 12
+
+                         [PT ,∗]=0. BecausethemetricisPT-evenandthechosenorientationispreserved(A2),theHodge
+                   map built from(g,ϵµνρσ) commutes with PT:
+
+                                                          PT[∗α]=∗PT[α]        for any formα.                                             (A11)
+
+                   This identity is used both in the selection rules and in the projector proofs that involve p-form duals.
+
+                   Appendix A.5. Boundary/Topology Posture and Improvement Currents
+                         Assumption A4 is realized in either of the following equivalent ways:
+                   (i)     Compact, PT-invariant domains with vanishing boundary flux: for any improvement current JµZ
+                          arising from integration by parts,
+                                                                      ∂DdΣµ Jµ = 0.                                                Z
+                   (ii)    Standard fall-offs on asymptotically flat or spatially flat FRW patches, for which                         d4x∇µJµ
+                          reduces to a surface integral that vanishes in the R→∞ limit. A sufficient set is
+
+                                             hµν =O(r−1−δ),    Kλµν =O(r−2−δ),    ∂µϵ=O(r−δ),       δ> 0,                 (A12)
+
+                          which ensures Jr =O(r−2−δ) so that the flux through a sphere of radius R decays as R−δ.
+                   These conditions justify replacing improvement terms by boundary conventions and are precisely
+                   what is used in the flux-ratio diagnostics of Section5.4.
+
+                   Appendix A.6. Consequences Used in the Main Text
+                         (C1) Palatiniblock-diagonalization. Theorem14(A3)allows us to          project thenvaryin thePalatini
+                   equations, so that the connection variation is algebraic and block-diagonal in the torsion irreps.
+                   Together with the selection rules (Proposition13) this yields                      Sµ=qλµν=0 and the pure-trace map
+                   quoted in Section4.
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.

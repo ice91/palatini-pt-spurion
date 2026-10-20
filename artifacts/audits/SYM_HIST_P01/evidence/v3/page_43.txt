@@ -1,0 +1,68 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                             doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                                   42 of 43
+
+
+
+                     4.      F. W. Hehl, P. von der Heyde, G. D. Kerlick, and J. M. Nester, “General Relativity with Spin and Torsion:
+                           Foundations and Prospects,”Rev. Mod. Phys.48, 393–416 (1976).
+                     5.   F.W.HehlandB.K.Datta, “Nonlinearspinorequationandasymmetricconnectioningeneralrelativity,”   J.
+                           Math. Phys. 12, 1334–1339 (1971).
+                     6.      F. W. Hehl, J. D. McCrea, E. W. Mielke, and Y. Ne’eman, “Metric-affine gauge theory of gravity: Field
+                           equations, Noether identities, world spinors, and breaking of dilaton invariance,” Phys. Rept. 258, 1–171
+                           (1995).
+                     7.   R. T. Hammond, “Torsion gravity,”    Rep. Prog. Phys.65, 599–649 (2002).
+                     8.   I. L. Shapiro, “Physical aspects of the space–time torsion,”    Phys. Rept.357, 113–213 (2002).
+                     9.   H. T. Nieh and M. L. Yan, “An identity in Riemann–Cartan geometry,”    J. Math. Phys.23, 373–374 (1982).
+                     10.    O.ChandiaandJ.Zanelli,“Topologicalinvariants,instantonsandthechiralanomalyonspaceswithtorsion,”
+                           Phys. Rev. D55, 7580–7585 (1997).
+                     11.    S. Holst, “Barbero’s Hamiltonian derived from a generalized Hilbert–Palatini action,” Phys. Rev. D 53,
+                           5966–5969 (1996).
+                     12.    S.Mercuri,“FermionsintheAshtekar–Barberoconnectionformalism: TheNieh–Yaninvariantasasourceof
+                           the Immirzi parameter,”Phys. Rev. D73, 084016 (2006).
+                     13.R. M. Wald,     General Relativity(University of Chicago Press, 1984).
+                     14.    V.IyerandR.M.Wald,“SomepropertiesofNoetherchargeandaproposalfordynamicalblackholeentropy,”
+                           Phys. Rev. D50, 846–864 (1994).
+                     15.    T.Regge andC. Teitelboim,“Role ofsurface integralsin theHamiltonian formulationof generalrelativity,”
+                           Annals Phys.88, 286–318 (1974).
+                     16.    Yu.N. Obukhov, “Poincarégaugegravity: Selected topics,”Int.J. Geom.MethodsMod.Phys.3,95–138 (2006).
+                     17.    Y.N.ObukhovandF.W.Hehl,“Rotation,acceleration,andgravityintheframeworkofclassicalelectrody-
+                           namics,” Phys.Lett. A372,3946–3952 (2008);see alsoF. W. Hehland Y.N. Obukhov,Foundationsof Classical
+                           Electrodynamics(Birkhäuser, 2003), App. B.
+                     18.T. P. Sotiriou and V. Faraoni, “    f(R) theories of gravity,”Rev. Mod. Phys.82, 451–497 (2010).
+                     19.    G. J. Olmo, “Palatini Approach to Modified Gravity: f(R) Theories and Beyond,” Int. J. Mod. Phys. D 20,
+                           413–462 (2011).
+                     20.E. E. Flanagan, “Palatini form of      1/R gravity,” Phys. Rev. Lett.92, 071101 (2004).
+                     21.    E.Barausse,T.P.Sotiriou,andJ.C.Miller,“CurvaturesingularitiesinPalatini f(R) gravity,”Phys.Rev.D77,
+                           104035 (2008).
+                     22.    J.D.Bekenstein,“TheRelationbetweenphysicalandgravitationalgeometry,”Phys.Rev.D48,3641–3647
+                           (1993).
+                     23.S. Deser and G. W. Gibbons, “Born–Infeld–Einstein actions?,”      Class. Quantum Grav.15, L35–L39 (1998).
+                     24.    M. Bañados andP.G. Ferreira, “Eddington’s theoryof gravity and its progeny,”Phys. Rev. Lett.105, 011101
+                           (2010).
+                     25.R. Jackiw and S.-Y. Pi, “Chern–Simons modification of general relativity,”     Phys. Rev. D68, 104012 (2003).
+                     26.S. Alexander and N. Yunes, “Chern–Simons Modified Gravity,”     Phys. Rept. 480, 1–55 (2009).
+                     27.    B. P. Abbott et al. (LIGO Scientific Collaboration and Virgo Collaboration), “GW170817: Observation of
+                           Gravitational Waves from a Binary Neutron Star Inspiral,”Phys. Rev. Lett. 119, 161101 (2017).
+                     28.    B.P.Abbottetal. (LIGOScientificCollaborationandVirgoCollaboration),“Multi-messengerObservations
+                           of a Binary Neutron Star Merger,”Astrophys. J. Lett.848, L12 (2017).
+                     29.    A. Goldstein et al., “An Ordinary Short Gamma-Ray Burst with Extraordinary Implications: Fermi-GBM
+                           Detection of GRB 170817A,”Astrophys. J. Lett.848, L14 (2017).
+                     30.    V. Savchenko et al., “INTEGRAL Detection of the First Prompt Gamma-Ray Signal Coincident with the
+                           Gravitational-wave Event GW170817,”Astrophys. J. Lett. 848, L15 (2017).
+                     31.    P.CreminelliandF.Vernizzi,“DarkEnergyafter GW170817andGRB170817A,”Phys.Rev.Lett.119,251302
+                           (2017).
+                     32.    T. Baker, E. Bellini, P. G. Ferreira, M. Lagos, J. Noller, and I. Sawicki, “Strong constraints on cosmological
+                           gravity from GW170817 and GRB170817A,”Phys. Rev. Lett.119, 251301 (2017).
+                     33.    J. M. Ezquiaga and M. Zumalacárregui, “Dark Energy After GW170817: Dead Ends and the Road Ahead,”
+                           Phys. Rev. Lett.119, 251304 (2017).
+                     34.    J. Sakstein andB. Jain,“Implications ofthe Neutron StarMerger GW170817for Cosmological Scalar–Tensor
+                           Theories,”Phys. Rev. Lett. 119, 251303 (2017).
+
+
+
+
+
+
+                 © 2025 by the author(s). Distributed under a          Creative Commons CC BY license.

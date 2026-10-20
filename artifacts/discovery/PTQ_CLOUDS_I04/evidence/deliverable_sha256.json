@@ -1,0 +1,16 @@
+{
+  "01_REAL_TIME_STRESS_RESPONSE.md": "3f8b007405c90dc1339d07272d4353cb0641f4f563eb8a056fac0ac8302e4fa2",
+  "02_RENORMALIZED_METRIC_FEEDBACK.md": "656909689234a9a1af915c6e59537fc5d35988131d55396b20def5cf9feacada",
+  "03_FIRST_PRINCIPLES_DECISION.md": "43abda0cd3faaf1e3bbeef59ca79e7f118c0e3e1e4f19802412007f02298dc8e",
+  "evidence/README.md": "cff5b67b2b7fde6813cba5bf9ce87fb69835f3effcd1bff48923e86bb5d56a50",
+  "evidence/check_independent.py": "c15d6e38fd236394b67d425d88bc1dba195c0549faf6608ab3daf7c3c4e9f432",
+  "evidence/derive_feedback.py": "3947565442cd6ac50978edecfa6fff0d17540c9ea62f729ff4c5f515bec05a86",
+  "evidence/derive_response.py": "401224f0b0a60b0d7717d6edebe92dc5d4ffb71a5d9ba99fa016c98e19c6ea62",
+  "evidence/execution_notes.md": "e6f56ed881d0113131e1a9be4a4adaf154dfcd1b694136678aa51a286852b0f2",
+  "evidence/feedback_symbolic.json": "aab46638a9bf78801730a39a0de764f4174ad5ac825005ff6e84d16ac575b3fd",
+  "evidence/independent_results.json": "dcfb686747adc399a878fb74113716b1ff62af53b84a1310a70c8616f8041f30",
+  "evidence/initial_state.json": "0c578f28fa67be222631367984c8566b8379e73d31956227e34ec1f29922a3a9",
+  "evidence/preservation_final.json": "d3a7d97f2d9b15e0a7b617ed7db305ff315155b863aa349e0eb308130a5c8bf9",
+  "evidence/response_symbolic.json": "2b47631142513f58845d7b0a428a89ca4203e0e6d0cc741662f1f8ee6f2281d7",
+  "evidence/verify_preservation.py": "0599a10c1defb70fb7d4115c4d48cc7186f6fca80fd5e4ab19ab397e69f7a76b"
+}

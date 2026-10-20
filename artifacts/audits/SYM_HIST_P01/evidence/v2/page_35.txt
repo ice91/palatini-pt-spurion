@@ -1,0 +1,66 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                 doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                     34 of 48
+
+
+
+                   Corollary16. Foranysinglecovectorvµ theP(q) projectorannihilatesthetworank-oneseeds: P(q)[δA[BvC]]=
+                   0= P(q)[ϵABCDvD].
+
+                   Appendix B.5. Consequences for the C1 Ansatz
+                        Applying Proposition15to the most general                     linearansatz with one derivative (Section4.1),
+
+                                                  TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ+P·∂ϵABC,                                    (A27)
+
+                   showsthattheattemptedtracelesspieceP·∂ϵABC necessarilyvanishes: itisalinear,single-vector
+                   construct and is thus killed by P(q) (Cor.16). The ansatz collapses to
+
+                                                          TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ,                                                (A28)
+
+                   recovering Equation (4.2) of the main text. The scalar projectorΠPT[·] removes PT-odd scalars built
+                   fromtheaxialseed(Section2.4),andthePalatiniconnectionequationthensets                   B=0whilefixing A= 2η
+                   under the trace lock Tµ = 3η∂µϵ (Section4.2). This yields the uniqueness map                    TABC = 2ηδA[B∂C]ϵ
+                   quoted in Theorem6.
+
+                   Appendix B.6. Consistency Check with the Quadratic Invariant
+                        With the normalization (A21) and the C1 map (so         Sµ=0 and qλµν=0),
+
+
+                   ΠPTTABCTABC= 23 TµTµ = 23(3η)2Σϵ = 6η2Σϵ,     ⇒         IT ≡−14ΠPTTABCTABC=−6η2Σϵ,
+                                                                                                                                      (A29)
+                   as used throughout Sections4–5.  Here               Σϵ ≡ ΠPT(∂ϵ)2 is the projected, real scalar, and the sign
+                   bookkeepingiscarriedbysgn(Σϵ)≡ sgn(Σϵ);theunit1-form ˆnµ≡ ∂µϵ/p|Σϵ|,thecanonicaltraceless
+                   rank-onematrixT µν≡ sgn(Σϵ)(ˆnµˆnν− 14δµν),andthetracescaleτ≡ ˆnµTµ = 3η sgn(Σϵ)p|Σϵ| are
+                   recalled from Section3.
+
+                   Appendix B.7. Edge Cases and Patches
+                        On loci whereΣϵ = 0 the normalized direction ˆn is defined patchwise (or by continuity); all
+                   algebraic projector statements remain valid, and the conclusions above hold on any patch withΣϵ̸= 0.
+                   Global/topological subtleties (multi-valued ϵ, nontrivial bundles) lie outside the posture A1–A5
+                  (Section2).
+
+                   SummaryofAppendixB.Wehavegivenexplicit,idempotentprojectorsontothethreetorsionirreps,
+                   fixed the quadratic identity in the normalization used in the main text, and proved the single-vector
+                   no-go: from one covector vµ no nonzero traceless torsion irrep can be built. This reduces the most
+                   general one-derivative ansatz to the{δA[B∂C]ϵ, ϵABCD∂Dϵ} span, after which the Palatini equations
+                   and the scalar projector select the pure-trace map used in the C1 uniqueness theorem.
+
+                   Appendix C. Appendix C: Three–Chain Reductions & Improvement Currents (σϵ
+                   scheme)
+                   Scope (σϵ scheme and naming).  This appendix provides the paper–checkable reductions behind
+                   Section5underthe               sign-compensatedconventionsgn(Σϵ)IT ≡ sgn(Σϵ)IT =−6η2|Σϵ|andtherank-one
+                   determinant route naming (formerly “DBI”-type; not Born–Infeld gravity): (i) a rank-one determinant
+                   route built out of the canonical traceless matrixT µν, (ii) a closed–metric rank–one deformation, and
+                  (iii)the PT–evenCS/Nieh–Yanshadow. Atquadraticorder,eachroute reducesinthe bulktothe same
+                   invariant line
+
+                    δ2LX = A⋆p−g sgn(Σϵ)IT + ∇µJµX,        A⋆ = λ2/8,  X∈{rank−onedeterminantroute,CM,CS+} ,
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

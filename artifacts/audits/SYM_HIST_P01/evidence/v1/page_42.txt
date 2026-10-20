@@ -1,0 +1,65 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                 doi:10.20944/preprints202509.2421.v1
+
+
+
+
+                   Appendix F. Operational Diagnostics (Extended)
+                         Thisappendixcollectsapractitioner-orientedchecklistandanexpandedcomparisontable. Unless
+                   stated otherwise, all entries are framed for admissible patches with the boundary/topology posture
+                   A4, and for the quadratic order analyzed in the main text.
+
+                   Appendix F.1. Full Decision Tree (D1–D8)
+                   •      (D1) Parity channels. Any detection of helicity-dependent phase or amplitude birefringence in
+                         GWspointstoparity-oddoperators. Ourscalar-PT postureforbidssucheffectsatLO(Theorem1;
+                         Section2.2).                       7
+                   •      (D2)Axial/tensortorsionirreps. Nonzeroaxial(Sµ)ortraceless(qλµν)torsionsignalsareincom-
+                         patible with C1. We predict the pure-trace map (Theorem2); Figures1,2provide diagnostics.
+                   •      (D3)Three-routebulkcollapse. Reconstructquadratickernelsfromsimulations/perturbation
+                         theory: theDBI,closed-metric,and CS+ routesmustsharethesamebulkpiece A⋆√−g sgn(Σϵ)IT
+                         with A⋆ = λ2/8 (Section5); residuals should enter only through improvements (Figure3).
+                   •      (D4) Boundary equivalence. Boundary flux ratiosRX/Y[∂D] converge to 1 on growing domains
+                         (A4) (Section5.4; Figure4). Persistent deviations falsify C2.
+                   •      (D5) Exact luminality by identity. After eliminating TT–nonTT mixing with the full-rank 2×2
+                         system (Section6.3), the equal-coefficient identity                    K−G = ∂µ(a−3Jµ∆a3) enforces cT=1 without
+                         tuning (Section7; Figure7).
+                   •      (D6) DoFcount. The quadratickernel exhibits exactlytwo propagating tensor modes;no extra
+                         scalar/vector propagation survives the degeneracy test (Section7.3; Figure8). Any additional
+                         mode falsifies our posture at this order.
+                   •      (D7) NLO slope.  At next order, the leading PT-even dispersion predicts δc2T(k) =  bk2/Λ2
+                         (Equation (54)     ):  a log–log slope ≃  2 in clean frequency windows is characteristic (Figure9;
+                         Section9.1).                       8
+                   •      (D8)Fermionchannelnull. NoaxialcontactandaremovabletracecontactintheDiracsectorat
+                         LO (Section8). Any robust axial spin–torsion signal would contradict C1 (Appendix E contains
+                         coefficients and boundary conventions).
+
+                   Appendix F.2. Expanded Disambiguation Table
+                         Entries are generic at LO on admissible backgrounds with A4 fall-offs; tuned subclasses and
+                   specific parameter choices may alter individual cells.  See the notes in SectionF.3for caveats and
+                   representative citations.
+
+                   Appendix F.3. Notes, Caveats, And Representative Anchors
+                   Parity-odd lines.
+                         Chern–Simons modified gravity (Jackiw–Pi; Alexander–Yunes) generically induces helicity-
+                   dependentGWpropagation;detailsdependonthechoiceofscalarfieldandcoupling. Ourscalar-PT
+                   projector eliminates parity-oddscalarsat LO; see Theorem1. Representative anchors: [14,15].
+
+                   Horndeski/DHOST.
+                         Post-GW170817 constraints force cT→ 1 by parameter tuning or by restricting to subclasses;
+                   however, no equal-coefficient identity of the type K−G = ∂µ(···) is generally present, and an extra
+                   scalar DoF is typical. See the multimessenger bounds and reviews [27–30,35,36].
+
+
+
+                   7    Chern–Simonsmodified gravityisthe canonicalbenchmarkfor helicity-splitpropagation; seee.g.,Jackiw–Pi; Alexander–
+                      Yunes.
+                   8    Caveat: finite-windowfitsmaybebiasedbyinstrumentalsystematicsorastrophysicalpriors;interpretboundsconservatively.
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

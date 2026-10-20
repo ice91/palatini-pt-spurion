@@ -1,0 +1,65 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                             doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                 37 of 43
+
+
+
+                          Object / Convention         Value / Definition
+                          Gamma matrices              {γA,γB}=2ηAB,γ5=iγ0γ1γ2γ3
+                          Hodge / Levi-Civita         ϵ0123=+1,[PT ,∗]=0 (A2)
+                          Contorsion split            KABC =  13(ηACTB−ηABTC)− 16ϵABCDSD+qABC
+                          Dirac currents              Jµ=  ¯ψγµψ, Jµ5 =  ¯ψγµγ5ψ
+                          Torsion→Dirac               ∆Lψ= e38SµJµ5− 14TµJµ
+                          C1 (pure trace)             Sµ=0,qλµν=0,Tµ=3η∂µϵ
+                          Vector rephasing            ψ→ eiαϵψ withα= 3cVη=−34η
+                          Outcome                     Trace channel removed up to a total derivative (A4/A5)
+                          Nieh–Yan                    Boundary convention only (A5); no bulk Euler–Lagrange effect
+
+                  Appendix E.6. Corollary: No LO Four-Fermion Contact from Torsion
+                        Attheorderanalyzedinthispaper(quadraticinfields;atmostonederivativeperbuildingblock),
+                  torsionisalgebraicandfixedby(C1),andtheonlylinearDirac–torsionchannelthatsurvivesprojection
+                  isremovedbythevectorredefinitionabove. Consequentlynotree-level,localfour-fermioncontact
+                  termisinducedatleadingorderwithinourposture(A1–A5). Anysucheffectwouldrequire(i)anaxial
+                  channel(Sµ̸= 0),(ii)higher-derivativecompletionsbeyondourclosurebasis,or(iii)loopcorrections
+                  outside the present scope.
+
+                  Summary of App. E. In our conventions the minimally coupled Dirac field interacts with torsion
+                  through e(38SµJµ5 −  14TµJµ).   Under the pure-trace map (C1) the axial channel vanishes and the
+                  remainingtracechannelisremovedbyalocalvectorrephasingψ→ ei(3cVη)ϵψ,uptoatotalderivative
+                  consistent with A4/A5. Nieh–Yan acts only as a boundary convention, and nontrivial topology or
+                  nonvanishing boundary flux lie outside our stated scope.
+
+                  Appendix F. Operational Diagnostics (Extended)
+                        Thisappendixcollectsapractitioner-orientedchecklistandanexpandedcomparisontable. Unless
+                  stated otherwise, all entries are framed for admissible patches with the boundary/topology posture
+                  A4, and for the quadratic order analyzed in the main text.
+
+                  Appendix F.1. Full Decision Tree (D1–D9)
+                  •      (D1) Parity channels. Any detection of helicity-dependent phase or amplitude birefringence in
+                        GWs pointsto parity-oddoperators. Ourscalar-PT posture forbidssuch effectsat LO(Thm.2;
+                        Sec.2.3).               5
+                  •      (D2)Axial/tensortorsionirreps. Nonzeroaxial(Sµ)ortraceless(qλµν)torsionsignalsareincom-
+                        patible with C1. We predict the pure-trace map (Thm.4); Figs.2,4provide diagnostics.
+                  •      (D3)Three-routebulkcollapse. Reconstructquadratickernelsfromsimulations/perturbationthe-
+                        ory: theDBI,closed-metric,and CS+ routesmustsharethesamebulk piece A⋆√−g sgn(Σϵ)IT
+                        with A⋆= λ2/8(Sec.5); residuals should enter only through improvements (Figure5).
+                  •      (D4) Boundary equivalence. Boundary flux ratiosRX/Y[∂D] converge to 1 on growing domains
+                        (A4) (Sec.5.2; Figure6). Persistent deviations falsify C2.
+                  •      (D5) Exact luminality by identity. After eliminating TT–nonTT mixing with the full-rank 2×2
+                        system (Sec.6.2), the equal-coefficient identity            K−G = ∂µ(a−3Jµ∆a3) enforces cT=1 without
+                        tuning (Sec.7; Figure9).
+                  •      (D6) DoFcount. The quadratickernel exhibits exactlytwo propagating tensor modes;no extra
+                        scalar/vectorpropagationsurvivesthedegeneracytest(Sec.7.2;Figure10). Anyadditionalmode
+                        falsifies our posture at this order.
+
+
+
+                  5    Chern–Simonsmodifiedgravity isthecanonical benchmarkforhelicity-splitpropagation;seee.g. Jackiw–Pi;Alexander–
+                     Yunes.
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.

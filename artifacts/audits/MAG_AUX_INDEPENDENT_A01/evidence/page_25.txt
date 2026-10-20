@@ -1,0 +1,54 @@
+H.5   Local versus global vocabulary
+
+        Claim                                        Scope
+        Palatini inverse                          field-space local, onU    reg
+        fibre kernel equals imG    x            field-space local, onU    reg
+        connection solve                         pointwise algebraic
+        orbit uniqueness                        field-space local and spacetime local, modulo (4.1)
+        QE=EQ                                   spacetime-local bulk functionals moduloJ        1,J3
+        reduced functional                     spacetime-local bulk plus admitted IBP remainder
+        global gauge slice                       not claimed
+        projective charges ofξ              not claimed
+        all gauges / all connections        not claimed
+
+I   Singular strata and counterexamples
+
+The following examples show that the hypotheses of Theorem 7.2 are necessary. They are not
+solutions of the singular dynamics. All statements start from H⊥x+J =0 with x=(q,u,t)
+andJ=(∂f           1,−∂f    1,2∂f   1−∂f   3)T, without dividing byf  1 orf    2.
+
+S1, f1̸=0,   f2̸=0.     ranksp(P)=2, ranksp(H⊥)=3, ranksp(Hfull)=3, nullsp(Hfull)=1. At
+D =4thefibrevaluesare rankH         full =12anddimkerH   full =4. ThesourceJ alwaysliesinthe
+image, and the unique horizontal solution is (5.29). The regular-locus theorem is unchanged.
+
+S2, f1 = 0,   f2̸= 0.     P = 0, ranksp(H⊥) = 1, ranksp(Hfull) = 1, nullsp(Hfull) = 3. At D = 4
+the fibre values are rank 4 and nullity 12.  The system collapses to ∂f1 = 0 together with
+2f2t = ∂f3.  Compatibility therefore requires ∂f1 = 0.  If ∂f1 ̸= 0, there is no stationary
+horizontal solution. If ∂f1 =0, then t=∂f3/(2f2) while q and u remain invariant algebraic
+moduli.  The extra kernel directions are these horizontal moduli together with the vertical
+gaugeV; they are not additional projective gauge.
+
+S3, f1 ̸= 0,   f2 = 0.     ranksp(P) = 2, ranksp(H⊥) = 2, nullsp(Hfull) = 2. At D = 4 the fibre
+values are rank 8 and nullity 8.  The Palatini block still determines (q,u) as functions of t.
+Substitutingintotheresiduerowyieldstheidentity−∂f   3 =0independentlyoft. Compatibility
+therefore requires ∂f3 = 0. If ∂f3 ̸= 0, there is no stationary solution. If ∂f3 = 0, then t is
+a gauge-invariant modulus and (q,u) are determined by t. The extra kernel is this invariant
+t-direction, not additional gauge.
+
+S4, f1 =f2 =0.     H⊥ =0, species kernel dimension four, fibre kernel dimension 16 at D =4.
+Compatibility is J =0, i.e. ∂f1 =0 and ∂f3 =0. If either fails, there is no stationary solution.
+If both hold, (q,u,t) are horizontal moduli andVremains vertical gauge.
+
+Alternative first-index shift under the present targets.The pair (            a,b)=(1,0) induces
+the trace map (3,2,5)ξ. It fails the Ricci target (4.6) and is not selected by Proposition 4.1.
+
+IBP remainder versus charges.The bulk density remains projectively invariant. Off shell,
+δJ1 =δJ3 =0 for inert spectators. The condition nµδ(Jµ1 +Jµ3)=0 therefore cannot classify
+proper versus improper transformations. Test C of Appendix H lies outside the theorem.
+
+
+
+
+
+
+                                                          25

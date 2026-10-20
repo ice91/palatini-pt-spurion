@@ -1,0 +1,44 @@
+{
+  "sympy": "1.14.0",
+  "trace_map": "Matrix([[3, -3, 0], [2, 8, 2], [5, 2, 5]])",
+  "trace_map_inverse": "Matrix([[1/3, 5/36, -1/18], [0, 5/36, -1/18], [-1/3, -7/36, 5/18]])",
+  "W_contravariant": [
+    "Q0 + 2*T0 - U0",
+    "-Q1 - 2*T1 + U1",
+    "-Q2 - 2*T2 + U2",
+    "-Q3 - 2*T3 + U3"
+  ],
+  "raw_H_species": "Matrix([[-4*f1/3 + 2*f2, -2*f1/3, 2*f1/3, -2*f2], [-2*f1/3, -11*f1/36, 2*f1/9, 0], [2*f1/3, 2*f1/9, f1/9, 0], [-2*f2, 0, 0, 2*f2]])",
+  "raw_H_full_shape": [
+    16,
+    16
+  ],
+  "horizontal_H_species": "Matrix([[-11*f1/36, 2*f1/9, -2*f1/3], [2*f1/9, f1/9, 2*f1/3], [-2*f1/3, 2*f1/3, -4*f1/3 + 2*f2]])",
+  "horizontal_J_species": "Matrix([[p], [-p], [-k + 2*p]])",
+  "det_P": "-f1**2/12",
+  "P_inverse": "Matrix([[-4/(3*f1), 8/(3*f1)], [8/(3*f1), 11/(3*f1)]])",
+  "det_horizontal": "-f1**2*f2/6",
+  "Schur": "2*f2",
+  "effective_source": "-k",
+  "Palatini_constant": "3*p**2/(2*f1)",
+  "Palatini_solve": {
+    "q": "(-8*f1*t + 12*p)/(3*f1)",
+    "u": "(-2*f1*t + 3*p)/(3*f1)"
+  },
+  "residue_solve": "k/(2*f2)",
+  "horizontal_solve": {
+    "q": "-4*k/(3*f2) + 4*p/f1",
+    "u": "-k/(3*f2) + p/f1",
+    "t": "k/(2*f2)"
+  },
+  "derived_on_shell": "(-f1*k**2 + 6*f2*p**2)/(4*f1*f2)",
+  "raw_solve": {
+    "Q": "(-8*A*f1*f2 - 4*f1*k + 12*f2*p)/(3*f1*f2)",
+    "T": "(2*A*f2 + k)/(2*f2)",
+    "U": "(-2*A*f1*f2 - f1*k + 3*f2*p)/(3*f1*f2)"
+  },
+  "raw_on_shell": "(-f1*k**2 + 6*f2*p**2)/(4*f1*f2)",
+  "raw_nullspace_generic": [
+    "Matrix([[1], [-8/3], [-2/3], [1]])"
+  ]
+}

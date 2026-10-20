@@ -1,0 +1,61 @@
+Symmetry2026,18, 170                                                                                                                  14 of 50
+
+
+
+                                   5.1.1. Route 1: The Rank-One Determinant (ROD) Route
+                                         Inspired by DBI-type actions, this route constructs a Lagrangian from the determinant
+                                   ofarank-onedeformationofthemetricinvolvingthecanonicaltracelesstensorT µν defined
+                                   in Section3. The Lagrangian is given by
+                                                                                  q
+                                                                LROD =p−g             det1+ 23λτT−1          .                                     (26)
+
+                                   This construction is not Born–Infeld gravity, but shares its geometric spirit.
+
+                                   5.1.2. Route 2: The Closed-Metric (CM) Route
+                                         This route defines a new effective metric  ˜gµν via a rank-one shift,  ˜gµν  =  gµν +
+                                   (23)λτ ˆnµˆnν.  The Lagrangian is then constructed from the difference in the volume el-
+                                   ements,LCM≡√−˜g−√−g.
+
+                                   5.1.3. Route 3: The PT-Even Chern–Simons (CS+) Route
+                                         This route starts with the topological Nieh-Yan 4-form, NY ≡ d(eA∧ TA).  Using
+                                   the identity TA∧TA = NY+eA∧eB∧RAB, we apply the Hodge star and our scalar PT
+                                   projector. ThetermfromNYbecomesaboundaryterm(byA5),andtheremainingPT-even
+                                   bulk piece constitutes the third route,LCS+.
+                                         Thefollowingpropositionformalizestheresultthatallthreedistinctroutesleadtothe
+                                   same bulk action.
+
+                                   Proposition 1 (Three-Route Bulk Equivalence). Under the A1–A6 posture and after enforcing
+                                   C1, the quadratic-order bulk actions derived from the ROD, CM, and CS+ routes are identical.
+                                   Specifically, each route yields a bulk Lagrangian of the form
+
+                    δ2LX = A⋆p−g sgn(Σϵ)IT   (mod∇µJµX),    with a universal coefficient    A⋆ = λ2/8,                       (27)
+
+                                   where X∈{ROD,CM,CS+}.
+
+                                   Proof. Sketch of Proof. The equivalence of the ROD and CM routes follows from theirq
+                                   shared Jacobian,√−˜g/√−g =               det[1+(23)λτT]. Expanding the determinant to second
+                                   order using the tracelessness ofT  yields δ2L ∝ −λ2τ2.  Applying the key relation (25)
+                                   then gives the result. The CS+ route involves a more detailed calculation with the Hodge
+                                   star,butafterprojectionandapplicationofC1,itreducestothesamebulkterm(detailsin
+                                   AppendixC).
+
+                                         Figure5provides a numerical verification of the three-route bulk equivalence at
+                                   quadratic order.
+                                         This remarkable equivalence, numerically verified in Figure5, establishes the main
+                                   bulk identity of this section:
+
+                                          δ2LROD ≡ δ2LCM ≡ δ2LCS+ ≡ (λ2/8)p−g sgn(Σϵ)IT   (mod∇µJµ)                                .        (28)
+
+                                   5.2. Boundary Terms and the Flux-Ratio Diagnostic
+                                         Theonlydifferencesbetweenthethreerouteslieintheirrespectiveboundaryterms,
+                                   whichcanbeexpressedasdifferentimprovementcurrents JµX. Onadmissiblespacetimes
+                                   (as per A4), these boundary terms do not affect the bulk equations of motion. A sharp,
+                                   quantitative test of their physical equivalence is provided by the flux-ratio diagnostic,
+
+
+
+
+
+
+
+                                                                                                        https://doi.org/10.3390/sym18010170

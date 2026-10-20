@@ -1,0 +1,64 @@
+Symmetry2026,18, 170                                                                                                              34 of 50
+
+
+
+                                  Appendix C.1. Rank-One Determinant Route: Determinant Algebra with the 23 Normalization
+                                       Consider the rank-one determinant route Lagrangian
+                                                                         q
+                                                        LROD =p−g           det1+ 23λτT−1          ,       λ∈R.                       (A31)
+
+
+                                  Usingpdet(1+X)= 1+ 12TrX+ 18[(TrX)2−2TrX2]+O(X3)andTrT = 0,thequadratic
+                                  piece is
+                                                                   h                              22λ2p
+                                              δ2LROD =p−g 18         −2Tr   (23λτ)2T 2 i    =−14    3        −g τ2Tr(T 2)
+
+                                                        =−14· 49· 34 λ2p−g τ2 =− 112 λ2p−g τ2.                                    (A32)
+
+                                  Withτ2 = 9η2|Σϵ| and sgn(Σϵ)IT =−6η2|Σϵ|,
+
+                                                                                                        λ2
+                                                − 112λ2τ2 =− 112λ2(9η2|Σϵ|)=−34λ2η2|Σϵ|=                 8    sgn(Σϵ)IT,
+
+                                  so that
+
+                                                    δ2LROD = A⋆p−g sgn(Σϵ)IT + ∇µJµROD,        A⋆ = λ28 .                          (A33)
+
+                                  At the bulk-density level, one may take JµROD≡ 0. For unified boundary diagnostics, we
+                                  adopt a common canonical representative Jµcan for allthree routes (AppendixC.4).
+
+                                  AppendixC.2. Closed-MetricRoute: Rank-OneDeformationEqualsRank-OneDeterminantRoute
+                                  toO(T 2)
+                                       Take the rank–one deformation
+
+                                                                         ˜gµν = gµν+ 23λτ ˆnµˆnν,
+
+                                  so that                        p                 r     h            i
+                                                                     −˜g=p−g         det  1+ 23λτT      .
+
+                                  Define
+                                                                         LCM≡p−˜g−p−g.
+
+                                  The same algebra gives
+
+
+                                                     δ2LCM = A⋆p−g sgn(Σϵ)IT + ∇µJµCM,        A⋆ = λ28 .                           (A34)
+
+
+                                  Thus rank-one determinant route and CM have the same bulk coefficient A⋆ and differ only
+                                  by improvements.
+
+                                  Appendix C.3. PT-Even CS/Nieh–Yan Shadow: Quadratic Reduction (σϵ)
+                                       Using TA∧TA = d(eA∧TA)−eA∧eB∧RAB, applying∗ and the scalar PT projector
+                                  (A2), and evaluating after C1, the PT-even piece reduces at quadratic order to
+
+
+                                                     δ2LCS+ = A⋆p−g sgn(Σϵ)IT + ∇µJµCS+,        A⋆ = λ28 ,                         (A35)
+
+
+                                  where the Nieh–Yan assignment (A5) reshuffles only boundary conventions inside the
+                                  PT–even sector.
+
+
+
+                                                                                                     https://doi.org/10.3390/sym18010170

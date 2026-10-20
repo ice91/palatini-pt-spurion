@@ -1,0 +1,77 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                      doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Figure 1. Irreducible torsion content at quadratic order (log–log view). Ratios of projected scalar strengths
+                    comparing the pure-trace blockagainst theaxial andtraceless blocks,shown astrace/axialand trace/tensor on
+                    logarithmic axes. The Palatini algebraicity (Section4.2) and the                    PT projector drive axial and traceless pieces to
+                    zero, leaving the pure-trace map (13) as the unique survivor. [nb:      fig_c1_pure_trace.py]
+
+                    4.1. Most General Local Linear Ansatz (One Derivative)
+                          At the derivative order relevant for the quadratic analysis, the only covector available is∂µϵ and
+                    the invariant tensors areδAB andϵABCD. The most generalLorentz-covariantlinearansatz is therefore
+
+                                                     TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ+(P·∂ϵ)ABC,                                       (15)
+
+                    withreal A,B andwhere(P·∂ϵ)ABC denotesanyattemptedtracelessmixed-symmetrypiecebuiltfrom
+                    a single vector.
+
+                    PropositionB.1(single-vectorno-go;AppendixB).Fromonevector vµ onecannotconstructanonzero
+                    traceless torsionirrep qλµν obeying qνµν=qλµµ=0 and qλµν=−qλνµ. Anysuch attemptreduces tothe span of
+                    δA[BvC] andϵABCDvD.
+
+                          By Prop. B.1 the last term in (15) is trivial, and the ansatz reduces to
+
+                                                              TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ.                                                   (16)
+
+                    The scalar projector (Section2) removes all                 PT-odd scalars, but it does not by itself force B = 0; the
+                    Palatini equations will.
+
+                    4.2. Palatini Equations: Algebraic, Irrep Blocks, and Alignment
+                          Weaugmentthepre-lockbulkskeleton(11)      withaLagrangecurrentthatenforcesalignmentof
+                    the torsion trace with∂ϵ,
+
+                                                        LΛ =p−gΛµTµ−3η∂µϵ,        Tµ≡ Tνµν.                                           (17)
+
+                    ByLemma1(Section2),                                project-then-vary andvary-then-project commuteonscalardensities. Varying
+                    w.r.t. the independent connection then yields algebraic equations in the three irreps{Tµ,Sµ,qλµν}:
+
+                                                Z              h4α1                                                             i
+                                       δωS=        d4xp−g         3   TµδTµ+ α112 SµδSµ+2α1qλµνδqλµν+ΛµδTµ                       ,                    (18)
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a         Creative Commons CC BY license.

@@ -1,0 +1,7 @@
+{
+  "reason": "Initial independent development pytest runs were invoked from original cwd, creating a new default .pytest_cache despite isolated basetemp. No original file was modified. Final independent runner executes from working_copy.",
+  "from": "/Users/rocky/Downloads/palatini-pt-spurion/.pytest_cache",
+  "to": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/relocated_root_pytest_cache",
+  "initial_manifest_contains_cache": false,
+  "action": "Moved newly created cache into authorized audit subtree; retained all cache files."
+}

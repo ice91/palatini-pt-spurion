@@ -1,0 +1,11 @@
+{
+  "equation": "epsilon_ABCD e^C wedge T^D=0 at a nondegenerate coframe",
+  "shape": [
+    24,
+    24
+  ],
+  "rank": 24,
+  "determinant": "16",
+  "conclusion": "all 24 torsion components vanish; no pure-trace assumption",
+  "rank_check_pass": true
+}

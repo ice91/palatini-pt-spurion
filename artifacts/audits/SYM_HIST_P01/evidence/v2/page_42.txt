@@ -1,0 +1,64 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                  doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                      41 of 48
+
+
+
+                   Appendix E.2. C1 Implies No Axial Channel; the Trace Channel Is Removable
+                         By the uniqueness theorem (C1), Equation (22)     , the axial and traceless torsion irreps vanish,
+                   Sµ = 0,    qλµν = 0, and the trace aligns with the spurion gradient, Tµ = 3η∂µϵ. Equation (A57)
+                   therefore reduces to the single trace channel
+
+                                                          L(trace)ψ,T    = ecV TµJµ = 3cVηe(∂µϵ) Jµ.                                              (A58)
+
+                   Proposition 18(Vector rephasingremovesthe tracechannel). Considerthe localvectorphaseredefinition
+                   ψ→ ψ′ = eiαϵψ,  ¯ψ→  ¯ψ′ =  ¯ψe−iαϵ with a constantα. Then
+
+                                                   Lψ[ψ′, ¯ψ′]=Lψ[ψ, ¯ψ]−αe(∂µϵ) Jµ + ∇µ···,                                    (A59)
+
+                   so choosing α = 3cVη(=−34η in our normalization) cancels (A58)         pointwise. Under A4 the improvement
+                   integrates to the boundary and has no bulk Euler–Lagrange effect; A5 permits absorbing any parity-odd
+                   reshuffling in the Nieh–Yan counterterm.
+
+                   Sketch.  Insertψ′ = eiαϵψ into the kineticterm e ¯ψieAµγA∂µψ and use theLeibniz rule. The derivative
+                   actingoneiαϵ generatestheshift−αe(∂µϵ)Jµ in(A59)        ;themassandspin-connectionpiecesareinvariant
+                   underavector(notaxial)phase. Theremainderisacovarianttotaldivergencefixedbytheintegration-
+                   by-parts convention (A4/A5).
+
+                   Combining (A58)         with Prop.18and the coefficient assignment           (A56)         yields precisely the two-line
+                   summary in Section8: no axial channel and a removable trace channel.
+                         Path-integralmeasure(anomaly)check. ThefieldredefinitioninProp.18isa          vectorU(1) rotation,
+                   hencethefermionicmeasureisinvariant(Jacobianequaltoone). Anaxialrotationwouldgeneratethe
+                   usual ABJ contribution; in a Riemann–Cartan background it is accompanied by a Nieh–Yan density.
+                   We do not perform an axial rotation anywhere in this work.
+
+                   Appendix E.3. Nieh–Yan as a Boundary Convention (A5)
+                         TheNieh–Yan4-formNY≡ d(eA∧TA) isanexactform. Inourposture(A5),anyexplicituseof
+                   NY enters only as a boundary convention after applying the scalar projectorΠPT: it does not modify
+                   Euler–Lagrange equations in the bulk and is indistinguishable from a choice of improvement current.
+                   This applies equally to (i) the three-chain equivalence (where the PT-even CS/Nieh–Yan shadow
+                   differs from the DBI/CM routes by an improvement current) and (ii) the Dirac sector (where vector
+                   rephasing reshufflesboundary terms that can beabsorbed into the chosenNieh–Yan convention). No
+                   physical statement in Sections5–8depends on a specific Nieh–Yan choice.
+
+                   Appendix E.4. Scope and Caveats: Topology and Boundary Flux
+                         Our conclusions rely on the posture A4: either compact PT-invariant domains with vanishing
+                   boundary flux or standard asymptotic fall-offs (FRW/flat) so that improvement currents integrate to
+                   zero. Theyalsoassumeasingle-valuedspurionphaseϵ(x) sothattherephasinginProp.18isaglobally
+                   well-defined mapψ7→ eiαϵψ.
+                   •      Nontrivialtopology(notcovered). Ifϵ ismulti-valuedoradmitsnontrivialholonomy(e.g.,on
+                         manifolds with nontrivial π1 or H1), the map eiαϵ may fail to be single-valued. In such cases
+                         the local cancellation in (A59)         can leave a global remnant proportional to the winding; our bulk
+                         equivalences and removability statements are not asserted in that setting.
+                   •      Nonvanishing boundary flux (not covered).  On domains where the PT-invariant boundary
+                         fluxoftherelevantimprovementcurrentsdoesnotvanish,boundarytermsmaycarryphysical
+                         information(e.g.,inexplicitlyfiniteboxeswithprescribedinflow). Ournulltestsandcancellations
+                         are presented only under A4 fall-offs.
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

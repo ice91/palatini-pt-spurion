@@ -1,0 +1,64 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                     34 of 43
+
+
+
+                     Appendix D (at a glance).
+                     •      Mixing matrix. Four dimensionless coefficientsµ(Y)X    (X = ROD,CM;Y = N,∇N) control
+                           the TT–constraint mixing with an overallη2Σϵ factor.
+                     •      Non-collinearity. The two locking rows are not proportional on evolving admissible back-
+                           grounds; the determinant∆ is generically nonzero (∆∼ α0η4Σ2ϵk2+···).
+                     •      Equal–coefficientidentity. K−G= a−3∂µ(a3Jµ∆);underA4thisyieldsK= G andc2T = 1at
+                           the locked weightsw⋆.
+
+                   Reproducibility Note
+                         Tables5–6come from a single symbolic pipeline that: (i) expands         T  and τ to linear order in
+                   ADM variables with the  23 normalization, (ii) forms the rank-one determinant route/CM quadratic
+                   densities, (iii) projects onto the bilinears of Eqs. (79)     –(80)     .  Scripts and hashes that also produced
+                   Figs.c3_cT_heatmap andc3_dispersion arecatalogedinSupp.R.[nb : mixing_matrix_extract.py]
+
+                   Table5. FRWcoefficientswithϵ= ϵ(τ). Entriesarethedimensionlessµ’sof(81)     ,writtenasµ= c0+cHH+
+                   cΥΥ [Eq. (83)]. Overall factor     η2Σϵ multiplies the mixing (notshown here).
+
+                                                       Coefficient        c0           cH           cΥ
+                                                       µ(N)ROD          c(N)ROD,0    c(N)ROD,H    c(N)ROD,Υ
+                                                       µ(∇N)ROD         c(∇N)ROD,0    c(∇N)ROD,H    c(∇N)ROD,Υ
+                                                       µ(N)CM           c(N)CM,0      c(N)CM,H      c(N)CM,Υ
+                                                       µ(∇N)CM          c(∇N)CM,0      c(∇N)CM,H     c(∇N)CM,Υ
+                   Regeneration recipe (FRW).(1) Writeδgµν in terms of(δN,∂iNi,hTTij ); (2) expandT ,τ to linear order
+                      using ˆnµ= ∂µϵ/p|Σϵ| and C1; (3) insert intoLROD andLCM with the 23 scaling; (4) keep only
+                                                 hTTδN andhTT∂iNi bilinears to read offc0,cH,cΥ.
+
+
+
+                   Table 6. Weak field (AF) coefficients with slowly varyingϵ(t,x). Set a→ 1 (H= 0) and defineΥ≡ ∂tlnτ.
+                   Overall factorη2Σϵ multiplies the mixing (not shown here).
+                                                             Coefficient         c0           cΥ
+                                                             µ(N)ROD          ˜c(N)ROD,0     ˜c(N)ROD,Υ
+                                                             µ(∇N)ROD         ˜c(∇N)ROD,0     ˜c(∇N)ROD,Υ
+                                                             µ(N)CM            ˜c(N)CM,0       ˜c(N)CM,Υ
+                                                             µ(∇N)CM          ˜c(∇N)CM,0        ˜c(∇N)CM,Υ
+                   Regenerationrecipe(weakfield). RepeatFRWstepswitha→ 1,replaceconformalbyphysicaltime,and
+                             expand consistently in spatial gradients so thatΣϵ remains the projected, real scalar.
+
+                   Appendix E. Dirac Coupling, Field Redefinition, and the Nieh–Yan Scope
+                         This appendix supplies the details promised in Sec.8: (i) the torsion–fermion couplings in our
+                   conventions, (ii) the precise field redefinition that removes the trace channel once the pure-trace map
+                   (C1) is imposed, (iii) the role of the Nieh–Yan density as a boundary convention (A5), and (iv) the
+                   scope limitations on nontrivial topology (A4).
+                         Throughout we work under the global posture A1–A5 of Sec.2, use metric signature        ηAB =
+                   diag(−,+,+,+), and adopt the gamma-matrix conventions
+
+                                             {γA,γB}= 2ηAB,       γ5≡ iγ0γ1γ2γ3,       ϵ0123=+1,                               (88)
+
+                   so thatγAB≡  12[γA,γB] andγABC≡ γ[AγBγC]= iϵABCDγ5γD.
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

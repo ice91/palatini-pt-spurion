@@ -1,0 +1,73 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                         doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                               27 of 43
+
+
+
+                    Appendix B.1. Torsion as a Lorentz Representation and Its Algebra
+                          In index language (spacetime indices), torsion is a rank-3 tensor antisymmetric in its last two
+                    indices, Tλµν = −Tλνµ, with 4×6 = 24 independent components in d=4.  The Lorentz-covariant
+                    irreducible content splits into
+                                                                                                
+                                                                                                   Tµ≡ Tνµν,
+                                   24 ≃      4|{z}  ⊕     4|{z}  ⊕             16|{z}    ,      Sµ≡ ϵµνρσTνρσ,                                  (50)
+                                           trace Tµ     axial Sµ     traceless tensor qλµν         qνµν = qλµµ = ϵµνρσqνρσ = 0.
+
+                    Weuseϵ0123 =+1andthemetricsignature(−,+,+,+),andweadoptthestandardscalarproduct
+                    (X,Y)≡ XλµνYλµν on this space.3
+
+                    Appendix B.2. Idempotent projectors
+                          Define three linear maps P(T),P(S),P(q) on the torsion space by
+
+                                                     P(T)T              gλµTν−gλνTµ,                                                                    (51)
+                                                               λµν≡ 13
+                                                     P(S)T
+                                                               λµν≡− 16 ϵλµνρSρ  = −16 ϵλµνρϵραβγTαβγ,                                     (52)
+                                                     P(q)T
+                                                               λµν≡ Tλµν−P(T)Tλµν−P(S)Tλµν.                                            (53)
+
+                    These are theunique Lorentz-covariant, algebraic (derivative-free) projectorsonto the three irreps in
+                    Eq. (50). A direct computation shows:
+                                       P(X)2 = P(X),        P(X)P(Y) = 0(X̸= Y),        P(T)+P(S)+P(q) = 1,                   (54)
+
+
+                    and the images obey by construction
+                                                        P(T)Tνµν = Tµ,          ϵµνρσP(T)T
+                                                                                                        νρσ = 0,
+                                                        P(S)Tνµν = 0,            ϵµνρσP(S)T                                                    (55)
+                                                                                                        νρσ = Sµ,
+                                                        P(q)Tνµν = 0,            ϵµνρσP(q)T
+                                                                                                        νρσ = 0.
+
+                    Orthogonality and Quadratic Split
+                          With the scalar product(·,·),
+                      P(X)T, P(Y)T= 0   (X̸= Y),     T,T=P(T)T,P(T)T+P(S)T,P(S)T+P(q)T,P(q)T.  (56)
+
+
+                    Using (51)–(53) one finds the standard quadratic identity
+
+
+                                                      TABCTABC  =  23 TµTµ +   124 SµSµ +  ˜qλµν ˜qλµν,                                        (57)
+
+                    where we have denoted ˜q≡ P(q)T for thestandard normalization of the traceless piece.
+
+
+
+                    3    Frameandspacetimecontractionsareequivalentonce eAµ isinserted;allformulasbelowholdwitheither TABC or Tλµν,and
+                        we freely move between the two notations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a         Creative Commons CC BY license.

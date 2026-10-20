@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-20T08:32:54.429524+00:00",
+  "original_count": 1220,
+  "changed": [],
+  "missing": [],
+  "added_outside_sandbox": [],
+  "git": {
+    "head": "6b456b89baa866b6dd05bc69a837b98a985a34ad",
+    "branch": "main",
+    "status": "?? .DS_Store\n?? artifacts/\n?? refs/\n"
+  },
+  "git_matches_initial": true,
+  "pass": true,
+  "scope_note": "Regular project files; Git internals and symlink targets are excluded from byte hashes."
+}

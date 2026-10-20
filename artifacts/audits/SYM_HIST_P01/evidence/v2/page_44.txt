@@ -1,0 +1,73 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                                   doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                                          43 of 48
+
+
+
+                      •      (D6) DoFcount. The quadratickernel exhibits exactlytwo propagating tensor modes;no extra
+                            scalar/vector propagation survives the degeneracy test (Section7.3; Figure10). Any additional
+                            mode falsifies our posture at this order.
+                      •      (D7) NLO slope.  At next order, the leading PT-even dispersion predicts δc2T(k) =  bk2/Λ2
+                            (Equation (63)     ): a log–log slope≃ 2 in clean frequency windows is characteristic (Figure11;
+                            Section9.1).                       8
+                      •      (D8)Fermionchannelnull. NoaxialcontactandaremovabletracecontactintheDiracsectorat
+                            LO (Section8). Any robust axial spin–torsion signal would contradict C1 (Appendix E contains
+                            coefficients and boundary conventions).
+                      •      (D9) Spurion-limit tests.  Two complementary null checks targeting residual spurion dynamics
+                            (Section9.5):
+                            –      (D9-a) Quadratic scaling. Fit|δc2T(k)| ∝ k2 on the admissible band (k ≪ Λ) using Equa-
+                                   tion (65)     . A statistically significant failure (ˆn̸= 2 beyond systematics) indicates residualϵ
+                                   dynamics.
+                            –      (D9-b) Route equality.   Using the unified improvement representative (Appendix C),
+                                   test ∆A⋆(k)  ≡   A(rank−onedeterminantroute)⋆                         − A(CM)⋆      →   0  and  boundary  flux-ratio  unity
+                                   Rrank−onedeterminantroute/CM→ 1 on growing domains (A4). Significant residuals falsify the
+                                   spurion limit.
+
+                      Appendix F.2. Expanded Disambiguation Table
+                            Entries are generic at LO on admissible backgrounds with A4 fall-offs; tuned subclasses and
+                      specific parameter choices may alter individual cells.  See the notes in SectionF.3for caveats and
+                      representative citations.
+
+                                               Table A3. Operational disambiguation at quadratic order (expanded).
+
+                       Diagnostic                                           This work               CS-mod.Horndeski         Teleparallel            EC/
+                                                                                       grav.             /DHOST                 /f(T)             ECSK-like
+                       Parity-odd GW birefringence              No (D1)              Yes (generic)             No (often   Not diagnostic           Model-
+                                                                                                           tuned)               at LO             dependent
+                       Axial torsion Sµ at LO                      Absent (C1)         Not diagnostic Not diagnostic       Not diagnostic
+                                                                                       at LO               at LO                at LO               Often present
+                       Traceless torsion qλµν at LO             Absent (C1)         Not diagnostic    Not diagnostic         Possible in
+                                                                                       at LO               at LO             extensions                Possible
+                       cT at LO                                    = 1 by identity(D5)                 Helicity-split           Tuned→ 1              Often= 1                 Model-dependent
+
+                       Extra propagating DoF (quad.)     No (2 TT) (D6)         No new TT             Yes (scalar;             Model-               Model-
+                                                                                                          generic)           dependent            dependent
+                       Three-route bulk equality (C2)           Yes (D3)            Not applicable      Not applicable      Not applicable      Not applicable
+                       Boundary flux ratioRX/Y            → 1 (D4)           Not applicable      Not applicable      Not applicable      Not applicable
+                       NLO slopeδc2T ∝ k2                         Yes (D7, D9-a)       Non-universal             Model-        Model-               Model-
+                                                                                                        dependent            dependent            dependent
+                       Dirac axial contact SµJµ                                                       Not diagnostic       Not diagnostic         Present in
+                                                5                    Absent (D8)        Not diagnosticat LOat LO                at LO               general
+                       Trace contact removable                      Yes (D8)            Not diagnosticNot diagnostic           Model-
+                                                                                       at LO               at LO             dependent         Not generically
+
+
+                      Appendix F.3. Notes, Caveats, and Representative Anchors
+                            Parity-odd lines.  Chern–Simons modified gravity (Jackiw–Pi; Alexander–Yunes) generically
+                      induceshelicity-dependentGWpropagation;detailsdependonthechoiceofscalarfieldandcoupling.
+                      Our scalar-PT projector eliminates parity-odd scalars at LO; see Thm.2.  Representative anchors:
+                      [25,26].
+
+
+
+                      8    Caveat: finite-windowfitsmaybebiasedbyinstrumentalsystematicsorastrophysicalpriors;interpretboundsconservatively.
+
+
+
+
+
+
+
+
+                  © 2025 by the author(s). Distributed under a             Creative Commons CC BY license.

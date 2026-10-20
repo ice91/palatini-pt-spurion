@@ -1,0 +1,62 @@
+Symmetry2026,18, 170                                                                                                                               7 of 50
+
+
+
+                                       Variational outputs (posture A1–A6).
+                                       •      Variation w.r.t. ω (connection): yields algebraic torsion equations at two-derivative order,
+                                             which under A1–A6 enforce the pure-trace alignment used in Result C1 (Section4).
+                                       •      Variation w.r.t. e (coframe/metric): yields the metric field equations. We do not attempt to
+                                             solvebackgroundcosmologiesinthispaper;thequadratictensorspeedproofdependsonly
+                                             on the reduced quadratic action and the admissible-domain identities (A4–A5).
+                                       •      Variation w.r.t. ϵ: in the spurion limit,ϵ is not varied. Ifϵ is promoted to a dynamical field in
+                                             anextendedEFT,itsequationtakesaconserved-current/constraintform(e.g.,∇µJµϵ = 0for
+                                             anappropriatecurrent Jµϵ),anditscouplingstothetensorsectorenteronlythroughsymmetry-
+                                             allowed higher-order operators; this lies beyond the present scope.
+
+                                      2.10. Summary of Key Observable-Sector Ingredients
+                                            We consolidate the spurion-built and projected quantities that appear repeatedly in
+                                      later sections:
+
+                                       Key ingredients for the observable sector
+
+                                       •      Projectively invariant trace:Tµ≡ Tµ−∂µϵ.(∂ϵ)2 (real, PT-even).
+                                       •      Projected spurion scalar:Σϵ≡ΠPT          TABCTABC(representative PT-evenquadraticinvariant).
+                                       •       Quadratictorsioninvariant: IT≡−ΠPT
+                                       Regularity note: on loci whereΣϵ = 0, any normalized quantities defined from∂ϵ are understood by
+                                       smooth limiting continuation.
+
+                                      3. Building the Operator Basis: From Symmetries to Observables
+
+                                      Positioning and Scope.  This section constructs an auditable operator basis compatible with
+                                      the posture A1–A6. We (i) enumerate the complete quadratic, PT-even, projectively consistent
+                                      scalardensities before integratingtorsion (“pre-lock”),(ii)show howthebasis collapsesafterthe
+                                      torsion solution (C1) (“post-lock”), and (iii) list the complete PT-even, projectively consistent
+                                      four-derivative basis relevant for the leading tensor-sector deviation. All reductions use only the
+                                      projector properties (Section2) and integration-by-parts on admissible domains (A4–A5).
+                                            Throughoutthissection,thepostureA1–A6ofSection2isinforce. Inparticular,scalar
+                                      densities are understood to be projected into the PT-even sector, and we retain explicit
+                                      ΠPT only when it helps traceability. We adopt a conservative EFT bookkeeping: “quadratic
+                                      order”referstotermsquadraticinperturbationsaboutasmoothbackground,while“two-
+                                      derivative”and “four-derivative”referto thetotal numberof derivatives appearingin the
+                                      scalar density.
+
+                                      3.1. Symmetry Filter and Minimal Building Blocks
+                                            Projective invariance in observables is implemented by the Stueckelberg compensator
+                                      ϵ(x), which organizes the torsion-trace dependence through the invariant combination
+                                      (Section2)
+                                                                                      Tµ≡ Tµ−∂µϵ,                                                             (7)
+
+                                      while the scalar PT projectorΠPT restricts admissible scalar densities to the PT-even sub-
+                                      space(Theorem1). Atthetwo-derivativelevel(“LO”forthetensorsector),theindependent
+                                      PT-even quadratic monomials involving(Tµ,∂µϵ) are
+
+                                                                              TµTµ,       (∂ϵ)2,        Tµ∂µϵ,                                                  (8)
+
+                                      together with the standard torsion-quadratic scalar TABCTABC (which is PT-even). The
+                                      pre-lock basis below provides a convenient audit handle because it makes the “order of
+
+
+
+
+
+                                                                                                                 https://doi.org/10.3390/sym18010170

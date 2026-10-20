@@ -1,0 +1,38 @@
+{
+  "all_pass": true,
+  "rows": [
+    {
+      "a": "1",
+      "ell": "1",
+      "E": "1/2",
+      "T": "2.0",
+      "I_E_real": "0.26339306990111719722566847537160804357673116",
+      "I_E_imag": "1.87950494469295575187184451703013126773942279e-54",
+      "I_minusE_real": "0.690417113529283493706388559948776288083392543",
+      "I_minusE_imag": "1.46495753735518022482210126127475753542765503e-54",
+      "vacuum_response": "0.182692222091604873101195052477328280943895807",
+      "state_excess": "0.546051699926042342670684348887365576884327715",
+      "one_particle_response": "0.728743922017647215771879401364693857828223522",
+      "scope": "leading response F; multiply by lambda_detector^2 |m_eg|^2 for probability"
+    },
+    {
+      "a": "1",
+      "ell": "1",
+      "E": "1/2",
+      "T": "5.0",
+      "I_E_real": "0.197475333658440965510817134702331099024105314",
+      "I_E_imag": "-1.16563348953739268205649120943867937391489938e-53",
+      "I_minusE_real": "0.81119778875493833277258177067795668927679806",
+      "I_minusE_imag": "-4.48359787469117368847008099147744810565560466e-54",
+      "vacuum_response": "0.2386652631218751714681710474922460258159317",
+      "state_excess": "0.697038359884414143096709127753323323374504911",
+      "one_particle_response": "0.935703623006289314564880175245569349190436611",
+      "scope": "leading response F; multiply by lambda_detector^2 |m_eg|^2 for probability"
+    }
+  ],
+  "unwindowed_excess_at_E_half": "0.744226911698648453511904491039886059810598594",
+  "unwindowed_amplitude_error": "8.32486109081374261884211740657495481129687596e-54",
+  "identity": "DeltaF_chi(E)=|integral chi*exp(-iE tau)*Fdot|^2 + |integral chi*exp(+iE tau)*Fdot|^2",
+  "commutator_check": "DeltaF(E)=DeltaF(-E); exact from the amplitude decomposition",
+  "not_inferred": "no reconstruction of global correlations from identical accessible restrictions"
+}

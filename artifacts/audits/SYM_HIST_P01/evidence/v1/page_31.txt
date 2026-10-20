@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                   doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Appendix A.6. Consequences Used in the Main Text
+                   (C1) Palatini block-diagonalization.
+                          TheoremA1(A3) allows us to           project then vary in the Palatini equations, so that the connection
+                   variation is algebraic and block-diagonal in the torsion irreps.  Together with the selection rules
+                   (Prop.A2) this yields           Sµ=qλµν=0 and the pure-trace map quoted in Section4.
+
+                   (C2) Route equivalence modulo boundary.
+                          Self-adjointness (Prop.A1) and the boundary posture (SectionA.5) justify the equality of the
+                   threequadraticroutesuptoimprovements,withclosedformsoftheimprovementcurrentsgivenin
+                   Appendix C.
+
+                   (C3) Equal-coefficient identity and cT=1.
+                          The star-variation identities (A8)      –(A9)       are used inside the ADM expansion behind the equal-
+                   coefficientidentity K−G = ∂µ(a−3Jµ∆a3) proveninAppendixD.Theboundaryposturethenenforces
+                   K=G and cT=1 at quadratic order.
+
+                   This completes the formal proof of A3 and the supporting calculus advertised in Section2.
+
+                   Appendix B. Irrep Projectors & No-Go for qλµν(v)
+                          This appendix collects the group-theoretic ingredients used in Section4:  (i) the irreducible
+                   decompositionof thetorsiontensor underthe Lorentzgroup,(ii) explicit,idempotentprojectors onto
+                   the trace, axial, and traceless sectors, (iii) the quadratic identityfor TABCTABC in our conventions, and
+                   (iv) the single-vector no-go that underlies the statement quoted in the main text as “Proposition B.1” for
+                   the qλµν irrep. All statementsare purely algebraic andhold before/after applyingthe scalar projector
+                   ΠPT[·]; after projection all scalar contractions are real (Section2).
+
+                   Appendix B.1. Torsion as a Lorentz Representation and Its Algebra
+                          In index language (spacetime indices), torsion is a rank-3 tensor antisymmetric in its last two
+                   indices, Tλµν = −Tλνµ, with 4×6 = 24 independent components in d=4.  The Lorentz-covariant
+                   irreducible content splits into
+                                                                                             
+                                                                                               Tµ≡ Tνµν,
+                                 24 ≃      4|{z}  ⊕     4|{z}  ⊕             16|{z}   ,      Sµ≡ ϵµνρσTνρσ,                             (A12)
+                                          trace Tµ    axial Sµ    traceless tensor qλµν        qνµν = qλµµ = ϵµνρσqνρσ = 0.
+
+                   Weuseϵ0123 =+1andthemetricsignature(−,+,+,+),andweadoptthestandardscalarproduct
+                   (X,Y)≡ XλµνYλµν on this space.5
+
+                   Appendix B.2. Idempotent Projectors
+                          Define three linear maps P(T),P(S),P(q) on the torsion space by
+
+                                                   P(T)T             gλµTν−gλνTµ,                                                                 (A13)
+                                                             λµν≡ 13
+                                                   P(S)T
+                                                             λµν≡− 16 ϵλµνρSρ  = −16 ϵλµνρϵραβγTαβγ,                                  (A14)
+                                                   P(q)T
+                                                             λµν≡ Tλµν−P(T)Tλµν−P(S)Tλµν.                                         (A15)
+
+
+
+                    5    Frameandspacetimecontractionsareequivalentonce eAµ isinserted;allformulasbelowholdwitheither TABC or Tλµν,and
+                       we freely move between the two notations.
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.

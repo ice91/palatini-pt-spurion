@@ -1,0 +1,69 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                    28 of 48
+
+
+
+                  For contrast, Chern–Simons modified gravity retains metric variables but introduces a dynamical
+                  pseudo-scalar andparity-odd effects[25,26]; ourtensor-speed statement instead livesin aparity-even,
+                  projected scalar sector with controlled improvements.
+
+                  11.3. Post-GW170817 Tensor-Speed Constraints & Torsionful GWs
+                        The multimessenger observation GW170817/GRB170817A constrained the present-day tensor
+                  speed to be extremely close to luminal, catalyzing a reappraisal of modified gravity in which any
+                  cT ̸= c is strongly disfavored [27,32].  While much of that discourse focused on Horndeski/EFT
+                  parametrizations, torsionful lines have also been examined:  within Poincaré gauge gravity and
+                  Einstein–Cartanframeworks,tensorwavesareoftenluminalwhileamplitudes/attenuationlawsor
+                  polarization content can differ [38,39].
+                        Ourpositioning. Weprovideaclean,even-parityroutetoexactluminalityatquadraticordervia(C3),
+                  notbyparametertuningbutbyastructuralidentitylinkedtoprojectiveinvarianceandimprovements.
+                  Beyond quadratic order, our posture predicts a unique next-to-leading deviation,
+
+
+                                                              δc2T(k)= b k2Λ2       (k≪Λ),
+
+                  expresslydesignedformulti-bandtests(PTA/LISA/LVK)usinglog-slopediagnostics(Section9). This
+                  offers a falsifiable bridge between symmetry/geometry and data: if a k2-type dispersion is not seen
+                  where EFT is valid, our posture is disfavored; conversely, a consistent k2 slope constrains(b,Λ).
+
+                  11.4. Operational Notes and Disambiguation (kept short)
+                        We keep the diagnostics compact and checkable, without rederiving results:
+                  1.      Scope. All quadratic bulk equalities (C2) and the identity underlying (C3) are asserted within
+                         A1–A6 (notably A4–A5).  Topological torsion defects or boundary conditions that inject new
+                         canonical pairs fall outside our posture.
+                  2.      C1 (pure-trace alignment).  Within the scalar-PT projected sector, axial and traceless torsion
+                         vanish algebraically at quadratic order; only the trace aligned with ∂ϵ remains.  Any robust
+                         axial-torsion signal in observables would falsify C1.
+                  3.      C2 (three-route bulk equivalence). Rank-one determinant (DBI-like), closed-metric, and the
+                         PT-even projected CS/Nieh–Yan route share the same bulk coefficient A⋆ and differ only by
+                         improvements;thefluxratiodiagnosticRX/Y[∂D]→1onadmissibledomainsimplementsthis
+                         check in practice.
+                  4.      C3 (equal-coefficient locking). A 2×2 non-collinear mixing system fixes w⋆ and yields K(w⋆)−
+                         G(w⋆)= ∂µ(a−3Jµ∆a3),whencecT = 1atquadraticorder,withtheEFT-consistentNLOdispersion
+                         quoted above.
+                  Navigation. Table2summarizeshow ourscalar-         PT Palatiniposture differsfromcanonical lines,while
+                  Table3records the operational status of A1–A6. Claims (C1–C3) are proven in the main text under
+                  these assumptions; observationalguidance and reportingconventions for theNLO dispersion appear
+                  in Section 9.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

@@ -1,0 +1,64 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "0",
+   "metadata": {},
+   "source": [
+    "# 00 — sanity\n",
+    "Quick import + TT luminality smoke (should be exactly 1 at LO)."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "from palatini_pt.gw.quadratic_action import tensor_action_coeffs\n",
+    "from palatini_pt.spurion.pt_even import project_scalar\n",
+    "from palatini_pt.spurion.profile import constant_gradient"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "2",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "k = np.logspace(-3, -1, 64)\n",
+    "deps = constant_gradient([0.0, 0.0, 1.0])  # ∂ε 指向 z\n",
+    "Seps = project_scalar(np.dot(deps, deps))\n",
+    "\n",
+    "K, G = tensor_action_coeffs(Seps)\n",
+    "cT2 = G / K\n",
+    "print(\"K(LO)=\", K, \"G(LO)=\", G, \"c_T^2(LO)=\", cT2)\n",
+    "assert np.allclose(cT2, 1.0), \"locked LO must be luminal\""
+   ]
+  }
+ ],
+ "metadata": {
+  "jupytext": {
+   "cell_metadata_filter": "-all",
+   "main_language": "python",
+   "notebook_metadata_filter": "kernelspec,language_info"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

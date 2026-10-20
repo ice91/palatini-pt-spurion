@@ -1,0 +1,69 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                 doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                     20 of 48
+
+
+
+                  with Jµ∆ aquadraticimprovementcurrentfixedbytherank–onenormalization(AppendixD).Evaluated
+                   at the lockedweights w= w⋆ (Section6),
+
+
+                                      K(w⋆)= G(w⋆)       =⇒         c2T = GK = 1 (exact at quadratic order).                            (53)
+
+
+                   On flat FRW this reduces to K−G = a−3∂τ(a3J0∆).
+
+                   Weak-Field Check (Minkowski+ Slowly Varyingϵ)
+                        Onηµν with a=1 and a slowly varying spurion (keep∂αϵ= const+O(∂2ϵ)),
+
+
+                                               J0∆ = A⋆2  η2Σϵ hTTij   ˙hTTij  ,        Jk∆ =−A⋆2  η2Σϵ hTTij  ∂khTTij  ,               (54)
+
+
+                   and∂µJµ∆ =  A⋆2  η2Σϵ˙hTTij  ˙hTTij −(∂ℓhTTij )(∂ℓhTTij )+∂µ∂νX[µν]. Gaugeindependenceholdsuponintegra-
+                   tion sinceδξJµ∆ =∇νX[µν][ξ].
+
+                   7.2. Locked TT Action
+                        Imposing the GR normalization (L3) and using (53), the TT action is
+
+                                                              Z         "                       #
+                                              δ2STT = M2Pl       d4xa3    ˙hTTij  ˙hTTij − (∂khTTij )2,        c2T = 1.                 (55)
+                                                           8                             a2
+
+
+                   7.3. Hamiltonian Analysis and Constraint Structure (Merged)
+                        3+1variablesandboundaryposture. Adoptthestandard(3+1) split ds2 =−N2dτ2+hij(dxi+
+                   Nidτ)(dxj + Njdτ).  Use the admissible fall-offs of Section2(A4) so that improvement currents
+                   contribute only boundary flux with vanishing symplectic pullback. Work in the time gauge for the
+                   tetrad;theconfigurationvariablesare(hij; N,Ni) togetherwiththealgebraictorsionirrepspackaged
+                   in K(T) andthe LagrangecurrentΛµ of (26)     . Thespurionϵ is non-variationalandappears onlyvia∂ϵ.
+                        Primary constraints and auxiliaries. N and Ni have no time derivatives, givingπN ≈ 0, πi≈ 0.
+                   Λµ is algebraic, with primary constraints pΛµ ≈ 0.
+
+                   Lemma11(NonewcanonicalpairsfromΛµ). UnderA4andwithΛµ enteringonlythrough√−gΛµ(Tµ−
+                   3η∂µϵ), the pair
+                                                          pΛµ ≈ 0,       χµ≡ Tµ−3η∂µϵ≈ 0
+
+                   issecondclassandremoves(Λµ,pΛµ) togetherwiththeindependentconfigurationassociatedto Tµ. Integrating
+                   outΛµ before the split is equivalent. No additional canonical pairs arise.
+
+                        Algebraic connection equationand secondary constraints. Varying the independent connection
+                   in the projected quadratic Lagrangian (Section4) yields algebraic equations in the vector, axial and
+                   traceless irreps, cf. (27)     –(30)     .  Preserving the primary constraints produces the ADM secondaries
+                   H≈ 0, Hi≈ 0andfixes Sµ≈ 0, qλµν≈ 0, χµ≈ 0. SubstitutingbackgivestheC1alignment(22)      and
+                   the invariant reduction (23).
+                        Constraint algebra and DoF count.  On the admissible domain (A4), improvements do not
+                   contributetothesymplectic2-form,andtheDiracalgebraof{H,Hi} istheGRoneatquadraticorder.
+                   Thetorsion/lockconstraintsarealgebraicandeliminated. CountingintheADM-reducedmetricsector:
+                   (hij,πij) (12),(N,πN) and(Ni,πi) (8), with eight first-class constraints(πN,πi;H,Hi), yields
+                                                               NDoF =  120−2×8= 2,
+                                                                         2
+
+                   i.e., the two TT tensor polarizations.
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

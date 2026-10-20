@@ -1,0 +1,77 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                    doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                        24 of 48
+
+
+
+                   with a real, dimensionless coefficient b and a heavy scale Λ.  For a Fourier mode with physical
+                   wavenumber kphys = k/a (today a=1), the quadratic equation of motion gives
+
+                                            h              i
+                               ω2 = k2phys    1+b k2physΛ2         =⇒         c2T(k)≡   ω2k2phys= 1+ bk2physΛ2      (kphys≪Λ),          (62)
+
+
+                   so that the leading deviation is quadratic in frequency.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure 11. NLO offsetsand slopefit. Measured tensor-speedoffsetδc2T(k) from thelocked LOvalue c2T=1 as a
+                   function of physical wavenumber k (log–log axes). The best-fit slope ˆn≃ 2 is annotated; the vertical offset fixes
+                   b/Λ2 in Equation(63)      (a bandis shownif multiplebackgrounds are included). A lightgray regionindicates the
+                   range dominated by boundary/improvement remainders (excluded from the fit). [nb: fig_nlo_offsets.py]
+
+                   9.2. Dimensional Check and Normalization of b
+                   Dimensional check (today a=1).  With k⋆ = 2πf⋆ the physical wavenumber at a given observed
+                   frequency band andΛ a heavy scale, the NLO prediction reads
+
+
+                                                               δc2T(k⋆) =  ω2k2⋆ −1 =  b k2⋆Λ2,                                                         (63)
+
+                   whichismanifestlydimensionless. Ournormalizationoftherank-onetensorT  andofτ (Section5)
+                   singles out|b|=O(1) unless additional heavy operators are tuned to cancel each other at this order.
+
+                      Remark(NLOestimateatGWband). Withδc2T(k)= bk2/Λ2 andarepresentativemultimessenger
+                      tolerance|cT−1|≲ 10−15 near fGW∼ 100Hz,
+                                                   δc2T ≃  2|cT−1| ≲  2×10−15,        k≃ 2πfGW.
+
+
+                     Assuming|b|∼ 1, this gives a lower bound
+
+
+                                   Λ ≳        kq      ≈  1.4×1010 s−1 ≈  9.3×10−6 eV ⇒ ℓΛ≡ ¯hcΛ ≲  2.1 cm.
+                                              |δc2T|
+
+
+                     At fGW ∼ 1kHz the bound scales linearly with f,Λ≳ 9.3×10−5eV (ℓΛ≲ 2.1mm). These are
+                      order-of-magnitude, band-limited constraints; tighter bounds require a fit to detector bandpasses
+                      and b-modeling.
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

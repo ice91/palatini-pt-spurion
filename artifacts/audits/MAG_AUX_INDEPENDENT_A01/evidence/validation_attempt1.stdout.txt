@@ -1,0 +1,18 @@
+PASS trace-coordinate map invertible
+PASS distortion reconstructs all three original trace conventions
+PASS curvature current from independent contractions
+PASS curvature quadratic comparison with Eq5.1
+PASS curvature derivative equals divergence of reconstructed W
+PASS finite arbitrary-xi curvature law all 256 components
+PASS arbitrary-xi scalar curvature invariant
+PASS full affine bulk exactly invariant for arbitrary one-form
+PASS nonexact xi is permitted without scalar integrability
+PASS quotient density contains no V
+PASS full one-form Hessian includes varied A and Lorentz pairing
+PASS horizontal full Hessian has Lorentz pairing
+PASS raw gauge is exact Hessian null vector
+PASS raw compatible source / off-shell Noether identity
+PASS horizontal determinant comparison Eq6.1
+PASS regular raw species rank3 exact kernel1
+PASS regular full fibre rank12 kernel4
+PASS Palatini block determinant comparison Eq5.16

@@ -1,0 +1,19 @@
+[
+  {
+    "url": "https://api.crossref.org/works/10.3390/sym18010170",
+    "status": 200,
+    "final_url": "https://api.crossref.org/works/10.3390/sym18010170",
+    "content_type": "application/json",
+    "bytes": 13735,
+    "sha256": "38efd004dcac1a18c3b81d9496755d3a6d1856021e4108ab632d9acbe4733ed0"
+  },
+  {
+    "url": "https://mdpi-res.com/d_attachment/symmetry/symmetry-18-00170/article_deploy/symmetry-18-00170-v2.pdf",
+    "status": 200,
+    "final_url": "https://mdpi-res.com/d_attachment/symmetry/symmetry-18-00170/article_deploy/symmetry-18-00170-v2.pdf",
+    "content_type": "application/pdf",
+    "bytes": 1107105,
+    "sha256": "4f949b70c09b6e54d22c318d6c8a74be03002c9fb3852a6883aa0de8fcdc619d",
+    "matches_local": true
+  }
+]

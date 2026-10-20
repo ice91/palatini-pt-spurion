@@ -1,0 +1,1048 @@
+[
+  {
+    "git_blob": "9b4b209c880c219adb1bc7bb01572e6dfc6b7332",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 2949,
+    "sha256": "3e50a2d39f8b9b331a81f040e8b6867a64f7de6a0f24510f11dd250f290f906d",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test dag"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      },
+      {
+        "line": 85,
+        "text": "mixing:"
+      },
+      {
+        "line": 86,
+        "text": "\t@$(PYTHON) -m scripts.mixing_matrix_extract \\"
+      },
+      {
+        "line": 87,
+        "text": "\t\t--from-json configs/coeffs/mixing_matrix_FRW.json \\"
+      },
+      {
+        "line": 88,
+        "text": "\t\t--out-csv   figs/data/mixing_matrix.csv \\"
+      },
+      {
+        "line": 89,
+        "text": "\t\t--out-meta  figs/data/mixing_matrix_meta.json \\"
+      },
+      {
+        "line": 94,
+        "text": "\t@$(PYTHON) -m scripts.mixing_matrix_extract \\"
+      },
+      {
+        "line": 95,
+        "text": "\t\t--from-json configs/coeffs/mixing_matrix_FRW.json \\"
+      },
+      {
+        "line": 96,
+        "text": "\t\t--out-csv   figs/data/mixing_matrix.csv \\"
+      },
+      {
+        "line": 97,
+        "text": "\t\t--out-meta  figs/data/mixing_matrix_meta.json \\"
+      }
+    ]
+  },
+  {
+    "git_blob": "cb2310e2f6c2501bc10d0a044673ae331993a54a",
+    "paths": [
+      "README.md"
+    ],
+    "bytes": 6060,
+    "sha256": "fe6ac12a809f48a98f08aa88c8905e1be714181ff398b08e1ff47082f97e7e84",
+    "hits": [
+      {
+        "line": 14,
+        "text": "- \u2705 **App. D**: 2\u00d72 **mixing matrix artifact + locking check**\uff08`make mixing`\uff09"
+      },
+      {
+        "line": 79,
+        "text": "|**App. D mixing matrix + locking check**|`make mixing`|`figs/data/mixing_matrix.csv`\u3001`figs/data/mixing_matrix_meta.json`\uff08\u542b `.md5`\uff09\uff0c\u4e26\u6253\u5370\u9396\u5b9a\u6bd4 `w*_ROD:w*_CM`|"
+      },
+      {
+        "line": 141,
+        "text": "\u251c\u2500 scripts/               # \u7522\u5716\u8173\u672c\uff08fig1\u2013fig9 + make_all_figs + mixing_matrix_extract.py\uff09"
+      },
+      {
+        "line": 143,
+        "text": "\u251c\u2500 figs/                  # \u7522\u51fa PDF/PNG \u8207\u4e2d\u9593\u6578\u64da\uff08\u542b .md5\uff1b\u542b mixing_matrix.csv\uff09"
+      },
+      {
+        "line": 145,
+        "text": "\u251c\u2500 tests/                 # \u55ae\u5143\u8207\u6574\u5408\u6e2c\u8a66\uff08**44 tests**\uff0c\u542b test_mixing_matrix_extract.py\uff09"
+      },
+      {
+        "line": 148,
+        "text": "\u251c\u2500 Makefile               # \u4e00\u9375\uff1apaper / tests / nb / dag / mixing"
+      },
+      {
+        "line": 171,
+        "text": "- App. D: `make mixing` \u751f\u6210 `mixing_matrix.csv` \u8207 meta\uff0c\u4e26\u6aa2\u67e5\u5169\u689d\u6df7\u5408\u689d\u4ef6\u7684\u6bd4\u4f8b\u4e00\u81f4\uff08C3 \u9396\u5b9a\uff09\u3002"
+      }
+    ]
+  },
+  {
+    "git_blob": "94f02fa5f712e0b73cddffa091d5b4fcafc8a625",
+    "paths": [
+      "docs/ADOPTION_PACK.md"
+    ],
+    "bytes": 3228,
+    "sha256": "a68bbbb3c17efe00183367860873d5775fd9d6b3482e67f806fe0cbd27122061",
+    "hits": [
+      {
+        "line": 18,
+        "text": "2) **Projective invariance** via a **non-dynamical Stueckelberg-type compensator**, entering only through its gradient."
+      },
+      {
+        "line": 23,
+        "text": "  **rank-one determinant route**, **closed-metric deformation**, **PT-even CS/Nieh\u2013Yan route**"
+      },
+      {
+        "line": 24,
+        "text": "- **(C3)** coefficient-locking identity implies **K=G** for tensor modes on admissible domains \u2192 **two polarizations, cT=1**"
+      },
+      {
+        "line": 67,
+        "text": "    - `figs/data/mixing_matrix.csv`"
+      },
+      {
+        "line": 69,
+        "text": "    - `figs/data/mixing_matrix_meta.json`"
+      },
+      {
+        "line": 80,
+        "text": "3. Verify App. D lock: `make mixing` (fails if not locked)"
+      }
+    ]
+  },
+  {
+    "git_blob": "9a0da4384552ea051a628835fbe80edb311d19e2",
+    "paths": [
+      "docs/FAQ.md"
+    ],
+    "bytes": 4250,
+    "sha256": "b42144ff4b1922ee13744f54a51448b28859ba492524530c2f73a134f0318548",
+    "hits": [
+      {
+        "line": 84,
+        "text": "## Q5. Where is the App. D mixing matrix and locking check?"
+      },
+      {
+        "line": 89,
+        "text": "make mixing"
+      },
+      {
+        "line": 94,
+        "text": "- `figs/data/mixing_matrix.csv`"
+      },
+      {
+        "line": 96,
+        "text": "- `figs/data/mixing_matrix_meta.json`"
+      },
+      {
+        "line": 227,
+        "text": "make mixing"
+      }
+    ]
+  },
+  {
+    "git_blob": "6b359ec8ed34e817f9e209a40a2baac06df66067",
+    "paths": [
+      "docs/PRESS_KIT.md"
+    ],
+    "bytes": 5510,
+    "sha256": "8e58c61049fd3477c96746bab9e4be50c057bf576111c88a06e977e9bb55dbb9",
+    "hits": [
+      {
+        "line": 36,
+        "text": "   A non-dynamical Stueckelberg-type field enters **only through its gradient** and acts as a compensator for the projective symmetry of the Palatini connection."
+      },
+      {
+        "line": 51,
+        "text": "  (i) rank-one determinant route, (ii) closed-metric deformation, (iii) PT-even CS/Nieh\u2013Yan route."
+      },
+      {
+        "line": 54,
+        "text": "  a coefficient-locking identity implies **K = G** for tensor modes on admissible domains, yielding **two propagating polarizations** and **cT = 1** at quadratic order."
+      },
+      {
+        "line": 71,
+        "text": "- **App. D artifact**: `make mixing` produces a mixing-matrix CSV + meta and fails if locking is violated"
+      },
+      {
+        "line": 94,
+        "text": "make mixing"
+      },
+      {
+        "line": 105,
+        "text": "- mixing-matrix artifacts under `figs/data/` (with `.md5`)"
+      },
+      {
+        "line": 118,
+        "text": "- \u201cIncludes full tests + integrity hashes + an App. D mixing-matrix locking artifact.\u201d"
+      }
+    ]
+  },
+  {
+    "git_blob": "a9f868fdf78b1ce0f80b3269122422d5824ead63",
+    "paths": [
+      "docs/REPRODUCIBILITY.md"
+    ],
+    "bytes": 4822,
+    "sha256": "7d20de07a00d8a65c745c3836b71779908f3f13fa6573986f9f29aa1d2fe09f2",
+    "hits": [
+      {
+        "line": 91,
+        "text": "## 4) App. D artifact: mixing matrix + coefficient locking"
+      },
+      {
+        "line": 96,
+        "text": "make mixing"
+      },
+      {
+        "line": 101,
+        "text": "- `figs/data/mixing_matrix.csv`"
+      },
+      {
+        "line": 103,
+        "text": "- `figs/data/mixing_matrix_meta.json`"
+      },
+      {
+        "line": 264,
+        "text": "make mixing"
+      }
+    ]
+  },
+  {
+    "git_blob": "d08fe5c995deb712ea4237ddc398b16bd36f71c3",
+    "paths": [
+      "docs/REVIEWER_NOTES.md"
+    ],
+    "bytes": 8620,
+    "sha256": "dcf4f06d27e20042bc12fbf4e163bf4acff2befacaf5985f993809003fcf66f8",
+    "hits": [
+      {
+        "line": 21,
+        "text": "make mixing"
+      },
+      {
+        "line": 30,
+        "text": "- `make mixing` \u2192 regenerates App. D artifacts and **fails if the locking condition is violated**"
+      },
+      {
+        "line": 295,
+        "text": "## 6) App. D: mixing matrix artifact + locking check (high-value audit point)"
+      },
+      {
+        "line": 302,
+        "text": "make mixing"
+      },
+      {
+        "line": 307,
+        "text": "- `figs/data/mixing_matrix.csv`"
+      },
+      {
+        "line": 309,
+        "text": "- `figs/data/mixing_matrix_meta.json` (includes tolerance and lock diagnostics)"
+      },
+      {
+        "line": 321,
+        "text": "- source JSON: `configs/coeffs/mixing_matrix_FRW.json`"
+      },
+      {
+        "line": 323,
+        "text": "- script: `scripts/mixing_matrix_extract.py`"
+      },
+      {
+        "line": 325,
+        "text": "- test: `tests/test_mixing_matrix_extract.py`"
+      },
+      {
+        "line": 378,
+        "text": "Colab links are provided in `README.md`."
+      },
+      {
+        "line": 401,
+        "text": "A: `make mixing` (App. D) because it produces a **concrete artifact** (`mixing_matrix.csv` + meta) and **fails** if locking is not met."
+      }
+    ]
+  },
+  {
+    "git_blob": "7d705d4e2de39e7d0c6243289687cda23a4eea9c",
+    "paths": [
+      "figs/data/mixing_matrix_meta.json"
+    ],
+    "bytes": 834,
+    "sha256": "4ba77a8bf9092e03615f85eb5b3f6ffe9217f199cf6fe12ec7ce84176a4b0c1d",
+    "hits": [
+      {
+        "line": 16,
+        "text": "    \"csv\": \"figs/data/mixing_matrix.csv\","
+      },
+      {
+        "line": 17,
+        "text": "    \"csv_md5\": \"figs/data/mixing_matrix.csv.md5\","
+      },
+      {
+        "line": 18,
+        "text": "    \"meta\": \"figs/data/mixing_matrix_meta.json\""
+      }
+    ]
+  },
+  {
+    "git_blob": "31109f1b602ca754f23dc2d3f2475f528ea743ad",
+    "paths": [
+      "palatini_pt/numerics/validate.py"
+    ],
+    "bytes": 4640,
+    "sha256": "f6df2af77103d0ce6cf3b335bb0e7981cb9cbda2a14560d1c886e3227437152d",
+    "hits": [
+      {
+        "line": 107,
+        "text": "    dif = np.diff(arr)"
+      }
+    ]
+  },
+  {
+    "git_blob": "a9a4abbb8c8fffe7555b3bfa141cc0163351281e",
+    "paths": [
+      "palatini_pt/palatini/__init__.py"
+    ],
+    "bytes": 1161,
+    "sha256": "4526b2eb75c02dfdd60f2508afed9fce26b9f70111708a84b3846bc12f077936",
+    "hits": [
+      {
+        "line": 6,
+        "text": "from .connection import minkowski_metric, torsion_from_trace, contorsion_from_trace"
+      },
+      {
+        "line": 26,
+        "text": "    \"torsion_from_trace\","
+      },
+      {
+        "line": 27,
+        "text": "    \"contorsion_from_trace\","
+      }
+    ]
+  },
+  {
+    "git_blob": "d2474df43d3897fcc73fd014cb40b6a1323e8247",
+    "paths": [
+      "palatini_pt/palatini/connection.py"
+    ],
+    "bytes": 2548,
+    "sha256": "878e77f375d85da732972d2096334ed61d52fb353551c26d4ccacc21ae1f3d1a",
+    "hits": [
+      {
+        "line": 35,
+        "text": "def torsion_from_trace(T_vec: np.ndarray, g: Optional[np.ndarray] = None) -> np.ndarray:"
+      },
+      {
+        "line": 62,
+        "text": "def contorsion_from_trace(T_vec: np.ndarray, g: Optional[np.ndarray] = None) -> np.ndarray:"
+      },
+      {
+        "line": 82,
+        "text": "__all__ = [\"minkowski_metric\", \"torsion_from_trace\", \"contorsion_from_trace\"]"
+      }
+    ]
+  },
+  {
+    "git_blob": "874e8a20f3af4fa216e26a4dada5de6ad153bed3",
+    "paths": [
+      "palatini_pt/palatini/field_eq.py"
+    ],
+    "bytes": 2195,
+    "sha256": "6cacf896bd4a0abda0a9637dceb8279462055a27aaa382618fcd75bb2ed710db",
+    "hits": [
+      {
+        "line": 25,
+        "text": "from .connection import minkowski_metric, torsion_from_trace"
+      },
+      {
+        "line": 48,
+        "text": "    T_tensor = torsion_from_trace(T_vec, g=g)"
+      }
+    ]
+  },
+  {
+    "git_blob": "9591a4b34f1fa5237d34489fe709137770a46c92",
+    "paths": [
+      "palatini_pt/spurion/profile.py"
+    ],
+    "bytes": 10810,
+    "sha256": "2456f7fbf95d3cf780b17fe040b02c126928f7982a2e8f75c2e5714eb56557e4",
+    "hits": [
+      {
+        "line": 24,
+        "text": "- For `GaussianRadialProfile`, `box` uses general diagonal or full metric via analytic Hessian."
+      },
+      {
+        "line": 83,
+        "text": "def _fd_hessian(f: Callable[[Array], float], x: Array, h: float = 1e-5) -> Array:"
+      },
+      {
+        "line": 84,
+        "text": "    \"\"\"Central finite-diff Hessian (symmetric).\"\"\""
+      },
+      {
+        "line": 229,
+        "text": "    def hessian(self, x: ArrayLike) -> Array:"
+      },
+      {
+        "line": 230,
+        "text": "        \"\"\"Analytic Hessian for \u03b5 = A exp(-(x\u00b7x)/R^2).\"\"\""
+      },
+      {
+        "line": 241,
+        "text": "        H = self.hessian(x)"
+      },
+      {
+        "line": 276,
+        "text": "        # Use full Hessian (incl. cross terms) then contract with metric"
+      },
+      {
+        "line": 277,
+        "text": "        H = _fd_hessian(self.f_epsilon, x, h=self.fd_step_hess)"
+      }
+    ]
+  },
+  {
+    "git_blob": "200836231e7a35ff7a373ab483ae01f63b38a668",
+    "paths": [
+      "pyproject.toml"
+    ],
+    "bytes": 2080,
+    "sha256": "9ae3718779a5d4419c137d3f829689752224dec0cf93605f4924fd3e50c2aa56",
+    "hits": [
+      {
+        "line": 9,
+        "text": "readme = \"README.md\""
+      }
+    ]
+  },
+  {
+    "git_blob": "038fe1de5fb889aa7aaa7f5a093896b31723c80c",
+    "paths": [
+      "scripts/fig_c3_cT_heatmap.py"
+    ],
+    "bytes": 6563,
+    "sha256": "ebdc2976a6d6c01c6383dee1451e1eb3fb8cdf5165daca77f2a44e9024adbba1",
+    "hits": [
+      {
+        "line": 158,
+        "text": "        ax.clabel(CS, fmt={ct_tol: f\"tol={ct_tol:g}\"}, inline=True, fontsize=8)"
+      }
+    ]
+  },
+  {
+    "git_blob": "22811425f96399c1380a3db4c46b6510c214e5e0",
+    "paths": [
+      "scripts/mixing_matrix_extract.py"
+    ],
+    "bytes": 6431,
+    "sha256": "35b3bf2ad5c69c6165d20bec46a828634682f11c32357b4b44b233111d568b58",
+    "hits": [
+      {
+        "line": 3,
+        "text": "Paper artifact: extract (or stage) the 2x2 mixing coefficients used in App. D."
+      },
+      {
+        "line": 6,
+        "text": "  python -m scripts.mixing_matrix_extract \\"
+      },
+      {
+        "line": 7,
+        "text": "      --from-json configs/coeffs/mixing_matrix_FRW.json \\"
+      },
+      {
+        "line": 8,
+        "text": "      --out-csv   figs/data/mixing_matrix.csv \\"
+      },
+      {
+        "line": 9,
+        "text": "      --out-meta  figs/data/mixing_matrix_meta.json \\"
+      },
+      {
+        "line": 157,
+        "text": "    ap = argparse.ArgumentParser(description=\"Write mixing-matrix CSV + meta for App. D (with locking check)\")"
+      },
+      {
+        "line": 159,
+        "text": "                    default=\"configs/coeffs/mixing_matrix_FRW.json\","
+      },
+      {
+        "line": 162,
+        "text": "                    default=\"figs/data/mixing_matrix.csv\","
+      },
+      {
+        "line": 165,
+        "text": "                    default=\"figs/data/mixing_matrix_meta.json\","
+      }
+    ]
+  },
+  {
+    "git_blob": "1ef690c90dcf30ec48eae9a1beb0917e91ffe32b",
+    "paths": [
+      "tests/test_c3_tensor.py"
+    ],
+    "bytes": 5340,
+    "sha256": "922cfdd9be8d1a38a74dc53d4e9795a49f003d5526ac19c67b608099e4cc2a0f",
+    "hits": [
+      {
+        "line": 32,
+        "text": "NUM_TOL = 1e-12"
+      },
+      {
+        "line": 72,
+        "text": "    assert math.isclose(ct2, 1.0 + delta, rel_tol=0, abs_tol=NUM_TOL)"
+      },
+      {
+        "line": 73,
+        "text": "    assert math.isclose(Z, Z_expected, rel_tol=0, abs_tol=NUM_TOL)"
+      },
+      {
+        "line": 111,
+        "text": "    assert np.allclose(w2_unlocked, cT2 * k_grid * k_grid, atol=NUM_TOL, rtol=0)"
+      },
+      {
+        "line": 142,
+        "text": "    assert np.allclose(grid[:, 0], grid[0, 0], atol=NUM_TOL, rtol=0)"
+      },
+      {
+        "line": 143,
+        "text": "    assert np.allclose(grid[:, 1], grid[0, 1], atol=NUM_TOL, rtol=0)"
+      }
+    ]
+  },
+  {
+    "git_blob": "1e155d3e09900fae62d1082ed92351a61437899c",
+    "paths": [
+      "tests/test_mixing_matrix_extract.py"
+    ],
+    "bytes": 1861,
+    "sha256": "1d0c444500ebc85a2f79cfef8858021bb9b8133ffb6e4613750130a480521263",
+    "hits": [
+      {
+        "line": 5,
+        "text": "from scripts.mixing_matrix_extract import ("
+      },
+      {
+        "line": 28,
+        "text": "    out_csv  = tmp_path / \"mixing_matrix.csv\""
+      },
+      {
+        "line": 29,
+        "text": "    out_meta = tmp_path / \"mixing_matrix_meta.json\""
+      },
+      {
+        "line": 48,
+        "text": "    out_csv  = tmp_path / \"mixing_matrix.csv\""
+      },
+      {
+        "line": 49,
+        "text": "    out_meta = tmp_path / \"mixing_matrix_meta.json\""
+      }
+    ]
+  },
+  {
+    "git_blob": "1d7abacbd11fff534d93f0160621599863aac3d3",
+    "paths": [
+      "tests/test_torsion_decomp.py"
+    ],
+    "bytes": 753,
+    "sha256": "9f72a2ac2a4992894c28561f559f61e13af66fc3b7658b2077ac7a80f1c0ea33",
+    "hits": [
+      {
+        "line": 8,
+        "text": "    torsion_from_trace,"
+      },
+      {
+        "line": 15,
+        "text": "    T = torsion_from_trace(T_vec, g=g)"
+      }
+    ]
+  },
+  {
+    "git_blob": "1ebf6ed1d9b6de17344667dd004790ecfe366d93",
+    "paths": [
+      "docs/ADOPTION_PACK.md"
+    ],
+    "bytes": 3229,
+    "sha256": "00e7b7d9c03bb86ee232e135a78108d14000bcbf338b092abd7b990c3356d4c3",
+    "hits": [
+      {
+        "line": 18,
+        "text": "2) **Projective invariance** via a **non-dynamical Stueckelberg-type compensator**, entering only through its gradient."
+      },
+      {
+        "line": 23,
+        "text": "  **rank-one determinant route**, **closed-metric deformation**, **PT-even CS/Nieh\u2013Yan route**"
+      },
+      {
+        "line": 24,
+        "text": "- **(C3)** coefficient-locking identity implies **K=G** for tensor modes on admissible domains \u2192 **two polarizations, cT=1**"
+      },
+      {
+        "line": 67,
+        "text": "    - `figs/data/mixing_matrix.csv`"
+      },
+      {
+        "line": 69,
+        "text": "    - `figs/data/mixing_matrix_meta.json`"
+      },
+      {
+        "line": 80,
+        "text": "3. Verify App. D lock: `make mixing` (fails if not locked)"
+      }
+    ]
+  },
+  {
+    "git_blob": "6711a3ad7d17422caed57ffcfae7718c065d3fca",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 2412,
+    "sha256": "68074da31932e109e9ea8104ee3df446b9acba903d89ec5fab5a2a28a9569e19",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test dag"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "e74ea5fecc91b801548a858afc57fc097c190900",
+    "paths": [
+      "scripts/mixing_matrix_extract.py"
+    ],
+    "bytes": 2545,
+    "sha256": "9c6ad878ea0d0b4f614f8ca60b81f8a6ab8df4374d3f7871c8d3dccc81e199cf",
+    "hits": [
+      {
+        "line": 3,
+        "text": "Paper artifact: extract (or stage) the 2x2 mixing coefficients used in App. D."
+      },
+      {
+        "line": 11,
+        "text": "and writes a normalized CSV to figs/data/mixing_matrix.csv with columns:"
+      },
+      {
+        "line": 53,
+        "text": "    ap = argparse.ArgumentParser(description=\"Write mixing-matrix CSV for App. D\")"
+      },
+      {
+        "line": 55,
+        "text": "                    default=\"configs/coeffs/mixing_matrix_FRW.json\","
+      },
+      {
+        "line": 58,
+        "text": "                    default=\"figs/data/mixing_matrix.csv\","
+      }
+    ]
+  },
+  {
+    "git_blob": "7fc0a5661ad01ec07ee939d274705708242db112",
+    "paths": [
+      "configs/coeffs/mixing_matrix_FRW.json"
+    ],
+    "bytes": 909,
+    "sha256": "0d1d4bb8e2e499261b4c49603e7a2d006bbeaa5e6af1d38a02bf9ef83fdb4660",
+    "hits": [
+      {
+        "line": 26,
+        "text": "    \"csv\": \"figs/data/mixing_matrix.csv\","
+      },
+      {
+        "line": 27,
+        "text": "    \"json\": \"figs/data/mixing_matrix_meta.json\","
+      }
+    ]
+  },
+  {
+    "git_blob": "330d15a71e6ee90418c390d59b020caf779c661a",
+    "paths": [
+      "pyproject.toml"
+    ],
+    "bytes": 2063,
+    "sha256": "93530bb6072a3e8297e2509529ce37b0f61576e50e8bb353f8255543fedcfdd6",
+    "hits": [
+      {
+        "line": 9,
+        "text": "readme = \"README.md\""
+      }
+    ]
+  },
+  {
+    "git_blob": "6a4214a8eab0ac606050e60aeb07369b80cef468",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 2247,
+    "sha256": "ddd1d036ff908966941fc8ca191782ff881d5050b75e0212db8840c0738a4f17",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test dag"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "13d14277fa25825385cbe84896f0c7647450ae2a",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 2083,
+    "sha256": "b7c7ff745a6f800e2909916bde6bb8e360f15aeca45c74eed73978226ca7cafd",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test dag"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "d869ae5c98dc0081cfed9815bb1507da499fb640",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 1629,
+    "sha256": "55a9986f3eacc9cbc016b210030b1ab0fd3853150935ade571869b6d83dd8d5d",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test dag"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "1bf498881192d685c74cd34d8296d02d4290cb43",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 2082,
+    "sha256": "67112f8fd97c9092f671181b70fa036da0cd914f7cb203dd9ab5a08f4828c4a1",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test dag"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "4d2cf2812f6f9ac3d506b2e830fa9e9fbb89db55",
+    "paths": [
+      "pyproject.toml"
+    ],
+    "bytes": 1960,
+    "sha256": "b4f538371b496ee9070787338f603f3e3ed33fd164a7fa396e0fd6c9617cc484",
+    "hits": [
+      {
+        "line": 9,
+        "text": "readme = \"README.md\""
+      }
+    ]
+  },
+  {
+    "git_blob": "507b03628158ba3d3b3a3c19e3e522f98c3c5983",
+    "paths": [
+      "palatini_pt/spurion/profile.py"
+    ],
+    "bytes": 9955,
+    "sha256": "28b7c58252cfb79a36153103e991139a949c7ecbb82a5bcb655035d36aee4b55",
+    "hits": [
+      {
+        "line": 24,
+        "text": "- For `GaussianRadialProfile`, `box` uses general diagonal or full metric via analytic Hessian."
+      },
+      {
+        "line": 83,
+        "text": "def _fd_hessian(f: Callable[[Array], float], x: Array, h: float = 1e-5) -> Array:"
+      },
+      {
+        "line": 84,
+        "text": "    \"\"\"Central finite-diff Hessian (symmetric).\"\"\""
+      },
+      {
+        "line": 229,
+        "text": "    def hessian(self, x: ArrayLike) -> Array:"
+      },
+      {
+        "line": 230,
+        "text": "        \"\"\"Analytic Hessian for \u03b5 = A exp(-(x\u00b7x)/R^2).\"\"\""
+      },
+      {
+        "line": 241,
+        "text": "        H = self.hessian(x)"
+      },
+      {
+        "line": 276,
+        "text": "        # Use full Hessian (incl. cross terms) then contract with metric"
+      },
+      {
+        "line": 277,
+        "text": "        H = _fd_hessian(self.f_epsilon, x, h=self.fd_step_hess)"
+      }
+    ]
+  },
+  {
+    "git_blob": "436d8b6b25d8307c594add85374e4f75eb390877",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 1210,
+    "sha256": "e9f4f2b3e86ace46ffeb57fbe126a677e181e78b96da4c7db4146854460646ba",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test dag"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "e60038e2bf9d4c36a200aaba6fbf54b37b5d4b0e",
+    "paths": [
+      "pyproject.toml"
+    ],
+    "bytes": 1826,
+    "sha256": "c30bdb4b6b1f600e5d69dfad47048d79d70f0cf21c2341f350dba30209e3fb2b",
+    "hits": [
+      {
+        "line": 9,
+        "text": "readme = \"README.md\""
+      }
+    ]
+  },
+  {
+    "git_blob": "3893c1ee403623d720982c62bd60b3db471ebaab",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 1145,
+    "sha256": "4cfa51b2320cf4f9118cff6daf1e5e997ddc282a0dfa0cbcd2f38c89a4167142",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test nb nb-test"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "7c3ce110496caea7c9d229e7c8b339f1ca545a2b",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 917,
+    "sha256": "fe78b15b3954ce147196578f8bd2555f8fad7f99b466d507c5e336507b4d6e7b",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean paper paper-test"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "bd6222072279613e7eee26b28f7de1f8934d5ffd",
+    "paths": [
+      "palatini_pt/palatini/__init__.py"
+    ],
+    "bytes": 1160,
+    "sha256": "845f2bc0c7a0536e19781715bc10a0aa7be9b963044fb3c7a2f8f36caafda373",
+    "hits": [
+      {
+        "line": 6,
+        "text": "from .connection import minkowski_metric, torsion_from_trace, contorsion_from_trace"
+      },
+      {
+        "line": 26,
+        "text": "    \"torsion_from_trace\","
+      },
+      {
+        "line": 27,
+        "text": "    \"contorsion_from_trace\","
+      }
+    ]
+  },
+  {
+    "git_blob": "4aa3b25c9bb8785875bbe1a23846dd17a48e0891",
+    "paths": [
+      "palatini_pt/spurion/profile.py"
+    ],
+    "bytes": 9954,
+    "sha256": "17754eb7d8d55052df1e3c3daa05f2ff37c276cf4b38f16728a8e0432c8d01b6",
+    "hits": [
+      {
+        "line": 24,
+        "text": "- For `GaussianRadialProfile`, `box` uses general diagonal or full metric via analytic Hessian."
+      },
+      {
+        "line": 83,
+        "text": "def _fd_hessian(f: Callable[[Array], float], x: Array, h: float = 1e-5) -> Array:"
+      },
+      {
+        "line": 84,
+        "text": "    \"\"\"Central finite-diff Hessian (symmetric).\"\"\""
+      },
+      {
+        "line": 229,
+        "text": "    def hessian(self, x: ArrayLike) -> Array:"
+      },
+      {
+        "line": 230,
+        "text": "        \"\"\"Analytic Hessian for \u03b5 = A exp(-(x\u00b7x)/R^2).\"\"\""
+      },
+      {
+        "line": 241,
+        "text": "        H = self.hessian(x)"
+      },
+      {
+        "line": 276,
+        "text": "        # Use full Hessian (incl. cross terms) then contract with metric"
+      },
+      {
+        "line": 277,
+        "text": "        H = _fd_hessian(self.f_epsilon, x, h=self.fd_step_hess)"
+      }
+    ]
+  },
+  {
+    "git_blob": "1b6fe17879808a9186ad9c7932633190bf4abd87",
+    "paths": [
+      "Makefile"
+    ],
+    "bytes": 666,
+    "sha256": "e2c179e628cc5a1937b049159863ee173688c911041e9324c270a9a3e14f053d",
+    "hits": [
+      {
+        "line": 1,
+        "text": ".PHONY: env dev install precommit test lint fmt figs clean"
+      },
+      {
+        "line": 27,
+        "text": "fmt:"
+      }
+    ]
+  },
+  {
+    "git_blob": "2105301f3c9ed505bd068285f9f67109a5c2668e",
+    "paths": [
+      "palatini_pt/palatini/field_eq.py"
+    ],
+    "bytes": 2274,
+    "sha256": "768d0ef0c30d6e0bc62ae0148864a165a7bf4399e5e599f050b2aefeb0b735d0",
+    "hits": [
+      {
+        "line": 25,
+        "text": "from .connection import minkowski_metric, torsion_from_trace"
+      },
+      {
+        "line": 52,
+        "text": "    T_tensor = torsion_from_trace(T_vec, g=g)"
+      }
+    ]
+  },
+  {
+    "git_blob": "4c5aa12089f1e039b111b36c3f00920977ce8f7c",
+    "paths": [
+      "palatini_pt/palatini/connection.py"
+    ],
+    "bytes": 2547,
+    "sha256": "979fd0aee3a30012804367fd7f88ec97a86d006139b0039764b2eb4ca7dee786",
+    "hits": [
+      {
+        "line": 35,
+        "text": "def torsion_from_trace(T_vec: np.ndarray, g: Optional[np.ndarray] = None) -> np.ndarray:"
+      },
+      {
+        "line": 62,
+        "text": "def contorsion_from_trace(T_vec: np.ndarray, g: Optional[np.ndarray] = None) -> np.ndarray:"
+      },
+      {
+        "line": 82,
+        "text": "__all__ = [\"minkowski_metric\", \"torsion_from_trace\", \"contorsion_from_trace\"]"
+      }
+    ]
+  },
+  {
+    "git_blob": "20910500a19f80db399d2163d4693f2bb33a20ce",
+    "paths": [
+      "palatini_pt/palatini/__init__.py"
+    ],
+    "bytes": 937,
+    "sha256": "9fd94bb593b043c5fbfb48fdb1f6abc7ac9d87e54cdb5f5eecf5df1a415d95d4",
+    "hits": [
+      {
+        "line": 6,
+        "text": "from .connection import minkowski_metric, torsion_from_trace, contorsion_from_trace"
+      },
+      {
+        "line": 21,
+        "text": "    \"torsion_from_trace\","
+      },
+      {
+        "line": 22,
+        "text": "    \"contorsion_from_trace\","
+      }
+    ]
+  },
+  {
+    "git_blob": "3eb5dd0e35416e5a3174406675f3c6ab2428bfb7",
+    "paths": [
+      "palatini_pt/palatini/field_eq.py"
+    ],
+    "bytes": 1952,
+    "sha256": "ef5f15f077dc207538d8d028d2177cfc55de278b2b8079c208d38f39d24d3d29",
+    "hits": [
+      {
+        "line": 25,
+        "text": "from .connection import minkowski_metric, torsion_from_trace"
+      },
+      {
+        "line": 48,
+        "text": "    T_tensor = torsion_from_trace(T_vec, g=g)"
+      }
+    ]
+  }
+]

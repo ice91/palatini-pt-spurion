@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                     doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                           6 of 43
+
+
+
+                   3.2. Two-Stage Basis Closure: Pre-Lock and Post-Lock
+                         The analysis of the operator basis naturally separates into two stages, distinguished by whether
+                   thedynamical"trace-lock"fromtheequationsofmotion(ResultC1,proveninSec.4)hasbeenimposed.
+
+                   The Pre-Lock Basis
+                         Before enforcing the equations of motion, the three surviving monomials form a complete basis
+                   for all relevant scalar densities. We denote these basis operators as:
+
+                               Pre-lock basis: I1≡ΠPTTABCTABC,    I2≡Σϵ≡ΠPT(∂ϵ)2,    I3≡ΠPTTµ∂µϵ.           (5)
+
+                   The Post-Lock Basis
+                         After solving the Palatini equations of motion (Sec.4), we find the algebraic trace-lock condition
+                   Tµ = 3η∂µϵ. This condition is not a choice but a dynamical result. Applying it to the pre-lock basis
+                   causes a collapse: the mixing term I3 is no longer independent.
+
+                                                       C1: Tµ=3η∂µϵ
+                                                   I3 −−−−−−−−−→ΠPT(3η∂µϵ)∂µϵ= 3ηΣϵ = 3η I2.                                       (6)
+
+                   The basis of independent operators thus reduces. For convenience, we define the standard torsion
+                   invariant IT ≡−14I1 and express the post-lock basis in terms of{IT,Σϵ}.
+
+                     Post-lock basis(after C1): The basis reduces to two linearly dependent operators, e.g.,{IT,Σϵ}.  (7)
+
+                   The following lemma formalizes this two-stage structure, with its proof relying on standard tensor
+                   decomposition and the self-adjointness of the projector under the A1–A5 posture.
+
+                   Lemma3(Two-stageclosure). UnderassumptionsA1–A5,any PT-evenquadraticscalardensityO(2)(T,∂ϵ)
+                   with at most one derivative per factor can be expanded on the pre-lock basis{I1,I2,I3} up to a total divergence.
+                   After enforcing the C1 trace-lock, it can be expanded on the post-lock basis{IT,Σϵ}.
+
+                   3.3. The Action Skeleton and Order of Operations
+                         The closure of the operator basis allows us to write down the most general action at this order.
+                   The minimal bulk action skeleton is first written in the pre-lock basis:
+                                                          Z              hM2Pl                                     i
+                                                Sbulk =      d4xp−g         2   R(e,ω)+α1 I1+α2 I2+α3 I3             ,                                   (8)
+
+                   whereα1,2,3 are free real coefficients. After applying the C1 lock, the effect of I3 is absorbed into the
+                   coefficient of I2≡Σϵ, yielding the post-lock action:
+                                                           Z              hM2Pl                                          i
+                                          S(post−lock)bulk         =d4xp−g   2   R(e,ω)+α1 I1+α2+3ηα3Σϵ                  .                           (9)
+
+                   As will be proven in Sec.4, the C1 lock further imposes the crucial relation          IT =−6η2Σϵ, revealing
+                   that the post-lock basis contains only one independent degree of freedom at this order.
+
+                   Order of Operations and Consistency
+                         Thistwo-stagestructuredefinesaclearandconsistentlogicalpipelineforouranalysis. Thescalar
+                   projectorΠPT actsatthelevelofdensities,andbyLemma1,wemay                projectthenvary. Thetracelock,
+                   incontrast,isanalgebraicenforcementattheleveloftheequationsofmotion;itisnotaprojectionand
+                   introduces no new canonical pairs. The correct procedure is therefore:
+
+
+                     (i) Enumerate & project ⇒  Pre-lock basis{I1,I2,I3}     =⇒      (ii) Impose C1/trace lock ⇒  Use post-lock basis{IT,Σϵ}.
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.

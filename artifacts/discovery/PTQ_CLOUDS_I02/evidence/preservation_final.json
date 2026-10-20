@@ -1,0 +1,36 @@
+{
+  "UTC": "2026-10-20T06:03:32.021213+00:00",
+  "preservation": "PASS",
+  "original_files_checked": 1160,
+  "modified_or_missing": [],
+  "external_original_files_checked": 1,
+  "external_changed": [],
+  "new_files_outside_sandbox": [],
+  "HEAD": "6b456b89baa866b6dd05bc69a837b98a985a34ad",
+  "branch": "main",
+  "status": "?? .DS_Store\n?? artifacts/\n?? refs/",
+  "refs_unchanged": true,
+  "tracked_diff_exit": 0,
+  "staged_diff_exit": 0,
+  "prior_I01_files_preserved": 13,
+  "prior_D02_files_preserved": 17,
+  "prior_audit_files_preserved": 949,
+  "prior_gate_files_preserved": 14,
+  "reports": [
+    "01_MODULAR_INFORMATION_CALCULATION.md",
+    "02_ENERGY_GEOMETRY_INTERFACE.md",
+    "03_ADVERSARIAL_AND_EXPLANATORY_VERDICT.md"
+  ],
+  "executed_final": {
+    "modular_checks": 22,
+    "modular_exact_symbolic_checks": 21,
+    "modular_packet_quadrature_checks": 1,
+    "geometry_checks": 9,
+    "independent_test_methods": 10,
+    "finite_detector_durations": 2,
+    "fixed_QFT_parent": 1,
+    "new_gravity_model": 0,
+    "empirical_fits": 0
+  },
+  "decision": "information-stress identity and conditional geometric interface; no independent gravity law; IB-2 freeze CLOSED; STOP"
+}

@@ -1,0 +1,35 @@
+{
+  "UTC": "2026-10-20T05:19:55.811409+00:00",
+  "preservation": "PASS",
+  "original_files_checked": 1147,
+  "modified_or_missing": [],
+  "external_original_files_checked": 1,
+  "external_changed": [],
+  "new_files_outside_sandbox": [],
+  "HEAD": "6b456b89baa866b6dd05bc69a837b98a985a34ad",
+  "branch": "main",
+  "status": "?? .DS_Store\n?? artifacts/\n?? refs/",
+  "refs_unchanged": true,
+  "tracked_diff_exit": 0,
+  "staged_diff_exit": 0,
+  "original_D01_files_preserved": 22,
+  "original_D02_files_preserved": 17,
+  "original_audit_files_preserved": 949,
+  "original_gate_files_preserved": 14,
+  "reports": [
+    "01_PHYSICAL_PROBLEM_AND_AXIOMS.md",
+    "02_EXACT_OBSERVER_REDUCTION.md",
+    "03_INFORMATION_CAUSALITY_AND_TIME.md",
+    "04_EXPLANATORY_VERDICT.md"
+  ],
+  "executed_final": {
+    "symbolic_checks": 26,
+    "independent_test_methods": 9,
+    "fourier_quadratures": 10,
+    "parent_theories": 1,
+    "observer_protocols": 2,
+    "model_revisions": 0,
+    "substantive_cycles": 2
+  },
+  "decision": "vacuum observer KMS thermality reproduced; no automatic information destruction or fundamental time arrow; predictivity freeze CLOSED; STOP"
+}

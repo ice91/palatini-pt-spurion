@@ -1,0 +1,79 @@
+{
+  "checks": {
+    "action_elimination_0_time": {
+      "pass": true,
+      "on_shell": "3/2"
+    },
+    "action_elimination_0_space": {
+      "pass": true,
+      "on_shell": "-3/2"
+    },
+    "action_elimination_0_mixed": {
+      "pass": true,
+      "on_shell": "-6"
+    },
+    "action_elimination_1/2_time": {
+      "pass": true,
+      "on_shell": "6/5"
+    },
+    "action_elimination_1/2_space": {
+      "pass": true,
+      "on_shell": "-6/5"
+    },
+    "action_elimination_1/2_mixed": {
+      "pass": true,
+      "on_shell": "-24/5"
+    },
+    "action_elimination_-1/3_time": {
+      "pass": true,
+      "on_shell": "27/20"
+    },
+    "action_elimination_-1/3_space": {
+      "pass": true,
+      "on_shell": "-27/20"
+    },
+    "action_elimination_-1/3_mixed": {
+      "pass": true,
+      "on_shell": "-27/5"
+    },
+    "nondiagonal_operational_Hodge_0": {
+      "pass": true
+    },
+    "invariants_0": {
+      "pass": true,
+      "volume": "-2",
+      "Q": "0"
+    },
+    "nondiagonal_operational_Hodge_1/2": {
+      "pass": true
+    },
+    "invariants_1/2": {
+      "pass": true,
+      "volume": "-3/2",
+      "Q": "24"
+    },
+    "nondiagonal_operational_Hodge_-1/3": {
+      "pass": true
+    },
+    "invariants_-1/3": {
+      "pass": true,
+      "volume": "-16/9",
+      "Q": "-16"
+    },
+    "nonlinear_initial_constraint": {
+      "pass": true,
+      "V": "1/16",
+      "H_squared": "1/48"
+    },
+    "hard_retraction_not_solution_map": {
+      "pass": true,
+      "remaining_Hamiltonian_residual": "1/8"
+    },
+    "two_positive_deformations_distinct_poles": {
+      "pass": true,
+      "mass2_lambda1": "4/3",
+      "mass2_lambda2": "2/3"
+    }
+  },
+  "method": "Independent Fraction arithmetic and direct quadratic exterior action; no SymPy or previous evidence imports."
+}

@@ -1,0 +1,63 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                             doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                 22 of 43
+
+
+
+                  10.1. Historical and Geometric Context (EC/MAG; Metric-Affine)
+                        The decomposition of torsion into its irreducible trace, axial, and traceless components, and
+                  theindependentvariationofthevierbein(e) andspinconnection(ω),arestandardpracticesinthe
+                  EC/MAGtradition [6,8]. Our use ofthe Nieh–Yan4-form forparity bookkeepingisalso conventional
+                  [9–12].  Boundary and improvement terms are handled within established covariant phase-space
+                  frameworks [14,15].
+                        Against this backdrop, our framework introduces two key distinguishing features: we project
+                  observablestoscalar, PT-evendensitiesandenforceprojectiveinvarianceviaanon-dynamicalStueckelberg
+                  compensator ϵ that enters only throughTµ ≡  Tµ−∂µϵ.  Within our two-derivative posture, this
+                  approachleadsdirectlytoourmainresults: (C1)thealgebraiceliminationofaxialandtracelesstorsion;
+                  (C2)the bulk equivalenceofthree distinctconstructions;and (C3)thecoefficient-lockingmechanism
+                  that ensures luminal tensor propagation without fine-tuning.
+
+                  10.2. Palatini-type Modified Gravity and Known Challenges
+                        Palatini-type modifications,most notably Palatini f(R) gravity, have arich history butalso face
+                  well-documented challenges, particularly when matter is included.  These include equivalence to
+                  constrainedscalar–tensor theories,tight post-Newtonianbounds,and potentialpathologies instellar
+                  contexts[19–21]. Theseissuesmotivateoursymmetry-selectedapproach,wheretheobservablesector
+                  is defined beforevariation and boundary effects are explicitly accounted for.
+
+                  How Our Posture Differs
+                        Ourframework isstructurallydesigned tosidestepthese commonpitfallsat thequadraticorder
+                  analyzed:
+                  1.      Observable Projection. The scalar-PT projector removes PT-odd pseudoscalars before variation,
+                        preventing contamination of the tensor sector by parity-odd densities.
+                  2.      ProjectiveInvariancewithaSpurionLimit. ByallowingonlytheinvariantcombinationTµ to
+                        enter observables, the axial and traceless torsion modes are algebraically removed (C1), thus
+                        avoiding the introduction of extra propagating degrees of freedom that are often problematic.
+                  3.      Explicit Boundary Accounting. Improvement currents are treated as boundary terms under
+                        A4–A5. Thispostureiswhatenablesthebulkequivalence(C2)andsetsthestagefortheequal-
+                        coefficient identity K−G = ∂µ(...) that yields cT = 1 (C3).
+                  Forcontrast,Chern–Simonsmodifiedgravityintroducesadynamicalpseudoscalarandparity-odd
+                  effects [25,26]. Our framework, instead, operates within a parity-even, projected scalar sector with
+                  controlled boundary terms.
+
+                  10.3. Post-GW170817 Constraints and Torsionful Gravitational Waves
+                        ThemultimessengerobservationGW170817/GRB170817Aprovidedanextremelytightconstraint
+                  onthetensorspeed,stronglydisfavoringtheorieswhere cT ̸= c [27,31]. Whilemuchofthesubsequent
+                  research focused on Horndeski/EFT models, theories with torsion have also been examined.  In
+                  frameworkslikePoincaré gaugegravityandEinstein–Cartantheory,tensor wavesareoftenfoundto
+                  be luminal, but their amplitudes, attenuation, or polarization content can differ from GR [37,38].
+
+                  Our Positioning
+                        Ourframeworkprovidesaclean,even-parityroutetoexactluminalityatquadraticorderviathe
+                  structuralC3identity,notthroughparametertuning. Furthermore,itpredictsauniquenext-to-leading
+                  order deviation:
+                                                             δc2T(k)= b k2Λ2       (k≪Λ),
+
+                  which is expressly designed for multi-band tests (PTA/LISA/LVK) using the log-slope diagnostic
+                  describedinSec.8. Thisoffersafalsifiablebridgebetweensymmetryanddata: aconfirmed         k2-type
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.

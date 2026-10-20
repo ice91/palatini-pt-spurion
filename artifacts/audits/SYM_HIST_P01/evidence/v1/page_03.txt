@@ -1,0 +1,70 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                           doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  onederivativeperbuildingblock,(iii)preservesexacttensorluminality,and(iv)introducesnoextra
+                  propagating degrees of freedom.
+
+                  Posture and scope.
+                        We work with independent vierbein eAµ and metric–compatible spin connection ωABµ, and
+                  enforceascalar PT projectorΠPT(·) onallobservablescalardensities. Aninternalphaseϵ(x) enters
+                  the observed sector only through its gradient and as a spurion (not varied). At quadratic order with at
+                  most one derivative per factor, the projected, real scalar
+
+                                                                    Σϵ≡ΠPT(∂ϵ)2
+
+                  serves as the unique spurionic invariant;  we also use the shorthand IT ≡ −14ΠPT[TABCTABC].
+                  Global assumptions (A1–A6)—PT-invariant domain/measure, orientation and [PT ,∗]=0, projec-
+                  tion/variationcommutation,boundary/topologyposture,Nieh–Yanasboundarycounterterm,and
+                  the trace-lock posture—are fixed once and for all (Section2).
+
+                  Positioning and falsifiable claims.
+                        In contrast to EC/MAG lines where axial and traceless torsion may propagate in the bulk, our
+                  scalar PT postureplus Palatinialgebraicity removes bothirrepsat theanalyzed order. The framework
+                  is falsified if any of the following fails on admissible patches: (i) the pure–trace map (C1), (ii) the
+                  bulkequalityofthethreerank–onerouteswith A⋆ = λ2/8(C2),or(iii)thelockedequal–coefficient
+                  identity K = G (C3), statedas a densitytotal divergence K−G = a−3∂µ(a3Jµ∆) and proven in Section7
+                  (with a weak–field TT representative of Jµ∆ recorded in Section7.1).                   Paper-level null tests include: (a)
+                  recovering A⋆ = λ2/8fromthe PT-evenCS/Nieh–YanshadowonFRW/Minkowski; (b)reproducing
+                  the non-collinearity of the two mixing entries and the locked ratio w⋆ROD : w⋆CM; and (c) verifying
+                  K−G = a−3∂µ(a3Jµ∆) with the listed Jµ∆.
+
+                  Main results (at a glance).
+
+                    (C1)Palatini–PT uniquenessundertrace-lock(A6). Algebraictorsionconsistentwiththescalar
+                    projector isuniquely pure trace and aligned with∂ϵ:
+
+                                                TABC = 2ηδA[B∂C]ϵ,       η > 0, Sµ = 0, qλµν = 0
+
+                    and the surviving quadratic invariant is
+
+                                                                     IT =−6η2Σϵ.
+
+
+                    (C2) Three–chain equivalence (quadratic, modulo boundary). A rank–one determinant (ROD), a
+                    closed–metricrank–onedeformation,andtheparity–evenprojectedCS/Nieh–Yanpiececollapse
+                    after projection and C1 to the same bulk invariant:
+
+
+                                  δ2LROD ≡ δ2LCM ≡ δ2LCS+ ≡  A⋆p−gIT   (mod∇µJµ),    A⋆ = λ28  .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.

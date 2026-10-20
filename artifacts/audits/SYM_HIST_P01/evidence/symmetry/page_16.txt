@@ -1,0 +1,60 @@
+Symmetry2026,18, 170                                                                                                                      16 of 50
+
+
+
+                                    5.3. Implications of the Equivalence
+                                          Thethree-routeequivalence(C2)servesasapowerfulconsistencycheck,demonstrat-
+                                    ingtherobustnessandinternalcoherenceoftheframework. Moreimportantly,itfurnishes
+                                    us with a set of distinct but bulk-equivalent building blocks (LROD,LCM). While identical
+                                    in the bulk, their full expressions (including boundary terms) couple differently to metric
+                                    perturbations. Thisdistinctionisthecrucialingredientthatenablesthecoefficient-locking
+                                    mechanism for achieving exact luminality, as we will demonstrate in the next section.
+
+                                    6. The Final Pillar: Coefficient Locking and Exact Luminality (C3)
+
+                                    Positioning and Scope. The locking condition eliminates spurious TT–nonTT mixing and fixes a
+                                    unique linear combination of bulk-equivalent routes. Under the admissible-domain posture, this
+                                    yields the equal-coefficient identity K = G and thus cT = 1 at quadratic order.  The point is
+                                    structural sufficiency—no parameter tuning—within the stated assumptions; beyond-quadratic or
+                                    non-admissible cases are outside our present scope.
+                                          This section presents the third and central result of our framework (C3). We leverage
+                                    the bulk equivalence established in Section5to achieve our primary goal: ensuring a
+                                    luminal speed for gravitational waves as a consequence of symmetry.  The strategy is
+                                    to construct a general action from a linear combination of two bulk-equivalent routes
+                                    (ROD and CM) and then impose a single, physically motivated condition: the absence
+                                    of unphysical mixing between propagating tensor modes and non-dynamical fields. We
+                                    showthatthisconditionleadstoanovelcoefficientlockingmechanism,whichuniquelyfixes
+                                    the relative weighting of the two routes. This “locked” theory is structurally special: it
+                                    satisfies an identity that forces the kinetic and gradient terms of the tensor action to be
+                                    equal, thereby enforcing cT = 1 by construction.
+
+                                    6.1. The Locking Posture: A Linear Combination of Equivalents
+                                          Based on the bulk equivalence (C2), we consider a general action constructed as a
+                                    linear combination of the ROD and CM Lagrangians:
+
+                                                      Lchain(w) ≡  wRODLROD+wCMLCM,        wROD,wCM∈R.                   (30)
+
+                                    Although these terms are identical in the bulk, their full expressions, including boundary
+                                    terms, couple differently to metric perturbations.  Our task is to find the specific ratio
+                                    wROD : wCM that yields a physically consistent theory.
+
+                                    6.2. The Locking Condition and Its Solution
+                                          We expand the total action, LEH +Lchain(w), to second order in ADM perturba-
+                                    tions [23]. The resulting Lagrangian for the tensor sector schematically takes the form
+                                                              h
+                                                      δ2L∝     K(w) ˙h2TT−G(w)(∇hTT)2i           +hTT·M(w)·Φ+...,                   (31)
+
+                                    wherethefirstbracketcontainsthekinetic(K)andgradient(G)termsforthetensormodes
+                                    hTT, defining the tensor speed c2T = G(w)/K(w). The second term represents a potential
+                                    mixing between hTT and non-propagating fields Φ (such as perturbations of the lapse
+                                    and shift).
+                                          Such mixing is unphysical in the sense that it implies the metric perturbation hµν is
+                                    notapurespin-2eigenstate,therebycomplicatingitscouplingtomatter. Toensurethatthe
+                                    metric fundamentally represents pure tensor propagation, we demand “no kinetic mixing”:
+
+                                                                                    M(w)= 0.                                                               (32)
+
+
+
+
+                                                                                                           https://doi.org/10.3390/sym18010170

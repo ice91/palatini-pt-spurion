@@ -1,0 +1,20 @@
+c4a460a7f2b05e4b9ba45b5e812c6ff91c35dd88 2025-09-19T08:41:29+08:00 nb
+
+diff --git a/notebooks/10_c2_symbolic_demo.py b/notebooks/10_c2_symbolic_demo.py
+new file mode 100644
+index 0000000..1cd8594
+--- /dev/null
++++ b/notebooks/10_c2_symbolic_demo.py
+@@ -0,0 +1,12 @@
++# %% [markdown]
++# # 10 — C2 symbolic demo
++# Show DBI / closed-metric reduce to A_* * I_T at quadratic order.
++
++# %%
++import sympy as sp
++from palatini_pt.equivalence.coeff_extractor import reduce_to_IT
++
++lam, eta, Seps = sp.symbols("lambda eta Seps", positive=True)
++res_dbi = reduce_to_IT(route="dbi", lam=lam, eta=eta, Seps=Seps)
++res_cm  = reduce_to_IT(route="closed_metric", lam=lam, eta=eta, Seps=Seps)
++sp.simplify(res_dbi - res_cm)

@@ -1,0 +1,619 @@
+{
+  "original_sidecars": [
+    {
+      "sidecar": "data/c1_alignment.csv.md5",
+      "expected": "c463225dd1544084b1f0458d617d42a0",
+      "actual": "c463225dd1544084b1f0458d617d42a0",
+      "match": true
+    },
+    {
+      "sidecar": "data/c1_components.csv.md5",
+      "expected": "fec3da4158f33ffe9d3d01bc3fc9cab9",
+      "actual": "fec3da4158f33ffe9d3d01bc3fc9cab9",
+      "match": true
+    },
+    {
+      "sidecar": "data/c2_residuals.csv.md5",
+      "expected": "2776fde28fcabbe0c3902e46c44344a3",
+      "actual": "2776fde28fcabbe0c3902e46c44344a3",
+      "match": true
+    },
+    {
+      "sidecar": "data/cT_grid.npz.md5",
+      "expected": "a2186f336c3784a0fb142d080c4e8355",
+      "actual": "a2186f336c3784a0fb142d080c4e8355",
+      "match": true
+    },
+    {
+      "sidecar": "data/deg_eigvals.csv.md5",
+      "expected": "35d1f7c87c968c9930e120a9b9a8681e",
+      "actual": "35d1f7c87c968c9930e120a9b9a8681e",
+      "match": true
+    },
+    {
+      "sidecar": "data/dispersion.csv.md5",
+      "expected": "53bcf2d5682960c265b34d2d00ac0f0e",
+      "actual": "53bcf2d5682960c265b34d2d00ac0f0e",
+      "match": true
+    },
+    {
+      "sidecar": "data/flux_ratio.csv.md5",
+      "expected": "4bf70a664967d0a3e9b8d3444f2ef2d2",
+      "actual": "4bf70a664967d0a3e9b8d3444f2ef2d2",
+      "match": true
+    },
+    {
+      "sidecar": "data/mixing_matrix.csv.md5",
+      "expected": "fa9588d68ccec41441dda80db8038c05",
+      "actual": "fa9588d68ccec41441dda80db8038c05",
+      "match": true
+    },
+    {
+      "sidecar": "data/mixing_matrix_meta.json.md5",
+      "expected": "be3864d34b00b4e7f5261881b4090036",
+      "actual": "be3864d34b00b4e7f5261881b4090036",
+      "match": true
+    },
+    {
+      "sidecar": "data/nlo_offsets.csv.md5",
+      "expected": "5f3dc8699239a73ef2845e5acf58bdce",
+      "actual": "5f3dc8699239a73ef2845e5acf58bdce",
+      "match": true
+    },
+    {
+      "sidecar": "data/waveform_overlay.csv.md5",
+      "expected": "5e11ed2cea80212f2c988c23ffa0786e",
+      "actual": "5e11ed2cea80212f2c988c23ffa0786e",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig1_c1_pure_trace.pdf.md5",
+      "expected": "216770d411acf5bbb090daf1370d712e",
+      "actual": "216770d411acf5bbb090daf1370d712e",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig2_c1_alignment.pdf.md5",
+      "expected": "488007d3aaa3d920a9bde07867e63097",
+      "actual": "488007d3aaa3d920a9bde07867e63097",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig3_c2_coeff_compare.pdf.md5",
+      "expected": "f8304a870af16511a64dcfa9416264ee",
+      "actual": "f8304a870af16511a64dcfa9416264ee",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig4_c3_cT_heatmap.pdf.md5",
+      "expected": "f403ea9040028a08b1f98a188bff7126",
+      "actual": "f403ea9040028a08b1f98a188bff7126",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig5_c3_dispersion.pdf.md5",
+      "expected": "e6a55558659b9a98154941bff32936d3",
+      "actual": "e6a55558659b9a98154941bff32936d3",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig6_c3_degeneracy.pdf.md5",
+      "expected": "1c8ac0f69a5f223127f1bac589a49800",
+      "actual": "1c8ac0f69a5f223127f1bac589a49800",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig7_gw_waveform_overlay.pdf.md5",
+      "expected": "e26d4692baabe8d548d5a40ce4983181",
+      "actual": "e26d4692baabe8d548d5a40ce4983181",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig8_nlo_offsets.pdf.md5",
+      "expected": "2b97f64ff324a4ba24638c9dc59eed22",
+      "actual": "2b97f64ff324a4ba24638c9dc59eed22",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig9_flux_ratio.pdf.md5",
+      "expected": "e994d9d38aaeab45ca8c1fb165987069",
+      "actual": "e994d9d38aaeab45ca8c1fb165987069",
+      "match": true
+    }
+  ],
+  "post_partial_make_sidecars": [
+    {
+      "sidecar": "data/c1_alignment.csv.md5",
+      "expected": "c463225dd1544084b1f0458d617d42a0",
+      "actual": "c463225dd1544084b1f0458d617d42a0",
+      "match": true
+    },
+    {
+      "sidecar": "data/c1_components.csv.md5",
+      "expected": "fec3da4158f33ffe9d3d01bc3fc9cab9",
+      "actual": "fec3da4158f33ffe9d3d01bc3fc9cab9",
+      "match": true
+    },
+    {
+      "sidecar": "data/c2_residuals.csv.md5",
+      "expected": "2776fde28fcabbe0c3902e46c44344a3",
+      "actual": "2776fde28fcabbe0c3902e46c44344a3",
+      "match": true
+    },
+    {
+      "sidecar": "data/cT_grid.npz.md5",
+      "expected": "519d35f95bd81830b8807ff3b75038ce",
+      "actual": "519d35f95bd81830b8807ff3b75038ce",
+      "match": true
+    },
+    {
+      "sidecar": "data/deg_eigvals.csv.md5",
+      "expected": "35d1f7c87c968c9930e120a9b9a8681e",
+      "actual": "35d1f7c87c968c9930e120a9b9a8681e",
+      "match": true
+    },
+    {
+      "sidecar": "data/dispersion.csv.md5",
+      "expected": "993f079a9e180c6d1870435b1c38d079",
+      "actual": "993f079a9e180c6d1870435b1c38d079",
+      "match": true
+    },
+    {
+      "sidecar": "data/flux_ratio.csv.md5",
+      "expected": "4bf70a664967d0a3e9b8d3444f2ef2d2",
+      "actual": "4bf70a664967d0a3e9b8d3444f2ef2d2",
+      "match": true
+    },
+    {
+      "sidecar": "data/mixing_matrix.csv.md5",
+      "expected": "fa9588d68ccec41441dda80db8038c05",
+      "actual": "fa9588d68ccec41441dda80db8038c05",
+      "match": true
+    },
+    {
+      "sidecar": "data/mixing_matrix_meta.json.md5",
+      "expected": "ad2ac5feee4d6e1018542968e7bc631e",
+      "actual": "ad2ac5feee4d6e1018542968e7bc631e",
+      "match": true
+    },
+    {
+      "sidecar": "data/nlo_offsets.csv.md5",
+      "expected": "5f3dc8699239a73ef2845e5acf58bdce",
+      "actual": "5f3dc8699239a73ef2845e5acf58bdce",
+      "match": true
+    },
+    {
+      "sidecar": "data/waveform_overlay.csv.md5",
+      "expected": "157a2d89eb05c4f4e987e61faa028757",
+      "actual": "157a2d89eb05c4f4e987e61faa028757",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig1_c1_pure_trace.pdf.md5",
+      "expected": "af4036d15e4e9e500bae3cb0465322e3",
+      "actual": "af4036d15e4e9e500bae3cb0465322e3",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig2_c1_alignment.pdf.md5",
+      "expected": "708c03c1dc13d25e01813459e3c95270",
+      "actual": "708c03c1dc13d25e01813459e3c95270",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig3_c2_coeff_compare.pdf.md5",
+      "expected": "7a5f84700c2333725ae1670ce93cb610",
+      "actual": "7a5f84700c2333725ae1670ce93cb610",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig4_c3_cT_heatmap.pdf.md5",
+      "expected": "c5c456229fadc11c99f1b1e41677c40b",
+      "actual": "c5c456229fadc11c99f1b1e41677c40b",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig5_c3_dispersion.pdf.md5",
+      "expected": "b3e5a6abe1cf2a813173264c28ed3389",
+      "actual": "b3e5a6abe1cf2a813173264c28ed3389",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig6_c3_degeneracy.pdf.md5",
+      "expected": "c3dcd9ea7748678174bbc8f42080bfc1",
+      "actual": "c3dcd9ea7748678174bbc8f42080bfc1",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig7_gw_waveform_overlay.pdf.md5",
+      "expected": "16aa6411c8b57c7e89688f03840df430",
+      "actual": "16aa6411c8b57c7e89688f03840df430",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig8_nlo_offsets.pdf.md5",
+      "expected": "f0c3ec55418c1d2ab6d98a58a4f4e221",
+      "actual": "f0c3ec55418c1d2ab6d98a58a4f4e221",
+      "match": true
+    },
+    {
+      "sidecar": "pdf/fig9_flux_ratio.pdf.md5",
+      "expected": "e994d9d38aaeab45ca8c1fb165987069",
+      "actual": "e994d9d38aaeab45ca8c1fb165987069",
+      "match": true
+    }
+  ],
+  "changes": [
+    {
+      "path": "figs/data/c1_alignment.csv",
+      "before": "b58efaf6d4dae9d7179eb873998e76e2b9daab4fd3dc195254611088220523ac",
+      "after": "b58efaf6d4dae9d7179eb873998e76e2b9daab4fd3dc195254611088220523ac",
+      "same": true
+    },
+    {
+      "path": "figs/data/c1_alignment.csv.md5",
+      "before": "3b1c763ffd6d13e186779d42514ecb3b078b0cc15aeff486652d9075dc5a12a2",
+      "after": "3b1c763ffd6d13e186779d42514ecb3b078b0cc15aeff486652d9075dc5a12a2",
+      "same": true
+    },
+    {
+      "path": "figs/data/c1_components.csv",
+      "before": "300ac5939d342f58e5aa61dd1bb66a9cdce75f4b626e94cfb30b9068dae96c0d",
+      "after": "300ac5939d342f58e5aa61dd1bb66a9cdce75f4b626e94cfb30b9068dae96c0d",
+      "same": true
+    },
+    {
+      "path": "figs/data/c1_components.csv.md5",
+      "before": "b7033c6c228300f0e01bf82f50787d30c97a728c8e0406b6bba6bb03158c57a9",
+      "after": "b7033c6c228300f0e01bf82f50787d30c97a728c8e0406b6bba6bb03158c57a9",
+      "same": true
+    },
+    {
+      "path": "figs/data/c2_residuals.csv",
+      "before": "c37b7948496981fb7a89780f204172c55e9f7d0f0d9c9c14965a31be91774cf5",
+      "after": "c37b7948496981fb7a89780f204172c55e9f7d0f0d9c9c14965a31be91774cf5",
+      "same": true
+    },
+    {
+      "path": "figs/data/c2_residuals.csv.md5",
+      "before": "c868e2aa98a4c3569b3a7ec3df07f16597be3894f5f73f066948c52007d95bc0",
+      "after": "c868e2aa98a4c3569b3a7ec3df07f16597be3894f5f73f066948c52007d95bc0",
+      "same": true
+    },
+    {
+      "path": "figs/data/cT_grid.npz",
+      "before": "5e8bbae48addb12b95149a16912703b3495ab33d05c9a234f414c906f4dc0fb6",
+      "after": "8b31e51a06cb4ce5d32c010da7638d827339e05ca8e85a9114f4b268b0c2b4a9",
+      "same": false
+    },
+    {
+      "path": "figs/data/cT_grid.npz.md5",
+      "before": "425315e860fc9babd2dd985e023d5625637decf96c420261badd540cdaed7520",
+      "after": "591bb9bdd03b1fd6fc7d296f460bb21803cc7b68dc9255a89a048641b8762fae",
+      "same": false
+    },
+    {
+      "path": "figs/data/deg_eigvals.csv",
+      "before": "bc56adb2d1510f5462bb483852906259fc8c10751af4286e9361db798837c811",
+      "after": "bc56adb2d1510f5462bb483852906259fc8c10751af4286e9361db798837c811",
+      "same": true
+    },
+    {
+      "path": "figs/data/deg_eigvals.csv.md5",
+      "before": "423fd80cecf06aed77cb61291a591c017a3693d70584c69219d6ec2539a2f44d",
+      "after": "423fd80cecf06aed77cb61291a591c017a3693d70584c69219d6ec2539a2f44d",
+      "same": true
+    },
+    {
+      "path": "figs/data/dispersion.csv",
+      "before": "d9b85c24e3334cb3fa7c8e195a0a4ba4127c3ce9863fb5e9dbeff2c14bf962db",
+      "after": "79d79e96b2a5e101871c338f2bb4e3a0cabd5d75058432869f94f7599b342f0a",
+      "same": false
+    },
+    {
+      "path": "figs/data/dispersion.csv.md5",
+      "before": "01ed0235b2bc042e3845bd4f6cedcd65a1c4cede389581ce42b4865a2e612372",
+      "after": "89574592a4855558f7636f4339358dc594be96672458ea772a0011b418ccca3f",
+      "same": false
+    },
+    {
+      "path": "figs/data/flux_ratio.csv",
+      "before": "2f7d8b4c80e02fda80eaeca8dd2e865cf67dbf4f374996a884431eeec82266cd",
+      "after": "2f7d8b4c80e02fda80eaeca8dd2e865cf67dbf4f374996a884431eeec82266cd",
+      "same": true
+    },
+    {
+      "path": "figs/data/flux_ratio.csv.md5",
+      "before": "7b57bcd573158f9a1b5545534c5f040714cff3ebce121be4ba7f333f30299383",
+      "after": "7b57bcd573158f9a1b5545534c5f040714cff3ebce121be4ba7f333f30299383",
+      "same": true
+    },
+    {
+      "path": "figs/data/mixing_matrix.csv",
+      "before": "b95f1584d857be3dd67631e3180c29bb8209957bec7b914a06e02f70219b1585",
+      "after": "b95f1584d857be3dd67631e3180c29bb8209957bec7b914a06e02f70219b1585",
+      "same": true
+    },
+    {
+      "path": "figs/data/mixing_matrix.csv.md5",
+      "before": "a4e39f089331483a22fbe9be0ec650ab1592e2a040fd8f7f67c17bf5008f3643",
+      "after": "a4e39f089331483a22fbe9be0ec650ab1592e2a040fd8f7f67c17bf5008f3643",
+      "same": true
+    },
+    {
+      "path": "figs/data/mixing_matrix_meta.json",
+      "before": "4ba77a8bf9092e03615f85eb5b3f6ffe9217f199cf6fe12ec7ce84176a4b0c1d",
+      "after": "fe6c6fe08308f7e91c938206a3309b70957573d41a890e793c6c9d7a506c2ffb",
+      "same": false
+    },
+    {
+      "path": "figs/data/mixing_matrix_meta.json.md5",
+      "before": "bfdab75b2a1a6846807ae2048d65db0bd0616d61d5cca2751e73076003ac1b7c",
+      "after": "5b11954f5f1657673326203f385d1dbf768bc03078715abe28e076abdabfbc20",
+      "same": false
+    },
+    {
+      "path": "figs/data/nlo_offsets.csv",
+      "before": "c8cc9f182ea3fd45a8216667e1050d2995046911fe6e206d97477e298d090ebf",
+      "after": "c8cc9f182ea3fd45a8216667e1050d2995046911fe6e206d97477e298d090ebf",
+      "same": true
+    },
+    {
+      "path": "figs/data/nlo_offsets.csv.md5",
+      "before": "46d4f32ad0e95847033a0293aa83903eb16913e1f58e860b7c5e7b431bddc433",
+      "after": "46d4f32ad0e95847033a0293aa83903eb16913e1f58e860b7c5e7b431bddc433",
+      "same": true
+    },
+    {
+      "path": "figs/data/run_manifest.json",
+      "before": "3d75614fbbad4b078c53d89a464a8a49c7586ab0203ffd533dbebddc893333ce",
+      "after": "3d75614fbbad4b078c53d89a464a8a49c7586ab0203ffd533dbebddc893333ce",
+      "same": true
+    },
+    {
+      "path": "figs/data/smoke.json",
+      "before": "acdc9508976d65d20bdc4a0f72813f3b5e1d70c7ef91c1e6b51e425904146b05",
+      "after": "acdc9508976d65d20bdc4a0f72813f3b5e1d70c7ef91c1e6b51e425904146b05",
+      "same": true
+    },
+    {
+      "path": "figs/data/waveform_overlay.csv",
+      "before": "bcbeeaa0f39d2d038b5e1874d54e87037de48062d0eece6b1af1f9379ec60258",
+      "after": "40209f8b632a9d8369576dbe4b7091148d8219e799c4d87f2a97c9281cd69542",
+      "same": false
+    },
+    {
+      "path": "figs/data/waveform_overlay.csv.md5",
+      "before": "31a42e13c02249dba85ebf054eaadb3b60858d2f8e26129e1ce7235a7bdf7181",
+      "after": "343c780d017157426a6ae14a72972292df93edc5c45c3f2b02cc79f3ec5c3adf",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig1_c1_pure_trace.pdf",
+      "before": "02ff2d24c38a0108770f1afb92e2fced499f7f279076551451552f5242a0a816",
+      "after": "bb8bacea80432486b014037e0c32561758276bc27966c930c21e8266c23c4693",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig1_c1_pure_trace.pdf.md5",
+      "before": "276df97c62634ca312f196bda8a15db03fa95fded7840ad991e4bf861a5c3df6",
+      "after": "118efaae9e0bd47d44c5dc4bf269c69fd1e70156be07eebc98d5b8831109dd37",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig2_c1_alignment.pdf",
+      "before": "208dfffe3730ba035906d3779971e92e4f73f63c98732ac0d8a9eb9883c51434",
+      "after": "e232a36275c85d44df78abfff1edcf12d2f4f4d45da108d4bd0406c06a4eec80",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig2_c1_alignment.pdf.md5",
+      "before": "ebb75fe1c65fcbd2d5405e5759b73e5bd32212fceb6fdbea956db9ceda60bc2f",
+      "after": "a4f1005f8c604630631c456d3429489fde631646e5f0eaf77b8651dc7dcf9d9f",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig3_c2_coeff_compare.pdf",
+      "before": "7dd72d89a98e2852602e9dedbb7aa8fc4a87b730d0f8bcbf54bd5d9abd9f9a07",
+      "after": "49175af89f76aaaca96f2def571ea61050974fea518fe43dacb3ddbdb86205f4",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig3_c2_coeff_compare.pdf.md5",
+      "before": "9c4f6ea7588792a35a79d1b17df7e2110175a13f5909eea39b2b102a91d1ce55",
+      "after": "f37f4ed7e7cfe6c8e68aa8df4e17d7be7f1a46684581dff580ac6539d3580215",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig4_c3_cT_heatmap.pdf",
+      "before": "e8880977b4692d4898c28b8c8e36bb3649c1347bc4dd559165277b10721be415",
+      "after": "a43ca6513381ff12f6b853a55e12bf03b54226c3db7f0be37573f9eb8b2e015f",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig4_c3_cT_heatmap.pdf.md5",
+      "before": "47b6fd1c2e78ad4724b3df9f69655fcbaf60b342545243f57426c7aaed33cb49",
+      "after": "47addb2f312f82c119443d537a596018c61a5ca0d542ec861502527f435435ee",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig5_c3_dispersion.pdf",
+      "before": "e515afeb7594e43a0b12b67e28e26e766b010fff65fd27eaf38c89cc13810825",
+      "after": "cf48f62771879c661fcfe12b824cc92ae872e416bf3f18505eea0af6bd8313b4",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig5_c3_dispersion.pdf.md5",
+      "before": "16c91cc0f81d7577a0402a8b99d787db3b2853f05fc48cd2f08d4ad34a655430",
+      "after": "6d19bda4e34db159de1dc3a3f109da731f6abc238be4b533d6bace352d283eb5",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig6_c3_degeneracy.pdf",
+      "before": "8b73ce95211462afbbaeaff7c03d3e42059f7aeff5ab2a9507635c664eccb334",
+      "after": "8e31a0ec567513221fba65d3a9b4b8691b74c6bf0c644f8d166626c5608e01f0",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig6_c3_degeneracy.pdf.md5",
+      "before": "cf8adc61f86595df87a92067a95bd6228eaaac05bd2bdbd5bf0072726c956af4",
+      "after": "0cbb7eac7f4f33231e3c2d37a61080e49689fe916c96503b7f0cadda56f57279",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig7_gw_waveform_overlay.pdf",
+      "before": "7130e890c5ada4e221681c1b1bebce81dc69aa3b07649dfb8ec4a0fd0dc967dd",
+      "after": "6b60bd55a5f9f2b5d37a834afda89f2ffd86a0b00b9465811c3289a1f6e537b5",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig7_gw_waveform_overlay.pdf.md5",
+      "before": "98beca1d4370585941d8ca7511632c12f40b9f2f827c5540396b32291aa97a23",
+      "after": "3a0973f990e60894e6c49c48b6a680ac4b32b03b688dcd64e4eff79c99dbb8ba",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig8_nlo_offsets.pdf",
+      "before": "995bf1817ccd730ce046c5ae31249312917f28b7d4f0e93886f2166d6c37ebae",
+      "after": "dec9ace6d882c69ec5e1bfb1e166ecd57958eb393177ac3d7e92c4da68a432b9",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig8_nlo_offsets.pdf.md5",
+      "before": "6f17ff7d745612a97d8a240248fadd16d9ad7de937041dbc46de3448c8bfe2e6",
+      "after": "03e9179dc1e41504553b82e12ebecd7af78898668bb473d802f95bfcb3191a8b",
+      "same": false
+    },
+    {
+      "path": "figs/pdf/fig9_flux_ratio.pdf",
+      "before": "c56d3566dd4e9533bfcba72e330931725051ee4e3e1cff5c5edba12e9802b22b",
+      "after": "c56d3566dd4e9533bfcba72e330931725051ee4e3e1cff5c5edba12e9802b22b",
+      "same": true
+    },
+    {
+      "path": "figs/pdf/fig9_flux_ratio.pdf.md5",
+      "before": "b7ec46a066b3432550dcc0b15a6d83010d03a26e66ec7a861ef5f2ec277eb095",
+      "after": "b7ec46a066b3432550dcc0b15a6d83010d03a26e66ec7a861ef5f2ec277eb095",
+      "same": true
+    },
+    {
+      "path": "figs/pdf/fig_smoke.pdf",
+      "before": "bafaa282517ee483d8105033bd90c283020df66b7508f9abf7a7a415ee4a00d9",
+      "after": "bafaa282517ee483d8105033bd90c283020df66b7508f9abf7a7a415ee4a00d9",
+      "same": true
+    },
+    {
+      "path": "figs/png/fig_smoke.png",
+      "before": "67e907199b131fb5f93299b887f6abf60a3a3bb1cd261ad50f34cf12c313f419",
+      "after": "67e907199b131fb5f93299b887f6abf60a3a3bb1cd261ad50f34cf12c313f419",
+      "same": true
+    }
+  ],
+  "original_eigenvalues": {
+    "count": 2,
+    "above_1e_10": 2
+  },
+  "generated_eigenvalues": [
+    1.0016,
+    1.002
+  ],
+  "numeric_comparisons": [
+    {
+      "file": "waveform_overlay.csv",
+      "original_shape": [
+        4000,
+        3
+      ],
+      "new_shape": [
+        4000,
+        3
+      ],
+      "exact_equal": false,
+      "max_abs_diff": 1.1102230246251565e-16
+    },
+    {
+      "file": "c2_residuals.csv",
+      "original_shape": [
+        13,
+        2
+      ],
+      "new_shape": [
+        13,
+        2
+      ],
+      "exact_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "flux_ratio.csv",
+      "original_shape": [
+        60,
+        2
+      ],
+      "new_shape": [
+        60,
+        2
+      ],
+      "exact_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "dispersion.csv",
+      "original_shape": [
+        100,
+        3
+      ],
+      "new_shape": [
+        100,
+        3
+      ],
+      "exact_equal": false,
+      "max_abs_diff": 6.938893903907228e-18
+    },
+    {
+      "file": "c1_components.csv",
+      "reason": "could not convert string 'trace' to float64 at row 0, column 1."
+    },
+    {
+      "file": "c1_alignment.csv",
+      "original_shape": [
+        200,
+        2
+      ],
+      "new_shape": [
+        200,
+        2
+      ],
+      "exact_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "mixing_matrix.csv",
+      "reason": "could not convert string 'N' to float64 at row 0, column 1."
+    },
+    {
+      "file": "nlo_offsets.csv",
+      "original_shape": [
+        200,
+        2
+      ],
+      "new_shape": [
+        200,
+        2
+      ],
+      "exact_equal": true,
+      "max_abs_diff": 0.0
+    },
+    {
+      "file": "deg_eigvals.csv",
+      "original_shape": [
+        2
+      ],
+      "new_shape": [
+        2
+      ],
+      "exact_equal": true,
+      "max_abs_diff": 0.0
+    }
+  ]
+}

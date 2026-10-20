@@ -1,0 +1,69 @@
+{
+  "checks": {
+    "canonical_field_derivative": {
+      "pass": true
+    },
+    "physical_scalar_mass_squared": {
+      "pass": true
+    },
+    "potential_positive_factorization": {
+      "pass": true
+    },
+    "potential_only_stationary_point_regular": {
+      "pass": true
+    },
+    "Euler_Lagrange_beta": {
+      "pass": true
+    },
+    "linear_beta_equation": {
+      "pass": true
+    },
+    "nonlinear_scalar_momentum": {
+      "pass": true
+    },
+    "nonlinear_scalar_velocity_Hessian": {
+      "pass": true
+    },
+    "seven_velocity_Hessian_rank": {
+      "pass": true
+    },
+    "linear_constraint_rank": {
+      "pass": true
+    },
+    "linear_constraints_first_class": {
+      "pass": true
+    },
+    "generic_regular_DoF": {
+      "pass": true
+    },
+    "scalar_Hamiltonian_bracket": {
+      "pass": true
+    },
+    "Maxwell_gauge_null": {
+      "pass": true
+    },
+    "Maxwell_offshell_rank": {
+      "pass": true
+    },
+    "Maxwell_null_rank": {
+      "pass": true
+    },
+    "Maxwell_positive_kinetic_density": {
+      "pass": true
+    },
+    "nonzero_beta_initial_Hamiltonian_constraint": {
+      "pass": true
+    },
+    "hard_projection_initial_constraint_failure": {
+      "pass": true
+    },
+    "hard_surface_force_vanishes": {
+      "pass": true
+    }
+  },
+  "scalar_mass_squared": "4/(3*lambda)",
+  "canonical_field": "sqrt(6)*asinh(beta)/(2*sqrt(kappa))",
+  "scalar_Euler_expression": "6*(-Derivative(f(t, x), (t, 2)) + Derivative(f(t, x), (x, 2)))/(2*f(t, x)**2 + 2) - 12*(-Derivative(f(t, x), t)**2 + Derivative(f(t, x), x)**2)*f(t, x)/(2*f(t, x)**2 + 2)**2 - 4*f(t, x)/(lambda*(1 - f(t, x)**2)) - 4*f(t, x)**3/(lambda*(1 - f(t, x)**2)**2)",
+  "nonlinear_scalar_velocity_Hessian": "3*sqrtgamma/(N*kappa*(2*beta**2 + 2))",
+  "scope": "Exact local regular-branch analysis, no global nonlinear stability or quantum completion."
+}

@@ -1,0 +1,68 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                        doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                             8 of 48
+
+
+
+                    3.2. Normalized Spurion Direction and Canonical Rank-One Tensor
+                          It is convenient to record the projected spurion scalar and the normalized direction of∂ϵ:
+
+                                          Σϵ ≡ ΠPT(∂ϵ)2,       σϵ≡ sgn(Σϵ),         ˆnµ≡   ∂µϵp|Σϵ|   (Σϵ̸= 0).                        (14)
+
+
+                    From ˆn we define adimensionless, traceless rank-one tensor
+
+                                                 T µν ≡ σϵ      ˆnµˆnν− 14 δµν    ,        TrT = 0,    Tr(T 2)=  34.                                  (15)
+
+                    The (dimension-one) torsion trace scale along ˆn will be denoted
+                                                                                     q
+                                                                          τ ≡  3η       |Σϵ|.                                                                    (16)
+
+                    WhenΣϵ → 0 we work onΣϵ ̸= 0 patches and extend by continuity via a smooth regulatorΣϵ→
+                    (Σ2ϵ+ε2)1/2, ε→0+. We emphasize the notational distinction: Tµ is the projectively invariant trace
+                    vector (13), while    T µν in (15) is a traceless rank-one      matrix built from ˆn.
+
+                    3.3. What the Projector Allows (Pre- vs. Post-Lock)
+                          ByTheorem2andtheparityassignmentsofSection2,thefollowingquadraticmonomialswithat
+                    most one derivative per building block are PT-even and thus survive the scalar projector:
+
+                                                              TABCTABC,       (∂ϵ)2,        Tµ∂µϵ.
+
+                    Themixedbilinear Tµ∂µϵ isthereforeindependentpre-lock.1 OncethePalatini–PT uniquenessmap(C1;
+                    Section4) or, equivalently, the trace lock is enforced,
+
+                                                            Tµ = 3η∂µϵ    =⇒     Tµ∂µϵ =  3ηΣϵ,                                                 (17)
+
+                    and the mixed bilinear collapses to the spurion scalar.
+                          For later reference we summarize the fate of the monomials:
+
+                                               Monomial          PT       Projected fate (pre-lock→ post-lock)
+                                               TABCTABC         even      survives→ survives
+                                               (∂ϵ)2            even      survives→ survives
+                                               Tµ∂µϵ            even      survives, independent→ 3ηΣϵ
+                                               ∇·(···)            —       improvement→ improvement
+
+                    3.4. Two-stage closure at one-derivative order
+                          Allowingatmostonederivativeperbuildingblockandworkingtoquadraticorder,theprojected,
+                    real, PT-even scalar sector closes in two stages:
+
+                                                 Pre-lock basis: I1≡ΠPTTABCTABC,    I2≡Σϵ =ΠPT(∂ϵ)2,
+                                                                     I3≡ΠPTTµ∂µϵ;                                                            (18)
+
+                                                                         Tµ=3η∂µϵ
+                                   Post-lock (C1/trace-lock): I3        −−−−−−→ 3ηΣϵ, so the basis reduces to{I1,Σϵ}.
+
+                    The self-adjointness ofΠPT on real scalars (9)    and A4 (boundary posture) justify the integration-by-
+                    parts steps implicit in (18).
+
+
+
+                    1    Beforeanyrelationbetween Tµ and∂µϵ isimposed,nointegration-by-partsidentityreduces T·∂ϵ toacombinationof T2 and
+                       (∂ϵ)2 up to improvements.
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a        Creative Commons CC BY license.

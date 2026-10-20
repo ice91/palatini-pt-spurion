@@ -1,0 +1,68 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                   doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                         2 of 43
+
+
+
+                          is real and the Hamiltonian is Hermitian, while systematically eliminating potential parity-odd
+                          effects like gravitational birefringence at leading order.
+                   (2)    Projective Invariance: We implement projective symmetry via a non-dynamical Stueckelberg
+                          compensatorfieldϵ(x),whichcanbeintuitivelyunderstoodasageometricphase. Thisensures
+                          thatobservablesareonlysensitivetotheprojectivelyinvarianttraceoftorsion,Tµ≡ Tµ−∂µϵ,
+                          structurallyavoidingextrapropagatingdegreesoffreedomthatoftenplaguetorsionfultheories.
+                         Within this symmetric and self-consistent posture, formalized by six assumptions (A1–A6) in
+                   Sec.2,we derivea cascadeof powerful,conditional results atthe quadraticaction level. Asillustrated
+                   in Figure1, these principles first act as a structural constraint that aligns the torsion into a unique
+                   pure-traceform (ResultC1). This simplificationthenrevealsa remarkablebulkequivalence between
+                   three distinct theoretical routes (Result C2).
+                         The culmination of this structure is a novel coefficient locking mechanism (Result C3). Demanding
+                   theabsenceof unphysicalmixingbetweentensormodes andnon-propagatingfieldsfixes aunique
+                   relationshipbetweenthetheory’sbuilding blocks. Thislockingforcesthekinetic(K)andgradient (G)
+                   terms in the tensor action to be identical up to a boundary term. This identity, K = G, structurally
+                   ensures an exactly luminal tensor speed (cT = 1) by construction. This result is algebraic, requires no
+                   parameter tuning, and emerges directly from the imposed symmetries.
+                         Theframework’sutilityliesnot onlyinitsstructuralelegancebutalsoinits predictivepower. It
+                   yields a distinctive, testable signature at the next-to-leading order (NLO) that is absent in standard
+                   General Relativity: a frequency-dependent deviation in the speed of gravity given by
+
+
+                                                       δc2T(k) ≡  c2T(k)−1 =  b k2Λ2       (k≪Λ),                                              (1)
+
+                   where k is the wavenumber and Λ is the effective energy scale of new physics.  A detection of
+                   this specific k2 scaling in future multi-band GW data (from Pulsar Timing Arrays, LISA, and next-
+                   generation detectors) would provide a powerful probe of spacetime’s fundamental geometry, while its
+                   absencewouldfalsifytheframework. Thispaperlaysoutthetheoreticalfoundations,provesthecore
+                   properties, and details the clear, falsifiable predictions of this symmetry-based approach.
+
+                           ΠPT                               C1                                 C2                                 C3
+                     scalar projector               pure-trace Tµ∥ ∂µϵ                 ROD≡ CM≡ CS+                       locking⇒ cT = 1
+
+
+
+
+
+                                                                            Bulk equalities hold modulo∇µJµ (A4–A5).
+
+                   Figure1. Roadmap ofthequadraticanalysis(bulk-only). Thescalar PT projector(Thm.2) definestheallowed
+                   observable sector. Projective invariance is realized viaTµ = Tµ−∂µϵ. (C1) The posture enforces a pure-trace
+                   torsion aligned with the spurion gradient (Sec.4, Eq.           (10)     ).  (C2) It establishes the bulk equivalence of three
+                   constructionroutesupto boundary terms(Sec.5,Eq.           (21)     ). (C3)Alockingconditionthenyields K = G andthus
+                   cT = 1 by construction (Sec.6, Eq. (32)).
+
+                   2. The Theoretical Posture: Symmetries, Assumptions, and Projectors
+
+                   Positioning & Scope.  We specify the working posture and its admissible variational domains.  The two-
+                   derivativetruncation andthe spurionlimit aredeliberate, conservativechoicesensuring areal, PT-even scalar
+                   sector and preserving projective invariance in observables. The claims in later sections are to be read strictly
+                   underassumptionsA1–A6andonadmissibleboundaries;outsidethisposturenogeneralstatementsareimplied.
+                         This section details the theoretical foundation of our framework. We begin by motivating the
+                   two guiding principles introduced in Sec.1: projective invariance and a scalar          PT projection.  We
+                   then formalize the complete set of assumptions (A1–A6) that define our working posture. Finally, we
+                   define the scalar PT projector and establish its key properties. All constructions are performed within
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

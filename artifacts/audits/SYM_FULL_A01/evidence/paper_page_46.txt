@@ -1,0 +1,61 @@
+Symmetry2026,18, 170                                                                                                                  46 of 50
+
+
+
+                                   Appendix G.4. Remarks on Matter Couplings and Boundary
+                                   Dirac sector at LO (consistency).
+                                         Adding minimally coupled fermions leavesthe conclusions unchanged at this order:
+                                   C1 implies Sµ = 0, qλµν = 0 and Tµ∥∂µϵ; thesurviving TµJµ contact isremoved bya vector
+                                   rephasingψ→eiαϵψ (AppendixE) uptoimprovementsconsistentwith A4/A5. Thus, no
+                                   axial contact and no irreducible trace contact survive at LO.
+
+                                   Boundary/topology posture.
+                                         All reductions above use A4 (compact PT-invariant boundaries or standardAF/FRW
+                                   fall-offs) and A5 (Nieh–Yan as a boundary counterterm). Nontrivial holonomies of ϵ or
+                                   prescribed boundary inflows can carry global information not analyzed here.
+
+                                   Summary and cross-reference
+                                    AppendixGin one line.                      A minimal, projectively invariant Stueckelberg completion
+                                                    Z             hM2P
+                                            SStk =     d4xp−g        2  R(e,ω)− m2T2 TµT µ−  f2ϵ2 (∂ϵ)2i,     Tµ≡ Tµ−∂µϵ,
+
+                                    algebraically enforces the pure-trace alignment Tµ = ∂µϵ (C1) and Sµ = qλµν = 0; see
+                                    Equations (A67)        –(A68)        . Taking the spurion limit (hard penalty mT→∞ or a Lagrange
+                                    current forTµ, with f2ϵ→0 at two derivatives)yields precisely the observablesector used
+                                    inthemaintext: PT-evenscalarsdependonlyonTµ (andhenceonΣϵ onceC1isinforce),
+                                    andtheLObulkreducestoα1IT+α2Σϵ with IT =−6η2Σϵ. ComplementaryEFTpictures
+                                    (torsional–axion; axion–ED analogy) lead to the same gradient-only dependence.
+
+                                         Hook toSection9.                The statementused in Section9—“Treating             ϵ as non-dynamicalis
+                                   the low-energy limit of a Stueckelberg completion in which mT→∞ freezesTµ; comple-
+                                   mentary EFT constructions reduce to the same gradient-only dependence”—is precisely
+                                   the content of Equations (A66)–(A69).
+
+                                   Appendix H. Four-Derivative Basis: Operator-by-Operator
+                                   Tensor Reduction
+                                         ThisappendixprovidestheauditablereductionbehindTable2. Weexpandeach          PT-
+                                   even, projectively consistent four-derivative scalar density to quadratic order in transverse-
+                                   traceless (TT) tensor perturbations and record its footprint on the quadratic tensor action.
+                                   Theoutcomeisabasis-levelstatement: withinthesymmetryfilterandadmissible-domain
+                                   posture(A4–A5),alloperatorseither(i)areboundaryterms,(ii)areTT-neutralatquadratic
+                                   order,or(iii)renormalizetheTTkineticandgradienttermsinlockstep;onlyonedirection
+                                   yieldsadifferentialdeformationthatiscapturedbytheNLOparameterb/Λ2 inSection8.2.
+
+                                   Appendix H.1. Tensor Setup and Coefficient Bookkeeping
+                                         Weconsiderasmoothbackgroundmetric ¯gµν andTTfluctuationshij inADMlanguage.
+                                   For concreteness (and because it is the data-facing case), one may take a spatially flat
+                                   FRW patch,
+                                                     ds2 =−dt2+a2(t)δij+hijdxidxj,       ∂ihij = 0,    hii = 0,                 (A72)
+
+
+                                   though the classification below is local and extends to any smooth background where the
+                                   TT decomposition is well-defined.
+
+
+
+
+
+
+
+
+                                                                                                        https://doi.org/10.3390/sym18010170

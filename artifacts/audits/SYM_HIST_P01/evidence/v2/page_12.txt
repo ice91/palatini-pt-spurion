@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                        doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                             11 of 48
+
+
+
+                          By Prop. B.1 the last term in (24) is trivial, and the ansatz reduces to
+
+                                                              TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ.                                                   (25)
+
+                    The scalar projector (Section2) removes all                 PT-odd scalars, but it does not by itself force B = 0; the
+                    Palatini equations will.
+
+                    Proposition4(Palatinivectorblock⇒ collinearity). Withatmostonederivative perbuildingblockanda
+                    single covector∂µϵ available, thealgebraic connectionequation inthe vector irrep forces Tµ∥ ∂µϵ on admissible
+                    patches (A4).
+
+                    Proof.  Usethereducedansatz(25)      andtheblockwisenon-degeneracy(Lemma5). Atthisorderthe
+                    onlycovectorinthevectorblockis∂ϵ;anyorthogonalcomponentwouldrequireadditionalderivatives
+                    ortensors,whichareexcluded. Hence Tµ = α∂µϵ forsomerealα. TheLagrangecurrentin(26)      simply
+                    setsα= 3η without introducing canonical pairs (A4).
+
+                    4.2. Palatini Equations: Algebraic, Irrep Blocks, and Alignment
+                          Weaugmentthepre-lockbulkskeleton(19)      withaLagrangecurrentthatenforcesalignmentof
+                    the torsion trace with∂ϵ,
+
+                                                        LΛ =p−gΛµTµ−3η∂µϵ,        Tµ≡ Tνµν.                                           (26)
+
+                    ByLemma1(Section2),                                project-then-vary andvary-then-project commuteonscalardensities. Varying
+                    w.r.t. the independent connection then yields algebraic equations in the three irreps{Tµ,Sµ,qλµν}:
+                                                Z              h4α1                                                            i
+                                       δωS=        d4xp−g         3   TµδTµ+ α112 SµδSµ+2α1qλµνδqλµν+ΛµδTµ                       ,                    (27)
+
+                    which is block diagonal because the map from the connection variation to torsion irreps is non-
+                    degenerate:
+
+                    Lemma 5 (Non-degeneracy ofδω7→ (δTµ,δSµ,δqλµν)).  In metric-compatiblePalatini, the linearmap from
+                    δωABµ tothevariationsofthethreetorsionirrepsisblockwisenon-degenerate. Consequentlythequadraticform
+                    in (27)      splits into the three irreps with independent algebraic equations.
+
+                    Proof sketch (3 lines). Varying only the spin connection,δTAµν = δωAB[µeBν]. Projecting to irreps,
+
+                                      δTµ≡ δTνµν = eAνeBµδωABν,    δSµ≡ ϵµνρσδTνρσ = ϵµνρσeAνeBρδωABσ,
+
+                    andδqλµν isthetracelessremainderofδTλµν aftersubtractingthevector/axialprojections. Theselinear
+                    maps are surjective and mutually orthogonal with respect toRd4x√−g(43δT2+  112δS2+2δq2), hence
+                    the quadratic form in (27) splits blockwise and the blocks do not interfere.
+                          The Euler–Lagrange equations read
+
+                                                               (vector)    4α13   Tµ+Λµ = 0,                                                                (28)
+
+                                                                (axial)   α112 Sµ = 0 ⇒  Sµ = 0,                                                       (29)
+
+                                                            (traceless)   2α1qλµν = 0 ⇒  qλµν = 0,                                                (30)
+
+                    and variation w.r.t.Λµ enforces the lock Tµ = 3η∂µϵ. Substituting back into (25)      fixes A = 2η and
+                    forces B= 0, i.e., alignment with∂ϵ and the absence of any axial piece, as claimed in (22).
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a        Creative Commons CC BY license.

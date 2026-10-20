@@ -1,0 +1,68 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                               doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                   44 of 48
+
+
+
+                        Horndeski/DHOST.Post-GW170817constraintsforcecT→1byparametertuningorbyrestricting
+                  to subclasses; however, no equal-coefficient identity of the type K−G = ∂µ(···) is generally present,
+                  and an extra scalar DoF is typical. See the multimessenger bounds and reviews [32–37].
+                        Teleparallel/f(T). Many models yield cT = 1 at LO; torsion irreps and matter couplings are
+                  model-dependent, and our route-equality/flux-ratio diagnostics (C2) do not directly apply.  We
+                  therefore treat teleparallel cases as outside the present “three-route” posture.
+                        EC/ECSK-like.  With propagating torsion or nonminimal fermion couplings, axial/traceless
+                  torsion irreps can be present and Dirac axial contacts typically survive.  Our C1 pure-trace map
+                  excludes these at the analyzed order; see classic EC/MAG treatments [4–6,8].
+                        NLOdispersionandspuriontests. Theδc2T ∝ k2 slopefollowsfromtheprojected, PT-evenclosure
+                  and the normalization ofT  (Section5); D9-a implements this as a band-level null. D9-b leverages
+                  thethree-routeequality(AppendixC)via∆A⋆ andfluxratios;inadmissibledomains(A4)bothmust
+                  vanish within errors.
+                        Boundaryposture. Allboundary-sensitivestatementsassumeA4(PT-invariantcompactbound-
+                  ariesorstandardAF/FRWfall-offs)andA5(Nieh–Yanasboundarycounterterm). Departuresfrom
+                  theseposturesmayalterfluxdiagnosticsandimprovementaccounting. Operationalanchors: covariant
+                  phase space and surface charges [13–15], and the Holst/Nieh–Yan parity bookkeeping [9–12].
+                        Representativeanchors(one-linemap). Metric-affine/Einstein–Cartan: [4,6,8]. Holst/Nieh–Yan:
+                  [9–12]. Covariantphasespace&boundarycharges: [13–15]. CS-modifiedgravity: [25,26]. GW170817
+                  speed bounds & implications: [28–35].
+
+                  Appendix G. EFT Origins of the Spurion Field
+                  Scope. This appendix provides an effective–field–theory (EFT) completion that explains the spurion
+                  posture adopted in the main text and ties it to projective symmetry.  At two derivatives and within
+                  A1–A5 (Section2), thecompensator              ϵ(x) appears only throughits gradientand onlyin theprojectively
+                  invariant combination
+
+                                             Tµ ≡  Tµ−∂µϵ,      Γαµν→Γαµν+δαµξν : Tµ invariant.                                     (A60)
+
+                  We give a minimal Stueckelberg action that reproduces the C1 map, explain two equivalent imple-
+                  mentationsof thespurionlimit,and recordcomplementary EFTviewpointsin whichthegradient-only
+                  appearance ofϵ is manifest.
+
+                  Appendix G.1. G.1 Stueckelberg Completion and the Spurion Limit
+                        A projectively invariant, two-derivative completion is
+
+                                       Z             hM2P
+                               SStk =     d4xp−g        2  R(e,ω)− m2T2 TµT µ−  f2ϵ2 (∂ϵ)2i,     Tµ≡ Tµ−∂µϵ,                        (A61)
+
+
+                  withmT > 0and fϵ≥ 0real. ThemassliketermforTµ restoresprojectiveinvarianceviatheStueckelberg
+                  compensatorϵ; thespectatorkinetic termrespects theshift symmetryϵ7→ ϵ+c andkeeps only∂ϵ at
+                  this order.
+                        PalatinivariationandtheC1map. Writingω =  ˚ω+K(T) andusingthestandardalgebraicsplit
+                  of R(e,ω) into R( ˚ω) plus quadratic torsion (total derivatives dropped under A4), variation w.r.t.ω
+                  yields purelyalgebraicequations in the irreps{Tµ,Sµ,qλµν}. With (A61),
+
+
+                                       δωSStk ⇒  Sµ = 0,        qλµν = 0,        m2T(Tµ−∂µϵ)+ 4α13   Tµ = 0,                     (A62)
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.

@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                 doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                      40 of 43
+
+
+
+                   Palatini Variation and the C1 Map
+                         Writing ω =   ˚ω+K(T) and using the standard algebraic split of R(e,ω) into R( ˚ω) plus
+                   quadratic torsion (total derivatives dropped under A4), variation w.r.t. ω yields purely algebraic
+                   equations in the irreps{Tµ,Sµ,qλµν}. With (98),
+
+
+                                      δωSStk ⇒ Sµ= 0,       qλµν= 0,       m2T(Tµ−∂µϵ)+ 4α13  Tµ= 0,                     (99)
+
+                   whereα1 isthecoefficientmultiplyingtheT2 piececomingfromR(e,ω) (fixedbyconventionsand
+                   already used in Sec.4.1). For          m2T> 0 this algebraic system has the unique solution
+
+                                                         Tµ= ∂µϵ,       Sµ= 0,       qλµν= 0,                                          (100)
+
+                   which is precisely the C1 pure-trace alignment (Sec.4) written in covector form and implies      Tµ = 0
+                   on-shell.7
+
+                   Two Equivalent Implementations of thespurion limit
+                         We isolate the low-energy regime where observables reduce to those used in the main text:
+
+                                                          (i) Hard penalty: mT→∞ ⇒ Tµ= 0,                                              (101)
+                                                     (ii) Lagrange current:LΛ=p−gΛµTµ.
+
+                   Incase(i)integratingoutω(equivalentlyT)producesafunctionaldeltaδ[T];incase(ii)theconstraint
+                   is exact already at the classical level. In both realizations, keeping f2ϵ finite leaves a standard(∂ϵ)2
+                   spectator; the spurion posture used in the main text corresponds to taking f2ϵ → 0+ (or treatingϵ as
+                   nondynamical)withinthe two-derivativetruncation, sothatobservables dependonly on∂ϵ throughthe
+                   invariantTµ (and hence throughΣϵ once C1 is enforced).
+
+                   Low-Energy Effective Action (Power Counting)
+                         At energiesE≪ mT one obtains, after eliminatingω,
+                               Z             hM2P                            i         ∂4
+                    S(LO)eff   =  d4xp−g        2 R( ˚ω)+α1IT+α2Σϵ              +O      m2T   ,       IT≡−14ΠPT[TABCTABC], (102)
+
+
+                   andafterenforcing C1(Sec.4),         IT =−6η2Σϵ, so that the LO bulkreduces to a singleinvariant line in
+                   the{IT,Σϵ} plane (Sec.3.3).
+
+                   Appendix G.2. Complementary EFT Pictures (Same Gradient-Only Physics)
+                         Two complementary constructions emphasize thatonly∂ϵ can enter observables at this order.
+
+                   (i) Torsional–Axion Picture
+                         Augment (98) by a topological coupling
+                                                          Z
+                                                St-ax=       d4xp−g α4 ϵNY,        NY≡ d           eA∧TA       ,                                  (103)
+
+                   whichisexact. UnderA5,NYisaboundaryconvention;integratingbypartsandusing(100)        givesbulk
+                   terms proportional to∂µϵ contracted with improvement currents, hence no new bulk Euler–Lagrange
+                   contentin thePT-evensector. The low-energyreductionagain depends onlyonΣϵ (plusboundary
+                   assignments absorbed into A5).
+
+
+
+                   7    Equivalently,onemayadd thequadraticinvariant IT withapositive coefficientandobtainthesameirrepalignment. The
+                      projector statements of Sec.2ensure all scalar contractions are taken in the        PT-even, real sector.
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

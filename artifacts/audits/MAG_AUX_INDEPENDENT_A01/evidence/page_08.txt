@@ -1,0 +1,49 @@
+HencePis invertible if and only iff                 1̸=0. The inverse is −4/3    8/3
+
+                                           P−1   =f   −11     8/3    11/3       .                                        (5.17)
+
+No further field-dependent factor occurs in detP     . In particular the schematic notations MPal
+and Palatini     response are replaced, for all subsequent statements, by (5.15)–(5.17).
+Lemma 5.1(Palatini invertibility).On the present domain,           ranksp(P) = 2if and only if
+f1̸=0. Atf   1 =0one hasP=0, so the Palatini pair cannot be solved.
+
+5.6   Explicitq/usolve
+At fixed residuet, the (q,u) Euler–Lagrange equation is −2/3          ∂f1
+
+                                      P qN +f   1      2/3     t+     −∂f   1    =0.                                  (5.18)
+
+Applying (5.17) yields
+                                       q=4  ∂f1f1 − 83t,       u=   ∂f1f1 − 23t,                                 (5.19)
+
+on f1̸=0. The algebra is recorded in Appendix D. Equation (5.19) is the complete Palatini
+response in the horizontal chart: there is no unspecified matrix standing between the source
+and (q,u).
+    The same inverse applied to the f1-sourced part alone produces the Palatini particular
+solution
+                                       (q,u)  t=0  =4r, r ,       r:=  ∂f1f1 ,                                   (5.20)
+which will combine with the residue solution in the next section.
+    With (q,u) eliminated by (5.19), the remaining horizontal unknown is the invariant residue
+t=  ¯T. The reducedt-problem is the Schur complement ofPinH                      ⊥.
+
+5.7   Exact Schur data
+A direct complement computation (Appendix E) produces
+
+                             St =2f  2,       Jt,eff   =−∂f       3,     L const = 3(∂f    1)22f  1   .                       (5.21)
+
+The on-shell Palatini contribution is therefore the constant (in t) density 3(∂f1)2/(2f1), and
+the remaining quadratic-plus-lineart-density is
+                                                    f2t2−(∂f     3)·t.                                                (5.22)
+
+5.8   Vanishing of the induced residue couplings
+Write the would-be induced couplings after Palatini elimination as
+                                    bf2 =f   2+∆2[f 1],      bf3 =f   3+∆3[f 1].                               (5.23)
+Comparing (5.21)–(5.22) with the original residue terms in (3.7) gives
+                                            ∆2[f 1]=0,      ∆   3[f 1]=0,                                        (5.24)
+hence                                  bf2 =f   2,     bf3 =f   3.                                             (5.25)
+
+These zeros are exact results of the Schur complement, not assumptions and not artifacts of
+the canonical (q,u,t) chart. Four independent evaluations—raw Euler–Lagrange substitution,
+the Schur complement, an alternate GL(3) horizontal basis, and substitution of the complete
+raw solution—all give ∆2 =∆3 =0 and the same on-shell density.
+
+                                                             8

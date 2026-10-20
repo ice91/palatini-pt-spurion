@@ -1,0 +1,79 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                  doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                       11 of 43
+
+
+
+                   Proposition 6 (Three-Route Bulk Equivalence).  Under the A1–A6 posture and after enforcing C1, the
+                   quadratic-order bulk actions derived from the ROD, CM, and CS+ routes are identical. Specifically, each route
+                   yields a bulk Lagrangian of the form
+
+                             δ2LX = A⋆p−g sgn(Σϵ)IT   (mod∇µJµX),    with a universal coefficient    A⋆ = λ2/8,       (20)
+
+                   where X∈{ROD,CM,CS+}.
+
+                   Sketch of Proof. The equivalence of the ROD and CM routes follows from their shared Jacobian,q
+                   √−˜g/√−g=            det[1+(2
+                                                   3)λτT]. Expandingthedeterminanttosecondorderusingthetracelessness
+                   ofT  yieldsδ2L∝−λ2τ2. Applyingthekeyrelation(18)      thengivestheresult. TheCS+ routeinvolves
+                   amoredetailedcalculationwiththeHodgestar,butafterprojectionandapplicationofC1,itreduces
+                   to the same bulk term (details in Appendix C).
+
+                         This remarkable equivalence, numerically verified in Figure5, establishes the main bulk identity
+                   of this section:
+
+                                   δ2LROD ≡ δ2LCM ≡ δ2LCS+ ≡ (λ2/8)p−g sgn(Σϵ)IT   (mod∇µJµ)                                   .              (21)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure 5. Residual scan for the three-route equivalence. Quadratic reductions of the ROD, CM, and CS+ routes
+                   are compared against the target bulk action δ2Ltarget = (λ2/8)√−g sgn(Σϵ)IT.  The vertical axis shows the
+                   residual after subtraction. All three routes saturate the target within numerical tolerance, confirming the bulk
+                   equivalence. Analysisisatquadratic-orderandbulk-only(mod∇µJµ;representativeLagrangiansarelistedinApp.C).
+                   [nb: fig_c2_coeff_compare.py]
+
+                   5.2. Boundary Terms and the Flux-Ratio Diagnostic
+                         Theonlydifferencesbetweenthethree routeslieintheir respectiveboundaryterms,which can
+                   be expressed as different improvement currents JµX.  On admissible spacetimes (as per A4), these
+                   boundary terms do notaffect the bulk equations of motion. A sharp, quantitative test of theirphysical
+                   equivalence is provided by the flux-ratio diagnostic, which compares the integrated flux of these
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

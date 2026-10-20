@@ -1,0 +1,60 @@
+Symmetry2026,18, 170                                                                                                                    2 of 50
+
+
+                                   |cT/c−1|≲ 10−15 [1–3].        This single datum acts as a stringent filter across a wide land-
+                                   scapeofmodifiedgravitymodels,motivatingasharpquestion: canluminalityfollowfrom
+                                   symmetryandconsistency,ratherthanfrom parameter tuning? Aparameter-tunedsurvivalof
+                                   luminality is often viewed as theoretically fragile; a symmetry-selected mechanism, by con-
+                                   trast, would be structural and radiatively meaningful. For reproducibility, all numerical
+                                   checks and figure generation were performed using Python (version 3.11.6) with standard
+                                   scientific libraries; the public repository was accessed on 19 December 2025.
+
+                                   Related work map (minimal, not a survey).
+                                         The GW170817 constraint rapidly eliminated broad classes of scalar–tensor theories
+                                   unless specific operators are absent or degenerately arranged [4–6]. Representative EFT
+                                   overviewsofviablepost-GW170817parameterizationscanbefoundin[7–10]. Onthegeo-
+                                   metricside, first-order(Palatini)and metric-affine/Riemann–Cartanformulations withtor-
+                                   sionhavealonghistory[11–14]. Thespin–torsioncouplingintheEinstein–Cartan/Sciama–
+                                   Kibbleframeworkwasintroducedin[15,16]. Foranoverviewoftorsiongravityandrelated
+                                   formulations, see [17]. For clarity, we emphasize again that our setting is not teleparallel
+                                   gravity (which enforces zero curvature and attributes gravity to torsion alone); we cite
+                                   standard teleparallelreviewssolely topreventmisclassification [18,19]. Noresultin this
+                                   paper relies on teleparallel assumptions.
+
+                                   Framework and posture.
+                                         Weworkinametric-compatible,first-order(Palatini)variationalformulationwhere
+                                   the tetrad (or metric) and spin connection are treated as independent variables on a
+                                   Riemann–Cartan spacetime (torsion allowed). Within this setting, we impose two sym-
+                                   metry/selection principles that define the “observable” scalar sector and control the
+                                   tensor dynamics:
+                                   1.     Scalar PT projection.  All observable scalar densities are projected into a PT-even
+                                         (parity–time symmetric) subspace.  Operationally, this acts as a selection rule on
+                                         admissiblescalar operatorsin theaction, ensuringreality ofthe actionand removing
+                                         parity-odd scalar contributions (e.g., potential birefringent effects) at leading order
+                                         within the observable sector.
+                                   2.     Projectiveinvariancewithacompensator. Projectivesymmetryisimplementedwith
+                                         anon-dynamicalcompensator(spurion)ϵ(x),suchthatobservablesdependonlyon
+                                         the projectively invariant trace combination
+
+                                                                                  Tµ ≡  Tµ−∂µϵ,                                                       (1)
+
+                                         therebyavoidingadditional propagatingdegreesoffreedom thatcommonlyarisein
+                                         torsionful settings. Throughoutthe main analysis, we adopt the spurion limit (A6): ϵ
+                                         is treated as a fixed background and is not varied.
+                                         Theseprinciples,togetherwithsixexplicitassumptions(A1–A6)collectedinSection2,
+                                   definethepostureinwhichthequadratictensorsectorbecomesrigidenoughtoadmitan
+                                   algebraic luminality theorem. Detailed proofs regarding the mathematical completeness of
+                                   theoperator basisandthe localno-gotheorems underpinning thispostureareprovided in
+                                   the companion technical note [20].
+
+                                   Known ingredients vs. new contributions (audit-ready).
+                                         Tomakeoriginalityandlogicaldependenciesexplicit,weseparatestandardtoolsfrom
+                                   new results.
+
+
+
+
+
+
+
+                                                                                                         https://doi.org/10.3390/sym18010170

@@ -1,0 +1,51 @@
+they do not extend the regular reduced action through the singular strata or address projective
+charges, stability, or constitutive predictivity.
+
+A   Conventions and projective transformation
+
+This appendix reconstructs Table 1 and Proposition 4.1.
+
+A.1   Index conventions
+D = 4, signature (−,   +,+,+).  A(µν)     = (Aµν +Aνµ)/2 and A[µν]     = (Aµν −A   νµ)/2.  The
+curvature, Ricci, torsion, and nonmetricity definitions are (3.1)–(3.5).
+
+A.2   Trace map of the two-parameter family
+LetδΓ        λµν =aδ   λµξν +bδ   λνξµ andδg       µν =0. Then
+
+                                         δTλµν =(a−b)     δλµξν−δ   λνξµ,                                     (A.1)
+
+hence
+                          δTµ =δT    λλµ =(a−b)     Dξµ−ξ   µ=(D−1)(a−b)ξ                       µ.                     (A.2)
+AtD=4 this isδT=3(a−b)ξ. For nonmetricity,Q                           λµν =−∇   λgµν andδg=0 give
+
+                                          δQλµν =δΓ     ρλµgρν +δΓ     ρλνgµρ.                                       (A.3)
+
+WithδΓ           ρλµ =aδ   ρλξµ+bδ   ρµξλ,
+
+                                     δQλµν =a gλνξµ+g   λµξν+2bg  µνξλ.                                 (A.4)
+
+Contracting,
+
+                                     δQλ =g   µνδQλµν =(2a+2Db)ξ            λ,                                        (A.5)
+                                     δeQν =g   µλδQλµν =(D+1)a+2b       ξν.                                 (A.6)
+
+AtD=4 this is (4.4):
+                                     δQ=(2a+8b)ξ,       δ         eQ=(5a+2b)ξ.                                 (A.7)
+
+A.3   Linear Ricci coefficients
+In a local inertial frame the partial terms of (3.1) with Cλµν = aδλµξν +bδλνξµ give, after
+Ricci contractionR               αβ =R   λαλβ,
+                                       δRαβ∂ =b∂   αξβ +(−3a−b)∂                βξα.                                    (A.8)
+
+The quadratic remainder C·C    in the connection-difference identity is proportional to a in this
+family and vanishes identically at a = 0. The target δRµν =−2∂[µξν]  requires b =−1 and
+−3a−b     = 1.  Combined with a−b     = 1 from δT = +3ξ and with δA = +3ξ imposed, the
+unique solution isa=0,b=−1.
+
+A.4   Direct curvature variation ata= 0,b=−1
+Set Cλµν =−δ   λνξµ. Mixed Γ–C terms cancel pairwise and C·C    cancels by symmetry of ξµξν.
+The remainder is
+                             δRλρµν =∂   µCλνρ−∂   νCλµρ =−δ       λρ(∂ µξν−∂   νξµ),                        (A.9)
+henceδR          ρν =−2∂         [ρξν]  andδR=0, which is (4.10).
+
+                                                             18

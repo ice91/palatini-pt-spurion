@@ -1,0 +1,27 @@
+{
+  "all_pass": true,
+  "count": 9,
+  "checks": {
+    "two_dimensional_Einstein_tensor": true,
+    "Rindler_coordinate_curvature_zero": true,
+    "coherent_stress_traceless_2D": true,
+    "nonzero_energy_does_not_curve_fixed_parent": true,
+    "conditional_Clausius_null_relation": true,
+    "conditional_area_density_normalization": true,
+    "null_lemma_time_space_offdiagonal": true,
+    "null_lemma_diagonal": true,
+    "null_lemma_spatial_offdiagonal": true
+  },
+  "expressions": {
+    "conformal_2D_Ricci": "Matrix([[-Derivative(c(t, x), (t, 2)) + Derivative(c(t, x), (x, 2)), 0], [0, Derivative(c(t, x), (t, 2)) - Derivative(c(t, x), (x, 2))]])",
+    "conformal_2D_scalar_R": "2*(-Derivative(c(t, x), (t, 2)) + Derivative(c(t, x), (x, 2)))*exp(-2*c(t, x))",
+    "Rindler_R": "0",
+    "initial_coherent_stress": "Matrix([[fprime**2*lambda**2/2, 0], [0, fprime**2*lambda**2/2]])",
+    "conditional_theta": "-Rkk*lambda_affine",
+    "conditional_delta_area": "Rkk*ell**2/2",
+    "conditional_delta_heat": "Tkk*ell**2*kappa/2",
+    "conditional_null_relation": "2*pi*Tkk/alpha",
+    "conditional_tensor_result": "G_ab + Lambda*g_ab = (2*pi/alpha)*<T_ab>",
+    "premise_warning": "area density alpha, Clausius equilibrium for all local null horizons, metric variation and stress conservation are ADDED; absent in 1+1 fixed parent"
+  }
+}

@@ -1,0 +1,64 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                              doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                     Assumption Posture at a Glance (A1–A6).                                     Z         Z
+                     A1    PT-invariant domain/measure.  For any scalar density X,                  X =       PT[X].   Used in:  self-
+                           adjointness ofΠPT and projector identities (Theorem1); route-flux diagnostics in Section V.
+                     A2    OrientationandHodgedual. Thecombined PT preservesthechosenorientationand[PT ,∗]=
+                           0 on forms.    Used in:  parity of Levi–Civita density and commuting with ∗; boundary
+                           accounting.
+                     A3    Projectioncommuteswithvariation. Forscalardensities,δΠPT[O]=ΠPT[δO].  Usedin: Palatini
+                           variation and irrep block-diagonalization (Section IV). Checkable proof: Lemma1below.
+                     A4    Topology/boundaryposture. Workontrivial patchesorimpose PT-invariantboundaryfluxso
+                           thatimprovementcurrents are puregauge(noextra canonicalpairs).  Usedin: nulltests and
+                           flux ratios (Section V); DoF count (Section VII).
+                     A5    Nieh–Yan as boundary counterterm.  NY ≡ d(eA∧ TA) affects only boundary conventions;
+                           no bulk Euler–Lagrange effect.  Used in: three-chain equivalence modulo total derivatives
+                           (Section V).
+                     A6    Trace-lockposture. Weenforce Tµ = 3η∂µϵ viaanalgebraicLagrangecurrent. UnderA4this
+                           introducesnonewcanonicalpairsandonlyremovesthe PT-evenbilinearindependenceat
+                           quadratic order.
+
+                   Sufficient conditions for A1.
+                        OnorientedLorentzianpatcheswiththestandardmeasured4x√−gand PT-invariantboundaries
+                   (compact or AF/FRW fall-offs), the pullback by PT preserves both the integration domain and the
+                   measure, henceR X =R PT[X] for scalar densities.
+
+                   Sufficient conditions for A2.
+                        IfPTpreservesthechosenorientationandthemetricusedforindexoperations,thenPTcommutes
+                   with the Hodge dual on forms: [PT ,∗]= 0.
+
+                   Action of P,T,PT on densities
+                        Let P,T act as standard discrete isometries; T is anti-linear (complex conjugation). On oriented
+                   (3+1)-manifolds, the combined PT preserves orientation, so for the Levi–Civita densityϵµνρσ (weight
+                  +1) we have
+                                                  P : ϵ7→−ϵ,        T : ϵ7→−ϵ,        PT : ϵ7→+ϵ.
+
+                   Assumption A2 implies[PT ,∗] = 0. Consequently, a scalar of the formϵµνρσXµνρσ is PT-even iff X is
+                   PT-even.
+
+                   2.1. Scalar PT Projector: Definition And Basic Properties
+                        Thecombined PT actsanti-linearlyoncomplex-valueddensities(complexconjugationaccompa-
+                   nies time reversal). On scalar densities we define
+
+                                               ΠPT[O] ≡  1     O+PT[O]real scalar,      Π2PT =ΠPT.                                    (2)
+                                                              2
+
+                   Self-adjointness on real scalars. Using A1 andPT 2=id,
+                                                         Z                           Z
+                                                           ΠPT[O1]ΠPT[O2]=              ΠPT[O1O2].                                                  (3)
+
+
+                   Lemma 1 (Project–vary commutation on scalar densities).  LetΠPT[O] ≡  12(O+ PT[O])|real act on
+                   complex-valuedscalardensitiesO∈ L2(D) withA1(PT-invariantdomain/measure)andA4(fall-offs)imposed.
+                   If the spurionϵ is non-variational and variations act onlyon(e,ω) with compact support or admissible fall-offs,
+                   thenδΠPT[O]=ΠPT[δO] andΠPT is self-adjoint on real scalars.
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

@@ -1,0 +1,63 @@
+Symmetry2026,18, 170                                                                                                                    44 of 50
+
+
+
+                                    Representative anchors (one-line map).
+                                         Metric-affine/Einstein–Cartan: [12–14].  Holst/Nieh–Yan: [21,22,24,25].  Covariant
+                                   phase space & boundary charges: [26,27,38].  CS-modified gravity: [32,33].  GW170817
+                                    speed bounds & implications: [1–6,36,39].
+
+                                    Appendix G. EFT Origins of the Spurion Field
+                                         Scope. This appendixprovides aneffective field theory(EFT) completion thatexplains
+                                    the spurion posture adopted in the main text and ties it to projective symmetry.  At two
+                                    derivatives and within A1–A5 (Section2), the compensator              ϵ(x) appears only through its
+                                    gradient andonlyin the projectively invariant combination
+
+                                                        Tµ ≡  Tµ−∂µϵ,      Γαµν→Γαµν+δαµξν : Tµ invariant.                               (A65)
+
+                                   WegiveaminimalStueckelbergactionthatreproducestheC1map,explaintwoequivalent
+                                    implementationsofthespurionlimit,andrecordcomplementaryEFTviewpointsinwhich
+                                    the gradient-only appearance ofϵ is manifest.
+
+                                    Appendix G.1. Stueckelberg Completion and the Spurion Limit
+                                         A projectively invariant, two-derivative completion is
+
+                                                  Z             hM2P
+                                         SStk =      d4xp−g        2  R(e,ω)− m2T2 TµT µ−  f2ϵ2 (∂ϵ)2i,     Tµ≡ Tµ−∂µϵ,                  (A66)
+
+
+                                   with mT > 0 and fϵ≥ 0 real. The mass-like term forTµ restores projective invariance via
+                                    the Stueckelberg compensator ϵ; the spectator kinetic term respects the shift symmetry
+                                    ϵ7→ ϵ+c and keeps only∂ϵ at this order.
+
+                                    Palatini variation and the C1 map.
+                                         Writing ω =  ˚ω+K(T) and using the standard algebraic split of R(e,ω) into R( ˚ω)
+                                   plusquadratictorsion(totalderivativesdroppedunderA4),variationw.r.t.ω yieldspurely
+                                    algebraicequations in the irreps{Tµ,Sµ,qλµν}. With (A66),
+
+
+                                                  δωSStk ⇒  Sµ = 0,        qλµν = 0,        m2T(Tµ−∂µϵ)+ 4α13   Tµ = 0,           (A67)
+
+                                   where α1 is the coefficient multiplying the T2 piece coming from R(e,ω) (fixed by con-
+                                   ventions and already used in Section4.1).  For                   m2T >  0 this algebraic system has the
+                                    unique solution
+                                                                    Tµ = ∂µϵ,        Sµ = 0,        qλµν = 0,                            (A68)
+
+                                   which is precisely the C1 pure-trace alignment (Section4) written in covector form and
+                                    implies Tµ =  0 on-shell.  (Equivalently, one may add the quadratic invariant IT with
+                                    a positive coefficient and obtain the same irrep alignment. The projector statements of
+                                    Section2ensure all scalar contractions are taken in the               PT-even, real sector.)
+
+                                    Two equivalent implementations of thespurion limit.
+                                         We isolate the low-energy regime where observables reduce to those used in the
+                                    main text:
+                                                                     (i) Hard penalty: mT →∞ ⇒ Tµ = 0,                                   (A69)
+                                                                (ii) Lagrange current:LΛ =p−gΛµTµ.
+
+
+
+
+
+
+
+                                                                                                          https://doi.org/10.3390/sym18010170

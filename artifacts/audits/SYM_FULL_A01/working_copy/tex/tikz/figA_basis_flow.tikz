@@ -1,0 +1,14 @@
+% figA_basis_flow.tikz
+\begin{tikzpicture}[>=stealth, node distance=18mm, every node/.style={font=\small}]
+\node[draw, rounded corners, align=center] (PT) {$\Pi_{\rm PT}$\\ scalar projector};
+\node[draw, rounded corners, right=of PT, align=center] (C1) {C1\\ pure-trace $T_\mu \parallel \partial_\mu\epsilon$};
+\node[draw, rounded corners, right=of C1, align=center] (C2) {C2\\ DBI $\equiv$ CM $\equiv$ CS$^+$};
+\node[draw, rounded corners, right=of C2, align=center] (C3) {C3\\ locking $\Rightarrow c_T=1$};
+
+\draw[->] (PT) -- (C1);
+\draw[->] (C1) -- (C2);
+\draw[->] (C2) -- (C3);
+
+\node[below=12mm of C2, align=left] (note) {\footnotesize Bulk equalities hold modulo $\nabla_\mu J^\mu$ (A4–A5).};
+\draw[-] (note.north) -- (C2.south);
+\end{tikzpicture}

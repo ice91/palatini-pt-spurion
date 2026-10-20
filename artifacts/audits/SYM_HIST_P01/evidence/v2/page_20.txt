@@ -1,0 +1,78 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                 doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                     19 of 48
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure 8. Tensor dispersion cT(k): locked vs. unlocked. Comparison of cT(k) for the locked ratio w⋆ from (46)
+                  (solid) and representativeunlockedchoices (dashed). [nb: fig_c3_dispersion.py]
+
+
+                   Summary of Section VI. Eliminating TT–nonTT mixing reduces to the full–rank system (44)     .  Its
+                   nonzerodeterminantfixesauniqueweightratio w⋆ROD:w⋆CM (uptonormalization). Withthisratio, the
+                   equal–coefficient identity (47) gives      K=G and hence cT=1.
+
+                   7. Quadratic Action, Exact Luminality, and Hamiltonian Constraint Structure
+                        We now state and use the identity that fixes the tensor speed to be exactly luminal at quadratic
+                   orderoncethecoefficientsarelocked,andwecollecttheHamiltonian/constraintstructureinoneplace.
+                  WeassumeA1–A6,thescalar PT projector,andtheC1mapwith Tµ = 3η∂µϵ. Allprojectedscalarsare
+                   real.
+                        Variational domain for the K−G identity. We take variations with compact support on spatial
+                   slices or with FRW/AF fall-offs:
+
+                                        hTTij  = O(r−1−σ),    δN = O(r−2−σ),    ∂iNi = O(r−2−σ)   (σ> 0).
+
+                  Then Jµ∆ = O(r−3−σ) andδR d4xa3∂µJµ∆ =R dΣµ a3δJµ∆ = 0, sototal divergences donot feedback into
+                   Euler–Lagrange equations.
+
+                   7.1. Equal–Coefficient Identity and cT=1
+                        ExpandingLtot =LEH(e,ω)+Lchain(w) to quadraticorder (about anyadmissible background
+                  with A4) yields
+
+                                                                                     i
+                               δ2L= M2Pl8   a3hK(w) ˙hTTij  ˙hTTij −G(w) (∂khTTij )2a2 +(TT–nonTT mix + constraints).           (51)
+
+                   Usingthe contorsiondecompositionunder C1,the bulk equivalenceof Section5,and TTtransversal-
+                   ity/tracelessness, one finds thetotal-divergenceidentity
+
+                                                             K(w)−G(w) =  a−3∂µa3Jµ,                                                  (52)
+                                                                                              ∆
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

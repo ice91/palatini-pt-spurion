@@ -1,0 +1,51 @@
+        Projective Gauge Reduction and Auxiliary Connection
+                                               Elimination
+                              in a Metric-Affine Trace Sector
+
+
+
+
+
+
+                                                    Abstract
+           Independent affine connections are routinely eliminated algebraically in Palatini and
+       metric-affine gravity, but projective gauge degeneracy makes it nontrivial to determine
+       whether elimination defines a unique reduced theory. A local Hessian criterion separates
+       gauge freedom from invariant auxiliary degeneracy.  In a four-dimensional trace/vector
+       model with the compensator Aµ varied, the full pointwise one-form-fibre Hessian kernel
+       equals the projective gauge image precisely on the regular locus f1 ̸= 0, f2 ̸= 0.  The
+       horizontalsolutionis unique, theaffinesolutionsformonelocalorbit, andquotient-firstand
+       eliminate-first reductions agree as local bulk functionals modulo the admitted divergence
+       currents. At f1 = 0 or f2 = 0, rank loss is not merely enlargement of projective gauge
+       freedom: source compatibility may fail, while compatible branches retain gauge-invariant
+       algebraic moduli. These statements are local to the stated trace/vector configuration space.
+
+1   Introduction
+
+When may a gauge-degenerate auxiliary field be eliminated before or after taking the gauge
+quotient without changing the reduced theory?
+    An independent affine connection in Palatini and metric-affine gravity is typically auxiliary,
+and the Palatini curvature scalar is invariant under a consistent projective shift [1–6]. Neither
+that projective invariance nor algebraic connection elimination is claimed as new [7–12]. What
+is not automatic is that the two operations agree.
+    Gaugenonuniquenessandauxiliarynonuniquenessneednotcoincide. Rawaffinenonunique-
+ness splits into two distinct effects.  Some directions are gauge:  they never enter the bulk
+density and are removed by the projective quotient. Other directions are gauge-invariant and
+may nevertheless remain auxiliary.  Gauge invariance is not dynamical independence, and
+gauge redundancy is not the same as auxiliary eliminability. Only after those two effects are
+separated is auxiliary elimination guaranteed to define a reduced spectator theory rather than
+a representative choice among invariant degeneracies.
+    IndependentaffineconnectionsarecommonlyeliminatedalgebraicallyinPalatiniandmetric-
+affine analyses [4, 5, 7–11, 13]. If the affine Hessian has gauge-invariant null directions beyond
+the projective orbit, that substitution does not define a unique quotient theory: unresolved
+invariant data remain.  The exact kernel criterion is therefore a local diagnostic of when
+integrating out the connection is a quotient-independent operation rather than an implicit
+non-gauge branch restriction. The diagnostic is established here in the stated trace/vector
+sector; it is not claimed for unrestricted metric-affine gravity.
+    The trace/vector sector is a minimal nontrivial setting in this model where a projective
+one-form orbit, gauge-invariant horizontal affine data, and rank-changing algebraic connection
+equationscoexist. Itisthereforeanexactlaboratoryforseparatingprojectivegaugedegeneracy
+from invariant failure of auxiliary eliminability. This defined configuration space is not asserted
+to be a dynamically consistent truncation of unrestricted 64-component metric-affine gravity.
+
+                                                         1

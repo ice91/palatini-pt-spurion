@@ -1,0 +1,14 @@
+{
+  "01_PHYSICAL_PROBLEM_AND_AXIOMS.md": "ccd0bbe437a67a9cd256063aee42dbd6826a17ed56d95bf73923e25a22bf0f00",
+  "02_EXACT_OBSERVER_REDUCTION.md": "422950e8cb64bbdd2e7b6120608de85233d77970aeab616bac96809a14612707",
+  "03_INFORMATION_CAUSALITY_AND_TIME.md": "99498bec53edd333a8b8f29f345d71716997d9fd6276bb27baa7807df9e0f1b5",
+  "04_EXPLANATORY_VERDICT.md": "aac0ddf18eb97f8e4cef0f519f5424eeac44a96136575981e48f58976ea9619d",
+  "evidence/README.md": "73cb8b5f31032954ee7af1e88813fd1562adf688c6186191ff5763149a458915",
+  "evidence/derive_observer.py": "9a07e7f79c15d64bfe25bea4d09b843b4232b6289cde7b9a0b7ff162a2c7cd5d",
+  "evidence/independent_results.json": "69b22517cde002ab8018f6e54393b683a56ceedf9c1d8e1955383a29ebf1e912",
+  "evidence/initial_state.json": "0610b1b68ca6589d9e44d64e95277bee040e1d327d75a47cace0e38a549e7b9c",
+  "evidence/preservation_final.json": "51efa9d7830b4f6e8002b4f41aaca1c0212c1bd757507d5b8dc7dc8b5a97b9e0",
+  "evidence/symbolic_results.json": "b5ac3c58d1be933f8d9415c3b62a21c2722e055a598dd52cfe196ecd7665eae7",
+  "evidence/test_independent.py": "823a45028f1d7c38e09b8b6561563799838757385291d3d62ceb54b4f667fd1e",
+  "evidence/verify_preservation.py": "0c54f2fe56654ff1f1a961eca9a14a331c8928bbe4935e87dda5a933659e4d5c"
+}

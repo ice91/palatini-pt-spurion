@@ -1,0 +1,53 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "0",
+   "metadata": {},
+   "source": [
+    "# 20 — Flux ratio R_{X/Y}(R) -> 1\n",
+    "Finite-domain FRW ball visualization."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np, matplotlib.pyplot as plt\n",
+    "from palatini_pt.equivalence.flux_ratio import flux_ratio_FRW\n",
+    "\n",
+    "R = np.linspace(5.0, 80.0, 60)\n",
+    "out = flux_ratio_FRW(R, {\"flux\": {\"sigma\": 1.0, \"c\": 0.5}})\n",
+    "plt.plot(out[\"R\"], out[\"R_DBI_CM\"])\n",
+    "plt.axhline(1.0, ls=\"--\")\n",
+    "plt.xlabel(\"R\"); plt.ylabel(r\"$\\mathcal R_{X/Y}$\")\n",
+    "plt.title(\"Flux ratio → 1 with $R^{-\\sigma}$ tail\")\n",
+    "plt.show()"
+   ]
+  }
+ ],
+ "metadata": {
+  "jupytext": {
+   "cell_metadata_filter": "-all",
+   "main_language": "python",
+   "notebook_metadata_filter": "kernelspec,language_info"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

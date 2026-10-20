@@ -1,0 +1,66 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                     doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                         39 of 48
+
+
+
+                   so rank loss occurs only on the measure-zero set{k = 0}∪{Σϵ = 0} or special foliations.
+
+                   Appendix D.5. Equal–Coefficient Identity: Covariant Derivation and Gauge Shift
+                         Define the quadratic current (indices contracted with the background spatial metric)
+                                                                                                  
+                                                              Jµ∆ = M2Pl8  J0∆ =  ΠijhTTij        ,                                                  (A47)
+                                                                              Jk∆ =−Ξij∂khTTij
+
+                   withΠij ≡ δ(δ2L)/δ˙hTTij   andΞij ≡ δ(δ2L)/δ(∂2hTTij ).  Using TT conditions, the rank–one traceless
+                   normalization, and the bulk equality of the routes (Section V),
+
+                                                                K(w)−G(w)=  1                     .                                      (A48)
+                                                                                     a3 ∂µa3Jµ∆
+
+                   Under δξhTTij   =  0, δξh0µ = ∂µξ0 +···, the representative shifts as δξJµ∆  = ∇νX[µν][ξ], hence the
+                   integrated identity is gauge independent.
+                         FRWandweak-fieldrepresentatives. OnspatiallyflatFRW(ds2 = a2(−dτ2+dx2),homogeneous
+                   ϵ),
+
+
+                                                       J0∆ =  A⋆η22   ΣϵhTTij   ˙hTTij   + ∇i(...),                                                         (A49)
+
+                                                       Jk∆ =− A⋆η22   Σϵ  1a2 hTTij  ∂khTTij   + ∂ℓ(...)[kℓ],                                         (A50)
+
+                   so K−G = a−3∂τ(a3J0∆)+a−3∂k(a3Jk∆) is a total divergence. In weak field (AF, a→1),
+
+
+                                     J0∆ = A⋆η22   ΣϵhTTij   ˙hTTij  +∂i(...)i,    Jk∆ =−A⋆η22   ΣϵhTTij  ∂khTTij  +∂ℓ(...)[kℓ].
+
+                   R ∂µ(a3JµBoundaryconsequenceandluminality. Withthevariationaldomainabove(A4),R a3(K−G)=
+
+                             ∆)= 0. Atthelockedweightsw⋆ (SectionVI;noTT–nonTTmixing),K(w⋆)= G(w⋆)⇒ c2T = 1
+                   at quadratic order, slicing–independently.
+
+                   Appendix D.6. Locked Weights and Summary Box
+                         Non-collinearitywiththetwomixingequationsyieldsauniqueratio w⋆ROD/w⋆CM (uptotheGR
+                   normalization). At these weights, K−G = a−3∂µ(a3Jµ∆) implies exact luminality.
+
+                      Appendix D (at a glance).
+                      •      Mixing matrix. Four dimensionless coefficientsµ(Y)X   (X = ROD,CM;Y = N,∇N) control the
+                            TT–constraint mixing with an overallη2Σϵ factor.
+                      •      Non-collinearity. The two locking rows are not proportional on evolving admissible back-
+                            grounds; the determinant∆ is generically nonzero (∆∼ α0η4Σ2ϵk2+···).
+                      •      Equal–coefficientidentity. K−G = a−3∂µ(a3Jµ∆); underA4 thisyields K = G and c2T = 1 atthe
+                            locked weights w⋆.
+
+                   Reproducibility Note
+                         TablesA1–A2comefromasinglesymbolicpipelinethat: (i)expands               T  andτ tolinearorderin
+                   ADM variables with the  23 normalization, (ii) forms the rank-one determinant route/CM quadratic
+                   densities, (iii) projects onto the bilinears of Equations (A42)        –(A43)        .  Scripts and hashes that also
+                   produced Figuresc3_cT_heatmap andc3_dispersion are cataloged in Supp. R.                        [nb :
+                   mixing_matrix_extract.py]
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

@@ -1,0 +1,60 @@
+Symmetry2026,18, 170                                                                                                                  33 of 50
+
+
+
+                                   Corollary A1. For any single covector vµ the P(q) projector annihilates the two rank-one seeds:
+                                   P(q)[δA[BvC]]= 0= P(q)[ϵABCDvD].
+
+                                   Appendix B.5. Consequences for the C1 Ansatz
+                                         Applying PropositionA3to the most general                       linear ansatz with one derivative
+                                   (Section4.1),
+                                                           TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ+P·∂ϵABC,                          (A27)
+
+                                   shows that the attempted traceless pieceP·∂ϵABC necessarily vanishes: it is a linear,
+                                   single-vector construct and is thus killed by P(q) (CorollaryA1). The ansatz collapses to
+
+                                                                   TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ,                                      (A28)
+
+                                   recoveringthecorrespondingequationinthemaintext. ThescalarprojectorΠPT[·]removes
+                                   PT-oddscalarsbuiltfromthe axialseed(Theorem1),and thePalatiniconnectionequation
+                                   then sets B = 0 while fixing A = 2η under the trace lock Tµ = 3η∂µϵ (Section4.1). This
+                                   yields the uniqueness map TABC = 2ηδA[B∂C]ϵ quoted in Theorem2.
+
+                                   Appendix B.6. Consistency Check with the Quadratic Invariant
+                                         With the normalization (A21) and the C1 map (so         Sµ = 0 and qλµν = 0),
+                                                                   h
+                                                              ΠPT   TABCTABCi      = 23 TµTµ = 23(3η)2Σϵ = 6η2Σϵ,
+                                                                   h                                                                  (A29)
+                                                     IT ≡−ΠPT       TABCTABCi      =−6η2Σϵ,
+
+                                   in agreement with the main-text definition (12) and the post-lock collapse in Section3.2.
+
+                                   Appendix C. Three-Chain Reductions and Improvement Currents
+                                   (σϵ Scheme)
+                                   Scope (σϵ scheme and naming).
+                                         Thisappendixprovidesthepaper-checkablereductionsbehindSection5underthe
+                                   sign-compensated convention sgn(Σϵ)IT ≡ sgn(Σϵ)IT = −6η2|Σϵ| and the rank-one de-
+                                   terminant route naming (formerly “DBI”-type; not Born–Infeld gravity): (i) a rank-one
+                                   determinantroutebuiltoutofthecanonicaltracelessmatrixT µν,(ii)aclosed-metricrank-
+                                   onedeformation,and(iii)the PT-evenCS/Nieh–Yanshadow. Atquadraticorder,eachroute
+                                   reduces in the bulk to the same invariant line
+
+                                                  δ2LX = A⋆p−g sgn(Σϵ)IT+∇µJµX,                                                       (A30)
+                                                     A⋆ = λ2/8,        X∈{rank−onedeterminantroute,CM,CS+}.
+
+                                   withimprovements∇µJµX differingbyboundarychoices(A4/A5). Closedrepresentatives
+                                   for Jµ are given on FRW/weak-field backgrounds.
+
+                                   Notation and key relation.
+                                         We use the preamble shorthands Σϵ ≡ ΠPT(∂ϵ)2,  sgn(Σϵ) ≡  sgn(Σϵ),   ˆnµ ≡
+                                   p∂µϵ                            ˆnµˆnν− 1       ,  τ  ≡   ˆnµTµ    =     3η sgn(Σϵ)p|Σϵ| so that
+                                      |Σϵ|, T µν  ≡  sgn(Σϵ)                4δµν
+                                   TrT = 0, Tr(T 2)=  34, and (after C1)
+
+                                            τ2 = 9η2|Σϵ|= 32(−sgn(Σϵ)IT),        sgn(Σϵ)IT ≡ sgn(Σϵ)IT =−6η2|Σϵ|.
+
+
+
+
+
+                                                                                                        https://doi.org/10.3390/sym18010170

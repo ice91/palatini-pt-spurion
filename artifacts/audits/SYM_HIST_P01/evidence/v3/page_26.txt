@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                  doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                       25 of 43
+
+
+
+                   Proof (sign count). UnderA2thechosenorientationispreservedand[PT ,∗]=0;ϵµνρσ isPT-odd,hence
+                   anypseudo-scalar densitybuilt from itflips signand isannihilatedbyΠPT. The spuriongradient∂µϵ
+                   picksopposite P/T paritiesrelativeto Tµ≡ Tνµν (tableinSec.1),so         Tµ∂µϵ is PT-oddandisprojected
+                   out. Quadratic contractions T2 and(∂ϵ)2 are PT-even andthe projector returnstheir realparts, hence
+                   (39).
+
+                   Appendix A.3. Commutation of Projection with Variation (A3)
+                   Theorem 10 (Projection–variation commutation (A3)).  Let O be any local scalar density built from
+                   (e,ω,∂ϵ,...). Then, for variations with respect to(e,ω,matter) at fixedϵ,
+
+                                                                   δΠPT[O] = ΠPT[δO].                                                              (43)
+                   Proof.  By definition,δΠPT[O] =  1δO+δPT[O]real. It suffices to showδPT[O] =PT[δO]. The
+                                                            2
+                   PT action on fields is an involutive automorphism on the local functional algebra, and it is anti-linear
+                   only through global complex conjugation (time reversal).  For any complex functional F one has
+                   δF =   δF because the variation acts linearly on fields and does not act on the numerical i. Therefore,
+                   withΦ denoting collectively the fields that are varied andΦPT  their PT image,
+
+                                               δPT[O(Φ)]= δ         O(ΦPT)=        δO(ΦPT)=PT[δO(Φ)],
+
+                   whereweusedthatPT  doesnottouchthespurion(fixed)andcommuteswith derivatives andindex
+                   operationsunder A2. Substitutingback andusinglinearityof the“real”operationyields Eq.(43)     .
+
+                   Remarks
+                         (i) Anti-linearityfrom T introduces only complex conjugation, whichcommutes withvariational
+                   derivatives as shown. (ii) The assumption that ϵ is not varied (spurion posture) is essential; if one
+                   promotesϵ to a dynamical field,additional boundary terms appear but Eq.(43) continues to hold for
+                   the scalarprojector provided the same posture (A1–A2) is kept for the extended field space.
+
+                   Appendix A.4. Variational Identities for√−g,ϵµνρσ, and the Hodge Star
+                         We collect formulas used repeatedly in Secs.2–7. We write               hµν≡ δgµν and h≡ gµνhµν.
+
+                   Metric and Vierbein
+                         With gµν = ηABeAµeBν,
+                                             δgµν = ηABeAµδeBν+eAνδeBµ,       δgµν =−gµαgνβδgαβ.                              (44)
+
+
+                   Determinant and Levi–Civita Tensor
+
+                                        δp−g=  1     p−gh,       δϵµνρσ =  1
+                                                    2                           2 ϵµνρσh,       δϵµνρσ =−12 ϵµνρσh.                       (45)
+                   Thesefollow fromϵµνρσ =√−gεµνρσ andϵµνρσ = εµνρσ/√−g,withεµνρσ the(constant) Levi–Civita
+                   symbol.
+
+                   Hodge Star
+                         Letα be a p-form and hµν≡ gµλhλν. Then the variation of∗ with respect to h is
+
+                                                                                                           p
+                                   δ(∗α)=∗δα+ 12 h(∗α)− 12 ∗(H·α),       (H·α)µ1...µp ≡                 ∑   hµiναµ1...ν...µp.                 (46)
+                                                                                                          i=1
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.

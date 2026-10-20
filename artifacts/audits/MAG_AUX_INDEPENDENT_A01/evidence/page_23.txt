@@ -1,0 +1,48 @@
+G   Explicit QE and EQ substitutions
+
+G.1   Quotient first
+OnU      reg,H⊥x+J=0 has the unique solution (5.29). Then
+                                        LQEaff,on-shell    = 12xT⋆H⊥x⋆+J   Tx⋆.                                      (G.1)
+Using the Schur factorization,
+
+         1
+         2xT⋆H⊥x⋆+J   Tx⋆ =L   const+ 12Stt2⋆+J   t,eff  ·t ⋆ = 3(∂f    1)22f  1    +f   2s2−(∂f     3)·s,       (G.2)
+withs=∂f              3/(2f      2). The last two terms are
+                             ∂f3    2−(∂f     3)·  ∂f3
+                         f2   2f  2                2f  2 = (∂f 3)24f  2  − (∂f 3)22f  2   =−   (∂f 3)24f  2  .                    (G.3)
+
+Hence
+                                         LQEaff,on-shell    = 3(∂f    1)22f  1   − (∂f 3)24f  2  .                                      (G.4)
+
+G.2   Eliminate first
+Substitute (6.13) into (F.1). Write T =s+V, Q=4r−  (8/3)(s+V), eQ=r−  (2/3)(s+V),
+A = V.  Every occurrence of V  inQ(     T,Q,eQ) and in 2T +Q−   eQ cancels by Appendix C,
+and T−A      = s is independent of V.  The remaining expression is a function of (r,s) only.
+Expanding,
+                            f1QV-free  +(∂f 1)·(2s+4r−r)+f                       2s2−(∂f     3)·s
+
+                                                                   = 3(∂f    1)22f  1   − (∂f 3)24f  2  ,                        (G.5)
+
+after using r = ∂f1/f1, s = ∂f3/(2f2), and the Palatini evaluation ofQon (     q,u) = (4r−
+8s/3, r−2s/3). Thus
+                                         LEQaff,on-shell    = 3(∂f    1)22f  1   − (∂f 3)24f  2  ,                                      (G.6)
+
+independent of V. The representatives V = 0, V = dχ, and V  arbitrary therefore yield the
+same bulk density.
+
+G.3   Admitted remainder
+The two substitutions are performed on the bulk densities after (5.5)–(5.6). They therefore
+agree modulo
+                                             ∂µ√−g(c       1Jµ1 +c   3Jµ3).                                           (G.7)
+Whether this remainder is retained, canceled, or discarded is a variational-boundary convention.
+Off shell, δJ1 = δJ3 = 0 for projectively inert spectators, so the remainder does not classify
+proper versus improper transformations (Appendix H).
+
+H   Boundary currents and IBP identification
+
+H.1   Currents actually used
+The integrations by parts in the proof are only (5.5) and (5.6). They generate
+                                          Jµ1 =f   1Wµ,       Jµ3 =f   3¯Tµ,                                        (H.1)
+withW         µ =−2T         µ−Q   µ+ eQµ and ¯Tµ =t   µ =T    µ−A   µ. No other surface current is invoked.
+
+                                                            23

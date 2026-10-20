@@ -1,0 +1,50 @@
+                    Table 1: Conventions and projective transformations atD=4.
+                               Object   Definition or law              Variation
+                               Rλρµν     (3.1)                    −δ            λρ2∂  [µξν]
+                               Rµν        (3.2)                    −2∂               [µξν]
+                               R           gµνRµν                             0
+                               Tµ          (3.3)                                +3ξ     µ
+                               Qµ         (3.4)                    −8ξ              µ
+                               eQµ         (3.4)                    −2ξ              µ
+                               Aµ         compensator                    +3ξ     µ
+                               ¯Tµ          Tµ−A   µ                           0
+                               Γλµν       independent connection−δ                        λνξµ
+
+5   Exact transverse Hessian
+
+5.1   Exact trace expansion
+Insert(4.13)intotheconnection-differenceidentityfor(3.1)andcontracttothescalarcurvature.
+Every quadratic and divergence coefficient is determined. There is no remainder in the trace
+sector:
+                     R−R       LC = ¯∇µ−2T      µ−Q   µ+ eQµ
+                                     − 23T2− 1172Q2+  118eQ2− 23T·Q+         23T·  eQ+     29Q·   eQ.                (5.1)
+HereX·Y:=g                     µνXµYν andX       2 :=X·X. The six quadratic coefficients are
+
+                                           −23,− 1172,+  118,− 23,+ 23,+ 29                                              (5.2)
+
+in the order (T2,Q2,eQ2,T·Q,T·    eQ,Q·   eQ). Equation (5.1) is the complete expansion used
+below; no ellipsis is implied. The derivation is given in Appendix C.
+
+5.2   Projective cancellation in raw traces
+Substituting the projective shifts (4.9) into the divergence and into the quadratic polynomial
+of (5.1) cancels all vertical dependence. Equivalently, after (4.15) both the divergence current
+
+                                               Wµ :=−2T          µ−Q   µ+ eQµ                                             (5.3)
+
+and the quadratic form become functions of (t,q,u) only:
+
+                                                Wµ =−2t         µ−q   µ+u   µ,                                              (5.4)
+
+and the quadratic polynomial is that of (5.1) with (T,Q,eQ) replaced by (t,q,u). A constant
+pure vertical connection has vanishing scalar curvature, which is an independent control of
+δR=0.
+
+5.3   Integration by parts
+Multiply (5.1) byf  1 and use the two bulk identities
+                           √−gf   1 ¯∇µWµ =−  √−g(∂       µf1)W  µ+∂   µ√−gf   1Wµ,                      (5.5)
+                            √−gf   3 ¯∇µ¯Tµ =−  √−g(∂       µf3)¯Tµ+∂   µ√−gf   3¯Tµ.                         (5.6)
+
+
+
+
+                                                               6

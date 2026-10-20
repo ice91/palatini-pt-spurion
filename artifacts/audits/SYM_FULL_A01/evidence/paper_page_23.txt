@@ -1,0 +1,69 @@
+Symmetry2026,18, 170                                                                                                                    23 of 50
+
+
+
+                                   1.     Slope-2 test (tensor dispersion). In the strict posture, δc2T(k) ∝ k2 at low energies
+                                         (Figure11). Astatisticallysignificantdeviationfromslope      2—orevidenceofaturnover
+                                         consistentwith∆bϵ(k)̸= 0in(44)     —wouldindicatenewdynamicsbeyondthestrict
+                                         spurion limit or an additional higher-derivative structure beyond the minimal basis.
+                                         Figure11visualizes the predicted low-energy scaling and the slope fit used to extract
+                                         b/Λ2.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Figure11. NLOsignatureandslopefit. Thepredictedtensorspeeddeviationδc2T(k) fromthelocked
+                                   valuec2T = 1scalesask2 atlowenergies. Theverticaloffsetfixesb/Λ2. (Code: fig_nlo_offsets.py).
+
+                                   2.     Route-equivalence diagnostic.  Result C2 asserts bulk equivalence among routes
+                                         up to boundary terms on admissible domains.  Operationally, one may define a
+                                         route-difference diagnostic in any concrete implementation (e.g., via the canonical
+                                         improvement current), and test whether it remains compatible with zero within
+                                         errors.  A persistent nonzero route-difference would point to physics beyond the
+                                         bulk/admissible-domain posture,such as nontrivialboundary flux, defectconfigura-
+                                         tions, or extra dynamical structure.
+                                         Together,(43)      andthenulltestsaboveprovideacompact,model-selectiveinterface
+                                    betweenthe quadraticluminality mechanismand data,while cleanly separatingwhat is
+                                    structurally enforced at LO from what is parametrically controlled at NLO.
+
+                                    9. Reproducibility Supplement
+
+                                    Positioning and Scope. This lean supplement points to a public repository with figure generators,
+                                    configuration files, tests, and checksums. The intent is to enable independent verification of the
+                                    main claims(C1)–(C3) without embedding long codelistings in the manuscript, aligning with the
+                                    editorial focus of the present framework on soundness and clarity.
+                                         This paper’s core claims (C1, C2, C3) are supported by analytical and numerical
+                                    calculations,whicharemadefullyreproduciblethroughapublic,open-sourcerepository.
+                                   Allcode,figuregenerators,configurationfiles,andvalidationtestsareavailableathttps:
+                                   //github.com/ice91/palatini-pt-spurion/(accessed on 19 December 2025).
+                                         Thissupplementprovidesaminimal,repository-backedmapforreaderstorebuild
+                                    all figures and independently validate the paper’s main results.  To ensure clarity and
+                                    conciseness,weavoid embeddinglargecode blocks; therepositoryis self-containedand
+                                    fully documented.
+
+
+
+
+
+
+
+                                                                                                          https://doi.org/10.3390/sym18010170

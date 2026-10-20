@@ -1,0 +1,5 @@
+pwd: /Users/rocky/Downloads/palatini-pt-spurion
+git status --porcelain=v1 --untracked-files=all:
+?? symmetry-18-00170-v2.pdf
+HEAD: 6b456b89baa866b6dd05bc69a837b98a985a34ad
+branch: main

@@ -1,0 +1,69 @@
+Symmetry2026,18, 170                                                                                                                                                 27 of 50
+
+
+
+                                           4.     C3 (Equal-coefficient locking). The requirement of no TT-nonTT mixing fixes the
+                                                  weights w⋆, leadingto the identity K(w⋆)−G(w⋆)= ∂µ(...). This enforces cT = 1 at
+                                                  quadratic order and yields the EFT-consistent NLO dispersion.
+
+                                           Navigation
+                                                  Table4summarizeshowourscalar-         PT Palatiniposturediffersfromotherframeworks,
+                                           while Table5maps our assumptions to standard concepts in the literature. The claims
+                                           C1–C3areproveninthemaintextundertheseassumptions. Observationalguidancefor
+                                           the NLO dispersion is given in Section8.
+
+                                           Table 4. At-a-glance comparison ofrelevant frameworks. “Bulk eq.” refers toquadratic bulk action
+                                           equalitymodulo improvements;“Obs. torsion” isthe torsioncontent thatsurvives inthe observable
+                                           tensor sector.
+
+  Framework                               cT                 DoF          Obs. Torsion                                Parity               Notes/Refs
+
+  This work
+
+  (scalar-PT Palatini)                 =1               2                pure trace aligned with∂ϵ(C1)                                                even                  bulk eq. (C2); k2/Λ2 NLO;C1–C3; Section8
+
+  EC/MAG (Einstein–Cartan)   ≈1               2 (+)          axial couples to spin; nospeed shift (minimal EC)            mostly even     [13,14]
+
+  Palatini f(R)                     ≈1               2+ scal.     typically none (torsionless)        even                  [28–30]
+  CS modified gravity             ≈1               2                none                                               odd                   [32,33]
+  PGG                                              luminal?     2+             model-dep.                                   mixed               [34]
+
+
+                                           Table 5. Operational mapping of the global assumptions (A1–A6) to mainstream constructs and
+                                           indicative references.
+
+Assumption                                          Mainstream Analogue/Operational Meaning                                         Indicative Refs
+
+A1 (domain/measure)                        Oriented Lorentzian patches; AF/FRW fall-offs; projector is self-adjoint on real scalar densities preserved under PT.                               [26,27]
+
+A2 ([PT ,∗]= 0)                                   Orientation-preserving PT; standard parity bookkeeping with theHolst/Nieh–Yan split.                                                                                   [21,22,24,25]
+
+A3 (project–vary commute)                Linear, self-adjoint scalar-PT projector commutes with Palatini varia-tion on(e,ω) when the spurion is non-dynamical.                                  [13,26]
+
+A4 (boundary posture)                        Improvement currents contribute no canonical pairs; flux is well-defined and slice/gauge independent at quadratic order.                      [26,27]
+
+A5 (Nieh–Yan as boundary)               NY= d(e∧T) istreatedasaboundarycountertermonadmissiblepatches; topological caveats noted.                                                             [21,25]
+
+                                                Analysis is restricted to quadratic order in fields with at most one
+A6 (two-deriv. trunc. and spurion)              derivative per building block.  The compensator ϵ is treated as a                          (This paper; see Section2)
+                                                non-dynamical background field.
+
+
+                                           Funding: This research received no external funding.
+
+                                           Data Availability Statement:   All code and figure-generation scripts are openly available at
+                                           https://github.com/ice91/palatini-pt-spurion/(accessed on 19 December 2025) under a permissive
+                                           license. Version pins and reproduction instructions are provided inthe repository (see README and
+                                           release tags).
+
+                                           Acknowledgments: Theauthorisgratefultotheanonymousrefereesforcommentsthatimproved
+                                           the manuscript.  Limited use of generative language tools was made for stylistic refinement; all
+                                           scientific reasoning, derivations, and conclusions remain solely the responsibility of the author.
+
+                                           ConflictsofInterest: AuthorChien-ChihChenisemployedbyChunghwaTelecomCo.,Ltd. Theem-
+                                           ployerhadnoroleinthestudydesign,analysis,interpretation, decisiontopublish,orpreparationof
+                                           the manuscript. The author declares no competing interests.
+
+
+
+                                                                                                                                https://doi.org/10.3390/sym18010170

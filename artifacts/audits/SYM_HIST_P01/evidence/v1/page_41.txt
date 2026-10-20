@@ -1,0 +1,63 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                           doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  Euler–Lagrange equations in the bulk and is indistinguishable from a choice of improvement current.
+                  This applies equally to (i) the three-chain equivalence (where the PT-even CS/Nieh–Yan shadow
+                  differs from the DBI/CM routes by an improvement current) and (ii) the Dirac sector (where vector
+                  rephasing reshufflesboundary terms that can beabsorbed into the chosenNieh–Yan convention). No
+                  physical statement in Sections5–8depends on a specific Nieh–Yan choice.
+
+                  Appendix E.4. Scope and Caveats: Topology and Boundary Flux
+                        Our conclusions rely on the posture A4: either compact PT-invariant domains with vanishing
+                  boundary flux or standard asymptotic fall-offs (FRW/flat) so that improvement currents integrate
+                  to zero. They also assume a single-valued spurion phase ϵ(x) so that the rephasing in Prop.A5is a
+                  globally well-defined mapψ7→ eiαϵψ.
+                  •      Nontrivialtopology(notcovered). Ifϵ ismulti-valuedoradmitsnontrivialholonomy(e.g.,on
+                        manifolds with nontrivial π1 or H1), the map eiαϵ may fail to be single-valued. In such cases
+                        the local cancellation in (A58)         can leave a global remnant proportional to the winding; our bulk
+                        equivalences and removability statements are not asserted in that setting.
+                  •      Nonvanishing boundary flux (not covered).  On domains where the PT-invariant boundary
+                        fluxoftherelevantimprovementcurrentsdoesnotvanish,boundarytermsmaycarryphysical
+                        information(e.g.,inexplicitlyfiniteboxeswithprescribedinflow). Ournulltestsandcancellations
+                        are presented only under A4 fall-offs.
+
+                  Appendix E.5. Bookkeeping Table And Quick References
+                        For convenience we summarize the conventions and coefficients used in the Dirac sector:
+
+                          Object / Convention         Value / Definition
+                          Gamma matrices              {γA,γB}=2ηAB,γ5=iγ0γ1γ2γ3
+                          Hodge / Levi-Civita         ϵ0123=+1,[PT ,∗]=0 (A2)
+                          Contorsion split            KABC =  13(ηACTB−ηABTC)− 16ϵABCDSD+qABC
+                          Dirac currents              Jµ =  ¯ψγµψ, Jµ5 =  ¯ψγµγ5ψ
+                          Torsion→Dirac               ∆Lψ = e38SµJµ5 − 14TµJµ
+                          C1 (pure trace)             Sµ=0, qλµν=0, Tµ=3η∂µϵ
+                          Vector rephasing            ψ→ eiαϵψ withα= 3cVη =−34η
+                          Outcome                     Trace channel removed up to a total derivative (A4/A5)
+                          Nieh–Yan                    Boundary convention only (A5); no bulk Euler–Lagrange effect
+
+                  Appendix E.6. Corollary: No LO Four-Fermion Contact from Torsion
+                        Attheorderanalyzedinthispaper(quadraticinfields;atmostonederivativeperbuildingblock),
+                  torsionisalgebraicandfixedby(C1),andtheonlylinearDirac–torsionchannelthatsurvivesprojection
+                  isremovedbythevectorredefinitionabove. Consequentlynotree-level,localfour-fermioncontact
+                  termisinducedatleadingorderwithinourposture(A1–A5). Anysucheffectwouldrequire(i)anaxial
+                  channel (Sµ̸= 0), (ii) higher-derivative completions beyond our closure basis, or (iii) loop corrections
+                  outside the present scope.
+
+                  Summary of Appendix E. In our conventions the minimally coupled Dirac field interacts with tor-
+                  sion through e(38SµJµ5 − 14TµJµ). Under the pure-trace map (C1) the axial channel vanishes and the
+                  remainingtracechannelisremovedbyalocalvectorrephasingψ→ ei(3cVη)ϵψ,uptoatotalderivative
+                  consistent with A4/A5. Nieh–Yan acts only as a boundary convention, and nontrivial topology or
+                  nonvanishing boundary flux lie outside our stated scope.
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.

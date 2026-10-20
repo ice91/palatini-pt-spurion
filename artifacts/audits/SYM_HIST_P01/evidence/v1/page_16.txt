@@ -1,0 +1,77 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                              doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  Assumptions A1–A5 imply
+
+                                                 RX/Y[∂D]= 1   (quadratic order; posture A1–A5)                .                                   (30)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure 4. Flux-ratio diagnostic. Boundary flux ratiosRX/Y(R) for representative pairs X/Y∈{DBI,CM,CS+}
+                   onfiniteFRWballsconvergeto1astheradius R grows,inagreementwithEquation(30)     . Thefitwindowused
+                   toextracttheasymptoteisannotatedas R≥ Rmin. ErrorbarsreflecttheIBPtolerancepropagatedtoboundary
+                   terms. [nb: fig_flux_ratio.py]
+
+
+                   SummaryofSectionV.AtquadraticorderandunderA1–A5,therank-onedeterminantroute,closed-
+                   metric, and PT-even CS/Nieh–Yan routes share the same bulk coefficient A⋆ = λ2/8 multiplying
+                   sgn(Σϵ)IT =−6η2|Σϵ|, differing only by improvement currents (Appendix C). Boundary flux ratios
+                   RX/Y equal 1 within finite-domain tolerances.
+
+                   6. Coefficient Locking (C3)
+                        We now lock the relative weight of two bulk–equivalent routes so that the tensor (TT) sector (i)
+                   has no kinetic mixing with nonpropagating variables and (ii) is exactly luminal at quadratic order.
+                   Throughout we keep A1–A5, the scalar projectorΠPT(·), and the C1 pure–trace map Tµ = 3η∂µϵ
+                   (Sections2–4).
+
+                   6.1. Setup and Locking Posture
+                        By Section5, the rank–one determinant (ROD) and closed–metric (CM) routes share the same
+                   quadratic bulk reduction modulo a total derivative:
+
+
+                                     δ2LROD≡ δ2LCM = A⋆p−g sgn(Σϵ)IT   (mod∇µJµ),        A⋆ = λ28 .                    (31)
+
+                  We therefore consider the linear family
+
+                                           Lchain(w) ≡  wRODLROD+wCMLCM,        wROD,wCM∈R,                             (32)
+
+                   and determine the ratio wROD:wCM by eliminating TT–nonTT mixing.
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

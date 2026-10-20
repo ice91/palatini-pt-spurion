@@ -1,0 +1,73 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                                     doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                                             23 of 43
+
+
+
+                      dispersion would constrain (b,Λ), while its absence in the regime where the EFT is valid would
+                      disfavor our posture.
+
+                      10.4. A Checkable Summary of Core Claims
+                             To facilitate independent verification, we provide a compact, checkable summary of our main
+                      claims and their scope.
+                      (1)    Scope. Allquadraticbulkequalities(C2)andtheluminalityidentity(C3)areassertedwithinthe
+                             A1–A6 posture. Cases with topological torsion defects or boundary conditions that inject new
+                              canonical pairs fall outside this scope.
+                      1.      C1(Pure-tracealignment). Inthescalar-PT projectedsectoratquadraticorder,axialandtraceless
+                              torsion vanish algebraically.  Only the trace component aligned with ∂ϵ remains.  A robust
+                              detection of axial-torsion effects in observables would falsify C1.
+                      (2)    C2 (Three-route bulk equivalence). The ROD, CM, and PT-even CS/Nieh–Yan routes share
+                              the same bulk coefficient A⋆ and differ only by improvement terms. The flux ratio diagnostic
+                              RX/Y[∂D]→1 on admissible domains provides a practical check.
+                      (3)    C3 (Equal-coefficient locking). The requirement of no TT-nonTT mixing fixes the weights w⋆,
+                              leading to the identity K(w⋆)−G(w⋆) = ∂µ(...). This enforces cT = 1 at quadratic order and
+                              yields the EFT-consistent NLO dispersion.
+
+                      Navigation
+                             Table3summarizeshowourscalar-   PT Palatiniposturediffersfromotherframeworks,whileTable4
+                      mapsourassumptionstostandardconceptsintheliterature. TheclaimsC1–C3areproveninthemain
+                      textundertheseassumptions. ObservationalguidancefortheNLOdispersionisgiveninSec.8.
+
+                      Table 3.  At-a-glance comparison of relevant frameworks.  "Bulk eq." refers to quadratic bulk action equality
+                      modulo improvements; "Obs. torsion" is the torsion content that survives in the observable tensor sector.
+
+                      Framework                                   cT                  DoF         Obs. torsion                                                 Parity          Notes / Refs
+
+                      This work
+                      (scalar-PT Palatini)                      = 1                   2            pure trace aligned with∂ϵ (C1)                 even           bulk eq. (C2); k2/Λ2 NLO; C1–
+                                                                                                                                     C3; Sec.8
+                      EC/MAG (Einstein–Cartan)       ≈ 1                2 (+)         axial couples to spin; no speedmostly even     [6,8]
+                                                                                shift (minimal EC)
+                      Palatini f(R)                         ≈ 1              2+scal.       typically none (torsionless)                        even           [19–21]
+                      CS modified gravity                ≈ 1                   2            none                                                                odd            [25,26]
+                      PGG                                               luminal?             2+           model-dep.                                                  mixed          [37]
+
+
+                      Table 4.  Operational mapping of the global assumptions (A1–A6) to mainstream constructs and indicative
+                      references.
+
+                      Assumption                              Mainstream analogue / operational meaning                       Indicative refs
+
+                      A1 (domain/measure)             OrientedLorentzianpatches;AF/FRWfall-offs;projectorisself-adjointonrealscalardensitiespreservedunder PT.   [14,15]
+
+                      A2 ([PT ,∗]= 0)                       Orientation-preserving PT;standardparitybookkeepingwith the Holst/Nieh–Yan split.                                                 [9–12]
+
+                                                             Linear, self-adjoint scalar-PT projector commutes with
+                      A3 (project–vary commute)              Palatini variation on (e,ω)  when the spurion is non-                       [6,14]
+                                                             dynamical.
+                                                             Improvementcurrentscontributenocanonicalpairs;flux
+                      A4 (boundary posture)                  iswell-definedandslice/gaugeindependentatquadratic                          [14,15]
+                                                             order.
+
+                      A5 (Nieh–Yan as boundary)   NY = d(e∧T) is treated as a boundary counterterm onadmissible patches; topological caveats noted.                       [9,12]
+
+                      A6 (two-derivative posture)   Analysis is restricted to quadratic order in fields with atmostonederivativeperbuildingblockinthetensorsector.   (This paper; see Sec.7)
+
+
+
+
+
+
+
+                  © 2025 by the author(s). Distributed under a              Creative Commons CC BY license.

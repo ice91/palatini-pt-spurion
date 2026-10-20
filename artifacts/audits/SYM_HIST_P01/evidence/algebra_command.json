@@ -1,0 +1,13 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/verify_written_algebra.py"
+  ],
+  "cwd": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "exit_code": 0,
+  "seconds": 0.37865710258483887,
+  "source_sha256": "1b6b61709c7c79c6fc47cbfdd59e45bc6a940c8e5a4685b0ad38e1074bc389f3"
+}

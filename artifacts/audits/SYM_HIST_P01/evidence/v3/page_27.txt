@@ -1,0 +1,64 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                  doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                       26 of 43
+
+
+
+                   In particular, for 2-forms F (frequent in the Palatini curvature/torsion algebra),
+                                            δ(∗F)µν =(∗δF)µν+ 1                        hµρ(∗F)ρν+hνρ(∗F)µρ.                             (47)
+                                                                      2h(∗F)µν− 12
+
+                   [PT ,∗]=0
+                         Becausethemetricis PT-evenandthechosenorientationispreserved(A2),theHodgemapbuilt
+                   from(g,ϵµνρσ) commutes with PT:
+
+                                                         PT[∗α]=∗PT[α]        for any formα.                                                (48)
+
+                   This identity is used both in the selection rules and in the projector proofs that involve p-form duals.
+
+                   Appendix A.5. Boundary/Topology Posture and Improvement Currents
+                         Assumption A4 is realized in either of the following equivalent ways:
+                   (i)     Compact, PT-invariant domains with vanishing boundary flux: for any improvement current JµZ
+                         arising from integration by parts,
+                                                                    ∂DdΣµ Jµ = 0.                                               Z
+                   (ii)    Standard fall-offs on asymptotically flat or spatially flat FRW patches, for which                      d4x∇µJµ
+                         reduces to a surface integral that vanishes in the R→∞ limit. A sufficient set is
+
+                                            hµν =O(r−1−δ),    Kλµν =O(r−2−δ),    ∂µϵ=O(r−δ),       δ> 0,                    (49)
+
+                         which ensures Jr =O(r−2−δ) so that the flux through a sphere of radius R decays as R−δ.
+                   These conditions justify replacing improvement terms by boundary conventions and are precisely
+                   what is used in the flux-ratio diagnostics of Sec.5.2.
+
+                   Appendix A.6. Consequences Used in the Main Text
+                   (C1) Palatini Block-Diagonalization
+                         Theorem10(A3) allows us to          project then vary in the Palatini equations, so that the connection
+                   variationisalgebraicandblock-diagonalinthetorsionirreps. Togetherwiththeselectionrules(Prop.9)
+                   this yields Sµ=qλµν=0 and the pure-trace map quoted in Sec.4.
+
+                   (C2) Route Equivalence Modulo Boundary
+                         Self-adjointness (Prop.8) and the boundary posture (Sec.A.5) justify the equality of the three
+                   quadraticroutesuptoimprovements,withclosedformsoftheimprovementcurrentsgiveninApp.C.
+
+                   (C3) Equal-Coefficient Identity and cT=1
+                         The star-variation identities (46)     –(47)      are used inside the ADM expansion behind the equal-
+                   coefficient identity K−G = ∂µ(a−3Jµ∆a3) provenin App. D. The boundary posture then enforces K=G
+                   and cT=1 at quadratic order.
+                   This completes the formal proof of A3 and the supporting calculus advertised in Sec.2.
+
+                   Appendix B. Irrep Projectors & No-go forqλµν(v)
+                         Thisappendixcollects thegroup-theoreticingredientsused in Sec.4: (i)theirreducibledecompo-
+                   sitionofthe torsiontensorundertheLorentzgroup,(ii) explicit, idempotentprojectorsontothetrace,
+                   axial, and traceless sectors, (iii) the quadratic identity for TABCTABC in our conventions, and (iv) the
+                   single-vectorno-gothatunderliesthestatementquotedinthemaintextas“PropositionB.1”forthe qλµν
+                   irrep. Allstatementsarepurelyalgebraicandholdbefore/afterapplyingthescalarprojectorΠPT[·];
+                   after projection all scalar contractions are real (Sec.2).
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.

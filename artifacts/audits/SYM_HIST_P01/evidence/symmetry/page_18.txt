@@ -1,0 +1,78 @@
+Symmetry2026,18, 170                                                                                                                         18 of 50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     Figure 7.   Heatmap of the tensor speed deviation.   Representative scan of |cT − 1| over the
+                                     (wROD,wCM) planeon an admissible background(A1–A5, C1in force). Thelockingcurve definedby
+                                     (33)      isoverlaid. Alongthis curve,the unphysicalTT–nonTTmixing vanishesand, asa consequence,
+                                     cT = 1 holds (36). (Code:      fig_c3_cT_heatmap.py).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     Figure 8. Tensor dispersion cT(k): locked vs. unlocked. Comparison of cT(k) for the locked weight
+                                     ratio w⋆ from (34)      (solid line, showing cT = 1) and representative unlocked choices (dashed line).
+                                     (Code: fig_c3_dispersion.py).
+
+                                     7. The Locked Theory: Action, Luminality, and Degrees of Freedom
+
+                                     Positioning and Scope. We show that, at this order and within the posture, the tensor sector
+                                     matchesGRandpropagatestwodegreesoffreedom. TheHamiltoniananalysisisframedtomakethe
+                                     constraintalgebraanddegree-of-freedomcountingexplicit. Extensionstomatter-richorhigher-order
+                                     settings are deferred to future work.
+                                           Havingestablishedthefinallinkinourlogicalchain—thecoefficientlockingmecha-
+                                     nism (C3)—we now consolidate the physical properties of the resulting “locked” theory.
+                                     Thissectionpresentsthefinalformofthetensoraction,confirmsitsproperties,andverifies
+                                     that it describes the correct number of physical degrees of freedom. We first re-state the
+                                     central equal-coefficient identity that enforces luminality. We then perform a Hamiltonian
+
+
+
+
+                                                                                                              https://doi.org/10.3390/sym18010170

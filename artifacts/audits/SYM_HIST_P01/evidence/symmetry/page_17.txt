@@ -1,0 +1,67 @@
+Symmetry2026,18, 170                                                                                                                   17 of 50
+
+
+
+                                   This condition translates into a 2×2 linear system for the weights(wROD,wCM):
+                                                                    µ(N)               ! wROD!           0!
+                                                                        ROD     µ(N)CM               =        .                                        (33)
+                                                                      µ(∇N)ROD    µ(∇N)CM   wCM           0
+
+                                   As shown in AppendixD, the determinant of the coefficient matrix is nonzero on any
+                                   generic, nontrivial background (∆ ̸= 0).  This guarantees that the linear system has a
+                                   unique,one-dimensionalsolutionspace,whichwecallthe“locked”solution. Thenontrivial
+                                   solution fixes a unique ratio for the weights:
+
+
+                                                                        w⋆ROD          CM    =−µ(∇N)CM    .                               (34)
+                                                                        w⋆CM  =− µ(N)µ(N)ROD      µ(∇N)ROD
+
+
+                                   6.3. Emergence of Luminality from the Locked Solution
+                                         Thisspecific,“locked”combinationofweights,denotedby w⋆,isstructurallyremark-
+                                   able.  A direct calculation (detailed in AppendixD) reveals that for this precise choice,
+                                   the kinetic and gradient coefficients satisfy a powerfulequal-coefficient identity:
+
+                                                                     K(w⋆)−G(w⋆) =  a−3∂µa3Jµ.                                          (35)
+                                                                                                         ∆
+
+                                   The right-hand side is a total divergence, which, under the admissible boundary condi-
+                                   tions of our posture (A4), does not contribute to the equations of motion. This identity
+                                   dynamically enforces the equality of the kinetic and gradient kernels:
+
+
+                                                              K(w⋆)= G(w⋆)    =⇒      c2T = G(w⋆)K(w⋆) = 1.                               (36)
+
+
+                                   This proves our main theorem for this section:
+
+                                   Theorem3(CoefficientLockingEnsuresExactLuminality(C3)).  WithintheA1–A6posture,
+                                   demandingtheabsenceofTT–nonTTmixinguniquelyfixesthetheorytoa“locked”statew⋆. Inthis
+                                   state,theequal-coefficientidentity(35)holds,whichstructurallyensuresthatthetensorspeedis
+                                   exactly luminal (cT = 1) at quadratic order.  The resulting tensor action is identical to that of
+                                   General Relativity, propagating only two degrees of freedom.
+
+                                         TheconsequencesarevisualizedinFigure7,whichshowsthetensorspeeddeviation
+                                   acrosstheparameterspaceofweights;thespeedbecomesexactlyluminalonlyalongthe
+                                   “locking curve” defined by our condition. Figure8further contrasts the strictly luminal
+                                   propagation in the locked theory with the non-luminal behavior of unlocked choices.
+                                   Insummary,ourframeworkdoesnotjustpermit cT = 1,itenforcesitthroughastructural
+                                   mechanism born from symmetry and consistency.
+                                         Figure7summarizes thetensor-speeddeviation overtheweight spaceandhighlights
+                                   the locking curve where cT = 1 holds.
+                                         Figure8compares the locked (strictly luminal) dispersion with representative un-
+                                   locked choices.
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                         https://doi.org/10.3390/sym18010170

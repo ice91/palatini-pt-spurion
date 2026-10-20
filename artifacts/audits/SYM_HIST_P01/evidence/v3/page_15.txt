@@ -1,0 +1,81 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                    doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                          14 of 43
+
+
+
+                   The right-hand side is a total divergence, which, under the admissible boundary conditions of our
+                   posture (A4),doesnot contributeto the equationsof motion. Thisidentitydynamically enforcesthe
+                   equality of the kinetic and gradient kernels:
+
+
+                                                       K(w⋆)= G(w⋆)    =⇒      c2T = G(w⋆)K(w⋆) = 1.                                         (29)
+
+
+                   This proves our main theorem for this section:
+
+                   Theorem 7 (Coefficient Locking Ensures Exact Luminality (C3)).  Within the A1–A6 posture, demanding
+                   the absence of TT–nonTT mixing uniquely fixes the theory to a "locked" state w⋆.  In this state, the equal-
+                   coefficient identity (28)      holds, which structurally ensures that the tensor speed is exactly luminal (cT = 1) at
+                   quadratic order. The resulting tensor action is identical to that of General Relativity, propagating only two
+                   degrees of freedom.
+
+                         TheconsequencesarevisualizedinFigure7,whichshowsthetensorspeeddeviationacrossthe
+                   parameter spaceof weights;the speedbecomes exactlyluminal only along the "lockingcurve" defined
+                   by our condition.  Figure8further contrasts the strictly luminal propagation in the locked theory
+                   with the non-luminal behavior of unlocked choices. In summary, our framework does not just permit
+                   cT = 1, it enforces it through a structural mechanism born from symmetry and consistency.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure7. Heatmapofthetensor-speeddeviation. Representativescanof|cT−1| overthe(wROD,wCM) planeon
+                   anadmissiblebackground(A1–A5,C1inforce). Thelockingcurvedefinedby(26)      isoverlaid. Alongthiscurve,the
+                   unphysical TT–nonTT mixing vanishes and, as a consequence, cT = 1 holds (29). [nb:      fig_c3_cT_heatmap.py]
+
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.

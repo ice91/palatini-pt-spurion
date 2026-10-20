@@ -1,0 +1,63 @@
+Symmetry2026,18, 170                                                                                                                           6 of 50
+
+
+
+                                     Admissible Domains and Caveats
+                                           Outside A4 (e.g., configurations with torsion defects or nontrivial global spurion
+                                     holonomy),boundaryfluxescanobstructbulkequivalences. Allequivalencestatements
+                                     in later sections are therefore to be read as bulk statements modulo total derivatives on
+                                     admissible domains.
+
+                                     2.7. Formal Properties of the PT Projector
+                                           The projector onto the PT-even subspace of scalar densities is defined by
+
+                                                                 ΠPT[O] ≡  1O+PT[O],      Π2PT =ΠPT.                                  (6)
+                                                                                2
+                                     Assumption A1 ensures that this projection defines a consistent restriction at the level
+                                     of integrated observables. We treat time reversal T as anti-unitary: it includes complex
+                                     conjugation acting on scalar coefficients.
+
+                                     Lemma1(Projection–variationcommutation(A3)). UnderA1andA4,withthespurionϵ held
+                                     fixed, one hasδΠPT[O]=ΠPT[δO] for any scalar densityO under variations of(e,ω).
+
+                                     Proof. Linearity yields δΠPT[O] =   12(δO +δPT[O]).   On admissible domains (A4),
+                                     boundary improvements do not contribute to the symplectic form, and withϵ held fixed,
+                                     the PT map acts only on the dynamical variations of(e,ω) and on complex conjugation.
+                                     Hence,δPT[O]=PT[δO], proving the claim.
+
+                                     Theorem1 (PT selection rules). UnderA1–A5,for anyscalar densityO: (i)ifPT[O] =+O,
+                                     thenΠPT[O]=O; (ii) ifPT[O]=−O, thenΠPT[O]= 0.
+
+                                     Proof. Immediate from (6).
+
+                                     2.8. Discrete-Action Conventions in the Projected Sector
+                                           For reference, Table1summarizes a consistent choice of          P and T actions on represen-
+                                     tativeobjects. Thistableisusedonlytoenforcescalardensityselectionrules;itdoesnot
+                                     impose microscopic constraints on all components of(e,ω).
+
+                                     Table 1. Action of P and T on representative geometric objects. T is anti-unitary.
+
+                                     Object                               P                     T              Note
+                                     eAµ (vierbein)                  +                   +
+                                     ωABµ (connection)           +               −              T acts anti-unitarily
+                                     TAµν (torsion)                 +               −
+                                     RABµν (curvature)            +                   +
+                                     ϵ (spurion)                      +               −             chosen to keep scalar sector consistent
+                                     ∂µϵ                           −                   +             vector-like under P
+                                     ϵµνρσ (density)              −               −              PT-even
+
+
+                                     2.9. Variational Outputs at the Order Considered
+                                           Werecordthe variationaloutputs neededfor latersections, whilekeeping thescope
+                                     explicit. At the order considered, we vary only with respect to the geometric variables
+                                     (e,ω), withϵ held fixed (spurion limit).
+
+
+
+
+
+
+
+
+
+                                                                                                              https://doi.org/10.3390/sym18010170

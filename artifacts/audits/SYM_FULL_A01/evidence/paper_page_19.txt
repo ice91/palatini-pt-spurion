@@ -1,0 +1,69 @@
+Symmetry2026,18, 170                                                                                                                             19 of 50
+
+
+
+                                      analysistoconfirmthatthetheoryiswell-behaved,freeofghosts,andpropagatesprecisely
+                                      two tensor modes, with no additional unphysical states.
+                                            Throughout this section, we work within the full A1–A6 posture, with the C1 (pure-
+                                      trace), C2 (equivalence), and C3 (locking) results all in force.
+
+                                      7.1. The Equal-Coefficient Identity and the Locked Tensor Action
+                                            Let us consider the total actionLtot =LEH(e,ω)+Lchain(w⋆), expanded to quadratic
+                                      order in perturbations. As shownin Section6, the coefficientlocking fixes the weights to
+                                      w⋆,whicheliminatesthemixingbetweentensor(TT)andnon-tensormodes. Theactionfor
+                                      the tensor sector is
+
+                                                                                                                              i
+                                                              δ2LTT = M2Pl8   a3hK(w⋆) ˙hTTij  ˙hTTij −G(w⋆) (∂khTTij )2a2     .                           (37)
+
+                                      The key result, which is a direct consequence of the C1 and C2 results, is the following
+                                      total-divergence identity:                                                  .                                           (38)
+                                                                          K(w⋆)−G(w⋆) =  a−3∂µa3Jµ∆
+
+                                      Here, Jµ∆ is a quadratic improvement current (see AppendixD). Since the right-hand side is
+                                      a total divergence, it does notcontribute to the dynamics onan admissible domain (A4).
+                                      This identity therefore dynamically enforces the equal-coefficient condition:
+
+
+                                                K(w⋆)= G(w⋆)       =⇒         c2T = G(w⋆)K(w⋆) = 1 (exact at quadratic order).        (39)
+
+                                      Thisis acentralresult ofourframework: exactluminalityis notanassumption orafine-
+                                      tuning, but a structural consequence of the theory’s symmetries. Imposing the standard
+                                      GR normalization for the tensor action then yields the final locked action:
+                                                                             Z         "                         #
+                                                            δ2STT = M2Pl       d4xa3     ˙hTTij  ˙hTTij − (∂khTTij )2,        c2T = 1.                       (40)
+                                                                         8                                a2
+
+                                      At this order, the resulting tensor dynamics are indistinguishable from those of General
+                                      Relativity, as confirmed by the waveform comparison in Figure9.
+                                            Figure9overlays a representative TT waveform in GR and in the locked theory,
+                                      showing agreement within numerical tolerance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Figure 9. GW waveform overlay (GR vs. locked). Time–domain comparison of a representative TT
+                                      mode in GR (reference) and in the locked theory (this work). The two traces overlap within numerical
+                                      tolerance; line styles follow the legend shown in the plot. This is consistent with the fact that the
+                                      locked action (40) is identical to that of GR at this order. (Code:      fig_gw_waveform_overlay.py).
+
+
+
+
+                                                                                                                https://doi.org/10.3390/sym18010170

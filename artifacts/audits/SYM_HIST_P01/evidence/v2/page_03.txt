@@ -1,0 +1,69 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                  doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                       2 of 48
+
+
+
+                   densitiescanbeprojectedto PT-evenpieces; PT-oddscalardensitiesarediscardedasunobservable
+                   (real) expectation values.  An internal phase ϵ(x) (Stueckelberg compensator) enters the observed
+                   sector only through its gradient; we adopt a spurion limit (not varied) at quadratic order.  Global
+                   assumptionsA1–A6(domain/measure;[PT ,∗]=0;projection/variationcommutesonscalardensities;
+                   boundary/topology posture with Nieh–Yan as boundary; two-derivative closure) delimit the posture
+                   (Section2). A quick notation table appears in Section 2.3 for ease of reference.
+                         Projective symmetry and the invariant trace. Palatini geometry admits projective shifts
+
+                                        Γαµν → Γαµν+δαµξν,        Tµ≡ Tαµα →  Tµ+(d−1)ξµ   (d= 4).                          (1)
+
+                   To keep the projected observable sector invariant, we introduce a compensator whose gradient shifts as
+                   ∂µϵ→ ∂µϵ+(d−1)ξµ and work with the projectively invariant trace
+
+                                                        Tµ≡ Tµ−∂µϵ            (projectively invariant).                                              (2)
+
+                   Within the two-derivative posture, all observables depend onϵ only through∂ϵ viaTµ.
+                         Quadraticbasis(one-derivativeperfactor). Atquadraticorder,theprojected,realinvariantswe
+                   use are
+                                                   Σϵ≡ΠPT(∂ϵ)2,        IT ≡−14ΠPTTABCTABC,                                          (3)
+
+                   together with improvement currents∇µJµ that are pure boundary under A4–A5.
+
+                   Main results (at a glance).
+
+                     All three results hold at quadratic order, within A1–A6 and the scalar-PT observable sector.
+                     (C1) Conditional Palatini–PT uniqueness under trace-lock (A6). Algebraic torsion consistent
+                     with the scalar projector isuniquelypure trace and aligned with∂ϵ:
+
+                                                  TABC = 2ηδA[B∂C]ϵ,       η > 0, Sµ = 0, qλµν = 0
+
+                     and the surviving quadratic invariant satisfies
+
+                                                                        IT =−6η2Σϵ.
+
+
+                     (C2) Three-chainbulk equivalence (modboundary). After projection andusing C1, three con-
+                     structive routes collapse to thesame bulk quadratic piece:
+
+
+                                      δ2LROD≡ δ2LCM≡ δ2LCS+ ≡ A⋆p−gIT (mod∇µJµ),    A⋆ = λ28  .
+
+
+                     No all-order equivalence is claimed.
+
+                     (C3)Coefficientlocking⇒ exactluminality. EliminatingTT–nonTTmixingfixesauniqueweight
+                     w⋆ so that                                                                   
+                                                             K(w⋆)−G(w⋆)= a−3∂µa3Jµ∆
+
+                     and hence the TT block isexactly luminal:
+
+                                                                    Z        "                        #
+                                     c2T = 1,       δ2STT = M2Pl       d4xa3   ˙hTTij  ˙hTTij − (∂khTTij )2,    no extra DoF.
+                                                                 8                             a2
+
+
+                     ATT-gaugeweak-fieldrepresentativeof Jµ∆ (Minkowski;slowlyvaryingϵ)islistedinSection7.1;
+                     a covariant FRW representative appears in Appendix D.
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

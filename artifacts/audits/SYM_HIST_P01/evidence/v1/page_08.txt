@@ -1,0 +1,68 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                               doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Boundary/Topology Posture and Fall-Offs (Pointer)
+                         Assumption A4 is realized either by compact PT-invariant domains with vanishing flux or by
+                   standard asymptotically flat/FRW fall-offs; the explicit statements and the symplectic-flux check are
+                   compiled in Appendix A (boundary notes therein). We exclude torsion defects and multi-valuedϵ
+                   patches that would violate the projector’s scalar posture.
+
+                   Spurion Posture, Ward Identity, and Field Redefinition (Sketch)
+                         Treatϵ as a spurion transforming as a scalar under diffeos but not varied. Then
+                                              Z                h
+                                      δξS=       d4xp−gξν        ∇µTµν+Eµν(e,ω)·δξ(e,ω)+∇µ   ∂L∂(∂µϵ) ∂νϵi        = 0.                        (7)
+
+                   Using the Palatini EL equationsE(e,ω) = 0 and C1 (Tµ = 3η∂µϵ), the spurion current becomes an
+                   improvement,hence∇µTµν = 0inthebulk(A4). ForDiracmatter,thetracecoupling TµJµ isremoved
+                   byψ→ eiαϵψ; the Jacobian shifts the Nieh–Yan boundary term (A5) but does not affect bulk equations
+                   (cf. Section8).
+
+                   SummaryofSectionII.Wefixedtheglobalposture(A1–A6),definedthescalar PT projectorwitha
+                   checkablecommutationlemma(A3),clarifiedthe PT paritiesofbasicobjectsandoftheLevi–Civita
+                   density(A2),andstatedconditionalselectionrules:ΠPT removes PT-oddscalarsandkeeps PT-even
+                   ones(takingtherealpart). Weemphasizedthespurionpostureandprovidedtheadmissiblevariational
+                   domainthat makesthe equal–coefficientidentityintegrable. A compactnotationis setin whichΣϵ is
+                   by definition a projected, real scalar and the sign-compensated invariant sgn(Σϵ)IT ≡ σϵIT =−6η2|Σϵ|
+                   willbeuseduniformlylater. TheseingredientsfeeddirectlyintothePalatinianalysis(SectionIII),the
+                   uniqueness theorem (Section IV), and the three-chain equivalence (Section V).
+
+                   3. Palatini Setting and the AllowedPT-Even Scalar Sector
+                         WeworkinthePalatiniposturewithindependentvierbein eAµ andspinconnectionωABµ (metric
+                   compatible),andweimposethescalar PT projectorΠPT[·] onallobservablescalardensities(Section2).
+                   Throughout,AssumptionsA1–A5and the selectionrulesofTheorem1arein force. Inparticular,all
+                   statements below are understoodafter applyingΠPT[·], so the projected scalars are real.
+
+                   3.1. Normalized Spurion Direction and Canonical Rank-One Traceless Tensor
+                         The spurion enters the observed sector only through its gradient. We set, once and for all,
+                                                       h
+                                           Σϵ≡ΠPT       (∂ϵ)2i,        sgn(Σϵ)≡ sgn(Σϵ),         ˆnµ≡   ∂µϵp|Σϵ|,
+
+
+                   and define the canonical,dimensionless, traceless rank-one tensor built from ˆn,
+
+                                            T µν≡ sgn(Σϵ)       ˆnµˆnν− 14δµν   ,        TrT = 0,    Tr(T 2)=  34.                                (8)
+
+                   The (dimension-one) trace-torsion scale along ˆn is
+                                                                                           q
+                                                            τ≡ ˆnµTµ  =  3η sgn(Σϵ)           |Σϵ|,                                                       (9)
+
+                   which will serve as the unique dimensionful spurion scale at this order.1
+
+
+
+                   1    WhenΣϵ = 0 the constructions are understood on patches withΣϵ ̸= 0 and extended by continuity.  The overall sign
+                      bookkeeping is carried by sgn(Σϵ), so orientation flips are harmless.
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

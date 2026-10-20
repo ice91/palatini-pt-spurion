@@ -1,0 +1,75 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                       doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                           12 of 48
+
+
+
+                    Trace-Lock as an Algebraic Enforcement (Not an Extra Assumption)
+                          By Proposition4, Palatini’s algebraic equation fixes                    Tµ collinear with ∂µϵ; the current in (26)
+                    enforces the proportionality coefficientα = 3η algebraically and introduces no new canonical pairs
+                    under A4. This is an enforcement device, not an additional dynamical hypothesis.
+                          Ondegreesoffreedom. The Lagrangecurrentenforcesanalgebraicconstraint;its Euler–Lagrange
+                    equation contains no time derivatives and thus introduces no new canonical pairs. Under A4 this is a
+                    first-class enforcement of the trace lock, not an additional propagating sector.
+
+                    4.3. Positivity, Sign Choice, and the Invariant IT
+                          UsingthestandardirrepsplitTABCTABC =  23TµTµ+  124SµSµ+2qλµνqλµν and(29)     –(30)     ,weobtain
+                    ΠPT[TABCTABC]= 6η2Σϵ, which gives (23) for      IT ≡−14ΠPT[TABCTABC]. Positivity of the TT kinetic
+                    coefficient after locking (Section5) fixes the physical branch              η > 0.
+
+                    4.4. Theorem and Three-Step Proof
+                   Theorem 6 (Palatini–PT uniqueness (C1)).  Under A1–A5 and the scalar PT projector, algebraic torsion
+                    solving the Palatini connection equation withthe trace lock (26)      is uniquely TABC = 2ηδA[B∂C]ϵ withη > 0.
+                    In particular, Sµ = 0 and qλµν = 0, and IT =−6η2Σϵ.
+
+                    Proof (three steps). Step 1 (Ansatz). The most general linear ansatz is (24)     ; by Prop. B.1 (Appendix B)
+                    the single-vector traceless attempt vanishes, giving (25).
+                          Step 2 (Palatini blocks). Using Lemma1to commute projection with variation and Lemma5for
+                    blockwisenon-degeneracy,varyingw.r.t.ω andΛµ yields(28)     –(30)      andthelock Tµ = 3η∂µϵ,which
+                    fix A= 2η and B= 0.
+                          Step 3 (Invariant/positivity). With S=q=0and the lock,the invariant reduces to(23)     . The branch
+                    η > 0 follows from positivity of the locked TT sector.
+
+                    4.5. FRW Paper-Level Check and a Geometric Diagnostic
+                          On flatFRW ds2 =−dτ2+a2(τ)d⃗x2 withhomogeneousϵ(τ), thevector, axialand tensorblocks
+                   yield
+                                                     4α1
+                                                      3  T0+Λ0 = 0,          α112 Sµ = 0,        2α1qλµν = 0,
+                    together with thelock T0 = 3η ˙ϵ. Hence Sµ = qλµν = 0 and IT =−6η2Σϵ, in agreement with (22)     –(23)     .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a        Creative Commons CC BY license.

@@ -1,0 +1,60 @@
+[15] Chien-Chih Chen.  PT-projected projective Palatini gravity:  Two-derivative operator
+     basis, admissible equivalences, and a local IR residual.Preprints, 2026. doi: 10.20944/
+     preprints202601.0352.v1. Preprint; public v1 uses a different projective-index convention
+     from the present paper.
+
+[16] Chien-Chih Chen. Projected scalar green functions and Schur reduction of PT-symmetric
+     quaternionic principal-symbol deformations.Particles, 9(3):93, 2026.   doi:  10.3390/
+     particles9030093.
+
+[17] Mark J. Gotay, James M. Nester, and George Hinds. Presymplectic manifolds and the
+     Dirac–Bergmanntheoryofconstraints.JournalofMathematicalPhysics,19(11):2388–2399,
+     1978. doi: 10.1063/1.523597.
+
+[18] Jerrold Marsden and Alan Weinstein. Reduction of symplectic manifolds with symmetry.
+     Reports on Mathematical Physics, 5(1):121–130, 1974. doi: 10.1016/0034-4877(74)90021-4.
+
+[19] J. D. McCrea. Irreducible decompositions of nonmetricity, torsion, curvature and Bianchi
+     identities in metric-affine spacetimes.Classical and Quantum Gravity, 9(2):553–568, 1992.
+     doi: 10.1088/0264-9381/9/2/018.
+
+[20] Friedrich W. Hehl, G. David Kerlick, and Paul von der Heyde. On hypermomentum in
+     general relativity I. the notion of hypermomentum.Zeitschrift f¨ur Naturforschung A, 31
+     (2):111–114, 1976. doi: 10.1515/zna-1976-0201.
+
+[21] Thomas P. Sotiriou and Stefano Liberati. Metric-affine f(R) theories of gravity.Annals
+     of Physics, 322(4):935–966, 2007. doi: 10.1016/j.aop.2006.06.002.
+
+[22] Damianos Iosifidis and Tomi Koivisto. Scale transformations in metric-affine geometry.
+     Universe, 5(3):82, 2019. doi: 10.3390/universe5030082.
+
+[23] Antonio N. Bernal, Bert Janssen, Alejandro Jim´enez-Cano, Jos´e Alberto Orejuela, Miguel
+     S´anchez, and Pablo S´anchez-Moreno. On the (non-)uniqueness of the Levi-Civita solution
+     in the Einstein–Hilbert–Palatini formalism.Physics Letters B, 768:280–287, 2017. doi:
+     10.1016/j.physletb.2017.03.001.
+
+[24] Katsuki Aoki and Keigo Shimada.  Galileon and generalized Galileon with projective
+     invariance in a metric-affine formalism.Physical Review D, 98(4):044038, 2018.  doi:
+     10.1103/PhysRevD.98.044038.
+
+[25] ChristianG.B¨ohmerandErikJensko. Modifiedgravity: aunifiedapproachtometric-affine
+     models.Journal of Mathematical Physics, 64(8):082505, 2023. doi: 10.1063/5.0150038.
+
+[26] IlariaAndrei,DamianosIosifidis,LaurJ¨arv,andMargusSaal. Scalarfieldwithnonminimal
+     couplings to metric-affine geometry, 2026. arXiv:2609.07856 [gr-qc].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                       28

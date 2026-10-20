@@ -1,0 +1,1868 @@
+[
+  {
+    "file": "palatini_pt/__init__.py",
+    "definitions": []
+  },
+  {
+    "file": "palatini_pt/algebra/__init__.py",
+    "definitions": []
+  },
+  {
+    "file": "palatini_pt/algebra/basis.py",
+    "definitions": [
+      {
+        "name": "Basis",
+        "line": 53,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "_coeff_vector",
+        "line": 84,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_from_coeff_vector",
+        "line": 93,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "projection_matrix",
+        "line": 107,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "project_to_canonical",
+        "line": 120,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "basis_info",
+        "line": 126,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "as_list",
+        "line": 66,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "index",
+        "line": 69,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "size",
+        "line": 72,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/algebra/bianchi.py",
+    "definitions": [
+      {
+        "name": "available_identities",
+        "line": 23,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "apply_bianchi",
+        "line": 28,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/algebra/ibp.py",
+    "definitions": [
+      {
+        "name": "apply_rules",
+        "line": 37,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "ibp_reduce",
+        "line": 49,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "is_total_derivative_free",
+        "line": 54,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/algebra/indices.py",
+    "definitions": [
+      {
+        "name": "monomial_symbols",
+        "line": 58,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/cli.py",
+    "definitions": [
+      {
+        "name": "_maybe_smoke_plot",
+        "line": 33,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_cmd_figs",
+        "line": 63,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_cmd_c1",
+        "line": 91,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_cmd_c2",
+        "line": 99,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_cmd_c3",
+        "line": 107,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "build_parser",
+        "line": 115,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 165,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/equivalence/__init__.py",
+    "definitions": [
+      {
+        "name": "get_basis_labels",
+        "line": 13,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "CoeffVector",
+        "line": 18,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "coeff_vector_named",
+        "line": 22,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "dbi_order2",
+        "line": 28,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "closed_metric_order2",
+        "line": 32,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "cspp_order2",
+        "line": 38,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "EquivalenceReport",
+        "line": 45,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "compute_equivalence_report",
+        "line": 62,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "as_table",
+        "line": 51,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/equivalence/closed_metric_chain.py",
+    "definitions": [
+      {
+        "name": "order2_raw",
+        "line": 7,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/equivalence/coeff_extractor.py",
+    "definitions": [
+      {
+        "name": "Basis",
+        "line": 14,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "get_basis_labels",
+        "line": 19,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_vec_from_dict",
+        "line": 22,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "coeff_vectors",
+        "line": 25,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "residual_norm",
+        "line": 32,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "reduce_to_IT",
+        "line": 45,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/equivalence/cspp_chain.py",
+    "definitions": [
+      {
+        "name": "order2_raw",
+        "line": 7,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/equivalence/dbi_chain.py",
+    "definitions": [
+      {
+        "name": "order2_raw",
+        "line": 7,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/equivalence/flux_ratio.py",
+    "definitions": [
+      {
+        "name": "flux_ratio_FRW",
+        "line": 17,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/equivalence/order2_checker.py",
+    "definitions": [
+      {
+        "name": "residual_scan",
+        "line": 8,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "scan_residuals",
+        "line": 14,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/gw/__init__.py",
+    "definitions": []
+  },
+  {
+    "file": "palatini_pt/gw/degeneracy.py",
+    "definitions": [
+      {
+        "name": "principal_eigs",
+        "line": 13,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "principal_symbol_eigs",
+        "line": 29,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "hamiltonian_eigs",
+        "line": 43,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "is_nondegenerate",
+        "line": 46,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "spectrum_report",
+        "line": 50,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/gw/locking.py",
+    "definitions": [
+      {
+        "name": "apply",
+        "line": 17,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "locking_curve",
+        "line": 22,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "curve_locking",
+        "line": 31,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "locking_contour",
+        "line": 34,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "delta_ct2",
+        "line": 39,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "is_locked",
+        "line": 43,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_choose_key_to_adjust",
+        "line": 46,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "apply_locking",
+        "line": 57,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "LockReport",
+        "line": 69,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "lock_and_report",
+        "line": 74,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/gw/nlo.py",
+    "definitions": [
+      {
+        "name": "basis_labels_nlo",
+        "line": 28,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "coeffs_from_config",
+        "line": 33,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_lambda2_from_config",
+        "line": 51,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "delta_KG",
+        "line": 56,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "predict_offsets",
+        "line": 87,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/gw/quadratic_action.py",
+    "definitions": [
+      {
+        "name": "_seps_scale",
+        "line": 10,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "cT2_of_k",
+        "line": 19,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "cT_squared",
+        "line": 29,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "locking_weights",
+        "line": 34,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "get_ct2_from_coeffs",
+        "line": 47,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "get_Z_from_coeffs",
+        "line": 52,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "quadratic_action_params",
+        "line": 57,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "tensor_action_coeffs",
+        "line": 65,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/gw/tensor_mode.py",
+    "definitions": [
+      {
+        "name": "_get_grid_spec",
+        "line": 18,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "cT_grid",
+        "line": 30,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "grid_cT",
+        "line": 38,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "compute_cT_grid",
+        "line": 41,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_ct_from_coeffs_or_config",
+        "line": 45,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "cT_of_k",
+        "line": 57,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "dispersion_cT",
+        "line": 71,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "dispersion_omega2",
+        "line": 74,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "sample_cT_grid",
+        "line": 79,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "waveform_overlay",
+        "line": 88,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "waveforms_gr_model",
+        "line": 95,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/io/config.py",
+    "definitions": [
+      {
+        "name": "_probe_yaml_loader",
+        "line": 53,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_read_text",
+        "line": 63,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_json_dumps",
+        "line": 68,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "get_git_hash",
+        "line": 72,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "get_pkg_version",
+        "line": 83,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "load_config",
+        "line": 111,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "OutputTree",
+        "line": 168,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "ensure_output_tree",
+        "line": 175,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "write_run_manifest",
+        "line": 198,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/numerics/__init__.py",
+    "definitions": []
+  },
+  {
+    "file": "palatini_pt/numerics/grids.py",
+    "definitions": [
+      {
+        "name": "set_seed",
+        "line": 39,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "get_rng",
+        "line": 45,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "GridSpec",
+        "line": 58,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "_parse_param_spec",
+        "line": 104,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "params_from_dict",
+        "line": 118,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "named_product",
+        "line": 130,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "stack_product",
+        "line": 140,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "meshgrid_dict",
+        "line": 156,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "iter_chunks",
+        "line": 168,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "batched_named_product",
+        "line": 178,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "materialize",
+        "line": 83,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/numerics/solvers.py",
+    "definitions": [
+      {
+        "name": "symmetrize",
+        "line": 29,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "antisymmetrize",
+        "line": 34,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "spectral_radius",
+        "line": 39,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "eigvals_symmetric",
+        "line": 49,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "eigh_symmetric",
+        "line": 59,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "CholeskyResult",
+        "line": 75,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "safe_cholesky",
+        "line": 81,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "is_posdef",
+        "line": 104,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "is_semidefinite",
+        "line": 114,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "psd_projection",
+        "line": 120,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "generalized_eigh",
+        "line": 131,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "stable_solve",
+        "line": 157,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "pinv",
+        "line": 166,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "nullspace",
+        "line": 171,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "cond_number",
+        "line": 184,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "blockdiag",
+        "line": 192,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/numerics/validate.py",
+    "definitions": [
+      {
+        "name": "Tolerances",
+        "line": 29,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "near_zero",
+        "line": 40,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "zero_mask",
+        "line": 46,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "assert_near_zero",
+        "line": 52,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "assert_symmetric",
+        "line": 58,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "rel_error",
+        "line": 65,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "assert_allclose",
+        "line": 90,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "is_monotone",
+        "line": 102,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "probe_limit_zero",
+        "line": 115,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "rms",
+        "line": 140,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/palatini/__init__.py",
+    "definitions": []
+  },
+  {
+    "file": "palatini_pt/palatini/c1_pure_trace.py",
+    "definitions": [
+      {
+        "name": "_read_spurion_from_config",
+        "line": 17,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "pure_trace_components",
+        "line": 23,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "compute_components",
+        "line": 33,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "scan_components",
+        "line": 36,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "alignment_samples",
+        "line": 41,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "sample_alignment_angles",
+        "line": 45,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "alignment_scan",
+        "line": 48,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "alignment_angle",
+        "line": 51,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "angle_alignment",
+        "line": 54,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "C1Report",
+        "line": 59,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "run_c1",
+        "line": 64,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "smoke_example",
+        "line": 78,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/palatini/connection.py",
+    "definitions": [
+      {
+        "name": "minkowski_metric",
+        "line": 24,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "torsion_from_trace",
+        "line": 35,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "contorsion_from_trace",
+        "line": 62,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/palatini/field_eq.py",
+    "definitions": [
+      {
+        "name": "C1Solution",
+        "line": 30,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "solve_torsion_from_spurion",
+        "line": 38,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "check_pure_trace",
+        "line": 52,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "torsion_components",
+        "line": 66,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/palatini/torsion_decomp.py",
+    "definitions": [
+      {
+        "name": "levi_civita_4",
+        "line": 25,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "permutation_sign",
+        "line": 36,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "minkowski_metric",
+        "line": 47,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "inverse_metric",
+        "line": 51,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "trace_vector",
+        "line": 55,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "axial_vector",
+        "line": 68,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "pure_trace_piece",
+        "line": 90,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "axial_piece",
+        "line": 101,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "decompose",
+        "line": 117,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/spurion/profile.py",
+    "definitions": [
+      {
+        "name": "_as_1d",
+        "line": 46,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_as_metric",
+        "line": 53,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_fd_grad",
+        "line": 71,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_fd_hessian",
+        "line": 83,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "BaseProfile",
+        "line": 114,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "ConstantProfile",
+        "line": 146,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "PlaneWaveProfile",
+        "line": 163,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "GaussianRadialProfile",
+        "line": 212,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "CustomProfile",
+        "line": 246,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "make",
+        "line": 286,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "constant_gradient",
+        "line": 319,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "seps_from_gradient",
+        "line": 333,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "__post_init__",
+        "line": 118,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "epsilon",
+        "line": 124,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "grad",
+        "line": 127,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "box",
+        "line": 130,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "G",
+        "line": 135,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "epsilon",
+        "line": 149,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "grad",
+        "line": 153,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "box",
+        "line": 157,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "__post_init__",
+        "line": 169,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_phase",
+        "line": 177,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "epsilon",
+        "line": 180,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "grad",
+        "line": 188,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "box",
+        "line": 198,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_r2",
+        "line": 216,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "epsilon",
+        "line": 219,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "grad",
+        "line": 224,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "hessian",
+        "line": 229,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "box",
+        "line": 239,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "__post_init__",
+        "line": 253,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "epsilon",
+        "line": 258,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "grad",
+        "line": 262,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "box",
+        "line": 272,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "palatini_pt/spurion/pt_even.py",
+    "definitions": [
+      {
+        "name": "PTRegistry",
+        "line": 50,
+        "kind": "ClassDef"
+      },
+      {
+        "name": "_parse_expr",
+        "line": 101,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "compute_parity",
+        "line": 146,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "is_pt_even",
+        "line": 187,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "pt_project",
+        "line": 191,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "assert_pt_even",
+        "line": 207,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "project_scalar",
+        "line": 225,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "__post_init__",
+        "line": 66,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "register",
+        "line": 82,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "parity",
+        "line": 87,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_c1_alignment.py",
+    "definitions": [
+      {
+        "name": "_apply_style",
+        "line": 24,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_prepare_outdirs",
+        "line": 32,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_write_md5",
+        "line": 42,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_alignment_via_module",
+        "line": 52,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_alignment_fallback",
+        "line": 67,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 72,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_load_config_if_needed",
+        "line": 120,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 132,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_c1_pure_trace.py",
+    "definitions": [
+      {
+        "name": "_apply_style",
+        "line": 24,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_prepare_outdirs",
+        "line": 32,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_write_md5",
+        "line": 42,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_compute_components_via_module",
+        "line": 52,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_compute_components_fallback",
+        "line": 80,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 88,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_load_config_if_needed",
+        "line": 139,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 151,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_c2_coeff_compare.py",
+    "definitions": [
+      {
+        "name": "_apply_style",
+        "line": 16,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_prepare_outdirs",
+        "line": 24,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_write_md5",
+        "line": 33,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_residual_scan_via_module",
+        "line": 39,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_residual_scan_fallback",
+        "line": 68,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 76,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_c3_cT_heatmap.py",
+    "definitions": [
+      {
+        "name": "_apply_style",
+        "line": 24,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_prepare_outdirs",
+        "line": 32,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_write_md5",
+        "line": 42,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_compute_grid_via_module",
+        "line": 52,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_grid_fallback",
+        "line": 113,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 122,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_load_config_if_needed",
+        "line": 182,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 194,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_c3_degeneracy.py",
+    "definitions": [
+      {
+        "name": "_apply_style",
+        "line": 17,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_prepare_outdirs",
+        "line": 25,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_eigs_via_module",
+        "line": 34,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_eigs_fallback",
+        "line": 51,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 57,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_c3_dispersion.py",
+    "definitions": [
+      {
+        "name": "_apply_style",
+        "line": 17,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_prepare_outdirs",
+        "line": 25,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_cT_of_k_via_module",
+        "line": 34,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_cT_fallback",
+        "line": 58,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 65,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_flux_ratio.py",
+    "definitions": [
+      {
+        "name": "_md5_write",
+        "line": 21,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_ensure_dirs",
+        "line": 31,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_cfg_get",
+        "line": 35,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "build_from_config",
+        "line": 43,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 107,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_load_yaml",
+        "line": 112,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_gw_waveform_overlay.py",
+    "definitions": [
+      {
+        "name": "_apply_style",
+        "line": 24,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_prepare_outdirs",
+        "line": 32,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_write_md5",
+        "line": 42,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_waveforms_via_module",
+        "line": 52,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_waveforms_fallback",
+        "line": 86,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 92,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_load_config_if_needed",
+        "line": 164,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 176,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/fig_nlo_offsets.py",
+    "definitions": [
+      {
+        "name": "_md5_write",
+        "line": 20,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_ensure_dirs",
+        "line": 30,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_cfg_get",
+        "line": 34,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_compute_nlo_offsets_from_config",
+        "line": 42,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_save_csv",
+        "line": 61,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_plot_pdf",
+        "line": 70,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "build_from_config",
+        "line": 122,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 129,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_load_yaml",
+        "line": 134,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/make_all_figs.py",
+    "definitions": [
+      {
+        "name": "_select_modules",
+        "line": 33,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "run",
+        "line": 55,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_load_config_from_file",
+        "line": 69,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 86,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "scripts/mixing_matrix_extract.py",
+    "definitions": [
+      {
+        "name": "_write_md5",
+        "line": 46,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_need_pair",
+        "line": 55,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "load_mu_from_json",
+        "line": 64,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "locking_ratios",
+        "line": 72,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "write_outputs",
+        "line": 83,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "main",
+        "line": 156,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "r",
+        "line": 74,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/conftest.py",
+    "definitions": [
+      {
+        "name": "rng",
+        "line": 8,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "g_minkowski",
+        "line": 13,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "atol_sym",
+        "line": 17,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "atol_num",
+        "line": 22,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_algebra_basis.py",
+    "definitions": [
+      {
+        "name": "test_ibp_and_projection",
+        "line": 4,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_c1_torsion.py",
+    "definitions": [
+      {
+        "name": "test_c1_pure_trace_and_alignment",
+        "line": 22,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_c1_random_many",
+        "line": 38,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_c2_equivalence.py",
+    "definitions": [
+      {
+        "name": "_norm_with_tol",
+        "line": 21,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "_is_monotone_nonincreasing",
+        "line": 26,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_order2_pairwise_residuals_close_to_zero",
+        "line": 32,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_ibp_ignored_key_is_effectively_dropped",
+        "line": 53,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_tolerance_sweep_is_monotone_nonincreasing",
+        "line": 72,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_override_basis_order_does_not_change_equivalence",
+        "line": 87,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_as_table_rows_match_basis",
+        "line": 105,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_c3_tensor.py",
+    "definitions": [
+      {
+        "name": "_delta_manual",
+        "line": 35,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "k_grid",
+        "line": 42,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "coeffs_pos",
+        "line": 47,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "coeffs_neg_ct2",
+        "line": 55,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_ct2_and_Z_match_analytic",
+        "line": 61,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_locking_makes_cT_equal_one_everywhere",
+        "line": 76,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_locking_delta_zero_and_idempotent",
+        "line": 86,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_dispersion_before_after_lock",
+        "line": 106,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_principal_symbol_degeneracy_flow",
+        "line": 118,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_sample_cT_grid_shape_and_values",
+        "line": 136,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_locking_respects_prefer_keys",
+        "line": 150,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_cli.py",
+    "definitions": [
+      {
+        "name": "run_cmd",
+        "line": 9,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_cli_version",
+        "line": 20,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_cli_figs_smoke",
+        "line": 26,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_flux_ratio.py",
+    "definitions": [
+      {
+        "name": "test_flux_ratio_monotone_closer_to_one",
+        "line": 11,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_flux_ratio_requires_positive_R",
+        "line": 19,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_mixing_matrix_extract.py",
+    "definitions": [
+      {
+        "name": "test_load_and_ratios",
+        "line": 11,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_write_outputs_ok",
+        "line": 23,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_write_outputs_fail_when_mismatch",
+        "line": 43,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_nlo.py",
+    "definitions": [
+      {
+        "name": "test_nlo_basis_labels_nonempty_and_ascii",
+        "line": 10,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_nlo_zero_in_decoupling_limit",
+        "line": 19,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_nlo_scaling_with_k2_over_Lambda2",
+        "line": 28,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_paper_mode_apis.py",
+    "definitions": [
+      {
+        "name": "test_equivalence_real_api_present",
+        "line": 7,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_gw_real_api_present_and_locked_ct",
+        "line": 15,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_scripts_figs.py",
+    "definitions": [
+      {
+        "name": "_cfg",
+        "line": 21,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_each_fig_module_smoke",
+        "line": 41,
+        "kind": "FunctionDef"
+      },
+      {
+        "name": "test_make_all_figs_smoke",
+        "line": 58,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "tests/test_torsion_decomp.py",
+    "definitions": [
+      {
+        "name": "test_decomposition_of_pure_trace",
+        "line": 12,
+        "kind": "FunctionDef"
+      }
+    ]
+  },
+  {
+    "file": "notebooks/00_sanity.py",
+    "definitions": []
+  },
+  {
+    "file": "notebooks/10_c2_symbolic_demo.py",
+    "definitions": []
+  },
+  {
+    "file": "notebooks/20_flux_ratio.py",
+    "definitions": []
+  },
+  {
+    "file": "notebooks/30_nlo_offsets.py",
+    "definitions": []
+  }
+]

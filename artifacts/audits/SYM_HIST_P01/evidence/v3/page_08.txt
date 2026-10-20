@@ -1,0 +1,73 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                  doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                        7 of 43
+
+
+
+                   This path ensures that all dynamical consequences are derived consistently from the foundational
+                   symmetries.
+
+                   4. The First Pillar: Uniqueness of Torsion (Result C1)
+
+                   Positioning & Scope.  Here we show an algebraic result—pure-trace torsion aligned with the spurion
+                   gradient—withinthestatedposture. Thestatementislimitedtoquadraticorderandtoadmissibledomains;it
+                   doesnotclaimnon-perturbativeuniqueness. TheimmediatefunctionofC1istoreducetheoperatorcontentand
+                   to remove axial/traceless channels from the observable sector at this order.
+                         Thissectionpresentsthefirstmajorresult(C1)ofourframework. Havingpreparedtheoperator
+                   basis in Sec.3, we now solve the Palatini equations of motion within our symmetric posture. The
+                   combination of the PT projector and projective invariance acts as a powerful selection principle,
+                   uniquelydeterminingthealgebraicformofthetorsiontensor. Wewillshowthatofallpossibleforms
+                   oftorsion(trace,axial,andtensorparts), onlyapure-tracecomponentalignedwiththeStueckelberg
+                   gradientcanexistintheobservablesector. Thisresultisnotanassumptionbutadirectconsequenceof
+                   thesymmetries. Itdramaticallysimplifiesthetheorybycollapsingtheoperatorbasisandpavesthe
+                   way for the equivalences and luminality proof in the subsequent sections.
+                         The central theorem of this section is as follows:
+
+                   Theorem4(Palatini–PT UniquenessofTorsion(C1)). WithintheA1–A6posture,thePalatiniequationsof
+                   motion fix the algebraic torsion to be uniquely of the pure-trace form
+
+                                                             TABC = 2ηδA[B∂C]ϵ,       η > 0.                                              (10)
+
+                   This implies that the axial (Sµ) and traceless tensor (qλµν) irreducible representations of torsion must vanish. A
+                   direct consequence is the key algebraic identity relating the operators in the post-lock basis:
+
+                                                                        IT =−6η2Σϵ.                                                       (11)
+
+                         This identity demonstrates that, dynamically, the two operators in our post-lock basis are not
+                   independent. The remainder of this section is dedicated to proving this theorem and exploring its
+                   implications.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure 2. Irreducible torsion content at quadratic order (log–log view). Ratios of projected scalar strengths
+                   comparingthepure-traceblockagainsttheaxialandtracelessblocks. ThePalatinialgebraicity(Sec.4.1)andthe
+                   PT projector dynamically drive the axial and traceless components to zero, leaving the pure-trace map (10)      as the
+                   unique survivor. [nb: fig_c1_pure_trace.py].
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

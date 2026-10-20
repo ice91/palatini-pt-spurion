@@ -1,0 +1,34 @@
+{
+  "checked_UTC": "2026-10-20T03:07:54.668887+00:00",
+  "preservation": "PASS",
+  "original_files_checked": 1108,
+  "original_files_unchanged": 1108,
+  "original_modified_or_missing": [],
+  "old_audit_files_unchanged": 949,
+  "previous_gate_files_unchanged": 14,
+  "external_local_Particles_PDF_unchanged": true,
+  "new_files_outside_discovery_sandbox": [],
+  "HEAD": "6b456b89baa866b6dd05bc69a837b98a985a34ad",
+  "branch": "main",
+  "status": "?? .DS_Store\n?? artifacts/\n?? refs/",
+  "all_recorded_refs_unchanged": true,
+  "tracked_diff_exit": 0,
+  "staged_diff_exit": 0,
+  "reports": [
+    "00_RESEARCH_CHARTER.md",
+    "01_AXIOMS_AND_CANDIDATE_MODELS.md",
+    "02_PT_GEOMETRIC_CONSTRUCTION.md",
+    "03_OPERATOR_RESTRICTION_DERIVATION.md",
+    "04_ACTION_VARIATION_AND_SCHUR.md",
+    "05_PHYSICAL_SYMBOL_AND_COUNTEREXAMPLES.md",
+    "06_CONTROL_MODEL_AND_NOVELTY.md",
+    "07_RESEARCH_SYNTHESIS.md"
+  ],
+  "final_checks": {
+    "action_algebra_assertions": 24,
+    "independent_tests": 12,
+    "EC_connection_rank": 24,
+    "EC_connection_det": 16
+  },
+  "scope": "two candidates, one controlled physical-pairing revision; no automatic continuation; constitutive-predictivity freeze unchanged"
+}

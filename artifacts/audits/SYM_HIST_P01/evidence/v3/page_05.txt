@@ -1,0 +1,66 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                 doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                       4 of 43
+
+
+
+                     Assumptions A1–A6 (The working posture).
+                     A1.      PT-invariantdomain/measure. Foranyscalardensity X,theintegrationdomainissuchthatR X =R PT[X].
+
+
+                     A2.      Orientation and Hodge dual. The combined PT transformation preserves spacetime orienta-
+                              tion and commutes with the Hodge star operator,[PT ,∗]= 0.
+                     A3.      Projection-variationcommutation. Forscalardensities,theoperationsofvariationandprojec-
+                              tion commute: δΠPT[O]=ΠPT[δO] (proven in Lemma1).
+                     A4.      Admissible boundaries/falloffs.  The variational domain is restricted to spacetimes where
+                              improvement currentsarepureboundary termsthatdo notcontributetothe symplectic
+                              form (e.g., compact domains or standard asymptotically flat/FRW fall-offs).
+                     A5.      Nieh–Yan as a boundary term. The Nieh–Yan 4-form NY≡ d(eA∧TA) is treated as a total
+                              derivative affecting only boundary terms.
+                     A6.      Trace-lockenforcement. Theequationsofmotionalgebraicallyenforcethealignmentofthe
+                              torsiontracewiththespuriongradientatquadraticorder. Thisisadynamicalresult,notan
+                              initial constraint.
+
+                   Note on Admissible Domains
+                         The posture admits standard, simply connected spacetimes. Counterexamples such as manifolds
+                   withtorsiondefectsormulti-valuedϵ couldinducenon-vanishingboundaryfluxesthatmayspoilthe
+                   bulk equivalences derived in Sec.5.
+
+                   2.4. Formal Properties of the PT Projector
+                         We now formalize the scalar PT projector and its essential properties.
+
+                   Action of P, T, and PT
+                         The transformations of key geometric objects under P and T are summarized in Table1. Since the
+                   Levi–Civita tensor densityϵµνρσ transforms as P : ϵ7→−ϵ and T : ϵ7→−ϵ, the combined action is
+                   PT : ϵ7→+ϵ, preserving orientation as required by A2.
+
+                                            Table 1. Action of P and T on geometric objects. T is anti-unitary.
+
+                                      Object                     P    T     Note
+                                      eAµ (vierbein)          +    +
+                                      ωABµ (connection)   +   −    Anti-unitary action of T
+                                      TAµν (torsion)          +   −
+                                      RABµν (curvature)    +    +
+                                      ϵ (spurion field)       +   −    Transforms as a pseudoscalar under T
+                                      ∂µϵ (gradient)        −    +    Gradient flips sign under P
+                                      ϵµνρσ (density)        −   −    PT-even
+
+
+                   Definition and Core Properties
+                         The projector onto the real, PT-even subspace of scalar densities is defined as
+
+                                            ΠPT[O] ≡  1O+PT[O]real part,        with  Π2PT =ΠPT.                               (4)
+                                                           2
+
+                   Under assumption A1, this projector is self-adjoint:R ΠPT[O1]ΠPT[O2] =R ΠPT[O1O2]. The follow-
+                   ing lemma and theorem are crucial for all subsequent derivations.
+
+                   Lemma 1 (Projection-Variation Commutation (A3)).  Under A1 and A4, if the spurionϵ is non-variational,
+                   then for variations of(e,ω): δΠPT[O]=ΠPT[δO].
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

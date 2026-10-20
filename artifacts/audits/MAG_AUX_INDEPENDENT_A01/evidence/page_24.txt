@@ -1,0 +1,54 @@
+H.2   Admitted identification
+Two bulk functionals are identified when their difference is a total divergence of the linear span
+of J1 and J3. This is a definition of the admitted variational-boundary class, not a claim that
+all metric-affine boundary terms lie in that span, and not a classification of gauge charges.
+
+H.3   Off-shell projective invariance of the currents
+Under the adopted law (4.1),
+
+                                         δ(T,Q,   eQ,A)=(3,−8,−2,3)ξ                                       (H.2)
+
+holds off shell. Therefore
+
+                                 δt=δT−δA=0,                                                                  (H.3)
+                               δW=−2δT−δQ+δ               eQ=(−6+8−2)ξ=0.                           (H.4)
+
+Equivalently, the inverse chart (4.15) gives W =−2t−q    +u identically, with no V remainder.
+If the spectator coefficientsf   1 andf       3 are projectively inert,
+
+                                               δJµ1 =0,       δJ  µ3 =0                                               (H.5)
+
+off shell. Consequently
+                                                  nµδ(J    µ1 +J   µ3)=0                                                 (H.6)
+holds for every projective transformation of this class. That identity cannot distinguish proper
+from improper projective transformations.
+    Two distinct issues must therefore be kept separate.
+
+A. IBP / variational boundary treatment.Whether the displayed total divergence of
+J1 and J3 is retained, canceled, or discarded is a choice of boundary data for the variational
+problem. Theorem 6.3 identifies QE and EQ as spacetime-local bulk functionals modulo that
+divergence.
+
+B. Gauge charges / improper transformations.AHamiltonianorcovariant-phase-space
+analysis of charges carried by ξ is a separate question. It is not established here, and is not
+attempted.
+
+H.4   Tests
+
+                Test    Content                                                     Inside Theorem 7.2
+                A        bulk QE=EQ moduloJ        1,J3                     yes
+                B        retain, cancel, or discard the displayed            boundary data, not a hy-
+                        IBP divergence                                       pothesis
+                C        Hamiltonian  or  covariant-phase-space              no
+                        charge ofξ
+
+    No global boundary classification, charge algebra, or topological sector is claimed. The
+reduced functional (7.1) is not asserted to be a complete initial-boundary-value action without
+further boundary data.
+
+
+
+
+
+
+                                                            24

@@ -1,0 +1,73 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                        doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+                    18.    M. Bañados andP.G. Ferreira, “Eddington’s theoryof gravity and its progeny,”Phys. Rev. Lett.105, 011101
+                           (2010).
+                    19.    R.Arnowitt,S.Deser,andC.W.Misner,“TheDynamicsofGeneralRelativity,”inGravitation: AnIntroduction
+                           toCurrentResearch,ed.L.Witten(Wiley,1962),pp.227–265;reprintedinGen.Rel.Grav.40,1997–2027(2008).
+                    20.R. M. Wald,     General Relativity(University of Chicago Press, 1984).
+                    21.    V.IyerandR.M.Wald,“SomepropertiesofNoetherchargeandaproposalfordynamicalblackholeentropy,”
+                           Phys. Rev. D50, 846–864 (1994).
+                    22.    T.Regge andC. Teitelboim,“Role ofsurface integralsin theHamiltonian formulationof generalrelativity,”
+                           Annals Phys.88, 286–318 (1974).
+                    23.    B. P. Abbott et al. (LIGO Scientific Collaboration and Virgo Collaboration), “GW170817: Observation of
+                           Gravitational Waves from a Binary Neutron Star Inspiral,”Phys. Rev. Lett. 119, 161101 (2017).
+                    24.    B.P.Abbottetal. (LIGOScientificCollaborationandVirgoCollaboration),“Multi-messengerObservations
+                           of a Binary Neutron Star Merger,”Astrophys. J. Lett.848, L12 (2017).
+                    25.    A. Goldstein et al., “An Ordinary Short Gamma-Ray Burst with Extraordinary Implications: Fermi-GBM
+                           Detection of GRB 170817A,”Astrophys. J. Lett.848, L14 (2017).
+                    26.    V. Savchenko et al., “INTEGRAL Detection of the First Prompt Gamma-Ray Signal Coincident with the
+                           Gravitational-wave Event GW170817,”Astrophys. J. Lett. 848, L15 (2017).
+                    27.    P.CreminelliandF.Vernizzi,“DarkEnergyafter GW170817andGRB170817A,”Phys.Rev.Lett.119,251302
+                           (2017).
+                    28.    T. Baker, E. Bellini, P. G. Ferreira, M. Lagos, J. Noller, and I. Sawicki, “Strong constraints on cosmological
+                           gravity from GW170817 and GRB170817A,”Phys. Rev. Lett.119, 251301 (2017).
+                    29.    J. M. Ezquiaga and M. Zumalacárregui, “Dark Energy After GW170817: Dead Ends and the Road Ahead,”
+                           Phys. Rev. Lett.119, 251304 (2017).
+                    30.    J. Sakstein andB. Jain,“Implications ofthe Neutron StarMerger GW170817for Cosmological Scalar–Tensor
+                           Theories,”Phys. Rev. Lett. 119, 251303 (2017).
+                    31.    N. V. Agazie et al.   (NANOGrav Collaboration), “The NANOGrav 15-year Data Set:  Evidence for a
+                           Gravitational-Wave Background,”Astrophys. J. Lett.951, L8 (2023).
+                    32.    J. Antoniadis et al.  (EPTA Collaboration and InPTA Collaboration), “The second data release from the
+                           European Pulsar Timing Array: Search for signals from new physics,”Astron. Astrophys.678, A50 (2023).
+                    33.    D. J.Reardon etal. (PPTA Collaboration),“Search foran Isotropic Gravitational-WaveBackground withthe
+                           Parkes Pulsar Timing Array,”Astrophys. J. Lett. 951, L7 (2023).
+                    34.    F. A. A. Liu et al.  (CPTA Collaboration), “Searching for the nano-Hertz stochastic gravitational-wave
+                           backgroundwiththe ChinesePulsarTimingArrayDataReleaseI,” Res.Astron.Astrophys. 23,075024(2023).
+                    35.    R.Kase andS.Tsujikawa, “DarkenergyinHorndeskitheories afterGW170817: Areview,”Int.J. Mod. Phys.
+                           D28, 1942005 (2019).
+                    36.    D. Langlois, “Dark Energy and Modified Gravity in Degenerate Higher-Order Scalar–Tensor (DHOST)
+                           theories,” Int. J. Mod. Phys. D28, 1942006 (2019).
+                    37.    Yu.N. Obukhov, “Poincarégaugegravity: Selected topics,”Int.J. Geom.MethodsMod.Phys.3,95–138 (2006).
+                    38.    Y.N.ObukhovandF.W.Hehl,“Rotation,acceleration,andgravityintheframeworkofclassicalelectrody-
+                           namics,” Phys.Lett. A372,3946–3952 (2008);see alsoF. W. Hehland Y.N. Obukhov,Foundationsof Classical
+                           Electrodynamics(Birkhäuser, 2003), App. B for Riemann–Cartan conventions.
+
+
+                    Disclaimer/Publisher’sNote: Thestatements,opinionsanddatacontainedinallpublicationsaresolelythose
+                    oftheindividualauthor(s)andcontributor(s)andnotofMDPIand/ortheeditor(s). MDPIand/ortheeditor(s)
+                    disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or
+                    products referred to in the content.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 © 2025 by the author(s). Distributed under a         Creative Commons CC BY license.

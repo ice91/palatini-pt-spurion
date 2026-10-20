@@ -1,0 +1,49 @@
+E.2   Residue solution and reconstruction
+Stt+Jt,eff   =0 is 2f2t−∂f     3 =0, hence (5.27) on f2̸=0. Combined with (5.19) this is (5.29).
+The raw reconstruction (6.13) follows from (4.15).
+
+E.3   On-shell distortion
+Insert T =s+V, Q=4r−  (8/3)(s+V), eQ=r−  (2/3)(s+V) into (4.13). All terms rearrange
+into                                  δλµrν +δ   λνrµ−g   µνrλ− 1
+                          Nλµν = 12                                      3δλν(s µ+V   µ),                       (E.4)
+whichis(6.14). TheV pieceisapurelast-indexshift: V7→V      +3ξ producesδNλµν =−δ   λνξµ.
+
+F   Full Hessian kernel
+
+F.1   Raw bulk density
+After the admitted integrations by parts, the affine bulk density in raw traces is
+
+            L=f      1Q(T,Q,   eQ)+(∂f     1)·(2T+Q−          eQ)+f       2(T−A)           2−(∂f     3)·(T−A),      (F.1)
+
+withQthe quadratic polynomial of          (5.1). Let X =(T,Q,eQ,A) and let Hraw be the Hessian
+of (F.1) with respect toX.
+
+F.2   Gauge inclusion
+Differentiating (F.1) along (3,−8,−2,3) yields zero identically, because that vector is the
+projective orbit of Lemma 4.2 andQtogether with         W =−2T−Q     + eQ are invariant, while
+T−Ais invariant. Thus
+                                       span{(3,−8,−2,3)}⊆kerH                                          raw.                                      (F.2)
+
+F.3   Converse on the regular locus
+In the invariant coordinates, L is independent of V  and equals (5.8). Therefore the species
+matrix is Hfull =diag(H⊥,0) and detH    ⊥ =−f    21f2/6. On Ureg, H⊥ is invertible, so kerH   full =
+span{e           V} and kerH   full = imG    x, which pulls back to the raw fibre kernel (6.11). This is the
+converse: no additional affine kernel exists in the present trace sector.
+
+F.4   Gauge identity
+The Noether identity associated with (4.1) is the vanishing of (6.12).  It holds off-shell as
+an identity among the raw Euler–Lagrange expressions of (F.1), and is equivalent to V-
+independence ofL.
+
+F.5   Singular enlargement
+On S2–S4, ranksp(Hfull) drops as in Table 2, so the kernel properly contains the projective
+tangent. Those extra null directions are not gauge: they are gauge-invariant degeneracies of the
+quadratic form at vanishing f1 or f2, matching the invariant moduli of Appendix I. Selecting a
+representative among them is a non-gauge restriction. They are excluded from Theorem 7.2
+rather than quotiented.
+
+
+
+
+
+                                                         22

@@ -1,0 +1,89 @@
+1dfaf83279c378e1f8321661113d48e26af0c475 2025-09-21T09:24:51+08:00 mixing_matrix
+
+diff --git a/configs/coeffs/mixing_matrix_FRW.json b/configs/coeffs/mixing_matrix_FRW.json
+new file mode 100644
+index 0000000..7fc0a56
+--- /dev/null
++++ b/configs/coeffs/mixing_matrix_FRW.json
+@@ -0,0 +1,30 @@
++{
++  "background": {
++    "type": "FRW",
++    "gauge": "unitary",
++    "homogeneous_spurion": true
++  },
++  "normalization": {
++    "sigma_scheme": true,
++    "rank_one_scale_23": true,      // 使用 (2/3)·λ·τ 規模在 ROD/CM 兩條鏈
++    "trace_lock_eta": 1.0,          // 取 η>0 的物理解
++    "TrT2": 0.75                     // Tr(𝒯^2)=3/4
++  },
++  "fit": {
++    "parameters": ["H", "Upsilon"],
++    "grid": [
++      {"H": 0.00, "Upsilon": 0.00},  // 靜態點（便於定 c0）
++      {"H": 0.10, "Upsilon": 0.00},  // 只改 H
++      {"H": 0.00, "Upsilon": 0.20}   // 只改 Upsilon
++    ],
++    "symbolic": false                 // 若實作支援 SymPy，可設 true 走符號；否則用數值擬合
++  },
++  "projector": {
++    "apply_PT_scalar_projector": true
++  },
++  "outputs": {
++    "csv": "figs/data/mixing_matrix.csv",
++    "json": "figs/data/mixing_matrix_meta.json",
++    "print_summary": true
++  }
++}
+925736072ac3f9e89ca50c8dafa6b9c029ddb008 2025-09-21T10:09:33+08:00 config
+
+diff --git a/configs/coeffs/mixing_matrix_FRW.json b/configs/coeffs/mixing_matrix_FRW.json
+index 7fc0a56..6c9fbee 100644
+--- a/configs/coeffs/mixing_matrix_FRW.json
++++ b/configs/coeffs/mixing_matrix_FRW.json
+@@ -1,30 +1,4 @@
+ {
+-  "background": {
+-    "type": "FRW",
+-    "gauge": "unitary",
+-    "homogeneous_spurion": true
+-  },
+-  "normalization": {
+-    "sigma_scheme": true,
+-    "rank_one_scale_23": true,      // 使用 (2/3)·λ·τ 規模在 ROD/CM 兩條鏈
+-    "trace_lock_eta": 1.0,          // 取 η>0 的物理解
+-    "TrT2": 0.75                     // Tr(𝒯^2)=3/4
+-  },
+-  "fit": {
+-    "parameters": ["H", "Upsilon"],
+-    "grid": [
+-      {"H": 0.00, "Upsilon": 0.00},  // 靜態點（便於定 c0）
+-      {"H": 0.10, "Upsilon": 0.00},  // 只改 H
+-      {"H": 0.00, "Upsilon": 0.20}   // 只改 Upsilon
+-    ],
+-    "symbolic": false                 // 若實作支援 SymPy，可設 true 走符號；否則用數值擬合
+-  },
+-  "projector": {
+-    "apply_PT_scalar_projector": true
+-  },
+-  "outputs": {
+-    "csv": "figs/data/mixing_matrix.csv",
+-    "json": "figs/data/mixing_matrix_meta.json",
+-    "print_summary": true
+-  }
++  "N":    { "ROD": 0.75, "CM": -0.50 },
++  "divN": { "ROD": 0.20, "CM":  0.35 }
+ }
+55f14b84668d9397ac0efb3578b3c4676e6ce96a 2025-09-21T10:18:19+08:00 mixing_matrix
+
+diff --git a/configs/coeffs/mixing_matrix_FRW.json b/configs/coeffs/mixing_matrix_FRW.json
+index 6c9fbee..e9ec26e 100644
+--- a/configs/coeffs/mixing_matrix_FRW.json
++++ b/configs/coeffs/mixing_matrix_FRW.json
+@@ -1,4 +1,4 @@
+ {
+   "N":    { "ROD": 0.75, "CM": -0.50 },
+-  "divN": { "ROD": 0.20, "CM":  0.35 }
++  "divN": { "ROD": 0.20, "CM": -0.13333333333333333 }
+ }

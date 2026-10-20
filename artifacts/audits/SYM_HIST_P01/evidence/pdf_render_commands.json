@@ -1,0 +1,240 @@
+[
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_08.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_08.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_08.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_08.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_10.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_10.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_10.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_10.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_14.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_14.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_14.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_14.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_34.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_34.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_34.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_34.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_35.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_35.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_35.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v1/render_35.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_09.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_09.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_09.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_09.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_15.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_15.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_15.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_15.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_36.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_36.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_36.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_36.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_45.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_45.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_45.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_45.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_46.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_46.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_46.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v2/render_46.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_07.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_07.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_07.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_07.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_30.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_30.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_30.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_30.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_31.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_31.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_31.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_31.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_40.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_40.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_40.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_40.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_41.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_41.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_41.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/v3/render_41.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/symmetry/render_33.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/symmetry/render_33.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/symmetry/render_33.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/symmetry/render_33.png\n",
+    "stderr": ""
+  },
+  {
+    "command": [
+      "sips",
+      "-s",
+      "format",
+      "png",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/symmetry/render_45.pdf",
+      "--out",
+      "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/symmetry/render_45.png"
+    ],
+    "exit_code": 0,
+    "stdout": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/symmetry/render_45.pdf\n  /Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_HIST_P01/evidence/symmetry/render_45.png\n",
+    "stderr": ""
+  }
+]

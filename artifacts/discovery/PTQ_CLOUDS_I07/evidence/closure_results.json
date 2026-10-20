@@ -1,0 +1,424 @@
+{
+  "checks": {
+    "star_squared_minus_identity": true,
+    "wedge_signature_3_3": true,
+    "micro_1_hard_simplicity": true,
+    "micro_2_hard_simplicity": true,
+    "complement_difference": true,
+    "mean_Q_zero": true,
+    "mean_v": true,
+    "mean_det_regular": true,
+    "nineteen_residual_nonzero_polynomial": true,
+    "C19_norm_formula": true,
+    "exact_covariance_identity": true,
+    "normal_residual_covariance": true,
+    "half_v_minus_19_over_6": true,
+    "half_det_63_over_2": true,
+    "half_invariant_12_over_361": true,
+    "beta_zero_is_not_reconstruction": true,
+    "I06_scalar_benchmark": true,
+    "at_least_two_independent_C19_defects": true,
+    "no_linear_amplitude_defect_u": true,
+    "no_linear_amplitude_defect_z": true,
+    "second_order_mixed_defect": true,
+    "proper_orthochronous_frames": true,
+    "lorentz_wedge_invariance": true,
+    "lorentz_star_equivariance": true,
+    "independent_frame_transport_covariance": true,
+    "C19_tensor_covariance": true,
+    "defect_invariant_under_root_frame": true,
+    "connected_parent_torsion_zero": true,
+    "connected_parent_DB_zero": true,
+    "connected_parent_algebraic_equations": true
+  },
+  "number_passed": 30,
+  "pair_order": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "W": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "D": [
+    [
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1"
+    ]
+  ],
+  "S": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "weighted_v": "-(4*w**2 + 11*w + 3)/3",
+  "weighted_det": "(w + 1)**2*(2*w + 1)**2*(5*w + 1)",
+  "complement_difference": "-2*w*(w - 1)",
+  "weighted_C19": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "4*w*(w - 1)/3"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "2*w*(w - 1)/3",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-2*w*(w - 1)/3",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-2*w*(w - 1)/3",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "2*w*(w - 1)/3",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "4*w*(w - 1)/3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "half_mean_b": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "3/2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-3/2",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "7/2",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "half_C19": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/3"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "-1/6",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1/6",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1/6",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-1/6",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-1/3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "half_v": "-19/6",
+  "half_det": "63/2",
+  "half_Q": "0",
+  "half_invariant": "12/361",
+  "half_Gram_times_W_eigenvalues": {
+    "-7/2": 2,
+    "-3": 4
+  },
+  "independent_normal_directions_lower_bound": 2,
+  "nearby_mixed_C19": [
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "2*w*(w - 1)/3"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "w*(w - 1)/3",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-w*(w - 1)/3",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-w*(w - 1)/3",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "w*(w - 1)/3",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "2*w*(w - 1)/3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  ],
+  "stop": "C19_CLOSURE_FAILURE: no beta spectrum or microscopic lambda calculation authorized downstream"
+}

@@ -1,0 +1,54 @@
+8.2   Necessary counterexamples
+The hypotheses are sharp in the following sense (Appendix I).
+
+ •Iff     1 =0, Palatini invertibility fails, and∂f  1̸=0 makes (8.1) inconsistent.
+
+ •Iff     2 =0, residue invertibility fails, and∂f       3̸=0 makes (8.1) inconsistent.
+
+ •If the projective law is replaced by (a,b)=(1,0), the Ricci target (4.6) fails.
+
+ •If deleted irreps are treated as solved Hessian coordinates, the domain premise fails.
+
+8.3   Claim boundary
+The following remain outside Theorem 7.2.
+
+Table 3:  Scope and excluded sectors.  Excluded irreducible sectors lie outside the stated
+configuration space; they are neither proved to vanish nor removed by projective gauge
+symmetry.
+            Object or claim                                                         Classification
+            axial torsion                                                              excluded by truncation
+            tensor torsion                                                            excluded by truncation
+            traceless nonmetricity                                                excluded by truncation
+            higher affine irreps                                                    excluded by truncation
+            hypermomentum                                                       not covered
+            independent matter connection sources                     not covered
+            global gauge slice                                                      not claimed
+            Hamiltonian / covariant-phase-space charges ofξ     not analyzed
+            boundary-charge algebra                                           not classified
+            extension throughf               1 =0 orf    2 =0                            not claimed
+            mandatory scalar dynamics                                       conditional only
+            f1 >0,f       2 >0,K       eff >0                                             not hypotheses
+            ghost-freedom / energy stability                                not claimed
+            Keff =Z   geom                                                             identification not established
+            constitutive predictivity                                            not claimed
+            unrestricted metric-affine (64-component) theorem    not claimed
+
+     In particular, algebraic regularity is f1̸=0 and f2̸=0. Physical-stability inequalities are a
+different and absent theorem. Whether the displayed IBP divergences are retained as boundary
+data is a variational convention, not a charge classification.
+
+9   Discussion
+
+9.1   Gauge versus auxiliary nonuniqueness
+Raw traces (T,Q,eQ,A) split as (q,u,t|V   ). The vertical coordinate Vµ =Aµ parametrizes the
+projective orbit. The invariants (q,u,t) are not gauge-removable, yet on Ureg they are algebraic.
+In particular t = T−A      is projectively invariant and is solved by t⋆ = ∂f3/(2f2).  Gauge-
+invariant does not mean propagating. After elimination, fi(ϕ) and U(ϕ) remain constitutive
+data: auxiliary linear algebra does not fix them and does not identify Keff with a geometric
+factorZ           geom.
+     Theorem 6.3 is the finite-dimensional criterion 2.1 plus the evaluation kerH   full =imG    x on
+Ureg, equivalently kerH   full =span{e           V} in species space. Unrestricted necessity of commutativ-
+ity is not claimed: on-shellvaluescan agree for a special compatible source even if extra kernel
+
+
+                                                               15

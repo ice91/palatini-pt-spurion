@@ -1,0 +1,59 @@
+Symmetry2026,18, 170                                                                                                                   41 of 50
+
+
+
+                                   currents integrate to zero. They also assume a single-valued spurion phaseϵ(x) so that the
+                                   rephasing in PropositionA5is a globally well-defined map                   ψ7→ eiαϵψ.
+                                   •      Nontrivialtopology(notcovered). Ifϵ ismulti-valuedoradmitsnontrivialholonomy
+                                         (e.g.,onmanifoldswithnontrivialπ1 or H1),themap eiαϵ mayfailtobesingle-valued.
+                                         Insuchcasesthelocalcancellationin(A64)         canleaveaglobalremnantproportionalto
+                                         thewinding;ourbulkequivalencesandremovabilitystatementsarenotassertedin
+                                         that setting.
+                                   •      Nonvanishing boundary flux (not covered). On domains where the PT-invariant
+                                         boundary flux of the relevant improvement currents does not vanish, boundary terms
+                                         may carry physical information (e.g., in explicitly finite boxes with prescribed inflow).
+                                         Our null tests and cancellations are presented only under A4 fall-offs.
+
+                                   Appendix E.5. Bookkeeping Table and Quick References
+                                         For  convenience,  we  summarize  the  conventions  and  coefficients  used  in  the
+                                   Dirac sector:
+
+                                   Object/Convention    Value/Definition
+
+                                   Gamma matrices      {γA,γB}=2ηAB,γ5=iγ0γ1γ2γ3
+                                   Hodge/Levi–Civita    ϵ0123=+1,[PT ,∗]=0 (A2)
+                                   Contorsion split           KABC =  13(ηACTB−ηABTC)− 16ϵABCDSD+qABC
+                                   Dirac currents              Jµ =  ¯ψγµψ, Jµ5 =  ¯ψγµγ5ψ
+                                   Torsion→Dirac        ∆Lψ = e38SµJµ5 − 14TµJµ
+                                   C1 (pure trace)             Sµ=0, qλµν=0, Tµ=3η∂µϵ
+                                   Vector rephasing        ψ→ eiαϵψ withα= 3cVη =−34η
+                                   Outcome                       Trace channel removed up to a total derivative (A4/A5)
+                                   Nieh–Yan                      Boundary convention only (A5); no bulk Euler–Lagrange effect
+
+
+                                   Appendix E.6. Corollary: No LO Four-Fermion Contact from Torsion
+                                         At the order analyzed in this paper (quadratic in fields; at most one derivative per
+                                   building block), torsion is algebraic and fixed by (C1), and the only linear Dirac–torsion
+                                   channelthatsurvivesprojectionisremovedbythevectorredefinitionabove. Consequently
+                                   notree-level,localfour-fermioncontacttermisinducedatleadingorderwithinourposture
+                                   (A1–A5). Anysucheffectwouldrequire(i)anaxialchannel(Sµ̸= 0),(ii)higher-derivative
+                                   completions beyond our closure basis, or (iii) loop corrections outside the present scope.
+                                         Summary of AppendixE.                      In our conventions, the minimally coupled Dirac field
+                                   interactswithtorsionthrough e(38SµJµ5 − 14TµJµ). Underthepure-tracemap(C1),theaxial
+                                   channelvanishesandtheremainingtracechannelisremovedbyalocalvectorrephasing
+                                   ψ→ ei(3cVη)ϵψ, up to a total derivative consistent with A4/A5. Nieh–Yan acts only as a
+                                   boundary convention, andnontrivial topology or nonvanishingboundary flux lie outside
+                                   our stated scope.
+
+                                   Appendix F. Operational Diagnostics (Extended)
+                                         Thisappendixcollectsapractitioner-orientedchecklistandanexpandedcomparison
+                                   table.  Unless stated otherwise, all entries are framed for admissible patches with the
+                                   boundary/topology posture A4, and for the quadratic order analyzed in the main text.
+
+                                   Appendix F.1. Full Decision Tree (D1–D9)
+                                   •      (D1)Paritychannels. Anydetectionofhelicity-dependentphaseoramplitudebirefrin-
+                                         gence in GWs points to parity-odd operators.  Our scalar-PT posture forbids such
+
+
+
+                                                                                                         https://doi.org/10.3390/sym18010170

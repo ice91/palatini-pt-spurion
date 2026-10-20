@@ -1,0 +1,1540 @@
+
+==== PDF PAGE 1 ====
+        Projective Gauge Reduction and Auxiliary Connection
+                                               Elimination
+                              in a Metric-Affine Trace Sector
+
+
+
+
+
+
+                                                    Abstract
+           Independent affine connections are routinely eliminated algebraically in Palatini and
+       metric-affine gravity, but projective gauge degeneracy makes it nontrivial to determine
+       whether elimination defines a unique reduced theory. A local Hessian criterion separates
+       gauge freedom from invariant auxiliary degeneracy.  In a four-dimensional trace/vector
+       model with the compensator Aµ varied, the full pointwise one-form-fibre Hessian kernel
+       equals the projective gauge image precisely on the regular locus f1 ̸= 0, f2 ̸= 0.  The
+       horizontalsolutionis unique, theaffinesolutionsformonelocalorbit, andquotient-firstand
+       eliminate-first reductions agree as local bulk functionals modulo the admitted divergence
+       currents. At f1 = 0 or f2 = 0, rank loss is not merely enlargement of projective gauge
+       freedom: source compatibility may fail, while compatible branches retain gauge-invariant
+       algebraic moduli. These statements are local to the stated trace/vector configuration space.
+
+1   Introduction
+
+When may a gauge-degenerate auxiliary field be eliminated before or after taking the gauge
+quotient without changing the reduced theory?
+    An independent affine connection in Palatini and metric-affine gravity is typically auxiliary,
+and the Palatini curvature scalar is invariant under a consistent projective shift [1–6]. Neither
+that projective invariance nor algebraic connection elimination is claimed as new [7–12]. What
+is not automatic is that the two operations agree.
+    Gaugenonuniquenessandauxiliarynonuniquenessneednotcoincide. Rawaffinenonunique-
+ness splits into two distinct effects.  Some directions are gauge:  they never enter the bulk
+density and are removed by the projective quotient. Other directions are gauge-invariant and
+may nevertheless remain auxiliary.  Gauge invariance is not dynamical independence, and
+gauge redundancy is not the same as auxiliary eliminability. Only after those two effects are
+separated is auxiliary elimination guaranteed to define a reduced spectator theory rather than
+a representative choice among invariant degeneracies.
+    IndependentaffineconnectionsarecommonlyeliminatedalgebraicallyinPalatiniandmetric-
+affine analyses [4, 5, 7–11, 13]. If the affine Hessian has gauge-invariant null directions beyond
+the projective orbit, that substitution does not define a unique quotient theory: unresolved
+invariant data remain.  The exact kernel criterion is therefore a local diagnostic of when
+integrating out the connection is a quotient-independent operation rather than an implicit
+non-gauge branch restriction. The diagnostic is established here in the stated trace/vector
+sector; it is not claimed for unrestricted metric-affine gravity.
+    The trace/vector sector is a minimal nontrivial setting in this model where a projective
+one-form orbit, gauge-invariant horizontal affine data, and rank-changing algebraic connection
+equationscoexist. Itisthereforeanexactlaboratoryforseparatingprojectivegaugedegeneracy
+from invariant failure of auxiliary eliminability. This defined configuration space is not asserted
+to be a dynamically consistent truncation of unrestricted 64-component metric-affine gravity.
+
+                                                         1
+
+==== PDF PAGE 2 ====
+    On the regular locus of the model below, the vertical projective direction is quotiented and
+the horizontal affine variables are uniquely eliminated. Beyond it, extra gauge-invariant kernel
+can leave unresolved invariant data rather than additional projective freedom. The algebraic
+source conditions are sharp: S2 (f1 =0, f2̸=0) requires ∂f1 =0; S3 (f1̸=0, f2 =0) requires
+∂f3 = 0; and S4 (f1 =f2 = 0) requires both. Incompatible sources give no stationary affine
+solution, while compatible branches can retain invariant moduli. These statements classify
+algebraic branches, not dynamical crossings.
+    The existence of a projectively invariant residue is not new here.  A Palatini torsion
+construction realized projective invariance through a scalar spurion ϵ, held fixed at the stated
+order, with invariant combination Tµ−∂   µϵ [14]. A subsequent operator-basis analysis used an
+independentone-formAµ asanondynamicalreferenceontheprojectivefibre,againwithresidue
+Tµ−A   µ, without imposing δS/δA [15].  The present paper addresses a distinct variational
+and reduction question:  Aµ is included in the auxiliary variational system; the full affine
+Hessian is computed and its kernel is compared with the projective tangent; local orbit
+uniqueness is established on the regular locus; and quotient-first and eliminate-first reductions
+are compared explicitly. Varying Aµ is not proposed as the unique physical completion of the
+earlier nondynamical construction; it defines the distinct auxiliary variational problem studied
+here. Inthatproblem,full-Hessianrank,sourcecompatibility,orbituniqueness,andelimination
+order are tested together.  That a strict projection need not agree with a Schur/Feshbach
+reduction is a general methodological point [16]; it is used only as a reason not to assume that
+reduction order is innocuous, not as metric-affine evidence.
+    Section 2 records a finite-dimensional organizing criterion for quadratic auxiliary densities.
+It is a reduction lemma, not a deep new general mathematical theorem. Sections 3–6 supply
+the principal scientific content: a nontrivial verification of its hypotheses in a four-dimensional
+metric-affine trace/vector model. The Palatini kinetic density 3(∂f1)2/(2f1) is generic struc-
+ture [4, 7, 8]. In this varied-Aµ system, the model-specific contribution is the full affine Hessian
+and its exact full-fibre gauge kernel, the sharp regular-locus local orbit, explicit equality of
+quotient-first and eliminate-first reductions, and singular-stratum source compatibility. The
+transverse determinant−f     21f2/6 supplies the regularity test for those results.
+
+2   A finite-dimensional reduction criterion
+
+Let E be a finite-dimensional auxiliary fibre over spectator fields ψ, with coordinates XA and
+bulk density
+                          Laux(X;ψ)=           12XAHAB(ψ)X      B +J   A(ψ)X      A+L   0(ψ),                       (2.1)
+Hsymmetric. LetG:g→Ebe linear and injective, acting only in the fibre:δ                                  εX=Gε.
+    Gauge invarianceL              aux(X+Gε)=L                  aux(X) for allX,εexpands to
+
+                                             HG=0,       G     TJ=0.                                             (2.2)
+
+No further algebraic condition follows from invariance of (2.1).
+
+Theorem 2.1(Finite-dimensional gauge-auxiliary reduction criterion).Assume                      (2.2) and
+kerH    =imG   . Equivalently, in finite dimensions, the induced map                  H :E/imG→         (E/imG     )∗
+is invertible. Then:
+
+ 1.HX+J=0has a unique solution class inE/imG;
+
+ 2.the unreduced solution set is one affine gauge orbitX            ⋆+imG;
+
+ 3.the on-shell valueL              on =L   0+ 12JTXis constant on that orbit;
+
+
+
+                                                           2
+
+==== PDF PAGE 3 ====
+ 4. quotient-first elimination and eliminate-first quotient produce the same local on-shell func-
+    tional;
+ 5. any two linear horizontal charts related by GL(n)have the same regular locus and the same
+    on-shell value.
+Proof. Invariance gives imG⊆kerH            ; the kernel hypothesis gives equality.  Solvability of
+HX = −J    is J∈   (imG   )0, which is GTJ = 0.  The solution space is one affine orbit of
+direction kerH   . Finite-dimensional nondegeneracy of                 H yields a unique class [X⋆]. On shell,
+Lon =L0+ 12JTX, and JTG=0 makes this representative-independent. Both reduction orders
+substitute the same class into (2.1). A GL(n) change of horizontal coordinates multiplies the
+determinant of the induced transverse form H⊥ by a nowhere-zero squared Jacobian, leaving
+the regular locus and the on-shell scalarL           on invariant.
+
+    Theorem 2.1 provides an organizing finite-dimensional criterion for a quadratic form with a
+prescribed kernel. Sufficiency is all that is used below. It does not replace a model Hessian
+computation.
+    In a splittingE=H⊕imGwith coordinates (x,V),
+                                                          H⊥   0
+                                                  H=        0    0    ,                                                   (2.3)
+
+and kerH    = span{e           V} precisely when detH    ⊥ ̸= 0, with x⋆ = −H  −1⊥ JH and Lon = L0−
+1
+2JTHH−1⊥ JH.
+Remark2.2 (Species matrices and the one-form fibre).If the auxiliary fibre at a spacetime
+point x is of the form Ex =S⊗T     ∗xM and the quadratic density is built from a species matrix
+HAB contracted with a nondegenerate spectator metric, the true Hessian isH⊗g        −1  . Then
+
+                 ker(H⊗g         −1  )=kerH⊗T        ∗xM,      rank(H⊗g              −1  )=Drank       sp(H).            (2.4)
+
+Species invertibility and kernel criteria therefore lift directly to the full one-form fibre. Theo-
+rem 2.1 is applied below to that full pointwise fibre; the displayed 3×3 and 4×4 matrices are
+the species coefficients.
+    Uniquenessofthereducedsolveforeverycompatiblesourcerequires            kerH    =imG   . IfkerH
+strictly contains imG   , the quotient retains additional gauge-invariant degeneracies; selecting a
+representative of those directions requires a non-gauge restriction, branch choice, or additional
+dynamics, and is not a gauge quotient.  Equality of on-shellvaluesfor a single compatible
+source can still occur; unrestricted necessity of QE = EQ is not claimed.  The criterion is
+fibrewise linear algebra. It is not a symplectic reduction theorem [12, 17, 18].
+
+3   Metric-affine trace model
+
+Spacetime dimension D =4, signature (−,   +,+,+). The curvature, torsion, and nonmetricity
+conventions are
+
+                       Rλρµν =∂   µΓλνρ−∂   νΓλµρ+ΓλµσΓσνρ−Γ   λνσΓσµρ,                             (3.1)
+                          Rµν =R   λµλν,       R=g      µνRµν,                                                        (3.2)
+                        Tλµν =2Γλ[µν]   ,       Tµ =T    λλµ,                                                         (3.3)
+                        Qλµν =−∇   λgµν,       Qλ =g   µνQλµν,     eQν =g   µλQλµν.                   (3.4)
+
+The affine derivative on the metric is
+
+                                     ∇λgµν =∂   λgµν−Γ   ρλµgρν−Γ   ρλνgµρ.                                   (3.5)
+
+                                                            3
+
+==== PDF PAGE 4 ====
+The affine configuration space of the model is the three traces (Tµ,Qµ,eQµ) together with a
+compensator one-form Aµ. Axial torsion, tensor torsion, and traceless nonmetricity exist as
+metric-affine irreps [1, 19] and are not coordinates here: they are neither solved to zero nor
+removed by the projective gauge. Matter is metric-minimal, so no hypermomentum sources
+the connection [20, 21].
+Assumption 3.1(Trace/vector configuration space).The independent affine data are
+(T,Q, eQ,A). Deleted irreps remain outside the domain.
+Assumption 3.2(Metric-minimal matter).Matter does not supply an independent hypermo-
+mentum source for the connection equation.
+
+                                                   ¯Tµ :=T    µ−A   µ.                                                   (3.6)
+
+The residue tµ := ¯Tµ is the projectively invariant torsion-trace combination. The bulk action is
+                                Z              h                                            i
+                          S=       d4x√−g       f1R(Γ)+f       2 ¯T2+f   3 ¯∇· ¯T+U(ϕ)       ,                       (3.7)
+
+with coefficient functions of a scalar argument ϕ. This is a representative, compact, nontrivial
+projectively invariant trace-residue model:  f1R(Γ) supplies the projective gauge and the
+Palatini block, while f2¯T2+f3¯∇· ¯T keep a gauge-invariant affine residue algebraically active. It
+is not claimed to be the most general metric-affine Lagrangian, nor a unique minimal operator
+basis.
+Assumption 3.3(Trace-residue action).The bulk functional is                  (3.7). The potential U(ϕ) is
+affine-independent.
+    The one-form Aµ is introduced as a compensator field for the one-form projective action.
+No microscopic or ultraviolet Stueckelberg interpretation is assumed. The combination T2
+is not projectively invariant, while ¯T2 is, once δA=3ξ accompanies the connection shift. In
+the gauge-adapted coordinates of Section 4, Vµ =Aµ parametrizes the projective orbit, while
+tµ = Tµ−A   µ is gauge invariant but remains auxiliary on Ureg. The field Aµ is varied as an
+auxiliary field in (3.7); after the quotient it parametrizes the orbit rather than an independent
+bulk degree of freedom.
+
+4   Projective transformation and invariant coordinates
+
+The projective transformation used throughout is
+
+                                       δΓ λµν =−δ       λνξµ,       δAµ =3ξ  µ,                                      (4.1)
+
+with δgµν =0. Index placement is part of the law under the targets below. The MAG first-kind
+shiftδΓ          λµν =+δ   λµξν [1, 6] is a different transformation, not used here.
+    Linear vectorial connection maps form a larger family [6, 22]. The two-parameter subfamily
+containing common first- and last-index writings [2, 3, 23] is
+
+                                           δΓ λµν =aδ   λµξν +bδ   λνξµ,                                           (4.2)
+
+with compensator increment held at
+
+                                                    δAµ =+3ξ     µ.                                                     (4.3)
+
+AtD=4,
+
+                  δTµ =3(a−b)ξ             µ,       δQµ =(2a+8b)ξ            µ,       δeQµ =(5a+2b)ξ            µ.             (4.4)
+
+                                                           4
+
+==== PDF PAGE 5 ====
+The linear Ricci shift is                        ∂ =b∂   αξβ +(−3a−b)∂                βξα.                                     (4.5)
+                                          δRαβ
+The quadratic remainder in the connection difference vanishes if and only if a=0. The Ricci
+target
+                                                      δRµν =−2∂         [µξν] .                                                  (4.6)
+together withδT=+3ξforces
+                                                     a=0,       b=−1.                                                 (4.7)
+Proposition 4.1(Selection within the adopted two-parameter connection-shift family).Under
+the conventions of Section 3 and the simultaneous targets
+
+      δT=+3ξ,       δA=+3ξ,       δ(T−A)=0,       δR=0,       δR                                      µν =−2∂         [µξν] ,     (4.8)
+the family (4.2) admits the unique solution a = 0,   b =−1. Equivalently, the law is   (4.1). A
+constant rescaling ofξreparametrizes the same law.
+     The induced shifts are
+                                         δ(T   µ,Qµ,eQµ,Aµ)=(3,−8,−2,3)ξ                      µ.                                   (4.9)
+
+Henceδ          ¯T=0 and
+                                                  δRλρµν =−δ       λρ2∂  [µξν] ,                                            (4.10)
+soδR=0. The first-kind pair (a,b)=(1,0) yields
+
+                                                   δ(T,Q,   eQ)=(3,2,5)ξ                                            (4.11)
+and fails (4.6); it is excluded only under these targets.
+     Write
+                                                  Γλµν =ΓλLCµν    +N   λµν.                                            (4.12)
+The trace-sector distortion is                    δλµTν−g   µνTλ
+                                    Nλµν = 13         5δ  λµQν +5δ  λνQµ−7g     µνQλ
+                                                +  136−δ   λµeQν−δ   λνeQµ+5g  µνeQλ,                                      (4.13)
+                                                +  118
+Invariant coordinates adapted to (4.1) are
+
+                tµ =T   µ−A   µ,       qµ =Q   µ+ 83Aµ,       uµ = eQµ+ 23Aµ,       Vµ =A   µ,        (4.14)
+with inverse
+                          T=t+V,       Q=q−                      83V,     eQ=u−           23V,       A=V.                  (4.15)
+Thust=      ¯T.
+Lemma 4.2(Horizontal invariance).Under         (4.9), δt = δq = δu = 0and   δV  = 3ξ.  The
+coordinateV           µ =A   µ is vertical;(q,u,t)are invariant.
+Assumption 4.3(Regular locus).Invertibility, orbit, and reduced-action statements are made
+on
+                                              Ureg :={f       1̸=0}∩{f    2̸=0}.                                        (4.16)
+Assumption 4.4(Local bulk identification).The theorem is spacetime-local on open regular
+regions. Bulk densities are identified modulo the admitted total divergences generated by the
+currents J1 and J3 of Appendix H. That identification is a variational-boundary convention. It
+does not classify proper versus improper projective transformations.
+     Signsf          1 >0,f       2 >0, andK           eff >0 are not hypotheses.
+
+                                                                  5
+
+==== PDF PAGE 6 ====
+                    Table 1: Conventions and projective transformations atD=4.
+                               Object   Definition or law              Variation
+                               Rλρµν     (3.1)                    −δ            λρ2∂  [µξν]
+                               Rµν        (3.2)                    −2∂               [µξν]
+                               R           gµνRµν                             0
+                               Tµ          (3.3)                                +3ξ     µ
+                               Qµ         (3.4)                    −8ξ              µ
+                               eQµ         (3.4)                    −2ξ              µ
+                               Aµ         compensator                    +3ξ     µ
+                               ¯Tµ          Tµ−A   µ                           0
+                               Γλµν       independent connection−δ                        λνξµ
+
+5   Exact transverse Hessian
+
+5.1   Exact trace expansion
+Insert(4.13)intotheconnection-differenceidentityfor(3.1)andcontracttothescalarcurvature.
+Every quadratic and divergence coefficient is determined. There is no remainder in the trace
+sector:
+                     R−R       LC = ¯∇µ−2T      µ−Q   µ+ eQµ
+                                     − 23T2− 1172Q2+  118eQ2− 23T·Q+         23T·  eQ+     29Q·   eQ.                (5.1)
+HereX·Y:=g                     µνXµYν andX       2 :=X·X. The six quadratic coefficients are
+
+                                           −23,− 1172,+  118,− 23,+ 23,+ 29                                              (5.2)
+
+in the order (T2,Q2,eQ2,T·Q,T·    eQ,Q·   eQ). Equation (5.1) is the complete expansion used
+below; no ellipsis is implied. The derivation is given in Appendix C.
+
+5.2   Projective cancellation in raw traces
+Substituting the projective shifts (4.9) into the divergence and into the quadratic polynomial
+of (5.1) cancels all vertical dependence. Equivalently, after (4.15) both the divergence current
+
+                                               Wµ :=−2T          µ−Q   µ+ eQµ                                             (5.3)
+
+and the quadratic form become functions of (t,q,u) only:
+
+                                                Wµ =−2t         µ−q   µ+u   µ,                                              (5.4)
+
+and the quadratic polynomial is that of (5.1) with (T,Q,eQ) replaced by (t,q,u). A constant
+pure vertical connection has vanishing scalar curvature, which is an independent control of
+δR=0.
+
+5.3   Integration by parts
+Multiply (5.1) byf  1 and use the two bulk identities
+                           √−gf   1 ¯∇µWµ =−  √−g(∂       µf1)W  µ+∂   µ√−gf   1Wµ,                      (5.5)
+                            √−gf   3 ¯∇µ¯Tµ =−  √−g(∂       µf3)¯Tµ+∂   µ√−gf   3¯Tµ.                         (5.6)
+
+
+
+
+                                                               6
+
+==== PDF PAGE 7 ====
+The currents actually generated are
+
+                                           Jµ1 =f   1Wµ,       Jµ3 =f   3¯Tµ.                                         (5.7)
+
+Bulk functionals that differ by ∂µ√−g   (c1Jµ1 +c3Jµ3) are identified. That is the admitted
+variational-boundary class; it is not a classification of all possible surface terms, and it does
+not distinguish proper from improper projective transformations (Appendix H).
+
+5.4   Horizontal affine quadratic form
+After(5.5)–(5.6)andthehorizontalrewrite, theaffinebulkdensity(omitting f1RLC+U(ϕ)and
+omitting the admitted divergence) is quadratic-plus-linear in the species triplex:=(q,u,t)             T:
+
+                                               Laff = 12xTH⊥x+J     Tx.                                           (5.8)
+
+Each species coordinate is a one-form.  The displayed 3×3 matrix H⊥ is aspecies-space
+coefficient matrix: the quadratic pairing is the metric contraction XA·Y  B :=gµνXAµYBν . At
+each spacetime pointxwriteS          ⊥≃R   3 and
+
+                                                  E⊥,x   =S  ⊥⊗T   ∗xM.                                                (5.9)
+
+The true pointwise transverse Hessian is therefore
+
+                                                   H⊥ =H  ⊥⊗g  −1  .                                                (5.10)
+
+Becauseg            −1   is nondegenerate,
+
+                         kerH  ⊥ =kerH  ⊥⊗T   ∗xM,      rankH       ⊥ =Drank       sp(H ⊥).                  (5.11)
+
+The species matrix and source are
+
+                                        H⊥ =f   1H0+diag(0,0,2f           2),                                           (5.12)
+                                                   −11/36   2/9 −2/3
+                                         H0 =        2/9      1/9    2/3      ,                                      (5.13)
+                                                     −2/3    2/3 −4/3
+                                           J=  ∂f1,−∂f    1,2∂f   1−∂f   3T.                                    (5.14)
+
+There is no V dependence. The matrix H0 is the Hessian of the quadratic polynomial in (5.1)
+with respect to (q,u,t). The diagonal 2f2 is the Hessian contribution of f2t2. The source (5.14)
+is the linear form generated by (5.5)–(5.6). Detailed contractions are in Appendices C and D.
+    The two nonmetricity traces (q,u) enterH    ⊥ through the upper-left 2×2 block. Isolating
+that block is the Palatini step:  it eliminates the connection data that mix with f1 before
+the residue equation is solved. The existence of such a Palatini block is generic [4, 5, 8]; the
+numerical matrix below is convention-specific.
+
+5.5   The exact matrix
+Writeq      N :=(q,u)   T. Then                          −11/36   2/9
+                                             P:=f       1    2/9      1/9      .                                          (5.15)
+
+A direct determinant computation gives
+                       −11    1−22
+        detP=f             2136   9        9      =f    21− 11324−  481   =f    21− 11324−  16324   =−   f2112.       (5.16)
+
+                                                              7
+
+==== PDF PAGE 8 ====
+HencePis invertible if and only iff                 1̸=0. The inverse is −4/3    8/3
+
+                                           P−1   =f   −11     8/3    11/3       .                                        (5.17)
+
+No further field-dependent factor occurs in detP     . In particular the schematic notations MPal
+and Palatini     response are replaced, for all subsequent statements, by (5.15)–(5.17).
+Lemma 5.1(Palatini invertibility).On the present domain,           ranksp(P) = 2if and only if
+f1̸=0. Atf   1 =0one hasP=0, so the Palatini pair cannot be solved.
+
+5.6   Explicitq/usolve
+At fixed residuet, the (q,u) Euler–Lagrange equation is −2/3          ∂f1
+
+                                      P qN +f   1      2/3     t+     −∂f   1    =0.                                  (5.18)
+
+Applying (5.17) yields
+                                       q=4  ∂f1f1 − 83t,       u=   ∂f1f1 − 23t,                                 (5.19)
+
+on f1̸=0. The algebra is recorded in Appendix D. Equation (5.19) is the complete Palatini
+response in the horizontal chart: there is no unspecified matrix standing between the source
+and (q,u).
+    The same inverse applied to the f1-sourced part alone produces the Palatini particular
+solution
+                                       (q,u)  t=0  =4r, r ,       r:=  ∂f1f1 ,                                   (5.20)
+which will combine with the residue solution in the next section.
+    With (q,u) eliminated by (5.19), the remaining horizontal unknown is the invariant residue
+t=  ¯T. The reducedt-problem is the Schur complement ofPinH                      ⊥.
+
+5.7   Exact Schur data
+A direct complement computation (Appendix E) produces
+
+                             St =2f  2,       Jt,eff   =−∂f       3,     L const = 3(∂f    1)22f  1   .                       (5.21)
+
+The on-shell Palatini contribution is therefore the constant (in t) density 3(∂f1)2/(2f1), and
+the remaining quadratic-plus-lineart-density is
+                                                    f2t2−(∂f     3)·t.                                                (5.22)
+
+5.8   Vanishing of the induced residue couplings
+Write the would-be induced couplings after Palatini elimination as
+                                    bf2 =f   2+∆2[f 1],      bf3 =f   3+∆3[f 1].                               (5.23)
+Comparing (5.21)–(5.22) with the original residue terms in (3.7) gives
+                                            ∆2[f 1]=0,      ∆   3[f 1]=0,                                        (5.24)
+hence                                  bf2 =f   2,     bf3 =f   3.                                             (5.25)
+
+These zeros are exact results of the Schur complement, not assumptions and not artifacts of
+the canonical (q,u,t) chart. Four independent evaluations—raw Euler–Lagrange substitution,
+the Schur complement, an alternate GL(3) horizontal basis, and substitution of the complete
+raw solution—all give ∆2 =∆3 =0 and the same on-shell density.
+
+                                                             8
+
+==== PDF PAGE 9 ====
+5.9   Residue equation
+Stationarity of (5.22) is
+                                                    2f  2tµ−∂   µf3 =0.                                               (5.26)
+Onf      2̸=0,
+                                                          t⋆ = ∂f32f  2.                                                      (5.27)
+
+Combining (5.19) with (5.27) and writing
+
+                                                r:=  ∂f1f1 ,       s:=  ∂f32f  2,                                           (5.28)
+
+one obtains the complete horizontal solution
+
+                                     t=s,       q=4r−             83s,       u=r−         23s.                              (5.29)
+
+Equivalently,
+                                   q⋆ =4∂f1             ∂f3                              ∂f3
+                                             f1 − 43     f2 ,       u⋆ = ∂f1f1 − 13      f2 .                             (5.30)
+No step in (5.21)–(5.29) extends throughf    1 =0 orf    2 =0.
+
+6   Application: kernel, orbit, and commutativity
+
+6.1   Transverse determinant
+BecauseH           ⊥ is block-Schur with Palatini blockPand complementS       t =2f  2,
+
+                                          detH    ⊥ =(detP)(2f               2)=−   f21f26  .                                      (6.1)
+
+Therefore the species matrix H⊥ is invertible if and only if f1̸=0 and f2̸=0. On that locus
+ranksp(H⊥)=3. By (5.11) the pointwise one-form-fibre rank is then rankH      ⊥ =D·   3, hence
+12 atD=4.
+
+6.2   Full affine Hessian
+Restore the vertical coordinateV. WriteS                          full≃R   4 for the species space of (q,u,t,V) and
+
+                                                  Efull,x    =S   full⊗T   ∗xM.                                               (6.2)
+
+The bulk density (5.8) is independent of V, so the species Hessian in (q,u,t,V) is the 4×4
+coefficient matrix                                             H⊥   0
+                                                    Hfull =       0    0     .                                                 (6.3)
+
+The true pointwise Hessian on the full one-form fibre is
+
+                                                   Hfull =H   full⊗g  −1  .                                                (6.4)
+
+Becauseg            −1   is nondegenerate,
+
+                       kerH   full =kerH   full⊗T   ∗xM,      rankH          full =Drank       sp(H full).                 (6.5)
+
+On Ureg one has ranksp(Hfull) = 3 and nullsp(Hfull) = 1. At D = 4 the corresponding fibre
+multiplicities are rankH         full =12 and dimkerH   full =4. Species inclusion is
+
+                                    kerH   full⊇span{e              V},       e  V =(0,0,0,1).                               (6.6)
+
+                                                                9
+
+==== PDF PAGE 10 ====
+     Define the pointwise projective gauge map
+
+                                   Gx :T ∗xM→E         full,x   ,       ξµ7→e    V ⊗(3ξ       µ).                               (6.7)
+
+The factor 3 is the vertical shift δV =3ξ of (4.1); any nonzero scalar yields the same image.
+Thus
+                                              imG    x =span{e           V}⊗T   ∗xM.                                          (6.8)
+
+Proposition 6.1(Exact kernel).OnU                          reg, the species kernel is
+
+                                                  kerH   full =span{e           V},                                               (6.9)
+
+and the true pointwise kernel on the full one-form fibre is
+
+                                                    kerH   full =imG    x.                                                (6.10)
+
+Equivalently, in raw traces the species kernel is kerH   raw =span{       (3,−8,−2,3)}, and the raw
+full-fibre kernel is               (3,−8,−2,3)ξ                      µ :ξ∈T     ∗xM	.                                      (6.11)
+
+
+This is a fibre-level restatement of the species result, not a new algebraic theorem. The projective
+gauge image exhausts the affine degeneracy of  (3.7) in the present trace sector: there is no
+additional Hessian kernel.
+
+Proof. Inclusion span{e           V} ⊆kerH       full is (6.3).   For the converse, if Hfull(x,V) = 0 with
+x=(q,u,t), then H⊥x=0. On Ureg, detH    ⊥̸=0, so x=0, while V remains arbitrary. Thus
+kerH   full⊆span{e              V}. Tensoring withT        ∗xMand using (6.5)–(6.8) yields (6.10).
+     Independently, the raw bulk density after the admitted integrations by parts is quadratic in
+(T,Q,eQ,A)andannihilatestheprojectivespeciesvector(3,−8,−2,3)identically(AppendixF).
+On Ureg that species kernel is one-dimensional, so the fibre kernel is D-dimensional.  The
+coordinate change (4.15) identifies it with imG     x. The vertical Euler–Lagrange combination
+
+                                            ELT − 83ELQ− 23ELeQ+ELA                                        (6.12)
+
+vanishes identically, as required of a gauge identity.
+
+6.3   Complete connection solution
+Translating (5.29) back to raw traces, withVarbitrary,
+
+                                                   T=s+V,
+                                                   Q=4r−         83(s+V),                                                (6.13)
+                                                   eQ=r−          23(s+V),
+                                                   A=V.
+
+The reconstructed distortion on this solution is
+                             Nλµν = 1δλµrν +δ   λνrµ−g   µνrλ− 1
+                                         2                                      3δλν(s µ+V   µ).                      (6.14)
+Shifting the representative byV7→V+3ξchanges Γ by exactly−δ                                 λνξµ, which is (4.1).
+
+Theorem 6.2(Local connection orbit).Assume Assumptions 3.1–4.4 and the law                (4.1). On
+Ureg, at fixed admissible(g,ϕ):
+ 1. there is one pointwise algebraic solution of the trace-sector affine Euler–Lagrange equations,
+     unique up to the raw projective vector(3,−8,−2,3);
+
+                                                               10
+
+==== PDF PAGE 11 ====
+ 2. if the coefficient functions and the regularity conditions are smooth on a spacetime-local
+    regular region, these pointwise solutions assemble into one spacetime-local orbit modulo the
+     projective transformation(4.1).
+
+The explicit solution is (6.13)–(6.14).  Smoothness of the coefficient functions on a regular
+region is the regularity actually used; no Banach-manifold quotient or global slice is invoked.
+The statement does not classify Hamiltonian or covariant-phase-space charges of ξ, and is not
+a statement about deleted affine irreps.
+
+    The qualifier “the connection solution” is therefore to be read as this local orbit, never as a
+globally unique connection.
+
+6.4   The two routes
+LetU      reg be as in (4.16), and let bulk densities be identified modulo the admitted class (5.7).
+
+Route QE (quotient first).Replace the raw traces (         T,Q,eQ,A) by the invariant horizontal
+coordinates (t,q,u), discarding V. Solve the nonsingular three-species system H⊥x+J =0 on
+Ureg. Substitute the unique horizontal solution (5.29) into (5.8).
+
+Route EQ (eliminate first).Retain an arbitrary representative           V. Substitute the com-
+plete raw solution (6.13) into the original trace-expanded bulk density, before any horizontal
+reduction.
+    These are not merely names of a diagram:  each is an explicit substitution, written in
+Appendix G. In local field theory, substitution of some fields by local functionals of others
+commutes with the Euler–Lagrange problem when those fields are auxiliary, and need not
+commute otherwise [12]. That general fact is the conceptual setting of QE=EQ. It is not a
+substitute for the Hessian computation of Section 6 or for the substitutions of Appendix G.
+
+6.5   Equality of on-shell densities
+Theorem 6.3(Local bulk quotient–elimination commutativity).On          Ureg, as spacetime-local
+bulk functionals modulo the displayed total divergences generated byJ    1 andJ       3,
+
+                               LQEaff,on-shell        =L   EQaff,on-shell        = 3(∂f    1)22f  1   − (∂f 3)24f  2  .                           (6.15)
+
+The eliminate-first density is manifestly independent of V. Equality is a bulk identification. It
+does not classify projective charges, does not extend through singular branches, and does not
+supply a global gauge slice.
+
+Proof. The substitutions are written in Appendix G. On Ureg the horizontal system has the
+unique solution (5.29). Substituting into (5.8) produces the right-hand side of (6.15) by the
+Schur evaluation (5.21) together with (5.27); this is QE. For EQ, substitute (6.13) into the raw
+quadratic-plus-linear density (F.1). Every term involving V cancels by projective invariance of
+that density (Proposition 6.1), and the remaining expression coincides with (6.15). The two
+substitutions therefore agree as bulk densities. Identification uses the admitted currents (5.7).
+Whether those total divergences are retained, canceled, or discarded is a choice of variational
+boundary data, independent of any proper/improper classification ofξ(Appendix H).
+
+    The same bulk value is obtained for the representatives V =0, V =dχ, and V an arbitrary
+one-form. Representative independence of the bulk is therefore part of (6.15), not an extra
+assumption.
+
+
+                                                         11
+
+==== PDF PAGE 12 ====
+                               Figure 1: Commutative diagram for Theorem 6.3. Both arrows to the on-shell bulk density
+                               are explicit substitutions (Appendix G), equal as spacetime-local bulk functionals modulo the
+                               admitted IBP currentsJ   1,J3, onU    reg.
+
+                               6.6   Where the local and IBP hypotheses enter
+                               Manifest V-independence of the eliminate-first bulk density follows from exact projective
+                               invariance, equivalently the explicit absence of V  in the horizontal density.  On f1f2 ̸= 0,
+                               kerH   full =imG    x excludes additional gauge-invariant null directions and makes the horizontal
+                               quotient solve unique. Identification of the two bulk functionals uses (5.5)–(5.6) and discards
+                               ∂µ(√−g  (c1Jµ1+c3Jµ3))asavariational-boundaryconvention. Passagefromapointwisealgebraic
+                               orbit to a spacetime-local orbit uses smoothness of (fi,V) on a regular region. None of these
+                               steps is a global slice, and none classifies projective charges.
+
+                               7   Reduced action
+
+                               7.1   Bulk functional
+                               Collecting f1RLC, the on-shell affine density (6.15), and the affine-independent potential, one
+                               obtains                         "                                               #
+                                               Z
+                                      Sred =       d4x√−g        f1RLC+ 3(∂f    1)22f  1   − (∂f 3)24f  2   +U(ϕ)+admitted boundary.      (7.1)
+
+                               Theboundaryaddendumisoftheclass(5.7). Equation(7.1)isaspacetime-localbulkfunctional
+                               onU    reg, not a complete initial-boundary-value action.
+
+                               7.2   Coefficient functions of a scalar
+                               Iff  i =f   i(ϕ) andU=U(ϕ), then∂                                  µfi =f   ′i∂µϕand
+
+                                                                            KPal(ϕ)=    3(f   ′1)22f  1  ,                                                       (7.2)
+
+                                                                            Keff(ϕ)=    3(f   ′1)22f  1  − (f ′3)24f  2 .                                           (7.3)
+
+                               The reduced bulk Lagrangian then readsf          1RLC+K   eff(∂ϕ)    2+U(ϕ). The writing
+                                                                                        3 (∂f 1)2
+                                                                                        2    f1                                                             (7.4)
+                               is the same Palatini density as (7.2). The schematic ratio-square
+                                                                                        3 f′1   2                                                          (7.5)
+                                                                                        2   f1
+
+                                                                                           12
+
+
+
+    raw traces                  quotient                horizontal
+   (T,Q, eQ,A)                                           (q,u,t)
+
+
+
+eliminate                                                      eliminate
+
+
+raw solution orbit                                    on-shell bulk
+       (6.13)                   quotient                  (6.15)
+
+==== PDF PAGE 13 ====
+is not equivalent:  it differs from (7.2) by a factor 1/f1 and is not used.  The coefficient
+3(f′1)2/(2f1) is the generic Palatini kinetic contribution associated with eliminating an inde-
+pendent connection in f1R(Γ) [4, 7, 8]. Its presence here is reproduced structure, not a new
+Palatini identity.
+
+Proposition 7.1(Kinetic identification).The Palatini contribution generated by eliminating
+(q,u)is exactly   (7.2), equivalently (7.4).  The residue contribution generated by  (5.27) is
+−(f    ′3)2/(4f      2). Their sum isK     eff. In particular
+
+                                                    Keff ̸=Z   geom                                                      (7.6)
+
+as a theorem statement. Here Zgeom stands only for any geometric constitutive kinetic factor
+that one might wish to identify with the reduced coefficient; no such factor is supplied by the
+affine linear algebra, and none is identified withK        eff.
+
+7.3   Conditional scalar role
+If ϕ is varied as a dynamical field, the reduced scalar Euler–Lagrange equation is that of (7.1).
+If ϕ is a background argument of the coefficient functions, no scalar Cauchy problem is asserted.
+The two modes are not mixed. Auxiliary elimination does not, by itself, generate a constitutive
+predictivity theorem: it produces (7.1) on Ureg, and nothing further about the observational
+content ofK   eff.
+
+7.4   Main theorem
+Theorem 7.2(Exact local projective-affine reduction).Assume the trace/vector domain of
+Section 3, the projective law (4.1), metric-minimal matter, and the admitted IBP class of
+Assumption 4.4. OnU      reg ={f     1̸=0}∩{f    2̸=0}:
+
+ 1. the affine Hessian kernel is exactly the projective tangent, and the transverse Hessian is
+     invertible;
+
+ 2.affine solutions form one local orbit in the sense of Theorem 6.2;
+
+ 3.quotient and auxiliary elimination commute in the sense of Theorem 6.3;
+
+ 4.the reduced bulk functional is(7.1), with(7.2)–(7.3)whenf                                                   i =f   i(ϕ).
+
+The scalar role remains conditional. Signs f1 > 0,   f2 > 0, and   Keff > 0are not hypotheses.
+Deleted irreps remain outside the domain.
+
+8   Singular strata and limitations
+
+8.1   Four algebraic strata
+The vanishing of detH    ⊥ =−f    21f2/6 defines two hypersurfaces in coefficient space. Together
+they partition the problem into four strata. The horizontal system is
+
+                                        H⊥x+J=0,       x=(q,u,t)              T,                                      (8.1)
+
+with J as in (5.14). The classification below uses only this linear algebra: no division by f1 or
+f2 is performed until invertibility has been established.
+At D =4 the fibre multiplicities are therefore S1: rankH         full =12, dimkerH   full =4; S2: 4 and
+12; S3: 8 and 8; S4: 0 and 16. Source-compatibility statements are unchanged.
+
+
+                                                           13
+
+==== PDF PAGE 14 ====
+                                     Table 2: Regular versus singular strata of the affine Hessian, including source compatibility
+                                     of (8.1). Rankandnullitycolumnsarespecies-spacevaluesofthecoefficientmatrices. In D =4
+                                     the corresponding pointwise one-form-fibre ranks and nullities are obtained by multiplication
+                                     by four because gµν is nondegenerate. The reduced action of Theorem 7.2 exists only on S1.
+                                     The vertical coordinate V remains a projective gauge parameter on every compatible stratum.
+                                                 condition     rankspPrank  spH⊥ nullspHfull source /                       invariant          Thm. 7.2
+                                                                                                       existence            moduli
+                                          S1f    1̸=0,f   2̸=0       2             3               1        always solvable;none                     yes
+                                                                                                       uniquex
+                                          S2f    1 =0,f   2̸=0       0             1               3      ∂f  1 =0; else    if compatible:         no
+                                                                                                       none                 q,u;
+                                                                                                                            t=∂f     3/(2f      2)
+                                          S3f    1̸=0,f   2 =0       2             2               2      ∂f  3 =0; else    if compatible:         no
+                                                                                                       none                 t;q,uoft
+                                          S4f    1 =0,f   2 =0       0             0               4      ∂f  1 =∂f   3 =0; if compatible:         no
+                                                                                                       else none            q,u,t
+
+
+                                         On S1 the species kernel is exactly vertical, equivalently kerH   full =imG    x, and the reduced
+                                     action (7.1) exists. On S2, compatibility requires ∂f1 =0; if that holds, t=∂f3/(2f2) while
+                                     q and u remain invariant algebraic moduli, whereas ∂f1̸= 0 yields no stationary horizontal
+                                     solution. On S3, compatibility requires ∂f3 =0; if that holds, t is a gauge-invariant modulus
+                                     and (q,u) are determined as functions of t, whereas ∂f3 ̸= 0 yields no stationary solution.
+                                     On S4, compatibility requires ∂f1 = ∂f3 = 0; if that holds, (q,u,t) are horizontal moduli,
+                                     whereas otherwise there is no stationary solution.  Extra kernel on S2–S4 consists of these
+                                     invariant degeneracies: it is not additional projective gauge. No additional algebraic factor
+                                     of detH    ⊥ exists, and no regular proof step extends through S2–S4. Those branches are not
+                                     solved dynamically here.
+                                         Figure 2 maps the four regions.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     Figure 2: Regular branch S1 versus singular strata S2–S4 in the complete (f1,f2) coefficient
+                                     plane. Algebraic regularity is f1̸=0 and f2̸=0: S1 comprises all four open quadrants. The
+                                     vertical axis excluding the origin is S2; the horizontal axis excluding the origin is S3; the origin
+                                     is S4. No sign condition is imposed by the algebraic regularity theorem. Axes themselves are
+                                     excluded from Theorem 7.2.
+
+
+
+               f2
+
+
+                                                                                                14
+S1:U      reg         S1:U      reg
+
+                          S3               f1
+   S3      S4
+
+S1:U      reg         S1:U      reg
+
+==== PDF PAGE 15 ====
+8.2   Necessary counterexamples
+The hypotheses are sharp in the following sense (Appendix I).
+
+ •Iff     1 =0, Palatini invertibility fails, and∂f  1̸=0 makes (8.1) inconsistent.
+
+ •Iff     2 =0, residue invertibility fails, and∂f       3̸=0 makes (8.1) inconsistent.
+
+ •If the projective law is replaced by (a,b)=(1,0), the Ricci target (4.6) fails.
+
+ •If deleted irreps are treated as solved Hessian coordinates, the domain premise fails.
+
+8.3   Claim boundary
+The following remain outside Theorem 7.2.
+
+Table 3:  Scope and excluded sectors.  Excluded irreducible sectors lie outside the stated
+configuration space; they are neither proved to vanish nor removed by projective gauge
+symmetry.
+            Object or claim                                                         Classification
+            axial torsion                                                              excluded by truncation
+            tensor torsion                                                            excluded by truncation
+            traceless nonmetricity                                                excluded by truncation
+            higher affine irreps                                                    excluded by truncation
+            hypermomentum                                                       not covered
+            independent matter connection sources                     not covered
+            global gauge slice                                                      not claimed
+            Hamiltonian / covariant-phase-space charges ofξ     not analyzed
+            boundary-charge algebra                                           not classified
+            extension throughf               1 =0 orf    2 =0                            not claimed
+            mandatory scalar dynamics                                       conditional only
+            f1 >0,f       2 >0,K       eff >0                                             not hypotheses
+            ghost-freedom / energy stability                                not claimed
+            Keff =Z   geom                                                             identification not established
+            constitutive predictivity                                            not claimed
+            unrestricted metric-affine (64-component) theorem    not claimed
+
+     In particular, algebraic regularity is f1̸=0 and f2̸=0. Physical-stability inequalities are a
+different and absent theorem. Whether the displayed IBP divergences are retained as boundary
+data is a variational convention, not a charge classification.
+
+9   Discussion
+
+9.1   Gauge versus auxiliary nonuniqueness
+Raw traces (T,Q,eQ,A) split as (q,u,t|V   ). The vertical coordinate Vµ =Aµ parametrizes the
+projective orbit. The invariants (q,u,t) are not gauge-removable, yet on Ureg they are algebraic.
+In particular t = T−A      is projectively invariant and is solved by t⋆ = ∂f3/(2f2).  Gauge-
+invariant does not mean propagating. After elimination, fi(ϕ) and U(ϕ) remain constitutive
+data: auxiliary linear algebra does not fix them and does not identify Keff with a geometric
+factorZ           geom.
+     Theorem 6.3 is the finite-dimensional criterion 2.1 plus the evaluation kerH   full =imG    x on
+Ureg, equivalently kerH   full =span{e           V} in species space. Unrestricted necessity of commutativ-
+ity is not claimed: on-shellvaluescan agree for a special compatible source even if extra kernel
+
+
+                                                               15
+
+==== PDF PAGE 16 ====
+is present. Unique reduced elimination for every compatible source does require kerH    =imG   .
+Extra kernel, when it occurs, consists of gauge-invariant degeneracies.
+
+9.2   Fingerprint∆  2 = ∆3 = 0
+Palatini elimination does not renormalize the residue couplings: ∆2 = ∆3 = 0. Appendix J
+tests that fingerprint against the two-parameter quadratic deformation family (J.2), without
+altering the defining equations of (3.7).  The induced correction to the t-Schur coefficient
+is generically nonzero; both corrections vanish simultaneously only at (α,β) = (0,0).  An
+independent linear-source deformation is a separate supporting control and is not part of the
+proposition below. Thus ∆2 = ∆3 = 0 is a structural fingerprint of (3.7) within the tested
+family, not a claim about all conceivable symmetry-compatible operators.
+
+Proposition 9.1(Non-genericity of the residue fingerprint).Within the two-parameter fam-
+ily (J.2),∆ 2 = ∆3 = 0holds simultaneously only at the undeformed point.  The zeros are
+therefore classified as explicitly non-generic inside that family.
+
+9.3   Singular crossings off    i(ϕ)
+If fi =fi(ϕ), a locus f1(ϕ∗)=0 has ∂f1 =f′1(ϕ∗)dϕ. A generic crossing with f′1(ϕ∗)̸=0 and
+dϕ̸  =0 therefore violates the S2 compatibility condition ∂f1 =0 and yields no stationary affine
+solution. Only a source-compatible crossing can support the S2 moduli branch. On f2(ϕ∗)=0,
+compatibility is controlled by ∂f3 =0, not by ∂f2. This is an algebraic reading of Table 2; it is
+not a claim of dynamical singularity propagation or of cosmological pathology.
+
+9.4   Relation to metric-affine literature
+Projective Palatini gravity and Ricci-based MAG connection solutions are known [2, 3, 6, 9, 23].
+Palatini f(R) and the kinetic shift 3(F′)2/(2F) are known [4, 5, 7, 8]. Projectively invariant
+scalar-metric-affine models integrate the connection out to DHOST-type theories [10, 24].
+QuadraticMAGconstructionsoftensolvetheconnectionafterbreakingorotherwisecontrolling
+projective degeneracy [11, 13]. Unified Palatini treatments with torsion or nonmetricity give
+precise conditions for propagating versus algebraic distortion [25].  Auxiliary substitution
+commutativity [12] is the conceptual setting, not a substitute MAG proof. Table 4 records a
+positive-scope comparison of these sources. The related residue-lineage and reduction-order
+sources are discussed in the Introduction rather than in this MAG table.
+    Recent scalar-metric-affine work likewise eliminates an algebraic independent connection
+on a generic nondegenerate branch and encodes its response in an effective scalar kinetic
+function [26]. This application motivates the complementary structural question here: when is
+such elimination unique modulo projective gauge?
+    The condition kerH    =imG     is the general finite-dimensional auxiliary diagnostic used here.
+By contrast, detH    ⊥ =−f    21f2/6 and the exact realization of the projective gauge kernel hold
+for the stated trace/vector configuration space. Restoring omitted affine irreducible sectors
+would require a new Hessian analysis; this sector is not established as a dynamically consistent
+truncation of unrestricted 64-component MAG [1, 19].
+
+9.5   Auxiliary elimination is not predictivity
+Solving Γ and A produces (7.1). Ghost-freedom, f1 >0, and observational content are outside
+the theorem.  Global slices and Hamiltonian charges of projective transformations remain
+open [2].
+
+
+
+
+                                                        16
+
+==== PDF PAGE 17 ====
+Table 4: Positive-scope comparison of related metric-affine and substitution sources. Entries
+record established content in each work’s own setting. Related residue and reduction-order
+sources are discussed in the Introduction.
+       Work                   Affine setting       Principal                         Relation to the present
+                                                   reduction/connection result       question
+       Dadhich–              Palatini              Projective orbit of the           Projective equivalence
+       Pons [3]              Einstein–Hilbert      Palatini connection;              of Palatini gravity;
+                                                   Levi-Civita plus projective       independent of the
+                                                   mode                              present Hessian test
+       Alfonso et al. [9]  Ricci-based             Algebraic connection              Ricci-based algebraic Γ
+                             MAG                   solution with projective          solve; distinct
+                                                   invariance retained; torsion      configuration space
+                                                   role trivialized in the
+                                                   observables
+       Aoki–                 Scalar                Connection integrated out         Projective ghost
+       Shimada [10, 24]      metric-affine         to a projectively protected       protection after Γ
+                                                   scalar-metric theory              elimination; different
+                                                                                     operator content
+       Iosifidis             Solvable MAG     Explicit algebraic                     Algebraic Γ solvability
+       2019 [11]                                   connection solutions under        in a broader MAG class
+                                                   stated solvability criteria
+       Iosifidis             Quadratic MAG   Quadratic connection solve              Unique representative
+       2022 [13]                                   under nondegeneracy               after nondegeneracy
+                                                   hypotheses, often with            hypotheses
+                                                   controlled projective data
+       B¨ohmer–              Unified Palatini      Criteria distinguishing           Distortion-propagation
+       Jensko [25]           MAG                   algebraic versus                  tests in Palatini MAG
+                                                   propagating distortion
+       Pons 2010 [12]      Local field             Conditions under which            Conceptual setting of
+                             substitution          substituting fields in the        QE=EQ; not a MAG
+                                                   action commutes with the          model
+                                                   Euler–Lagrange problem
+       present work        Trace/vector            Exact projective kernel on        Species determinant
+                             residueT−A            the full one-form fibre;          detH    ⊥ and
+                                                   unique local orbit and            source-compatible
+                                                   QE=EQ onU    reg                  singular strata
+
+10   Conclusion
+
+Gauge nonuniqueness and auxiliary nonuniqueness need not coincide. For a local quadratic
+auxiliarydensity,invariancealongagaugedistributiontogetherwithkerH    =imG    isasufficient
+finite-dimensional reduction criterion: it yields a unique reduced solve, one affine gauge orbit,
+and equality of quotient-first and eliminate-first on-shell functionals. That organizing lemma
+is not the principal claim. In the metric-affine trace/vector model (3.7), the curvature and
+compensator targets select (4.1) within the adopted two-parameter family. On f1 ̸= 0 and
+f2̸=0 the species determinant is detH    ⊥ =−f    21f2/6, so the pointwise one-form-fibre kernel is
+exactly the projective gauge image. Affine solutions form one local orbit, QE=EQ holds as
+spacetime-local bulk functionals modulo the displayed currents J1 and J3, and the reduced
+functional is (7.1) with the standard Palatini kinetic term 3(f   ′1)2/(2f      1).
+    On S2 (f1 =0, f2̸=0), stationary affine solutions require ∂f1 =0; on S3 (f1̸=0, f2 =0),
+they require ∂f3 = 0; and on S4 (f1 = f2 = 0), both conditions are required.  Rank loss
+can thus mean source incompatibility or gauge-invariant algebraic moduli, not merely extra
+projective gauge freedom. These conclusions are local to the trace/vector configuration space;
+
+
+                                                          17
+
+==== PDF PAGE 18 ====
+they do not extend the regular reduced action through the singular strata or address projective
+charges, stability, or constitutive predictivity.
+
+A   Conventions and projective transformation
+
+This appendix reconstructs Table 1 and Proposition 4.1.
+
+A.1   Index conventions
+D = 4, signature (−,   +,+,+).  A(µν)     = (Aµν +Aνµ)/2 and A[µν]     = (Aµν −A   νµ)/2.  The
+curvature, Ricci, torsion, and nonmetricity definitions are (3.1)–(3.5).
+
+A.2   Trace map of the two-parameter family
+LetδΓ        λµν =aδ   λµξν +bδ   λνξµ andδg       µν =0. Then
+
+                                         δTλµν =(a−b)     δλµξν−δ   λνξµ,                                     (A.1)
+
+hence
+                          δTµ =δT    λλµ =(a−b)     Dξµ−ξ   µ=(D−1)(a−b)ξ                       µ.                     (A.2)
+AtD=4 this isδT=3(a−b)ξ. For nonmetricity,Q                           λµν =−∇   λgµν andδg=0 give
+
+                                          δQλµν =δΓ     ρλµgρν +δΓ     ρλνgµρ.                                       (A.3)
+
+WithδΓ           ρλµ =aδ   ρλξµ+bδ   ρµξλ,
+
+                                     δQλµν =a gλνξµ+g   λµξν+2bg  µνξλ.                                 (A.4)
+
+Contracting,
+
+                                     δQλ =g   µνδQλµν =(2a+2Db)ξ            λ,                                        (A.5)
+                                     δeQν =g   µλδQλµν =(D+1)a+2b       ξν.                                 (A.6)
+
+AtD=4 this is (4.4):
+                                     δQ=(2a+8b)ξ,       δ         eQ=(5a+2b)ξ.                                 (A.7)
+
+A.3   Linear Ricci coefficients
+In a local inertial frame the partial terms of (3.1) with Cλµν = aδλµξν +bδλνξµ give, after
+Ricci contractionR               αβ =R   λαλβ,
+                                       δRαβ∂ =b∂   αξβ +(−3a−b)∂                βξα.                                    (A.8)
+
+The quadratic remainder C·C    in the connection-difference identity is proportional to a in this
+family and vanishes identically at a = 0. The target δRµν =−2∂[µξν]  requires b =−1 and
+−3a−b     = 1.  Combined with a−b     = 1 from δT = +3ξ and with δA = +3ξ imposed, the
+unique solution isa=0,b=−1.
+
+A.4   Direct curvature variation ata= 0,b=−1
+Set Cλµν =−δ   λνξµ. Mixed Γ–C terms cancel pairwise and C·C    cancels by symmetry of ξµξν.
+The remainder is
+                             δRλρµν =∂   µCλνρ−∂   νCλµρ =−δ       λρ(∂ µξν−∂   νξµ),                        (A.9)
+henceδR          ρν =−2∂         [ρξν]  andδR=0, which is (4.10).
+
+                                                             18
+
+==== PDF PAGE 19 ====
+A.5   Alternative first-index shift under the present targets
+The pair (a,b)=(1,0) yields δT =+3ξ but δ(Q,eQ)=(2,5)ξ and b=0 in (4.5), so the Ricci
+target fails. It is a standard first-kind MAG writing elsewhere. Under the present targets it is
+not selected by the two-parameter family; it is not declared incorrect as a general convention.
+
+B   Trace-distortion inversion
+
+B.1   One-form ansatz
+On the trace-only sector, a metric-covariant tensor linear in a one-formv                 µ has the form
+
+                                   Nλµν[v]=aδ       λµvν +bδ   λνvµ+cg   µνvλ.                                 (B.1)
+
+An independent triple (a,b,c) is used for each ofT,Q, and         eQ.
+
+B.2   Trace map and inverse
+Let (t,q,r) be the reconstructed (T,Q,eQ) coefficients produced by one such v. Direct contrac-
+tion gives
+
+              t=(D−1)(a−b),       q=2(a+Db+c),       r=(D+1)(a+c)+2b.        (B.2)
+
+WithL=(D−1)(D+2)=D                                    2+D−2, inversion yields
+
+                                    a=      tD−1      + (D+1)q2L      − rL,
+
+                                    b=  (D+1)q2L      − rL,                                                        (B.3)
+
+                                    c=−        tD−1     − (D+3)q2L       + (D+1)rL     .
+
+B.3   Four-dimensional distortion
+At D =4, applying the inverse separately to unit T, Q, and eQ data produces (4.13). No other
+irrep enters.
+
+B.4   Horizontal change of basis
+In the ordered raw basis (T,Q, eQ,A) and horizontal basis (t,q,u,V),
+                                         t      1   0   0 −1         T   
+                                       q =  0   1   0   8/3  Q.                                     (B.4)
+                                          u          0   0   1   2/3        eQ
+                                         V           0   0   0    1         A
+
+The determinant is 1. The inverse is (4.15). The raw projective vector (3,−8,−2,3) is sent
+to (0,0,0,3). Any G∈GL     (3) acting on (q,u,t) multiplies detH    ⊥ by (detG    )2 and leaves the
+regular locusf      1f2 =0 unchanged.
+
+
+
+
+
+
+
+
+                                                           19
+
+==== PDF PAGE 20 ====
+C   Full curvature expansion
+
+C.1   Connection-difference identity
+With Γ ={}+N, the scalar curvature splits into RLC, a divergence built from traces of N,
+and a quadratic form inN. In components, writingNforN,
+
+                   R−R       LC = ¯∇µNµλλ−N   λλµ+g   ρνNλλκNκνρ−N   λνκNκλρ,              (C.1)
+
+up to the standard rearrangement that identifies the displayed divergence with ¯∇µWµ after
+the trace-only substitution.  (The identity is the contraction of (3.1) and does not use the
+projective law.)
+
+C.2   Substitution of the trace distortion
+Insert (4.13) and contract atD=4. The divergence coefficients are
+
+                                 Nµλλ−N   λλµ =−2T         µ−Q   µ+ eQµ =W    µ.                              (C.2)
+
+The quadratic polynomial is bilinear in (T,Q,eQ). Collecting T2, Q2, eQ2, T·Q   , T·  eQ, and
+Q·   eQproduces exactly the six coefficients
+                                       −2                                    ,                                      (C.3)
+                                           3,− 1172,+  118,− 23,+ 23,+ 29
+which is (5.1). There is no seventh trace structure and no remainder in this sector.
+
+C.3   Horizontal independence ofV
+Substitute (4.15). Then
+
+                        W=−2(t+V)−              q−   83V+u−    23V=−2t−q+u,                  (C.4)
+                        T2 =(t+V)         2,    Q2 =q−   83V2,   eQ2 =u−    23V2,                       (C.5)
+
+andlikewiseforthethreecrossterms. Expandingandusingthesixcoefficients, everymonomial
+containing V cancels. The quadratic form in (t,q,u) is identical to that in (T,Q,eQ). This is
+the second, trace-polynomial, proof ofδR=0.
+
+C.4   HessianH                   0
+LetQ(       q,u,t) denote the quadratic polynomial of (5.1) with (T,Q,eQ)7→(q,u,t). The Hessian
+matrix with respect to (q,u,t), treating metric contractions as the inner product, is
+                            ∂q∂qQ∂   q∂uQ∂   q∂tQ                −11/36   2/9 −2/3           
+                    H0 =    ∂u∂qQ∂   u∂uQ∂   u∂tQ=                   2/9      1/9    2/3     ,               (C.6)
+                               ∂t∂qQ ∂   t∂uQ ∂   t∂tQ                 −2/3    2/3 −4/3
+
+because ∂q∂q(−11/72q2)=−11/36, ∂u∂u(1/18u2)=1/9, ∂t∂t(−2/3t2)=−4/3, ∂q∂u(2/9q·
+u)=2/9,∂          q∂t(−2/3t·q)=−2/3, and∂                                   u∂t(2/3t·u)=2/3. This is (5.13).
+
+D   Palatini block, determinant, and inverse
+
+D.1   Source vector
+After (5.5)–(5.6) the linear bulk terms are
+
+                         −(∂f     1)·W−(∂f            3)·t=(∂f      1)·(2t+q−u)−(∂f                           3)·t,                   (D.1)
+
+                                                           20
+
+==== PDF PAGE 21 ====
+hence
+                                            J=  ∂f1,−∂f    1,2∂f   1−∂f   3T,                                      (D.2)
+which is (5.14).   The f2t2 term contributes diag(0,0,2f2) to the Hessian in the  12xTHx
+normalization.
+
+D.2   Determinant ofP
+From (5.15),
+               −11/36   2/9                       1−22 =−     11
+         det        2/9      1/9       =−1136       9        9           324−  481 =−     11324−  16324 =−     112.         (D.3)
+
+Thus detP=−f                 21/12, which is (5.16).
+
+D.3   Inverse
+The adjugate of the numerical matrix is
+                                  1/9   −2/9             .                    −4/3    8/3
+                                  −2/9 −11/36                (−1/12)=            8/3    11/3        ,                         (D.4)
+
+
+and scaling byf  −11   yields (5.17). Direct multiplication confirmsPP        −1   =I   2 onf    1̸=0.
+
+D.4q/usolve at fixedt
+Equation (5.18) isPq   N =−f       1ct−J     N withc=(−2/3,2/3)                       T andJ       N =(∂f 1,−∂f    1)T. Then
+
+                                                   −P   −1  JN =4r, r ,                                                 (D.5)
+                                               −P   −1  (f 1ct)= −83t,−   23t,                                         (D.6)
+
+withr=∂f              1/f1, which is (5.19).
+
+E   Schur calculation and complete affine solution
+
+E.1   Schur complement
+PartitionH           ⊥ as
+                               P    B                           −2/3
+                   H⊥ =        BT   C       ,       B=f       1   2/3       ,       C=f      1(−4/3)+2f            2.            (E.1)
+
+TheSchurcomplementinthetslotisSt =C−B     TP−1  B. Substituting (5.17)givesBTP−1  B =
+f1(−4/3), henceS                    t =2f  2. The effectivet-source after eliminatingq                         N is
+
+                           Jt,eff   =J   t−B   TP−1  JN =(2∂f    1−∂f   3)−2∂f       1 =−∂f       3.                     (E.2)
+
+Thet-independent remainder is
+
+                                          Lconst =−    12JTNP−1  JN = 3(∂f    1)22f  1   .                                     (E.3)
+
+
+This is (5.21). Consequently ∆2 =∆3 =0 and bf2 =f   2, bf3 =f   3.
+
+
+
+                                                                 21
+
+==== PDF PAGE 22 ====
+E.2   Residue solution and reconstruction
+Stt+Jt,eff   =0 is 2f2t−∂f     3 =0, hence (5.27) on f2̸=0. Combined with (5.19) this is (5.29).
+The raw reconstruction (6.13) follows from (4.15).
+
+E.3   On-shell distortion
+Insert T =s+V, Q=4r−  (8/3)(s+V), eQ=r−  (2/3)(s+V) into (4.13). All terms rearrange
+into                                  δλµrν +δ   λνrµ−g   µνrλ− 1
+                          Nλµν = 12                                      3δλν(s µ+V   µ),                       (E.4)
+whichis(6.14). TheV pieceisapurelast-indexshift: V7→V      +3ξ producesδNλµν =−δ   λνξµ.
+
+F   Full Hessian kernel
+
+F.1   Raw bulk density
+After the admitted integrations by parts, the affine bulk density in raw traces is
+
+            L=f      1Q(T,Q,   eQ)+(∂f     1)·(2T+Q−          eQ)+f       2(T−A)           2−(∂f     3)·(T−A),      (F.1)
+
+withQthe quadratic polynomial of          (5.1). Let X =(T,Q,eQ,A) and let Hraw be the Hessian
+of (F.1) with respect toX.
+
+F.2   Gauge inclusion
+Differentiating (F.1) along (3,−8,−2,3) yields zero identically, because that vector is the
+projective orbit of Lemma 4.2 andQtogether with         W =−2T−Q     + eQ are invariant, while
+T−Ais invariant. Thus
+                                       span{(3,−8,−2,3)}⊆kerH                                          raw.                                      (F.2)
+
+F.3   Converse on the regular locus
+In the invariant coordinates, L is independent of V  and equals (5.8). Therefore the species
+matrix is Hfull =diag(H⊥,0) and detH    ⊥ =−f    21f2/6. On Ureg, H⊥ is invertible, so kerH   full =
+span{e           V} and kerH   full = imG    x, which pulls back to the raw fibre kernel (6.11). This is the
+converse: no additional affine kernel exists in the present trace sector.
+
+F.4   Gauge identity
+The Noether identity associated with (4.1) is the vanishing of (6.12).  It holds off-shell as
+an identity among the raw Euler–Lagrange expressions of (F.1), and is equivalent to V-
+independence ofL.
+
+F.5   Singular enlargement
+On S2–S4, ranksp(Hfull) drops as in Table 2, so the kernel properly contains the projective
+tangent. Those extra null directions are not gauge: they are gauge-invariant degeneracies of the
+quadratic form at vanishing f1 or f2, matching the invariant moduli of Appendix I. Selecting a
+representative among them is a non-gauge restriction. They are excluded from Theorem 7.2
+rather than quotiented.
+
+
+
+
+
+                                                         22
+
+==== PDF PAGE 23 ====
+G   Explicit QE and EQ substitutions
+
+G.1   Quotient first
+OnU      reg,H⊥x+J=0 has the unique solution (5.29). Then
+                                        LQEaff,on-shell    = 12xT⋆H⊥x⋆+J   Tx⋆.                                      (G.1)
+Using the Schur factorization,
+
+         1
+         2xT⋆H⊥x⋆+J   Tx⋆ =L   const+ 12Stt2⋆+J   t,eff  ·t ⋆ = 3(∂f    1)22f  1    +f   2s2−(∂f     3)·s,       (G.2)
+withs=∂f              3/(2f      2). The last two terms are
+                             ∂f3    2−(∂f     3)·  ∂f3
+                         f2   2f  2                2f  2 = (∂f 3)24f  2  − (∂f 3)22f  2   =−   (∂f 3)24f  2  .                    (G.3)
+
+Hence
+                                         LQEaff,on-shell    = 3(∂f    1)22f  1   − (∂f 3)24f  2  .                                      (G.4)
+
+G.2   Eliminate first
+Substitute (6.13) into (F.1). Write T =s+V, Q=4r−  (8/3)(s+V), eQ=r−  (2/3)(s+V),
+A = V.  Every occurrence of V  inQ(     T,Q,eQ) and in 2T +Q−   eQ cancels by Appendix C,
+and T−A      = s is independent of V.  The remaining expression is a function of (r,s) only.
+Expanding,
+                            f1QV-free  +(∂f 1)·(2s+4r−r)+f                       2s2−(∂f     3)·s
+
+                                                                   = 3(∂f    1)22f  1   − (∂f 3)24f  2  ,                        (G.5)
+
+after using r = ∂f1/f1, s = ∂f3/(2f2), and the Palatini evaluation ofQon (     q,u) = (4r−
+8s/3, r−2s/3). Thus
+                                         LEQaff,on-shell    = 3(∂f    1)22f  1   − (∂f 3)24f  2  ,                                      (G.6)
+
+independent of V. The representatives V = 0, V = dχ, and V  arbitrary therefore yield the
+same bulk density.
+
+G.3   Admitted remainder
+The two substitutions are performed on the bulk densities after (5.5)–(5.6). They therefore
+agree modulo
+                                             ∂µ√−g(c       1Jµ1 +c   3Jµ3).                                           (G.7)
+Whether this remainder is retained, canceled, or discarded is a variational-boundary convention.
+Off shell, δJ1 = δJ3 = 0 for projectively inert spectators, so the remainder does not classify
+proper versus improper transformations (Appendix H).
+
+H   Boundary currents and IBP identification
+
+H.1   Currents actually used
+The integrations by parts in the proof are only (5.5) and (5.6). They generate
+                                          Jµ1 =f   1Wµ,       Jµ3 =f   3¯Tµ,                                        (H.1)
+withW         µ =−2T         µ−Q   µ+ eQµ and ¯Tµ =t   µ =T    µ−A   µ. No other surface current is invoked.
+
+                                                            23
+
+==== PDF PAGE 24 ====
+H.2   Admitted identification
+Two bulk functionals are identified when their difference is a total divergence of the linear span
+of J1 and J3. This is a definition of the admitted variational-boundary class, not a claim that
+all metric-affine boundary terms lie in that span, and not a classification of gauge charges.
+
+H.3   Off-shell projective invariance of the currents
+Under the adopted law (4.1),
+
+                                         δ(T,Q,   eQ,A)=(3,−8,−2,3)ξ                                       (H.2)
+
+holds off shell. Therefore
+
+                                 δt=δT−δA=0,                                                                  (H.3)
+                               δW=−2δT−δQ+δ               eQ=(−6+8−2)ξ=0.                           (H.4)
+
+Equivalently, the inverse chart (4.15) gives W =−2t−q    +u identically, with no V remainder.
+If the spectator coefficientsf   1 andf       3 are projectively inert,
+
+                                               δJµ1 =0,       δJ  µ3 =0                                               (H.5)
+
+off shell. Consequently
+                                                  nµδ(J    µ1 +J   µ3)=0                                                 (H.6)
+holds for every projective transformation of this class. That identity cannot distinguish proper
+from improper projective transformations.
+    Two distinct issues must therefore be kept separate.
+
+A. IBP / variational boundary treatment.Whether the displayed total divergence of
+J1 and J3 is retained, canceled, or discarded is a choice of boundary data for the variational
+problem. Theorem 6.3 identifies QE and EQ as spacetime-local bulk functionals modulo that
+divergence.
+
+B. Gauge charges / improper transformations.AHamiltonianorcovariant-phase-space
+analysis of charges carried by ξ is a separate question. It is not established here, and is not
+attempted.
+
+H.4   Tests
+
+                Test    Content                                                     Inside Theorem 7.2
+                A        bulk QE=EQ moduloJ        1,J3                     yes
+                B        retain, cancel, or discard the displayed            boundary data, not a hy-
+                        IBP divergence                                       pothesis
+                C        Hamiltonian  or  covariant-phase-space              no
+                        charge ofξ
+
+    No global boundary classification, charge algebra, or topological sector is claimed. The
+reduced functional (7.1) is not asserted to be a complete initial-boundary-value action without
+further boundary data.
+
+
+
+
+
+
+                                                            24
+
+==== PDF PAGE 25 ====
+H.5   Local versus global vocabulary
+
+        Claim                                        Scope
+        Palatini inverse                          field-space local, onU    reg
+        fibre kernel equals imG    x            field-space local, onU    reg
+        connection solve                         pointwise algebraic
+        orbit uniqueness                        field-space local and spacetime local, modulo (4.1)
+        QE=EQ                                   spacetime-local bulk functionals moduloJ        1,J3
+        reduced functional                     spacetime-local bulk plus admitted IBP remainder
+        global gauge slice                       not claimed
+        projective charges ofξ              not claimed
+        all gauges / all connections        not claimed
+
+I   Singular strata and counterexamples
+
+The following examples show that the hypotheses of Theorem 7.2 are necessary. They are not
+solutions of the singular dynamics. All statements start from H⊥x+J =0 with x=(q,u,t)
+andJ=(∂f           1,−∂f    1,2∂f   1−∂f   3)T, without dividing byf  1 orf    2.
+
+S1, f1̸=0,   f2̸=0.     ranksp(P)=2, ranksp(H⊥)=3, ranksp(Hfull)=3, nullsp(Hfull)=1. At
+D =4thefibrevaluesare rankH         full =12anddimkerH   full =4. ThesourceJ alwaysliesinthe
+image, and the unique horizontal solution is (5.29). The regular-locus theorem is unchanged.
+
+S2, f1 = 0,   f2̸= 0.     P = 0, ranksp(H⊥) = 1, ranksp(Hfull) = 1, nullsp(Hfull) = 3. At D = 4
+the fibre values are rank 4 and nullity 12.  The system collapses to ∂f1 = 0 together with
+2f2t = ∂f3.  Compatibility therefore requires ∂f1 = 0.  If ∂f1 ̸= 0, there is no stationary
+horizontal solution. If ∂f1 =0, then t=∂f3/(2f2) while q and u remain invariant algebraic
+moduli.  The extra kernel directions are these horizontal moduli together with the vertical
+gaugeV; they are not additional projective gauge.
+
+S3, f1 ̸= 0,   f2 = 0.     ranksp(P) = 2, ranksp(H⊥) = 2, nullsp(Hfull) = 2. At D = 4 the fibre
+values are rank 8 and nullity 8.  The Palatini block still determines (q,u) as functions of t.
+Substitutingintotheresiduerowyieldstheidentity−∂f   3 =0independentlyoft. Compatibility
+therefore requires ∂f3 = 0. If ∂f3 ̸= 0, there is no stationary solution. If ∂f3 = 0, then t is
+a gauge-invariant modulus and (q,u) are determined by t. The extra kernel is this invariant
+t-direction, not additional gauge.
+
+S4, f1 =f2 =0.     H⊥ =0, species kernel dimension four, fibre kernel dimension 16 at D =4.
+Compatibility is J =0, i.e. ∂f1 =0 and ∂f3 =0. If either fails, there is no stationary solution.
+If both hold, (q,u,t) are horizontal moduli andVremains vertical gauge.
+
+Alternative first-index shift under the present targets.The pair (            a,b)=(1,0) induces
+the trace map (3,2,5)ξ. It fails the Ricci target (4.6) and is not selected by Proposition 4.1.
+
+IBP remainder versus charges.The bulk density remains projectively invariant. Off shell,
+δJ1 =δJ3 =0 for inert spectators. The condition nµδ(Jµ1 +Jµ3)=0 therefore cannot classify
+proper versus improper transformations. Test C of Appendix H lies outside the theorem.
+
+
+
+
+
+
+                                                          25
+
+==== PDF PAGE 26 ====
+Deleted irreps as unknowns.Axial torsion, tensor torsion, and traceless nonmetricity are
+not coordinates of Hfull. Treating them as solved variables changes the domain rather than
+enlarging the kernel computation.
+    Noadditionalalgebraicfactorof detH    ⊥ appears. Theregularproofisnotextendedthrough
+S2–S4.
+
+J   Minimal deformation control of the residue fingerprint
+
+Thefollowingdeformationstesttheresiduefingerprint; thehorizontalsystemdefinedby (3.7)is
+left unchanged. A local deformation is calledsymmetry-compatiblewhen it is a diffeomorphism
+scalar constructed from the projectively invariant horizontal one-forms, at the same algebraic
+and derivative order as the undeformed quadratic density, and independent of the vertical
+coordinateV.
+    Write x=(q,u,t) and isolate the Palatini block P, mixing B, and residue coefficient C in
+the  12xTHxnormalization,
+                                            −2/3                             +2f  2,                                (J.1)
+                                  B=f       1  2/3     ,       C=f      1−43
+
+so that the t-Schur coefficient is St =C−B      TP−1  B. The undeformed value is St(0,0)=2f2,
+equivalently ∆2 =0.
+    Consider the nearby symmetry-compatible quadratic deformation
+
+                                             δLquad =αq·t+βu·t,                                           (J.2)
+
+with independent symbolic coefficients α,β. This shifts B7→B      +δB with δB =(α,β)T. Then
+
+                                  St(α,β)=C−(B+δB)                          TP−1  (B+δB).                                (J.3)
+
+Using (5.17) one findsB         TP−1  δB=     83α+    23βand
+
+                                δBTP−1  δB=f     −11      −43α2+ 163 αβ+    113 β2 .                              (J.4)
+
+Hence
+               δSt :=S    t(α,β)−S         t(0,0)=−         163 α−    43β−f    −11−43α2+ 163 αβ+    113 β2 .         (J.5)
+
+For each f1 ̸= 0, the zero locus of (J.5) is a plane conic of measure zero in the (α,β) plane.
+Off that conic, δSt̸=0, so ∆2 is corrected. In particular, the line β =−4α kills the linear part
+and yieldsδS           t =−36α           2/f1, which vanishes only atα=0.
+    The undeformed t-source Schur correction is Jt,eff   =−∂f   3, equivalently ∆3 =0. With (J.2)
+one obtains the extra term
+
+                                      Jt,eff  (α,β)=−∂f           3+ ∂f1f1 (4α+β).                                     (J.6)
+
+Thus ∆3 remains zero if and only if β =−4α. Combined with (J.5), both ∆2 =∆3 =0 hold
+simultaneously only at (α,β)=(0,0).
+    A minimal symmetry-compatible linear-source deformation JN 7→J    N +(εq,εu) produces,
+atδB=0,
+                                             δJt,eff   =− 83εq + 23εu.                                             (J.7)
+This vanishes if and only if εu =−4εq. A generic source deformation therefore yields a nonzero
+t-source Schur correction.
+    The fingerprint ∆2 =∆3 =0 is explicitly non-generic within the stated deformation family.
+These diagnostic deformations do not modify the defining equations of the model.
+
+                                                           26
+
+==== PDF PAGE 27 ====
+References
+
+ [1] Friedrich W. Hehl, J. Dermott McCrea, Eckehard W. Mielke, and Yuval Ne’eman. Metric-
+     affine gauge theory of gravity: Field equations, Noether identities, world spinors, and
+     breaking of dilation invariance.Physics Reports, 258(1-2):1–171, 1995.  doi:  10.1016/
+     0370-1573(94)00111-F.
+
+ [2] BernardJuliaandSebastianSilva. Currentsandsuperpotentialsinclassicalgauge-invariant
+     theories: I. local results with applications to perfect fluids and general relativity.Classical
+     and Quantum Gravity, 15(8):2173–2212, 1998. doi: 10.1088/0264-9381/15/8/006.
+
+ [3] Naresh Dadhich and Josep M. Pons. On the equivalence of the Einstein–Hilbert and the
+     Einstein–Palatini formulations of general relativity for an arbitrary connection.General
+     Relativity and Gravitation, 44:2337–2352, 2012. doi: 10.1007/s10714-012-1393-9.
+
+ [4] Thomas P. Sotiriou and Valerio Faraoni. f(R) theories of gravity.Reviews of Modern
+     Physics, 82(1):451–497, 2010. doi: 10.1103/RevModPhys.82.451.
+
+ [5] Gonzalo  J.  Olmo.    Palatini  approach  to  modified  gravity:   f(R)  theories  and  be-
+     yond.International Journal of Modern Physics D, 20(4):413–462, 2011. doi: 10.1142/
+     S0218271811018925.
+
+ [6] Damianos Iosifidis. Linear transformations on affine-connections.Classical and Quantum
+     Gravity, 37(8):085010, 2020. doi: 10.1088/1361-6382/ab778d.
+
+ [7] Thomas P. Sotiriou.  f(R) gravity and scalar–tensor theory. Classical and Quantum
+     Gravity, 23(17):5117–5128, 2006. doi: 10.1088/0264-9381/23/17/003.
+
+ [8] Tomi Koivisto and Hannu Kurki-Suonio.  Cosmological perturbations in the Palatini
+     formulation of modified gravity.Classical and Quantum Gravity, 23(7):2355–2371, 2006.
+     doi: 10.1088/0264-9381/23/7/009.
+
+ [9] Victor I. Alfonso, Cecilia Bejarano, Jose Beltr´an Jim´enez, Gonzalo J. Olmo, and Emanuele
+     Orazi.  The trivial role of torsion in projective invariant theories of gravity with non-
+     minimally coupled matter fields.Classical and Quantum Gravity, 34(23):235003, 2017.
+     doi: 10.1088/1361-6382/aa9151.
+
+[10] Katsuki Aoki and Keigo Shimada. Scalar-metric-affine theories: Can we get ghost-free
+     theoriesfromsymmetry?Physical Review D,100(4):044037,2019. doi: 10.1103/PhysRevD.
+     100.044037.
+
+[11] Damianos Iosifidis. Exactly solvable connections in metric-affine gravity.Classical and
+     Quantum Gravity, 36(8):085001, 2019. doi: 10.1088/1361-6382/ab0be2.
+
+[12] Josep M. Pons.   Substituting fields within the action:  Consistency issues and some
+     applications.Journal of Mathematical Physics, 51(12):122903, 2010.  doi:  10.1063/1.
+     3525242.
+
+[13] Damianos Iosifidis.  Quadratic metric-affine gravity:  solving for the affine-connection.
+     European Physical Journal C, 82(7):577, 2022. doi: 10.1140/epjc/s10052-022-10499-3.
+
+[14] Chien-Chih Chen. Guaranteed tensor luminality from symmetry: A PT-even Palatini
+     torsion framework.Symmetry, 18(1):170, 2026. doi: 10.3390/sym18010170.
+
+
+
+
+
+                                                      27
+
+==== PDF PAGE 28 ====
+[15] Chien-Chih Chen.  PT-projected projective Palatini gravity:  Two-derivative operator
+     basis, admissible equivalences, and a local IR residual.Preprints, 2026. doi: 10.20944/
+     preprints202601.0352.v1. Preprint; public v1 uses a different projective-index convention
+     from the present paper.
+
+[16] Chien-Chih Chen. Projected scalar green functions and Schur reduction of PT-symmetric
+     quaternionic principal-symbol deformations.Particles, 9(3):93, 2026.   doi:  10.3390/
+     particles9030093.
+
+[17] Mark J. Gotay, James M. Nester, and George Hinds. Presymplectic manifolds and the
+     Dirac–Bergmanntheoryofconstraints.JournalofMathematicalPhysics,19(11):2388–2399,
+     1978. doi: 10.1063/1.523597.
+
+[18] Jerrold Marsden and Alan Weinstein. Reduction of symplectic manifolds with symmetry.
+     Reports on Mathematical Physics, 5(1):121–130, 1974. doi: 10.1016/0034-4877(74)90021-4.
+
+[19] J. D. McCrea. Irreducible decompositions of nonmetricity, torsion, curvature and Bianchi
+     identities in metric-affine spacetimes.Classical and Quantum Gravity, 9(2):553–568, 1992.
+     doi: 10.1088/0264-9381/9/2/018.
+
+[20] Friedrich W. Hehl, G. David Kerlick, and Paul von der Heyde. On hypermomentum in
+     general relativity I. the notion of hypermomentum.Zeitschrift f¨ur Naturforschung A, 31
+     (2):111–114, 1976. doi: 10.1515/zna-1976-0201.
+
+[21] Thomas P. Sotiriou and Stefano Liberati. Metric-affine f(R) theories of gravity.Annals
+     of Physics, 322(4):935–966, 2007. doi: 10.1016/j.aop.2006.06.002.
+
+[22] Damianos Iosifidis and Tomi Koivisto. Scale transformations in metric-affine geometry.
+     Universe, 5(3):82, 2019. doi: 10.3390/universe5030082.
+
+[23] Antonio N. Bernal, Bert Janssen, Alejandro Jim´enez-Cano, Jos´e Alberto Orejuela, Miguel
+     S´anchez, and Pablo S´anchez-Moreno. On the (non-)uniqueness of the Levi-Civita solution
+     in the Einstein–Hilbert–Palatini formalism.Physics Letters B, 768:280–287, 2017. doi:
+     10.1016/j.physletb.2017.03.001.
+
+[24] Katsuki Aoki and Keigo Shimada.  Galileon and generalized Galileon with projective
+     invariance in a metric-affine formalism.Physical Review D, 98(4):044038, 2018.  doi:
+     10.1103/PhysRevD.98.044038.
+
+[25] ChristianG.B¨ohmerandErikJensko. Modifiedgravity: aunifiedapproachtometric-affine
+     models.Journal of Mathematical Physics, 64(8):082505, 2023. doi: 10.1063/5.0150038.
+
+[26] IlariaAndrei,DamianosIosifidis,LaurJ¨arv,andMargusSaal. Scalarfieldwithnonminimal
+     couplings to metric-affine geometry, 2026. arXiv:2609.07856 [gr-qc].
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                       28

@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                   doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   These are theunique Lorentz-covariant, algebraic (derivative-free) projectorsonto the three irreps in
+                   Equation (A12). A direct computation shows:
+                                      P(X)2 = P(X),        P(X)P(Y) = 0(X̸= Y),        P(T)+P(S)+P(q) = 1,                (A16)
+
+
+                   and the images obey by construction
+                                                      P(T)Tνµν = Tµ,          ϵµνρσP(T)T
+                                                                                                     νρσ = 0,
+                                                      P(S)Tνµν = 0,            ϵµνρσP(S)T                                               (A17)
+                                                                                                     νρσ = Sµ,
+                                                      P(q)Tνµν = 0,            ϵµνρσP(q)T
+                                                                                                     νρσ = 0.
+
+                   Orthogonality and quadratic split.
+                          With the scalar product(·,·),
+                        P(X)T, P(Y)T= 0   (X̸= Y),     T,T=P(T)T,P(T)T+P(S)T,P(S)T+P(q)T,P(q)T.
+
+                                                                                                                                            (A18)
+                   Using (A13)–(A15) one finds the standard quadratic identity
+
+                                                     TABCTABC  =  23 TµTµ +   124 SµSµ +  ˜qλµν ˜qλµν,                                     (A19)
+
+                   where we have denoted ˜q≡ P(q)T for thestandard normalization of the traceless piece.
+
+                   Normalization used in the main text.
+                          For later convenience—and to match the coefficient choice used in Section4—we rescale the
+                   traceless irrep by a constant factor anddefine
+
+                             qλµν ≡    1√2  ˜qλµν,       =⇒         TABCTABC  =  23 TµTµ +   124 SµSµ + 2qλµνqλµν.            (A20)
+
+                   The projectorformulas (A13)        –(A15)         are unchanged;only thebookkeeping name“q” forthe traceless
+                   imagecarriesthefixed√2factor.6 AfterapplyingΠPT[·] toeithersideof(A20)        ,thescalarismanifestly
+                   real (Theorem1).
+
+                   Appendix B.3. Compatibility With The Scalar Projector
+                          Theprojectors P(X) arealgebraicandcommutewithΠPT[·]atthescalarlevel: foranytwotorsions
+                    T,T′,
+                                          ΠPT(P(X)T)λµν(P(Y)T′)λµν= δXYΠPT(P(X)T)λµν(P(X)T′)λµν.                     (A21)
+
+                   Moreover, the mixed scalar TµSµ is PT-odd and is annihilated by ΠPT[·] (Section2.3).  Thus the
+                   orthogonal split (A18) remains valid as an identity between         projected, realscalars.
+
+                   Appendix B.4. Proposition B.1: Single-Vector No-Go For The Traceless Irrep
+                          We now formalize the statement invoked in Section4.1.
+
+                   PropositionA3(single-vectorno-go). Let vµ beanynonzerocovector. Thereisnononvanishingtensorof
+                   theform qλµν(v),linearin vµ,that(i) isantisymmetricinµ↔ν,(ii)obeys qνµν = qλµµ = 0,and(iii) satisfies
+                    ϵµνρσqνρσ = 0. Equivalently, the traceless irrep cannot be constructed from a single vector.
+
+
+                    6    ThisharmlessconventionmatchesEquation(4.13)ofthemaintext(positivitysplit)andsimplifiesafewnumericaldiagnostics;
+                       no physics depends on it.
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.

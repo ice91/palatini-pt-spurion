@@ -1,0 +1,22 @@
+{
+  "command": [
+    "/Library/Developer/CommandLineTools/usr/bin/python3",
+    "-m",
+    "pytest",
+    "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/tests",
+    "-q",
+    "-rs",
+    "--basetemp=/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/pytest_independent"
+  ],
+  "cwd": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+  "environment_overrides": {
+    "PYTHONDONTWRITEBYTECODE": "1",
+    "PYTHONPATH": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+    "MPLBACKEND": "Agg",
+    "MPLCONFIGDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/matplotlib",
+    "TMPDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/tmp"
+  },
+  "exit_code": 0,
+  "seconds": 1.5180869102478027,
+  "test_sha256": "a4a5fb8ae7b2f31c3e0c8734134788b8ccfde06007163abd6ec83729d1409ab4"
+}

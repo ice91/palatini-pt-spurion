@@ -1,0 +1,67 @@
+Symmetry2026,18, 170                                                                                                                   20 of 50
+
+
+
+                                   7.2. Hamiltonian Analysis and Degrees of Freedom
+                                         To complete our analysis, we verify that the theory is dynamically consistent and
+                                   propagates the correct number of degrees of freedom (DoF). We perform a Hamiltonian
+                                   analysis using the standard ADM (3 + 1) decomposition.
+
+                                   Constraint Analysis.
+                                         Thefullsetofconfigurationvariablesincludesthemetriccomponents(hij,N,Ni) and
+                                   thealgebraicfieldsassociatedwithtorsion. Theanalysisoftheconstraintstructurereveals
+                                   the following:
+                                   •      Primary Constraints: The lapse N and shift Ni are auxiliary fields, leading to the
+                                         primary constraintsπN ≈ 0 andπi≈ 0. The Lagrange multiplierΛµ that enforces the
+                                         trace lock is also non-dynamical, yielding pΛµ ≈ 0.
+                                   •      Secondary Constraints:  The algebraic nature of the Palatini equations of motion
+                                         (from varyingω) and the trace-lock constraint (from varyingΛµ) ensures that no new
+                                         propagatingmodesareintroduced. Theseconstraintsalgebraicallyeliminateallnon-
+                                         GR torsioncomponents (Sµ = 0,qλµν = 0) and fixthe trace component(Tµ = 3η∂µϵ).
+                                         ThepreservationofprimaryconstraintsintimegeneratesthestandardHamiltonian
+                                         and momentum constraints of GR,H≈ 0 andHi≈ 0.
+
+                                   Constraint Algebra and DoF Count.
+                                         Crucially, all constraintsrelated to thetorsion sector are algebraicand can besolved
+                                   explicitly, leaving no residual dynamics. On an admissible domain (A4), the remaining
+                                   constraints(πN,πi,H,Hi) form a first-class algebra identical to that of GR at this order.
+                                   A standard DoF count for the metric sector confirms that the theory propagates the correct
+                                   number of physical modes:
+
+                NDoF = 1(phase space variables)−2×(first-class constraints)= 1                    (6+6)−2×4= 2.
+                          2                                                                       2
+                                   The theory propagates precisely two degrees of freedom, corresponding to the two tensor
+                                   polarizationsofgravitationalwaves. Thisisconfirmednumericallybydiagonalizingthe
+                                   kinetic kernel and counting the number of nonzero eigenvalues, as shown in Figure10.
+                                         Figure10presentstheeigenvaluespectrumofthequadratickinetickernel,confirming
+                                   two physical propagating modes across representative backgrounds.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Figure 10. DoF spectrum (eigenvalue stem plot). Eigenvalues of the quadratic kinetic kernel after
+                                   integratingoutnon-propagatingvariables. Thecountofeigenvaluesabovethe numericaltolerance
+                                   (deg_tol)tracksthenumberofphysicaldegreesoffreedom,#phys≈ 2,acrossarangeofbackground
+                                   configurations. This confirms the absence of extra propagating modes at quadratic order. (Code:
+                                   fig_c3_degeneracy.py).
+
+
+
+                                                                                                         https://doi.org/10.3390/sym18010170

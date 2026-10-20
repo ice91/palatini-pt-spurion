@@ -1,0 +1,75 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                 doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                     13 of 48
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure4. Alignment-anglediagnostic. Distributionof thealignmentangleθ betweenthe torsiontrace Tµ and
+                   ∂µϵ, cosθ ≡ Tµ∂µϵ/√T2p(∂ϵ)2.  The uniqueness map (22)      predicts θ ≃ 0 up to finite-domain/boundary
+                   remainders. [nb: fig_c1_alignment.py].
+
+                   Corollaries, Scope, and Order-of-Operations Reminder
+                        Corollary (basis reduction). With S=q=0 and Tµ = 3η∂µϵ, the first-order closure basis of Sec-
+                   tion3.4collapses to        {IT,Σϵ} modulo a total derivative.
+                        Scope and failure modes. Violations of A2 (orientation/[PT ,∗]=0) or A4 (boundary/topology)
+                   can obstruct projector selection rules or boundary improvements globally;  see Appendix B for
+                   representation-theoretic caveats and Appendix A for boundary notes.  None affect the main (C1)
+                   statement on admissible patches.
+                        Order of operations.  The trace lock (26)      is an algebraic constraint introduced at the level of
+                   equationsofmotion(orviaLΛ);itisnota PT projectionandintroducesnonewcanonicalpairs. The
+                   pipeline used throughout Sections5–9is:
+
+                             (i) enumerate & project ⇒  pre-lock basis{I1,I2,I3}
+                                                           =⇒ (ii) impose trace lock/C1 ⇒ I37→ 3ηΣϵ, use{IT,Σϵ}.
+
+                   5. Three-Chain Equivalence (C2)
+                   Scope. Throughoutthissection,“equivalence”meansquadratic-orderbulkequalitymoduloimprovement
+                   currents;nonon-perturbativeorall-orderequivalenceisclaimed. AllstatementsarewithinA1–A6and
+                   the scalar-PT observable sector, andafter implementing C1.
+
+                        We adopt the sign-compensated (“σϵ”) scheme throughout C2: all rank-one bulk reductions are
+                   writtenintermsofsgn(Σϵ)IT ≡ σϵIT sothatpatcheswithΣϵ < 0arehandleduniformly,sgn(Σϵ)IT =
+                   −6η2|Σϵ|.
+                        Weprovethatthreeostensiblydifferentquadraticroutes—(i)arank-onedeterminantroutebuiltout
+                   of the canonical traceless matrixT µν, (ii) a closed-metric rank-one deformation, and (iii) the PT-even
+                   shadow extracted from the CS/Nieh–Yan chain— collapse, after C1 and projection, to the same bulk
+                   invariant A⋆√−g sgn(Σϵ)IT up to a total derivative. Differences are carried entirely by improvement
+                   currents∇µJµ (explicit FRW/weak-field representatives are listed in Appendix C).2
+
+                                                                                                                   q
+                   2    Weuse“rank-onedeterminantroute”(formerly“DBI”-type)todenotethevolumedeformation              det[1+(23)λτT] inour
+                      posture; this is notBorn–Infeld gravity.
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

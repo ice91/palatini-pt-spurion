@@ -1,0 +1,63 @@
+Symmetry2026,18, 170                                                                                                                             8 of 50
+
+
+
+                                      operations”explicit: project(atthelevelof densities),thenvary(Lemma1),thensolvefor
+                                      torsion (C1), then reduce.
+
+                                      3.2. Two-Stage Closure: Pre-Lock Basis and Post-Lock Collapse
+                                      Pre-lock basis (before solving for torsion).
+                                            A complete and minimal quadratic basis in the PT-even sector can be chosen as
+                                     (see [20] for the rigorous proof of completeness).
+
+                                       Pre-lock basis:     I1≡ΠPTTABCTABC,    I2≡Σϵ≡ΠPT(∂ϵ)2,    I3≡ΠPTTµ∂µϵ.  (9)
+
+                                     Thischoiceisconvenientbecauseitisolatestheonlymixingdensity I3 thatcancorrelate
+                                      the torsion trace with the spurion gradient before any equations of motion are used.
+                                      Importantly, the spurion limit (A6) means ϵ is held fixed in the variational principle;
+                                      the torsion equations of motion arise from varyingω (Section2.9).
+
+                                      Post-lock collapse (after solving for torsion).
+                                            The torsion equations in Section4yield the algebraic alignment (Result C1)
+
+                                                                                       Tµ = 3η∂µϵ,                                                             (10)
+
+                                     withallothertorsionirrepseliminatedintheobservablesector. Substituting (10)      intothe
+                                      basis elements collapses the pre-lock space:
+
+                                                                                 I3    C1−−→ 3ηΣϵ = 3η I2,                                                     (11)
+
+                                      and, correspondingly, the torsion-quadratic scalar becomes proportional toΣϵ. For later
+                                      convenience, we define the sign convention
+
+                                                                          IT ≡−ΠPTTABCTABC = −I1.                                           (12)
+
+                                     Thus, at two-derivative quadratic order, the post-lock observable sector is effectively one-
+                                      dimensional, spanned byΣϵ (equivalently IT).
+
+                                      Lemma 2 (Two-stage closure). Under A1–A5, any PT-even quadratic scalar density built from
+                                     (Tµ,∂µϵ) with at most one derivative per factor reduces (up to a total divergence) to a linear
+                                      combinationof{I1,I2,I3}. Afterimposingthetorsionsolution(C1), theobservablesectorcollapses
+                                      to a single independent invariant.
+
+                                      3.3. Action Skeleton and the Order of Operations
+                                            Atthisorder,themostgeneralbulkactionconsistentwiththeposturecanbewritten
+                                      in the pre-lock basis as
+                                                                     Z              hM2Pl                                       i
+                                                           Sbulk =       d4xp−g         2   R(e,ω)+α1 I1+α2 I2+α3 I3             ,                       (13)
+
+                                     withrealcoefficientsα1,2,3. Varying(13)      withrespecttoω yieldsalgebraictorsionequations
+                                     (Section2.9),whosesolutionimplies                    (10)     . Substitutingthesolutionbackproducesapost-
+                                      lock effective action depending on a single LO scalar,
+                                                         Z              hM2Pl                      i                                     I1
+                                       S(post−lock)bulk         =d4xp−g    2   R(e,ω)+αeffΣϵ        ,       αeff≡ α2+3ηα3+α1             Σϵ   C1. (14)
+
+
+
+
+
+
+
+
+
+                                                                                                                https://doi.org/10.3390/sym18010170

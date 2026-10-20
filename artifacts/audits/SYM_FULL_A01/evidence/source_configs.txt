@@ -1,0 +1,74 @@
+
+===== configs/coeffs/closed.json =====
+1: {
+2:   "I_T": 0.125,
+3:   "Seps": 0.0
+4: }
+
+===== configs/coeffs/cspp.json =====
+1: {
+2:   "I_T": 0.125,
+3:   "Seps": 0.0
+4: }
+
+===== configs/coeffs/dbi.json =====
+1: {
+2:   "I_T": 0.125,
+3:   "Seps": 0.0
+4: }
+
+===== configs/coeffs/mixing_matrix_FRW.json =====
+1: {
+2:   "N":    { "ROD": 0.75, "CM": -0.50 },
+3:   "divN": { "ROD": 0.20, "CM": -0.13333333333333333 }
+4: }
+
+===== configs/paper_grids.yaml =====
+1: # configs/paper_grids.yaml
+2: seed: 42
+3: dtype: float64
+4: 
+5: tolerances:
+6:   sym_zero: 1.0e-12
+7:   num_zero: 1.0e-10
+8: 
+9: grids:
+10:   c2_scan:
+11:     # IBP 門檻掃描（logspace）
+12:     thresholds_exp: [-14, -9, 26]   # start, stop, num -> logspace
+13:   ct:
+14:     # k 掃描（論文圖 4/5 的代表）
+15:     kmin: 1.0e-4
+16:     kmax: 1.0e-1
+17:     n: 128
+18: 
+19: spurion:
+20:   # Π_PT[(∂ε)^2] 的代表量級（數值繪圖用途）
+21:   seps_scale: 0.2
+22: 
+23: waveform:
+24:   T: 200.0
+25:   dt: 0.1
+26:   f0: 0.05
+27: 
+28: nlo:
+29:   coeffs:
+30:     gradT_sq_eff: 1.0
+31:     Ricci_deps_deps_eff: 0.3
+32:     Lambda2: 1.0e6
+33:   k:
+34:     min: 1.0e-3
+35:     max: 1.0e-1
+36:     n: 200
+37: 
+38: flux:
+39:   sigma: 1.0
+40:   c: 0.5
+41:   R:
+42:     min: 5.0
+43:     max: 80.0
+44:     n: 60
+45: 
+46: output:
+47:   dir: figs
+48:   keep_intermediate: true

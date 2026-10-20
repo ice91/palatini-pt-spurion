@@ -1,0 +1,67 @@
+      Symmetry2026,18, 170                                                                                                                        3 of 50
+
+
+
+                                          •      Known/standardingredients: first-ordervariationalmethodsingravity[11];Riemann–
+                                                Cartan torsion decomposition and torsionful gravity foundations [12–14];  post-
+                                                GW170817 luminality constraints and EFT framing [4–8].
+                                          •      This paper’s new contributions (quadratic and falsifiable):
+                                                C1      a uniqueness map enforcing a pure-trace torsion alignment Tµ ∥ ∂µϵ under
+                                                        the posture (A1–A6) (see [20] for the proof of uniqueness among all admissible
+                                                        2-derivative operators);
+                                                C2      athree-routebulkequivalencebetweendistinctconstructions,holdingmodulo
+                                                        boundary terms;
+                                                C3      a coefficientlockingmechanism yielding K = G inthequadratictensoraction
+                                                        and thus cT = 1 by construction(without parameter tuning);
+                                                NLO a symmetry-consistent operator basis at four-derivative order that isolates
+                                                        the unique source of luminality breaking, leading to a sharp dispersion target
+                                                        testable with multi-band GW data.
+
+                                          Quadratic luminality: Symmetry-selected locking.
+                                                Withintheaboveposture,thelogicalchainissummarizedinFigure1. ThePTselection
+                                          and projective structure constrain torsion to a unique pure-trace form (C1), enable bulk
+                                          equivalencesbetweenthreeconstructionroutesupto∇µJµ (C2),andculminateinalocking
+                                          condition that enforces K = G and hence exact luminality cT = 1 (C3).  The key point
+                                          is structural: luminality arises from consistency in the quadratic tensor sector, not from
+                                          tuning of free parameters.
+
+
+
+
+
+
+
+
+
+                                          Figure 1.  Roadmap of the quadratic analysis (bulk-only).  The scalar PT projector (Theorem1)
+                                          definestheallowedobservablesector. ProjectiveinvarianceisrealizedviaTµ = Tµ−∂µϵ. (C1)The
+                                          posture enforces a pure-trace torsion aligned with the spurion gradient (Section4, Equation                 (16)     ).
+                                          (C2)Itestablishesthebulkequivalenceofthreeconstructionroutesuptoboundaryterms(Section5,
+                                          Equation(28)     ). (C3)AlockingconditionthenyieldsK = GandthuscT = 1byconstruction(Section6,
+                                          Equation (39)).
+
+                                          Falsifiable NLO signature and uniqueness at four derivatives.
+                                                The leading deviation from luminality is pushed to next-to-leading order (NLO),
+                                          taking the universal EFT form
+
+
+                                                                       δc2T(k) ≡  c2T(k)−1 =  b k2Λ2       (k≪Λ),                                    (2)
+
+                                          where k is the wavenumber and Λ is the effective scale of new physics.  Crucially, in
+                                          the symmetry-restricted four-derivative operator basis, only one operator direction gener-
+                                          ates a genuine K̸= G mismatch in the transverse-traceless reduction: the Weyl-squared
+                                          term. Allother admissiblefour-derivativescalars eitherrenormalize K and G inlockstep
+                                          (preserving luminality) or reduce, under the admissible equivalences (A4–A5), to bound-
+                                          ary/improvementstructures. This“single breakingdirection” makesthe NLOprediction
+                                          technicallystable and model-selective: anyradiative destabilizationof cT = 1must enter
+                                          throughthesamek2-suppressedchannel. Weprovideanoperator-by-operatorTTreduction
+                                          to audit this claim (see AppendixHfor the complete accounting). A detection (or robust
+
+
+
+     ΠPT                           C1                           C2                           C3
+scalar projector          pure-trace Tµ∥ ∂µϵ           ROD≡ CM≡ CS+                  locking⇒ cT = 1
+                                                                                                                  https://doi.org/10.3390/sym18010170
+
+
+                                              Bulkequalitiesholdmodulo∇µJµ (A4–A5).

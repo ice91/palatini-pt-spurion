@@ -1,0 +1,86 @@
+[
+  {
+    "label": "baseline",
+    "command": [
+      "/Library/Developer/CommandLineTools/usr/bin/python3",
+      "-m",
+      "pytest",
+      "-q",
+      "-rs",
+      "--basetemp=/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/pytest_baseline"
+    ],
+    "cwd": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+    "environment_overrides": {
+      "PYTHONPATH": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "MPLBACKEND": "Agg",
+      "MPLCONFIGDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/matplotlib",
+      "TMPDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/tmp",
+      "PATH": "/Library/Developer/CommandLineTools/usr/bin:/Users/rocky/.codex/packages/app-server-daemon/releases/0.163.0-aarch64-apple-darwin/codex-path:/Users/rocky/.local/bin:/Users/rocky/.local/bin:/Users/rocky/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/opt/homebrew/bin:/Users/rocky/.codex/tmp/arg0-macos/codex-arg0iR9qHR:/Users/rocky/.codex/packages/app-server-daemon/releases/0.163.0-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg01Xt1fp:/Users/rocky/.codex/packages/app-server-daemon/releases/0.162.1-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg0WufJRy:/Users/rocky/.codex/packages/app-server-daemon/releases/0.161.0-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg0QY0nu4:/opt/homebrew/Caskroom/codex/0.160.0/codex-path:/Users/rocky/.local/bin:/opt/homebrew/sbin"
+    },
+    "extra": {},
+    "exit_code": 0,
+    "seconds": 10.930570840835571
+  },
+  {
+    "label": "paper_test",
+    "command": [
+      "make",
+      "paper-test"
+    ],
+    "cwd": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+    "environment_overrides": {
+      "PYTHONPATH": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "MPLBACKEND": "Agg",
+      "MPLCONFIGDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/matplotlib",
+      "TMPDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/tmp",
+      "PATH": "/Library/Developer/CommandLineTools/usr/bin:/Users/rocky/.codex/packages/app-server-daemon/releases/0.163.0-aarch64-apple-darwin/codex-path:/Users/rocky/.local/bin:/Users/rocky/.local/bin:/Users/rocky/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/opt/homebrew/bin:/Users/rocky/.codex/tmp/arg0-macos/codex-arg0iR9qHR:/Users/rocky/.codex/packages/app-server-daemon/releases/0.163.0-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg01Xt1fp:/Users/rocky/.codex/packages/app-server-daemon/releases/0.162.1-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg0WufJRy:/Users/rocky/.codex/packages/app-server-daemon/releases/0.161.0-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg0QY0nu4:/opt/homebrew/Caskroom/codex/0.160.0/codex-path:/Users/rocky/.local/bin:/opt/homebrew/sbin"
+    },
+    "extra": {
+      "PALPT_REQUIRE_REAL_APIS": "1"
+    },
+    "exit_code": 2,
+    "seconds": 0.0227508544921875
+  },
+  {
+    "label": "mixing",
+    "command": [
+      "make",
+      "mixing",
+      "PYTHON=/Library/Developer/CommandLineTools/usr/bin/python3"
+    ],
+    "cwd": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+    "environment_overrides": {
+      "PYTHONPATH": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "MPLBACKEND": "Agg",
+      "MPLCONFIGDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/matplotlib",
+      "TMPDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/tmp",
+      "PATH": "/Library/Developer/CommandLineTools/usr/bin:/Users/rocky/.codex/packages/app-server-daemon/releases/0.163.0-aarch64-apple-darwin/codex-path:/Users/rocky/.local/bin:/Users/rocky/.local/bin:/Users/rocky/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/opt/homebrew/bin:/Users/rocky/.codex/tmp/arg0-macos/codex-arg0iR9qHR:/Users/rocky/.codex/packages/app-server-daemon/releases/0.163.0-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg01Xt1fp:/Users/rocky/.codex/packages/app-server-daemon/releases/0.162.1-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg0WufJRy:/Users/rocky/.codex/packages/app-server-daemon/releases/0.161.0-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg0QY0nu4:/opt/homebrew/Caskroom/codex/0.160.0/codex-path:/Users/rocky/.local/bin:/opt/homebrew/sbin"
+    },
+    "extra": {},
+    "exit_code": 0,
+    "seconds": 0.24517297744750977
+  },
+  {
+    "label": "paper",
+    "command": [
+      "make",
+      "paper",
+      "PYTHON=/Library/Developer/CommandLineTools/usr/bin/python3"
+    ],
+    "cwd": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+    "environment_overrides": {
+      "PYTHONPATH": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy",
+      "PYTHONDONTWRITEBYTECODE": "1",
+      "MPLBACKEND": "Agg",
+      "MPLCONFIGDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/matplotlib",
+      "TMPDIR": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/runtime/tmp",
+      "PATH": "/Library/Developer/CommandLineTools/usr/bin:/Users/rocky/.codex/packages/app-server-daemon/releases/0.163.0-aarch64-apple-darwin/codex-path:/Users/rocky/.local/bin:/Users/rocky/.local/bin:/Users/rocky/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/opt/homebrew/bin:/Users/rocky/.codex/tmp/arg0-macos/codex-arg0iR9qHR:/Users/rocky/.codex/packages/app-server-daemon/releases/0.163.0-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg01Xt1fp:/Users/rocky/.codex/packages/app-server-daemon/releases/0.162.1-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg0WufJRy:/Users/rocky/.codex/packages/app-server-daemon/releases/0.161.0-aarch64-apple-darwin/codex-path:/Users/rocky/.codex/tmp/arg0/codex-arg0QY0nu4:/opt/homebrew/Caskroom/codex/0.160.0/codex-path:/Users/rocky/.local/bin:/opt/homebrew/sbin"
+    },
+    "extra": {},
+    "exit_code": 2,
+    "seconds": 1.2448859214782715
+  }
+]

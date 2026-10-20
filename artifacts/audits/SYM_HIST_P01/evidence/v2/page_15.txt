@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                 doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                    14 of 48
+
+
+
+                   5.1. Preliminaries: Canonical Rank-One Objects and Normalization
+
+                        RecallΣϵ≡ΠPT(∂ϵ)2, ˆnµ≡   ∂µϵp|Σϵ|, and the dimensionless, traceless rank-one matrix
+
+
+                                            T µν≡ sgn(Σϵ)       ˆnµˆnν− 14δµν   ,        TrT = 0,    Tr(T 2)=  34,                              (31)
+
+                   together with the dimension-one spurion scale (after C1),
+                                                                                           q
+                                                            τ≡ ˆnµTµ  =  3η sgn(Σϵ)          |Σϵ|.                                                     (32)
+
+                   Key relation.
+
+                                  τ2 = 9η2|Σϵ|= 32(−sgn(Σϵ)IT),        sgn(Σϵ)IT ≡ sgn(Σϵ)IT =−6η2|Σϵ|.                (33)
+
+                   5.2. Three One-Line Propositions (NY Split→∗ & Projection→ Coefficient Match)
+                   Proposition 7 (NY split).  TA∧TA = NY+eA∧eB∧RAB with NY≡ d(eA∧TA).
+
+                   Proposition 8 (PT-even shadow after∗ and projection). Under A2, the combined PT preserves orientation
+                   andsatisfies[PT ,∗]= 0. Applying∗ toProposition7andprojectingtoscalars,theterm           ∗NYcontributesonly
+                   asaboundaryconvention(A5),whiletheremaining PT-evenbulkpiecereduces,atquadraticorderandafter
+                   C1, to
+                                            δ2LCS+ = A⋆p−g sgn(Σϵ)IT+∇µJµCS+    for some A⋆∈R.
+
+                   Proposition 9 (Coefficient match under the σϵ scheme).  With TrT  =  0, Tr(T 2)  =   3q                    4, and τ  =
+                   3η sgn(Σϵ)p|Σϵ|, both (i) the rank-one determinant route               det[1+(23)λτT] and (ii) the closed-metric
+                   deformation ˜gµν = gµν+(23)λτ ˆnµˆnν yield the same quadratic bulk coefficientδ2L = A⋆√−g sgn(Σϵ)IT
+                   with A⋆ = λ2/8.
+
+                  Proof (paper-level).   Expand pdet(⊮+X)  =  1+  12TrX +  18[(TrX)2− 2TrX2]+O(X3);  with X  =
+                  (23)λτT , TrT  =  0 gives δ2pdet(⊮+X)  = −14Tr(X2)  = −14(49)λ2τ2Tr(T 2)  = −λ2τ2/12.   Us-
+                   ing (33)     , δ2L = √q−g(λ2/8) sgn(Σϵ)IT.  The closed-metric route has the same Jacobian √−˜g =
+                   √−g      det[⊮+(2
+                                       3)λτT], hence the identical coefficient.
+
+                   5.3. Quick Derivations (ROD/CM/CS+)
+                        Rank-one determinant (rank-one determinant route).
+                                       q
+                     LROD =p−g             det1+ 23λτT−1            =⇒   δ2LROD = A⋆p−g sgn(Σϵ)IT , A⋆ = λ2/8                     .   (34)
+
+                                                                                                 q
+                        Closed-metric route. ˜gµν = gµν+ 23λτ ˆnµˆnν⇒√−˜g=√−g                       det[1+ 23λτT], so
+
+
+                                                     δ2LCM = A⋆p−g sgn(Σϵ)IT , A⋆ = λ2/8                  .                                         (35)
+
+                        PT-even CS/Nieh–Yan shadow. By Proposition8,
+
+                                              δ2LCS+ = A⋆p−g sgn(Σϵ)IT + ∇µJµCS+,  A⋆ = λ2/8                     .                               (36)
+
+                        Bulk identity (summary).
+                              δ2LROD ≡ δ2LCM ≡ δ2LCS+ ≡  A⋆p−g sgn(Σϵ)IT   (mod∇µJµ), A⋆ = λ2/8                                   .       (37)
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

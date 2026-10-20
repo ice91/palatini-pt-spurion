@@ -1,0 +1,61 @@
+{
+  "all_pass": true,
+  "count": 22,
+  "checks": {
+    "boost_is_lorentz": true,
+    "modular_boost_generator": true,
+    "parent_EL_is_wave": true,
+    "coherent_mean_solves_wave": true,
+    "stress_energy_conservation": true,
+    "initial_energy_from_shift": true,
+    "initial_momentum_zero": true,
+    "normal_ordered_quadratic_shift": true,
+    "perturbation_normalized": true,
+    "fixed_reference_deltaK": true,
+    "noncommuting_eigenvalues": true,
+    "nontrivial_first_law": true,
+    "relative_entropy_stationary": true,
+    "relative_entropy_positive_hessian": true,
+    "hessian_equals_log_frechet_metric": true,
+    "diagonal_first_law": true,
+    "diagonal_relative_entropy_quadratic": true,
+    "coherent_modular_field_generator_at_t0": true,
+    "coherent_modular_momentum_generator": true,
+    "one_particle_total_energy": true,
+    "one_particle_right_modular_energy": true,
+    "compact_packet_integrals_finite_and_even": true
+  },
+  "expressions": {
+    "boost_matrix": "Matrix([[cosh(eta), sinh(eta)], [sinh(eta), cosh(eta)]])",
+    "modular_flow_parameter": "eta=-2*pi*s",
+    "coherent_solution": "lambda*(f(-t + x) + f(t + x))/2",
+    "coherent_energy_density": "lambda**2*Subs(Derivative(f(_xi_1), _xi_1), _xi_1, x)**2/2",
+    "rho_epsilon": "Matrix([[16/21 - epsilon, epsilon, 0], [epsilon, epsilon + 4/21, 0], [0, 0, 1/21]])",
+    "rho_eigenvalues": [
+      "sqrt(epsilon**2 + (2/7 - epsilon)**2) + 10/21",
+      "10/21 - sqrt(epsilon**2 + (2/7 - epsilon)**2)",
+      "1/21"
+    ],
+    "deltaK_regulator": "epsilon*log(4)",
+    "first_law_slope": "log(4)",
+    "relative_entropy_hessian": "7*log(4)/2 + 105/16",
+    "relative_entropy_formula": "epsilon*log(4) + (10/21 - sqrt(epsilon**2 + (2/7 - epsilon)**2))*log(10/21 - sqrt(epsilon**2 + (2/7 - epsilon)**2)) + (sqrt(epsilon**2 + (2/7 - epsilon)**2) + 10/21)*log(sqrt(epsilon**2 + (2/7 - epsilon)**2) + 10/21) - 16*log(16/21)/21 - 4*log(4/21)/21",
+    "positivity_domain": "|epsilon|<1/20 is a sufficient faithful-state neighborhood",
+    "coherent_continuum": "D_R(omega_lambda||omega_0)=2*pi*d*E_cl=pi*lambda^2*d*I_b/L",
+    "opposite_means_same_stress": "D_R(omega_lambda||omega_minus_lambda)=4*D_R(omega_lambda||omega_0)",
+    "translated_wedge": "D_b=2*pi*(d-b)*E_cl for b<d-L",
+    "one_particle_stress_at_t0": "2*ell_packet**2/(pi*(ell_packet**2 + x_packet**2)**2)",
+    "one_particle_energy": "1/ell",
+    "one_particle_right_deltaK": "2 (finite vacuum-subtracted form); Araki D not computed",
+    "packet_illustration": {
+      "I_b": "0.40958706075277012817169153554919448332468989004024",
+      "odd_moment": "0.0",
+      "lambda": "1/5",
+      "L": "1",
+      "d": "3",
+      "Minkowski_energy": "0.0081917412150554025634338307109838896664937978008047",
+      "relative_entropy_nats": "0.15441068412796067556669914466742362517183965216936"
+    }
+  },
+  "scope": "formal exact algebra plus a declared compact-packet quadrature; continuum positivity/domain proof is in report01"
+}

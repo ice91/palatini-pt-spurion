@@ -1,0 +1,63 @@
+Symmetry2026,18, 170                                                                                                                                43 of 50
+
+
+
+                                       Table A3. Cont.
+
+ Diagnostic                                             This Work                CS-Mod.   Horndeski              Teleparallel                EC/
+                                                                       Grav.                /DHOST                    /f(T)               ECSK-like
+
+ cT at LO                                               =1 by identity(D5)                   Helicity-split             Tuned→ 1                 Often =1                    Model-dependent
+
+ Extra propagating DoF (quad.)       No (2 TT) (D6)           Nonew TT               Yes (scalar;                    Model-                 Model-
+                                                                                             generic)              dependent              dependent
+ Three-route bulk equality (C2)             Yes (D3)              Notapplicable        Not applicable        Not applicable        Not applicable
+ Boundary flux ratioRX/Y             → 1 (D4)             Not applicable        Not applicable        Not applicable        Not applicable
+ NLO slopeδc2T ∝ k2                           Yes (D7, D9-a)         Non-universal               Model-              Model-                 Model-
+                                                                                           dependent               dependent              dependent
+ Dirac axial contact SµJµ                                                                Not diagnostic         Not diagnostic              Present
+                            5                      Absent (D8)           Not diagnosticat LO  at LO                   at LO               in general
+ Trace contact removable                        Yes (D8)              Not diagnostic     Not diagnostic              Model-
+                                                                       at LO                  at LO                dependent           Not generically
+
+
+                                       Appendix F.3. Notes, Caveats, and Representative Anchors
+                                       Parity-odd lines.
+                                             Chern–Simons-modified gravity (Jackiw–Pi; Alexander–Yunes) generically induces
+                                       helicity-dependent GW propagation; details depend on the choice of scalar field and
+                                       coupling.  Our scalar-PT projector eliminates parity-odd scalars at LO; see Theorem1.
+                                       Representative anchors can be found in [32,33].
+
+                                       Horndeski/DHOST.
+                                             Post-GW170817 constraints force cT → 1 by parameter tuning or by restricting to
+                                       subclasses; however, no equal-coefficient identity of the type K−G = ∂µ(···) is gener-
+                                       ally present, and an extra scalar DoF is typical.  See the multimessenger bounds and
+                                       reviews [4–8,36].
+
+                                       Teleparallel/f(T).
+                                             Many models yield cT = 1 at LO; torsion irreps and matter couplings are model-
+                                       dependent,andourroute-equality/flux-ratiodiagnostics(C2)donotdirectlyapply. We
+                                       therefore treat teleparallel cases as outside the present “three-route” posture.
+
+                                       EC/ECSK-like.
+                                             With propagating torsion or nonminimal fermion couplings, axial/traceless torsion
+                                       irreps can be present and Dirac axial contacts typically survive. Our C1 pure-trace map
+                                       excludes these at the analyzed order; see classic EC/MAG treatments [12–14,37].
+
+                                       NLO dispersion and spurion tests.
+                                             Theδc2T ∝ k2 slope followsfrom the projected, PT-even closure and the normalization
+                                       ofT  (Section5);D9-aimplementsthisasaband-levelnull. D9-bleveragesthethree-route
+                                       equality (AppendixC) via                ∆A⋆ and flux ratios; in admissible domains (A4) both must
+                                       vanish within errors.
+
+                                       Boundary posture.
+                                             Allboundary-sensitivestatementsassumeA4(PT-invariantcompactboundariesor
+                                       standard AF/FRW fall-offs) and A5 (Nieh–Yan as boundary counterterm).  Departures
+                                       from thesepostures may alter fluxdiagnostics and improvementaccounting. Operational
+                                       anchorsincludecovariantphasespaceandsurfacecharges[26,27,38],andtheHolst/Nieh–
+                                       Yan parity bookkeeping [21,22,24,25].
+
+
+
+
+                                                                                                                   https://doi.org/10.3390/sym18010170

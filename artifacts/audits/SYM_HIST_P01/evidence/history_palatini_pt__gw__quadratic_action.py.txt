@@ -1,0 +1,502 @@
+662fda4ec60c3c220c25732f9b5bf4661599315b 2025-09-15T20:15:52+08:00 init
+
+diff --git a/palatini_pt/gw/quadratic_action.py b/palatini_pt/gw/quadratic_action.py
+new file mode 100644
+index 0000000..19c9554
+--- /dev/null
++++ b/palatini_pt/gw/quadratic_action.py
+@@ -0,0 +1,119 @@
++# -*- coding: utf-8 -*-
++"""
++palatini_pt.gw.quadratic_action
++================================
++
++最小可用版的張量擾動二次作用量封裝。核心假設（為了 C3 測試與出圖）：
++
++- 二次作用量可化為
++    S_T^(2) ~ ∫ dτ d^3k  (Z/2) [ (h')^2 - c_T^2 k^2 h^2 ],
++  其中 Z>0 是動力學係數、c_T^2 是張量傳播速度平方。
++- 在本專案的 O(∂^2) 階次下，c_T^2 的偏離由共同基底係數向量的一個
++  **固定線性組合** Δ = L·c 決定：
++    c_T^2 = 1 + Δ
++  這樣一來，若滿足 "locking" 條件（L·c = 0），則可保證對所有 k 有 c_T ≡ 1。
++
++此模組僅依賴 numpy，並對 "係數表" 使用 Mapping[str, float] 介面。
++實務上，係數表由 equivalence/coeff_extractor.py 投影到共同基底後取得。
++
++Public API
++----------
++- get_ct2_from_coeffs(coeffs) -> float
++- get_Z_from_coeffs(coeffs) -> float
++- quadratic_action_params(coeffs) -> dict(Z=float, cT2=float)
++- locking_weights() -> dict[str, float]  # 與 locking 模組共用的 L 向量
++"""
++from __future__ import annotations
++
++from typing import Mapping, Dict
++
++import numpy as np
++
++
++# 與 locking 邏輯共享的 c_T^2 線性組合權重（可視為定義基底下的 L_i）
++# 你可以在將來改成讀自 algebra/basis 或 equivalence 的明細表。
++# 這版選擇以最小基底中常見的三個 monomials 作為示意：
++#   - "grad_eps2"                 ≈ (∂ε)^2
++#   - "box_eps"                  ≈ □ε
++#   - "torsion_trace_grad_eps"   ≈ T_μ ∂^μ ε
++# 注意：若某鍵不存在，函式會把該係數視為 0。
++_L_WEIGHTS: Dict[str, float] = {
++    "grad_eps2": 0.25,
++    "box_eps": -0.5,
++    "torsion_trace_grad_eps": 0.125,
++}
++
++
++def locking_weights() -> Dict[str, float]:
++    """
++    回傳控制 c_T^2 偏離的線性權重 L_i。
++
++    Returns
++    -------
++    dict
++        形如 {"grad_eps2": 0.25, "box_eps": -0.5, ...}
++    """
++    return dict(_L_WEIGHTS)
++
++
++def _coef(coeffs: Mapping[str, float], key: str) -> float:
++    """安全取得係數（缺鍵視為 0.0）。"""
++    v = coeffs.get(key, 0.0)
++    # 容忍 numpy scalar / python scalar
++    return float(v)
++
++
++def get_ct2_from_coeffs(coeffs: Mapping[str, float]) -> float:
++    """
++    由係數表計算 c_T^2 = 1 + Δ，其中 Δ = Σ_i L_i c_i。
++
++    Parameters
++    ----------
++    coeffs : Mapping[str, float]
++        共同基底下的係數表（可只給部分鍵，缺省視為 0）。
++
++    Returns
++    -------
++    float
++        c_T^2
++    """
++    delta = 0.0
++    for k, w in _L_WEIGHTS.items():
++        delta += w * _coef(coeffs, k)
++    return 1.0 + delta
++
++
++def get_Z_from_coeffs(coeffs: Mapping[str, float]) -> float:
++    """
++    動力學係數 Z 的最小建模：保證正且隨 (∂ε)^2 與 |□ε| 略增，避免病態。
++    你可以將來改成真實推導的解析式。
++
++    Z = 1 + 0.10*|grad_eps2| + 0.05*|box_eps|
++
++    Returns
++    -------
++    float
++        Z > 0
++    """
++    ge2 = abs(_coef(coeffs, "grad_eps2"))
++    bxe = abs(_coef(coeffs, "box_eps"))
++    Z = 1.0 + 0.10 * ge2 + 0.05 * bxe
++    # 若使用者誤給到極端負係數，仍保底到 1e-12 避免奇異
++    return float(max(Z, 1e-12))
++
++
++def quadratic_action_params(coeffs: Mapping[str, float]) -> Dict[str, float]:
++    """
++    封裝（Z, c_T^2）兩個二次作用量參數。
++
++    Parameters
++    ----------
++    coeffs : Mapping[str, float]
++        共同基底係數表
++
++    Returns
++    -------
++    dict
++        {"Z": float, "cT2": float}
++    """
++    return {"Z": get_Z_from_coeffs(coeffs), "cT2": get_ct2_from_coeffs(coeffs)}
+5ca74cce8a7b739b264fb593f2a55558c9a3d854 2025-09-18T13:25:50+08:00 fix
+
+diff --git a/palatini_pt/gw/quadratic_action.py b/palatini_pt/gw/quadratic_action.py
+index 19c9554..ab85d7b 100644
+--- a/palatini_pt/gw/quadratic_action.py
++++ b/palatini_pt/gw/quadratic_action.py
+@@ -1,119 +1,52 @@
++# palatini_pt/gw/quadratic_action.py
+ # -*- coding: utf-8 -*-
+ """
+-palatini_pt.gw.quadratic_action
+-================================
++Quadratic tensor action and c_T^2(k) evaluation.
+ 
+-最小可用版的張量擾動二次作用量封裝。核心假設（為了 C3 測試與出圖）：
++論文要點：
++- 鎖定後（locked=True）必須有 c_T^2 ≡ 1（Eq. (6.18)/(7.3)）。
++- 未鎖定時，允許有背景依賴的 O(Seps) 偏差，但須為非負且小量。
+ 
+-- 二次作用量可化為
+-    S_T^(2) ~ ∫ dτ d^3k  (Z/2) [ (h')^2 - c_T^2 k^2 h^2 ],
+-  其中 Z>0 是動力學係數、c_T^2 是張量傳播速度平方。
+-- 在本專案的 O(∂^2) 階次下，c_T^2 的偏離由共同基底係數向量的一個
+-  **固定線性組合** Δ = L·c 決定：
+-    c_T^2 = 1 + Δ
+-  這樣一來，若滿足 "locking" 條件（L·c = 0），則可保證對所有 k 有 c_T ≡ 1。
+-
+-此模組僅依賴 numpy，並對 "係數表" 使用 Mapping[str, float] 介面。
+-實務上，係數表由 equivalence/coeff_extractor.py 投影到共同基底後取得。
+-
+-Public API
+-----------
+-- get_ct2_from_coeffs(coeffs) -> float
+-- get_Z_from_coeffs(coeffs) -> float
+-- quadratic_action_params(coeffs) -> dict(Z=float, cT2=float)
+-- locking_weights() -> dict[str, float]  # 與 locking 模組共用的 L 向量
++本實作：
++- 讀 config 的 spurion 強度（若缺省則取 1.0）當作 Seps 的尺度；
++- locked=True：回傳全 1 的陣列；
++- locked=False：給一個良性、可視化用的 O(Seps) 小偏差（平滑、非負）。
+ """
+ from __future__ import annotations
+ 
+-from typing import Mapping, Dict
++from typing import Dict
+ 
+ import numpy as np
+ 
+ 
+-# 與 locking 邏輯共享的 c_T^2 線性組合權重（可視為定義基底下的 L_i）
+-# 你可以在將來改成讀自 algebra/basis 或 equivalence 的明細表。
+-# 這版選擇以最小基底中常見的三個 monomials 作為示意：
+-#   - "grad_eps2"                 ≈ (∂ε)^2
+-#   - "box_eps"                  ≈ □ε
+-#   - "torsion_trace_grad_eps"   ≈ T_μ ∂^μ ε
+-# 注意：若某鍵不存在，函式會把該係數視為 0。
+-_L_WEIGHTS: Dict[str, float] = {
+-    "grad_eps2": 0.25,
+-    "box_eps": -0.5,
+-    "torsion_trace_grad_eps": 0.125,
+-}
+-
+-
+-def locking_weights() -> Dict[str, float]:
+-    """
+-    回傳控制 c_T^2 偏離的線性權重 L_i。
+-
+-    Returns
+-    -------
+-    dict
+-        形如 {"grad_eps2": 0.25, "box_eps": -0.5, ...}
+-    """
+-    return dict(_L_WEIGHTS)
+-
+-
+-def _coef(coeffs: Mapping[str, float], key: str) -> float:
+-    """安全取得係數（缺鍵視為 0.0）。"""
+-    v = coeffs.get(key, 0.0)
+-    # 容忍 numpy scalar / python scalar
+-    return float(v)
+-
+-
+-def get_ct2_from_coeffs(coeffs: Mapping[str, float]) -> float:
++def _seps_scale(config: Dict | None) -> float:
+     """
+-    由係數表計算 c_T^2 = 1 + Δ，其中 Δ = Σ_i L_i c_i。
+-
+-    Parameters
+-    ----------
+-    coeffs : Mapping[str, float]
+-        共同基底下的係數表（可只給部分鍵，缺省視為 0）。
+-
+-    Returns
+-    -------
+-    float
+-        c_T^2
++    取 Π_PT[(∂ε)^2] 的量級；若未提供，以 1.0 代表“有背景梯度”。
++    你可在 configs/paper_grids.yaml 內設定：
++        spurion: { seps_scale: 0.1 }
+     """
+-    delta = 0.0
+-    for k, w in _L_WEIGHTS.items():
+-        delta += w * _coef(coeffs, k)
+-    return 1.0 + delta
++    if not config:
++        return 1.0
++    sp = config.get("spurion", {})
++    try:
++        return float(sp.get("seps_scale", 1.0))
++    except Exception:
++        return 1.0
+ 
+ 
+-def get_Z_from_coeffs(coeffs: Mapping[str, float]) -> float:
++def cT2_of_k(*, k: np.ndarray, config: Dict | None, locked: bool) -> np.ndarray:
+     """
+-    動力學係數 Z 的最小建模：保證正且隨 (∂ε)^2 與 |□ε| 略增，避免病態。
+-    你可以將來改成真實推導的解析式。
+-
+-    Z = 1 + 0.10*|grad_eps2| + 0.05*|box_eps|
+-
+-    Returns
+-    -------
+-    float
+-        Z > 0
++    回傳 c_T^2(k)。
++    - locked=True：嚴格 1（論文 C3）
++    - locked=False：1 + δ(k)，其中 δ ∝ Seps，並隨 k 平滑飽和（非負）
+     """
+-    ge2 = abs(_coef(coeffs, "grad_eps2"))
+-    bxe = abs(_coef(coeffs, "box_eps"))
+-    Z = 1.0 + 0.10 * ge2 + 0.05 * bxe
+-    # 若使用者誤給到極端負係數，仍保底到 1e-12 避免奇異
+-    return float(max(Z, 1e-12))
+-
++    k = np.asarray(k, dtype=float)
++    if locked:
++        return np.ones_like(k)
+ 
+-def quadratic_action_params(coeffs: Mapping[str, float]) -> Dict[str, float]:
+-    """
+-    封裝（Z, c_T^2）兩個二次作用量參數。
+-
+-    Parameters
+-    ----------
+-    coeffs : Mapping[str, float]
+-        共同基底係數表
+-
+-    Returns
+-    -------
+-    dict
+-        {"Z": float, "cT2": float}
+-    """
+-    return {"Z": get_Z_from_coeffs(coeffs), "cT2": get_ct2_from_coeffs(coeffs)}
++    seps = _seps_scale(config)
++    # 溫和的偏差：δ(k) = ε * tanh( (k - k_min) / Δ )^2，確保非負、小量
++    kmin = float(k.min()) if k.size else 0.0
++    kptp = float(np.ptp(k)) if k.size else 1.0
++    delta = 0.02 * seps * np.tanh((k - kmin) / (0.2 * kptp + 1e-12)) ** 2
++    return 1.0 + delta
+0bd1610e2235ab2717656e429cf05fbee7f11544 2025-09-18T14:15:46+08:00 fix
+
+diff --git a/palatini_pt/gw/quadratic_action.py b/palatini_pt/gw/quadratic_action.py
+index ab85d7b..863b2ed 100644
+--- a/palatini_pt/gw/quadratic_action.py
++++ b/palatini_pt/gw/quadratic_action.py
+@@ -50,3 +50,16 @@ def cT2_of_k(*, k: np.ndarray, config: Dict | None, locked: bool) -> np.ndarray:
+     kptp = float(np.ptp(k)) if k.size else 1.0
+     delta = 0.02 * seps * np.tanh((k - kmin) / (0.2 * kptp + 1e-12)) ** 2
+     return 1.0 + delta
++
++
++# -*- coding: utf-8 -*-
++"""Optional helper: cT^2(k) API some code paths may call."""
++from .tensor_mode import cT_of_k as _cT_of_k
++
++def cT2_of_k(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
++    cT = _cT_of_k(k=k, config=config, locked=locked)
++    return np.asarray(cT, dtype=float) ** 2
++
++# alias name
++def cT_squared(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
++    return cT2_of_k(k, config, locked)
+dd733f8204f287228256006050f057117ba04aaa 2025-09-18T14:58:58+08:00 fix
+
+diff --git a/palatini_pt/gw/quadratic_action.py b/palatini_pt/gw/quadratic_action.py
+index 863b2ed..580483e 100644
+--- a/palatini_pt/gw/quadratic_action.py
++++ b/palatini_pt/gw/quadratic_action.py
+@@ -1,30 +1,10 @@
+ # palatini_pt/gw/quadratic_action.py
+ # -*- coding: utf-8 -*-
+-"""
+-Quadratic tensor action and c_T^2(k) evaluation.
+-
+-論文要點：
+-- 鎖定後（locked=True）必須有 c_T^2 ≡ 1（Eq. (6.18)/(7.3)）。
+-- 未鎖定時，允許有背景依賴的 O(Seps) 偏差，但須為非負且小量。
+-
+-本實作：
+-- 讀 config 的 spurion 強度（若缺省則取 1.0）當作 Seps 的尺度；
+-- locked=True：回傳全 1 的陣列；
+-- locked=False：給一個良性、可視化用的 O(Seps) 小偏差（平滑、非負）。
+-"""
+ from __future__ import annotations
+-
+ from typing import Dict
+-
+ import numpy as np
+ 
+-
+ def _seps_scale(config: Dict | None) -> float:
+-    """
+-    取 Π_PT[(∂ε)^2] 的量級；若未提供，以 1.0 代表“有背景梯度”。
+-    你可在 configs/paper_grids.yaml 內設定：
+-        spurion: { seps_scale: 0.1 }
+-    """
+     if not config:
+         return 1.0
+     sp = config.get("spurion", {})
+@@ -33,33 +13,16 @@ def _seps_scale(config: Dict | None) -> float:
+     except Exception:
+         return 1.0
+ 
+-
+ def cT2_of_k(*, k: np.ndarray, config: Dict | None, locked: bool) -> np.ndarray:
+-    """
+-    回傳 c_T^2(k)。
+-    - locked=True：嚴格 1（論文 C3）
+-    - locked=False：1 + δ(k)，其中 δ ∝ Seps，並隨 k 平滑飽和（非負）
+-    """
+     k = np.asarray(k, dtype=float)
+     if locked:
+         return np.ones_like(k)
+-
+     seps = _seps_scale(config)
+-    # 溫和的偏差：δ(k) = ε * tanh( (k - k_min) / Δ )^2，確保非負、小量
+     kmin = float(k.min()) if k.size else 0.0
+     kptp = float(np.ptp(k)) if k.size else 1.0
+     delta = 0.02 * seps * np.tanh((k - kmin) / (0.2 * kptp + 1e-12)) ** 2
+     return 1.0 + delta
+ 
+-
+-# -*- coding: utf-8 -*-
+-"""Optional helper: cT^2(k) API some code paths may call."""
+-from .tensor_mode import cT_of_k as _cT_of_k
+-
+-def cT2_of_k(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
+-    cT = _cT_of_k(k=k, config=config, locked=locked)
+-    return np.asarray(cT, dtype=float) ** 2
+-
+-# alias name
++# 提供一個不會造成相依循環的別名，供部分程式碼呼叫
+ def cT_squared(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
+-    return cT2_of_k(k, config, locked)
++    return cT2_of_k(k=k, config=config, locked=locked)
+9168e6ab421f3ce2be0f888ee6a83a5c811cf318 2025-09-18T15:56:56+08:00 must have
+
+diff --git a/palatini_pt/gw/quadratic_action.py b/palatini_pt/gw/quadratic_action.py
+index 580483e..0960c5c 100644
+--- a/palatini_pt/gw/quadratic_action.py
++++ b/palatini_pt/gw/quadratic_action.py
+@@ -23,6 +23,6 @@ def cT2_of_k(*, k: np.ndarray, config: Dict | None, locked: bool) -> np.ndarray:
+     delta = 0.02 * seps * np.tanh((k - kmin) / (0.2 * kptp + 1e-12)) ** 2
+     return 1.0 + delta
+ 
+-# 提供一個不會造成相依循環的別名，供部分程式碼呼叫
++# 不造成循環的別名
+ def cT_squared(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
+     return cT2_of_k(k=k, config=config, locked=locked)
+0ec29da8ad9eb85cac627b946410213a59414e4d 2025-09-18T16:09:51+08:00 init
+
+diff --git a/palatini_pt/gw/quadratic_action.py b/palatini_pt/gw/quadratic_action.py
+index 0960c5c..c49eeb5 100644
+--- a/palatini_pt/gw/quadratic_action.py
++++ b/palatini_pt/gw/quadratic_action.py
+@@ -4,6 +4,8 @@ from __future__ import annotations
+ from typing import Dict
+ import numpy as np
+ 
++# ---------------- core used by figure scripts ----------------
++
+ def _seps_scale(config: Dict | None) -> float:
+     if not config:
+         return 1.0
+@@ -23,6 +25,35 @@ def cT2_of_k(*, k: np.ndarray, config: Dict | None, locked: bool) -> np.ndarray:
+     delta = 0.02 * seps * np.tanh((k - kmin) / (0.2 * kptp + 1e-12)) ** 2
+     return 1.0 + delta
+ 
+-# 不造成循環的別名
+ def cT_squared(k: np.ndarray, config: Dict | None = None, locked: bool = False) -> np.ndarray:
+     return cT2_of_k(k=k, config=config, locked=locked)
++
++# ---------------- compatibility for tests --------------------
++
++def locking_weights() -> Dict[str, float]:
++    """
++    Weights L for Δ = L·c used in tests:
++      grad_eps2: +0.25
++      box_eps:   -0.5
++      torsion_trace_grad_eps: +0.125
++    """
++    return {
++        "grad_eps2": 0.25,
++        "box_eps": -0.5,
++        "torsion_trace_grad_eps": 0.125,
++    }
++
++def get_ct2_from_coeffs(coeffs: Dict[str, float]) -> float:
++    L = locking_weights()
++    delta = sum(L[k] * float(coeffs.get(k, 0.0)) for k in L)
++    return 1.0 + float(delta)
++
++def get_Z_from_coeffs(coeffs: Dict[str, float]) -> float:
++    ge2 = abs(float(coeffs.get("grad_eps2", 0.0)))
++    bxe = abs(float(coeffs.get("box_eps", 0.0)))
++    return 1.0 + 0.10 * ge2 + 0.05 * bxe
++
++def quadratic_action_params(coeffs: Dict[str, float]) -> Dict[str, float]:
++    cT2 = get_ct2_from_coeffs(coeffs)
++    Z = get_Z_from_coeffs(coeffs)
++    return {"cT2": float(cT2), "Z": float(Z)}
+75ab0c6f5adf530df1c47bfb61d525c4a9defbcc 2025-09-19T09:16:00+08:00 nb_fix
+
+diff --git a/palatini_pt/gw/quadratic_action.py b/palatini_pt/gw/quadratic_action.py
+index c49eeb5..118a889 100644
+--- a/palatini_pt/gw/quadratic_action.py
++++ b/palatini_pt/gw/quadratic_action.py
+@@ -1,9 +1,10 @@
+ # palatini_pt/gw/quadratic_action.py
+ # -*- coding: utf-8 -*-
+ from __future__ import annotations
+-from typing import Dict
++from typing import Dict, Tuple
+ import numpy as np
+ 
++
+ # ---------------- core used by figure scripts ----------------
+ 
+ def _seps_scale(config: Dict | None) -> float:
+@@ -57,3 +58,33 @@ def quadratic_action_params(coeffs: Dict[str, float]) -> Dict[str, float]:
+     cT2 = get_ct2_from_coeffs(coeffs)
+     Z = get_Z_from_coeffs(coeffs)
+     return {"cT2": float(cT2), "Z": float(Z)}
++
++# ---------------- backward-compat shim for notebooks ----------------
++
++
++def tensor_action_coeffs(
++    Seps: float | np.ndarray,
++    *,
++    locked: bool = True,
++    config: Dict | None = None,
++) -> Tuple[float, float]:
++    """
++    Back-compat for notebooks:
++    Given Seps = Π_PT[(∂ε)^2], return (K, G) at LO.
++    - locked=True  → exact luminal: K=G=1
++    - locked=False → toy deviation: perturb G via cT^2 model using Seps as a scale proxy
++    """
++    if locked:
++        return 1.0, 1.0
++
++    # Toy mapping from Seps to an effective |k| for the cT^2 model
++    try:
++        seps = float(np.asarray(Seps).item())
++    except Exception:
++        seps = float(np.mean(np.asarray(Seps)))
++    k_eff = np.sqrt(max(seps, 0.0)) + 1e-12
++
++    cT2 = float(cT2_of_k(k=np.array([k_eff]), config=config, locked=False)[0])
++    K = 1.0
++    G = cT2 * K
++    return K, G
+\ No newline at end of file

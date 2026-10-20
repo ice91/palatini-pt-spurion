@@ -1,0 +1,12 @@
+name: palpt
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy>=1.26
+  - sympy>=1.12
+  - matplotlib>=3.8
+  - pyyaml>=6.0.1
+  - pip
+  - pip:
+      - -e .[dev]

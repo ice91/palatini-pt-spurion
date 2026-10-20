@@ -1,0 +1,72 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                                 doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                                        38 of 43
+
+
+
+                     •      (D7) NLO slope.  At next order, the leading PT-even dispersion predicts δc2T(k) = bk2/Λ2
+                            (Eq. (36)     ): a log–logslope≃ 2 in cleanfrequency windows is characteristic(Figure11; Sec.8.2).                       6
+                     •      (D8)Fermionchannelnull. NoaxialcontactandaremovabletracecontactintheDiracsectorat
+                            LO(Sec.8). Anyrobustaxialspin–torsionsignalwouldcontradictC1(App.Econtainscoefficients
+                            and boundary conventions).
+                     •      (D9) Spurion-limit tests.  Two complementary null checks targeting residual spurion dynamics
+                            (Sec.8.3):
+                            –      (D9-a)Quadraticscaling. Fit|δc2T(k)|∝ k2 ontheadmissible band(k≪Λ)usingEq. (37)     .
+                                  A statistically significant failure (ˆn̸= 2 beyond systematics) indicates residualϵ dynamics.
+                            –      (D9-b) Route equality.   Using the unified improvement representative (App. C), test
+                                   ∆A⋆(k) ≡  A(rank−onedeterminantroute)⋆                        − A(CM)⋆     →   0  and  boundary  flux-ratio  unity
+                                   Rrank−onedeterminantroute/CM→ 1 on growing domains (A4). Significant residualsfalsify the
+                                   spurion limit.
+
+                     Appendix F.2. Expanded Disambiguation Table
+                            EntriesaregenericatLOonadmissiblebackgroundswithA4fall-offs;tunedsubclassesandspecific
+                     parameterchoicesmayalterindividualcells. SeethenotesinSec.F.3forcaveatsandrepresentative
+                     citations.
+
+                                               Table 7. Operational disambiguation at quadratic order (expanded).
+
+                       Diagnostic                                           This work          CS-mod. grav.     Horndeski/DHOST  Teleparallel/f(T)   EC/ECSK-like
+                       Parity-odd GW birefringence             No (D1)              Yes (generic)        No (often tuned)      Not diagnostic       Model-
+                                                                                                                                 at LO            dependent
+                       Axial torsionSµ at LO                      Absent (C1)        Not diagnostic  Not diagnostic at      Not diagnostic
+                                                                                     at LO                  LO                   at LO               Often present
+                       Traceless torsionqλµν at LO            Absent (C1)        Not diagnostic      Not diagnostic at        Possible in
+                                                                                     at LO                  LO                extensions               Possible
+                       cT at LO                               = 1 by identity(D5)                 Helicity-split            Tuned→ 1               Often= 1                 Model-dependent
+                       Extra propagating DoF (quad.)     No (2 TT) (D6)         No new TT               Yes (scalar;            Model-              Model-
+                                                                                                          generic)            dependent           dependent
+                       Three-route bulk equality (C2)           Yes (D3)            Not applicable        Not applicable        Not applicable      Not applicable
+                       Boundary flux ratioRX/Y           → 1 (D4)           Not applicable        Not applicable        Not applicable      Not applicable
+                       NLO slopeδc2T ∝ k2                        Yes (D7, D9-a)       Non-universal     Model-dependent            Model-           Model-
+                                                                                                                              dependent           dependent
+                       Dirac axial contactSµJµ                                                       Not diagnostic at      Not diagnostic         Present in
+                                               5                    Absent (D8)        Not diagnosticat LO  LO                   at LO              general
+                       Trace contact removable                      Yes (D8)            Not diagnosticNot diagnostic at         Model-
+                                                                                     at LO                  LO                dependent         Not generically
+
+
+                     Appendix F.3. Notes, Caveats, and Representative Anchors
+                     Parity-Odd Lines
+                            Chern–Simons modified gravity (Jackiw–Pi; Alexander–Yunes) generically induces helicity-
+                     dependentGWpropagation;detailsdependonthechoiceofscalar fieldandcoupling. Ourscalar-PT
+                     projector eliminates parity-oddscalarsat LO; see Thm.2. Representative anchors: [25,26].
+
+                     Horndeski/DHOST
+                            Post-GW170817 constraints force cT→ 1 by parameter tuning or by restricting to subclasses;
+                     however, no equal-coefficient identity of the typeK−G= ∂µ(···) is generally present, and an extra
+                     scalar DoF is typical. See the multimessenger bounds and reviews [31–36].
+
+
+
+                      6    Caveat: finite-windowfitsmaybebiasedbyinstrumentalsystematicsorastrophysicalpriors;interpretboundsconservatively.
+
+
+
+
+
+
+
+
+
+                 © 2025 by the author(s). Distributed under a             Creative Commons CC BY license.

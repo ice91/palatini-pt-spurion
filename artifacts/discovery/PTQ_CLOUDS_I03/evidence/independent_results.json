@@ -1,0 +1,110 @@
+{
+  "success": true,
+  "tests": 11,
+  "failures": 0,
+  "errors": 0,
+  "mpmath_digits": 50,
+  "records": {
+    "finite_parameter_no_go": "Same matter theory and regulator allow any finite renormalized inverseG by an independent background R term.",
+    "Bessel_Laplace": [
+      {
+        "nu": "0.0",
+        "integral": "0.74870055337807720817073640857013163862296474943005",
+        "analytic_error": "0.0"
+      },
+      {
+        "nu": "0.5",
+        "integral": "0.4319626423032471027580449703155011159512788051396",
+        "analytic_error": "0.0"
+      },
+      {
+        "nu": "1.4",
+        "integral": "0.16050724927218009173156815860328375306297597933918",
+        "analytic_error": "3.3409558876152445576756705839393523485189961001313e-52"
+      }
+    ],
+    "cone_limit": [
+      {
+        "n": "0.8",
+        "radial_regulator_u": "0.00001",
+        "defect": "0.037499999999214843750010705566406126282389871181416",
+        "limit_error": "0.00000000000078515624998929443359387371761012881858397317226066"
+      },
+      {
+        "n": "1.2",
+        "radial_regulator_u": "0.00001",
+        "defect": "-0.030555555554960005144040565283969584671758593753057",
+        "limit_error": "0.00000000000059555041151499027158597088379696180249891003339265"
+      },
+      {
+        "n": "2.0",
+        "radial_regulator_u": "0.00001",
+        "defect": "-0.12499999999765625000002929687499968058268385941035",
+        "limit_error": "0.0000000000023437499999707031250003194173161405896512165603822"
+      }
+    ],
+    "massive_integrals": [
+      {
+        "m": "0.7",
+        "epsilon": "0.3",
+        "J_integral": "9.3637863268408849780150860209651298106637132070187",
+        "analytic_error": "0.0"
+      },
+      {
+        "m": "1.1",
+        "epsilon": "0.2",
+        "J_integral": "20.79519415803238977807906187999312310286718930529",
+        "analytic_error": "4.2764235361475130338248583474423710061043150081681e-50"
+      }
+    ],
+    "orbifold_image_integrals": [
+      {
+        "orbifold_order": 2,
+        "image_trace_defect": "0.125"
+      },
+      {
+        "orbifold_order": 3,
+        "image_trace_defect": "0.22222222222222222222222222222222222222222222222222"
+      },
+      {
+        "orbifold_order": 5,
+        "image_trace_defect": "0.4"
+      }
+    ],
+    "finite_replica_counterexample": {
+      "S2_over_S1": "0.75",
+      "EH_only_prediction": "1; invalid finite-angle extrapolation"
+    },
+    "smooth_cap_integrals": [
+      {
+        "n": "0.8",
+        "integrated_R_per_surface_area": "2.5132741228718345907701147066236023073577355195001"
+      },
+      {
+        "n": "1.3",
+        "integrated_R_per_surface_area": "-3.7699111843077518861551720599354034610366032792501"
+      }
+    ],
+    "regulator_counterexample": {
+      "hard_step_leading_J_epsilon_squared": "1",
+      "smooth_cubic_leading_J_epsilon_squared": "1.3541179394264004169452880281545137855193272660568",
+      "shared_entropy_to_inverseG_ratio": "1/4; absolute coefficients are profile dependent"
+    },
+    "S2_spectrum": {
+      "proper_times": [
+        "0.01",
+        "0.005",
+        "0.0025",
+        "0.00125"
+      ],
+      "trace_minus_area_term": [
+        "0.33400127302747390932084968325761555990474029096471",
+        "0.33366698452453279666714518438865934073835561131352",
+        "0.33350007941472768877260524485748297108827514535951",
+        "0.33341668651413972485075263935639708346983489217296"
+      ],
+      "constant_extrapolation": "0.33333333333315128872387895737971343674086967744579",
+      "expected_from_R_over_6": "1/3"
+    }
+  }
+}

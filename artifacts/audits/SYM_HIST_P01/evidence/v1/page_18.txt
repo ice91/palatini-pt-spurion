@@ -1,0 +1,76 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                 doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Theorem 3 (Coefficient Locking⇒ Exact Luminality (C3)). Under A1–A5, the scalar projector, and C1,
+                   thereexistsa uniqueratio w⋆ROD:w⋆CM (upto overallnormalization)suchthatTT–nonTT mixingvanishesand
+                   K(w⋆)−G(w⋆)= a−3∂µ(a3Jµ∆). Consequently the TT action is exactly the GR one at quadratic order:
+
+                                                                Z         "                       #
+                                                δ2STT = M2Pl8     d4xa3     ˙hTTij  ˙hTTij − (∂khTTij )2a2,        c2T = 1,                (40)
+
+
+                   with no additional propagating degrees of freedom.
+
+                   Proof sketch.  (i) Palatini algebraicity and the rank–one structure yield the mixing form (34)     ; non-
+                   collinearity(36)      fixesw⋆ uptoscale. (ii)Forw⋆,thedifferenceK−G integratestoaboundaryterm (38)
+                   by A1/A4 (self-adjoint projector; vanishing symplectic flux). (iii) The GR normalization (L3) fixes the
+                   overall scale and yields (40).
+
+                   6.5. Rank Stability And Measure–Zero Degeneracies
+                         Near small k andΣϵ,
+
+                                                ∆(k,Σϵ;foliation)= α0η4Σ2ϵk2+O(k4,Σ3ϵ),    α0̸= 0,                                   (41)
+
+                   soloss ofrank occursonly onthemeasure–zeroset{Σϵ = 0}∪{k = 0}. This doesnotaffect locking
+                   on generic admissible patches.
+
+                   6.6. Data Companion And Reproducibility (Pointer)
+                         ForFRWbackgroundsusedinfigures,thelockedratiow⋆ andthetwoindependentmixingentries
+                   are extracted directly from the companion data (seefigs/data/mixing_matrix.csv with metadata
+                   infigs/data/mixing_matrix_meta.json). Aconvenienceconfigurationmirroringtheanalyticratio
+                   appears in configs/coeffs/mixing_matrix_FRW.json.  These files are diagnostic only; the paper
+                   definitionof w⋆ is Equation (37).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

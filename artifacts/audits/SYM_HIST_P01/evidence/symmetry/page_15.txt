@@ -1,0 +1,78 @@
+Symmetry2026,18, 170                                                                                                                              15 of 50
+
+
+
+                                      which comparesthe integratedflux of thesecurrents over aclosed boundary∂D. Forany
+                                      two routes X andY, our posture (A1–A5) implies that this ratio must be unity:
+                                                                                 R
+                                                               RX/Y[∂D]≡         R∂D JµXdΣµ                                       .                         (29)
+
+                                                                                  ∂D JµYdΣµ = 1   (at quadratic order)
+
+                                      Asshown inFigure6,numerical computationson finite FRW ballsconfirmthat thisratio
+                                      convergestounityasthedomainsizeincreases. Thisdemonstratesthattheroutesarenot
+                                      just bulk-equivalent, but fully physically equivalent within our posture.
+                                            Figure6shows the flux-ratio diagnostic confirming that the boundary conventions
+                                      agree in the large-domain limit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Figure 5.  Residual scan for the three-route equivalence.  Quadratic reductions of the ROD, CM,
+                                      and CS+ routes are compared against the target bulk actionδ2Ltarget = (λ2/8)√−g sgn(Σϵ)IT. The
+                                      verticalaxisshowstheresidualaftersubtraction. Allthreeroutessaturatethetargetwithinnumerical
+                                      tolerance, confirming the bulk equivalence. Analysis is at quadratic-order and bulk-only (mod∇µJµ;
+                                      representative Lagrangians are listed in AppendixC). (Code:                    fig_c2_coeff_compare.py).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      Figure 6. Flux-ratio diagnosticfor physical equivalence. Boundary fluxratiosRX/Y(R) for represen-
+                                      tativepairs onfinite FRWballs converge to 1 asthe radius R grows,in agreement withEquation (29)     .
+                                      Thisconfirms thatthe different boundaryterms arephysicallyequivalent onadmissible domains. Er-
+                                      rorbarsreflectthenumericaltolerancepropagatedtotheboundaryterms. Analysisisatquadratic-order
+                                      (mod∇µJµ; improvement currents listed in AppendixC). (Code:                    fig_flux_ratio.py).
+
+
+
+
+                                                                                                                 https://doi.org/10.3390/sym18010170

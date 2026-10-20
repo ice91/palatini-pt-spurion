@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                    doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                        45 of 48
+
+
+
+                   whereα1 is the coefficient multiplying the T2 piece coming from R(e,ω) (fixed by conventions and
+                   already used in Section4.2). For                  m2T > 0 this algebraic system has the unique solution
+
+                                                           Tµ = ∂µϵ,        Sµ = 0,        qλµν = 0,                                     (A63)
+
+                   which is precisely the C1pure-trace alignment (Section4) written in covector form and implies           Tµ = 0
+                   on-shell.9
+                         Two equivalent implementations of the spurion limit. We isolate the low-energy regime where
+                   observables reduce to those used in the main text:
+
+                                                            (i) Hard penalty: mT →∞ ⇒ Tµ = 0,                                            (A64)
+                                                       (ii) Lagrange current:LΛ =p−gΛµTµ.
+
+                   Incase(i)integratingoutω (equivalently T)producesafunctionaldeltaδ[T];incase(ii)theconstraint
+                   is exact already at the classical level. In both realizations, keeping f2ϵ finite leaves a standard(∂ϵ)2
+                   spectator; the spurion posture used in the main text corresponds to taking f2ϵ → 0+ (or treating ϵ as
+                   nondynamical)withinthetwo-derivativetruncation,sothat observablesdependonlyon∂ϵ throughthe
+                   invariantTµ (and hence throughΣϵ once C1 is enforced).
+                         Low-energy effective action (power counting). At energies E≪ mT one obtains, after eliminating
+                   ω,
+                                 Z             hM2P                           i              !
+                      S(LO)         d4xp−g                                       + O     ∂4    ,        IT ≡−1
+                        eff   =                   2  R( ˚ω)+α1 IT+α2Σϵ                   m2T                   4ΠPT[TABCTABC],    (A65)
+
+
+                   andafterenforcingC1(Section4),                 IT =−6η2Σϵ,sothattheLObulkreducestoasingleinvariantline
+                   in the{IT,Σϵ} plane (Section3.5).
+
+                   Appendix G.2. Complementary EFT Pictures (Same Gradient-Only Physics)
+                         Two complementary constructions emphasize thatonly∂ϵ can enter observables at this order.
+                         (i) Torsional–axion picture. Augment (A61) by a topological coupling
+                                                            Z
+                                                  St-ax =      d4xp−g α4 ϵNY,        NY≡ d          eA∧TA       ,                                   (A66)
+
+                   which is exact. Under A5, NY is a boundary convention; integrating by parts and using (A63)         gives bulk
+                   termsproportionalto∂µϵ contractedwithimprovementcurrents,hencenonewbulkEuler–Lagrange
+                   content inthe PT-even sector. The low-energy reduction againdepends only onΣϵ (plus boundary
+                   assignments absorbed into A5).
+                         (ii) Axion electrodynamics–like geometry. The situation mirrorsθF˜F in gauge theory: the inte-
+                   grated density is topological, and only∂µθ is physically measurable (through Chern–Simons currents)
+                   attwoderivatives. Replacing(θ,F˜F) by(ϵ,NY) andusingthescalar PT projector(A2)reproducesthe
+                   samegradient-only observability forϵ.
+
+                   Appendix G.3. UV Hints and Emergence
+                         Whileour analysisisagnostic aboutultravioletcompletions, two standardpathsnaturally gener-
+                   ate a field with the required properties:
+                   1.      Torsionful connectionsin string-inspired setups. Inheterotic/typeII supergravities theNS–NS
+                          three-form H = dB enters via the torsionful spin connectionω± =  ˚ω± 12 H. In slowly varying,
+                         parity-even sectors and upon dimensional reduction, gradients of the axion-like fields dual to B
+
+
+
+                   9    Equivalently,onemayaddthe quadraticinvariant IT withapositivecoefficientandobtain thesameirrepalignment. The
+                      projector statements of Section2ensure all scalar contractions are taken in the               PT-even, real sector.
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

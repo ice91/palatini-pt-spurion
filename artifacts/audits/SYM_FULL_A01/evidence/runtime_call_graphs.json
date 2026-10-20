@@ -1,0 +1,560 @@
+{
+  "C1": {
+    "result": "C1Report(solution=C1Solution(T_vec=array([ 0.3,  0.1, -0.2,  0.4]), T_tensor=array([[[ 0.        ,  0.03333333, -0.06666667,  0.13333333],\n        [-0.03333333,  0.        ,  0.        ,  0.        ],\n        [ 0.06666667, -0.        ,  0.        , -0.        ],\n        [-0.13333333,  0.        ,  0.        ,  0.        ]],\n\n       [[ 0.        ,  0.1       ,  0.        ,  0.        ],\n        [-0.1       ,  0.        ,  0.06666667, -0.13333333],\n        [-0.        , -0.06666667,  0.        , -0.        ],\n        [ 0.        ,  0.13333333,  0.        ,  0.        ]],\n\n       [[ 0.        ,  0.        ,  0.1       ,  0.        ],\n        [ 0.        ,  0.        ,  0.03333333,  0.        ],\n        [-0.1       , -0.03333333,  0.        , -0.13333333],\n        [ 0.        ,  0.        ,  0.13333333,  0.        ]],\n\n       [[ 0.        ,  0.        ,  0.        ,  0.1       ],\n        [ 0.        ,  0.        ,  0.        ,  0.03333333],\n        [-0.        , -0.        ,  0.        , -0.06666667],\n        [-0.1       , -0.03333333,  0.06666667,  0.        ]]]), g=array([[-1.,  0.,  0.,  0.],\n       [ 0.,  1.,  0.,  0.],\n       [ 0.,  0.,  1.,  0.],\n       [ 0.,  0.,  0.,  1.]]), alpha=1.0), check={'ok': True, 'axial_norm': 0.0, 'pure_tensor_norm': 0.0, 'atol': 1e-12}, angle_rad=0.0)",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "palatini_pt/palatini/c1_pure_trace.py",
+        "function": "run_c1",
+        "definition_line": 64,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/c1_pure_trace.py",
+        "caller": "run_c1",
+        "caller_line": 71,
+        "file": "palatini_pt/palatini/connection.py",
+        "function": "minkowski_metric",
+        "definition_line": 24,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/c1_pure_trace.py",
+        "caller": "run_c1",
+        "caller_line": 72,
+        "file": "palatini_pt/palatini/field_eq.py",
+        "function": "solve_torsion_from_spurion",
+        "definition_line": 38,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/field_eq.py",
+        "caller": "solve_torsion_from_spurion",
+        "caller_line": 48,
+        "file": "palatini_pt/palatini/connection.py",
+        "function": "torsion_from_trace",
+        "definition_line": 35,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/c1_pure_trace.py",
+        "caller": "run_c1",
+        "caller_line": 73,
+        "file": "palatini_pt/palatini/field_eq.py",
+        "function": "check_pure_trace",
+        "definition_line": 52,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/field_eq.py",
+        "caller": "check_pure_trace",
+        "caller_line": 54,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "decompose",
+        "definition_line": 117,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/torsion_decomp.py",
+        "caller": "decompose",
+        "caller_line": 121,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "inverse_metric",
+        "definition_line": 51,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/torsion_decomp.py",
+        "caller": "decompose",
+        "caller_line": 123,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "trace_vector",
+        "definition_line": 55,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/torsion_decomp.py",
+        "caller": "decompose",
+        "caller_line": 124,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "axial_vector",
+        "definition_line": 68,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/torsion_decomp.py",
+        "caller": "axial_vector",
+        "caller_line": 72,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "levi_civita_4",
+        "definition_line": 25,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/torsion_decomp.py",
+        "caller": "levi_civita_4",
+        "caller_line": 31,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "permutation_sign",
+        "definition_line": 36,
+        "calls": 48
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/torsion_decomp.py",
+        "caller": "decompose",
+        "caller_line": 125,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "pure_trace_piece",
+        "definition_line": 90,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/torsion_decomp.py",
+        "caller": "decompose",
+        "caller_line": 126,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "axial_piece",
+        "definition_line": 101,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/palatini/torsion_decomp.py",
+        "caller": "axial_piece",
+        "caller_line": 105,
+        "file": "palatini_pt/palatini/torsion_decomp.py",
+        "function": "levi_civita_4",
+        "definition_line": 25,
+        "calls": 1
+      }
+    ]
+  },
+  "C2_public": {
+    "result": "EquivalenceReport(basis=['I_T', 'Seps', 'I_ax', 'I_q'], coeffs={'dbi': array([0.125, 0.   , 0.   , 0.   ]), 'closed': array([0.125, 0.   , 0.   , 0.   ]), 'cspp': array([ 1.25e-01, -1.00e-16,  0.00e+00,  0.00e+00])}, residuals={'dbi-closed': array([0., 0., 0., 0.]), 'dbi-cspp': array([-1.11022302e-16,  1.00000000e-16,  0.00000000e+00,  0.00000000e+00]), 'closed-cspp': array([-1.11022302e-16,  1.00000000e-16,  0.00000000e+00,  0.00000000e+00])}, norms={'dbi-closed': 0.0, 'dbi-cspp': 1.4941871249638818e-16, 'closed-cspp': 1.4941871249638818e-16})",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "compute_equivalence_report",
+        "definition_line": 62,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "compute_equivalence_report",
+        "caller_line": 63,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "get_basis_labels",
+        "definition_line": 13,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "compute_equivalence_report",
+        "caller_line": 64,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "dbi_order2",
+        "definition_line": 28,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "compute_equivalence_report",
+        "caller_line": 64,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "coeff_vector_named",
+        "definition_line": 22,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "coeff_vector_named",
+        "caller_line": 23,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "<listcomp>",
+        "definition_line": 23,
+        "calls": 3
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "compute_equivalence_report",
+        "caller_line": 65,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "closed_metric_order2",
+        "definition_line": 32,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "compute_equivalence_report",
+        "caller_line": 65,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "coeff_vector_named",
+        "definition_line": 22,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "compute_equivalence_report",
+        "caller_line": 66,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "cspp_order2",
+        "definition_line": 38,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "compute_equivalence_report",
+        "caller_line": 66,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "coeff_vector_named",
+        "definition_line": 22,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/__init__.py",
+        "caller": "compute_equivalence_report",
+        "caller_line": 73,
+        "file": "palatini_pt/equivalence/__init__.py",
+        "function": "<dictcomp>",
+        "definition_line": 73,
+        "calls": 1
+      }
+    ]
+  },
+  "C2_JSON": {
+    "result": "{'dbi': array([0.125, 0.   ]), 'closed': array([0.125, 0.   ]), 'cspp': array([0.125, 0.   ])}",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "coeff_vectors",
+        "definition_line": 25,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 27,
+        "file": "palatini_pt/equivalence/dbi_chain.py",
+        "function": "order2_raw",
+        "definition_line": 7,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 27,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "_vec_from_dict",
+        "definition_line": 22,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 28,
+        "file": "palatini_pt/equivalence/closed_metric_chain.py",
+        "function": "order2_raw",
+        "definition_line": 7,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 28,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "_vec_from_dict",
+        "definition_line": 22,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 29,
+        "file": "palatini_pt/equivalence/cspp_chain.py",
+        "function": "order2_raw",
+        "definition_line": 7,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 29,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "_vec_from_dict",
+        "definition_line": 22,
+        "calls": 1
+      }
+    ]
+  },
+  "C2_figure": {
+    "result": "[0. 0.]",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "scripts/fig_c2_coeff_compare.py",
+        "function": "_residual_scan_via_module",
+        "definition_line": 39,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/scripts/fig_c2_coeff_compare.py",
+        "caller": "_residual_scan_via_module",
+        "caller_line": 51,
+        "file": "palatini_pt/equivalence/order2_checker.py",
+        "function": "residual_scan",
+        "definition_line": 8,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/order2_checker.py",
+        "caller": "residual_scan",
+        "caller_line": 10,
+        "file": "palatini_pt/equivalence/order2_checker.py",
+        "function": "<listcomp>",
+        "definition_line": 10,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/order2_checker.py",
+        "caller": "<listcomp>",
+        "caller_line": 10,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "residual_norm",
+        "definition_line": 32,
+        "calls": 2
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "residual_norm",
+        "caller_line": 33,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "coeff_vectors",
+        "definition_line": 25,
+        "calls": 2
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 27,
+        "file": "palatini_pt/equivalence/dbi_chain.py",
+        "function": "order2_raw",
+        "definition_line": 7,
+        "calls": 2
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 27,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "_vec_from_dict",
+        "definition_line": 22,
+        "calls": 2
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 28,
+        "file": "palatini_pt/equivalence/closed_metric_chain.py",
+        "function": "order2_raw",
+        "definition_line": 7,
+        "calls": 2
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 28,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "_vec_from_dict",
+        "definition_line": 22,
+        "calls": 2
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 29,
+        "file": "palatini_pt/equivalence/cspp_chain.py",
+        "function": "order2_raw",
+        "definition_line": 7,
+        "calls": 2
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "coeff_vectors",
+        "caller_line": 29,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "_vec_from_dict",
+        "definition_line": 22,
+        "calls": 2
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/equivalence/coeff_extractor.py",
+        "caller": "residual_norm",
+        "caller_line": 35,
+        "file": "palatini_pt/equivalence/coeff_extractor.py",
+        "function": "<genexpr>",
+        "definition_line": 35,
+        "calls": 8
+      }
+    ]
+  },
+  "C3_locked": {
+    "result": "[1. 1.]",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "palatini_pt/gw/tensor_mode.py",
+        "function": "cT_of_k",
+        "definition_line": 57,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/gw/tensor_mode.py",
+        "caller": "cT_of_k",
+        "caller_line": 69,
+        "file": "palatini_pt/gw/tensor_mode.py",
+        "function": "_ct_from_coeffs_or_config",
+        "definition_line": 45,
+        "calls": 1
+      }
+    ]
+  },
+  "C3_matrix": {
+    "result": "(0.6666666666666666, 0.6666666666666666)",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "scripts/mixing_matrix_extract.py",
+        "function": "load_mu_from_json",
+        "definition_line": 64,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/scripts/mixing_matrix_extract.py",
+        "caller": "load_mu_from_json",
+        "caller_line": 67,
+        "file": "scripts/mixing_matrix_extract.py",
+        "function": "_need_pair",
+        "definition_line": 55,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/scripts/mixing_matrix_extract.py",
+        "caller": "_need_pair",
+        "caller_line": 59,
+        "file": "scripts/mixing_matrix_extract.py",
+        "function": "<genexpr>",
+        "definition_line": 59,
+        "calls": 6
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/scripts/mixing_matrix_extract.py",
+        "caller": "load_mu_from_json",
+        "caller_line": 68,
+        "file": "scripts/mixing_matrix_extract.py",
+        "function": "_need_pair",
+        "definition_line": 55,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "scripts/mixing_matrix_extract.py",
+        "function": "locking_ratios",
+        "definition_line": 72,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/scripts/mixing_matrix_extract.py",
+        "caller": "locking_ratios",
+        "caller_line": 80,
+        "file": "scripts/mixing_matrix_extract.py",
+        "function": "r",
+        "definition_line": 74,
+        "calls": 2
+      }
+    ]
+  },
+  "C3_waveform": {
+    "result": "{'t': array([0. , 0.5, 1. ]), 'gr': array([0.        , 0.0249974 , 0.04997917]), 'model': array([0.        , 0.0249974 , 0.04997917])}",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "palatini_pt/gw/tensor_mode.py",
+        "function": "waveform_overlay",
+        "definition_line": 88,
+        "calls": 1
+      }
+    ]
+  },
+  "C3_figure_eigs": {
+    "result": "[1.0016 1.002 ]",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "scripts/fig_c3_degeneracy.py",
+        "function": "_eigs_via_module",
+        "definition_line": 34,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/scripts/fig_c3_degeneracy.py",
+        "caller": "_eigs_via_module",
+        "caller_line": 45,
+        "file": "palatini_pt/gw/degeneracy.py",
+        "function": "hamiltonian_eigs",
+        "definition_line": 43,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/gw/degeneracy.py",
+        "caller": "hamiltonian_eigs",
+        "caller_line": 44,
+        "file": "palatini_pt/gw/degeneracy.py",
+        "function": "principal_symbol_eigs",
+        "definition_line": 29,
+        "calls": 1
+      },
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/working_copy/palatini_pt/gw/degeneracy.py",
+        "caller": "principal_symbol_eigs",
+        "caller_line": 41,
+        "file": "palatini_pt/gw/degeneracy.py",
+        "function": "principal_eigs",
+        "definition_line": 13,
+        "calls": 1
+      }
+    ]
+  },
+  "C3_direct_eigs": {
+    "result": "[0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0.\n 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 0. 1. 1.]",
+    "edges": [
+      {
+        "caller_file": "/Users/rocky/Downloads/palatini-pt-spurion/artifacts/audits/SYM_FULL_A01/evidence/trace_and_artifacts.py",
+        "caller": "<lambda>",
+        "caller_line": 23,
+        "file": "palatini_pt/gw/degeneracy.py",
+        "function": "principal_eigs",
+        "definition_line": 13,
+        "calls": 1
+      }
+    ]
+  }
+}

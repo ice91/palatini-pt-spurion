@@ -1,0 +1,70 @@
+Symmetry2026,18, 170                                                                                                                        10 of 50
+
+
+
+                                           Thissectionpresentsthefirstmajorresult(C1)ofourframework. Havingprepared
+                                     the operatorbasis in Section3,we now solve thePalatini equations of motionwithin our
+                                     symmetricposture. Thecombination of the PT projectorand projective invarianceacts as a
+                                     powerfulselectionprinciple,uniquelydeterminingthealgebraicformofthetorsiontensor.
+                                    We will show that of all possible forms of torsion (trace, axial, and tensor parts), only a
+                                     pure-trace component aligned with theStueckelberggradient can exist in the observable
+                                     sector. This result is not an assumption but a direct consequence of the symmetries. It
+                                     dramaticallysimplifiesthetheorybycollapsingtheoperatorbasisandpavesthewayfor
+                                     the equivalences and luminality proof in the subsequent sections.
+                                           The central theorem of this section is as follows:
+
+                                     Theorem 2(Palatini–PT Uniqueness ofTorsion (C1)). Withinthe A1–A6 posture,the Palatini
+                                     equations of motion fix the algebraic torsion to be uniquely of the pure-trace form:
+
+                                                                         TABC = 2ηδA[B∂C]ϵ,       η > 0.                                        (16)
+
+                                    Thisimpliesthattheaxial(Sµ)andtracelesstensor(qλµν)irreduciblerepresentationsoftorsionmust
+                                     vanish. Adirectconsequenceisthekeyalgebraicidentityrelatingtheoperatorsinthepost-lock basis:
+
+                                                                                    IT =−6η2Σϵ.                                                 (17)
+
+                                           This identity demonstrates that, dynamically, the two operators in our post-lock basis
+                                     are not independent. The remainder of this section is dedicated to proving this theorem
+                                     and exploring its implications.
+                                           Figure2summarizestheprojectedquadraticsuppressionofaxialandtracelesstorsion
+                                     blocks relative to the pure-trace block.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                     Figure 2. Irreducible torsion content at quadratic order (log–log view). Ratios of projected scalar
+                                     strengths comparing the pure-trace block against the axial and traceless blocks. The Palatini alge-
+                                     braicity(Section4.1) andthe                    PT projectordynamically drivetheaxialand tracelesscomponentsto
+                                     zero, leaving the pure-trace map (16) as the unique survivor. (Code:      fig_c1_pure_trace.py).
+
+                                           Figure3providesacompactschematicoftheLevi–Civita/contorsionsplitandtheC1
+                                     elimination of axial and traceless torsion irreps.
+
+
+
+
+
+
+
+
+                                                                                                             https://doi.org/10.3390/sym18010170

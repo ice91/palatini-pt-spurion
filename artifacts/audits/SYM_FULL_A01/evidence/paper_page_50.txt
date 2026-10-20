@@ -1,0 +1,70 @@
+Symmetry2026,18, 170                                                                                                                                        50 of 50
+
+
+
+13.  Hehl, F.W.; McCrea, J.D.; Mielke, E.W.; Ne’eman, Y. Metric-affine gauge theory of gravity: Field equations, Noether identities,
+     world spinors, and breaking of dilaton invariance. Phys. Rep. 1995,258, 1–171. [CrossRef]
+14.Shapiro, I.L. Physical aspects of the space–time torsion.      Phys. Rep. 2002, 357, 113–213. [CrossRef]
+15.Kibble, T.W.B. Lorentz invariance and the gravitational field.      J. Math. Phys. 1961,2, 212–221. [CrossRef]
+16.  Sciama, D.W. On the analogy between charge and spin in general relativity. In Recent Developments in General Relativity; Infeld, L.,
+     Ed.; Pergamon Press: Oxford, UK; PWN: Warsaw, Poland, 1962; pp. 415–439.
+17.Hammond, R.T. Torsion gravity.      Rep. Prog. Phys. 2002,65, 599–649. [CrossRef]
+18.  Bahamonde, S.;Dialektopoulos, K.F.; Said,C.L.; Said, J.L. Teleparallel gravity: From theory tocosmology. Rep. Prog. Phys. 2023,
+     86, 026901. [CrossRef] [PubMed]
+19.  Cai,Y.-F.;Capozziello,S.;Laurentis,M.D.;Saridakis,E.N. f(T)teleparallelgravityandcosmology. Rep. Prog. Phys. 2016,79,106901.
+     [CrossRef]
+20.  Chen,C.-C.PT-ProjectedProjectivePalatiniGravity: Two-DerivativeOperatorBasis,AdmissibleEquivalences,andaLocalIR
+     Residual. Preprints2026,2026, 2026010352. [CrossRef]
+21.Nieh, H.T.; Yan, M.L. An identity in Riemann–Cartan geometry.      J. Math. Phys. 1982,23, 373–374. [CrossRef]
+22.  Chandia,O.;Zanelli,J.Topologicalinvariants,instantonsandthechiralanomalyonspaceswithtorsion. Phys. Rev. D1997,55,
+     7580–7585. [CrossRef]
+23.  Arnowitt, R.; Deser, S.; Misner, C.W. The Dynamics of General Relativity.  In Gravitation: An Introduction to Current Research;
+     Witten, L., Ed.; Wiley: New York, NY, USA, 1962; pp. 227–265; reprinted inGen. Rel. Grav. 2008,40, 1997–2027.
+24.Holst, S. Barbero’s Hamiltonian derived from a generalized Hilbert–Palatini action.      Phys. Rev. D1996, 53, 5966–5969. [CrossRef]
+25.  Mercuri,S.FermionsintheAshtekar–Barberoconnectionformalism: TheNieh–YaninvariantasasourceoftheImmirziparameter.
+     Phys. Rev. D2006,73, 084016. [CrossRef]
+26.  Iyer, V.; Wald, R.M. Some properties of Noether charge and a proposal for dynamical black hole entropy. Phys. Rev. D 1994, 50,
+     846–864. [CrossRef] [PubMed]
+27.  Regge,T.;Teitelboim,C.RoleofsurfaceintegralsintheHamiltonianformulationofgeneralrelativity. Ann. Phys. 1974,88,286–318.
+     [CrossRef]
+28.Olmo, G.J. Palatini Approach to Modified Gravity:      f(R) Theories and Beyond. Int. J. Mod. Phys. D2011, 20, 413–462. [CrossRef]
+29.Flanagan, E.E. Palatini form of 1/     R gravity. Phys. Rev. Lett. 2004,92, 071101. [CrossRef]
+30.Barausse, E.; Sotiriou, T.P.; Miller, J.C. Curvature singularities in Palatini      f(R) gravity. Phys. Rev. D2008,77, 104035.
+31.Sotiriou, T.P.; Faraoni, V.      f(R) theories of gravity. Rev. Mod. Phys. 2010,82, 451–497. [CrossRef]
+32.Jackiw, R.; Pi, S.-Y. Chern–Simons modification of general relativity.      Phys. Rev. D2003,68, 104012. [CrossRef]
+33.Alexander, S.; Yunes, N. Chern–Simons Modified Gravity.      Phys. Rep. 2009,480, 1–55. [CrossRef]
+34.Obukhov, Y.N. Gravitational waves in Poincaré gauge gravity theory.      Phys. Rev. D2017,95, 084028. [CrossRef]
+35.Elizalde, E.; Odintsov, S.D.; Obukhov, V.V. Gravitational waves in Einstein–Cartan theory.      Phys. Dark Univ. 2023,41, 101256.
+36.Sakstein,J.;Jain,B.ImplicationsoftheNeutronStarMergerGW170817forCosmologicalScalar–TensorTheories.      Phys. Rev. Lett.
+     2017,119, 251303. [CrossRef] [PubMed]
+37.  Hehl, F.W.; Datta, B.K. Nonlinear spinor equation and asymmetric connection in general relativity.  J. Math.  Phys.  1971, 12,
+     1334–1339. [CrossRef]
+38.Wald, R.M.     General Relativity; University of Chicago Press: Chicago, IL, USA, 1984.
+39.  Savchenko, V.; Ferrigno, C.; Kuulkers, E.; Bazzano, A.N.; Bozzo, E.; Brandt, S.; Chenevez, J.; Courvoisier, T.L.; Diehl, R.; Domingo,
+     A.; et al. INTEGRAL Detection of the First Prompt Gamma-Ray Signal Coincident with the Gravitational-wave Event GW170817.
+     Astrophys. J. Lett. 2017, 848, L15. [CrossRef]
+
+
+Disclaimer/Publisher’s Note: The statements, opinions and data contained in all publications are solely those of the individual
+author(s) and contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to
+people or property resulting from any ideas, methods, instructions or products referred to in the content.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                                         https://doi.org/10.3390/sym18010170

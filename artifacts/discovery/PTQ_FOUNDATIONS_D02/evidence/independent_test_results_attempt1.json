@@ -1,0 +1,8 @@
+{
+  "sympy": "1.14.0",
+  "tests": 11,
+  "failures": 1,
+  "errors": 0,
+  "success": false,
+  "independence": "no import of derivation scripts/results; direct 24 variation test, action-jet EL and matched-source chart solve"
+}

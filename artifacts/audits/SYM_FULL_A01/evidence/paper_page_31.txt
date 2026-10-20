@@ -1,0 +1,64 @@
+Symmetry2026,18, 170                                                                                                                        31 of 50
+
+
+
+                                           This completes the formal proof of A3 and the supporting calculus advertised in
+                                     Section2.
+
+                                     Appendix B. Irrep Projectors & No-Go forqλµν(v)
+                                           Thisappendixcollectsthegroup-theoreticingredientsusedinSection4: (i)theirre-
+                                     ducible decomposition of the torsion tensor under the Lorentz group, (ii) explicit, idem-
+                                    potent projectors onto the trace, axial, and traceless sectors, (iii) the quadratic identity
+                                     for TABCTABC inourconventions,and(iv)thesingle-vectorno-go(PropositionA3)forthe
+                                     qλµν irrep.
+                                           Allstatementsarepurelyalgebraicandholdbefore/afterapplyingthescalarprojector
+                                     ΠPT[·]; after projection, all scalar contractions are real (Section2).
+
+                                     Appendix B.1. Torsion as a Lorentz Representation and Its Algebra
+                                           In index language (spacetimeindices), torsion is a rank-3tensor antisymmetric inits
+                                     last two indices, Tλµν =−Tλνµ, with 4×6 = 24 independent components in d = 4. The
+                                     Lorentz-covariant irreducible content splits into
+                                                                                                   
+                                                                                                     Tµ≡ Tνµν,
+                                        24 ≃      4|{z}  ⊕     4|{z} ⊕             16|{z}   ,      Sµ≡ ϵµνρσTνρσ,                         (A13)
+                                                trace Tµ    axial Sµ     traceless tensor qλµν       qνµν = qλµµ = ϵµνρσqνρσ = 0.
+
+
+                                    We use ϵ0123 = +1 and the metric signature (−,+,+,+), and we adopt the standard
+                                     scalar product(X,Y)≡ XλµνYλµν on this space. (Frame and spacetime contractions are
+                                     equivalent once eAµ is inserted; all formulas below hold with either TABC or Tλµν, and we
+                                     freely move between the two notations.)
+
+                                     Appendix B.2. Idempotent Projectors
+                                           Define three linear maps P(T),P(S),P(q) on the torsion space by
+
+                                                             P(T)T            gλµTν−gλνTµ,                                                       (A14)
+                                                                       λµν≡ 13
+                                                             P(S)T
+                                                                       λµν≡− 16 ϵλµνρSρ  = −16 ϵλµνρϵραβγTαβγ,                        (A15)
+                                                             P(q)T
+                                                                       λµν≡ Tλµν−P(T)Tλµν−P(S)Tλµν.                               (A16)
+
+                                    ThesearetheuniqueLorentz-covariant,algebraic(derivative-free)projectorsontothethree
+                                     irreps in Equation (A13). A direct computation shows
+                                             P(X)2 = P(X),        P(X)P(Y) = 0(X̸= Y),        P(T)+P(S)+P(q) = 1,           (A17)
+
+
+                                     and the images obey by construction the following relations:
+                                                               P(T)Tνµν = Tµ,          ϵµνρσP(T)T
+                                                                                                             νρσ = 0,
+                                                                P(S)Tνµν = 0,            ϵµνρσP(S)T                                      (A18)
+                                                                                                             νρσ = Sµ,
+                                                                P(q)Tνµν = 0,            ϵµνρσP(q)T
+                                                                                                             νρσ = 0.
+
+                                     Orthogonality and quadratic split.
+                                           With the scalar product(·,·),
+
+               P(X)T, P(Y)T= 0   (X̸= Y),     T,T=P(T)T,P(T)T+P(S)T,P(S)T+P(q)T,P(q)T.            (A19)
+
+
+
+
+
+                                                                                                             https://doi.org/10.3390/sym18010170

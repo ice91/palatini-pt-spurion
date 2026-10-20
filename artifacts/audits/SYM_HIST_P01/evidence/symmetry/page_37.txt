@@ -1,0 +1,65 @@
+Symmetry2026,18, 170                                                                                                                                                         37 of 50
+
+
+
+                                             Appendix D.3. Coefficient Tables (FRW and Weak Field)
+                                                     TableA1lists theFRW coefficients, andTableA2lists the weak-field(AF) coefficients.
+
+                                             Table A1. FRW coefficients with ϵ = ϵ(τ). Entries are the dimensionless µ’s of (A45)        , written as
+                                             µ= c0+cHH+cYY [Equation(A47)        ]. Anoverallfactorη2Σϵ multipliesthemixing(notshown here).
+
+                                               Coefficient                                     c0                                    cH                                   cY
+
+                                               µ(N)ROD                                                c(N)ROD,0                                c(N)ROD,H                               c(N)ROD,Y
+                                               µ(∇N)ROD                                                c(∇N)ROD,0                                c(∇N)ROD,H                               c(∇N)ROD,Y
+                                               µ(N)CM                                                  c(N)CM,0                                  c(N)CM,H                                 c(N)CM,Y
+                                               µ(∇N)CM                                                  c(∇N)CM,0                                  c(∇N)CM,H                                 c(∇N)CM,Y
+                                             Regeneration recipe (FRW). (1) Write δgµν in terms of (δN,∂iNi,hTTij ).   (2) Expand T ,τ to linear order using
+                                              ˆnµ = ∂µϵ/p|Σϵ| and C1. (3) Insert intoLROD andLCM with the  23 scaling. (4) Keep only hTTδN and hTT∂iNi
+                                             bilinears to read off c0,cH,cY.
+
+                                             Table A2. Weak-field (AF) coefficients with slowly varying ϵ(t,x). Set a → 1 (H = 0) and define
+                                             Y ≡ ∂tlnτ. Overall factorη2Σϵ multiplies the mixing (not shown here).
+
+                                               Coefficient                                                         c0                                                 cY
+
+                                               µ(N)ROD                                                                      ˜c(N)ROD,0                                               ˜c(N)ROD,Y
+                                               µ(∇N)ROD                                                                      ˜c(∇N)ROD,0                                               ˜c(∇N)ROD,Y
+                                               µ(N)CM                                                                         ˜c(N)CM,0                                                 ˜c(N)CM,Y
+                                               µ(∇N)CM                                                                        ˜c(∇N)CM,0                                                 ˜c(∇N)CM,Y
+                                             Regeneration recipe (weak field). Repeat the FRW steps with a→ 1, replaceconformal by physical time,and expand
+                                             consistently in spatial gradients so thatΣϵ remains the projected, real scalar.
+
+                                             Closed-form labels (for Section6cross-references).
+                                                     For later citation we record the compact forms as Equations (A48)–(A51).
+
+                                                                                     µ(N)ROD = c(N)ROD,0+c(N)ROD,HH+c(N)ROD,YY,                                   (A48)
+
+                                                                                      µ(N)CM = c(N)CM,0+c(N)CM,HH+c(N)CM,YY,                                        (A49)
+
+                                                                                    µ(∇N)ROD  = c(∇N)ROD,0+c(∇N)ROD,HH+c(∇N)ROD,YY,                                   (A50)
+
+                                                                                    µ(∇N)CM   = c(∇N)CM,0 +c(∇N)CM,HH+c(∇N)CM,YY.                                       (A51)
+
+                                             Appendix D.4. Non-Collinearity of the Two Locking Equations
+                                                     Let the two rows ber1 =(µ(N)ROD,µ(N)CM),r2 =(µ(∇N)ROD ,µ(∇N)CM  ).
+
+                                             Proposition A4 (Non-collinearity).  Under A1–A5, C1, and the one-derivative-per-building-
+                                             block posture, r1 ̸∥  r2 on any admissible background with at least one of {H,Y} ̸=  0 and
+                                             ∇µˆnν̸= 0. Equivalently,
+
+                                                                                      ∆ ≡ µ(N)RODµ(∇N)CM  −µ(∇N)ROD µ(N)CM ̸=  0.
+
+                                             Proof. Sketch of Proof. Using (A47)        , proportionality would requireρX ≡ µ(N)X   /µ(∇N)X      to
+                                             beroute-independentand constantunder independent shiftsofH andY. But∂HρX and
+                                             ∂YρX cannot both vanish for X = ROD,CM unless c(Y)X,H = c(Y)X,Y = 0 (static trivial branch
+                                             H =Y = 0,∇ˆn= 0). Hence,r1̸∥ r2 generically.
+
+
+
+
+
+
+
+
+                                                                                                                                       https://doi.org/10.3390/sym18010170

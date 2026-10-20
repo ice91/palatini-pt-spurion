@@ -1,0 +1,76 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                  doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                       19 of 43
+
+
+
+                   which can be understood from an effective field theory (EFT) perspective (see App.G), leads to the
+                   dispersion relation:
+
+                                              h              i
+                                 ω2 = k2phys   1+b k2physΛ2       =⇒      c2T(k)≡   ω2k2phys = 1+b k2physΛ2      (kphys≪Λ),             (36)
+
+
+                   wherebisadimensionlesscoefficientofO(1)andΛistheeffectivescaleofnewphysics. Thisquadratic
+                   dependenceonfrequencyisthedefining,distinctivesignatureofourframeworkatNLO,asvisualized
+                   in the log-log plot of Figure11.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure11. NLOsignatureandslopefit. Thepredictedtensor-speeddeviationδc2T(k) fromthelockedleading-
+                   order value c2T = 1, plotted as a function of physical wavenumber k. The log-log plot shows the characteristic
+                   slope ˆn≃ 2, a direct consequence of the unique NLO operator. The vertical offset of the line fixes the ratio b/Λ2.
+                   [nb: fig_nlo_offsets.py]
+
+                   8.3. Data-Facing Strategy: Constraints and Falsification
+                         The NLO prediction (36) provides a direct and powerful bridge to observational data.
+
+                   Recipe for Constraining the Theory
+                         Any observational constraint on cT can be translated into a boundon the fundamental parameter
+                   spaceofthetheory. Givenameasurementoranupperlimitonδc2T(f⋆) inafrequencybandcenteredat
+                   f⋆, we propose reporting a standardized constraint on the combination b/Λ2:
+
+                                                                         b
+                                                                        Λ2 = δc2T(f⋆)(2πf⋆)2.                                                                    (37)
+
+                   Thisprovidesasimpleandunifiedwaytotesttheframeworkacrossdifferentexperiments(e.g.,PTA,
+                   LISA,LVK) andto combinetheirresults. Forinstance,the existingbound fromGW170817 impliesa
+                   scale ofΛ≳ 9.3×10−6eV (for|b|∼ 1).
+
+                   Null Tests for Foundational Assumptions
+                         Arobustframeworkshouldalsoofferwaystotestitsownfoundationalassumptions. Ourposture
+                   provides two independent null tests for the spurion limit of the fieldϵ:
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

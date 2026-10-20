@@ -1,0 +1,53 @@
+The affine configuration space of the model is the three traces (Tµ,Qµ,eQµ) together with a
+compensator one-form Aµ. Axial torsion, tensor torsion, and traceless nonmetricity exist as
+metric-affine irreps [1, 19] and are not coordinates here: they are neither solved to zero nor
+removed by the projective gauge. Matter is metric-minimal, so no hypermomentum sources
+the connection [20, 21].
+Assumption 3.1(Trace/vector configuration space).The independent affine data are
+(T,Q, eQ,A). Deleted irreps remain outside the domain.
+Assumption 3.2(Metric-minimal matter).Matter does not supply an independent hypermo-
+mentum source for the connection equation.
+
+                                                   ¯Tµ :=T    µ−A   µ.                                                   (3.6)
+
+The residue tµ := ¯Tµ is the projectively invariant torsion-trace combination. The bulk action is
+                                Z              h                                            i
+                          S=       d4x√−g       f1R(Γ)+f       2 ¯T2+f   3 ¯∇· ¯T+U(ϕ)       ,                       (3.7)
+
+with coefficient functions of a scalar argument ϕ. This is a representative, compact, nontrivial
+projectively invariant trace-residue model:  f1R(Γ) supplies the projective gauge and the
+Palatini block, while f2¯T2+f3¯∇· ¯T keep a gauge-invariant affine residue algebraically active. It
+is not claimed to be the most general metric-affine Lagrangian, nor a unique minimal operator
+basis.
+Assumption 3.3(Trace-residue action).The bulk functional is                  (3.7). The potential U(ϕ) is
+affine-independent.
+    The one-form Aµ is introduced as a compensator field for the one-form projective action.
+No microscopic or ultraviolet Stueckelberg interpretation is assumed. The combination T2
+is not projectively invariant, while ¯T2 is, once δA=3ξ accompanies the connection shift. In
+the gauge-adapted coordinates of Section 4, Vµ =Aµ parametrizes the projective orbit, while
+tµ = Tµ−A   µ is gauge invariant but remains auxiliary on Ureg. The field Aµ is varied as an
+auxiliary field in (3.7); after the quotient it parametrizes the orbit rather than an independent
+bulk degree of freedom.
+
+4   Projective transformation and invariant coordinates
+
+The projective transformation used throughout is
+
+                                       δΓ λµν =−δ       λνξµ,       δAµ =3ξ  µ,                                      (4.1)
+
+with δgµν =0. Index placement is part of the law under the targets below. The MAG first-kind
+shiftδΓ          λµν =+δ   λµξν [1, 6] is a different transformation, not used here.
+    Linear vectorial connection maps form a larger family [6, 22]. The two-parameter subfamily
+containing common first- and last-index writings [2, 3, 23] is
+
+                                           δΓ λµν =aδ   λµξν +bδ   λνξµ,                                           (4.2)
+
+with compensator increment held at
+
+                                                    δAµ =+3ξ     µ.                                                     (4.3)
+
+AtD=4,
+
+                  δTµ =3(a−b)ξ             µ,       δQµ =(2a+8b)ξ            µ,       δeQµ =(5a+2b)ξ            µ.             (4.4)
+
+                                                           4

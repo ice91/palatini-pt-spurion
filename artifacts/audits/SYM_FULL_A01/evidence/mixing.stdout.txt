@@ -1,0 +1,4 @@
+[data] wrote figs/data/mixing_matrix.csv (+ .md5)
+[meta] wrote figs/data/mixing_matrix_meta.json (+ .md5)
+[check] rN=0.666666666667, rDiv=0.666666666667, |Δ|=0 ≤ 1e-06 ?  -> OK
+[lock] w*_ROD:w*_CM = 0.666666666667 : 1

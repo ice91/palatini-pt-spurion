@@ -1,0 +1,50 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "0",
+   "metadata": {},
+   "source": [
+    "# 10 — C2 symbolic demo\n",
+    "Show DBI / closed-metric reduce to A_* * I_T at quadratic order."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import sympy as sp\n",
+    "from palatini_pt.equivalence.coeff_extractor import reduce_to_IT\n",
+    "\n",
+    "lam, eta, Seps = sp.symbols(\"lambda eta Seps\", positive=True)\n",
+    "res_dbi = reduce_to_IT(route=\"dbi\", lam=lam, eta=eta, Seps=Seps)\n",
+    "res_cm  = reduce_to_IT(route=\"closed_metric\", lam=lam, eta=eta, Seps=Seps)\n",
+    "sp.simplify(res_dbi - res_cm)"
+   ]
+  }
+ ],
+ "metadata": {
+  "jupytext": {
+   "cell_metadata_filter": "-all",
+   "main_language": "python",
+   "notebook_metadata_filter": "kernelspec,language_info"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

@@ -1,0 +1,63 @@
+Symmetry2026,18, 170                                                                                                                       4 of 50
+
+
+
+                                    non-detection) of the specific k2 scaling (2)    across PTA, LISA, and ground-based bands
+                                    would therefore provide a sharp, falsifiable test of the framework.
+
+                                    2. The Theoretical Posture: Symmetries, Assumptions, and Projectors
+
+                                    Positioning and Scope.  This section specifies the posture of the paper as a precise working
+                                    specification. Wefixthevariationalsetting,definethesymmetry-selectedobservablesector,andstate
+                                    the explicit assumptions (A1–A6) under which all later claims are to be read. In particular, we
+                                    (i)workinametric-compatiblefirst-order(Palatini)variationalformulationonaRiemann–Cartan
+                                    spacetimewithtorsion,(ii)imposeprojectiveinvarianceinobservablesviaaStueckelbergspurion,
+                                    and(iii)applyascalarPTprojectiontoobservablescalardensities. Wedonotassumeteleparallelism
+                                    (nozero-curvatureconstraint),andwedonotattemptafullbackgroundsolutionorparameterfitting.
+
+                                    2.1. Terminology Note: Variational Principle vs. Geometry
+                                          We clarify terminology to prevent a common misreading. “Palatini” refers to a first-
+                                    ordervariationalprincipleinwhichthecoframe/tetrad eA (ormetric)andtheconnection
+                                    ωAB are treated asindependent variables [11–13]. Theunderlying spacetime geometry in
+                                    thispaperisRiemann–Cartan: curvatureisgenerallynonzeroandtorsionisallowed. We
+                                    furthermore restrict to metric-compatible connections, so∇µgαβ = 0.
+                                          ProjectiveinvarianceisastandardredundancyofPalatini/metric-affinedescriptions: a
+                                    shiftoftheconnectionbyapure-tracepiecedoesnotaffectcertaincurvatureinvariantsand
+                                    canbetreated asagauge-likeredundancy intheobservablesector. Finally,weemphasize
+                                    that our setting is not teleparallel gravity: teleparallel models impose vanishing curvature
+                                    and attribute gravity entirely to torsion. We do not impose such a constraint; teleparallel
+                                    reviews are cited only to preclude misclassification [18,19].
+
+                                    2.2. Geometric Setting and Conventions
+                                          Weworkonanoriented(3+1)-dimensionalLorentzianmanifold. Inthefirst-order
+                                    formalism,thebasic variablesarea coframe eA anda metric-compatible spinconnection
+                                    ωAB =−ωBA. The torsion and curvature two-forms are
+
+                                                       TA ≡  deA+ωAB∧eB,        RAB ≡  dωAB+ωAC∧ωCB.                       (3)
+
+                                    Component conventions follow standard Riemann–Cartan notation [12–14].
+                                          Throughout, ϵµνρσ denotes the Levi–Civita tensor density compatible with the cho-
+                                    sen orientation.
+
+                                    2.3. Principle 1: Projective Symmetry and the Stueckelberg Spurion
+                                          Our first guiding principle is projective invariance in observables. At the level of an
+                                    affine connection, a projective transformation acts as
+
+                                                        Γαµν → Γαµν+δαµξν,        Tµ≡ Tαµα →  Tµ+(d−1)ξµ,                        (4)
+
+                                    where d = 4 and ξµ is an arbitrary one-form.  To ensure that physical observables are
+                                    insensitive to this redundancy, we introduce a Stueckelberg compensator (spurion) field
+                                    ϵ(x) with the compensating transformation ∂µϵ → ∂µϵ+(d−1)ξµ.  This packages all
+                                    projectively invariant dependence of the torsion trace into the combination
+
+                                                                 Tµ ≡  Tµ−∂µϵ            (projectively invariant).                                   (5)
+
+
+
+
+
+
+
+
+
+                                                                                                           https://doi.org/10.3390/sym18010170

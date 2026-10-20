@@ -1,0 +1,68 @@
+{
+  "sympy": "1.14.0",
+  "checks": {
+    "linear_Bianchi": {
+      "pass": true
+    },
+    "all_four_gauge_vectors_annihilated": {
+      "pass": true
+    },
+    "off_shell_Einstein_rank": {
+      "pass": true
+    },
+    "null_shell_Einstein_rank": {
+      "pass": true
+    },
+    "null_shell_gauge_rank": {
+      "pass": true
+    },
+    "plus_null_solution": {
+      "pass": true
+    },
+    "cross_null_solution": {
+      "pass": true
+    },
+    "gauge_plus_physical_exhaust_nullspace": {
+      "pass": true
+    },
+    "plus_wave_operator": {
+      "pass": true
+    },
+    "four_independent_canonical_constraints": {
+      "pass": true
+    },
+    "linear_constraints_first_class": {
+      "pass": true
+    },
+    "four_independent_gauge_directions": {
+      "pass": true
+    },
+    "physical_phase_dimension": {
+      "pass": true
+    },
+    "derived_EH_GammaGamma_reduced_density": {
+      "pass": true
+    },
+    "physical_velocity_Hessian": {
+      "pass": true
+    },
+    "helicity_double_angle_plus": {
+      "pass": true
+    },
+    "helicity_double_angle_cross": {
+      "pass": true
+    },
+    "BF_curvature_constraint_rank_per_generator": {
+      "pass": true
+    },
+    "BF_local_physical_phase_dimension": {
+      "pass": true
+    }
+  },
+  "null_symbol_rank": 4,
+  "gauge_rank": 4,
+  "canonical_constraint_rank": 4,
+  "physical_configuration_count": 2,
+  "GammaGamma_density": "Ct**2/2 - Cz**2/2 + Pt**2/2 - Pz**2/2",
+  "scope": "Exact linear regular-branch analysis, not a full nonlinear Dirac calculation of all sectors."
+}

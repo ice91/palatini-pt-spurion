@@ -1,0 +1,68 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 6 October 2025                                 doi:10.20944/preprints202509.2421.v2
+
+
+                                                                                                                                     3 of 48
+
+
+
+                        Plain-languagegist(reader’sguide). Whatwedo: (i)keeponly PT-evenscalarobservables;(ii)use
+                   a compensator so only the trace of torsion in the invariant combinationTµ matters; (iii) show three
+                   seeminglydifferentquadraticroutesgivethesamebulkphysics(C2);(iv)choosecoefficientsonceand
+                   for all to kill mixing, which forces cT=1 (C3). What you can test: a unique next-to-leading dispersion
+
+
+                                                               δc2T(k)= b k2Λ2       (k≪Λ)
+
+                   for multi-bandGW data (PTA/LISA/LVK), detailedin Section 9; ifa k2 slope isabsent where EFT is
+                  valid, this posture is disfavored.
+                        Falsifiable diagnostics(paper-level). WithinA1–A6, anyof the followingfalsifies theframework
+                   at quadratic order:
+                  1.      (C1 fails) Robust axial/traceless torsion signals in observables, or inability to realize Sµ=0,
+                         qλµν=0 with Tµ∥ ∂µϵ.
+                   2.      (C2 fails) Disagreement of bulk coefficients among rank-one determinant (ROD), closed-metric
+                         (CM), and PT-even CS/Nieh–Yan routes once improvements are accounted for; the flux ratio
+                         RX/Y[∂D]̸→ 1 on admissible domains.
+                   3.      (C3 fails) No coefficient choice achieves K−G = ∂µ(a−3Jµ∆a3), or cT ̸= 1 persists after locking on
+                         admissible patches.
+                        Positioning relative to prior lines.  In EC/MAG, axial/traceless torsion can propagate; here
+                   they are algebraically removed in the analyzed sector (C1).  Parity-odd (dynamical) Chern–Simons
+                   gravitytiestensoreffectstoapseudo-scalar;our PT-projected,even-paritysectorachievesluminality
+                   by an equal-coefficient identity (C3), modulo improvements. Nieh–Yan contributes only boundary
+                   countertermsunderA5anddoesnotalterbulkequations. Thethree-chaincollapse(C2)isarank-one,
+                  quadratic statement: ROD, CM, and the PT-even CS/Nieh–Yan shadow share the same bulk piece
+                   A⋆√−gIT, differing only by∇µJµ.
+                        Organization and stability notes. Section2fixes A1–A6 and the scalar projector; Sections3–4
+                  prove C1; Section5proves C2 and defines flux-ratio diagnostics; Sections6–7implement locking
+                   andprove cT=1 (C3),also giving Jµ∆ representatives;matter couplingsandthe data-facingNLO piece
+                   appear in Sections8–9.  Locking is stable on generic patches: the                      2×2 mixing determinant scales
+                   as∆(k,Σϵ) = α0η4Σ2ϵk2+O(k4,Σ3ϵ) with α0 ̸= 0, so rank loss occurs only on the measure-zero set
+                   {Σϵ=0}∪{k=0}.
+
+                              ΠPT                           C1                              C2                             C3
+                        scalar projector           pure-trace Tµ∥ ∂µϵ              ROD≡ CM≡ CS+                    locking⇒ cT = 1
+
+
+
+
+
+                                                                         Bulk equalities hold modulo∇µJµ (A4–A5).
+
+                   Figure1. Roadmap ofthequadraticanalysis(bulk-only). Thescalar PT projector(Thm.2) definestheallowed
+                   sector;projective invarianceisrealized byTµ = Tµ−∂µϵ. C1 enforces Tµ∥ ∂µϵ (22)     ;C2 establishesbulkequiva-
+                   lenceoftherank-onedeterminant(ROD),closed-metric,and PT-evenCS/Nieh–Yanroutesuptoimprovements
+                  (37); C3 locks coefficients and yields      K = G and cT = 1 (53).
+
+                   2. Global Assumptions & the Scalar PT Projector
+                        We work on an oriented (3+1)-dimensional spacetime with independent vierbein eAµ and a
+                   metric-compatiblespin connectionωABµ=−ωBAµ (Palatiniposture). Greekindicesµ,ν,... arespace-
+                   time; Latin A,B,... are Lorentz-frame indices withηAB = diag(−,+,+,+). Torsion and curvature
+                   are
+                                          TA≡ DeA = deA+ωAB∧eB,        RAB≡ dωAB+ωAC∧ωCB.                             (4)
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

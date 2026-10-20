@@ -1,0 +1,30 @@
+# configs/paper_grids.yaml
+seed: 42
+dtype: float64
+
+tolerances:
+  sym_zero: 1.0e-12
+  num_zero: 1.0e-10
+
+grids:
+  c2_scan:
+    # IBP 門檻掃描（logspace）
+    thresholds_exp: [-14, -9, 26]   # start, stop, num -> logspace
+  ct:
+    # k 掃描（論文圖 4/5 的代表）
+    kmin: 1.0e-4
+    kmax: 1.0e-1
+    n: 128
+
+spurion:
+  # Π_PT[(∂ε)^2] 的代表量級（數值繪圖用途）
+  seps_scale: 0.2
+
+waveform:
+  T: 200.0
+  dt: 0.1
+  f0: 0.05
+
+output:
+  dir: figs
+  keep_intermediate: true

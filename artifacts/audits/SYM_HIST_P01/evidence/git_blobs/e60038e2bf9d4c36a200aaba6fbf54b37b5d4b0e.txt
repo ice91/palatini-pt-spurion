@@ -1,0 +1,83 @@
+[build-system]
+requires = ["hatchling>=1.25.0"]
+build-backend = "hatchling.build"
+
+[project]
+name = "palatini-pt-spurion"
+version = "0.1.0"
+description = "Palatini × PT-even + spurion: reproducible codebase for C1/C2/C3 results"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [
+  { name = "Chien-Chih Chen", email = "rocky@cht.com.tw" }
+]
+keywords = ["Palatini", "torsion", "PT-symmetric", "spurion", "spectral", "GR", "gravitation"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Intended Audience :: Science/Research",
+  "Topic :: Scientific/Engineering :: Physics",
+]
+
+dependencies = [
+  "numpy>=1.26",
+  "sympy>=1.12",
+  "matplotlib>=3.8",
+  "PyYAML>=6.0.1",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=7.4",
+  "pytest-cov>=4.1",
+  "mypy>=1.8",
+  "black>=24.3.0",
+  "isort>=5.13.2",
+  "flake8>=7.0.0",
+  "nbstripout>=0.7.1",
+  "types-PyYAML>=6.0.12",
+]
+
+[project.scripts]
+palpt = "palatini_pt.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["palatini_pt"]
+
+[tool.black]
+line-length = 88
+target-version = ["py310", "py311"]
+exclude = '''
+/(
+    \.git
+  | \.mypy_cache
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 88
+force_single_line = false
+multi_line_output = 3
+include_trailing_comma = true
+known_first_party = ["palatini_pt"]
+
+[tool.flake8]
+max-line-length = 99
+extend-ignore = ["E203", "W503"]  # match black
+exclude = [".git", "__pycache__", "build", "dist", ".venv", ".mypy_cache"]
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
+strict_optional = false
+warn_unused_ignores = true
+warn_redundant_casts = true
+warn_no_return = false
+check_untyped_defs = false
+disallow_untyped_defs = false
+exclude = ["build", "dist", "\\.venv", "\\.mypy_cache"]

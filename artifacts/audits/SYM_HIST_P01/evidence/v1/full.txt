@@ -1,0 +1,3110 @@
+
+==== PDF PAGE 1 ====
+Article                                                                 Not peer-reviewed version
+
+Palatini–PT-Even Torsion: Uniqueness,
+Three-Chain Equivalence, and Exact
+Luminal Tensors
+
+
+
+
+
+
+
+Chien Chih Chen *
+
+Posted Date: 29 September 2025
+
+doi: 10.20944/preprints202509.2421.v1
+
+Keywords: Palatini formalism; PT-even projector; pure-trace torsion; trace-lock posture; Nieh–Yan invariant;
+parity-even Chern–Simons projection; rank-one determinant (ROD); closed-metric deformation; coefficient
+locking; three-chain equivalence; gravitational-wave tensor modes; exact luminality (c_T=1)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             Preprints.org is a free multidisciplinary platform providing preprint service
+             that is dedicated to making early versions of research outputs permanently
+             available and citable. Preprints posted at Preprints.org appear in Web of
+             Science, Crossref, Google Scholar, Scilit, Europe PMC.
+
+Copyright: This open access article is published under a Creative Commons CC BY 4.0
+license, which permit the free download, distribution, and reuse, provided that the author
+and preprint are cited in any reuse.
+
+==== PDF PAGE 2 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                           doi:10.20944/preprints202509.2421.v1
+
+Disclaimer/Publisher’s Note: The statements, opinions, and data contained in all publications are solely those of the individual author(s) and
+contributor(s) and not of MDPI and/or the editor(s). MDPI and/or the editor(s) disclaim responsibility for any injury to people or property resulting
+from any ideas, methods, instructions, or products referred to in the content.
+
+                  Article
+                  Palatini–PT-Even Torsion: Uniqueness, Three-Chain
+                  Equivalence, and Exact Luminal Tensors
+
+                  Chien-Chih Chen
+
+
+                  Chunghwa Telecom Laboratories, Information & Communications Security Laboratory; rocky@cht.com.tw
+
+                  Abstract
+
+                  Whatisnew. Withinafirst–order(Palatini)settingweimposeascalar PT projectoronallobservable
+                  scalar densities, restricting to at most one derivative per building block.  Under this setting the
+                  framework implies: (i) a unique, pure–trace torsion aligned with ∂ϵ (C1); (ii) a bulk equivalence of
+                  three ostensibly different rank–one constructions with the same quadratic coefficient A⋆ = λ2/8
+                  (C2); and (iii) a unique weight ratio between the rank–one determinant and closed–metric routes
+                  that removes TT–nonTT mixing and enforces the equal–coefficient identity K=G (C3), hence cT=1
+                  at quadratic order.  Setup.  All observable scalars are mapped by a scalar PT projector ΠPT(·) to
+                  a real, even sector; the internal phase ϵ(x) is a nondynamical spurion that enters only through ∂ϵ.
+                  With global assumptions A1–A6 (PT–invariant domain/measure, [PT ,∗]=0, projection–variation
+                  commutation, boundary/topology posture, Nieh–Yan as boundary counterterm, and a trace lock), we
+                  work at quadratic order with at most one derivative per building block. The trace lock is enforced
+                  algebraicallysothat Tµ = 3η∂µϵ (nonewcanonicalpairsunderA4). Results. (C1)Palatinialgebraicity
+                  plus the scalar projector force Sµ=0, qλµν=0, and TABC = 2ηδA[B∂C]ϵ, yielding the invariant IT =
+                  −6η2ΠPT[(∂ϵ)2].  (C2) After C1 and projection, the three routes—(i) a rank–one determinant built
+                  from the canonical traceless matrix, (ii) a closed–metric rank–one deformation, and (iii) the PT–even
+                  CS/Nieh–Yanshadow—collapsetothesamebulk quadraticpiece A⋆√−g(σϵIT) uptoimprovements,
+                  with A⋆ = λ2/8. (Our “ROD” is a parity–even volume deformation, not Born–Infeld gravity.) (C3)
+                  On flat FRW (unitary gauge) the two independent TT–nonTT mixing entries are proportional and
+                  fix the locked ratio  wROD : wCM = 2 : 3.  On generic admissible patches the two mixing equations
+                  are non–collinear, selecting the same unique ratio; with this locking we prove K(w)=G(w) (a total–
+                  divergence identity on the admissible variational domain), hence c2T = 1 and a GR TT sector with
+                  no extra propagating degrees of freedom. Reproducibility and scope. All figures and coefficients are
+                  reproduced by the accompanying open–source notebooks and scripts; the 2:3 ratio is extracted by
+                  an automated mixing–matrix check on flat FRW and its generic uniqueness follows from the non–
+                  collinearity argument. Matter couplingsrespectthe posture(axial channelvanishes; the tracecoupling
+                  is removable up to a Nieh–Yan boundary shift).  The leading PT–even NLO correction predicts
+                  δc2T(k) = bk2/Λ2, offering band–limited constraints onΛ. Detailed proofs, improvement currents,
+                  and coefficient tables appear in Apps. A–E.
+
+                  Keywords: Palatini formalism; PT-even projector; pure-trace torsion; trace-lock posture; Nieh–Yan
+                  invariant;parity-evenChern–Simons projection; rank-onedeterminant(ROD);closed-metricdeforma-
+                  tion;coefficientlocking;three-chainequivalence;gravitational-wavetensormodes;exactluminality
+                  (cT = 1)
+
+
+
+                  1. Introduction
+                  Motivation.
+                        Multimessenger bounds enforce luminal gravitational waves near the present epoch, sharply
+                  constrainingmodificationsofGR.Weaskwhetherafirst–order(Palatini)frameworkcanbeformulated
+                  that(i)remainsstrictly PT–evenatthelevelofobservables,(ii)closesatquadraticorderwithatmost
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.
+
+==== PDF PAGE 3 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                           doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  onederivativeperbuildingblock,(iii)preservesexacttensorluminality,and(iv)introducesnoextra
+                  propagating degrees of freedom.
+
+                  Posture and scope.
+                        We work with independent vierbein eAµ and metric–compatible spin connection ωABµ, and
+                  enforceascalar PT projectorΠPT(·) onallobservablescalardensities. Aninternalphaseϵ(x) enters
+                  the observed sector only through its gradient and as a spurion (not varied). At quadratic order with at
+                  most one derivative per factor, the projected, real scalar
+
+                                                                    Σϵ≡ΠPT(∂ϵ)2
+
+                  serves as the unique spurionic invariant;  we also use the shorthand IT ≡ −14ΠPT[TABCTABC].
+                  Global assumptions (A1–A6)—PT-invariant domain/measure, orientation and [PT ,∗]=0, projec-
+                  tion/variationcommutation,boundary/topologyposture,Nieh–Yanasboundarycounterterm,and
+                  the trace-lock posture—are fixed once and for all (Section2).
+
+                  Positioning and falsifiable claims.
+                        In contrast to EC/MAG lines where axial and traceless torsion may propagate in the bulk, our
+                  scalar PT postureplus Palatinialgebraicity removes bothirrepsat theanalyzed order. The framework
+                  is falsified if any of the following fails on admissible patches: (i) the pure–trace map (C1), (ii) the
+                  bulkequalityofthethreerank–onerouteswith A⋆ = λ2/8(C2),or(iii)thelockedequal–coefficient
+                  identity K = G (C3), statedas a densitytotal divergence K−G = a−3∂µ(a3Jµ∆) and proven in Section7
+                  (with a weak–field TT representative of Jµ∆ recorded in Section7.1).                   Paper-level null tests include: (a)
+                  recovering A⋆ = λ2/8fromthe PT-evenCS/Nieh–YanshadowonFRW/Minkowski; (b)reproducing
+                  the non-collinearity of the two mixing entries and the locked ratio w⋆ROD : w⋆CM; and (c) verifying
+                  K−G = a−3∂µ(a3Jµ∆) with the listed Jµ∆.
+
+                  Main results (at a glance).
+
+                    (C1)Palatini–PT uniquenessundertrace-lock(A6). Algebraictorsionconsistentwiththescalar
+                    projector isuniquely pure trace and aligned with∂ϵ:
+
+                                                TABC = 2ηδA[B∂C]ϵ,       η > 0, Sµ = 0, qλµν = 0
+
+                    and the surviving quadratic invariant is
+
+                                                                     IT =−6η2Σϵ.
+
+
+                    (C2) Three–chain equivalence (quadratic, modulo boundary). A rank–one determinant (ROD), a
+                    closed–metricrank–onedeformation,andtheparity–evenprojectedCS/Nieh–Yanpiececollapse
+                    after projection and C1 to the same bulk invariant:
+
+
+                                  δ2LROD ≡ δ2LCM ≡ δ2LCS+ ≡  A⋆p−gIT   (mod∇µJµ),    A⋆ = λ28  .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.
+
+==== PDF PAGE 4 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                              doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                     (C3)Coefficientlocking⇒ exactluminalityandaGRTTsector. EliminatingTT–nonTTmixing
+                     fixesa uniqueweightratiobetween RODandclosed–metric routes; thelockedquadraticTT block
+                     satisfies the equal–coefficient identity
+
+                                                                 K−G =  a−3∂µa3Jµ
+                                                                                          ∆
+
+                     (Section7), hence
+
+                                                                    Z        "                       #
+                                     c2T = 1,       δ2STT = M2Pl8     d4xa3    ˙hTTij  ˙hTTij − (∂khTTij )2,    no new DoF.
+                                                                                              a2
+
+
+                     A TT–gauge weak–field representative of Jµ∆ on Minkowski with slowly varyingϵ is provided in
+                     Section7.1, and a covariant FRW representative is listed in Appendix D.
+
+                   Related work (concise map).
+                        In EC/MAG lines (e.g., [4,37]), axial and traceless torsion may propagate; by contrast, our
+                   scalar–PT Palatini posture plus algebraicity forces pure trace aligned with ∂ϵ at the analyzed order
+                  (C1), removing those irreps in the bulk. Parity–odd dCS gravity (e.g., [14,15]) ties tensor speed to
+                   a pseudo–scalar; here the PT projected sector keeps only even scalars and fixes cT=1 after locking
+                  (C3), modulo improvements.  Nieh–Yan terms [9] in our posture serve as boundary counterterms
+                  (A5) and do not alter bulk equations. Operationally, the “three–chain” collapse (C2) is a parity–even,
+                   rank–one statement: a rank–one determinant (ROD), a closed–metric deformation, and the PT–even
+                   CS/Nieh–Yan shadow share the same bulk quadratic piece A⋆√−g sgn(Σϵ)IT with A⋆ = λ2/8,
+                   differingonlybyimprovementcurrents. Weviewourresultsasaneven–parity,first–ordercomplement
+                   to these traditional lines, tailored to tensor–sector falsifiability.
+
+                   Falsifiability, stability, and organization.
+                        Any failure of the pure–trace map (C1), of the three–chain bulk collapse with A⋆ = λ2/8 (C2),
+                   or of exact luminality after locking (C3) falsifies the framework at quadratic order. Locking is stable
+                   on generic patches: the 2×2 mixing determinant scales as ∆(k,Σϵ) = α0η4Σ2ϵk2+O(k4,Σ3ϵ) with
+                   α0̸= 0, so rank loss occurs only on the measure–zero set{Σϵ=0}∪{k=0} (Section6, Appendix D).
+                   Beyondleadingorder,werecordanorder–of–magnitudedata–facingNLOestimateinSection9(boxed
+                   remark; GW band). The paper is organized as follows: Section2fixes A1–A6 and the scalar projector
+                  (with an admissible–variation clarification); Sections3–4establish closure and prove C1 (including a
+                   3–line block–nondegeneracy proof sketch); Section5proves C2 and introduces flux–ratio diagnostics;
+                   Sections6–7implementlockingandprove                     cT = 1,providingtheweak–fieldTTrepresentativeof Jµ∆
+                  (Section7.1); mattercouplings andNLO/data–facing aspectsappear inSections8–9.                                         Completeproofs
+                   and coefficient tables are collected in Apps. A–F.
+
+                   2. Global Assumptions & the ScalarPT Projector
+                        Weworkonanoriented(3+1)-dimensionalspacetimewithindependentvierbein eAµ andmetric-
+                   compatible spin connection ωABµ=−ωBAµ (Palatini posture). Greek indices µ,ν,... are spacetime;
+                   Latin A,B,... are Lorentz-frame indices withηAB = diag(−,+,+,+). Torsion and curvature are
+
+                                          TA≡ DeA = deA+ωAB∧eB,        RAB≡ dωAB+ωAC∧ωCB.                             (1)
+
+                   Observable scalar densities are mapped to a real, PT-even sector by a projectorΠPT(·) defined below.
+                  The internal phaseϵ(x) is a spurionentering observables only via∂ϵ and is not varied.
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.
+
+==== PDF PAGE 5 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                              doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                     Assumption Posture at a Glance (A1–A6).                                     Z         Z
+                     A1    PT-invariant domain/measure.  For any scalar density X,                  X =       PT[X].   Used in:  self-
+                           adjointness ofΠPT and projector identities (Theorem1); route-flux diagnostics in Section V.
+                     A2    OrientationandHodgedual. Thecombined PT preservesthechosenorientationand[PT ,∗]=
+                           0 on forms.    Used in:  parity of Levi–Civita density and commuting with ∗; boundary
+                           accounting.
+                     A3    Projectioncommuteswithvariation. Forscalardensities,δΠPT[O]=ΠPT[δO].  Usedin: Palatini
+                           variation and irrep block-diagonalization (Section IV). Checkable proof: Lemma1below.
+                     A4    Topology/boundaryposture. Workontrivial patchesorimpose PT-invariantboundaryfluxso
+                           thatimprovementcurrents are puregauge(noextra canonicalpairs).  Usedin: nulltests and
+                           flux ratios (Section V); DoF count (Section VII).
+                     A5    Nieh–Yan as boundary counterterm.  NY ≡ d(eA∧ TA) affects only boundary conventions;
+                           no bulk Euler–Lagrange effect.  Used in: three-chain equivalence modulo total derivatives
+                           (Section V).
+                     A6    Trace-lockposture. Weenforce Tµ = 3η∂µϵ viaanalgebraicLagrangecurrent. UnderA4this
+                           introducesnonewcanonicalpairsandonlyremovesthe PT-evenbilinearindependenceat
+                           quadratic order.
+
+                   Sufficient conditions for A1.
+                        OnorientedLorentzianpatcheswiththestandardmeasured4x√−gand PT-invariantboundaries
+                   (compact or AF/FRW fall-offs), the pullback by PT preserves both the integration domain and the
+                   measure, henceR X =R PT[X] for scalar densities.
+
+                   Sufficient conditions for A2.
+                        IfPTpreservesthechosenorientationandthemetricusedforindexoperations,thenPTcommutes
+                   with the Hodge dual on forms: [PT ,∗]= 0.
+
+                   Action of P,T,PT on densities
+                        Let P,T act as standard discrete isometries; T is anti-linear (complex conjugation). On oriented
+                   (3+1)-manifolds, the combined PT preserves orientation, so for the Levi–Civita densityϵµνρσ (weight
+                  +1) we have
+                                                  P : ϵ7→−ϵ,        T : ϵ7→−ϵ,        PT : ϵ7→+ϵ.
+
+                   Assumption A2 implies[PT ,∗] = 0. Consequently, a scalar of the formϵµνρσXµνρσ is PT-even iff X is
+                   PT-even.
+
+                   2.1. Scalar PT Projector: Definition And Basic Properties
+                        Thecombined PT actsanti-linearlyoncomplex-valueddensities(complexconjugationaccompa-
+                   nies time reversal). On scalar densities we define
+
+                                               ΠPT[O] ≡  1     O+PT[O]real scalar,      Π2PT =ΠPT.                                    (2)
+                                                              2
+
+                   Self-adjointness on real scalars. Using A1 andPT 2=id,
+                                                         Z                           Z
+                                                           ΠPT[O1]ΠPT[O2]=              ΠPT[O1O2].                                                  (3)
+
+
+                   Lemma 1 (Project–vary commutation on scalar densities).  LetΠPT[O] ≡  12(O+ PT[O])|real act on
+                   complex-valuedscalardensitiesO∈ L2(D) withA1(PT-invariantdomain/measure)andA4(fall-offs)imposed.
+                   If the spurionϵ is non-variational and variations act onlyon(e,ω) with compact support or admissible fall-offs,
+                   thenδΠPT[O]=ΠPT[δO] andΠPT is self-adjoint on real scalars.
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.
+
+==== PDF PAGE 6 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Proof. Anti-linearityof T affectsonly i7→−i; variationshere are real-linear on(e,ω), andϵ is fixed.
+                   With A1,R X = R PT[X] impliesR  fΠPT[g] = R ΠPT[fg] on real scalars (self-adjointness).  Then
+                   δΠ=  12(δO+δPT[O])=  12(δO+PT[δO])=Π[δO], where boundary terms vanish by A4.
+
+
+                                                                   δΠPT[O]=ΠPT[δO].                                                                 (4)
+
+                   Function-analytic hypotheses and a minimal counterexample.
+                         AssumeO∈ L2∩ H1 (scalardensities),(δe,δω)∈ H1cpt orwithA4fall-offs,andthespurionϵ is
+                   non-variational. Since T isanti-linear(complexconjugation), PT actsas i7→−i. Undertheseconditions
+                   δ is real-linear andδΠPT[O]=ΠPT[δO].
+                         If, however, ϵ is varied, the commutation may fail.  Let O = i∂µϵVµ with a real Vµ.  Then
+                   ΠPT[O] = 0 (purely PT-odd), butΠPT[δO] =   12(δO+ PT[δO]) = δO ̸= 0 when δϵ ̸= 0.  Hence
+                   δΠPT[O]= 0̸=ΠPT[δO]. This shows why we holdϵ fixed (spurion posture).
+
+                   Admissible variation space.
+                         Variationsacton(e,ω) withcompactsupportorwithA4fall-offs: onAFpatches(δe,δω)∈ H1δ
+                   with δ < −3/2; on FRW slices, δe = O(r−1−σ), δω = O(r−2−σ) for some σ > 0. The spurion ϵ is
+                   nondynamical (no variation) and T’s anti-linearity only sends i→−i. Under these conditions δ is
+                   real-linear and boundary fluxes vanish, soδΠPT[O]=ΠPT[δO] holds term-by-term.
+
+                   Variational domain for K−G identity.
+                         We take variations with compact support on spatial slices or with FRW/AF fall-offs:  hTTij   =
+                   O(r−1−σ),δN = O(r−2−σ),∂iNi = O(r−2−σ) withσ> 0. Then Jµ∆ = O(r−3−σ) and
+                                                             Z                  Z
+                                                           δ    d4xa3∂µJµ∆ =        dΣµ a3δJµ∆ = 0.
+
+                   2.2. Pt Quick Tables (Projection-Ready)
+                   Objects.
+                         (Signs indicate intrinsic P/T parities; T is anti-linear.)
+
+                                Object            P    T     Note
+                                eAµ              +     +     vierbein (metric from its square)
+                                ωABµ             +     −     spin connection
+                                TAµν             +     −     torsion 2-form components
+                                RABµν            +     +     curvature 2-form components
+                                ϵ (spurion)      +     −     enters observables via∂ϵ only
+                                ∂µϵ              −     +     flips under P; T anti-linear
+                                ϵµνρσ            −     −     pseudo-density (weight+1); PT :+;[PT ,∗]= 0 by A2
+
+                   Scalar monomials and the projector.
+
+                                  Monomial                       PT         ΠPT(·)
+                                  (∂ϵ)2                         even        survives; real by definition
+                                  TABCTABC                      even        survives; real under projection
+                                  ϵµνρσXµνρσ               even⇔ X even     kept iff X is PT-even; else projected out
+                                  Tµ∂µϵ                         even        survives pre-lock; reduces to 3ηΣϵ after C1/trace-lock
+                                  ∇µ(···)µ (vector density) — (total deriv.)boundary-only under A4; unaffected except taking real part
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 7 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                   doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Notation Quick Reference (Projected, Real Scalars;σϵ Scheme)
+                    Σϵ denotes theprojected, realscalar                             h
+                                                                         Σϵ≡ΠPT      (∂ϵ)2i
+                    We also set
+                                                                      sgn(Σϵ)≡ sgn(Σϵ),         ˆnµ≡   ∂µϵp|Σϵ|,
+                                                                                                                 q
+                                            T µν≡ sgn(Σϵ)      ˆnµˆnν− 14δµν  ,      τ≡ ˆnµTµ  =  3η sgn(Σϵ)        |Σϵ|.
+
+                    Thesechoices makeorientationflips(Σϵ≶0)harmless andensureTrT = 0,Tr(T 2)=  34. Forlateruse weadopt
+                    thesign-compensatedconvention
+                                            IT ≡−1         TABCTABC,        sgn(Σϵ)IT ≡ sgn(Σϵ)IT =−6η2|Σϵ|,
+                                                    4ΠPT
+
+                    and the key relation (used in Section V)
+
+                                                               τ2 = 9η2|Σϵ| = 3     −sgn(Σϵ)IT.
+                                                                                  2
+                    RegularityatΣϵ = 0. All rank-oneobjects aredefined onpatches withΣϵ̸= 0 andextended bycontinuity viaa
+                    smooth regulatorΣϵ→ (Σ2ϵ+ε2)1/2 withε→ 0+. Quadratic densities and improvement currents remain finite
+                    in this limit.
+
+                   2.3. Selection Rules Under the Scalar Projector
+                   Theorem 1(Selection rules). Under A1–A5 and[PT ,∗]=0 (A2), for any complex scalar densityO,
+
+                                             ΠPT[O]=O (up to taking the real part)       iff   O is PT-even,                               (5)
+                                             ΠPT[O]= 0       iff   O is PT-odd.                                                                              (6)
+
+                   In particular, for admissible tensors X,
+
+                      ΠPTϵµνρσXµνρσ= 0 iff X is PT-odd;
+                      ΠPTTABCTABC∈R,   ΠPT(∂ϵ)2∈R,   ΠPTTµ∂µϵ is PT-even and not annihilated by projection.
+
+                   Sketch. Bydefinition(2)   ,ΠPT averagesanobjectwithitsPT imageandthentakestherealpart. WithA1,
+                   R X =R PT[X] ensuresself-adjointness (3)    onrealscalars. A2implies PT preservesorientationand
+
+                   commuteswith∗. SincetheLevi–Civita density is PT-evenwhile T isanti-linear,ϵµνρσXµνρσ inherits
+                   the PT parityof X,yielding the conditionalstatementabove. Productssuch as Tµ∂µϵ are PT-even(see
+                   the quick table), hence survive the projector; their later reduction toΣϵ uses the trace-lock/C1 map
+                   (Sections III–IV).
+
+                   Roadmap and Where Each Assumption Enters
+                         The definitions and rules above are the only projectors/boundary tools used later. In particular:
+                   •      Section III (allowed sector/closure): we enumerate all PT-even quadratic monomials with at
+                          mostonederivativeperbuildingblock. Pre-lock thebasisincludes I1 =Π[TABCTABC], I2 =Σϵ,
+                          and I3 =Π[Tµ∂µϵ]. Post-lock (trace-lock or C1) maps I3→ 3ηΣϵ.
+                   •      Section IV (C1): A3 enables project-then-vary in the Palatini connection equation; A2/A5 prevent
+                          hidden pseudo-scalar contaminations; A4 controls improvements.
+                   •      Section V (C2,σϵ scheme): A5 (NY boundary) and A1/A4 underwrite the equality of route-wise
+                          bulkpiecesandflux-ratiodiagnostics,allwrittenwiththesign-compensatedinvariantsgn(Σϵ)IT.
+                   •      Sections VI–VII (C3): A1/A4 guarantee that improvement currents do not alter kinetic/gradient
+                          coefficients; A3 is used implicitly in all quadratic variations; the equal-coefficient identity is a
+                          total divergence on the admissible variational domain.
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.
+
+==== PDF PAGE 8 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                               doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Boundary/Topology Posture and Fall-Offs (Pointer)
+                         Assumption A4 is realized either by compact PT-invariant domains with vanishing flux or by
+                   standard asymptotically flat/FRW fall-offs; the explicit statements and the symplectic-flux check are
+                   compiled in Appendix A (boundary notes therein). We exclude torsion defects and multi-valuedϵ
+                   patches that would violate the projector’s scalar posture.
+
+                   Spurion Posture, Ward Identity, and Field Redefinition (Sketch)
+                         Treatϵ as a spurion transforming as a scalar under diffeos but not varied. Then
+                                              Z                h
+                                      δξS=       d4xp−gξν        ∇µTµν+Eµν(e,ω)·δξ(e,ω)+∇µ   ∂L∂(∂µϵ) ∂νϵi        = 0.                        (7)
+
+                   Using the Palatini EL equationsE(e,ω) = 0 and C1 (Tµ = 3η∂µϵ), the spurion current becomes an
+                   improvement,hence∇µTµν = 0inthebulk(A4). ForDiracmatter,thetracecoupling TµJµ isremoved
+                   byψ→ eiαϵψ; the Jacobian shifts the Nieh–Yan boundary term (A5) but does not affect bulk equations
+                   (cf. Section8).
+
+                   SummaryofSectionII.Wefixedtheglobalposture(A1–A6),definedthescalar PT projectorwitha
+                   checkablecommutationlemma(A3),clarifiedthe PT paritiesofbasicobjectsandoftheLevi–Civita
+                   density(A2),andstatedconditionalselectionrules:ΠPT removes PT-oddscalarsandkeeps PT-even
+                   ones(takingtherealpart). Weemphasizedthespurionpostureandprovidedtheadmissiblevariational
+                   domainthat makesthe equal–coefficientidentityintegrable. A compactnotationis setin whichΣϵ is
+                   by definition a projected, real scalar and the sign-compensated invariant sgn(Σϵ)IT ≡ σϵIT =−6η2|Σϵ|
+                   willbeuseduniformlylater. TheseingredientsfeeddirectlyintothePalatinianalysis(SectionIII),the
+                   uniqueness theorem (Section IV), and the three-chain equivalence (Section V).
+
+                   3. Palatini Setting and the AllowedPT-Even Scalar Sector
+                         WeworkinthePalatiniposturewithindependentvierbein eAµ andspinconnectionωABµ (metric
+                   compatible),andweimposethescalar PT projectorΠPT[·] onallobservablescalardensities(Section2).
+                   Throughout,AssumptionsA1–A5and the selectionrulesofTheorem1arein force. Inparticular,all
+                   statements below are understoodafter applyingΠPT[·], so the projected scalars are real.
+
+                   3.1. Normalized Spurion Direction and Canonical Rank-One Traceless Tensor
+                         The spurion enters the observed sector only through its gradient. We set, once and for all,
+                                                       h
+                                           Σϵ≡ΠPT       (∂ϵ)2i,        sgn(Σϵ)≡ sgn(Σϵ),         ˆnµ≡   ∂µϵp|Σϵ|,
+
+
+                   and define the canonical,dimensionless, traceless rank-one tensor built from ˆn,
+
+                                            T µν≡ sgn(Σϵ)       ˆnµˆnν− 14δµν   ,        TrT = 0,    Tr(T 2)=  34.                                (8)
+
+                   The (dimension-one) trace-torsion scale along ˆn is
+                                                                                           q
+                                                            τ≡ ˆnµTµ  =  3η sgn(Σϵ)           |Σϵ|,                                                       (9)
+
+                   which will serve as the unique dimensionful spurion scale at this order.1
+
+
+
+                   1    WhenΣϵ = 0 the constructions are understood on patches withΣϵ ̸= 0 and extended by continuity.  The overall sign
+                      bookkeeping is carried by sgn(Σϵ), so orientation flips are harmless.
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 9 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                  doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   3.2. What the Projector Allows (Pre- Vs.  Post-Lock)
+                         By Theorem1and the parity assignments clarified in Section2, the mixed bilinear                        Tµ∂µϵ is
+                   PT-even. Hence it is not removed by the projector: pre-lock it survives as an independent scalar.2
+                   Once the trace lock (introduced in Section4, Equation                (17)     ) or equivalently the C1 map is enforced,
+                   Tµ = 3η∂µϵ and the bilinear collapses to a multiple ofΣϵ.
+                         Forlaterreferencewelistthefateofquadraticmonomials(“≤onederivativeperbuildingblock”):
+
+                                              Monomial          PT      Projected fate (pre-lock→ post-lock)
+                                              TABCTABC         even     survives→ survives
+                                              (∂ϵ)2            even     survives→ survives
+                                              Tµ∂µϵ            even     survives, independent→ 3ηΣϵ
+                                              ∇·(···)           —       improvement→ improvement
+
+                   3.3. Two-Stage Closure At “One Derivative Per Building Block”
+                         We now state the restricted operator basis used throughout: allow at most one derivative per
+                   buildingblockandworktoquadraticorderinfields. Withtheprojectorrulesandstandardintegration-
+                   by-parts (IBP), the projected, real PT-even scalar sector closes in two stages:
+
+                                                Pre-lock basis: I1≡ΠPTTABCTABC,    I2≡Σϵ =ΠPT[(∂ϵ)2],
+                                                                   I3≡ΠPT[Tµ∂µϵ];                                                           (10)
+                                  Post-lock (C1/trace-lock): I3       −−−−−−→ 3ηΣϵ, so the basis reduces to{I1,Σϵ}.Tµ=3η∂µϵ
+
+
+                   Lemma2(Two-stageclosure).  UnderA1–A5,forany PT-evenscalardensityO(2) builtfrom(T,∂ϵ) withat
+                   most one derivative per factor,
+
+                                                  ΠPT[O(2)]= c1 I1+c2 I2+c3 I3+∇µJµ    (pre-lock),
+
+                   forsomerealconstants c1,2,3 andanimprovementcurrent Jµ. Afterenforcingthetracelock(Equation(17)     )or
+                   equivalently C1,
+                                                      ΠPT[O(2)]= c1 I1+ ˜c2Σϵ+∇µ˜Jµ    (post-lock),
+
+                   with ˜c2≡ c2+3ηc3 and a (possibly shifted) improvement current ˜Jµ.
+
+                   Sketch. Enumerate quadratic monomials with≤ one derivative per factor. Theorem1eliminates only
+                   PT-odd combinations;the three PT-even monomials{T2,(∂ϵ)2,T·∂ϵ} span thepre-lock space upto
+                   improvements. Self-adjointness ofΠPT on real scalars (Equation (3)   ) justifies moving the projector
+                   through products; A4 removes boundary flux from IBP. Imposing Tµ = 3η∂µϵ gives I3 → 3ηΣϵ,
+                   yielding the post-lock reduction.
+
+                   3.4. Action Skeleton (Pre- And Post-Lock) And Notation For Later Sections
+                         It is convenient to record a minimal bulk skeleton that respects the two-stage closure:
+                                                         Z              hM2Pl                                     i
+                                               Sbulk =      d4xp−g         2   R(e,ω)+α1 I1+α2 I2+α3 I3             ,                                 (11)
+
+                   whereα1,2,3∈R. After the trace lock (or C1), (11) becomes
+                                                           Z             hM2Pl                                          i
+                                          S(post-lock)bulk        =d4xp−g   2   R(e,ω)+α1 I1+α2+3ηα3Σϵ                 ,                         (12)
+
+
+
+                   2    Independence follows because, before imposing any relation between Tµ and∂µϵ, no integration-by-parts identity reduces
+                       the linear bilinear T·∂ϵ to a combination of T2 and(∂ϵ)2 up to improvements.
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 10 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                               doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   so the effect of I3 is a renormalization of theΣϵ coefficient at this order.
+                         For compactness in later sections we will also use the invariant IT ≡ −14ΠPTTABCTABC =
+                   −6η2Σϵ (whichfollowsafterC1inSection4),alongsidethecanonicaltracelessmatrix          T  andscaleτ
+                   defined in (8)–(9).
+
+                   Null Test B (stated; paper-checkable).
+                         On any admissible background with the fall-offs of A4, every projected, PT-even quadratic
+                   densitywithatmostonederivativeperbuildingblockreducespre-locktoc1I1+c2I2+c3I3 uptoatotal
+                   derivative,andpost-lockto c1I1+ ˜c2Σϵ uptoatotalderivative. AconstructiveIBPreductionappearsin
+                   the Appendix.
+
+                   Order of Operations (Projection↔ Variation; Lock vs. Closure)
+                         Thescalarprojectorisappliedatthelevelofdensities;byLemma1(Section2)                               project-then-varyand
+                   vary-then-projectcommuteonscalardensities. Thetracelock(Equation(17)     )isanalgebraicconstraint
+                   introduced at the level of equations of motion or via a Lagrange current; it is not                    a PT projection.
+                   Accordingly, the correct sequence for building the quadratic sector is:
+
+                   (i) enumerate & project⇒ pre-lock basis{I1,I2,I3}    =⇒     (ii) impose trace lock/C1 ⇒ I3→ 3ηΣϵ.
+
+                   This sequencing will be used verbatim in Sections4–5.
+
+                   4. Uniqueness Theorem (C1)
+                         Under the posture of Sections2–3(A1–A5, scalar                      PT projector, “one derivative per building
+                   block”), algebraic torsion consistent with the projector is uniquely pure trace and aligned with the
+                   spurion gradient:
+                                                             TABC = 2ηδA[B∂C]ϵ,       η > 0,                                             (13)
+
+                   so that the axial and traceless irreps vanish, Sµ=0 and qλµν=0. Equivalently,
+
+
+                           ΠPTTABCTABC= 23 TµTµ = 6η2Σϵ    =⇒       IT ≡−14ΠPT[TABCTABC]=−6η2Σϵ.                                       (14)
+
+                   Here Σϵ ≡ ΠPT(∂ϵ)2 is the projected, real scalar, and we use the shorthands from Section                   3.1:
+                   sgn(Σϵ)  ≡   sgn(Σϵ),   ˆnµ  ≡  ∂µϵ/p|Σϵ|, T µν  ≡   sgn(Σϵ)                  ˆnµˆnν− 14δµν   ,  and τ  ≡   ˆnµTµ  =
+                   3η sgn(Σϵ)p|Σϵ|.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 11 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                      doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Figure 1. Irreducible torsion content at quadratic order (log–log view). Ratios of projected scalar strengths
+                    comparing the pure-trace blockagainst theaxial andtraceless blocks,shown astrace/axialand trace/tensor on
+                    logarithmic axes. The Palatini algebraicity (Section4.2) and the                    PT projector drive axial and traceless pieces to
+                    zero, leaving the pure-trace map (13) as the unique survivor. [nb:      fig_c1_pure_trace.py]
+
+                    4.1. Most General Local Linear Ansatz (One Derivative)
+                          At the derivative order relevant for the quadratic analysis, the only covector available is∂µϵ and
+                    the invariant tensors areδAB andϵABCD. The most generalLorentz-covariantlinearansatz is therefore
+
+                                                     TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ+(P·∂ϵ)ABC,                                       (15)
+
+                    withreal A,B andwhere(P·∂ϵ)ABC denotesanyattemptedtracelessmixed-symmetrypiecebuiltfrom
+                    a single vector.
+
+                    PropositionB.1(single-vectorno-go;AppendixB).Fromonevector vµ onecannotconstructanonzero
+                    traceless torsionirrep qλµν obeying qνµν=qλµµ=0 and qλµν=−qλνµ. Anysuch attemptreduces tothe span of
+                    δA[BvC] andϵABCDvD.
+
+                          By Prop. B.1 the last term in (15) is trivial, and the ansatz reduces to
+
+                                                              TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ.                                                   (16)
+
+                    The scalar projector (Section2) removes all                 PT-odd scalars, but it does not by itself force B = 0; the
+                    Palatini equations will.
+
+                    4.2. Palatini Equations: Algebraic, Irrep Blocks, and Alignment
+                          Weaugmentthepre-lockbulkskeleton(11)      withaLagrangecurrentthatenforcesalignmentof
+                    the torsion trace with∂ϵ,
+
+                                                        LΛ =p−gΛµTµ−3η∂µϵ,        Tµ≡ Tνµν.                                           (17)
+
+                    ByLemma1(Section2),                                project-then-vary andvary-then-project commuteonscalardensities. Varying
+                    w.r.t. the independent connection then yields algebraic equations in the three irreps{Tµ,Sµ,qλµν}:
+
+                                                Z              h4α1                                                             i
+                                       δωS=        d4xp−g         3   TµδTµ+ α112 SµδSµ+2α1qλµνδqλµν+ΛµδTµ                       ,                    (18)
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a         Creative Commons CC BY license.
+
+==== PDF PAGE 12 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                    doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   which is block diagonal because the map from the connection variation to torsion irreps is non-
+                    degenerate:
+
+                    Lemma 3 (Non-degeneracy ofδω7→ (δTµ,δSµ,δqλµν)).  In metric-compatiblePalatini, the linearmap from
+                    δωABµ tothevariationsofthethreetorsionirrepsisblockwisenon-degenerate. Consequentlythequadraticform
+                    in (18)      splits into the three irreps with independent algebraic equations.
+
+                   Proof sketch (3 lines). Varying only the spin connection,δTAµν = δωAB[µeBν]. Projecting to irreps,
+
+                                      δTµ≡ δTνµν = eAνeBµδωABν,    δSµ≡ ϵµνρσδTνρσ = ϵµνρσeAνeBρδωABσ,
+
+                    andδqλµν isthetracelessremainderofδTλµν aftersubtractingthevector/axialprojections. Theselinear
+                    maps are surjective and mutually orthogonal with respect toRd4x√−g(43δT2+  112δS2+2δq2), hence
+                    the quadratic form in (18) splits blockwise and the blocks do not interfere.
+                          The Euler–Lagrange equations read
+
+                                                              (vector)    4α13   Tµ+Λµ = 0,                                                                (19)
+
+                                                                (axial)   α112 Sµ = 0 ⇒  Sµ = 0,                                                       (20)
+
+                                                           (traceless)   2α1qλµν = 0 ⇒  qλµν = 0,                                                (21)
+
+                    and variation w.r.t.Λµ enforces the lock Tµ = 3η∂µϵ. Substituting back into (16)      fixes A = 2η and
+                    forces B= 0, i.e., alignment with∂ϵ and the absence of any axial piece, as claimed in (13).
+
+                    Why the Trace Lock is Not an Extra Assumption
+                          Palatini’s connection equations are algebraic in the three torsion irreps. In the vector block, the
+                    Euler–LagrangeequationnecessarilyconstrainsTµ tobecollinearwiththeonlyavailablecovectoratthis
+                    order,∂µϵ. Implementing thecollinearity viaa LagrangecurrentΛµ(Tµ−3η∂µϵ) is an equivalent way
+                    toenforcethisoutcome;itintroducesnoextracanonicalpairsunderA4anddoesnotaddassumptions
+                    beyond the algebraic Palatini dynamics.
+
+                    On degrees of freedom.
+                          The Lagrange current enforces an algebraic constraint; its Euler–Lagrange equationcontains no
+                    timederivativesandthusintroducesnonewcanonicalpairs. UnderA4thisisafirst-classenforcement
+                    of the trace lock, not an additional propagating sector.
+
+                    4.3. Positivity, Sign Choice, and the Invariant IT
+                          UsingthestandardirrepsplitTABCTABC =  23TµTµ+  124SµSµ+2qλµνqλµν and(20)     –(21)     ,weobtain
+                    ΠPT[TABCTABC]= 6η2Σϵ, which gives (14) for      IT ≡−14ΠPT[TABCTABC]. Positivity of the TT kinetic
+                    coefficient after locking (Section5) fixes the physical branch              η > 0.
+
+                    4.4. Theorem and Three-Step Proof
+                   Theorem 2 (Palatini–PT uniqueness (C1)).  Under A1–A5 and the scalar PT projector, algebraic torsion
+                    solving the Palatini connection equation withthe trace lock (17)      is uniquely TABC = 2ηδA[B∂C]ϵ withη > 0.
+                    In particular, Sµ = 0 and qλµν = 0, and IT =−6η2Σϵ.
+
+                    Proof (three steps). Step 1 (Ansatz). The most general linear ansatz is (15)     ; by Prop. B.1 (Appendix B)
+                    the single-vector traceless attempt vanishes, giving (16).
+                          Step 2 (Palatini blocks). Using Lemma1to commute projection with variation and Lemma3for
+                    blockwisenon-degeneracy,varyingw.r.t.ω andΛµ yields(19)     –(21)      andthelock Tµ = 3η∂µϵ,which
+                    fix A= 2η and B= 0.
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.
+
+==== PDF PAGE 13 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                  doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                         Step 3 (Invariant/positivity). With S=q=0and the lock,the invariant reduces to(14)     . The branch
+                   η > 0 follows from positivity of the locked TT sector.
+
+                   4.5. Frw Paper-Level Check And A Geometric Diagnostic
+                         On flatFRW ds2 =−dτ2+a2(τ)d⃗x2 withhomogeneousϵ(τ), thevector, axialand tensorblocks
+                   yield
+                                                    4α1
+                                                     3  T0+Λ0 = 0,          α112 Sµ = 0,        2α1qλµν = 0,
+                   together with thelock T0 = 3η ˙ϵ. Hence Sµ = qλµν = 0 and IT =−6η2Σϵ, in agreement with (13)     –(14)     .
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure2. Alignment-anglediagnostic. Distributionof thealignmentangleθ betweenthe torsiontrace Tµ and
+                   ∂µϵ, cosθ ≡ Tµ∂µϵ/√T2p(∂ϵ)2.  The uniqueness map (13)      predicts θ ≃ 0 up to finite-domain/boundary
+                   remainders. [nb: fig_c1_alignment.py]
+
+                   Corollaries, Scope, and Order-of-Operations Reminder
+                   Corollary (basis reduction).
+                         With S=q=0 and Tµ = 3η∂µϵ, the first-order closure basis of Section3.3collapses to             {IT,Σϵ}
+                   modulo a total derivative.
+
+                   Scope and failure modes.
+                         Violations of A2 (orientation/[PT ,∗]=0) or A4 (boundary/topology) can obstruct projector
+                   selection rules or boundary improvements globally; see Appendix B for representation-theoretic
+                   caveats and Appendix A for boundary notes.  None affect the main (C1) statement on admissible
+                   patches.
+
+                   Order of operations.
+                         The trace lock (17)      is an algebraic constraint introduced at the level of equations of motion (or
+                   viaLΛ); it is not a PT projection and introduces no new canonical pairs. The correct pipeline, used
+                   throughout Sections5–9, is:
+
+                              (i) enumerate & project ⇒  pre-lock basis{I1,I2,I3}
+                                                            =⇒ (ii) impose trace lock/C1 ⇒ I37→ 3ηΣϵ, use{IT,Σϵ}.
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 14 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                               doi:10.20944/preprints202509.2421.v1
+
+
+
+
+                   5. Three-Chain Equivalence (C2)
+                         We adopt the sign-compensated (“σϵ”) scheme throughout C2: all rank-one bulk reductions are
+                   writtenintermsofsgn(Σϵ)IT ≡ σϵIT sothatpatcheswithΣϵ < 0arehandleduniformly,sgn(Σϵ)IT =
+                   −6η2|Σϵ|.
+                         Weprovethatthreeostensiblydifferentquadraticroutes—(i)arank-onedeterminantroutebuiltout
+                   of the canonical traceless matrixT µν, (ii) a closed-metric rank-one deformation, and (iii) the PT-even
+                   shadow extracted from the CS/Nieh–Yan chain— collapse, after C1 and projection, to the same bulk
+                   invariant A⋆√−g sgn(Σϵ)IT up to a total derivative. Differences are carried entirely by improvement
+                   currents∇µJµ (closed forms on FRW/weak-field are in Appendix C).3
+
+                   5.1. Preliminaries: Canonical Rank-One Objects And Normalization
+
+                         RecallΣϵ≡ΠPT(∂ϵ)2, ˆnµ≡   ∂µϵp|Σϵ|, and the dimensionless, traceless rank-one matrix
+
+
+                                            T µν≡ sgn(Σϵ)       ˆnµˆnν− 14δµν   ,        TrT = 0,    Tr(T 2)=  34,                              (22)
+
+                   together with the dimension-one spurion scale (after C1),
+                                                                                           q
+                                                            τ≡ ˆnµTµ  =  3η sgn(Σϵ)           |Σϵ|.                                                     (23)
+
+                   Key relation.
+
+                                   τ2 = 9η2|Σϵ|= 32(−sgn(Σϵ)IT),        sgn(Σϵ)IT ≡ sgn(Σϵ)IT =−6η2|Σϵ|.                (24)
+
+                   5.2. Three One-Line Propositions (NY Split→∗ & Projection→ Coefficient Match)
+                   Proposition 1 (NY split).  TA∧TA = NY+eA∧eB∧RAB with NY≡ d(eA∧TA).
+
+                   Proposition 2 (PT-even shadow after∗ and projection). Under A2, the combined PT preserves orientation
+                   and satisfies[PT ,∗]= 0. Applying∗ to Prop.1and projectingto scalars, theterm     ∗NYcontributes onlyas a
+                   boundaryconvention(A5),whiletheremaining PT-evenbulkpiecereduces,atquadraticorderandafterC1,to
+
+                                            δ2LCS+ = A⋆p−g sgn(Σϵ)IT+∇µJµCS+    for some A⋆∈R.
+
+                   Proposition 3 (Coefficient match under the σϵ scheme).  With TrT  =  0, Tr(T 2)  =   3q                     4, and τ  =
+                   3η sgn(Σϵ)p|Σϵ|, both (i) the rank-one determinant route               det[1+(23)λτT] and (ii) the closed-metric
+                   deformation ˜gµν = gµν+(23)λτ ˆnµˆnν yield the same quadratic bulk coefficientδ2L = A⋆√−g sgn(Σϵ)IT
+                   with A⋆ = λ2/8.
+
+                   Proof (paper-level).   Expand pdet(⊮+X)  =  1+  12TrX +  18[(TrX)2− 2TrX2]+O(X3);  with X  =
+                   (23)λτT , TrT  =  0 gives δ2pdet(⊮+X)  = −14Tr(X2)  = −14(49)λ2τ2Tr(T 2)  = −λ2τ2/12.   Us-
+                   ing (24)     , δ2L = √q−g(λ2/8) sgn(Σϵ)IT.  The closed-metric route has the same Jacobian √−˜g =
+                   √−g      det[⊮+(2
+                                        3)λτT], hence the identical coefficient.
+
+                                                                                                                   q
+                   3    Weuse“rank-onedeterminantroute”(formerly“DBI”-type)todenotethevolumedeformation               det[1+(2
+                                                                                                                               3)λτT] inour
+                      posture; this is notBorn–Infeld gravity.
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 15 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                             doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  5.3. Quick Derivations (ROD/CM/CS+)
+                  Rank-one determinant (rank-one determinant route).
+
+
+                                      q
+                     LROD =p−g            det1+ 23λτT−1            =⇒   δ2LROD = A⋆p−g sgn(Σϵ)IT , A⋆ = λ2/8                     .   (25)
+
+
+                  Closed-metric route.                                 q
+
+                         ˜gµν = gµν+ 23λτ ˆnµˆnν⇒√−˜g=√−g                 det[1+ 23λτT], so
+
+
+                                                    δ2LCM = A⋆p−g sgn(Σϵ)IT , A⋆ = λ2/8                  .                                         (26)
+
+                  PT-even CS/Nieh–Yan shadow.
+                        By Prop.2,
+                                             δ2LCS+ = A⋆p−g sgn(Σϵ)IT + ∇µJµCS+,  A⋆ = λ2/8                     .                               (27)
+
+                  Bulk identity (summary).
+
+
+
+                             δ2LROD ≡ δ2LCM ≡ δ2LCS+ ≡  A⋆p−g sgn(Σϵ)IT   (mod∇µJµ), A⋆ = λ2/8                                  .       (28)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                  Figure 3. Residualscan forthe three-chainreduction (σϵ scheme). Quadraticreductions ofthe ROD/CM/CS+
+                  routesarecomparedagainstthetargetbulklineδ2L bulk=  A⋆√−g sgn(Σϵ)IT with A⋆ = λ2/8. Theverticalaxis
+                  showsthe residual aftersubtracting A⋆√−g sgn(Σϵ)IT. Allthreeroutessaturatethe target withintolerance. [nb:
+                  fig_c2_coeff_compare.py]
+
+                  5.4. Flux-Ratio Diagnostics and Convergence
+                        For any two routes X,Y∈{ROD,CM,CS+} define improvement currents by
+
+                               δ2LX− A⋆p−g sgn(Σϵ)IT =∇µJµX,       δ2LY− A⋆p−g sgn(Σϵ)IT =∇µJµY.            (29)
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.
+
+==== PDF PAGE 16 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                              doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  Assumptions A1–A5 imply
+
+                                                 RX/Y[∂D]= 1   (quadratic order; posture A1–A5)                .                                   (30)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure 4. Flux-ratio diagnostic. Boundary flux ratiosRX/Y(R) for representative pairs X/Y∈{DBI,CM,CS+}
+                   onfiniteFRWballsconvergeto1astheradius R grows,inagreementwithEquation(30)     . Thefitwindowused
+                   toextracttheasymptoteisannotatedas R≥ Rmin. ErrorbarsreflecttheIBPtolerancepropagatedtoboundary
+                   terms. [nb: fig_flux_ratio.py]
+
+
+                   SummaryofSectionV.AtquadraticorderandunderA1–A5,therank-onedeterminantroute,closed-
+                   metric, and PT-even CS/Nieh–Yan routes share the same bulk coefficient A⋆ = λ2/8 multiplying
+                   sgn(Σϵ)IT =−6η2|Σϵ|, differing only by improvement currents (Appendix C). Boundary flux ratios
+                   RX/Y equal 1 within finite-domain tolerances.
+
+                   6. Coefficient Locking (C3)
+                        We now lock the relative weight of two bulk–equivalent routes so that the tensor (TT) sector (i)
+                   has no kinetic mixing with nonpropagating variables and (ii) is exactly luminal at quadratic order.
+                   Throughout we keep A1–A5, the scalar projectorΠPT(·), and the C1 pure–trace map Tµ = 3η∂µϵ
+                   (Sections2–4).
+
+                   6.1. Setup and Locking Posture
+                        By Section5, the rank–one determinant (ROD) and closed–metric (CM) routes share the same
+                   quadratic bulk reduction modulo a total derivative:
+
+
+                                     δ2LROD≡ δ2LCM = A⋆p−g sgn(Σϵ)IT   (mod∇µJµ),        A⋆ = λ28 .                    (31)
+
+                  We therefore consider the linear family
+
+                                           Lchain(w) ≡  wRODLROD+wCMLCM,        wROD,wCM∈R,                             (32)
+
+                   and determine the ratio wROD:wCM by eliminating TT–nonTT mixing.
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.
+
+==== PDF PAGE 17 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                               doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   6.2. Quadratic ADM Block and Locking Conditions
+                         ExpandingLEH(e,ω)+Lchain(w) to second order in ADM variables,
+
+                                                                                      i
+                               δ2L= M2Pl8   a3hK(w) ˙hTTij  ˙hTTij −G(w) (∂khTTij )2a2 +a3hTT·M(w)·Φ+ a32 Φ·P·Φ,          (33)
+
+                   whereΦ collects nonpropagating fields (schematicallyΦ ={δN, ∂iNi,...}). The mixing block M(w)
+                   is linear in w and proportional toη2Σϵ. Two independent entries suffice to enforce (L1) no kinetic
+                   mixing:
+                                                  M(w)                                             η2Σϵ,
+                                                            hTT−δN =µ(N)RODwROD+µ(N)CM wCM                                              (34)
+                                                M(w)                                                  η2Σϵ,
+                                                          hTT−∂iNi =µ(∇N)ROD  wROD+µ(∇N)CM   wCM
+
+                   with real, dimensionless coefficients µ(·) extracted from (i) the contorsion part of R(e,ω) under C1
+                   and (ii) the rank–one volume variations. Explicitµ’s and background dependence are tabulated in
+                   Appendix D.
+                         Wealso impose (L2) exactluminality K(w)= G(w) and (L3) GRnormalization at∂ϵ = 0 so that
+                   the locked TT action reduces to GR with Planck mass MPl.
+
+                   6.3. The 2×2 Locking System and Non-Collinearity
+                         Condition (L1) yields the linear system
+                                                                     ! wROD!            0!
+                                                    µ(N)ROD     µ(N)CM              =        ,       (Σϵ̸= 0).                                      (35)
+                                                    µ(∇N)ROD    µ(∇N)CM   wCM            0
+
+                   On generic admissible backgrounds the two row vectors arenot collinear; the determinant
+
+                                                          ∆ ≡ µ(N)RODµ(∇N)CM  −µ(∇N)ROD µ(N)CM ̸=  0,                                                  (36)
+
+                   so the solution space is one-dimensional.
+
+                   6.4. Locked Ratio, Normalization, and Exact Luminality
+                         With∆̸= 0 there is a unique (up to scale) weight vector w⋆ solving (35):
+
+
+                                                               w⋆ROD           CM   =−µ(∇N)CM                                            (37)
+                                                                w⋆CM  =− µ(N)µ(N)ROD      µ(∇N)ROD
+
+
+                   (the equality follows from∆̸= 0). The overall scale is fixed by (L3). For this choice, the kinetic and
+                   gradient coefficients obey theequal–coefficient identity
+
+                                                            K(w⋆)−G(w⋆) =  a−3∂µa3Jµ,                                                  (38)
+                                                                                                 ∆
+
+                   witharepresentative Jµ∆ listedinAppendixD(TTgaugeonweak–fieldandacovariantFRWform).
+                   Since the right-hand side is a total divergence on the admissible variational domain (A4), we obtain
+
+                                                         K(w⋆)= G(w⋆)    =⇒     c2T = GK = 1.                                                (39)
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 18 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                 doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Theorem 3 (Coefficient Locking⇒ Exact Luminality (C3)). Under A1–A5, the scalar projector, and C1,
+                   thereexistsa uniqueratio w⋆ROD:w⋆CM (upto overallnormalization)suchthatTT–nonTT mixingvanishesand
+                   K(w⋆)−G(w⋆)= a−3∂µ(a3Jµ∆). Consequently the TT action is exactly the GR one at quadratic order:
+
+                                                                Z         "                       #
+                                                δ2STT = M2Pl8     d4xa3     ˙hTTij  ˙hTTij − (∂khTTij )2a2,        c2T = 1,                (40)
+
+
+                   with no additional propagating degrees of freedom.
+
+                   Proof sketch.  (i) Palatini algebraicity and the rank–one structure yield the mixing form (34)     ; non-
+                   collinearity(36)      fixesw⋆ uptoscale. (ii)Forw⋆,thedifferenceK−G integratestoaboundaryterm (38)
+                   by A1/A4 (self-adjoint projector; vanishing symplectic flux). (iii) The GR normalization (L3) fixes the
+                   overall scale and yields (40).
+
+                   6.5. Rank Stability And Measure–Zero Degeneracies
+                         Near small k andΣϵ,
+
+                                                ∆(k,Σϵ;foliation)= α0η4Σ2ϵk2+O(k4,Σ3ϵ),    α0̸= 0,                                   (41)
+
+                   soloss ofrank occursonly onthemeasure–zeroset{Σϵ = 0}∪{k = 0}. This doesnotaffect locking
+                   on generic admissible patches.
+
+                   6.6. Data Companion And Reproducibility (Pointer)
+                         ForFRWbackgroundsusedinfigures,thelockedratiow⋆ andthetwoindependentmixingentries
+                   are extracted directly from the companion data (seefigs/data/mixing_matrix.csv with metadata
+                   infigs/data/mixing_matrix_meta.json). Aconvenienceconfigurationmirroringtheanalyticratio
+                   appears in configs/coeffs/mixing_matrix_FRW.json.  These files are diagnostic only; the paper
+                   definitionof w⋆ is Equation (37).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 19 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                      doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Figure5. Heatmapofthetensor-speeddeviation. Representativescanof|cT−1| overthe(wROD,wCM) planeon
+                    anadmissiblebackground(A1–A5,C1inforce). Thelockingcurvefrom(35)      isoverlaid;alongit,TT–nonTTmixing
+                    vanishes and (39) holds. [nb:      fig_c3_cT_heatmap.py]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Figure 6. Tensor dispersion cT(k): locked vs. unlocked. Comparison of cT(k) for the locked ratio w⋆ from (37)
+                    (solid) and representativeunlockedchoices (dashed). [nb: fig_c3_dispersion.py]
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a         Creative Commons CC BY license.
+
+==== PDF PAGE 20 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                               doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Summary of Section VI. Eliminating TT–nonTT mixing reduces to the full–rank system (35)     .  Its
+                   nonzerodeterminantfixesauniqueweightratio w⋆ROD:w⋆CM (uptonormalization). Withthisratio, the
+                   equal–coefficient identity (38) gives      K=G and hence cT=1.
+
+                   7. Quadratic Action, Exact Luminality, and Degrees of Freedom
+                         We now state and use the identity that fixes the tensor speed to be exactly luminal at quadratic
+                   order once the coefficients are locked, and we record the degrees–of–freedom (DoF) count. We assume
+                   A1–A5, the scalar PT projector, C1 with Tµ = 3η∂µϵ, and the locking of Section6. All projected scalars
+                   are real.
+
+                   Variational domain for the K−G identity.
+                         We take variations with compact support on spatial slices or with FRW/AF fall-offs:
+
+                                        hTTij  = O(r−1−σ),    δN = O(r−2−σ),    ∂iNi = O(r−2−σ)   (σ> 0).
+
+                   Then Jµ∆ = O(r−3−σ) andδR d4xa3∂µJµ∆ =R dΣµ a3δJµ∆ = 0,sothetotal-divergencetermsdonotfeed
+                   back into the Euler–Lagrange equations.
+
+                   7.1. Equal–Coefficient Identity And cT=1
+                         ExpandingLtot =LEH(e,ω)+Lchain(w) to quadraticorder (about anyadmissible background
+                   with A4) yields
+
+                                                                                      i
+                               δ2L= M2Pl8   a3hK(w) ˙hTTij  ˙hTTij −G(w) (∂khTTij )2a2  +(TT–nonTT mix + constraints).           (42)
+
+                   Using the contorsion decomposition of the Palatini curvature under C1, the bulk equivalence of
+                   Section5, and TT transversality/tracelessness, one finds
+
+                                                             K(w)−G(w) =  a−3∂µa3Jµ,                                                   (43)
+                                                                                               ∆
+
+                   with Jµ∆ a quadraticimprovementcurrent fixed by the rank–one normalization (Appendix D).
+                         Evaluated at the locked weights w = w⋆ (Section6), the right-hand side is a total divergence.
+                   Under A4,
+
+
+                                      K(w⋆)= G(w⋆)       =⇒         c2T = GK = 1 (exact at quadratic order).                             (44)
+
+
+                   On flat FRW this reduces to K−G = a−3∂τ(a3J0∆).
+
+                   Weak-Field Check (Minkowski+ Slowly Varyingϵ)
+                         Onηµν with a=1 and a slowly varying spurion (keep∂αϵ= const+O(∂2ϵ)),
+
+
+                                               J0∆ = A⋆2  η2Σϵ hTTij   ˙hTTij  ,        Jk∆ =−A⋆2  η2Σϵ hTTij  ∂khTTij  ,                (45)
+
+
+                   and∂µJµ∆ =  A⋆2  η2Σϵ˙hTTij  ˙hTTij −(∂ℓhTTij )(∂ℓhTTij )+∂µ∂νX[µν]. Underaninfinitesimallinearizeddiffeo-
+                   morphism,δξJµ∆ =∇νX[µν][ξ], hence K−G = ∂µJµ∆ is gauge-independent upon integration.
+
+                   Mode-level check (FRW, finite ball).
+                         For hTTij (τ,⃗x)=ℜ{Hij(τ)ei⃗k·⃗x} onaball ofradius R,thespatial fluxisO(R−1) andthetemporal
+                   piece does not modify the Euler–Lagrange equation; henceω2 = k2phys and c2T = 1.
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 21 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                  doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   7.2. Locked TT Action (Paper–Level Form)
+                         Imposing the GR normalization (L3) and using (44), the TT action is
+
+                                                                Z         "                        #
+                                                δ2STT = M2Pl       d4xa3    ˙hTTij  ˙hTTij − (∂khTTij )2,        c2T = 1.                   (46)
+                                                            8                               a2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure7. GWwaveformoverlay(GRvs.locked). Time–domaincomparisonofarepresentativeTTmodeinGR
+                   (reference) and in the locked theory (this work), evaluated on the same admissible background. The shaded band
+                   indicates the common numerical tolerance. The root–mean–square error (RMSE) and the best–fit phase offset
+                   betweenthetwotracesareannotated;bothsitwithinthetolerancewhencoefficientsarelocked,consistentwith
+                   cT = 1 from Equation (44). [nb:      fig_gw_waveform_overlay.py]
+
+                   7.3. Degrees Of Freedom (Dirac–Bergmann Count)
+                         Thespurion/postureintroducesonly algebraicLagrange currents; nonew canonical pairsappear
+                   ontrivialdomainswithA4fall–offs. Thelapseandshiftremainnonpropagating,theLagrangesector
+                   is first class, and no secondary constraints revive extra modes. The propagating content is therefore
+                   exactly 2 (the TT tensor), independently of isotropy or slicing: #phys. DoF = 2 at quadratic order.
+                   Details and a side–by–side posture comparison appear in Appendix D.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 22 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                  doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                   Figure 8.  DoF spectrum (eigenvalue stem plot).  Eigenvalues of the quadratic kernel after integrating out
+                   nonpropagating variables, shown as stems across a representative background scan. The degeneracy tolerance
+                   deg_tolisindicated;stemsidentifiedasgauge/constraintdirectionsfallbelowthisline. Thecountofeigenvalues
+                   abovedeg_tol tracks#phys≈ 2acrossthescan,confirmingtheabsenceofextrapropagatingmodesatquadratic
+                   order. [nb: fig_c3_degeneracy.py]
+
+                   8. Coupling to Dirac Matter
+                         We record how minimally coupled Dirac matter interacts with the Palatini–PT posture under
+                   A1–A5 and the uniqueness map (C1). Throughout, projected scalars are real (Section2), and torsion is
+                   purely trace and aligned with the spurion gradient,
+
+                                                            Tµ = 3η∂µϵ,        Sµ = 0,    qλµν = 0,                                                  (47)
+
+                   as established in Theorem2. Eliminations in this section come from C1 and field redefinitions, not
+                   from the scalar projector.
+
+                      Two-line summary.
+                      (i)         No axial channel: C1 forces Sµ = 0, so the axial coupling SµJµ5 is absent at tree level.
+                      (ii)       Trace channel is removable: with Tµ = 3η∂µϵ, the linear vector coupling TµJµ is removed
+                               byavectorphaseredefinitionψ→ eiαϵψ andreducestoaboundaryimprovementunder
+                               A4/A5.
+
+                   8.1. Setup And Conventions
+                         Consider a Dirac spinor minimally coupled to Riemann–Cartan geometry,
+
+                                            Lψ = e ¯ψ    ieAµγADµ−m          ψ,        Dµψ≡ ∂µψ+ 14 ωABµγABψ,                            (48)
+
+                   with e≡√−g,γAB≡  12[γA,γB],and metric-compatibleωABµ. Splittingω = ω(LC)+K,the torsion
+                   irreps{Tµ,Sµ,qλµν} couple to Jµ≡  ¯ψγµψ and Jµ5 ≡  ¯ψγµγ5ψ via
+
+                                                        Lψ,T = e     cASµJµ5 +cV TµJµ         + ∇µ(···),                                             (49)
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.
+
+==== PDF PAGE 23 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                           doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  withreal cA,V fixedbyconventions(AppendixE).ImprovementsdonotaffectbulkEuler–Lagrange
+                  equations under A4.
+
+                  8.2. Axial Channel: Null By C1
+                        Theorem2gives        Sµ = 0 and qλµν = 0. Hence ecASµJµ5 ≡ 0.
+
+                  8.3. Trace Channel: Removal By A Local Vector Rephasing
+                        With Tµ = 3η∂µϵ,L(trace)ψ,T     = 3cVηe(∂µϵ) Jµ.  Perform ψ 7→ eiαϵψ,   ¯ψ 7→  ¯ψe−iαϵ, which shifts
+                  e ¯ψieAµγA∂µψ7→ e ¯ψieAµγA∂µψ−αe(∂µϵ) Jµ. Choosingα= 3cVη cancelsthetracechannel. Uptoa
+                  divergence,e(∂µϵ) Jµ =∇µ(eϵ Jµ)−ϵ∇µ(e Jµ),and∇µ(e Jµ)≈ 0ontheDiracEOM,sothedifference
+                  is an improvement fixed by Jµ.
+
+                  Parity remark and measure.
+                        Theprojectordoesnotremove TµJµ (itis PT-even);itseliminationusesC1andavectorrephasing.
+                  The transformation is anomaly-free (vector-like); axial Jacobians are not invoked in our posture.
+
+                  WithU(1).
+                        Ifψ carries charge q, the rephasing is equivalent to Aµ→ Aµ− αq∂µϵ, leaving Fµν invariant.
+
+                  NLO Tensor Dispersion and a Band-Limited Estimate
+                  NLO operator and estimate.
+                        Atthe nextorderin the“one-derivative-per-building-block”posture,the leading PT-evencorrec-
+                  tion in the TT block is
+
+                                            ∆LNLO =   bΛ2 (∂hTTij )2 sgn(Σϵ)IT   ⇒    δc2T(k)= b k2Λ2.                                 (50)
+
+                  Taking themultimessenger bound|cT−1|≲ 10−15 in theLIGO/Virgo band andusing cT ≃ 1+ 12δc2T
+                  gives|b|k2/Λ2≲ 2×10−15. At f = 100Hz (k≃ 4.1×10−13eV),
+
+                                          pΛ        √
+                                             |b| ≳          k2×10−15 ≈ 9×10−6 eV   (length scale ≲ 2 cm),                             (51)
+
+                  and the bound strengthens by×10 at f = 1000Hz. Thus current ground-based bands only weakly
+                  constrain k2/Λ2-type dispersion; lower-frequency probes (e.g., PTA) can improve this if b=O(1).
+
+                  Summary ofSection VIII.Under thePalatini–PT posture andC1, the axialchannel vanishes and the
+                  trace channel is removable by a local, anomaly-free vector rephasing, up to a boundary improvement
+                  controlled byA4/A5. In addition,the leading PT-even NLOoperator yieldsδc2T = bk2/Λ2; asimple
+                  LIGO/Virgo estimate places band-limited lower bounds onΛ/p|b|.
+
+                  9. Next-to-Leading Order and Data-facing Remarks
+                        Weorganizetheleading, PT-evencorrectionsbeyondthequadratic,one-derivative-per-building-
+                  blockclosureandstatetheirdata-facingimplicationfortensorpropagation. Throughout,theglobal
+                  posture A1–A5 and the locked TT sector (Sections6–7) are understood.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.
+
+==== PDF PAGE 24 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                       doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                    9.1. Minimal NLO Operator and Dispersion
+                          At next-to-leading order (NLO) the unique, parity-even contributionthat affects the TT dispersion
+                    at quadratic order is a four-derivative tensor operator.4 A convenient parameterization is
+
+                                                                 ∆LNLO = M2Pl                (∇2hTTij )2
+                                                                                8   a3  bΛ2       a4       ,                                                      (52)
+
+                    with a real, dimensionless coefficient b and a heavy scale Λ.  For a Fourier mode with physical
+                    wavenumber kphys = k/a (today a=1), the quadratic equation of motion gives
+
+                                               h              i
+                                 ω2 = k2phys    1+b k2physΛ2          =⇒         c2T(k)≡   ω2k2phys  = 1+ bk2physΛ2      (kphys≪Λ),          (53)
+
+
+                    so that the leading deviation is quadratic in frequency.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    Figure 9. NLO offsets and slope fit. Measured tensor-speed offsetδc2T(k) from the locked LO value c2T=1 as a
+                    function of physical wavenumber k (log–log axes). The best-fit slope ˆn≃ 2 is annotated; the vertical offset fixes
+                    b/Λ2 in Equation(54)      (a bandis shownif multiplebackgrounds are included). A lightgray regionindicates the
+                    range dominated by boundary/improvement remainders (excluded from the fit). [nb: fig_nlo_offsets.py]
+
+                    9.2. Dimensional Check And Normalization Of b
+                    Dimensional check (today a=1).  With k⋆ = 2πf⋆ the physical wavenumber at a given observed
+                    frequency band andΛ a heavy scale, the NLO prediction reads
+
+
+                                                                   δc2T(k⋆) =  ω2k2⋆ −1 =  b k2⋆Λ2,                                                         (54)
+
+                    whichismanifestlydimensionless. Ournormalizationoftherank-onetensorT  andofτ (Section5)
+                    singles out|b|=O(1) unless additional heavy operators are tuned to cancel each other at this order.
+
+
+
+                    4    Other NLO scalars either renormalize K and G equally (leaving cT unchanged at this order) or reduce to improvements
+                        under A4/A5.
+
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a         Creative Commons CC BY license.
+
+==== PDF PAGE 25 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                            doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+                     Remark(NLOestimateatGWband). Withδc2T(k)= bk2/Λ2 andarepresentativemultimessenger
+                     tolerance|cT−1|≲ 10−15 near fGW∼ 100Hz,
+                                                 δc2T ≃  2|cT−1| ≲  2×10−15,        k≃ 2πfGW.
+
+
+                     Assuming|b|∼ 1, this gives a lower bound
+
+
+                                  Λ ≳        kq     ≈  1.4×1010 s−1 ≈  9.3×10−6 eV ⇒ ℓΛ≡ ¯hcΛ ≲  2.1 cm.
+                                            |δc2T|
+
+
+                     At fGW ∼ 1kHz the bound scales linearly with f,Λ≳ 9.3×10−5eV (ℓΛ≲ 2.1mm). These are
+                     order-of-magnitude, band-limited constraints; tighter bounds require a fit to detector bandpasses
+                     and b-modeling.
+
+                  9.3. EFT Validity and Conservative Use of Bounds
+                        Equation (53) is an      EFT statement valid for
+
+                                                    kphys≪Λ            or equivalently, 2πf ≪Λ         .                                           (55)
+
+                  In this regime higher-order termsO(k4phys/Λ4) are negligible and the approximation c2T(k) ≃ 1+
+                  bk2phys/Λ2 is self-consistent.  When interpreting band-limited constraints, we therefore adopt the
+                  conservativerule: onlyfrequencieswellbelowtheinferredΛ shouldbeusedtoquotelimitson b/Λ2.
+
+                  9.4. What To Report (Band-Limited, Paper-Level Recipe)
+                        Given a measurement (or bound) on cT(k) in a finite band centered at f⋆, report
+
+
+                                          δc2T(f⋆) ≡  c2T(f⋆)−1 =  b (2πf⋆)2Λ2     ,    k⋆≡ 2πf⋆,    k⋆≪Λ.                           (56)
+
+
+                  ThisistheonlyNLO, PT-even,projector-compatiblemodificationofthelockedTTsectoratquadratic
+                  order that survives as a bulk effect. All other admissible NLO pieces either (i) reshuffle into improve-
+                  ments under A4/A5, or (ii) renormalize K and G equally and thus do not shift cT at this order.
+
+                  Null Test (NLO).
+                        Acrossdisjointfrequencybands{fi}thatallsatisfy2πfi≪Λ,theratioδc2T(fi)/δc2T(fj)=(fi/fj)2
+                  must hold upto experimental/systematicuncertainties; anysystematic departure falsifiesthe NLO
+                  closure embodied by (52).
+
+                  Summary of SectionIX. At NLO thelocked, PT-even Palatini posture predicts a single, band-limited
+                  correction to tensor propagation,δc2T(k) = bk2/Λ2, with|b| =O(1) under our normalization ofT .
+                  The EFT is valid for k≪Λ, under which higher-order terms are suppressed and bounds should be
+                  interpreted conservatively.
+
+                  10. Supplement R: Reproducibility (Lean, Repository-Backed)
+                        All code, figure generators, configs, and tests are open-sourced at:
+
+                                                 https://github.com/ice91/palatini-pt-spurion/
+
+                  This supplement gives a minimal, repository-backed map to rebuild the paper figures and to vali-
+                  dateC1/C2/C3. Weavoidcodedumps;therepoalreadypinstheenvironment(environment.yml),
+                  packaging (pyproject.toml), and task runners (Makefile, Snakefile).
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.
+
+==== PDF PAGE 26 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                                 doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                      Terminology vs. filenames.
+                             The paper uses the term ROD for the rank-one determinant route. Repository filenames keep the legacy
+                      tokendbi (e.g.,configs/coeffs/dbi.json); they refer to the same route.
+
+                      R.0 Layout (Pointer)
+                             Top-level directories used by this paper: scripts/ (figure generators), configs/ (grids & coef-
+                      ficientJSON),palatini_pt/ (library),tests/ (pytest),figs/ (outputsandchecksumsidecars),and
+                      notebooks/ (script mirrors). A one-shot driverscripts/make_all_figs.py rebuildsall paper figures.
+
+                      R.1 Figure Map (Generator→ Artifact)
+                             Generators   live   in   scripts/   and   write   PDFs   to   figs/pdf/.        Coefficients   are   in
+                      configs/coeffs/{closed,cspp,dbi}.json. Table1lists the mapping.
+
+                                                                Table 1. Figure file map (repository-backed).
+
+                         ID                Generator (scripts/)                       Inputs (configs/)                                                       Output (PDF underfigs/pdf/)
+                         Figure 1      fig_c1_pure_trace.py                   —                                                                               figs/pdf/fig1_c1_pure_trace.pdf
+                         Figure 2      fig_c1_alignment.py                     —                                                                               figs/pdf/fig2_c1_alignment.pdf
+                         Figure 3      fig_c2_coeff_compare.py            coeffs/dbi.json,        coeffs/closed.json,    figs/pdf/fig3_c2_coeff_compare.
+                                                                        coeffs/cspp.json                                 pdf
+                         Figure 4      fig_c3_cT_heatmap.py                   optional: paper_grids.yaml                                  figs/pdf/fig4_c3_cT_heatmap.pdf
+                         Figure 5      fig_c3_dispersion.py                   optional: paper_grids.yaml                                  figs/pdf/fig5_c3_dispersion.pdf
+                         Figure 6      fig_c3_degeneracy.py                   —                                                                               figs/pdf/fig6_c3_degeneracy.pdf
+                         Figure 7      fig_gw_waveform_overlay.py      —                                                                               figs/pdf/fig7_gw_waveform_overlay.
+                                                                                                                         pdf
+                         Figure 8      fig_nlo_offsets.py                       optional: paper_grids.yaml                                  figs/pdf/fig8_nlo_offsets.pdf
+                         Figure 9      fig_flux_ratio.py                         optional: paper_grids.yaml                                  figs/pdf/fig9_flux_ratio.pdf
+
+                      R.2 Rebuild & Validate (Three Lines)
+               •           Environment  (conda/mamba).     conda  env  create  -f  environment.yml;    conda  activate
+                           palpt
+               •           Rebuild all figures. python  scripts/make_all_figs.py  (writes PDFs tofigs/pdf/)
+               •           Validate claims (C1/C2/C3 & diagnostics).   pytest  -q   (covers tests/test_c1_torsion.py,
+                           test_c2_equivalence.py,test_c3_tensor.py,test_flux_ratio.py,test_nlo.py, ...)
+
+                      R.3 Checksums (Sidecars)
+                             Every  PDF  and  data  artifact  ships  a  .md5  sidecar  (e.g.,  figs/pdf/fig1_c1_pure_trace.
+                      pdf.md5, figs/data/c2_residuals.csv.md5).  Verification: md5sum  -c  figs/pdf/*.md5;    md5sum
+                     -c  figs/data/*.md5.        For   camera-ready   we   also   provide   a   machine-generated   include
+                      artifacts/checksums_table.tex; if present, the paper auto-includes it.
+
+                      R.4 Version Pin
+                             We citethe exact Git revision usedto build the artifacts andtag the release. The repository ships
+                      figs.tar.gz and notebooks.tar.gz snapshots matching committed artifacts.  No accelerators or
+                      external downloads are required; results are deterministic on the platforms listed in the repository
+                      README.md.
+                      Summary.  Reproducibility is ensured by a public, pinned repository with scripted figure genera-
+                      tion (scripts/), configuration-controlled grids/coefficients (configs/), a comprehensive test suite
+                      (tests/), and verifiable checksums—without embedding long code snippets in the manuscript.
+
+                      11. Related Work & Operational Disambiguation
+                             This  section  situates  our  Palatini,  scalar-PT-projected  posture  within  the  established  tor-
+                      sion/gravitylines andrecordstheoperationalmeaningof eachglobalassumption(A1–A5) asusedin
+                      Sections2–7. Ourgoalistwofold: (i)anchortheassumptionsinmainstreamformalismsand(ii)make
+                      the boundary/improvement conventions that underlie the three-chain equivalence and coefficient
+                      locking fully checkable.
+
+
+
+
+                  © 2025 by the author(s). Distributed under a             Creative Commons CC BY license.
+
+==== PDF PAGE 27 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                         doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+                            Table 2. Operational mapping of A1–A5 to mainstream gravitational frameworks (indicative refs).
+
+                                Assumption                                                      Mainstreamanalogue                                                             Indicativerefs
+                            A1 measure/domain                    invariance under discrete symm.; AF/FRW fall-offs                           Regge–Teitelboim; Wald
+                               A2[PT ,∗]= 0                         orientation-preserving duals; Holst/NY parity split                                   Holst; Shapiro
+                          A3 commute w/ variation      Palatini eqs. & self-adjoint projectors in covariant phase space                    Hehl et al.; Iyer–Wald
+                            A4 boundary posture                    covariant phase space flux; no extra canonical pairs                      Iyer–Wald; Regge–Teitelboim
+                              A5 NY boundary                               NY= d(e∧T) exactness; topology caveats                       Nieh–Yan; Mercuri; Chandía–Zanelli
+                     1 Remark. Non-Hermitian PT-symmetric QFT is cited only as ananalogy for discrete projections on scalars, not as a structural
+                                                                            input to gravity here.
+
+                    11.1. Anchors In The Torsion/Gravity Literature
+                           Our use of independent (e,ω) with metric compatibility and the irrep split{Tµ,Sµ,qλµν} fol-
+                    lows the Einstein–Cartan/metric-affine (EC/MAG) tradition and classic reviews [6,8].  The Holst
+                    term and its relation to the Nieh–Yan 4-form (exact on appropriate patches) provide the standard
+                    parity bookkeeping [9–12]. Boundary conditions and improvement currents are treated within the
+                    covariantphase-space/chargeframeworks ofIyer–Waldand Regge–Teitelboim[21,22]. Onthe parity-
+                    odd side, Chern–Simons modified gravity (Jackiw–Pi; Alexander–Yunes) furnishes the canonical
+                    reference line [14,15];           our PT postureprojectstoaparity-evenscalarpieceaccompaniedbyanimprove-
+                    ment current (Section5), rather than introducing a new propagating pseudo-scalar.
+
+                    11.2. Operational Disambiguation Of A1–A5
+                    A1 (domain/measure).
+                           “R X = R PT[X]” means:  work on oriented Lorentzian patches with the standard measure
+                    d4x√−g and PT-invariant boundaries (compact or AF/FRW fall-offs).  The pullback by PT pre-
+                    serves bothdomain andmeasure forscalar densities,enabling self-adjointnessofΠPT on realscalars
+                    (Equation (3)) and route-wise flux comparisons (Section5).
+
+                    A2 (orientation and Hodge dual).
+                           We assume the combined PT preserves the chosen orientation and the metric used for index
+                    gymnastics; hence [PT ,∗] =  0 on forms.  This eliminates PT-odd pseudo-scalars by projection
+                    (Theorem1) and fixes parity assignments in the Holst/Nieh–Yan sector.
+
+                    A3 (project–vary commutation).
+                           Forscalardensitiesandalinear,self-adjointprojectoractingasΠPT[O]=  12(O+PT[O])|real,we
+                    useδΠPT[O]=ΠPT[δO] (Equation (4)   ): the projectormay be moved through the Palatini variation on
+                    (e,ω) because the spurion is nondynamical. The formal boundary-aware proof is in Appendix A.
+
+                    A4 (boundary posture).
+                           We adopt either compact PT-invariant boundaries with vanishing flux or standard AF/FRW
+                    fall-offs so that improvement currents contribute no canonical pairs (Iyer–Wald/Regge–Teitelboim).
+                    This makes statements like K−G = ∂µ(a−3Jµ∆a3) operationally slicing/gauge independent at quadratic
+                    order (Section7).
+
+                    A5 (Nieh–Yan as boundary).
+                           NY ≡ d(eA∧ TA) is treated as a boundary counterterm on admissible patches: it affects only
+                    conventions for improvement currents and does not alter bulk Euler–Lagrange equations. Topolog-
+                    ical torsion defects or multi-valued ϵ that would spoil exactness are excluded in our posture (see
+                    “Exclusions” below).
+
+                    11.3. “Improvement Current” And Route Equivalence
+                           Throughout, “improvement current” means a total divergence∇µJµ whose flux is fixed by A4.
+                    The three quadratic routes (DBI, closed metric, parity-even projected CS/Nieh–Yan piece) share
+                    the same bulk coefficient A⋆ = λ2/8 multiplying IT (Equations (25)     –(27)     ), and differ only by such
+
+
+
+
+                 © 2025 by the author(s). Distributed under a          Creative Commons CC BY license.
+
+==== PDF PAGE 28 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                              doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   improvements; on spatially flat FRW a convenient representative is J0CS+ =  λ216a3τ2Tr(T 2), JiCS+ = 0
+                  (Equation (45)     ). The boundary flux ratio diagnosticRX/Y[∂D] = 1 (Equation (30)     ) implements this
+                   equivalence in practice.
+
+                   11.4. “Closed Metric” Vs.  DBI and Rank-One Normalization
+                        TheDBI-typedeterminantpdet(⊮+λτT) andtheclosed-metricrank-onedeformation ˜gµν =
+                   gµν+λτ ˆnµˆnν havethesamequadraticbulkreductionbecausebothexpandintracesofthecanonical
+                   tracelessmatrixT µν withTrT = 0andTr(T 2)= 3/4byconstruction(Section5.1). Thisnormalization
+                   is the only place where route-dependent choices enter; once fixed, A⋆ is universal at quadratic order.
+
+                   11.5. Exclusions and Scope
+                        We exclude (i) torsion defects or nontrivial bundles that render NY non-exact on the working
+                  patch, (ii) multi-valuedϵ or branch cuts, and (iii) boundary conditions that inject new canonical pairs.
+                  Within this scope, C1–C3 and the equal-coefficient identity are paper-level, checkable statements.
+
+                   11.6. Terminology and Naming
+                        Toavoidconfusionwithparity-oddconstructions,werefrainfromphraseslike“PT-evenCS/Nieh–
+                  Yanshadow.” Weinsteaduseparity-evenprojectedpiecewithimprovementcurrentforthescalarcontribu-
+                   tion that survivesΠPT and differs by a total divergence from the DBI/closed-metric routes.
+
+                   11.7. Reader/Referee Checklist (Operational)
+                  1.   Verify A1/A2 on the chosen background (orientation, measure,   [PT ,∗]= 0).
+                   2.      Use theprojector rules (Theorem1)to confirm the first-orderclosure     { I1 =ΠPT[T2], I2 =Σϵ}
+                         and thatΠPT[T·∂ϵ]= 0.
+                   3.   Apply C1 (   Tµ = 3η∂µϵ) and reproduce A⋆ = λ2/8 for DBI/closed-metric/CS+ up to∇µJµ.
+                   4.   Check the flux ratio  RX/Y→ 1 on growing FRW balls (Section5.4).
+                   5.   Build the 2  ×2 mixing system (Equation (35)), confirm non-collinearity, extract      w⋆.
+                   6.   Confirm    K(w⋆)−G(w⋆)= ∂µ(a−3Jµ∆a3) and hence cT = 1 at quadratic order.
+
+                   11.8. Representative Citations (For Bibliography)
+                        Core anchors for the posture and disambiguation include: EC/MAG and torsion reviews [6,8];
+                   HolstandtheHolst–Nieh–Yanrelation[9–12];covariantphasespaceandboundarycharges[21,22];
+                   and Chern–Simons modified gravity [14,15]. These provide the intended “main gravitational line”
+                   against which our scalar-PT Palatini posture is operationally mapped.
+
+                  Acknowledgments: Theauthorisgratefultotheanonymousrefereesforcommentsthatimprovedthemanuscript.
+                   Limiteduseofgenerativelanguagetoolswasmadeforstylisticrefinement;allscientificreasoning,derivations,
+                   and conclusions remain solely the responsibility of the author.
+
+                   Appendix A. Projection–Variation Commutation (A3) and Variational Identities
+                        This appendix establishes Assumption A3 in full generality for scalar densities and compiles the
+                  variational identities for√−g,ϵµνρσ, and the Hodge star∗ under the Palatini posture with the scalar
+                   PT projector of Section2. We also make explicit the boundary/topology posture (A4) used when
+                   trading improvements for boundary fluxes, and we record the PT selection rules used throughout
+                   the paper.
+
+                   Appendix A.1. Setup and Conventions
+                        Weworkwithindependentvierbein eAµ andametric-compatiblespinconnectionωABµ=−ωBAµ
+                  (Palatiniposture). Theobservablescalardensitiesaremappedtoareal, PT-evensectorbytheprojector
+
+                                               ΠPT[O] ≡  1     O+PT[O]real scalar,      Π2PT =ΠPT,                                 (A1)
+                                                             2
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.
+
+==== PDF PAGE 29 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   withthecombined PT actinganti-linearly(complexconjugationaccompanies T)andpreservingthe
+                   chosen orientation (A2), so that[PT ,∗]=0 on forms. The internal phase ϵ(x) is a spurion: it enters
+                   observables only via ∂ϵ and is not varied. All statements below are thus variations with respect to
+                   (e,ω,matter) while keepingϵ fixed.
+
+                   Appendix A.2. Projector Properties: Idempotence, Self-Adjointness, and Selection Rules
+                   Proposition A1 (Self-adjointness ofΠPT on real scalars). Under A1 (domain/measure PT-invariance) one
+                   has, for any scalar densities X,Y,
+                                                            Z                          Z
+                                                               ΠPT[X]ΠPT[Y] =             ΠPT[XY].                                                   (A2)
+
+
+                   Proof. Expand the left-hand side using Equation (A1) and the fact that     PT 2=id:
+                             Z    X+PT[X]Y+PT[Y]=  1Z XY+XPT[Y]+PT[X]Y+PT[X]PT[Y].
+                                1
+                                4                                      4
+                   Using A1,R Z =R PT[Z], the cross terms rearrange into 1                  R(XY+PT[XY])=R ΠPT[XY].
+                                                                                          2
+
+                   Proposition A2 (Selection rules for the scalar projector). With A1–A2 and metric compatibility, the
+                   following hold for any admissible tensors X:
+
+                                                      ΠPTϵµνρσXµνρσ= 0,      ΠPTTµ∂µϵ= 0,                                           (A3)
+                                                      ΠPTTABCTABC∈R,      ΠPT(∂ϵ)2∈R.                                            (A4)
+
+                   Proof (sign count). Under A2 the chosen orientation is preserved and [PT ,∗]=0; ϵµνρσ is PT-odd,
+                   henceanypseudo-scalardensitybuiltfromitflipssignandisannihilatedbyΠPT. Thespuriongradient
+                   ∂µϵ picks opposite P/T parities relative to Tµ≡ Tνµν (table in Section2.2), so                  Tµ∂µϵ is PT-odd and is
+                   projected out. Quadratic contractions T2 and(∂ϵ)2 are PT-even and the projector returns their real
+                   parts, hence (A4).
+
+                   Appendix A.3. Commutation of Projection with Variation (A3)
+                   Theorem A1 (Projection–variation commutation (A3)). Let O be any local scalar density built from
+                   (e,ω,∂ϵ,...). Then, for variations with respect to(e,ω,matter) at fixedϵ,
+
+                                                                   δΠPT[O] = ΠPT[δO].                                                             (A5)
+                   Proof.  Bydefinition,δΠPT[O]=  1δO+δPT[O]real.ItsufficestoshowδPT[O]=PT[δO]. The
+                                                             2
+                   PT action on fields is an involutive automorphism on the local functional algebra, and it is anti-linear
+                   only through global complex conjugation (time reversal).  For any complex functional F one has
+                   δF =   δF because the variation acts linearly on fields and does not act on the numerical i. Therefore,
+                   withΦ denoting collectively the fields that are varied andΦPT  their PT image,
+
+                                               δPT[O(Φ)]= δ         O(ΦPT)=        δO(ΦPT)=PT[δO(Φ)],
+
+                   where we used that PT  does not touch the spurion (fixed) and commutes with derivatives and
+                   index operations under A2.  Substituting back and using linearity of the “real” operation yields
+                   Equation (A5).
+
+                   Remarks.
+                         (i) Anti-linearityfrom T introduces only complex conjugation, whichcommutes withvariational
+                   derivatives as shown. (ii) The assumption that ϵ is not varied (spurion posture) is essential; if one
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 30 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                  doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   promotesϵ to a dynamical field, additional boundary terms appear but Equation (A5)       continues to
+                   hold for thescalar projector provided the same posture (A1–A2) is kept for the extended field space.
+
+                   Appendix A.4. Variational Identities For√−g,ϵµνρσ, And The Hodge Star
+                         We collect formulas used repeatedly in Sections2–7. We write                     hµν≡ δgµν and h≡ gµνhµν.
+
+                   Metric and vierbein.
+                         With gµν = ηABeAµeBν,
+                                             δgµν = ηABeAµδeBν+eAνδeBµ,       δgµν =−gµαgνβδgαβ.                             (A6)
+
+
+                   Determinant and Levi–Civita tensor.
+
+                                        δp−g=  1      p−gh,       δϵµνρσ =  1
+                                                     2                            2 ϵµνρσh,       δϵµνρσ =−12 ϵµνρσh.                      (A7)
+                   Thesefollow fromϵµνρσ =√−gεµνρσ andϵµνρσ = εµνρσ/√−g,withεµνρσ the(constant) Levi–Civita
+                   symbol.
+
+                   Hodge star.
+                         Letα be a p-form and hµν≡ gµλhλν. Then the variation of∗ with respect to h is
+
+                                                                                                             p
+                                    δ(∗α)=∗δα+ 12 h(∗α)− 12 ∗(H·α),       (H·α)µ1...µp ≡                  ∑  hµiναµ1...ν...µp.                (A8)
+                                                                                                           i=1
+
+                   In particular, for 2-forms F (frequent in the Palatini curvature/torsion algebra),
+                                            δ(∗F)µν =(∗δF)µν+ 1                         hµρ(∗F)ρν+hνρ(∗F)µρ.                            (A9)
+                                                                       2h(∗F)µν− 12
+
+                   [PT ,∗]=0.
+                         Becausethemetricis PT-evenandthechosenorientationispreserved(A2),theHodgemapbuilt
+                   from(g,ϵµνρσ) commutes with PT:
+
+                                                          PT[∗α]=∗PT[α]        for any formα.                                             (A10)
+
+                   This identity is used both in the selection rules and in the projector proofs that involve p-form duals.
+
+                   Appendix A.5. Boundary/Topology Posture and Improvement Currents
+                         Assumption A4 is realized in either of the following equivalent ways:
+                   (i)         Compact, PT-invariantdomainswithvanishingboundaryflux: foranyimprovementcurrent JµZ
+                             arising from integration by parts,
+                                                                        ∂DdΣµ Jµ = 0.                                              Z
+                   (ii)        Standard fall-offs on asymptotically flat or spatially flat FRW patches, for which                     d4x∇µJµ
+                             reduces to a surface integral that vanishes in the R→∞ limit. A sufficient set is
+
+                                              hµν =O(r−1−δ),    Kλµν =O(r−2−δ),    ∂µϵ=O(r−δ),       δ> 0,               (A11)
+
+                            which ensures Jr =O(r−2−δ) so that the flux through a sphere of radius R decays as R−δ.
+                   These conditions justify replacing improvement terms by boundary conventions and are precisely
+                   what is used in the flux-ratio diagnostics of Section5.4.
+
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.
+
+==== PDF PAGE 31 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                   doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Appendix A.6. Consequences Used in the Main Text
+                   (C1) Palatini block-diagonalization.
+                          TheoremA1(A3) allows us to           project then vary in the Palatini equations, so that the connection
+                   variation is algebraic and block-diagonal in the torsion irreps.  Together with the selection rules
+                   (Prop.A2) this yields           Sµ=qλµν=0 and the pure-trace map quoted in Section4.
+
+                   (C2) Route equivalence modulo boundary.
+                          Self-adjointness (Prop.A1) and the boundary posture (SectionA.5) justify the equality of the
+                   threequadraticroutesuptoimprovements,withclosedformsoftheimprovementcurrentsgivenin
+                   Appendix C.
+
+                   (C3) Equal-coefficient identity and cT=1.
+                          The star-variation identities (A8)      –(A9)       are used inside the ADM expansion behind the equal-
+                   coefficientidentity K−G = ∂µ(a−3Jµ∆a3) proveninAppendixD.Theboundaryposturethenenforces
+                   K=G and cT=1 at quadratic order.
+
+                   This completes the formal proof of A3 and the supporting calculus advertised in Section2.
+
+                   Appendix B. Irrep Projectors & No-Go for qλµν(v)
+                          This appendix collects the group-theoretic ingredients used in Section4:  (i) the irreducible
+                   decompositionof thetorsiontensor underthe Lorentzgroup,(ii) explicit,idempotentprojectors onto
+                   the trace, axial, and traceless sectors, (iii) the quadratic identityfor TABCTABC in our conventions, and
+                   (iv) the single-vector no-go that underlies the statement quoted in the main text as “Proposition B.1” for
+                   the qλµν irrep. All statementsare purely algebraic andhold before/after applyingthe scalar projector
+                   ΠPT[·]; after projection all scalar contractions are real (Section2).
+
+                   Appendix B.1. Torsion as a Lorentz Representation and Its Algebra
+                          In index language (spacetime indices), torsion is a rank-3 tensor antisymmetric in its last two
+                   indices, Tλµν = −Tλνµ, with 4×6 = 24 independent components in d=4.  The Lorentz-covariant
+                   irreducible content splits into
+                                                                                             
+                                                                                               Tµ≡ Tνµν,
+                                 24 ≃      4|{z}  ⊕     4|{z}  ⊕             16|{z}   ,      Sµ≡ ϵµνρσTνρσ,                             (A12)
+                                          trace Tµ    axial Sµ    traceless tensor qλµν        qνµν = qλµµ = ϵµνρσqνρσ = 0.
+
+                   Weuseϵ0123 =+1andthemetricsignature(−,+,+,+),andweadoptthestandardscalarproduct
+                   (X,Y)≡ XλµνYλµν on this space.5
+
+                   Appendix B.2. Idempotent Projectors
+                          Define three linear maps P(T),P(S),P(q) on the torsion space by
+
+                                                   P(T)T             gλµTν−gλνTµ,                                                                 (A13)
+                                                             λµν≡ 13
+                                                   P(S)T
+                                                             λµν≡− 16 ϵλµνρSρ  = −16 ϵλµνρϵραβγTαβγ,                                  (A14)
+                                                   P(q)T
+                                                             λµν≡ Tλµν−P(T)Tλµν−P(S)Tλµν.                                         (A15)
+
+
+
+                    5    Frameandspacetimecontractionsareequivalentonce eAµ isinserted;allformulasbelowholdwitheither TABC or Tλµν,and
+                       we freely move between the two notations.
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.
+
+==== PDF PAGE 32 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                   doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   These are theunique Lorentz-covariant, algebraic (derivative-free) projectorsonto the three irreps in
+                   Equation (A12). A direct computation shows:
+                                      P(X)2 = P(X),        P(X)P(Y) = 0(X̸= Y),        P(T)+P(S)+P(q) = 1,                (A16)
+
+
+                   and the images obey by construction
+                                                      P(T)Tνµν = Tµ,          ϵµνρσP(T)T
+                                                                                                     νρσ = 0,
+                                                      P(S)Tνµν = 0,            ϵµνρσP(S)T                                               (A17)
+                                                                                                     νρσ = Sµ,
+                                                      P(q)Tνµν = 0,            ϵµνρσP(q)T
+                                                                                                     νρσ = 0.
+
+                   Orthogonality and quadratic split.
+                          With the scalar product(·,·),
+                        P(X)T, P(Y)T= 0   (X̸= Y),     T,T=P(T)T,P(T)T+P(S)T,P(S)T+P(q)T,P(q)T.
+
+                                                                                                                                            (A18)
+                   Using (A13)–(A15) one finds the standard quadratic identity
+
+                                                     TABCTABC  =  23 TµTµ +   124 SµSµ +  ˜qλµν ˜qλµν,                                     (A19)
+
+                   where we have denoted ˜q≡ P(q)T for thestandard normalization of the traceless piece.
+
+                   Normalization used in the main text.
+                          For later convenience—and to match the coefficient choice used in Section4—we rescale the
+                   traceless irrep by a constant factor anddefine
+
+                             qλµν ≡    1√2  ˜qλµν,       =⇒         TABCTABC  =  23 TµTµ +   124 SµSµ + 2qλµνqλµν.            (A20)
+
+                   The projectorformulas (A13)        –(A15)         are unchanged;only thebookkeeping name“q” forthe traceless
+                   imagecarriesthefixed√2factor.6 AfterapplyingΠPT[·] toeithersideof(A20)        ,thescalarismanifestly
+                   real (Theorem1).
+
+                   Appendix B.3. Compatibility With The Scalar Projector
+                          Theprojectors P(X) arealgebraicandcommutewithΠPT[·]atthescalarlevel: foranytwotorsions
+                    T,T′,
+                                          ΠPT(P(X)T)λµν(P(Y)T′)λµν= δXYΠPT(P(X)T)λµν(P(X)T′)λµν.                     (A21)
+
+                   Moreover, the mixed scalar TµSµ is PT-odd and is annihilated by ΠPT[·] (Section2.3).  Thus the
+                   orthogonal split (A18) remains valid as an identity between         projected, realscalars.
+
+                   Appendix B.4. Proposition B.1: Single-Vector No-Go For The Traceless Irrep
+                          We now formalize the statement invoked in Section4.1.
+
+                   PropositionA3(single-vectorno-go). Let vµ beanynonzerocovector. Thereisnononvanishingtensorof
+                   theform qλµν(v),linearin vµ,that(i) isantisymmetricinµ↔ν,(ii)obeys qνµν = qλµµ = 0,and(iii) satisfies
+                    ϵµνρσqνρσ = 0. Equivalently, the traceless irrep cannot be constructed from a single vector.
+
+
+                    6    ThisharmlessconventionmatchesEquation(4.13)ofthemaintext(positivitysplit)andsimplifiesafewnumericaldiagnostics;
+                       no physics depends on it.
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.
+
+==== PDF PAGE 33 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                 doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Proof. Themost generalLorentz-covarianttensor builtlinearlyfrom asingle vµ andantisymmetric in
+                   its last two indices is a linear combination of the two rank-one seeds
+
+                                                            YABC(v)= αδA[BvC]+βϵABCDvD,                                                (A22)
+
+                   with realα,β. Compute its traces and axial contraction:
+
+                                                    Yνµν(v)= αδν[µvν] = α         δνµvν−δννvµ=−3α
+                                                                                2                            2  vµ,                              (A23)
+                                                    Yλµµ(v)= αδλ[µvν]gµν = 0,                                                                         (A24)
+                                              ϵµνρσYνρσ(v)= βϵµνρσϵνρσDvD =−3!βδµDvD =−6βvµ,                            (A25)
+
+                   wherewe usedϵµνρσϵανρσ =−3!δµα and d=4. Requiringthetrace constraintsYνµν = Yλµµ = 0 forces
+                   α= 0,andtheaxialconstraintforcesβ= 0. Thereforetheonlyadmissiblelinearcombinationisthe
+                   trivial one,YABC≡ 0, proving the claim.
+
+                   CorollaryA1.  Foranysinglecovectorvµ theP(q) projectorannihilatesthetworank-oneseeds: P(q)[δA[BvC]]=
+                   0= P(q)[ϵABCDvD].
+
+                   Appendix B.5. Consequences For The C1 Ansatz
+                         Applying Prop.A3to the most general           linearansatz with one derivative (Section4.1),
+
+                                                   TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ+P·∂ϵABC,                                    (A26)
+
+                   showsthattheattemptedtracelesspieceP·∂ϵABC necessarilyvanishes: itisalinear,single-vector
+                   construct and is thus killed by P(q) (Cor.A1). The ansatz collapses to
+
+                                                            TABC = AδA[B∂C]ϵ+BϵABCD∂Dϵ,                                                (A27)
+
+                   recovering Equation (4.2) of the main text. The scalar projectorΠPT[·] removes PT-odd scalars built
+                   fromtheaxialseed(Section2.3),andthePalatiniconnectionequationthensets                   B=0whilefixing A= 2η
+                   under the trace lock Tµ = 3η∂µϵ (Section4.2). This yields the uniqueness map                    TABC = 2ηδA[B∂C]ϵ
+                   quoted in Theorem2.
+
+                   Appendix B.6. Consistency Check With The Quadratic Invariant
+                         With the normalization (A20) and the C1 map (so         Sµ=0 and qλµν=0),
+
+
+                   ΠPTTABCTABC= 23 TµTµ = 23(3η)2Σϵ = 6η2Σϵ,     ⇒         IT ≡−14ΠPTTABCTABC=−6η2Σϵ,
+                                                                                                                                         (A28)
+                   as used throughout Sections4–5.  Here               Σϵ ≡ ΠPT(∂ϵ)2 is the projected, real scalar, and the sign
+                   bookkeepingiscarriedbysgn(Σϵ)≡ sgn(Σϵ);theunit1-form ˆnµ≡ ∂µϵ/p|Σϵ|,thecanonicaltraceless
+                   rank-onematrixT µν≡ sgn(Σϵ)(ˆnµˆnν− 14δµν),andthetracescaleτ≡ ˆnµTµ = 3η sgn(Σϵ)p|Σϵ| are
+                   recalled from Section3.
+
+                   Appendix B.7. Edge Cases and Patches
+                         On loci whereΣϵ = 0 the normalized direction ˆn is defined patchwise (or by continuity); all
+                   algebraic projector statements remain valid, and the conclusions above hold on any patch withΣϵ̸= 0.
+                   Global/topological subtleties (multi-valued ϵ, nontrivial bundles) lie outside the posture A1–A5
+                   (Section2).
+
+                   SummaryofAppendixB.Wehavegivenexplicit,idempotentprojectorsontothethreetorsionirreps,
+                   fixed the quadratic identity in the normalization used in the main text, and proved the single-vector
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 34 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                          doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  no-go: from one covector vµ no nonzero traceless torsion irrep can be built. This reduces the most
+                  general one-derivative ansatz to the{δA[B∂C]ϵ, ϵABCD∂Dϵ} span, after which the Palatini equations
+                  and the scalar projector select the pure-trace map used in the C1 uniqueness theorem.
+
+                  Appendix C. Appendix C: Three–Chain Reductions & Improvement Currents
+                  (σϵ Scheme)
+                  Scope (σϵ scheme and naming).  This appendix provides the paper–checkable reductions behind
+                  Section5underthe               sign-compensatedconventionsgn(Σϵ)IT ≡ sgn(Σϵ)IT =−6η2|Σϵ|andtherank-one
+                  determinant route naming (formerly “DBI”-type; not Born–Infeld gravity): (i) a rank-one determinant
+                  route built out of the canonical traceless matrixT µν, (ii) a closed–metric rank–one deformation, and
+                  (iii)the PT–evenCS/Nieh–Yanshadow. Atquadraticorder,eachroute reducesinthe bulktothe same
+                  invariant line
+
+                    δ2LX = A⋆p−g sgn(Σϵ)IT + ∇µJµX,        A⋆ = λ2/8,  X∈{rank−onedeterminantroute,CM,CS+} ,
+
+                  with improvements∇µJµX differing by boundary choices (A4/A5). Closed representatives for Jµ are
+                  given on FRW/weak–field backgrounds.
+
+                  Notation and key relation.    We use the preamble shorthands Σϵ  ≡  ΠPT(∂ϵ)2,  sgn(Σϵ)  ≡
+                  sgn(Σϵ),  ˆnµ ≡    ∂µϵp|Σϵ|, T µν ≡  sgn(Σϵ)      ˆnµˆnν− 14δµν  , τ ≡  ˆnµTµ   =   3η sgn(Σϵ)p|Σϵ| so that
+
+                  TrT = 0, Tr(T 2)=  34, and (after C1)
+
+                                 τ2 = 9η2|Σϵ|= 32(−sgn(Σϵ)IT),        sgn(Σϵ)IT ≡ sgn(Σϵ)IT =−6η2|Σϵ|.
+
+
+                  Appendix C.1. rank-one determinant route: Determinant Algebra with the 23 Normalization
+                        Consider the rank-one determinant route Lagrangian
+                                                                q
+                                               LROD =p−g           det1+ 23λτT−1           ,       λ∈R.                                 (A29)
+
+
+                  Usingpdet(1+X)= 1+ 12TrX+ 18[(TrX)2−2TrX2]+O(X3) and TrT = 0, the quadratic piece is
+                                                          h                               2 2λ2p
+                                     δ2LROD =p−g 18         −2Tr   (23λτ)2T 2 i    =−14    3        −g τ2Tr(T 2)
+
+                                               =−14· 49· 34 λ2p−g τ2 =− 112 λ2p−g τ2.                                              (A30)
+
+                  Withτ2 = 9η2|Σϵ| and sgn(Σϵ)IT =−6η2|Σϵ|,
+
+                                                                                               λ2
+                                      − 112λ2τ2 =− 112λ2(9η2|Σϵ|)=−34λ2η2|Σϵ|=                   8    sgn(Σϵ)IT,
+
+                  so that
+
+                                           δ2LROD = A⋆p−g sgn(Σϵ)IT + ∇µJµROD,        A⋆ = λ28 .                                 (A31)
+
+                  At the bulk-density level one may take JµROD ≡ 0.  For unified boundary diagnostics we adopt a
+                  common canonical representative Jµcan for allthree routes (SectionC.4).
+
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a   Creative Commons CC BY license.
+
+==== PDF PAGE 35 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                 doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   Appendix C.2. Closed–Metric Route: Rank–One Deformation Equals rank-one determinant route ToO(T 2)q
+
+                         Take the rank–one deformation ˜gµν = gµν+ 23λτ ˆnµˆnν so that√−˜g = √−g                            det[1+ 23λτT]
+                   and defineLCM≡√−˜g−√−g. The same algebra gives
+
+
+                                               δ2LCM = A⋆p−g sgn(Σϵ)IT + ∇µJµCM,        A⋆ = λ28 .                                       (A32)
+
+
+                   Thusrank-onedeterminantrouteandCMhavethesamebulkcoefficient A⋆ anddifferonlybyimprove-
+                   ments.
+
+                   Appendix C.3. Pt–Even CS/Nieh–Yan Shadow: Quadratic Reduction (σϵ)
+                         Using TA∧TA = d(eA∧TA)−eA∧eB∧ RAB, applying∗ and the scalar PT projector (A2), and
+                   evaluating after C1, the PT–even piece reduces at quadratic order to
+
+
+                                              δ2LCS+ = A⋆p−g sgn(Σϵ)IT + ∇µJµCS+,        A⋆ = λ28 ,                                      (A33)
+
+
+                   wheretheNieh–Yanassignment(A5)reshufflesonlyboundaryconventionsinsidethe PT–evensector.
+
+                   Appendix C.4. A Universal Canonical Improvement at Quadratic Order
+                         Forroute–by–routefluxcomparisonsitisconvenienttoselectthesameimprovementrepresenta-
+                   tive for all routes:
+                                                     Jµcan[hTT] ≡   A⋆2  a3 hTTij ∇µhTTij −δµ0hTTij   ˙hTTij ,                           (A34)
+
+                   so that we adopt the convention
+
+                       δ2LX = A⋆p−g sgn(Σϵ)IT + ∇µJµcan,        X∈{rank−onedeterminantroute,CM,CS+}.    (A35)
+
+                   Different representatives differ by∇νX[µν] and yield identical integrated fluxes under A4.
+
+                   Check (FRW).
+                         On spatially flat FRW in TT gauge,
+
+                                                               ˙hTTij  ˙hTTij − ∂khTTij ∂khTTij                      ,                        (A36)
+                                           ∇µJµcan = A⋆ a32                       a2         +∂τ32A⋆a2˙ahTTij  hTTij
+
+                   i.e.,thecanonicalreshufflingbetweenTTkinetic/gradientbilinearsplusapuretimeboundaryterm
+                   that integrates to zero with A4 fall–offs.
+
+                   Appendix C.5. Closed Forms for FRW and Weak Field
+                   FRW.
+                         For ds2 = a(τ)2(−dτ2+dx2) and homogeneousϵ(τ),
+
+                                                    J0can = A⋆2  a3hTTij   ˙hTTij  ,        Jican = A⋆2  ahTTjk ∂ihTTjk ,                                     (A37)
+
+                   which satisfies (A36).
+
+                   Weak field (AF).
+                         At a→1,
+                                                       J0can = A⋆2  hTTij   ˙hTTij  ,        Jican = A⋆2  hTTjk ∂ihTTjk .                                         (A38)
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 36 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                             doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  Appendix C.6. Flux–Ratio Identity & Finite–Domain Convergence
+                        With the unified choice (A35),     R∂D dΣµ JµROD =R∂D dΣµ JµCM =R∂D dΣµ JµCS+, hence
+
+                                           Z
+                           RX/Y[∂D]≡       Z∂DdΣµ JµX   = 1,        X,Y∈{rank−onedeterminantroute,CM,CS+}.                          (A39)
+
+
+                                            ∂DdΣµ JµY
+
+                  On finite FRW balls (or AF shells) residuals scale away with the radius R, agreeing with Section V.
+
+                  Summary of Appendix C
+                        At   quadratic   order   and   under   A1–A5   plus   C1,    the   rank-one   determinant   route,
+                  closed–metric,  and  PT–even  CS/Nieh–Yan  routes  share  the  same  bulk  reduction  δ2LX   =
+                   A⋆√−g sgn(Σϵ)IT  (mod ∇µJµ),   A⋆   =  λ2/8.    A  single  canonical  improvement  Jµcan  (Equa-
+                  tions  (A34)        –(A36)        )  is  used  for  all  routes  and  underlies  the  flux–ratio  plots  in  Section  V.
+                  [nb : fig_c2_coeff_compare.py; fig_flux_ratio.py]
+
+                  Appendix D. Appendix D: Mixing Matrix and the Equal–Coefficient Identity
+                        Thisappendixcontains(i)extractionrulesandtablesforthe2×2mixingmatrixusedinSection6,
+                  includinganon-collinearityproofofitstworowvectorsonadmissiblebackgrounds,and(ii)acovariant
+                  derivationoftheequal–coefficientidentity K(w)−G(w)= a−3∂µ(a3Jµ∆) quotedinSection7. Weassume
+                  A1–A5,thescalar PT projector(Section2),andtheC1map                 Tµ = 3η∂µϵ. Projectedscalarsarerealby
+                  construction; theσϵ scheme only affects the bulk line through sgn(Σϵ)IT = sgn(Σϵ)IT =−6η2|Σϵ|,
+                  not the kinematical identity K−G = ∂J.
+
+                  Variational domain (used below).
+                        We take variations with compact support on spatial slices or with FRW/AF fall-offs:  hTTij   =
+                  O(r−1−σ),δN = O(r−2−σ),∂iNi = O(r−2−σ) withσ > 0. Then Jµ∆ = O(r−3−σ) andδR d4xa3∂µJµ∆ =
+                  R dΣµ a3δJµ
+                               ∆ = 0.
+
+                  Appendix D.1. Adm Conventions and Extraction of Mixing Entries
+                        Withds2 =−N2dτ2+γij(dxi+Nidτ)(dxj+Njdτ), N = 1+δN, Ni = ∂iχ+NTi  (∂iNTi  = 0),and
+                  γij = a2(τ)(δij+hij), we project hij→ hTTij   with∂ihTTij  = 0 = δijhTTij  . The quadratic Lagrangian takes
+                  the block form
+
+                                                                                i
+                           δ2L= M2Pl8   a3hK(w) ˙hTTij  ˙hTTij −G(w) (∂khTTij )2a2+a3hTT·M(w)·Φ+ a32 Φ·P·Φ,            (A40)
+
+                  whereΦ={δN, ∂iNi,...} collectsnonpropagatingpieces. Definethe dimensionlessmixingentriesby
+                                             M(w)                      1     ∂           bilinear in hTT,δN,                                (A41)
+                                                       hTT−δN ≡    8    a3  ∂(δN)    δ2L
+                                                                  M2Pl
+                                            M(w)                       1     ∂             bilinear in hTT,∂iNi.                            (A42)
+                                                      hTT−∂iNi ≡    8M2Pla3 ∂(∂iNi)    δ2L
+
+
+                  ForLchain(w)= wRODLROD+wCMLCM, the mixing block is linear in w and proportional toη2Σϵ:
+                                                 M(w)
+                                                          hTT−δN =     µ(N)RODwROD+µ(N)CM wCM        η2Σϵ,
+                                               M(w)                                                                               (A43)
+                                                         hTT−∂iNi =    µ(∇N)ROD  wROD+µ(∇N)CM   wCM     η2Σϵ,
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.
+
+==== PDF PAGE 37 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                      doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+                    defining the four dimensionless coefficientsµ(N)ROD,µ(N)CM,µ(∇N)ROD ,µ(∇N)CM   .
+
+                    Appendix D.2. Background Invariants And Compact Parametrization
+                          Introduce
+                                                           H≡ a′a ,      Υ≡ ∂τlnτ/a= τ′τ −H,                                            (A44)
+
+                    (prime is conformal-time derivative). Eachµ admits a linear decomposition
+
+                                         µ(Y)X   = c(Y)X,0+c(Y)X,HH+c(Y)X,ΥΥ,        X∈{ROD,CM},  Y∈{N,∇N},                   (A45)
+
+                    with c’s realO(1) numbers fixed by the quadratic expansion rules (route Jacobians plus contorsion
+                    under C1).
+
+                    Appendix D.3. Coefficient Tables (FRW and Weak Field)
+
+
+                    TableA1. FRWcoefficients withϵ = ϵ(τ). Entriesarethe dimensionlessµ’sof (A43)        ,written asµ = c0+cHH+
+                    cΥΥ [Equation (A45)]. Overall factor        η2Σϵ multiplies the mixing (not shown here).
+
+                                                            Coefficient         c0            cH            cΥ
+                                                            µ(N)ROD           c(N)ROD,0     c(N)ROD,H     c(N)ROD,
+                                                            µ(∇N)ROD          c(∇N)ROD,0     c(∇N)ROD,H     c(∇N)ROD,
+                                                            µ(N)CM            c(N)CM,0      c(N)CM,H      c(N)CM,
+                                                            µ(∇N)CM           c(∇N)CM,0       c(∇N)CM,H      c(∇N)CM,
+                      Regeneration recipe (FRW).(1) Writeδgµν in terms of(δN,∂iNi,hTTij ); (2) expandT ,τ to linear order
+                    using ˆnµ = ∂µϵ/p|Σϵ| and C1; (3)insert intoLROD andLCM with the 23 scaling; (4)keep only hTTδN
+                                                          and hTT∂iNi bilinears to read off c0,cH,cΥ.
+
+
+
+                    Table A2. Weak field (AF) coefficients with slowly varying ϵ(t,x). Set a → 1 (H = 0) and defineΥ ≡ ∂tlnτ.
+                    Overall factorη2Σϵ multiplies the mixing (not shown here).
+                                                                  Coefficient          c0            cΥ
+                                                                  µ(N)ROD           ˜c(N)ROD,0     ˜c(N)ROD,
+                                                                  µ(∇N)ROD          ˜c(∇N)ROD,0     ˜c(∇N)ROD,
+                                                                  µ(N)CM             ˜c(N)CM,0       ˜c(N)CM,
+                                                                  µ(∇N)CM           ˜c(∇N)CM,0       ˜c(∇N)CM,
+                    Regenerationrecipe(weakfield). RepeatFRWstepswith a→ 1,replaceconformalbyphysicaltime,and
+                               expand consistently in spatial gradients so thatΣϵ remains the projected, real scalar.
+
+                    Closed-form labels (for Section VI cross-references).
+                          For later citation we record the compact forms as Equations (D.12)–(D.15):
+
+                                                             µ(N)ROD = c(N)ROD,0+c(N)ROD,HH+c(N)ROD,       Υ,                                            (D.12)
+
+                                                              µ(N)CM = c(N)CM,0+c(N)CM,HH+c(N)CM,      Υ,                                                 (D.13)
+
+                                                            µ(∇N)ROD  = c(∇N)ROD,0+c(∇N)ROD,HH+c(∇N)ROD,   Υ,                                            (D.14)
+
+                                                            µ(∇N)CM   = c(∇N)CM,0 +c(∇N)CM,HH+c(∇N)CM,  Υ.                                                (D.15)
+
+                    Appendix D.4. Non-Collinearity of the Two Locking Equations
+                          Let the two rows be r1 =(µ(N)ROD,µ(N)CM), r2 =(µ(∇N)ROD ,µ(∇N)CM  ).
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a         Creative Commons CC BY license.
+
+==== PDF PAGE 38 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                   doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   PropositionA4 (Non-collinearity). UnderA1–A5,C1, and theone-derivative-per-building-block posture,
+                   r1̸∥ r2 on any admissible background with at least one of{H,Υ}̸= 0 and∇µˆnν̸= 0. Equivalently,
+
+                                                            ∆ ≡ µ(N)RODµ(∇N)CM  −µ(∇N)ROD µ(N)CM ̸=  0.
+
+                   Proof (sketch). Using (A45), proportionality would require        ρX≡ µ(N)X   /µ(∇N)X      to be route–independent
+                   and constant under independent shifts of H and Υ.  But ∂HρX and ∂ΥρX cannot both vanish for
+                   X =  ROD,CM unless c(Y)X,H =  c(Y)X,Υ =  0 (static trivial branch H=Υ=0, ∇ˆn =  0).  Hence r1 ̸∥  r2
+                   generically.
+
+                   Small-k structure (symbolic).
+                         On weak-field patches one finds
+
+                                                    ∆(k,Σϵ) = α0η4Σ2ϵk2 + O(k4,Σ3ϵ),       α0̸= 0,
+
+                   so rank loss occurs only on the measure-zero set{k = 0}∪{Σϵ = 0} or special foliations.
+
+                   Appendix D.5. Equal–Coefficient Identity: Covariant Derivation And Gauge Shift
+                         Define the quadratic current (indices contracted with the background spatial metric)
+                                                                             J0∆ =  ΠijhTTij       !
+                                                               Jµ∆ = M2Pl8    Jk∆ =−Ξij∂khTTij        ,                                                   (A46)
+
+
+                   withΠij ≡ δ(δ2L)/δ˙hTTij   andΞij ≡ δ(δ2L)/δ(∂2hTTij ).  Using TT conditions, the rank–one traceless
+                   normalization, and the bulk equality of the routes (Section V),
+
+                                                                 K(w)−G(w)=  1                    .                                       (A47)
+                                                                                      a3 ∂µa3Jµ∆
+
+                   Under δξhTTij   =  0, δξh0µ = ∂µξ0 +···, the representative shifts as δξJµ∆  = ∇νX[µν][ξ], hence the
+                   integrated identity is gauge independent.
+
+                   FRW and weak-field representatives.
+                         On spatially flat FRW (ds2 = a2(−dτ2+dx2), homogeneousϵ),
+
+
+                                                        J0∆ =  A⋆η22   ΣϵhTTij   ˙hTTij   + ∇i(...),                                                         (A48)
+
+                                                        Jk∆ =− A⋆η22   Σϵ  1a2 hTTij  ∂khTTij   + ∂ℓ(...)[kℓ],                                         (A49)
+
+                   so K−G = a−3∂τ(a3J0∆)+a−3∂k(a3Jk∆) is a total divergence. In weak field (AF, a→1),
+
+
+                                     J0∆ = A⋆η22   ΣϵhTTij   ˙hTTij  +∂i(...)i,    Jk∆ =−A⋆η22   ΣϵhTTij  ∂khTTij  +∂ℓ(...)[kℓ].
+
+                   Boundary consequence and luminality.
+                         With the variational domain above (A4), R a3(K− G)  = R ∂µ(a3Jµ∆)  =  0.   At the locked
+                   weights w⋆ (Section VI; no TT–nonTT mixing), K(w⋆) = G(w⋆) ⇒ c2T = 1 at quadratic order, slic-
+                   ing–independently.
+
+                   Appendix D.6. Locked Weights and Summary Box
+                         Non-collinearitywiththetwomixingequationsyieldsauniqueratio w⋆ROD/w⋆CM (uptotheGR
+                   normalization). At these weights, K−G = a−3∂µ(a3Jµ∆) implies exact luminality.
+
+
+
+
+                © 2025 by the author(s). Distributed under a       Creative Commons CC BY license.
+
+==== PDF PAGE 39 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                             doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                     Appendix D (at a glance).
+                     •      Mixing matrix. Four dimensionless coefficientsµ(Y)X   (X = ROD,CM;Y = N,∇N) control the
+                           TT–constraint mixing with an overallη2Σϵ factor.
+                     •      Non-collinearity. The two locking rows are not proportional on evolving admissible back-
+                           grounds; the determinant∆ is generically nonzero (∆∼ α0η4Σ2ϵk2+···).
+                     •      Equal–coefficientidentity. K−G = a−3∂µ(a3Jµ∆); underA4 thisyields K = G and c2T = 1 atthe
+                           locked weights w⋆.
+
+                  Reproducibility Note
+                        TablesA1–A2comefromasinglesymbolicpipelinethat: (i)expands               T  andτ tolinearorderin
+                  ADM variables with the  23 normalization, (ii) forms the rank-one determinant route/CM quadratic
+                  densities, (iii) projects onto the bilinears of Equations (A41)        –(A42)        .  Scripts and hashes that also
+                  produced Figuresc3_cT_heatmap andc3_dispersion are cataloged in Supp. R.                        [nb :
+                  mixing_matrix_extract.py]
+
+                  Appendix E. Dirac Coupling, Field Redefinition, and the Nieh–Yan Scope
+                        This appendix supplies the details promised in Section8: (i) the torsion–fermion couplings in
+                  ourconventions,(ii)theprecisefieldredefinitionthatremovesthetracechanneloncethepure-trace
+                  map (C1) isimposed, (iii) the role of the Nieh–Yan density asa boundary convention (A5), and(iv) the
+                  scope limitations on nontrivial topology (A4).
+                        ThroughoutweworkundertheglobalpostureA1–A5ofSection2,usemetricsignature             ηAB =
+                  diag(−,+,+,+), and adopt the gamma-matrix conventions
+
+                                             {γA,γB}= 2ηAB,       γ5≡ iγ0γ1γ2γ3,       ϵ0123 =+1,                              (A50)
+
+                  so thatγAB≡  12[γA,γB] andγABC≡ γ[AγBγC] = iϵABCDγ5γD.
+
+                  Appendix E.1. Minimal Dirac Coupling In Riemann–Cartan Space
+                        The minimally coupled Dirac Lagrangian is
+
+                                 Lψ = e ¯ψ   ieAµγADµ−m          ψ,        Dµψ= ∂µψ+ 14 ωABµγABψ,        e≡p−g.           (A51)
+
+                  Splitting the spin connection into Levi–Civita plus contorsion,ωABµ = ωABµ(LC)+KABµ, the torsion-
+                  dependent piece of (A51) is
+
+
+                                            ∆Lψ[K]=  i4 e ¯ψeAµγAKBCµγBCψ=  i4 e ¯ψγAKBCAγBCψ,                            (A52)
+
+                  where tangent indices are moved withηAB, and KABC≡ eAµKBCµ.
+                        It is convenient to decompose contorsion into the standard torsion irreps (vector trace TA, axial
+                  SA, and traceless qABC):
+
+                       KABC = 1    ηACTB−ηABTC− 1
+                                 3                          6 ϵABCDSD+qABC,        TA≡ TBAB,    SA≡ ϵABCDTBCD,      (A53)
+
+                  with qBAB = 0andϵABCDqBCD = 0. Using the gammaidentitieslistedbelowEquation (A50)         andthe
+                  antisymmetry of KBCA in(B,C), Equation (A52) reduces to
+
+                                            ∆Lψ[K]= e      cASµJµ5 +cV TµJµ         + eCµνρ(q)  ¯ψγ[µγνγρ]ψ,                           (A54)
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.
+
+==== PDF PAGE 40 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                   where Jµ≡  ¯ψγµψ and Jµ5 ≡  ¯ψγµγ5ψ. In our normalization (A50) the         numericalcoefficients are
+
+
+                                                                   cA = 38,        cV =−14                                              (A55)
+
+
+                   whilethe q-channelisproportionaltothetotallyantisymmetricpartof q,whichvanishesbydefinition;
+                   equivalently, the q-coupling can be re-expressed in terms of Sµ and drops out when Sµ = 0. Therefore
+                   the torsion-induced Dirac channels in our conventions are precisely
+                                                                              3
+                                                            ∆Lψ[T,S]= e        8 SµJµ5 − 14 TµJµ ,                                      (A56)
+
+
+                   up to PT-even improvement terms annihilated by A1/A4 in the bulk.
+
+                   Cross-check.
+                         Equation (A56)         reproduces the two-channel bookkeeping used in Section8with                cA =  38 and
+                   cV =−14. Any alternative gamma/Hodge convention simply rescales (A55)         by an overall sign; our
+                   laterconclusions(vanishingaxialchannelbyC1andremovabilityofthetracechannel)areinsensitive
+                   to such simultaneous flips.
+
+                   Appendix E.2. C1 Implies no Axial Channel; The Trace Channel is Removable
+                         By the uniqueness theorem (C1), Equation (13)     , the axial and traceless torsion irreps vanish,
+                   Sµ = 0,    qλµν = 0, and the trace aligns with the spurion gradient, Tµ = 3η∂µϵ. Equation (A56)
+                   therefore reduces to the single trace channel
+
+                                                          L(trace)ψ,T    = ecV TµJµ = 3cVηe(∂µϵ) Jµ.                                              (A57)
+
+                   PropositionA5(Vectorrephasingremovesthetracechannel). Considerthelocalvectorphaseredefinition
+                   ψ→ ψ′ = eiαϵψ,  ¯ψ→  ¯ψ′ =  ¯ψe−iαϵ with a constantα. Then
+
+                                                   Lψ[ψ′, ¯ψ′]=Lψ[ψ, ¯ψ]−αe(∂µϵ) Jµ + ∇µ···,                                    (A58)
+
+                   so choosing α = 3cVη(=−34η in our normalization) cancels (A57)         pointwise. Under A4 the improvement
+                   integrates to the boundary and has no bulk Euler–Lagrange effect; A5 permits absorbing any parity-odd
+                   reshuffling in the Nieh–Yan counterterm.
+
+                   Sketch.  Insertψ′ = eiαϵψ into the kineticterm e ¯ψieAµγA∂µψ and use theLeibniz rule. The derivative
+                   actingoneiαϵ generatestheshift−αe(∂µϵ)Jµ in(A58)        ;themassandspin-connectionpiecesareinvariant
+                   underavector(notaxial)phase. Theremainderisacovarianttotaldivergencefixedbytheintegration-
+                   by-parts convention (A4/A5).
+
+                   Combining (A57)         with Prop.A5and the coefficient assignment            (A55)         yields precisely the two-line
+                   summary in Section8: no axial channel and a removable trace channel.
+
+                   Path-integral measure (anomaly) check.
+                         ThefieldredefinitioninProp.A5isa           vectorU(1)rotation,hencethefermionicmeasureisinvariant
+                   (Jacobianequaltoone). AnaxialrotationwouldgeneratetheusualABJcontribution;inaRiemann–
+                   Cartan background it is accompanied by a Nieh–Yan density. We do not perform an axial rotation
+                   anywhere in this work.
+
+                   Appendix E.3. Nieh–Yan as a Boundary Convention (A5)
+                         TheNieh–Yan4-formNY≡ d(eA∧TA) isanexactform. Inourposture(A5),anyexplicituseof
+                   NY enters only as a boundary convention after applying the scalar projectorΠPT: it does not modify
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 41 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                           doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                  Euler–Lagrange equations in the bulk and is indistinguishable from a choice of improvement current.
+                  This applies equally to (i) the three-chain equivalence (where the PT-even CS/Nieh–Yan shadow
+                  differs from the DBI/CM routes by an improvement current) and (ii) the Dirac sector (where vector
+                  rephasing reshufflesboundary terms that can beabsorbed into the chosenNieh–Yan convention). No
+                  physical statement in Sections5–8depends on a specific Nieh–Yan choice.
+
+                  Appendix E.4. Scope and Caveats: Topology and Boundary Flux
+                        Our conclusions rely on the posture A4: either compact PT-invariant domains with vanishing
+                  boundary flux or standard asymptotic fall-offs (FRW/flat) so that improvement currents integrate
+                  to zero. They also assume a single-valued spurion phase ϵ(x) so that the rephasing in Prop.A5is a
+                  globally well-defined mapψ7→ eiαϵψ.
+                  •      Nontrivialtopology(notcovered). Ifϵ ismulti-valuedoradmitsnontrivialholonomy(e.g.,on
+                        manifolds with nontrivial π1 or H1), the map eiαϵ may fail to be single-valued. In such cases
+                        the local cancellation in (A58)         can leave a global remnant proportional to the winding; our bulk
+                        equivalences and removability statements are not asserted in that setting.
+                  •      Nonvanishing boundary flux (not covered).  On domains where the PT-invariant boundary
+                        fluxoftherelevantimprovementcurrentsdoesnotvanish,boundarytermsmaycarryphysical
+                        information(e.g.,inexplicitlyfiniteboxeswithprescribedinflow). Ournulltestsandcancellations
+                        are presented only under A4 fall-offs.
+
+                  Appendix E.5. Bookkeeping Table And Quick References
+                        For convenience we summarize the conventions and coefficients used in the Dirac sector:
+
+                          Object / Convention         Value / Definition
+                          Gamma matrices              {γA,γB}=2ηAB,γ5=iγ0γ1γ2γ3
+                          Hodge / Levi-Civita         ϵ0123=+1,[PT ,∗]=0 (A2)
+                          Contorsion split            KABC =  13(ηACTB−ηABTC)− 16ϵABCDSD+qABC
+                          Dirac currents              Jµ =  ¯ψγµψ, Jµ5 =  ¯ψγµγ5ψ
+                          Torsion→Dirac               ∆Lψ = e38SµJµ5 − 14TµJµ
+                          C1 (pure trace)             Sµ=0, qλµν=0, Tµ=3η∂µϵ
+                          Vector rephasing            ψ→ eiαϵψ withα= 3cVη =−34η
+                          Outcome                     Trace channel removed up to a total derivative (A4/A5)
+                          Nieh–Yan                    Boundary convention only (A5); no bulk Euler–Lagrange effect
+
+                  Appendix E.6. Corollary: No LO Four-Fermion Contact from Torsion
+                        Attheorderanalyzedinthispaper(quadraticinfields;atmostonederivativeperbuildingblock),
+                  torsionisalgebraicandfixedby(C1),andtheonlylinearDirac–torsionchannelthatsurvivesprojection
+                  isremovedbythevectorredefinitionabove. Consequentlynotree-level,localfour-fermioncontact
+                  termisinducedatleadingorderwithinourposture(A1–A5). Anysucheffectwouldrequire(i)anaxial
+                  channel (Sµ̸= 0), (ii) higher-derivative completions beyond our closure basis, or (iii) loop corrections
+                  outside the present scope.
+
+                  Summary of Appendix E. In our conventions the minimally coupled Dirac field interacts with tor-
+                  sion through e(38SµJµ5 − 14TµJµ). Under the pure-trace map (C1) the axial channel vanishes and the
+                  remainingtracechannelisremovedbyalocalvectorrephasingψ→ ei(3cVη)ϵψ,uptoatotalderivative
+                  consistent with A4/A5. Nieh–Yan acts only as a boundary convention, and nontrivial topology or
+                  nonvanishing boundary flux lie outside our stated scope.
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a    Creative Commons CC BY license.
+
+==== PDF PAGE 42 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                 doi:10.20944/preprints202509.2421.v1
+
+
+
+
+                   Appendix F. Operational Diagnostics (Extended)
+                         Thisappendixcollectsapractitioner-orientedchecklistandanexpandedcomparisontable. Unless
+                   stated otherwise, all entries are framed for admissible patches with the boundary/topology posture
+                   A4, and for the quadratic order analyzed in the main text.
+
+                   Appendix F.1. Full Decision Tree (D1–D8)
+                   •      (D1) Parity channels. Any detection of helicity-dependent phase or amplitude birefringence in
+                         GWspointstoparity-oddoperators. Ourscalar-PT postureforbidssucheffectsatLO(Theorem1;
+                         Section2.2).                       7
+                   •      (D2)Axial/tensortorsionirreps. Nonzeroaxial(Sµ)ortraceless(qλµν)torsionsignalsareincom-
+                         patible with C1. We predict the pure-trace map (Theorem2); Figures1,2provide diagnostics.
+                   •      (D3)Three-routebulkcollapse. Reconstructquadratickernelsfromsimulations/perturbation
+                         theory: theDBI,closed-metric,and CS+ routesmustsharethesamebulkpiece A⋆√−g sgn(Σϵ)IT
+                         with A⋆ = λ2/8 (Section5); residuals should enter only through improvements (Figure3).
+                   •      (D4) Boundary equivalence. Boundary flux ratiosRX/Y[∂D] converge to 1 on growing domains
+                         (A4) (Section5.4; Figure4). Persistent deviations falsify C2.
+                   •      (D5) Exact luminality by identity. After eliminating TT–nonTT mixing with the full-rank 2×2
+                         system (Section6.3), the equal-coefficient identity                    K−G = ∂µ(a−3Jµ∆a3) enforces cT=1 without
+                         tuning (Section7; Figure7).
+                   •      (D6) DoFcount. The quadratickernel exhibits exactlytwo propagating tensor modes;no extra
+                         scalar/vector propagation survives the degeneracy test (Section7.3; Figure8). Any additional
+                         mode falsifies our posture at this order.
+                   •      (D7) NLO slope.  At next order, the leading PT-even dispersion predicts δc2T(k) =  bk2/Λ2
+                         (Equation (54)     ):  a log–log slope ≃  2 in clean frequency windows is characteristic (Figure9;
+                         Section9.1).                       8
+                   •      (D8)Fermionchannelnull. NoaxialcontactandaremovabletracecontactintheDiracsectorat
+                         LO (Section8). Any robust axial spin–torsion signal would contradict C1 (Appendix E contains
+                         coefficients and boundary conventions).
+
+                   Appendix F.2. Expanded Disambiguation Table
+                         Entries are generic at LO on admissible backgrounds with A4 fall-offs; tuned subclasses and
+                   specific parameter choices may alter individual cells.  See the notes in SectionF.3for caveats and
+                   representative citations.
+
+                   Appendix F.3. Notes, Caveats, And Representative Anchors
+                   Parity-odd lines.
+                         Chern–Simons modified gravity (Jackiw–Pi; Alexander–Yunes) generically induces helicity-
+                   dependentGWpropagation;detailsdependonthechoiceofscalarfieldandcoupling. Ourscalar-PT
+                   projector eliminates parity-oddscalarsat LO; see Theorem1. Representative anchors: [14,15].
+
+                   Horndeski/DHOST.
+                         Post-GW170817 constraints force cT→ 1 by parameter tuning or by restricting to subclasses;
+                   however, no equal-coefficient identity of the type K−G = ∂µ(···) is generally present, and an extra
+                   scalar DoF is typical. See the multimessenger bounds and reviews [27–30,35,36].
+
+
+
+                   7    Chern–Simonsmodified gravityisthe canonicalbenchmarkfor helicity-splitpropagation; seee.g.,Jackiw–Pi; Alexander–
+                      Yunes.
+                   8    Caveat: finite-windowfitsmaybebiasedbyinstrumentalsystematicsorastrophysicalpriors;interpretboundsconservatively.
+
+
+
+
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.
+
+==== PDF PAGE 43 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                       doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                    Teleparallel/f(T).
+                          Many models yield cT = 1 at LO; torsion irreps and matter couplings are model-dependent, and
+                    our route-equality/flux-ratio diagnostics (C2) do not directly apply. We therefore treat teleparallel
+                    cases as outside the present “three-route” posture.
+
+                    EC/ECSK-like.
+                          With propagating torsion or nonminimal fermion couplings, axial/traceless torsion irreps can
+                    be present and Dirac axial contacts typically survive. Our C1 pure-trace map excludes these at the
+                    analyzed order; see classic EC/MAG treatments [4–6,8].
+
+                    NLO dispersion.
+                          The δc2T ∝ k2 slope follows from the projected, PT-even closure and the normalization ofT
+                    (Section5); in practice, slopes may be obscured by finite-band systematics, so conservative fits are
+                    recommended (Section9).
+
+                    Boundary posture.
+                          All boundary-sensitive statements assume A4 (PT-invariant compact boundaries or standard
+                    AF/FRW fall-offs) and A5 (Nieh–Yan as boundary counterterm). Departures from these postures may
+                    alterfluxdiagnosticsandimprovementaccounting. Operational anchors: covariantphasespaceand
+                    surface charges [20–22], and the Holst/Nieh–Yan parity bookkeeping [9–12].
+
+                    Representative anchors (one-line map).
+                          Metric-affine/Einstein–Cartan: [4,6,8]. Holst/Nieh–Yan: [9–12]. Covariant phase space & bound-
+                    ary charges: [20–22]. CS-modified gravity: [14,15]. GW170817 speed bounds & implications: [23–30].
+
+                    References
+                    1.      A. Palatini, “Deduzioneinvariantiva delleequazioni gravitazionalidal principiodi Hamilton,” Rend. Circ.
+                           Mat. Palermo 43, 203–212 (1919).
+                    2.   T. W. B. Kibble, “Lorentz invariance and the gravitational field,”    J. Math. Phys.2, 212–221 (1961).
+                    3.      D. W. Sciama, “On the analogy between charge and spin in general relativity,” in Recent Developments in
+                          General Relativity(Pergamon, 1962), pp. 415–439.
+                    4.      F. W. Hehl, P. von der Heyde, G. D. Kerlick, and J. M. Nester, “General Relativity with Spin and Torsion:
+                           Foundations and Prospects,”Rev. Mod. Phys.48, 393–416 (1976).
+                    5.   F.W.HehlandB.K.Datta, “Nonlinearspinorequationandasymmetricconnectioningeneralrelativity,”   J.
+                           Math. Phys. 12, 1334–1339 (1971).
+                    6.      F. W. Hehl, J. D. McCrea, E. W. Mielke, and Y. Ne’eman, “Metric-affine gauge theory of gravity: Field
+                           equations, Noether identities, world spinors, and breaking of dilaton invariance,” Phys. Rept. 258, 1–171
+                          (1995).
+                    7.   R. T. Hammond, “Torsion gravity,”    Rep. Prog. Phys.65, 599–649 (2002).
+                    8.   I. L. Shapiro, “Physical aspects of the space–time torsion,”    Phys. Rept.357, 113–213 (2002).
+                    9.   H. T. Nieh and M. L. Yan, “An identity in Riemann–Cartan geometry,”    J. Math. Phys.23, 373–374 (1982).
+                    10.    O.ChandiaandJ.Zanelli,“Topologicalinvariants,instantonsandthechiralanomalyonspaceswithtorsion,”
+                          Phys. Rev. D55, 7580–7585 (1997).
+                    11.    S. Holst, “Barbero’s Hamiltonian derived from a generalized Hilbert–Palatini action,” Phys. Rev. D 53,
+                           5966–5969 (1996).
+                    12.    S.Mercuri,“FermionsintheAshtekar–Barberoconnectionformalism: TheNieh–Yaninvariantasasourceof
+                           the Immirzi parameter,”Phys. Rev. D73, 084016 (2006).
+                    13.T. P. Sotiriou and V. Faraoni, “     f(R) theories of gravity,”Rev. Mod. Phys.82, 451–497 (2010).
+                    14.R. Jackiw and S.-Y. Pi, “Chern–Simons modification of general relativity,”     Phys. Rev. D68, 104012 (2003).
+                    15.S. Alexander and N. Yunes, “Chern–Simons Modified Gravity,”     Phys. Rept. 480, 1–55 (2009).
+                    16.    J.D.Bekenstein,“TheRelationbetweenphysicalandgravitationalgeometry,”Phys.Rev.D48,3641–3647
+                          (1993).
+                    17.S. Deser and G. W. Gibbons, “Born–Infeld–Einstein actions?,”      Class. Quantum Grav.15, L35–L39 (1998).
+
+
+
+
+
+                © 2025 by the author(s). Distributed under a          Creative Commons CC BY license.
+
+==== PDF PAGE 44 ====
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                                        doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+
+                    18.    M. Bañados andP.G. Ferreira, “Eddington’s theoryof gravity and its progeny,”Phys. Rev. Lett.105, 011101
+                           (2010).
+                    19.    R.Arnowitt,S.Deser,andC.W.Misner,“TheDynamicsofGeneralRelativity,”inGravitation: AnIntroduction
+                           toCurrentResearch,ed.L.Witten(Wiley,1962),pp.227–265;reprintedinGen.Rel.Grav.40,1997–2027(2008).
+                    20.R. M. Wald,     General Relativity(University of Chicago Press, 1984).
+                    21.    V.IyerandR.M.Wald,“SomepropertiesofNoetherchargeandaproposalfordynamicalblackholeentropy,”
+                           Phys. Rev. D50, 846–864 (1994).
+                    22.    T.Regge andC. Teitelboim,“Role ofsurface integralsin theHamiltonian formulationof generalrelativity,”
+                           Annals Phys.88, 286–318 (1974).
+                    23.    B. P. Abbott et al. (LIGO Scientific Collaboration and Virgo Collaboration), “GW170817: Observation of
+                           Gravitational Waves from a Binary Neutron Star Inspiral,”Phys. Rev. Lett. 119, 161101 (2017).
+                    24.    B.P.Abbottetal. (LIGOScientificCollaborationandVirgoCollaboration),“Multi-messengerObservations
+                           of a Binary Neutron Star Merger,”Astrophys. J. Lett.848, L12 (2017).
+                    25.    A. Goldstein et al., “An Ordinary Short Gamma-Ray Burst with Extraordinary Implications: Fermi-GBM
+                           Detection of GRB 170817A,”Astrophys. J. Lett.848, L14 (2017).
+                    26.    V. Savchenko et al., “INTEGRAL Detection of the First Prompt Gamma-Ray Signal Coincident with the
+                           Gravitational-wave Event GW170817,”Astrophys. J. Lett. 848, L15 (2017).
+                    27.    P.CreminelliandF.Vernizzi,“DarkEnergyafter GW170817andGRB170817A,”Phys.Rev.Lett.119,251302
+                           (2017).
+                    28.    T. Baker, E. Bellini, P. G. Ferreira, M. Lagos, J. Noller, and I. Sawicki, “Strong constraints on cosmological
+                           gravity from GW170817 and GRB170817A,”Phys. Rev. Lett.119, 251301 (2017).
+                    29.    J. M. Ezquiaga and M. Zumalacárregui, “Dark Energy After GW170817: Dead Ends and the Road Ahead,”
+                           Phys. Rev. Lett.119, 251304 (2017).
+                    30.    J. Sakstein andB. Jain,“Implications ofthe Neutron StarMerger GW170817for Cosmological Scalar–Tensor
+                           Theories,”Phys. Rev. Lett. 119, 251303 (2017).
+                    31.    N. V. Agazie et al.   (NANOGrav Collaboration), “The NANOGrav 15-year Data Set:  Evidence for a
+                           Gravitational-Wave Background,”Astrophys. J. Lett.951, L8 (2023).
+                    32.    J. Antoniadis et al.  (EPTA Collaboration and InPTA Collaboration), “The second data release from the
+                           European Pulsar Timing Array: Search for signals from new physics,”Astron. Astrophys.678, A50 (2023).
+                    33.    D. J.Reardon etal. (PPTA Collaboration),“Search foran Isotropic Gravitational-WaveBackground withthe
+                           Parkes Pulsar Timing Array,”Astrophys. J. Lett. 951, L7 (2023).
+                    34.    F. A. A. Liu et al.  (CPTA Collaboration), “Searching for the nano-Hertz stochastic gravitational-wave
+                           backgroundwiththe ChinesePulsarTimingArrayDataReleaseI,” Res.Astron.Astrophys. 23,075024(2023).
+                    35.    R.Kase andS.Tsujikawa, “DarkenergyinHorndeskitheories afterGW170817: Areview,”Int.J. Mod. Phys.
+                           D28, 1942005 (2019).
+                    36.    D. Langlois, “Dark Energy and Modified Gravity in Degenerate Higher-Order Scalar–Tensor (DHOST)
+                           theories,” Int. J. Mod. Phys. D28, 1942006 (2019).
+                    37.    Yu.N. Obukhov, “Poincarégaugegravity: Selected topics,”Int.J. Geom.MethodsMod.Phys.3,95–138 (2006).
+                    38.    Y.N.ObukhovandF.W.Hehl,“Rotation,acceleration,andgravityintheframeworkofclassicalelectrody-
+                           namics,” Phys.Lett. A372,3946–3952 (2008);see alsoF. W. Hehland Y.N. Obukhov,Foundationsof Classical
+                           Electrodynamics(Birkhäuser, 2003), App. B for Riemann–Cartan conventions.
+
+
+                    Disclaimer/Publisher’sNote: Thestatements,opinionsanddatacontainedinallpublicationsaresolelythose
+                    oftheindividualauthor(s)andcontributor(s)andnotofMDPIand/ortheeditor(s). MDPIand/ortheeditor(s)
+                    disclaim responsibility for any injury to people or property resulting from any ideas, methods, instructions or
+                    products referred to in the content.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                 © 2025 by the author(s). Distributed under a         Creative Commons CC BY license.

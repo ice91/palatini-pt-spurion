@@ -1,0 +1,68 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                     35 of 43
+
+
+
+                   Appendix E.1. Minimal Dirac coupling in Riemann–Cartan space
+                         The minimally coupled Dirac Lagrangian is
+
+                               Lψ= e  ¯ψ    ieAµγADµ−m           ψ,       Dµψ= ∂µψ+ 14 ωABµγABψ,       e≡p−g.           (89)
+
+                   Splitting the spin connection into Levi–Civita plus contorsion, ωABµ = ωABµ(LC)+KABµ, the
+                   torsion-dependentpiece of (89) is
+
+                                           ∆Lψ[K]= i4 e  ¯ψeAµγAKBCµγBCψ= i4 e  ¯ψγAKBCAγBCψ,                            (90)
+
+                   where tangent indices are moved withηAB, andKABC≡ eAµKBCµ.
+                         It is convenient to decompose contorsion into the standard torsion irreps (vector traceTA, axial
+                   SA, and tracelessqABC):
+
+                      KABC = 1ηACTB−ηABTC− 1
+                                 3                           6 ϵABCDSD+qABC,       TA≡ TBAB,    SA≡ ϵABCDTBCD,    (91)
+
+                   with qBAB = 0 and ϵABCDqBCD = 0.  Using the gamma identities listed below Eq. (88)      and the
+                   antisymmetry ofKBCA in(B,C), Eq. (90) reduces to
+
+                                          ∆Lψ[K]= e        cASµJµ5 +cV TµJµ         + eCµνρ(q)  ¯ψγ[µγνγρ]ψ,                           (92)
+
+                   where Jµ≡  ¯ψγµψ and Jµ5 ≡  ¯ψγµγ5ψ. In our normalization (88) the      numericalcoefficients are
+
+
+                                                                  cA= 38,       cV =−14                                                 (93)
+
+
+                   whiletheq-channelisproportionaltothetotallyantisymmetricpartofq,whichvanishesbydefinition;
+                   equivalently,theq-couplingcanbere-expressedintermsofSµ anddropsoutwhenSµ= 0. Therefore
+                   the torsion-induced Dirac channels in our conventions are precisely
+
+                                                                              3
+                                                           ∆Lψ[T,S]= e         8 SµJµ5− 14 TµJµ ,                                       (94)
+
+
+                   up toPT-even improvement terms annihilated by A1/A4 in the bulk.
+
+                   Cross-Check
+                         Equation (94)      reproduces the two-channel bookkeeping used in Sec.8with        cA =  38 and cV =
+                   −14. Any alternative gamma/Hodge convention simply rescales (93)      by an overall sign; our later
+                   conclusions (vanishing axialchannel by C1 and removability ofthe trace channel) are insensitive to
+                   such simultaneous flips.
+
+                   Appendix E.2. C1 Implies no Axial Channel; the Trace Channel Is Removable
+                         By the uniqueness theorem (C1), Eq. (10)     , the axial and traceless torsion irreps vanish, Sµ =
+                   0,    qλµν = 0, and the trace aligns with the spurion gradient, Tµ = 3η∂µϵ. Equation (94)      therefore
+                   reduces to the single trace channel
+
+                                                        L(trace)ψ,T    = ecV TµJµ= 3cVηe(∂µϵ)Jµ.                                               (95)
+
+                   PropositionB.4(Vectorrephasingremovesthetracechannel). Considerthelocalvectorphaseredefinition
+                   ψ→ ψ′= eiαϵψ,   ¯ψ→  ¯ψ′=  ¯ψe−iαϵ with a constantα. Then
+
+                                               Lψ[ψ′,  ¯ψ′]=Lψ[ψ,  ¯ψ]−αe(∂µϵ)Jµ + ∇µ···,                                   (96)
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

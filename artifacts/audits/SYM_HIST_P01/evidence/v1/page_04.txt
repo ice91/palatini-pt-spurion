@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 29 September 2025                              doi:10.20944/preprints202509.2421.v1
+
+
+
+
+
+                     (C3)Coefficientlocking⇒ exactluminalityandaGRTTsector. EliminatingTT–nonTTmixing
+                     fixesa uniqueweightratiobetween RODandclosed–metric routes; thelockedquadraticTT block
+                     satisfies the equal–coefficient identity
+
+                                                                 K−G =  a−3∂µa3Jµ
+                                                                                          ∆
+
+                     (Section7), hence
+
+                                                                    Z        "                       #
+                                     c2T = 1,       δ2STT = M2Pl8     d4xa3    ˙hTTij  ˙hTTij − (∂khTTij )2,    no new DoF.
+                                                                                              a2
+
+
+                     A TT–gauge weak–field representative of Jµ∆ on Minkowski with slowly varyingϵ is provided in
+                     Section7.1, and a covariant FRW representative is listed in Appendix D.
+
+                   Related work (concise map).
+                        In EC/MAG lines (e.g., [4,37]), axial and traceless torsion may propagate; by contrast, our
+                   scalar–PT Palatini posture plus algebraicity forces pure trace aligned with ∂ϵ at the analyzed order
+                  (C1), removing those irreps in the bulk. Parity–odd dCS gravity (e.g., [14,15]) ties tensor speed to
+                   a pseudo–scalar; here the PT projected sector keeps only even scalars and fixes cT=1 after locking
+                  (C3), modulo improvements.  Nieh–Yan terms [9] in our posture serve as boundary counterterms
+                  (A5) and do not alter bulk equations. Operationally, the “three–chain” collapse (C2) is a parity–even,
+                   rank–one statement: a rank–one determinant (ROD), a closed–metric deformation, and the PT–even
+                   CS/Nieh–Yan shadow share the same bulk quadratic piece A⋆√−g sgn(Σϵ)IT with A⋆ = λ2/8,
+                   differingonlybyimprovementcurrents. Weviewourresultsasaneven–parity,first–ordercomplement
+                   to these traditional lines, tailored to tensor–sector falsifiability.
+
+                   Falsifiability, stability, and organization.
+                        Any failure of the pure–trace map (C1), of the three–chain bulk collapse with A⋆ = λ2/8 (C2),
+                   or of exact luminality after locking (C3) falsifies the framework at quadratic order. Locking is stable
+                   on generic patches: the 2×2 mixing determinant scales as ∆(k,Σϵ) = α0η4Σ2ϵk2+O(k4,Σ3ϵ) with
+                   α0̸= 0, so rank loss occurs only on the measure–zero set{Σϵ=0}∪{k=0} (Section6, Appendix D).
+                   Beyondleadingorder,werecordanorder–of–magnitudedata–facingNLOestimateinSection9(boxed
+                   remark; GW band). The paper is organized as follows: Section2fixes A1–A6 and the scalar projector
+                  (with an admissible–variation clarification); Sections3–4establish closure and prove C1 (including a
+                   3–line block–nondegeneracy proof sketch); Section5proves C2 and introduces flux–ratio diagnostics;
+                   Sections6–7implementlockingandprove                     cT = 1,providingtheweak–fieldTTrepresentativeof Jµ∆
+                  (Section7.1); mattercouplings andNLO/data–facing aspectsappear inSections8–9.                                         Completeproofs
+                   and coefficient tables are collected in Apps. A–F.
+
+                   2. Global Assumptions & the ScalarPT Projector
+                        Weworkonanoriented(3+1)-dimensionalspacetimewithindependentvierbein eAµ andmetric-
+                   compatible spin connection ωABµ=−ωBAµ (Palatini posture). Greek indices µ,ν,... are spacetime;
+                   Latin A,B,... are Lorentz-frame indices withηAB = diag(−,+,+,+). Torsion and curvature are
+
+                                          TA≡ DeA = deA+ωAB∧eB,        RAB≡ dωAB+ωAC∧ωCB.                             (1)
+
+                   Observable scalar densities are mapped to a real, PT-even sector by a projectorΠPT(·) defined below.
+                  The internal phaseϵ(x) is a spurionentering observables only via∂ϵ and is not varied.
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a     Creative Commons CC BY license.

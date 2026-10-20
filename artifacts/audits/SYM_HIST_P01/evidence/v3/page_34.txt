@@ -1,0 +1,67 @@
+Preprints.org (www.preprints.org)  |  NOT PEER-REVIEWED  |  Posted: 30 October 2025                                 doi:10.20944/preprints202509.2421.v3
+
+
+                                                                                                                                      33 of 43
+
+
+
+                   Proof(sketch). Using(83)     ,proportionalitywouldrequireρX≡ µ(N)X   /µ(∇N)X       toberoute–independent
+                   and constant under independent shifts ofH andΥ.  But ∂HρX and ∂ΥρX cannot both vanish for
+                   X = ROD,CM unless c(Y)X,H = c(Y)X,Υ = 0 (static trivial branchH=Υ=0,∇ˆn = 0).  Hence r1̸∥r2
+                   generically.
+
+                   Small-k Structure (Symbolic)
+                         On weak-field patches one finds
+
+                                                 ∆(k,Σϵ) = α0η4Σ2ϵk2 + O(k4,Σ3ϵ),       α0̸= 0,
+
+                   so rank loss occurs only on the measure-zero set{k= 0}∪{Σϵ= 0} or special foliations.
+
+                   Appendix D.5. Equal–Coefficient Identity: Covariant Derivation and Gauge Shift
+                         Define the quadratic current (indices contracted with the background spatial metric)
+                                                                                                 
+                                                           Jµ∆ = M2Pl8  J0∆ =  ΠijhTTij          ,                                                   (84)
+                                                                           Jk∆ =−Ξij∂khTTij
+
+                   withΠij≡ δ(δ2L)/δ˙hTTij   andΞij≡ δ(δ2L)/δ(∂2hTTij ). UsingTTconditions,therank–onetraceless
+                   normalization, and the bulk equality of the routes (Sec. V),
+
+                                                             K(w)−G(w)=  1                       .                                      (85)
+                                                                                    a3 ∂µa3Jµ∆
+
+                   Under δξhTTij  = 0, δξh0µ = ∂µξ0+···, the representative shifts as δξJµ∆ =∇νX[µν][ξ], hence the
+                   integrated identity is gauge independent.
+
+                   FRW and Weak-Field Representatives
+                         On spatially flat FRW (ds2= a2(−dτ2+dx2), homogeneousϵ),
+
+
+                                                    J0∆ =  A⋆η22   ΣϵhTTij   ˙hTTij  + ∇i(...),                                                           (86)
+
+                                                    Jk∆ =− A⋆η22   Σϵ  1a2 hTTij  ∂khTTij  + ∂ℓ(...)[kℓ],                                         (87)
+
+                   soK−G= a−3∂τ(a3J0∆)+a−3∂k(a3Jk∆) is a total divergence. In weak field (AF,a→1),
+
+
+                                 J0∆ = A⋆η22   ΣϵhTTij   ˙hTTij  +∂i(...)i,    Jk∆ =−A⋆η22   ΣϵhTTij  ∂khTTij  +∂ℓ(...)[kℓ].
+
+                   Boundary Consequence and Luminality
+                         With the variational domain above (A4), R a3(K− G) = R ∂µ(a3Jµ∆) =  0.   At the locked
+                   weights w⋆ (Sec. VI; no TT–nonTT mixing), K(w⋆) = G(w⋆) ⇒ c2T = 1 at quadratic order, slic-
+                   ing–independently.
+
+                   Appendix D.6. Locked Weights and Summary Box
+                         Non-collinearitywith the twomixing equationsyields aunique ratiow⋆ROD/w⋆CM (upto the GR
+                   normalization). At these weights,K−G= a−3∂µ(a3Jµ∆) implies exact luminality.
+
+
+
+
+
+
+
+
+
+
+
+               © 2025 by the author(s). Distributed under a      Creative Commons CC BY license.

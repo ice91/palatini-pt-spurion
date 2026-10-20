@@ -1,0 +1,62 @@
+Symmetry2026,18, 170                                                                                                                    36 of 50
+
+
+                                   Appendix D. Mixing Matrix and the Equal-Coefficient Identity
+                                         This appendix contains (i) extraction rules and tables for the 2×2 mixing matrix
+                                   used in Section6, including a                non-collinearity proof of its two row vectors on admissible
+                                   backgrounds, and (ii) a covariant derivation of the equal-coefficient identity K(w)−G(w) =
+                                    a−3∂µ(a3Jµ∆) quoted in Section7. We assume A1–A5, the scalar                PT projector (Section2),
+                                   and the C1 map Tµ = 3η∂µϵ.  Projected scalars are real by construction; the σϵ scheme
+                                   onlyaffectsthe bulklinethroughsgn(Σϵ)IT = sgn(Σϵ)IT =−6η2|Σϵ|,not thekinematical
+                                   identity K−G = ∂J.
+
+                                   Variational domain (used below).
+                                         We take variations with compact support on spatial slices or with FRW/AF fall-offs:
+                                   hTTij  = O(r−1−σ),δN = O(r−2−σ),∂iNi = O(r−2−σ) withσ > 0. Then Jµ∆ = O(r−3−σ) and
+                                   δR d4xa3∂µJµ∆ =R dΣµ a3δJµ∆ = 0.
+
+                                   Appendix D.1. ADM Conventions and Extraction of Mixing Entries
+                                         With ds2 = −N2dτ2+γij(dxi + Nidτ)(dxj+ Njdτ), N = 1+δN, Ni = ∂iχ+ NTi
+                                   (∂iNTi  = 0), andγij = a2(τ)(δij+hij), we project hij → hTTij   with∂ihTTij  = 0 = δijhTTij  . The
+                                   quadratic Lagrangian takes the block form
+
+                                                                                           i
+                                     δ2L= M2Pl8   a3hK(w) ˙hTTij  ˙hTTij −G(w) (∂khTTij )2a2 +a3hTT·M(w)·Φ+ a32 Φ·P·Φ,  (A42)
+
+                                   whereΦ={δN, ∂iNi,...}collectsnon-propagatingpieces. Definethedimensionlessmixing
+                                   entries by
+                                                        M(w)                     1      ∂           bilinear in hTT,δN,                      (A43)
+                                                                  hTT−δN ≡    8    a3  ∂(δN)    δ2L
+                                                                             M2Pl
+                                                       M(w)                      1      ∂             bilinear in hTT,∂iNi.                  (A44)
+                                                                hTT−∂iNi ≡    8M2Pla3  ∂(∂iNi)    δ2L
+
+
+                                   ForLchain(w)= wRODLROD+wCMLCM, the mixingblock is linear in w and proportional
+                                   toη2Σϵ:
+                                                           M(w)                µ(N)                           η2Σϵ,
+                                                                     hTT−δN =      RODwROD+µ(N)CM wCM
+                                                          M(w)                                                                         (A45)
+                                                                   hTT−∂iNi =    µ(∇N)ROD  wROD+µ(∇N)CM   wCM      η2Σϵ,
+
+                                   defining the four dimensionless coefficientsµ(N)ROD,µ(N)CM,µ(∇N)ROD ,µ(∇N)CM   .
+
+                                   Appendix D.2. Background Invariants and Compact Parametrization
+                                         Introduce the two (dimensionful) background invariants
+
+                                                                 H≡ a′a ,     Y ≡ ∂τlnτ/a= τ′τ −H,                                  (A46)
+
+                                   where prime denotes conformal-time derivative. Eachµ admits a linear decomposition
+
+                                             µ(Y)X   = c(Y)X,0+c(Y)X,HH+c(Y)X,YY,        X∈{ROD,CM},  Y∈{N,∇N},             (A47)
+
+                                   with c’s realO(1) numbers fixed by the quadratic expansion rules (route Jacobians plus
+                                   contorsion under C1).
+
+
+
+
+
+
+
+                                                                                                          https://doi.org/10.3390/sym18010170

@@ -1,0 +1,66 @@
+Symmetry2026,18, 170                                                                                                                          12 of 50
+
+
+
+
+
+                                                       (vector)    4α13   Tµ+α3∂µϵ= 0   ⇒     Tµ =−3α34α1 ∂µϵ≡ 3η∂µϵ,              (21)
+
+                                                         (axial)   α112 Sµ = 0   ⇒      Sµ = 0       ,                                                             (22)
+
+                                                    (traceless)   2α1qλµν = 0   ⇒      qλµν = 0           .                                                     (23)
+
+                                     Here, we have defined the parameter η ≡ −α3/(4α1).  Assuming α1 ̸= 0 (a nontrivial
+                                     torsion sector), the axial and traceless equations immediately force their corresponding
+                                     torsioncomponentstovanish. Thisdynamicallysetsthecoefficient B= 0inouransatz(19)     .
+                                     ThevectorEquation(21)      uniquelyfixestheremainingcoefficient A= 2η. Thiscompletes
+                                     the proof of the uniqueness map (16).
+
+                                     4.1.3. Step 3: Establish the Invariant Relation and Positivity
+                                           With the dynamical results Sµ = 0 and qλµν = 0, the standard quadratic identity
+                                     for the torsion scalar (from AppendixB) simplifies dramatically:                      TABCTABC =   23TµTµ.
+                                     Applying the PT projector and using the on-shell trace-lock result Tµ = 3η∂µϵ, we find
+
+
+                                                             ΠPT[TABCTABC]= 23ΠPT[(3η∂µϵ)(3η∂µϵ)]= 6η2Σϵ.                          (24)
+
+                                     Usingournormalizeddefinitionoftheinvariant IT ≡−ΠPT[TABCTABC] (seeSection2.10),
+                                     this immediately yields the algebraic relation IT = −6η2Σϵ, proving (17)     . The physical
+                                     requirement that the kinetic term for tensor modes is positive (established in Section6)
+                                     fixes the sign choiceη > 0. This concludes the proof of Theorem2.
+
+                                     4.2. Implications and Diagnostics
+                                           The uniquenesstheorem C1 isa cornerstone ofour framework. It demonstrates that
+                                     theaxialandtensor components oftorsionarenotmerely suppressed,butarealgebraically
+                                     eliminated from the observable sector by the dynamics. This is a powerful mechanism for
+                                     avoidingtheextrapropagatingdegreesoffreedomthatoftenplaguetheorieswithtorsion.
+
+                                     Corollary1(BasisReduction). Asadirectconsequence,the“pre-lock”operatorbasis{I1,I2,I3}
+                                     from Section3.2dynamically collapses into a “post-lock” basis where the physical sector is one-
+                                     dimensional. The relation (17)      shows that the physics can be described by the single independent
+                                     invariantΣϵ (or equivalently IT) at thisorder. This profoundsimplification is the keyto the bulk
+                                     equivalences we will explore in the next section.
+
+                                     Observational Diagnostic
+                                           Thistheoremoffersasharp, falsifiable prediction. Any futuredetection ofphysicalef-
+                                     fectsstemmingfromaxialortensorcomponentsoftorsionwouldinvalidateourframework
+                                     at thisorder. Furthermore, theperfect alignment of Tµ and∂µϵ can be testedin numerical
+                                     simulations. The diagnostic plot in Figure4shows the distribution of the alignment angle,
+                                     which is predicted to be sharply peaked at zero on admissible domains.
+                                           Figure4shows the numerical alignment diagnostic for    θ defined in the caption.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                                                              https://doi.org/10.3390/sym18010170

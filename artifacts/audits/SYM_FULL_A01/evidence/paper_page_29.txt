@@ -1,0 +1,61 @@
+Symmetry2026,18, 170                                                                                                                    29 of 50
+
+
+
+                                    so for any Xµνρσ, one has
+
+                                                                    PTϵµνρσXµνρσ= ϵµνρσPT[Xµνρσ].
+
+                                   Therefore, the PT parityofthe scalardensityϵµνρσXµνρσ isdeterminedentirelybythatof
+                                    Xµνρσ, yielding (A3) after applying the projector definition     ΠPT[O]=  12(O+PT[O])|real.
+                                         For the spurion gradient, the PT-transformation table of Section2assigns opposite
+                                    P/TparitiestoTµ≡ Tνµν and∂µϵsothattheirproductTµ∂µϵisPT-even;theprojectorthus
+                                    returnsitsrealpartanditsurvivestheprojectionstep. Quadraticcontractions T2 and(∂ϵ)2
+                                    are manifestly PT-even (they are built from metric contractions of vectors and gradients),
+                                    so,again,theprojectorreducestotakingtherealpart,consistentwithPropositionA1.
+
+                                    Appendix A.3. Commutation of Projection with Variation (A3)
+                                   Theorem A1 (Projection–variation commutation (A3)). LetO be any local scalar density built
+                                    from(e,ω,∂ϵ,...). Then, for variations with respect to(e,ω,matter) at fixedϵ,
+
+                                                                            δΠPT[O] = ΠPT[δO].                                                   (A6)
+                                    Proof. By definition, δΠPT[O] =  1δO+δPT[O]real. It suffices to show δPT[O] =
+                                                                              2
+                                    PT[δO]. The PT action on fields is an involutive automorphism on the local functional
+                                    algebra, and it is anti-linear only through global complex conjugation (time reversal).
+                                    For anycomplex functional F, onehasδF =              δF because thevariation actslinearly onfields
+                                    anddoesnotactonthenumerical i. Therefore,withΦ denotingcollectivelythefieldsthat
+                                    are varied andΦPT  their PT image,
+
+                                                        δPT[O(Φ)]= δ         O(ΦPT)=        δO(ΦPT)=PT[δO(Φ)],
+
+                                   whereweusethat PT doesnotactonthe (fixed)spurion,andcommuteswithderivatives
+                                    andindexoperationsunderA2. Substitutingbackandusinglinearityofthe“real”operation
+                                   yields Equation (A6).
+
+                                    Remark A1.  (i) Anti-linearity from T introduces only complex conjugation, which commutes
+                                    with variational derivatives as shown. (ii) The assumption thatϵ is not varied (spurion posture) is
+                                    essential;ifonepromotesϵtoadynamicalfield,additionalboundarytermsappearbutEquation(A6)
+                                    continuestoholdforthescalarprojectorprovidedthesameposture(A1–A2)iskeptfortheextended
+                                    field space.
+
+                                    Appendix A.4. Variational Identities for√−g,ϵµνρσ, and the Hodge Star
+                                         We collect formulas used repeatedly in Sections2–7.   We write                      hµν ≡ δgµν and
+                                    h≡ gµνhµν.
+
+                                    Metric and vierbein.
+                                         With gµν = ηABeAµeBν,
+                                                      δgµν = ηABeAµδeBν+eAνδeBµ,       δgµν =−gµαgνβδgαβ.                   (A7)
+
+
+                                    Determinant and Levi–Civita tensor.
+
+                                                 δp−g=  1p−gh,       δϵµνρσ =  1
+                                                             2                           2 ϵµνρσh,       δϵµνρσ =−12 ϵµνρσh.            (A8)
+                                   These follow fromϵµνρσ =√−gεµνρσ andϵµνρσ = εµνρσ/√−g, withεµνρσ the (constant)
+                                    Levi–Civitasymbol.
+
+
+
+
+                                                                                                          https://doi.org/10.3390/sym18010170
